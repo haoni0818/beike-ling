@@ -2694,3 +2694,23 @@ button {
 .review > * { flex-shrink: 0; }
 .review-points, .review-grid { flex: 1 1 auto; min-height: 0; overflow-y: auto; }
 .quiz-body { padding: 4px 26px 6px; }
+
+/* === 字号整体上调(主读区,不改布局) === */
+.dialogue p { font-size: 28px; }
+.nameplate { font-size: 28px; }
+.quiz-stem { font-size: 24px; }
+.quiz-framing { font-size: 17px; }
+.quiz-option strong { font-size: 20px; }
+.quiz-explain { font-size: 18px; }
+.prac-stem { font-size: 26px; }
+.prac-opt-t { font-size: 18px; }
+.subj-stem { font-size: 22px; }
+.subj-point-t { font-size: 17px; }
+.subj-hint { font-size: 16px; }
+.subj-ref p, .subj-ref summary { font-size: 15px; }
+.review-points > h3 { font-size: 19px; }
+.rp-title { font-size: 18px; }
+.rp-body p { font-size: 16px; }
+.route-card strong { font-size: 21px; }
+.heart-banner { font-size: 16px; }
+.ending-card .ending-text { font-size: 18px; }

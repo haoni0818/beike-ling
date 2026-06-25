@@ -747,7 +747,7 @@ function plainLen(s: string) {
 }
 // 对话分页:把长台词按句末(。！？\n)切成"一次点一屏"的页,每页 ≤ maxChars(可见字符)。
 // 配合固定大小对话框——长段不再撑大框,而是点一下翻下一句。保留 **加粗** 与换行。
-function paginateText(full: string, maxChars = 88): string[] {
+function paginateText(full: string, maxChars = 78): string[] {
   if (!full || plainLen(full) <= maxChars) return [full];
   const plain = (s: string) => s.replace(/\*\*/g, '').length;
   const parts = full.split(/(?<=[。！？!?\n])/).filter((p) => p.length);
