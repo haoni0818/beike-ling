@@ -2688,3 +2688,9 @@ button {
 /* 收藏馆：番外《番外》CG 独立分区（暖赭、克制） */
 .gal-section-label--bonus { color: var(--amber); display: flex; align-items: baseline; gap: 10px; }
 .gal-section-label--bonus small { font-size: 12px; color: #9a7a55; font-weight: 400; }
+
+/* === public sync fixes (复盘溢出 + 主观题贴边) === */
+.review { max-height: 100%; display: flex; flex-direction: column; overflow: hidden; }
+.review > * { flex-shrink: 0; }
+.review-points, .review-grid { flex: 1 1 auto; min-height: 0; overflow-y: auto; }
+.quiz-body { padding: 4px 26px 6px; }

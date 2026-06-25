@@ -706,7 +706,7 @@ const qualityMeta: Record<Quality, { label: string; icon: string; className: str
   risk: { label: '有风险', icon: '!', className: 'bad' },
 };
 // A1：选项展示顺序按 (节点id+选项id) 稳定打乱，避免"最优永远在第一个"被闭眼选；判定仍按 choice 对象、与位置无关
-function hashStr(s: string): number { let h = 0; for (let i = 0; i < s.length; i++) h = (h * 31 + s.charCodeAt(i)) | 0; return h; }
+function hashStr(s: string): number { let h = 2166136261 >>> 0; for (let i = 0; i < s.length; i++) { h ^= s.charCodeAt(i); h = Math.imul(h, 16777619) >>> 0; } return h >>> 0; }
 function orderChoices<T extends { id: string }>(nodeId: string, choices: T[]): T[] {
   return [...choices].sort((a, b) => hashStr(`${nodeId}:${a.id}`) - hashStr(`${nodeId}:${b.id}`));
 }
@@ -846,6 +846,8 @@ function QuizCard({ item, badge, sibling, onDone }: { item: QuizItem; badge: str
   const [phase, setPhase] = useState<'answer' | 'feedback'>('answer');
   const [usedRetry, setUsedRetry] = useState(false);
   const correct = setEqual(picked, cur.answer);
+  const opts = orderChoices(cur.id, cur.options);
+  const posLetter = (oid: string) => { const i = opts.findIndex((o) => o.id === oid); return i >= 0 ? String.fromCharCode(65 + i) : oid; };
   const askerId = cur.diegetic?.asker as ProfileId | undefined;
   const askerColor = (askerId && characters[askerId]?.color) ? characters[askerId].color : '#c19a52';
 
@@ -871,7 +873,7 @@ function QuizCard({ item, badge, sibling, onDone }: { item: QuizItem; badge: str
         {cur.diegetic?.framing ? <div className="quiz-framing">{cur.diegetic.framing}</div> : null}
         <p className="quiz-stem">{cur.stem}</p>
         <div className="quiz-options">
-          {cur.options.map((op) => {
+          {opts.map((op, i) => {
             const chosen = picked.includes(op.id);
             const isAnswer = cur.answer.includes(op.id);
             let cls = '';
@@ -881,7 +883,7 @@ function QuizCard({ item, badge, sibling, onDone }: { item: QuizItem; badge: str
             } else if (chosen) cls = 'is-picked';
             return (
               <button key={op.id} className={`quiz-option ${cls}`} disabled={phase === 'feedback'} onClick={() => toggle(op.id)}>
-                <span>{op.id}</span>
+                <span>{String.fromCharCode(65 + i)}</span>
                 <strong>{op.text}</strong>
                 {phase === 'feedback' && isAnswer ? <i className="quiz-mark ok">正确答案</i> : null}
                 {phase === 'feedback' && chosen && !isAnswer ? <i className="quiz-mark bad">你选的</i> : null}
@@ -898,7 +900,7 @@ function QuizCard({ item, badge, sibling, onDone }: { item: QuizItem; badge: str
               <div className="quiz-traps">
                 <label>为什么其它选项不对</label>
                 {Object.entries(cur.distractorTraps).map(([oid, why]) => (
-                  <p key={oid}><b>{oid}</b> {why}</p>
+                  <p key={oid}><b>{posLetter(oid)}</b> {why}</p>
                 ))}
               </div>
             ) : null}
@@ -2080,6 +2082,7 @@ export function App() {
           {pv === 'play' && curQ ? (() => {
             const item = curQ;
             const correct = setEqual(picked, item.answer);
+            const pOpts = orderChoices(item.id, item.options);
             const progress = Math.round(((qi + (judged ? 1 : 0)) / queue.length) * 100);
             return (
               <div className="prac-play">
@@ -2098,7 +2101,7 @@ export function App() {
                   </div>
                   <div className="prac-stem">{item.stem}</div>
                   <div className="prac-opts">
-                    {item.options.map((o) => {
+                    {pOpts.map((o, i) => {
                       const chosen = picked.includes(o.id);
                       const isAns = item.answer.includes(o.id);
                       let cls = '';
@@ -2106,7 +2109,7 @@ export function App() {
                       else if (chosen) cls = 'picked';
                       return (
                         <button key={o.id} className={`prac-opt ${cls}`} disabled={judged} onClick={() => pPick(o.id, item.type)}>
-                          <span className="prac-opt-k">{o.id}</span>
+                          <span className="prac-opt-k">{String.fromCharCode(65 + i)}</span>
                           <span className="prac-opt-t">{o.text}</span>
                           <span className="prac-opt-mark">{judged && isAns ? '✓' : judged && chosen && !isAns ? '✕' : ''}</span>
                         </button>
@@ -2115,7 +2118,7 @@ export function App() {
                   </div>
                   {judged ? (
                     <div className={`prac-judge ${correct ? 'ok' : 'bad'}`}>
-                      <div className="prac-judge-head"><b>{correct ? '答对了' : '答错了'}</b><span>正确答案 · {item.answer.join('')}</span></div>
+                      <div className="prac-judge-head"><b>{correct ? '答对了' : '答错了'}</b><span>正确答案 · {item.answer.map((a) => String.fromCharCode(65 + pOpts.findIndex((o) => o.id === a))).sort().join('')}</span></div>
                       <p>{renderRich(item.explanation, plainLen(item.explanation))}</p>
                       {item.answerKeywords.length ? (
                         <div className="kw-block">
