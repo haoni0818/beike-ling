@@ -747,14 +747,15 @@ function plainLen(s: string) {
 }
 // 对话分页:把长台词按句末(。！？\n)切成"一次点一屏"的页,每页 ≤ maxChars(可见字符)。
 // 配合固定大小对话框——长段不再撑大框,而是点一下翻下一句。保留 **加粗** 与换行。
-function paginateText(full: string, maxChars = 78): string[] {
-  if (!full || plainLen(full) <= maxChars) return [full];
-  const plain = (s: string) => s.replace(/\*\*/g, '').length;
+function paginateText(full: string, maxLines = 3, perLine = 33): string[] {
+  if (!full) return [full];
+  const plainOf = (s: string) => s.replace(/\*\*/g, '');
+  const linesOf = (txt: string) => plainOf(txt).split('\n').reduce((n, ln) => n + Math.max(1, Math.ceil(ln.length / perLine)), 0);
   const parts = full.split(/(?<=[。！？!?\n])/).filter((p) => p.length);
   const pages: string[] = [];
   let cur = '';
   for (const p of parts) {
-    if (cur && plain(cur) + plain(p) > maxChars) { pages.push(cur); cur = p; }
+    if (cur && linesOf(cur + p) > maxLines) { pages.push(cur); cur = p; }
     else cur += p;
   }
   if (cur) pages.push(cur);
