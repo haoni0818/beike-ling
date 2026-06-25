@@ -226,6 +226,7 @@ import type {
 
 // 公开 build 开关：VITE_PUBLIC=1 时隐藏番外番外(R向)及尚不完善的「我的教室」入口，用于对外可玩 demo。
 const PUBLIC_BUILD = import.meta.env.VITE_PUBLIC === '1';
+const IS_MOBILE = typeof navigator !== 'undefined' && /Mobi|Android|iPhone|iPad|iPod|MicroMessenger|Windows Phone/i.test(navigator.userAgent);
 // ===== 多章节：按顺序排列，菜单按进度解锁，章末进入下一章 =====
 const EMPTY_QUIZ = { bankId: 'side', title: '', items: [], mockExam: { id: '', title: '', coldTestItems: [] } } as unknown as QuizBank;
 // 前 MAIN_COUNT 个是主线章节（进章节选择/进度解锁）；之后是番外群像（不计进度，从"番外"入口进）
@@ -965,6 +966,7 @@ export function App() {
   const [notebookTab, setNotebookTab] = useState<NotebookTab>('ability');
   const [profileId, setProfileId] = useState<ProfileId>('lu');
   const [hasSave, setHasSave] = useState(false);
+  const [mobileHintDismissed, setMobileHintDismissed] = useState(false);
   const [openPoint, setOpenPoint] = useState<string | null>(null);
   // 月考冷测
   const [mock, setMock] = useState<{ items: (QuizItem | SubjItem)[]; idx: number; results: QuizResult[]; realCount?: number; exam?: { passLine: number; passFlag: string; label: string; routeKey: string }; full?: { subject: '301' | '302'; label: string } } | null>(null);
@@ -1812,6 +1814,14 @@ export function App() {
 
   return (
     <div className="app-frame">
+      {IS_MOBILE && !mobileHintDismissed ? (
+        <div style={{ position: 'fixed', inset: 0, zIndex: 200, background: 'rgba(14,31,27,0.97)', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 16, padding: 32, textAlign: 'center', color: '#fffaf1', fontFamily: "'Noto Sans SC', sans-serif" }}>
+          <div style={{ fontSize: 44 }}>💻</div>
+          <div style={{ fontFamily: "'Noto Serif SC', serif", fontWeight: 700, fontSize: 22, color: '#d8b877' }}>建议用电脑体验</div>
+          <p style={{ fontSize: 15, lineHeight: 1.9, maxWidth: 520, margin: 0, color: '#cfe0da' }}>这是为电脑(16:9)设计的剧情 demo，含较多大图；手机 / 微信浏览器内存有限，可能卡顿或闪退。若用手机：点右上角「…」→「在浏览器打开」并横屏。</p>
+          <button onClick={() => setMobileHintDismissed(true)} style={{ marginTop: 8, padding: '12px 28px', borderRadius: 999, border: '1px solid #d8b877', background: 'linear-gradient(180deg,#2d564c,#21433b)', color: '#fffaf1', fontSize: 16, fontWeight: 700, cursor: 'pointer' }}>仍要继续 →</button>
+        </div>
+      ) : null}
       <main className={`stage ${booting ? 'is-booting' : ''}`} style={{ transform: `translate(-50%, -50%) scale(${scale})` }}>
         <section className={`screen screen--menu ${screen === 'menu' ? 'is-active' : ''}`}>
           <div className="menu-keyart" style={{ backgroundImage: `url(${bgMainMenuKeyart})` }} />
@@ -2508,7 +2518,7 @@ export function App() {
                   return (
                     <div className={`gal-card ${isUnlocked ? 'is-unlocked' : 'is-locked'}`} key={it.id}>
                       <div className="gal-thumb" onClick={() => (isUnlocked ? setLightbox(galUrl(it.full)) : unlockItem(it))}>
-                        <img src={galUrl(it.thumb) || galUrl(it.full)} alt={it.title} />
+                        <img src={galUrl(it.thumb) || galUrl(it.full)} alt={it.title} loading="lazy" decoding="async" />
                         {!isUnlocked ? <div className="gal-lock"><span>🔒</span><b>{it.cost} ★</b></div> : null}
                         <span className="gal-tier">{it.tier}</span>
                       </div>
@@ -2535,7 +2545,7 @@ export function App() {
                       return (
                         <div className={`gal-card ${isUnlocked ? 'is-unlocked' : 'is-locked'}`} key={it.id}>
                           <div className="gal-thumb" onClick={() => (isUnlocked ? setLightbox(cgUrl(it.full)) : unlockCG(it))}>
-                            <img src={cgUrl(it.full)} alt={it.title} />
+                            <img src={cgUrl(it.full)} alt={it.title} loading="lazy" decoding="async" />
                             {!isUnlocked ? <div className="gal-lock"><span>🔒</span><b>{cost} ★</b></div> : null}
                             <span className="gal-tier">{it.tier ?? 'CG'}</span>
                           </div>
@@ -2823,7 +2833,7 @@ export function App() {
                       const u = unlocked.includes(g.id);
                       return (
                         <button key={g.id} className={`pg-item ${u ? '' : 'is-locked'}`} onClick={() => unlockItem(g)}>
-                          <img src={galUrl(g.thumb) || galUrl(g.full)} alt={g.title} />
+                          <img src={galUrl(g.thumb) || galUrl(g.full)} alt={g.title} loading="lazy" decoding="async" />
                           {u ? null : <span className="pg-lock">🔒 {g.cost}★</span>}
                           <em>{(g.title.split('·')[1] ?? g.title).trim()}</em>
                         </button>
