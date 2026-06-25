@@ -1,0 +1,203 @@
+{
+  "chapterId": "side_group_05",
+  "title": "群像 · 升学季生涯辅导",
+  "summary": "升学季，一个高三女生被父母逼着填了金融专业，自己却只想学美术，整个人快要被两股力量撕开。学校临时组了一次生涯辅导：海归背景、清冷疏离的言修，从'职业规划'这一头切入；温柔治愈的江晚，从'心理疏导'那一头托住孩子。一个讲'人该怎样选择一生的方向'，一个讲'此刻这个人怎样才不至于碎掉'。你被夹在清冷与温柔之间，第一次真正看清这位平时几乎不露面的言老师——也第一次被他眼底那点不属于'疏离'的东西，轻轻钩住。",
+  "designNote": "群像事件§4-3，同时是言修隐藏线（§5）的关键露脸/埋钩点。言×江两位对照：言修=清冷疏离、职业理念/生涯规划视角；江晚=温柔共情、心理健康视角。锚定职业理念（以人为本的学生观、生涯发展）与学生心理健康（亲子冲突下的焦虑/自我认同）。1个knowledgeCheck（q_grp_career_01，单选，学生观/职业理念辨别）放在choice节点；1个choice（side05_pick1）微调 affection_jiang（言修无affection字段，故以setFlag埋钩，文本给心动beat）。结尾 setFlag met_yan_ch4 + event_career_guidance_done（满足隐藏线解锁前置）。言修清冷不狗血，疏离背后是'见过太多被规划毁掉的人生'。背景仅5键。线性，结尾落在dialogue节点。",
+  "route": "npc",
+  "characters": ["yan", "jiang"],
+  "students": [],
+  "valueFields": ["professionalSkill", "studentTrust", "classOrder", "ethicsRisk", "lawRisk", "examScore", "affection_lu", "affection_jiang", "affection_gu", "affection_shen", "affection_cheng"],
+  "note": "ethicsRisk/lawRisk 为逆向指标，越低越好。knowledgeCheck 指向 side_group_quiz.json。言修为隐藏线角色、暂无 affection 价值字段，其好感以剧情beat与flag表现；结尾 setFlag 满足 §5 隐藏线解锁前置。",
+  "nodes": [
+    {
+      "id": "side05_1",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "narrator",
+      "text": "升学季的咨询室，比平时多了一种说不清的紧绷。\n江晚临时叫我来搭把手：高三的苏晴，模考成绩很好，这两周却频频失眠、上课走神，昨天甚至在填志愿表时，当场把笔折断了。\n我推门进去，却愣了一下——屋里除了江晚，还坐着一个我几乎没在办公室见过的人。"
+    },
+    {
+      "id": "side05_2",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "narrator",
+      "text": "他穿一件熨得很平整的浅色衬衫，坐姿端正，神情却淡得像隔着一层玻璃。\n江晚轻声替我介绍：这是言修，言老师，前阵子从海外回来，挂在生涯规划这块，平时极少露面。\n（言修。我只在花名册上见过这名字。本人比传闻还要清冷三分——他朝我点头，礼貌、疏离，目光在我脸上停的时间，短得几乎没有。）"
+    },
+    {
+      "id": "side05_3",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "苏晴",
+      "text": "（角落里的女生抱着膝盖，声音闷闷的，带着哭过的鼻音）\n我妈说，学美术没出路，金融才稳。我爸说他们这辈子吃够了'不稳定'的苦……\n可那是我的人生啊。我画了八年，凭什么到头来，连选什么都不算数。"
+    },
+    {
+      "id": "side05_4",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "jiang",
+      "expression": "worried",
+      "text": "（江晚挪到苏晴身边，没有急着讲道理，只是先轻轻接住她的情绪）\n你折断那支笔的时候，心里一定特别难受，对不对？\n不是不懂事，是觉得自己最珍惜的那部分，没被人看见。这种'我说了不算'的无力，谁碰上都会喘不过气。先别急着想志愿——我们先把这口气，喘匀。"
+    },
+    {
+      "id": "side05_5",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "yan",
+      "expression": "neutral",
+      "text": "（言修一直安静听着，这时才开口。声音很轻，吐字却清晰，像在陈述一件他反复见证过的事）\n情绪要安抚，但她真正的困局，是'选择'本身。\n我见过太多孩子，被父母用'为你好'锁进一条所谓的稳路。十年后回头，稳是稳了，人却空了。生涯规划不是替她选一条路，是帮她看清——她到底想成为什么样的人，再让她自己，有底气去谈判。"
+    },
+    {
+      "id": "side05_6",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "narrator",
+      "text": "我心里轻轻一动。\n那句'人却空了'，他说得太平静，平静得反而像压着什么。一个本该最疏离的人，谈起'被规划毁掉的人生'时，眼底却有一瞬不属于冷淡的东西。\n（江晚在托住此刻的她，言修在替她看十年后的路。一个暖，一个远。两种方式，都是怕她碎掉。）"
+    },
+    {
+      "id": "side05_7",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "jiang",
+      "expression": "smile",
+      "text": "（江晚抬眼看了言修一眼，难得地、温柔地反驳了半句）\n言老师说得对，方向得她自己定。但她现在连'我可以有方向'都不敢信了——\n得先让她相信，自己的感受是值得被认真对待的，她才有力气去谈那个'十年后'。心，得先暖热，路才走得动。"
+    },
+    {
+      "id": "side05_8",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "yan",
+      "expression": "neutral",
+      "text": "（言修看向江晚，清冷的神色里第一次有了一点松动，竟没有反驳）\n……江老师补得对。\n我习惯了先讲'路'，是因为我见多了'心暖热了、路却被堵死'的结局。但你说得对——没有此刻的她，就没有十年后的她。\n（他转向我，目光意外地认真）你呢？站在这间屋子里，你觉得——我们到底该把这孩子，当成一个'要规划的项目'，还是一个'人'？"
+    },
+    {
+      "id": "side05_8b",
+      "type": "choice",
+      "background": "counseling_room",
+      "speaker": "yan",
+      "expression": "serious",
+      "knowledgeCheck": "q_grp_career_01",
+      "text": "（言修的问题看似随口，分量却很重。江晚也安静地看过来。\n苏晴抬起头，红着眼睛等我说话。\n我想了想——这道，关乎我们究竟把学生当成什么。）",
+      "examTags": {
+        "subject": "301",
+        "module": "教育理念（职业理念·学生观）",
+        "examPoint": "'以人为本'的学生观——学生是发展中的、独立意义的、有自身选择权的完整的人",
+        "questionType": "材料分析"
+      },
+      "choices": [
+        {
+          "id": "A",
+          "text": "当成一个'独立意义的、发展中的完整的人'——尊重她的兴趣与选择权，帮她和父母平等对话，而不是替任何一方下结论。",
+          "quality": "optimal",
+          "effects": {"professionalSkill": 2, "studentTrust": 2, "classOrder": 0, "ethicsRisk": -1, "lawRisk": 0, "examScore": 3, "affection_jiang": 2},
+          "feedback": "对。这正是'以人为本'的学生观：学生是有独立人格、独立意义的人，不是被任意安排的附属品；也是发展中的人，有犯错与自主选择的权利。教师的角色是引导、是搭桥，不是替学生或替家长拍板。言修的'生涯规划'与江晚的'心理疏导'，殊途同归于此。",
+          "answerKeywords": ["以人为本", "独立意义的人", "发展中的人", "尊重选择权", "搭桥而非代选"]
+        },
+        {
+          "id": "B",
+          "text": "当成一个要被规划好的项目——用专业测评帮她算出最优解，告诉她哪条路投入产出比最高。",
+          "quality": "suboptimal",
+          "effects": {"professionalSkill": 0, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 1, "lawRisk": 0, "examScore": 0, "affection_jiang": 0},
+          "feedback": "测评、信息是工具，方向却不能替她'算'出来。把人当成可优化的项目，恰恰是言修最警惕的'被规划毁掉的人生'。以人为本，学生是目的本身，不是被最优化的对象。",
+          "answerKeywords": ["把人当项目（错）", "工具不能替代选择权"]
+        },
+        {
+          "id": "C",
+          "text": "父母毕竟为她好、也更有经验——还是该劝她听父母的，选稳妥的金融。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -2, "studentTrust": -2, "classOrder": 0, "ethicsRisk": 2, "lawRisk": 0, "examScore": -3, "affection_jiang": -1},
+          "feedback": "这是把学生当成父母意志的延伸，剥夺其独立人格与选择权，与'以人为本'的学生观相悖。教师不是替家长压制学生的工具；尊重学生的主体性，才是职业理念的底线。",
+          "answerKeywords": ["剥夺选择权（错）", "学生非家长附属"]
+        },
+        {
+          "id": "D",
+          "text": "她还是孩子、想法不成熟——先别管选择，把成绩稳住、把志愿先填了再说。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -1, "studentTrust": -2, "classOrder": 0, "ethicsRisk": 1, "lawRisk": 0, "examScore": -2, "affection_jiang": -1},
+          "feedback": "把学生当成'不成熟、不必尊重其意愿'的对象，是对'发展中的人'的误读——发展中恰恰意味着她有权在引导下学习自主选择，而非被绕过。无视主体性，正是亲子冲突的根源。",
+          "answerKeywords": ["否定主体性（错）", "发展中≠不被尊重"]
+        }
+      ]
+    },
+    {
+      "id": "side05_9",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "yan",
+      "expression": "neutral",
+      "text": "（言修听完，安静了一会儿。然后，他唇角极轻地动了一下——不是笑，却比笑更让人意外）\n……'搭桥，而不是替她拍板。'\n你比很多做了多年生涯的人，都更明白这句话的分量。（他垂下眼）我回国，就是因为太多人，把搭桥做成了筑墙。"
+    },
+    {
+      "id": "side05_10",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "jiang",
+      "expression": "smile",
+      "text": "（江晚把一杯温水递到苏晴手里，柔声接话）\n听见没，苏晴？两位老师的意思是一样的——\n你的感受，值得被认真对待；你的方向，该由你自己来定。我们能做的，是陪你把和爸妈的那场对话，准备得稳一点、有底气一点。不是替你打，是站在你这边。"
+    },
+    {
+      "id": "side05_11",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "苏晴",
+      "text": "（苏晴捧着温水，眼泪掉下来，却是松了一口气的那种）\n原来……我想画画，不是'不懂事'。\n（她吸了吸鼻子，小声）那……老师，你们能帮我，跟我爸妈好好说一次吗？我自己说，他们不听。"
+    },
+    {
+      "id": "side05_12",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "narrator",
+      "text": "言修和江晚对视了一眼，一个点头应下'生涯'那部分，一个应下'沟通与心理'那部分，分工利落得像配合过千百次。\n（清冷的人负责丈量远方，温柔的人负责焐热当下。而我，好像刚好补上了中间那座桥的一块砖。）\n这一刻，连言修那层玻璃似的疏离，都被屋里的暖光化开了一点。"
+    },
+    {
+      "id": "side05_pick1",
+      "type": "choice",
+      "background": "counseling_room",
+      "speaker": "narrator",
+      "expression": "neutral",
+      "text": "（苏晴被家长接走前，言修起身要走。\n他平时几乎不在办公室落脚，这一别，再见不知何时。\n临走这一句，我想对谁说？）",
+      "choices": [
+        {
+          "id": "A",
+          "text": "送江晚回咨询室，谢谢她又一次叫上我、信我能搭把手。",
+          "quality": "optimal",
+          "effects": {"studentTrust": 1, "affection_jiang": 2},
+          "feedback": "江晚弯起眼睛：'因为今天，是你那句话，真正接住了她。'她替你掖好被风吹乱的资料，'下次升学季，我还叫你。'——被这个最会听的人信任，心里暖暖的。",
+          "answerKeywords": []
+        },
+        {
+          "id": "B",
+          "text": "叫住言修，问他那句'见过太多被规划毁掉的人生'，到底见过什么。",
+          "quality": "optimal",
+          "effects": {"professionalSkill": 1, "studentTrust": 1},
+          "setFlag": {"asked_yan_past": true, "route_lean_yan": 1},
+          "feedback": "言修脚步顿住，回头看了你一眼，那目光比之前任何一次都长。'……有些事，说来话长。'他没有答，却也没有走开，'你是第一个，问我这句话背后的人。'清冷的人难得地，没有把门关上。（这扇门后，藏着他的故事。）",
+          "answerKeywords": []
+        },
+        {
+          "id": "C",
+          "text": "两人都道一句辛苦，把今天'清冷与温柔'各记一笔在手账上。",
+          "quality": "optimal",
+          "effects": {"professionalSkill": 1, "affection_jiang": 1},
+          "setFlag": {"noted_yan_jiang": true},
+          "feedback": "你向两位老师道谢，言修微微颔首便走，江晚却多看了你一眼，笑得意味深长：'你好像……让言老师，多说了好几句话。'你愣住——是吗？回头望去，那道清冷的背影，似乎比来时，少了一分拒人千里。",
+          "answerKeywords": []
+        }
+      ]
+    },
+    {
+      "id": "side05_13",
+      "type": "dialogue",
+      "background": "corridor",
+      "speaker": "yan",
+      "expression": "neutral",
+      "text": "（走廊尽头，言修忽然停步，没回头，声音淡淡地飘过来）\n今天，谢谢你。\n做生涯这行最难的，不是规划，是遇上一个真把孩子当'人'看的人。这样的人，越来越少了。\n（他顿了顿）……我叫言修。以后，或许还会麻烦你。"
+    },
+    {
+      "id": "side05_14",
+      "type": "dialogue",
+      "background": "corridor",
+      "speaker": "narrator",
+      "text": "他说完，浅色的背影便融进走廊尽头的天光里，安静得像从没来过。\n可我站在原地，心跳莫名快了半拍。\n（言修。一个清冷得像隔着玻璃的人，却在谈起'别让人生被规划毁掉'时，露出过一瞬不设防的眼神。\n他到底见过什么？那句'还会麻烦你'，又是真的吗？\n我把这个名字，和那道疏离又柔软的背影，一起，轻轻记进了手账的某一页。\n——总觉得，关于他的故事，今天才刚刚翻开第一行。）"
+    }
+  ]
+}

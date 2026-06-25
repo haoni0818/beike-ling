@@ -1,0 +1,367 @@
+{
+  "chapterId": "core_ch04",
+  "title": "第四章 · 少年心事",
+  "summary": "高一(7)班的陈屿这阵子像换了个人——上课走神、顶撞老师、把'你们大人根本不懂'写在周记里，又在被关心时倔强地把头扭开。江晚把你拉进心理中心，说想让你陪她一起，'看懂'这个正卡在青春期里的男孩。一个下午，三段对话，她带你走过皮亚杰、埃里克森，又落到青春期那些拧巴又柔软的心事。窗外梧桐影子慢慢挪过桌面，我忽然发现，被她'看懂'的，好像不止那个少年。",
+  "designNote": "百合线主章：江晚为绝对主导，心动写成细腻克制的同性吸引——并肩、低语、共写一行字、目光多停半秒，从不越界，得体收尾。学生陈屿仅为教学对象与事件源，绝不涉及恋爱或性化描写。三考点(皮亚杰认知发展/埃里克森社会性发展/青春期心理特点与矛盾)各包在一段'剧情讲授→马上做题→应用→反馈→心动'的微循环里，结构镜像第一章。沈亦舟/顾承可极短cameo。贯穿钩子：江晚那本只对你翻开的、写满学生名字的旧笔记。",
+  "characters": ["jiang", "shen", "gu"],
+  "students": ["陈屿"],
+  "valueFields": ["professionalSkill", "studentTrust", "classOrder", "ethicsRisk", "lawRisk", "examScore", "affection_lu", "affection_jiang", "affection_gu", "affection_shen"],
+  "note": "ethicsRisk/lawRisk 为逆向指标，越低越好。knowledgeCheck 指向 chapter04_quiz.json 的题目 id。",
+  "nodes": [
+    {
+      "id": "ch04_intro_1",
+      "type": "dialogue",
+      "background": "corridor",
+      "speaker": "narrator",
+      "text": "周四下午第三节，走廊空得只剩下我的脚步声。\n我刚下课，迎面就撞见高一(7)班的陈屿——他把书包抱在胸前，肩膀绷成一张拉满的弓，从顾承办公室冲出来，红着眼眶，丢下一句'我没有'，头也不回地擦肩而过。\n（这孩子……上个月还笑嘻嘻地抢着帮我搬卷子。这才几天，怎么就成了这副样子。）"
+    },
+    {
+      "id": "ch04_intro_2",
+      "type": "dialogue",
+      "background": "corridor",
+      "speaker": "顾承",
+      "expression": "worried",
+      "text": "（顾承追到门口，没追上，无奈地揉了揉额角，一抬眼看见我）\n哎，你也看见了。陈屿这阵子——上课走神、张口顶嘴，作业空一半，周记上一行大字'你们大人根本不懂'。我今天不过说重了一句，他当场就炸。\n（他叹了口气）带班这些年，'闹'的我有招，可这种把自己关起来、越关心越往后缩的'拧'孩子，我是真不如江老师懂。我已经拜托她了——她说，想叫你也一块儿来。"
+    },
+    {
+      "id": "ch04_intro_3",
+      "type": "dialogue",
+      "background": "corridor",
+      "speaker": "沈亦舟",
+      "expression": "smile",
+      "text": "（沈亦舟端着半杯奶茶晃过来，凑热闹）哟，陈屿那小子又炸毛啦？\n（他冲我挤眉弄眼）江老师点名要你去——啧，我都没这待遇。你俩最近，挺合拍啊。\n（我瞪他一眼，他笑着举手投降，把我往心理中心方向推）去吧去吧，别让人家等。"
+    },
+    {
+      "id": "ch04_a_teach_1",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "smile",
+      "text": "（推开门，还是那一屋子暖光和淡淡茶香。她正低头翻一本封皮磨旧了的笔记，听见动静抬头，眉眼弯了一下）\n你来了。我就知道你会来。\n（她把一杯温水推到我手边，指尖很轻地碰了下杯壁）陈屿的事，顾老师跟你说了吧。先别急着'怎么办'——想读懂一个十五岁的孩子，得先知道，他的脑子，正在经历什么。"
+    },
+    {
+      "id": "ch04_a_teach_2",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "smile",
+      "text": "（她用指尖在桌上轻轻点出四级台阶的样子）你看，皮亚杰说，人的脑子是一级一级'长'上来的，顺序固定，谁也跳不过——\n最底下是**感知运动阶段**(0-2岁)，全靠动作和感觉认世界，直到有一天他懂了'东西藏起来也还在'，这叫客体永久性；\n往上是**前运算阶段**(2-7岁)，会说话、会用符号了，可还自我中心、想不回头，也还没有守恒；\n再上一级**具体运算阶段**(7-11岁)，能讲逻辑、懂守恒了，只是离不开眼前那个具体的东西；\n站到最高处，才是**形式运算阶段**(11岁以后)——这时候，他终于能抛开实物，在脑子里做抽象的、假设演绎的推理。"
+    },
+    {
+      "id": "ch04_a_teach_3",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "smile",
+      "text": "陈屿这样的中学生，正处在**形式运算阶段**。这特别关键——他第一次能在脑子里'假设':'如果……那会怎样'，能反过来审视大人、审视规则，甚至审视他自己。\n所以他那句'你们根本不懂'，不全是叛逆。是他刚刚拥有了抽象思辨的能力，正笨拙地，第一次用它。\n（她说到这儿，眼里有种很温的光）……能理解到这一层，才不会把'会想了'当成'变坏了'。"
+    },
+    {
+      "id": "ch04_a_teach_4",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "smile",
+      "text": "顺手帮你把最爱考的'守恒'辨清楚：把同样多的水，从矮胖杯倒进高瘦杯，**前运算**的孩子会说'变多了'，因为他只盯着'变高了'这一个维度，思维不可逆；到了**具体运算**，孩子知道'没倒掉就还是那么多'——这就叫**守恒**。\n（她倾身过来，把那本旧笔记翻到画着两个杯子的那页，推到我面前，发梢扫过我的手背，温温的）来——趁热，考你一道。"
+    },
+    {
+      "id": "ch04_a_apply",
+      "type": "choice",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "smile",
+      "knowledgeCheck": "q_piaget_01",
+      "text": "（我答完，她眼里漾开一点笑意，轻轻'嗯'了一声）\n那往下走——如果让你跟顾老师解释'为什么陈屿现在这么爱钻牛角尖、爱跟大人辩'，你会从皮亚杰哪个角度切入？",
+      "examTags": {
+        "subject": "302",
+        "module": "中学生发展心理",
+        "examPoint": "皮亚杰认知发展阶段（形式运算阶段特征）在理解中学生思维中的应用",
+        "questionType": "材料分析"
+      },
+      "choices": [
+        {
+          "id": "A",
+          "text": "他已进入形式运算阶段，能抽象思考、假设演绎，开始反思和质疑成人与规则，是认知发展的正常表现。",
+          "quality": "optimal",
+          "effects": {"professionalSkill": 2, "studentTrust": 1, "classOrder": 0, "ethicsRisk": -1, "lawRisk": 0, "examScore": 3, "affection_jiang": 3},
+          "feedback": "对。形式运算阶段的标志正是抽象逻辑与假设演绎，'爱辩、爱质疑'是这种新能力的表现，应理解为正常发展而非单纯叛逆。",
+          "answerKeywords": ["形式运算阶段", "抽象逻辑思维", "假设演绎推理", "反思质疑成人", "正常发展"]
+        },
+        {
+          "id": "B",
+          "text": "他还停在具体运算阶段，只能就事论事，所以才听不进抽象的大道理。",
+          "quality": "suboptimal",
+          "effects": {"professionalSkill": 0, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": -1, "affection_jiang": 0},
+          "feedback": "阶段判断错了。具体运算(7-11岁)依赖具体事物、缺抽象推理；而'爱辩、会假设质疑'恰恰说明他已进入形式运算阶段。",
+          "answerKeywords": ["误判为具体运算", "实为形式运算"]
+        },
+        {
+          "id": "C",
+          "text": "他思维还自我中心、不守恒，所以认死理。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -1, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": -2, "affection_jiang": -1},
+          "feedback": "'自我中心、不守恒'是前运算阶段(2-7岁)的特征，套在十五岁中学生身上是阶段性概念硬伤，材料题里必扣分。",
+          "answerKeywords": ["前运算特征误用", "自我中心/不守恒不适用"]
+        },
+        {
+          "id": "D",
+          "text": "认知发展跟这些无关，他就是青春期想气大人、故意作对。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -1, "studentTrust": -1, "classOrder": 0, "ethicsRisk": 1, "lawRisk": 0, "examScore": -2, "affection_jiang": -1},
+          "feedback": "把发展性的认知变化简单归为'故意作对'，既不专业也容易激化对抗，恰恰是要避免的成人视角误读。",
+          "answerKeywords": ["否认认知发展", "归因为故意作对"]
+        }
+      ]
+    },
+    {
+      "id": "ch04_a_after",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "smile",
+      "text": "（她合上笔记，指尖在那页杯子图上停了一瞬）\n你看，同一个'顶嘴'，在不懂的人眼里是麻烦，在懂的人眼里是信号。\n陈屿不是坏了，是'长'到了一个新阶段，却还没人教他怎么用这副新脑子。咱们要做的，不是按住他，是陪他学会用。"
+    },
+    {
+      "id": "ch04_a_heart",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "narrator",
+      "text": "她说话时，侧脸很安静，睫毛在暖光里投下浅浅一小片影。\n我忽然意识到，我刚才有半分钟没在看笔记，在看她。\n（她总能把'麻烦'翻译成'信号'。和她待在一间屋子里，连空气都好像变得能呼吸了。……我在想什么呢。低头，喝水。）"
+    },
+    {
+      "id": "ch04_t1",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "smile",
+      "text": "（她给我续了点温水，话锋自然地往下接）\n光懂他'脑子怎么想'还不够。他这阵子最折磨的，其实是另一件事——\n他在反复地问自己：'我到底是谁？我想成为什么样的人？'\n这就要说到另一个人了，埃里克森。"
+    },
+    {
+      "id": "ch04_b_teach_1",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "smile",
+      "text": "（她把茶杯捧在手心，像在讲一个很长的故事）皮亚杰讲的是'怎么想'，埃里克森讲的，是'怎么一步步长成一个人'。\n他说，人这一生要过八道关，每道关口都横着一对矛盾，过去了就长一分——婴儿期闯'信任对不信任'，幼儿期闯'自主对羞愧'，学龄前闯'主动对内疚'，学龄期闯'勤奋对自卑'……一关接一关。\n（她抬眼看我，目光顿了顿）而陈屿，正卡在最要紧、也最常被人考到的那一关上。"
+    },
+    {
+      "id": "ch04_b_teach_2",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "serious",
+      "text": "（她的声音沉下来一点）青春期，大约十二到十八岁，这一关的名字叫——**自我同一性 对 角色混乱**。\n这年纪的孩子，心里头日夜在问同一道题：'我到底是谁？我从哪儿来，又要往哪儿去？'他得把昨天的自己、今天的自己、还有别人眼里的自己，慢慢拼成一个稳稳的、连得起来的'我'。\n拼成了，就形成**自我同一性**，从此有了'忠诚'这份底气；拼不成，就掉进**角色混乱**里——迷茫、发空，像没头苍蝇一样东撞西撞。"
+    },
+    {
+      "id": "ch04_b_teach_3",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "smile",
+      "text": "陈屿写'你们根本不懂'，其实潜台词是'我自己也还没搞懂我自己'。\n他试探、推开、又渴望被看见——这不是要跟谁对着干，是在'我是谁'这道题上，一遍遍打草稿。\n（她笑了笑，声音放得很轻）我们能给他的，不是答案，是一面温和的镜子，让他在我们这儿，敢于把不同版本的自己，都试一试。"
+    },
+    {
+      "id": "ch04_b_teach_4",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "smile",
+      "text": "（她像怕我吃亏似的，多叮嘱一句）后面几关考试最爱埋雷，你顺手记牢：往后走，成年早期是**亲密对孤独**，成年中期是**繁殖（创造）对停滞**，老年期是**自我整合对绝望**。\n还有个最常踩的坑——千万别把青春期这关错记成'勤奋对自卑'，那一对，是**学龄期(6-12岁)**的事。\n（她又把那本旧笔记往我这边推了半寸，两人的影子在桌面上悄悄叠到了一起）来，再考你一道。"
+    },
+    {
+      "id": "ch04_b_apply",
+      "type": "choice",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "smile",
+      "knowledgeCheck": "q_erikson_01",
+      "text": "（她托着腮看我，眼神鼓励）\n那你说说——用埃里克森的理论看，陈屿现在最需要被支持的，是哪一对矛盾的顺利度过？",
+      "examTags": {
+        "subject": "302",
+        "module": "中学生发展心理",
+        "examPoint": "埃里克森社会性发展阶段（青春期：自我同一性对角色混乱）的辨别与应用",
+        "questionType": "材料分析"
+      },
+      "choices": [
+        {
+          "id": "A",
+          "text": "自我同一性 对 角色混乱——帮他把'我是谁'整合清楚，形成稳定的自我认同。",
+          "quality": "optimal",
+          "effects": {"professionalSkill": 2, "studentTrust": 1, "classOrder": 0, "ethicsRisk": -1, "lawRisk": 0, "examScore": 3, "affection_jiang": 3},
+          "feedback": "对。12-18岁青春期的核心矛盾正是自我同一性对角色混乱，'我是谁'的探索与整合是这一阶段的发展任务。",
+          "answerKeywords": ["自我同一性对角色混乱", "12-18岁青春期", "自我认同整合", "忠诚品质"]
+        },
+        {
+          "id": "B",
+          "text": "勤奋 对 自卑——多表扬他的努力，避免他产生自卑。",
+          "quality": "suboptimal",
+          "effects": {"professionalSkill": 0, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": -1, "affection_jiang": 0},
+          "feedback": "阶段错位。'勤奋对自卑'是学龄期(6-12岁)的矛盾；陈屿已进入青春期，核心矛盾是自我同一性对角色混乱。这是最高频的混淆点。",
+          "answerKeywords": ["勤奋对自卑属学龄期", "非青春期"]
+        },
+        {
+          "id": "C",
+          "text": "亲密 对 孤独——引导他多交朋友，别太孤僻。",
+          "quality": "suboptimal",
+          "effects": {"professionalSkill": 0, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": -1, "affection_jiang": 0},
+          "feedback": "提前了一个阶段。'亲密对孤独'是成年早期的矛盾；十五岁的陈屿还在解决'我是谁'，应先支持自我同一性的建立。",
+          "answerKeywords": ["亲密对孤独属成年早期", "尚未到该阶段"]
+        },
+        {
+          "id": "D",
+          "text": "自主 对 羞愧——给他更多自己做主的空间就够了。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -1, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": -2, "affection_jiang": -1},
+          "feedback": "差得更远。'自主对羞愧'是幼儿期(1.5-3岁)的矛盾，套在中学生身上属阶段性概念硬伤，材料题必扣分。",
+          "answerKeywords": ["自主对羞愧属幼儿期", "阶段误用"]
+        }
+      ]
+    },
+    {
+      "id": "ch04_b_after",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "smile",
+      "text": "（她轻轻拍了下手，像在为我高兴）\n答得真好。你发现没有——皮亚杰让我们懂他'怎么想'，埃里克森让我们懂他'在找什么'。\n两把钥匙，一把开思维，一把开心事。可真要走到他身边，还差最后一块——青春期这个年纪，本身就是一团拧巴的矛盾。"
+    },
+    {
+      "id": "ch04_t2",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "narrator",
+      "text": "她起身去倒第二壶茶，路过窗边，午后的光把她整个人镀上一层暖金。\n她回头招呼我过去看墙上的一张手绘表——那是她自己画的'青春期心理地图'。\n（这间屋子里的每一样东西，好像都被她认真对待过。包括，刚才那个慌张答题的我。）"
+    },
+    {
+      "id": "ch04_c_teach_1",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "smile",
+      "text": "（她指着墙上的手绘表，并肩站着，肩膀离我很近）\n中学生这个阶段最大的特点，是**身心发展不平衡**——身体像窜了天的竹子，心理却还没跟上，于是处处是拧巴。\n这种拧巴，集中成几对很经典的矛盾。陈屿身上，全占了。"
+    },
+    {
+      "id": "ch04_c_teach_2",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "smile",
+      "text": "（她一条条指给我看，语气像在描一个人的侧脸）\n第一对，**成人感与幼稚性并存**——嘴上是'别管我，我长大了'，转头遇上点事，又摔门、又赌气，孩子气得很；\n第二对，**心理闭锁性与开放性并存**——对大人他把心门关得死死的'你们不懂'，可对懂他的同伴、追的偶像，又恨不得掏心掏肺；\n第三对，**独立性与依赖性并存**——他拼了命要挣脱、要独立，心底里其实，还那么需要有人撑他、认他。"
+    },
+    {
+      "id": "ch04_c_teach_3",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "serious",
+      "text": "所以对陈屿，硬碰硬最蠢——你越往'幼稚'那头戳，他越要拿'成人感'顶回来。\n聪明的做法是顺着他那份'我已经长大了'的成人感，把他当一个可以平等商量的人来谈，给他选择、给他台阶；同时悄悄接住他那份没说出口的依赖。\n（她转头看我，离得很近，声音压得很柔）……懂了这层，你就不会再被他那句'你们不懂'推开了。"
+    },
+    {
+      "id": "ch04_c_teach_4",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "smile",
+      "text": "（她拿起笔，在便签上写下'成人感 vs 幼稚 / 闭锁 vs 开放 / 独立 vs 依赖'，递给我时，手指和我的碰了一下，谁都没立刻收回）\n这张你拿着。\n（窗外梧桐的影子正好移到我们交叠的手上。我听见自己的心跳，比刚才答题时还要响。）来——最后一道，答完，咱们就去找陈屿。"
+    },
+    {
+      "id": "ch04_c_apply",
+      "type": "choice",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "smile",
+      "knowledgeCheck": "q_adolescent_01",
+      "text": "（她把便签轻轻按在我手心，眼里带笑）\n陈屿一边吼'别管我，我自己的事'，一边又偷偷在意顾老师有没有去找他。用青春期心理特点看，这最典型地体现了哪对矛盾？该怎么应对？",
+      "examTags": {
+        "subject": "302",
+        "module": "中学生发展心理",
+        "examPoint": "青春期心理矛盾（独立性与依赖性并存 / 成人感与幼稚性并存）的辨别与教育应对",
+        "questionType": "材料分析"
+      },
+      "choices": [
+        {
+          "id": "A",
+          "text": "独立性与依赖性并存——尊重他独立的需要、给他自主空间，同时不动声色地接住他对支持的需要。",
+          "quality": "optimal",
+          "effects": {"professionalSkill": 2, "studentTrust": 2, "classOrder": 0, "ethicsRisk": -1, "lawRisk": 0, "examScore": 3, "affection_jiang": 3},
+          "feedback": "对。'嘴上要独立、心里仍依赖'是独立性与依赖性并存的典型；应对的关键是既尊重其独立意识，又默默满足其被支持的内在需要。",
+          "answerKeywords": ["独立性与依赖性并存", "尊重独立意识", "满足被支持需要", "因势利导"]
+        },
+        {
+          "id": "B",
+          "text": "心理闭锁性与开放性并存——他只是把心门关上了，多陪他聊就会打开。",
+          "quality": "suboptimal",
+          "effects": {"professionalSkill": 1, "studentTrust": 1, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": 1, "affection_jiang": 1},
+          "feedback": "闭锁与开放并存也确实存在，方向不算错；但本题'要独立又暗暗依赖'最直接对应的是独立性与依赖性的矛盾，辨别要更精准。",
+          "answerKeywords": ["闭锁与开放（不够对症）", "宜判独立vs依赖"]
+        },
+        {
+          "id": "C",
+          "text": "成人感与幼稚性并存——他就是装大人，本质还是小孩，哄哄就行。",
+          "quality": "suboptimal",
+          "effects": {"professionalSkill": 0, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": 0, "affection_jiang": 0},
+          "feedback": "成人感与幼稚性并存是青春期重要矛盾，但本情境核心是'要独立又依赖'；且'哄哄就行'轻视了他的成人感，反而易激化对抗。",
+          "answerKeywords": ["成人感vs幼稚（偏题）", "勿轻视成人感"]
+        },
+        {
+          "id": "D",
+          "text": "他这是故意作对，必须先立威，让他知道谁说了算。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -2, "studentTrust": -2, "classOrder": 1, "ethicsRisk": 2, "lawRisk": 0, "examScore": -3, "affection_jiang": -2},
+          "feedback": "把青春期矛盾误读成'故意作对'，再用'立威压制'应对，正戳中他的成人感、激化对立，是与青春期教育规律相反的高发雷区。",
+          "answerKeywords": ["误读为故意作对", "压制立威激化矛盾"]
+        }
+      ]
+    },
+    {
+      "id": "ch04_c_after",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "smile",
+      "text": "（她长长舒了口气，像卸下一桩心事，转身把那本旧笔记轻轻合上，又顿了顿，竟把它放进了我手里）\n这本，你先拿着用几天吧。里面是我这些年记下的，每一个'陈屿'。\n……以前，从没给别人翻看过。"
+    },
+    {
+      "id": "ch04_c_heart",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "narrator",
+      "text": "笔记还带着她的体温和一点很淡的茶香。封皮内页，密密麻麻全是学生的名字、日期、一行行小小的批注，认真得让人鼻子发酸。\n（她把听了那么多人心事的自己，连同这本只对我翻开的本子，一起，轻轻交到了我手上。）\n我抬头，正撞进她的目光里。她先笑了，我的耳根，悄悄热了起来。"
+    },
+    {
+      "id": "ch04_end_1",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "smile",
+      "text": "（夕阳把咨询室染成蜜色。陈屿被顾老师轻轻领了进来，站在门口，警惕又局促。江晚没有立刻看他，只是给他也倒了杯温水，放在他够得着的地方）\n（她侧过头，对我极轻地说）你看——别急着'解决'他。先让他知道，这间屋子里，有人愿意把他当一个正在长大的人，好好看见。\n剩下的，我们一起，慢慢来。"
+    },
+    {
+      "id": "ch04_end_2",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "narrator",
+      "text": "我抱着那本沉甸甸的旧笔记走出心理中心，回头望了一眼。\n暖光里，江晚正微微俯身，认真听陈屿一个字一个字地、终于肯开口。\n这一个下午，我学会了用皮亚杰看他怎么想，用埃里克森看他在找什么，用青春期那几对矛盾，去接住一个少年所有的拧巴与柔软。\n（也是这一个下午，我好像第一次看清——最会读懂别人少年心事的人，自己心里那盏灯，也值得有人，替她，好好守着。）"
+    },
+    {
+      "id": "ch04_end",
+      "type": "summary",
+      "background": "counseling_room",
+      "speaker": "narrator",
+      "text": "（少年心事的这一课落幕。把今天的得失，一条条记进手账吧——人记进去了，分也得记进去。）",
+      "review": {
+        "learnedExamPoints": [
+          "302-中学生发展心理-皮亚杰认知发展四阶段（重点：形式运算阶段/守恒）— 江晚",
+          "302-中学生发展心理-埃里克森社会性发展八阶段（青春期：自我同一性对角色混乱）— 江晚",
+          "302-中学生发展心理-青春期心理特点与矛盾（身心不平衡·成人感与幼稚性·闭锁与开放·独立与依赖）— 江晚"
+        ],
+        "structure": "三个考点都从陈屿这一桩青春期事件长出来：他爱辩爱质疑→皮亚杰形式运算；他追问'我是谁'→埃里克森自我同一性；他要独立又依赖→青春期心理矛盾。走的是'剧情讲授→马上做题→应用→反馈'。章末月考为冷测。",
+        "mockExam": "core_ch04_mock",
+        "recommendedReview": [
+          "答错皮亚杰→江晚重讲四阶段顺序与形式运算/守恒的辨别",
+          "答错埃里克森→江晚重讲八阶段，重点青春期自我同一性 vs 学龄期勤奋对自卑",
+          "答错青春期特点→江晚重讲身心不平衡及四对矛盾，重点独立性与依赖性的应对"
+        ]
+      }
+    }
+  ]
+}

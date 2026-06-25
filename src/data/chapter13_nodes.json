@@ -1,0 +1,1038 @@
+{
+  "chapterId": "core_ch13",
+  "title": "第十三章 · 学习的引擎",
+  "summary": "期中后的高二(3)班像一台失速的引擎：有人埋头苦学却越学越焦虑，有人一上难题就卡死，有人看书三小时记不住一行。江晚把这一摞'学不进去'的个案铺在我面前，说想和我一起，给这群孩子的学习装回'引擎'——不是逼他们再用力一点，而是弄清楚到底是哪个齿轮咬不上。这一回，我们在心理咨询室、空教室、办公室里，从动机讲到情绪意志，七段对手戏，七组高频考点。她讲学习心理的样子认真又温柔，我一边记笔记，一边偷偷把她也记进了心里。",
+  "designNote": "乙女向：第一人称心声(旁白)贯穿。LEAD=江晚(女,百合可攻略,温柔细腻,心理担当)，独挑大梁。本章用'给失速的高二(3)班装回学习引擎'这一桩事，串起学习心理七大考点：动机(内外/耶克斯-多德森倒U)、感知觉规律、注意种类与品质、思维与问题解决、学习策略三类、智力与能力理论、情绪情感与意志。每考点一段有 beat 的对手戏，走'剧情讲授→随堂检测(knowledgeCheck)→应用选择→反馈→心动'。江晚的心动走克制路线：并肩翻个案、暮色对视、替我挡住自我怀疑，不越界。学生仅为教学对象，绝不涉及恋爱。章末月考为冷测 core_ch13_mock。",
+  "characters": [
+    "jiang"
+  ],
+  "students": [
+    "陈屿",
+    "周也",
+    "林小满"
+  ],
+  "valueFields": [
+    "professionalSkill",
+    "studentTrust",
+    "classOrder",
+    "ethicsRisk",
+    "lawRisk",
+    "examScore",
+    "affection_lu",
+    "affection_jiang",
+    "affection_gu",
+    "affection_cheng",
+    "affection_shen"
+  ],
+  "note": "ethicsRisk/lawRisk 为逆向指标，越低越好。knowledgeCheck 指向 chapter13_quiz.json 的题目 id。",
+  "nodes": [
+    {
+      "id": "ch13_intro_1",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "narrator",
+      "text": "期中成绩单贴出去的那个下午，高二(3)班像泄了气。\n我抱着一沓任课老师转来的'问题清单'推开心理咨询室的门——暖光、绿植、还有靠窗坐着的江晚。她面前摊开七八份学生个案，正一份份比对。\n（不知从什么时候起，往这间屋子跑，成了我一天里最不抗拒的事。）"
+    },
+    {
+      "id": "ch13_intro_2",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "worried",
+      "text": "（她抬头，看见是我，眉头松开一点）你来得正好。\n你看这个班——陈屿，越学越焦虑，一上难题就僵住；周也，看书三小时记不住一行；林小满，明明聪明，却总觉得自己'就这水平了'。\n班主任说他们'不够努力'，可我翻了一下午——他们不是不用力，是引擎里有齿轮咬不上。"
+    },
+    {
+      "id": "ch13_intro_3",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "neutral",
+      "text": "（她把个案往我这边推了推，指尖在纸上点了点）\n学习这台引擎，得有油门(动机)、有进气(感知与注意)、有变速箱(思维与策略)，还得有底盘(智力)和散热(情绪意志)。哪一处坏了，光踩油门只会熄火。\n你愿不愿意，陪我把这一个个齿轮，一颗颗对着拆开看看？一个人想，总差个能搭话的人。"
+    },
+    {
+      "id": "ch13_intro_4",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "narrator",
+      "text": "她说'差个能搭话的人'时，眼睛是看着我的。\n（我想起她说过，这间屋子平时只有她一个人在听别人说话。）\n我拉了把椅子坐到她身边：'拆。从哪台引擎的哪颗齿轮开始？'\n她弯了下眼睛，那点笑意比窗外的暮色还软：'从最根上的那颗——油门，开始。'"
+    },
+    {
+      "id": "ch13_a_teach_1",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "smile",
+      "text": "（她抽出陈屿的个案）先说**学习动机**——就是发动学习、维持学习、把学习指向目标的内部力量，是这台引擎的'油门'。\n按动机的来源分两类：**内部动机**——由对学习内容本身的兴趣、好奇、求知欲推动，'我想懂'；**外部动机**——由外在奖惩、分数、名次、家长老师的认可推动，'我得拿到'。"
+    },
+    {
+      "id": "ch13_a_teach_2",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "neutral",
+      "text": "再讲一条最爱考的规律——**耶克斯-多德森定律**：动机水平与学习效率之间是**倒U形**关系，不是越强越好。\n动机太低，懒得动；动机太高、过度紧张焦虑，反而手忙脚乱发挥失常；**中等强度的动机**，效率最高。\n而且它还和任务难度挂钩：**越难的任务，最佳动机水平越低**（要更放松）；越简单的任务，反而可以高一点。"
+    },
+    {
+      "id": "ch13_a_teach_3",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "worried",
+      "text": "（她指着陈屿那行'一遇难题就僵'）\n你看陈屿：面对难题，他偏偏把动机绷到最满——'这道一定要拿下'，越想拿下越紧张，越紧张越想不出。\n这正是踩反了：难任务本该调低动机、放松着来，他却把油门焊死在了底。\n来，趁热考你一道——把陈屿的毛病，对到那条规律上。"
+    },
+    {
+      "id": "ch13_a_apply",
+      "type": "choice",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "smile",
+      "knowledgeCheck": "q_motiv13_01",
+      "text": "（她把笔递到我手心，指尖停了一瞬）\n陈屿平时小题做得又快又好，一到压轴大题就紧张到手抖、脑子空白。结合耶克斯-多德森定律，最该怎么帮他？",
+      "examTags": {
+        "subject": "302",
+        "module": "中学生学习心理",
+        "examPoint": "学习动机·耶克斯-多德森定律（动机强度与效率倒U关系、难任务宜低动机）的应用",
+        "questionType": "材料分析"
+      },
+      "choices": [
+        {
+          "id": "A",
+          "text": "教他面对压轴难题先把紧张降下来、把目标调成'尽力写、能拿几步是几步'，让动机回到中等偏低、放松应对。",
+          "quality": "optimal",
+          "effects": {
+            "professionalSkill": 2,
+            "studentTrust": 2,
+            "classOrder": 0,
+            "ethicsRisk": -1,
+            "lawRisk": 0,
+            "examScore": 3,
+            "affection_jiang": 3
+          },
+          "feedback": "对。难题对应的最佳动机水平较低，过强动机带来过度焦虑、效率反降；帮他在难题上降焦虑、放松应对，正踩在耶克斯-多德森定律的采分点上。",
+          "answerKeywords": [
+            "耶克斯-多德森定律",
+            "倒U形",
+            "难任务宜低动机",
+            "降低过度焦虑",
+            "中等偏低动机"
+          ]
+        },
+        {
+          "id": "B",
+          "text": "反复强调'这题最重要、一定要拿下'，把他的紧迫感和动机再拉高一截。",
+          "quality": "risk",
+          "effects": {
+            "professionalSkill": -2,
+            "studentTrust": -1,
+            "classOrder": 0,
+            "ethicsRisk": 1,
+            "lawRisk": 0,
+            "examScore": -3,
+            "affection_jiang": -2
+          },
+          "feedback": "难题本就该调低动机，再加码只会把他推过倒U的顶点，焦虑更重、发挥更差。这是把油门焊死的错法。",
+          "answerKeywords": [
+            "误把难任务动机拉高",
+            "越过倒U顶点",
+            "加重焦虑"
+          ]
+        },
+        {
+          "id": "C",
+          "text": "干脆让他放弃所有难题，只做简单题保心态。",
+          "quality": "risk",
+          "effects": {
+            "professionalSkill": -1,
+            "studentTrust": -1,
+            "classOrder": 0,
+            "ethicsRisk": 1,
+            "lawRisk": 0,
+            "examScore": -2,
+            "affection_jiang": -1
+          },
+          "feedback": "调低的是'动机强度'不是'放弃任务'。回避难题等于把油门彻底松掉，既丢分又强化了畏难，方向错了。",
+          "answerKeywords": [
+            "误把降动机当回避任务",
+            "强化畏难"
+          ]
+        },
+        {
+          "id": "D",
+          "text": "告诉他这只是不够努力，回去多刷一百道压轴题就好了。",
+          "quality": "suboptimal",
+          "effects": {
+            "professionalSkill": 0,
+            "studentTrust": -1,
+            "classOrder": 0,
+            "ethicsRisk": 0,
+            "lawRisk": 0,
+            "examScore": 0,
+            "affection_jiang": 0
+          },
+          "feedback": "把'过度焦虑致效率下降'误判成'不够努力'，没对症。多刷题不解决动机过强的问题，反而可能更焦虑。",
+          "answerKeywords": [
+            "误判为努力不足",
+            "未处理动机过强"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch13_a_after",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "smile",
+      "text": "（她在陈屿个案的空白处替我记下要点，字迹清秀）\n对喽——陈屿缺的从来不是努力，是有人告诉他'难题前，松一口气'。\n你这一答，我都想现在就把这话写给他。"
+    },
+    {
+      "id": "ch13_a_heart",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "narrator",
+      "text": "她低头写字时，台灯把她的侧脸描出一道很柔的边。\n我忽然发现我们的椅子已经挨得很近，近到能闻到她身上淡淡的茶香。\n（江晚……平时总在听别人说话，今天却肯把这一下午的心思，和我一起摊开。）\n我赶紧低头去看下一份个案，可那行字，看了两遍都没看进去。"
+    },
+    {
+      "id": "ch13_b_teach_1",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "smile",
+      "text": "（她翻到周也的个案）油门修好了，再看'进气'——信息怎么进脑子。先讲**感觉与知觉**。\n感觉是对个别属性的反映(红、烫、响)；知觉是把这些整合成'一个完整对象'的反映。考试常考**知觉的基本特性**，一共四个，得分清。"
+    },
+    {
+      "id": "ch13_b_teach_2",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "neutral",
+      "text": "四大特性：\n**整体性**——把对象作为一个整体来知觉，残缺也能补全(看见半个轮廓就认出是猫)；\n**选择性**——从背景中把对象优先挑出来(对象与背景，'万绿丛中一点红'特别醒目)；\n**理解性**——用已有知识经验去解释知觉对象(内行看门道，外行看热闹)；\n**恒常性**——条件变了，知觉印象却保持相对稳定(白纸在暗处仍知道它是白的；门半开成梯形仍知是矩形)。"
+    },
+    {
+      "id": "ch13_b_teach_3",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "neutral",
+      "text": "（她指着周也'课本一片字、抓不住重点'那行）\n周也的问题，恰恰是知觉的**选择性**没被调动起来——满页黑字，对象和背景糊成一团，他不知道该把哪部分'挑'出来。\n教学上对策很顺：用加粗、下划线、彩色、留白、提问，人为制造'对象与背景'的差别，帮他把重点从背景里拎出来。\n来，考你一道，对一对教学应用。"
+    },
+    {
+      "id": "ch13_b_apply",
+      "type": "choice",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "smile",
+      "knowledgeCheck": "q_perception_01_c13",
+      "text": "（她把粉笔递给我）\n老师在板书时把关键词用红粉笔写、还框起来，让它从满黑板里'跳'出来。这主要运用了知觉的哪条规律？",
+      "examTags": {
+        "subject": "302",
+        "module": "中学生学习心理",
+        "examPoint": "知觉基本特性（整体性/选择性/理解性/恒常性）在教学直观中的应用",
+        "questionType": "材料分析"
+      },
+      "choices": [
+        {
+          "id": "A",
+          "text": "知觉的选择性——用颜色、方框制造对象与背景的差别，使关键词成为优先被知觉的'对象'。",
+          "quality": "optimal",
+          "effects": {
+            "professionalSkill": 2,
+            "studentTrust": 1,
+            "classOrder": 1,
+            "ethicsRisk": -1,
+            "lawRisk": 0,
+            "examScore": 3,
+            "affection_jiang": 3
+          },
+          "feedback": "对。把对象从背景中突显出来、引导优先知觉，正是知觉选择性的运用；这也是板书用彩色、加框的心理学依据。",
+          "answerKeywords": [
+            "知觉选择性",
+            "对象与背景",
+            "突显关键词",
+            "优先知觉"
+          ]
+        },
+        {
+          "id": "B",
+          "text": "知觉的整体性——把零散的字补成一个整体。",
+          "quality": "suboptimal",
+          "effects": {
+            "professionalSkill": 0,
+            "studentTrust": 0,
+            "classOrder": 0,
+            "ethicsRisk": 0,
+            "lawRisk": 0,
+            "examScore": 0,
+            "affection_jiang": 0
+          },
+          "feedback": "整体性强调'把部分整合成整体'，本题考的是'从背景里挑出重点对象'，落点在选择性。两者最易混，注意区分。",
+          "answerKeywords": [
+            "整体性（混淆）",
+            "本题应为选择性"
+          ]
+        },
+        {
+          "id": "C",
+          "text": "知觉的理解性——用已有经验解释知觉对象。",
+          "quality": "suboptimal",
+          "effects": {
+            "professionalSkill": 0,
+            "studentTrust": 0,
+            "classOrder": 0,
+            "ethicsRisk": 0,
+            "lawRisk": 0,
+            "examScore": 0,
+            "affection_jiang": 0
+          },
+          "feedback": "理解性是'用旧知识去解释看到的东西'，本题没考解释，只考'把重点从背景里挑出来'，应为选择性。",
+          "answerKeywords": [
+            "理解性（混淆）",
+            "本题应为选择性"
+          ]
+        },
+        {
+          "id": "D",
+          "text": "知觉的恒常性——条件变了知觉仍保持稳定。",
+          "quality": "risk",
+          "effects": {
+            "professionalSkill": -1,
+            "studentTrust": 0,
+            "classOrder": 0,
+            "ethicsRisk": 1,
+            "lawRisk": 0,
+            "examScore": -2,
+            "affection_jiang": -1
+          },
+          "feedback": "恒常性讲的是大小、颜色、形状在条件变化时保持稳定，和'突显重点'毫不相干，属张冠李戴。",
+          "answerKeywords": [
+            "恒常性（张冠李戴）"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch13_b_after",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "smile",
+      "text": "（她在周也个案旁画了个小方框，把'选择性'三个字框起来，笑着看我）\n你看，连我做笔记都忍不住用上选择性了——重点，就得让它'跳'出来。\n周也缺的不是眼睛，是有人帮他把课本里的'对象'圈出来。"
+    },
+    {
+      "id": "ch13_c_teach_1",
+      "type": "dialogue",
+      "background": "classroom",
+      "speaker": "江晚",
+      "expression": "smile",
+      "text": "（第二天午后，空教室。江晚把周也上课走神的记录摊在课桌上）\n说到'进气'，光把重点突显出来还不够，还得让他'盯得住'——这就是**注意**。注意是心理活动对一定对象的指向和集中。\n按有没有目的、需不需要意志努力，分三种。"
+    },
+    {
+      "id": "ch13_c_teach_2",
+      "type": "dialogue",
+      "background": "classroom",
+      "speaker": "江晚",
+      "expression": "neutral",
+      "text": "三种注意，背口诀也得理解：\n**无意注意(不随意注意)**——没有预定目的、不需意志努力，被新异、强烈、变化的刺激自动吸引(窗外一声巨响，全班齐刷刷扭头)；\n**有意注意(随意注意)**——有预定目的、需要意志努力来维持(逼着自己看完一章不想看的书)；\n**有意后注意(随意后注意)**——有预定目的、但已不太需要意志努力，是熟练或产生兴趣后的省力状态(写代码写到入迷)，它是**效率最高**的注意。"
+    },
+    {
+      "id": "ch13_c_teach_3",
+      "type": "dialogue",
+      "background": "classroom",
+      "speaker": "江晚",
+      "expression": "neutral",
+      "text": "教学上要两手抓：\n**善用无意注意**——板书、教具、语调变化吸引学生，但别用花哨刺激把他们引偏(那也是无意注意，反成干扰)；\n**靠有意注意攻坚**——明确目的、提要求，帮学生靠意志撑过枯燥环节；\n**培养有意后注意**——把任务变得有意义、有兴趣，让学生从'逼着学'过渡到'入迷学'。\n注意的品质也常考：广度、稳定性、分配、转移。"
+    },
+    {
+      "id": "ch13_c_teach_4",
+      "type": "dialogue",
+      "background": "classroom",
+      "speaker": "江晚",
+      "expression": "blush",
+      "text": "（她讲到'入迷'时回过头，发现我一直盯着她看，愣了半秒，耳尖泛起淡淡的红）\n……怎么，是我讲得太投入了？\n（不，是你讲到喜欢的东西时眼睛会发亮——这话我当然没敢说。）\n来，趁热考你一道，把三种注意对清楚。"
+    },
+    {
+      "id": "ch13_c_apply",
+      "type": "choice",
+      "background": "classroom",
+      "speaker": "江晚",
+      "expression": "smile",
+      "knowledgeCheck": "q_attention_01_c13",
+      "text": "（她把粉笔放进我手心）\n周也起初是被老师讲的趣味实验吸引、不知不觉就听了进去，后来对这门学科产生了兴趣，自己钻研起来也不觉得费劲。他这两段经历，分别属于哪种注意？",
+      "examTags": {
+        "subject": "302",
+        "module": "中学生学习心理",
+        "examPoint": "注意的种类（无意注意/有意注意/有意后注意）及其教学应用的辨别",
+        "questionType": "材料分析"
+      },
+      "choices": [
+        {
+          "id": "A",
+          "text": "前一段是无意注意（被趣味实验自动吸引），后一段是有意后注意（有目的、但已不太费意志努力的入迷状态）。",
+          "quality": "optimal",
+          "effects": {
+            "professionalSkill": 2,
+            "studentTrust": 1,
+            "classOrder": 1,
+            "ethicsRisk": -1,
+            "lawRisk": 0,
+            "examScore": 3,
+            "affection_jiang": 3
+          },
+          "feedback": "对。被有趣刺激自动抓住、无需意志努力，是无意注意；产生兴趣后有目的却又省力的钻研状态，是有意后注意——效率最高的注意，教学最该培养它。",
+          "answerKeywords": [
+            "无意注意",
+            "有意后注意",
+            "有目的不费意志",
+            "效率最高"
+          ]
+        },
+        {
+          "id": "B",
+          "text": "前后两段都是有意注意，都靠意志努力维持。",
+          "quality": "risk",
+          "effects": {
+            "professionalSkill": -1,
+            "studentTrust": 0,
+            "classOrder": 0,
+            "ethicsRisk": 1,
+            "lawRisk": 0,
+            "examScore": -2,
+            "affection_jiang": -1
+          },
+          "feedback": "前段'被自动吸引、无需努力'是无意注意，不是有意注意；后段是兴趣驱动的省力钻研，是有意后注意。两段都判成有意注意，全错。",
+          "answerKeywords": [
+            "误判无意为有意",
+            "忽略有意后注意"
+          ]
+        },
+        {
+          "id": "C",
+          "text": "前一段是有意注意，后一段是无意注意。",
+          "quality": "risk",
+          "effects": {
+            "professionalSkill": -1,
+            "studentTrust": 0,
+            "classOrder": 0,
+            "ethicsRisk": 1,
+            "lawRisk": 0,
+            "examScore": -2,
+            "affection_jiang": -1
+          },
+          "feedback": "正好说反了。被趣味自动吸引是无意注意，兴趣后的有目的钻研是有意后注意，没有一段是这种判法。",
+          "answerKeywords": [
+            "种类判反",
+            "无意/有意后混淆"
+          ]
+        },
+        {
+          "id": "D",
+          "text": "前一段是有意后注意，后一段是无意注意。",
+          "quality": "suboptimal",
+          "effects": {
+            "professionalSkill": 0,
+            "studentTrust": 0,
+            "classOrder": 0,
+            "ethicsRisk": 0,
+            "lawRisk": 0,
+            "examScore": 0,
+            "affection_jiang": 0
+          },
+          "feedback": "有意后注意要先有'预定目的'，被动被吸引那段没有目的，不能算有意后注意；顺序也反了。",
+          "answerKeywords": [
+            "缺预定目的判错",
+            "顺序颠倒"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch13_c_after",
+      "type": "dialogue",
+      "background": "classroom",
+      "speaker": "江晚",
+      "expression": "smile",
+      "text": "（她拿板擦把黑板上画的三层注意擦掉，唯独把'有意后注意'四个字留在角落）\n你看，教书最高的本事，就是把孩子从'逼着学'，一点点领到'入迷学'这儿来。\n刚才那道，你领得很准。"
+    },
+    {
+      "id": "ch13_c_heart",
+      "type": "dialogue",
+      "background": "classroom",
+      "speaker": "narrator",
+      "text": "空教室里只剩我们两个，窗外的阳光斜斜地切进来，落在她留在黑板角落那行字上。\n她拍掉手上的粉笔灰，无意间蹭到了脸颊。我抬手想替她擦，又在半空顿住，只指了指自己的脸：'这儿，沾到了。'\n她'啊'地一声去擦，反倒抹花成一道白印。我们俩对着那道印，同时笑出了声。\n（这间总是很安静的教学楼午后，今天好像，多了点别的温度。）"
+    },
+    {
+      "id": "ch13_d_teach_1",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "smile",
+      "text": "（咨询室，江晚摊开陈屿的解题草稿）油门、进气都顺了，再看'变速箱'——**思维与问题解决**。\n思维是对事物间接、概括的反映；问题解决要经过理解问题、提出假设、检验假设几步。考试爱考的，是'什么在妨碍问题解决'。"
+    },
+    {
+      "id": "ch13_d_teach_2",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "neutral",
+      "text": "影响问题解决的因素里，最常考三个'坑'：\n**定势(思维定势)**——之前形成的解题习惯，让人按老套路想，熟悉时帮忙、变题时碍事；\n**功能固着**——只看到事物的惯常用途，想不到它能派别的用场(只把砖头当砖头，想不到能当尺子敲钉子)；\n还有**动机强度、情绪状态、原型启发、知识经验**等。其中定势和功能固着最爱出材料题。"
+    },
+    {
+      "id": "ch13_d_teach_3",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "worried",
+      "text": "（她指着陈屿的草稿）\n陈屿做这道几何，前几问都用'添辅助线作平行'解出来，最后一问明明该换思路，他还死磕'作平行'——这就是**思维定势**在拖后腿：前面有用的老套路，到了变式题反成了枷锁。\n来，考你一道，认准这个'坑'。"
+    },
+    {
+      "id": "ch13_d_apply",
+      "type": "choice",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "smile",
+      "knowledgeCheck": "q_thinking_01_c13",
+      "text": "（她把笔搁在我手边）\n陈屿连做五道结构相似的题都用同一种方法做对了，第六道题型悄悄变了，他仍硬套原方法，怎么也做不出。这最典型地反映了影响问题解决的哪个因素？",
+      "examTags": {
+        "subject": "302",
+        "module": "中学生学习心理",
+        "examPoint": "影响问题解决的因素（定势/功能固着/情境等）的辨别",
+        "questionType": "材料分析"
+      },
+      "choices": [
+        {
+          "id": "A",
+          "text": "思维定势——先前重复成功形成的固定思路，在题型变化时仍被沿用，妨碍了新方法的产生。",
+          "quality": "optimal",
+          "effects": {
+            "professionalSkill": 2,
+            "studentTrust": 1,
+            "classOrder": 0,
+            "ethicsRisk": -1,
+            "lawRisk": 0,
+            "examScore": 3,
+            "affection_jiang": 3
+          },
+          "feedback": "对。'连续成功形成习惯思路、变题时仍硬套'是思维定势的典型表现：熟悉情境帮忙、变化情境碍事。对症。",
+          "answerKeywords": [
+            "思维定势",
+            "重复成功形成固定思路",
+            "变题时妨碍",
+            "消极影响"
+          ]
+        },
+        {
+          "id": "B",
+          "text": "功能固着——只看到事物的惯常功能。",
+          "quality": "suboptimal",
+          "effects": {
+            "professionalSkill": 0,
+            "studentTrust": 0,
+            "classOrder": 0,
+            "ethicsRisk": 0,
+            "lawRisk": 0,
+            "examScore": 0,
+            "affection_jiang": 0
+          },
+          "feedback": "功能固着说的是'只把某物当它常见的用途用'(如砖头只当砖头)，本题是'方法/思路'被固定，应为思维定势。两者最易混。",
+          "answerKeywords": [
+            "功能固着（混淆）",
+            "本题应为定势"
+          ]
+        },
+        {
+          "id": "C",
+          "text": "动机过强——太想做对导致紧张。",
+          "quality": "suboptimal",
+          "effects": {
+            "professionalSkill": 0,
+            "studentTrust": 0,
+            "classOrder": 0,
+            "ethicsRisk": 0,
+            "lawRisk": 0,
+            "examScore": 0,
+            "affection_jiang": 0
+          },
+          "feedback": "题中没提紧张焦虑，强调的是'方法被固定、套不出新解'，落点在定势，而非动机水平。",
+          "answerKeywords": [
+            "动机过强（不对症）",
+            "无紧张线索"
+          ]
+        },
+        {
+          "id": "D",
+          "text": "知识经验不足——他根本没学过这种方法。",
+          "quality": "risk",
+          "effects": {
+            "professionalSkill": -1,
+            "studentTrust": -1,
+            "classOrder": 0,
+            "ethicsRisk": 1,
+            "lawRisk": 0,
+            "examScore": -2,
+            "affection_jiang": -1
+          },
+          "feedback": "他前五题都会、明明有方法，问题在于'被旧思路绑住'而非'没学过'。判成知识不足会误导教学方向。",
+          "answerKeywords": [
+            "误判为知识不足",
+            "实为定势束缚"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch13_d_after",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "smile",
+      "text": "（她在陈屿草稿的最后一问旁画了个转弯箭头）\n破定势的法子，不是骂他笨，是教他做完一道就问自己一句：'这题真的和上一道一样吗？'\n你刚才一眼看穿了坑——这眼力，比我想的还准。"
+    },
+    {
+      "id": "ch13_e_teach_1",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "smile",
+      "text": "（她抽出周也的'三小时看书记不住'记录）\n变速箱要顺，还得会换挡——这就是**学习策略**。它不是某条具体方法，而是为提高学习效果、对学习过程的'调控系统'，分三大类。"
+    },
+    {
+      "id": "ch13_e_teach_2",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "neutral",
+      "text": "三大类，务必分清：\n**认知策略**——直接对学习材料加工：复述策略、精细加工策略(联想、举例、记忆术)、组织策略(列提纲、画结构图、归类)；\n**元认知策略**——对自己学习过程的'监控与调节'：计划、监视(我懂没懂)、调节(没懂就停下来想办法)；\n**资源管理策略**——管外部条件：时间管理、环境管理、努力管理、社会资源利用(不懂会去问)。\n一句话：认知策略管'怎么加工材料'，元认知管'我会不会、要不要调整'，资源管理管'时间环境与求助'。"
+    },
+    {
+      "id": "ch13_e_teach_3",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "neutral",
+      "text": "（她点着周也的记录）\n周也'看三小时记不住'，是认知策略太单一——只会一遍遍重复读(机械复述)，从不画结构图、不归类，更不会一边读一边问自己'这段我真懂了吗'。\n他缺的不只是认知策略里的组织、精细加工，更缺那条'监控'的元认知。\n来，考你一道，对清这三类策略。"
+    },
+    {
+      "id": "ch13_e_apply",
+      "type": "choice",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "smile",
+      "knowledgeCheck": "q_strategy_01",
+      "text": "（她把笔递给我，指尖停了一瞬才收回）\n周也读完一段后，会停下来合上书，问自己'这段讲了几层意思、我能不能复述出来'，发现说不出就退回去重读。他用的是哪类学习策略？",
+      "examTags": {
+        "subject": "302",
+        "module": "中学生学习心理",
+        "examPoint": "学习策略三大类（认知策略/元认知策略/资源管理策略）的辨别",
+        "questionType": "材料分析"
+      },
+      "choices": [
+        {
+          "id": "A",
+          "text": "元认知策略——他在监视'自己懂没懂'，并据此调节学习（说不出就退回重读），属于对学习过程的监控与调节。",
+          "quality": "optimal",
+          "effects": {
+            "professionalSkill": 2,
+            "studentTrust": 2,
+            "classOrder": 0,
+            "ethicsRisk": -1,
+            "lawRisk": 0,
+            "examScore": 3,
+            "affection_jiang": 3
+          },
+          "feedback": "对。'检查自己是否理解、并据此决定要不要重读'是典型的元认知监控与调节，不是直接加工材料的认知策略。对症。",
+          "answerKeywords": [
+            "元认知策略",
+            "监视监控",
+            "调节",
+            "据理解程度调整"
+          ]
+        },
+        {
+          "id": "B",
+          "text": "认知策略——因为他在复述课文内容。",
+          "quality": "suboptimal",
+          "effects": {
+            "professionalSkill": 0,
+            "studentTrust": 0,
+            "classOrder": 0,
+            "ethicsRisk": 0,
+            "lawRisk": 0,
+            "examScore": 0,
+            "affection_jiang": 0
+          },
+          "feedback": "他不是为'记住'而复述(认知策略)，而是用'能不能复述'来检验自己懂没懂、再决定是否重读——这一步监控调节属元认知策略。",
+          "answerKeywords": [
+            "认知策略（混淆）",
+            "本题落点在监控"
+          ]
+        },
+        {
+          "id": "C",
+          "text": "资源管理策略——他在管理读书时间。",
+          "quality": "risk",
+          "effects": {
+            "professionalSkill": -1,
+            "studentTrust": 0,
+            "classOrder": 0,
+            "ethicsRisk": 1,
+            "lawRisk": 0,
+            "examScore": -2,
+            "affection_jiang": -1
+          },
+          "feedback": "题中没涉及时间、环境、求助等外部条件管理，只在'自检理解'，与资源管理策略无关，张冠李戴。",
+          "answerKeywords": [
+            "资源管理（张冠李戴）",
+            "无外部条件管理"
+          ]
+        },
+        {
+          "id": "D",
+          "text": "组织策略——他在给课文列提纲。",
+          "quality": "risk",
+          "effects": {
+            "professionalSkill": -1,
+            "studentTrust": 0,
+            "classOrder": 0,
+            "ethicsRisk": 1,
+            "lawRisk": 0,
+            "examScore": -2,
+            "affection_jiang": -1
+          },
+          "feedback": "组织策略是认知策略的一种(列提纲、画结构图)，题中并没有列提纲，而是在'自检懂没懂'，应为元认知策略。",
+          "answerKeywords": [
+            "组织策略属认知（用错）",
+            "本题应为元认知"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch13_e_after",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "smile",
+      "text": "（她在周也个案上写下'认知+元认知'，把'元认知'圈了两圈）\n你看，周也不是记性差，是从没人教他'边学边回头看自己一眼'。\n这条元认知，往往才是把'三小时白读'变成'一小时学会'的那把钥匙。"
+    },
+    {
+      "id": "ch13_f_teach_1",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "江晚",
+      "expression": "smile",
+      "text": "（傍晚的办公室，江晚把林小满的个案放在我桌上）剩下两颗大齿轮，先说'底盘'——**智力与能力**。\n林小满成绩中游，却老说'我就这点智力了'。可'智力到底是什么'，心理学家吵了一百年，几大理论你得能对号入座。"
+    },
+    {
+      "id": "ch13_f_teach_2",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "江晚",
+      "expression": "neutral",
+      "text": "三个最常考的理论：\n**斯皮尔曼二因素论**——智力由**一般因素G**(各种活动都需要的普遍能力)和**特殊因素S**(完成特定任务的专门能力)组成，G是核心；\n**加德纳多元智力理论**——智力不是一种，而是语言、逻辑数学、空间、音乐、身体运动、人际、自我认识、自然观察等多种相对独立的智力；\n**斯滕伯格三元智力理论**——智力包含**分析性、创造性、实践性(成功智力)**三方面，强调用得上、能解决真实问题。"
+    },
+    {
+      "id": "ch13_f_teach_3",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "江晚",
+      "expression": "tender",
+      "text": "（她语气软下来）\n林小满那句'我就这点智力'，其实是被分数绑住了——只用一把'考试尺子'量自己。\n要是按加德纳来看，她人际敏感、组织活动一流，这些都是实打实的智力，只是没被那张卷子衡量到。\n（她看我一眼）我们做老师的，要做的从来不是给孩子贴'笨'的标签，是帮他们找到自己那几种'亮'的智力。\n来，考你一道，认准这几家理论。"
+    },
+    {
+      "id": "ch13_f_apply",
+      "type": "choice",
+      "background": "office",
+      "speaker": "江晚",
+      "expression": "smile",
+      "knowledgeCheck": "q_intelligence_01",
+      "text": "（她把林小满的个案推到我面前）\n有位心理学家主张：人的智力不止一种，语言、逻辑数学、空间、音乐、人际等都是相对独立的智力，每个人的优势组合不同。这一观点出自谁的什么理论？",
+      "examTags": {
+        "subject": "302",
+        "module": "中学生学习心理",
+        "examPoint": "智力理论的辨别（斯皮尔曼二因素/加德纳多元/斯滕伯格三元）",
+        "questionType": "材料分析"
+      },
+      "choices": [
+        {
+          "id": "A",
+          "text": "加德纳的多元智力理论——智力是多种相对独立的智力的组合，每个人优势各异。",
+          "quality": "optimal",
+          "effects": {
+            "professionalSkill": 2,
+            "studentTrust": 2,
+            "classOrder": 0,
+            "ethicsRisk": -1,
+            "lawRisk": 0,
+            "examScore": 3,
+            "affection_jiang": 3
+          },
+          "feedback": "对。'智力有语言、逻辑数学、空间、音乐、人际等多种、相对独立'是加德纳多元智力理论的核心主张，也是因材施教、不以单一分数定优劣的依据。",
+          "answerKeywords": [
+            "加德纳",
+            "多元智力理论",
+            "多种相对独立的智力",
+            "优势组合不同"
+          ]
+        },
+        {
+          "id": "B",
+          "text": "斯皮尔曼的二因素论——智力由一般因素G和特殊因素S组成。",
+          "quality": "risk",
+          "effects": {
+            "professionalSkill": -1,
+            "studentTrust": 0,
+            "classOrder": 0,
+            "ethicsRisk": 1,
+            "lawRisk": 0,
+            "examScore": -2,
+            "affection_jiang": -1
+          },
+          "feedback": "二因素论强调'有一个贯穿一切的G因素'，与'多种相对独立的智力'恰恰相反。最经典的对立干扰项，别选错。",
+          "answerKeywords": [
+            "二因素论（方向相反）",
+            "G/S因素"
+          ]
+        },
+        {
+          "id": "C",
+          "text": "斯滕伯格的三元智力理论——智力含分析性、创造性、实践性三方面。",
+          "quality": "suboptimal",
+          "effects": {
+            "professionalSkill": 0,
+            "studentTrust": 0,
+            "classOrder": 0,
+            "ethicsRisk": 0,
+            "lawRisk": 0,
+            "examScore": 0,
+            "affection_jiang": 0
+          },
+          "feedback": "三元论讲的是'分析/创造/实践'三种成分，不是'语言、空间、音乐'这类多种独立智力，对应错了人。",
+          "answerKeywords": [
+            "三元论（对错人）",
+            "分析/创造/实践"
+          ]
+        },
+        {
+          "id": "D",
+          "text": "卡特尔的流体—晶体智力理论。",
+          "quality": "suboptimal",
+          "effects": {
+            "professionalSkill": 0,
+            "studentTrust": 0,
+            "classOrder": 0,
+            "ethicsRisk": 0,
+            "lawRisk": 0,
+            "examScore": 0,
+            "affection_jiang": 0
+          },
+          "feedback": "卡特尔区分的是流体智力与晶体智力两类，与题中'语言、空间、音乐等多种独立智力'不符，应为加德纳。",
+          "answerKeywords": [
+            "卡特尔（不对症）",
+            "流体/晶体"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch13_f_after",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "江晚",
+      "expression": "tender",
+      "text": "（她在林小满个案上把'我就这点智力'那行轻轻划掉，旁边写下'多元'两个字）\n这孩子哪是没智力，是没人按加德纳的眼光看过她。\n（她抬眼看我，声音放轻）你愿意陪我把这群孩子，一个个换个尺子重新看一遍——我很感激。"
+    },
+    {
+      "id": "ch13_f_heart",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "narrator",
+      "text": "办公室只剩我们俩，窗外暮色一点点沉下来，把桌上的个案染成暖橙色。\n她把笔帽合上，忽然轻声说：'其实……换尺子看人，最先该学会的，是别用一把尺子量自己。'\n说完她像是想起什么，先低了头，耳尖又泛起淡淡的红。\n（我握着那叠个案，心跳又一次漏了拍——她说的是孩子，可那一刻，我总觉得也是说给我听的。）"
+    },
+    {
+      "id": "ch13_g_teach_1",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "smile",
+      "text": "（最后一天，咨询室。江晚把陈屿、周也、林小满三份个案并排摊开）\n最后一颗齿轮，是引擎的'散热'——**情绪情感与意志**。引擎再好，散热不行也会烧坏。\n先分清几种**情绪状态**，考试常拿表现让你辨。"
+    },
+    {
+      "id": "ch13_g_teach_2",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "neutral",
+      "text": "三种情绪状态：\n**心境**——微弱、平静而持久，弥漫性地影响一切(连日闷闷不乐，看什么都没劲)；\n**激情**——强烈、爆发、短暂(狂喜、暴怒、绝望时的失控)；\n**应激**——出乎意料的紧急情况下高度紧张的状态(突遇险情时的急中生智或手足无措)。\n（口诀：心境'久'、激情'爆'、应激'急'。）"
+    },
+    {
+      "id": "ch13_g_teach_3",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "neutral",
+      "text": "再讲**意志**——自觉确定目的、克服困难、调节行动的心理过程。它的**品质**有四个，常和学习挂钩：\n**自觉性**(目的明确、不盲从)、**果断性**(当机立断、不优柔寡断)、**自制性**(控制情绪冲动、不分心)、**坚韧性**(百折不挠、坚持到底)。\n陈屿的焦虑、周也的半途而废、林小满的自我设限，背后都有'散热'和'意志'的事——情绪没疏导、意志没撑住。"
+    },
+    {
+      "id": "ch13_g_teach_4",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "tender",
+      "text": "（她合上三份个案，转过来认真看着我，难得地没有先去看别的）\n七颗齿轮，到这儿就拆全了：动机、感知、注意、思维、策略、智力、情绪意志。\n这一路，我说真的——很久没有人，肯陪我把一个班，想得这么细、这么暖了。\n来，最后一道，给这台引擎收尾。"
+    },
+    {
+      "id": "ch13_g_apply",
+      "type": "choice",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "smile",
+      "knowledgeCheck": "q_emotion_01",
+      "text": "（她把笔放进我手心，停了一瞬才松开）\n林小满最近连着两周都提不起劲，上课走神、对什么都'没意思'，但又没有特别激烈的爆发，就是低低地、持续地笼罩着。这种情绪状态最可能是？",
+      "examTags": {
+        "subject": "302",
+        "module": "中学生学习心理",
+        "examPoint": "情绪状态（心境/激情/应激）的辨别与意志品质",
+        "questionType": "材料分析"
+      },
+      "choices": [
+        {
+          "id": "A",
+          "text": "心境——微弱、持久而弥漫，会影响一段时间里对一切事物的态度。",
+          "quality": "optimal",
+          "effects": {
+            "professionalSkill": 2,
+            "studentTrust": 2,
+            "classOrder": 0,
+            "ethicsRisk": -1,
+            "lawRisk": 0,
+            "examScore": 3,
+            "affection_jiang": 3
+          },
+          "feedback": "对。'微弱、持久、弥漫性地给一切染上色彩'正是心境的特征（连着两周、看什么都没意思）。识别准了才能对症疏导。",
+          "answerKeywords": [
+            "心境",
+            "微弱持久",
+            "弥漫性",
+            "影响一段时间一切态度"
+          ]
+        },
+        {
+          "id": "B",
+          "text": "激情——强烈、爆发而短暂的情绪状态。",
+          "quality": "risk",
+          "effects": {
+            "professionalSkill": -1,
+            "studentTrust": 0,
+            "classOrder": 0,
+            "ethicsRisk": 1,
+            "lawRisk": 0,
+            "examScore": -2,
+            "affection_jiang": -1
+          },
+          "feedback": "激情是狂喜暴怒式的强烈短暂爆发，与题中'低低地、持续两周、没有激烈爆发'正相反。最易混的对立项。",
+          "answerKeywords": [
+            "激情（特征相反）",
+            "强烈短暂爆发"
+          ]
+        },
+        {
+          "id": "C",
+          "text": "应激——出乎意料的紧急情况下的高度紧张状态。",
+          "quality": "risk",
+          "effects": {
+            "professionalSkill": -1,
+            "studentTrust": 0,
+            "classOrder": 0,
+            "ethicsRisk": 1,
+            "lawRisk": 0,
+            "examScore": -2,
+            "affection_jiang": -1
+          },
+          "feedback": "应激由突发紧急情境引发、高度紧张，题中既无突发事件也非紧张，而是持久低落，应为心境。",
+          "answerKeywords": [
+            "应激（无紧急情境）",
+            "本题应为心境"
+          ]
+        },
+        {
+          "id": "D",
+          "text": "激情，因为她'对什么都没意思'说明情绪很强烈。",
+          "quality": "suboptimal",
+          "effects": {
+            "professionalSkill": 0,
+            "studentTrust": 0,
+            "classOrder": 0,
+            "ethicsRisk": 0,
+            "lawRisk": 0,
+            "examScore": 0,
+            "affection_jiang": 0
+          },
+          "feedback": "'对什么都没意思'恰恰是微弱而弥漫，不是强烈爆发；把持久低落误读成强烈，仍应判心境。",
+          "answerKeywords": [
+            "误把弥漫读成强烈",
+            "应为心境"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch13_g_after",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "tender",
+      "text": "（她把三份个案叠在一起，轻轻放回我手边）\n散热也修好了——林小满需要的不是'你要振作'，是有人先帮她把那片持续的低气压疏开。\n这台引擎，我们俩一起，算是装回去了。"
+    },
+    {
+      "id": "ch13_g_heart",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "narrator",
+      "text": "暮色又一次漫进这间屋子，绿植的影子被拉得很长。\n她送我到门口，忽然轻声说：'下次……不用等有学生'问题'，你也可以来。'\n说完她先低了头，像是有点不好意思。\n（我握着那叠个案，心跳又漏了一拍。这间她口中'只有一个人在听别人说话'的屋子，往后，大概会有两个人了。）"
+    },
+    {
+      "id": "ch13_end_1",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "江晚",
+      "expression": "smile",
+      "text": "（回到办公室，江晚把我们这几天理出的方案打印出来，分成三份）\n陈屿那份写'难题前先松一口气'，周也那份写'边读边回头看自己一眼'，林小满那份写'换把尺子量自己'。\n（她把方案推给我）功劳一人一半——不，你那半，更重些。"
+    },
+    {
+      "id": "ch13_end_2",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "narrator",
+      "text": "我把三份方案收进文件夹，最上面压着江晚替我记的那几页要点，字迹清秀。\n这一章没有惊心动魄的事，只有一摞个案、两把挨近的椅子、七颗被我们一颗颗对上的齿轮。\n（学习有引擎，心动好像也有。和她并肩给一个班装回'怎么学'的引擎，竟成了我这阵子最盼的事。）\n备课铃，明天还会响。但翻开手账的这一刻，那间安静的屋子里，已经，多了一个我。"
+    },
+    {
+      "id": "ch13_end",
+      "type": "summary",
+      "background": "office",
+      "speaker": "narrator",
+      "text": "（第十三章落幕。和江晚一起给高二(3)班装回的七颗'学习引擎'齿轮，连同那一次次漏拍的心跳，一条条记进手账吧——人记进去了，分也得记进去。）",
+      "review": {
+        "learnedExamPoints": [
+          "302-学习心理-学习动机（内部/外部动机；耶克斯-多德森定律：动机与效率倒U、难任务宜低动机）— 江晚",
+          "302-学习心理-感觉与知觉规律（知觉四大基本特性：整体性/选择性/理解性/恒常性及教学直观应用）— 江晚",
+          "302-学习心理-注意的种类与品质（无意/有意/有意后注意；广度·稳定性·分配·转移；教学应用）— 江晚",
+          "302-学习心理-思维与问题解决（影响因素：思维定势/功能固着/动机情绪等）— 江晚",
+          "302-学习心理-学习策略三大类（认知策略/元认知策略/资源管理策略）— 江晚",
+          "302-学习心理-智力与能力（斯皮尔曼二因素G/S；加德纳多元；斯滕伯格三元分析-创造-实践）— 江晚",
+          "302-学习心理-情绪情感与意志（心境/激情/应激；意志品质：自觉性·果断性·自制性·坚韧性）— 江晚"
+        ],
+        "structure": "七个考点都从'给失速的高二(3)班装回学习引擎'这桩事长出来：油门=动机(陈屿过度焦虑/倒U)；进气=感知(周也抓不住重点/选择性)+注意(走神/三种注意)；变速箱=思维(陈屿死磕老套路/定势)+策略(周也机械读/三类策略)；底盘=智力(林小满自我设限/多元智力)；散热=情绪意志(林小满持续低落/心境与意志品质)。每考点走'剧情讲授→随堂检测(knowledgeCheck)→应用选择→反馈→心动'。章末月考 core_ch13_mock 为冷测。",
+        "mockExam": "core_ch13_mock",
+        "recommendedReview": [
+          "答错学习动机→江晚重讲内外部动机与耶克斯-多德森倒U规律（难任务宜低动机）",
+          "答错感知规律→江晚重讲知觉整体性/选择性/理解性/恒常性及板书直观应用",
+          "答错注意→江晚重讲无意/有意/有意后注意的区别与教学应用",
+          "答错思维→江晚重讲思维定势与功能固着的辨别",
+          "答错学习策略→江晚重讲认知/元认知/资源管理三类策略的分工",
+          "答错智力理论→江晚重讲斯皮尔曼二因素/加德纳多元/斯滕伯格三元",
+          "答错情绪意志→江晚重讲心境/激情/应激与四种意志品质"
+        ]
+      }
+    }
+  ]
+}

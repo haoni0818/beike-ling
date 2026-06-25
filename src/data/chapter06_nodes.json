@@ -1,0 +1,381 @@
+{
+  "chapterId": "core_ch06",
+  "title": "第六章 · 规则之内",
+  "summary": "一桩学生纠纷把法规与师德的深水推到你面前：高一(7)班的林小满被另一个学生在网上发文辱骂、还约到放学后'解决'，过程中两人推搡，林小满擦伤了膝盖。家长闹到教务处，有人嚷着要把对方学生'开除了事'。陆知行没让你慌——他把你按在规则里，一条条带你走：义务教育法与未成年人保护法划下的红线、学生伤害事故里学校责任怎么认定、教师职业道德规范在'关爱学生'与'体罚'之间的那道线。三桩深水，三次抉择，他冰封的壳，也在这一天裂开了一道缝。",
+  "designNote": "乙女向重写版第六章：第一人称心声(旁白)贯穿；本章主推陆知行(冰山禁欲教务主任·严而有度·冷外热内)，接续第一章'在你名字旁画记号'的钩子——这一次他亲口说出那个记号是什么。顾承以班主任身份 cameo(他班上的学生出事)。学生(林小满及对方学生)仅为教学对象与事件源，绝不涉及恋爱。teach→随堂检测(knowledgeCheck)→应用→反馈 的三考点微循环保留；冰山一点点破的心动 beat 包在每段对手戏里。三考点全部为 301 法规+师德真考点，释义改写不照抄法条原文。",
+  "characters": ["lu", "gu"],
+  "students": ["林小满", "对方学生·赵宇"],
+  "valueFields": ["professionalSkill", "studentTrust", "classOrder", "ethicsRisk", "lawRisk", "examScore", "affection_lu", "affection_jiang", "affection_gu", "affection_shen"],
+  "note": "ethicsRisk/lawRisk 为逆向指标，越低越好。knowledgeCheck 指向 chapter06_quiz.json 的题目 id。",
+  "nodes": [
+    {
+      "id": "ch06_intro_1",
+      "type": "dialogue",
+      "background": "corridor",
+      "speaker": "narrator",
+      "text": "周四下午，最后一节课的铃刚响。\n我抱着作业本往教务处走，远远就听见走廊那头吵成一团——一个女声又急又抖，是林小满。\n（她膝盖上一道擦伤还在渗血，校服裤子破了个口子。她对面站着个男生，梗着脖子不服软。）"
+    },
+    {
+      "id": "ch06_intro_2",
+      "type": "dialogue",
+      "background": "corridor",
+      "speaker": "顾承",
+      "expression": "worried",
+      "text": "（顾承一手拦在两个孩子中间，额角全是汗，看见我像看见救星）\n来得正好！赵宇在班级群里发文骂小满，还约她放学'单聊'，俩人在车棚推搡起来，小满膝盖蹭破了。\n小满家长已经在路上，电话里放话——要让学校'把赵宇开除了事'。这事，闹大了。"
+    },
+    {
+      "id": "ch06_intro_3",
+      "type": "dialogue",
+      "background": "corridor",
+      "speaker": "narrator",
+      "text": "我脑子嗡的一声。网暴、约架、受伤、家长施压、还有那句'开除'——四五个雷一起埋在脚下。\n我张了张嘴，竟不知道该先抓哪一头。\n（这不是一道选择题。这是会真的改变两个孩子一生的事。我……我能处理吗。）"
+    },
+    {
+      "id": "ch06_intro_4",
+      "type": "dialogue",
+      "background": "corridor",
+      "speaker": "陆知行",
+      "expression": "serious",
+      "text": "（一个清冷的声音从身后落下，吵闹声像被按了暂停键。陆知行不知何时已站在那里，目光扫过现场，三秒，定。）\n先把两个学生分开，各自带去医务室和办公室，分开做记录。家长来了，到教务处谈，不在走廊。\n（他偏头看我，语气没起伏，却奇异地让我定住了神）你，跟我来。这件事，我带你走一遍流程。慌，解决不了任何事。"
+    },
+    {
+      "id": "ch06_intro_5",
+      "type": "dialogue",
+      "background": "corridor",
+      "speaker": "narrator",
+      "text": "他转身就走，步子稳得像踩着尺子。\n我几乎是小跑跟上的。奇怪，明明刚才还心跳如鼓，可走在他半步之后，那团乱麻竟一点点被理出了头绪。\n（原来'冰'也有用处——他像一根定海针，往那儿一插，水就不晃了。）"
+    },
+    {
+      "id": "ch06_a_teach_1",
+      "type": "dialogue",
+      "background": "meeting_room",
+      "speaker": "陆知行",
+      "expression": "serious",
+      "text": "（教务处会议室。他把一杯温水推到我面前，自己站在白板前，开门见山）\n家长要'开除赵宇'。我先告诉你一句话，记死了——义务教育阶段的学生，学校不得开除，也不得勒令退学。\n这不是学校开恩，是《义务教育法》定死的红线。开除等于剥夺一个孩子受义务教育的权利，违法。"
+    },
+    {
+      "id": "ch06_a_teach_2",
+      "type": "dialogue",
+      "background": "meeting_room",
+      "speaker": "陆知行",
+      "expression": "serious",
+      "text": "再往上一层，是《未成年人保护法》。它给未成年人织了一张网——常说的'六大保护'：\n**家庭保护**(监护人尽责)、**学校保护**(学校的安全与教育职责)、**社会保护**(社会环境)、**网络保护**(防网络欺凌、个人信息)、**政府保护**(政府兜底)、**司法保护**(司法机关特殊对待)。"
+    },
+    {
+      "id": "ch06_a_teach_3",
+      "type": "dialogue",
+      "background": "meeting_room",
+      "speaker": "陆知行",
+      "expression": "serious",
+      "text": "对上今天这桩——赵宇在群里发文辱骂，踩的是**网络保护**(网络欺凌)；推搡致伤、约架，踩的是**学校保护**(校内安全)；而要求'开除'去解决，本身就违反了不得开除义务教育学生这条线。\n保护未成年人，从来不是只护一个、踩死另一个。两个都是要保护的孩子。这句你要是答题时写不出来，材料题立刻塌一半。"
+    },
+    {
+      "id": "ch06_a_teach_4",
+      "type": "dialogue",
+      "background": "meeting_room",
+      "speaker": "陆知行",
+      "expression": "neutral",
+      "text": "（他停下，看了我一眼。我正埋头飞快地记，笔尖戳破了一点纸。）\n……不用记得那么死。\n（他从我手边抽走那支快没水的笔，换了一支自己的递过来，笔身还带着他的体温。）先听懂逻辑，再背条文。来，趁热，我考你一道。"
+    },
+    {
+      "id": "ch06_a_apply",
+      "type": "choice",
+      "background": "meeting_room",
+      "speaker": "陆知行",
+      "expression": "serious",
+      "knowledgeCheck": "q_law_protect_01",
+      "text": "（他双臂抱在胸前，靠着白板看我）\n现在，林小满的家长就在隔壁，咬死要学校'立刻开除赵宇'。你是经办老师，第一句话该怎么回，才既守法、又不激化？",
+      "examTags": {
+        "subject": "301",
+        "module": "教育法律法规",
+        "examPoint": "义务教育法（不得开除义务教育学生）与未成年人保护法（六大保护）的应用",
+        "questionType": "材料分析"
+      },
+      "choices": [
+        {
+          "id": "A",
+          "text": "依法说明义务教育阶段不得开除学生，承诺学校会依规处理违纪、保障两个孩子的安全与受教育权，再听家长诉求。",
+          "quality": "optimal",
+          "effects": {"professionalSkill": 2, "studentTrust": 2, "classOrder": 1, "ethicsRisk": -1, "lawRisk": -2, "examScore": 3, "affection_lu": 2},
+          "feedback": "对。先亮法律红线(义务教育阶段不得开除)，再表态依规处理、双向保护未成年人——既守法，又给了家长'学校会管'的安全感。这是材料题的满分骨架。",
+          "answerKeywords": ["不得开除义务教育学生", "依法依规处理", "双向保护未成年人", "保障受教育权"]
+        },
+        {
+          "id": "B",
+          "text": "为了安抚家长，先答应'一定开除赵宇',把眼前这关糊弄过去再说。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -2, "studentTrust": -1, "classOrder": -1, "ethicsRisk": 1, "lawRisk": 3, "examScore": -3, "affection_lu": -2},
+          "feedback": "致命错误。承诺开除义务教育阶段学生直接违反《义务教育法》，剥夺赵宇的受教育权；空头承诺日后兑现不了，反而把学校推向更大纠纷。",
+          "answerKeywords": ["违法承诺开除", "剥夺受教育权", "违反义务教育法"]
+        },
+        {
+          "id": "C",
+          "text": "把皮球踢回去：'孩子打架是你们家长没教好',让家长自己回去管。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -2, "studentTrust": -2, "classOrder": -1, "ethicsRisk": 2, "lawRisk": 1, "examScore": -3, "affection_lu": -2},
+          "feedback": "推卸学校职责、指责家长，违背学校保护职责，也激化矛盾。处理纠纷的第一步是稳住情绪、依法担责，不是甩锅。",
+          "answerKeywords": ["推卸学校责任", "激化矛盾", "未尽学校保护"]
+        },
+        {
+          "id": "D",
+          "text": "直接把赵宇在群里的辱骂记录打印出来当众念，证明'是赵宇先错',好让家长消气。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -1, "studentTrust": -1, "classOrder": -1, "ethicsRisk": 2, "lawRisk": 2, "examScore": -2, "affection_lu": -1},
+          "feedback": "当众公开未成年人的不当言行记录，侵犯赵宇的隐私权与人格尊严，违反网络保护与未成年人保护精神。处理一个孩子的错，不能用伤害他的方式。",
+          "answerKeywords": ["公开未成年人信息", "侵犯隐私人格尊严", "违反保护原则"]
+        }
+      ]
+    },
+    {
+      "id": "ch06_a_after",
+      "type": "dialogue",
+      "background": "meeting_room",
+      "speaker": "陆知行",
+      "expression": "neutral",
+      "text": "（他几不可察地颔首）嗯。先守住红线，再谈处理——你比早上慌的那个，像样多了。\n（他转身在白板上写下'义务教育阶段不得开除''六大保护'，字迹锋利又工整。）\n这两条今天必须刻进你骨头里。保护未成年人，是把两个孩子都接住，不是替一个出气。"
+    },
+    {
+      "id": "ch06_a_heart",
+      "type": "dialogue",
+      "background": "meeting_room",
+      "speaker": "narrator",
+      "text": "他写字的时候，袖口随手挽到小臂，露出一截清瘦的手腕。\n我忽然想起入职第一天，泼在他白衬衫上的那杯咖啡。\n（那时候只觉得他冰得扎人。原来他这套'规则'，是用来在出事那天，把人稳稳接住的网。……我好像，没那么怕他了。）"
+    },
+    {
+      "id": "ch06_t1",
+      "type": "dialogue",
+      "background": "corridor",
+      "speaker": "顾承",
+      "expression": "worried",
+      "text": "（走廊上，顾承等着我，搓着手，一脸愁）\n小满家长冷静点了，可现在又有新麻烦——他们说孩子是在学校受的伤，要学校'全责赔偿'。\n我带班这么多年，最怵这种'学校到底要不要担责'的事。陆主任在里头吗？这道题，得他来。"
+    },
+    {
+      "id": "ch06_b_teach_1",
+      "type": "dialogue",
+      "background": "meeting_room",
+      "speaker": "陆知行",
+      "expression": "serious",
+      "text": "（陆知行把一份《学生伤害事故处理办法》摊在桌上，指节点了点）\n家长要'学校全责'，我们也不能因为怕事就乱认。学校担不担责，看一条核心——**学校有没有过错**。\n有过错才担责，无过错不担责，这叫'过错责任'原则。不是'孩子在校内受伤，学校就一定赔'。"
+    },
+    {
+      "id": "ch06_b_teach_2",
+      "type": "dialogue",
+      "background": "meeting_room",
+      "speaker": "陆知行",
+      "expression": "serious",
+      "text": "怎么算'有过错'？比如：设施有隐患没修、明知学生有矛盾或危险苗头却放任不管、教职工失职、组织活动没尽到管理职责——这些是学校没尽到**教育、管理职责**，要担责。\n反过来，学校已尽职责、伤害是学生间突发或自身原因造成的，学校可减轻或不担责。"
+    },
+    {
+      "id": "ch06_b_teach_3",
+      "type": "dialogue",
+      "background": "meeting_room",
+      "speaker": "陆知行",
+      "expression": "serious",
+      "text": "顺带，把教师那头也理清——《教师法》给老师的是权利，也是义务。\n你有**教育教学权**(组织教学、开展教改)、**管理学生权**(指导学生、评定操行)、**获取报酬权**(按时拿工资津贴)等；同时也背着教育、保护学生、不得侵害学生权益的义务。\n今天这桩，关键看学校事前事中尽没尽到管理与保护职责。"
+    },
+    {
+      "id": "ch06_b_teach_4",
+      "type": "dialogue",
+      "background": "meeting_room",
+      "speaker": "陆知行",
+      "expression": "neutral",
+      "text": "（他说到这儿，难得地放缓了语速，看着我）\n你别一听'责任'两个字就发怵。规则把'谁该担什么'划得清清楚楚，就是为了让你这种新人，不至于在家长的眼泪和怒火里，被推着乱认、乱赔。\n（他顿了顿，声音低了半度）……站在规则里，你就不是一个人在扛。来，考你一道。"
+    },
+    {
+      "id": "ch06_b_apply",
+      "type": "choice",
+      "background": "meeting_room",
+      "speaker": "陆知行",
+      "expression": "serious",
+      "knowledgeCheck": "q_teacher_law_01",
+      "text": "（他把那份办法推到我面前）\n经查：赵宇约架前，曾有同学把'他要找小满麻烦'的消息告诉了当天的值班老师，值班老师听了一句'小孩闹着玩'就没管，结果放学就出了事。这种情形下，学校的责任该怎么认定？",
+      "examTags": {
+        "subject": "301",
+        "module": "教育法律法规",
+        "examPoint": "学生伤害事故学校责任认定（过错责任·学校是否尽到教育管理职责）",
+        "questionType": "材料分析"
+      },
+      "choices": [
+        {
+          "id": "A",
+          "text": "学校明知存在危险苗头却未尽管理与保护职责，存在过错，应依过错程度承担相应责任。",
+          "quality": "optimal",
+          "effects": {"professionalSkill": 2, "studentTrust": 1, "classOrder": 1, "ethicsRisk": -1, "lawRisk": -2, "examScore": 3, "affection_lu": 2},
+          "feedback": "准。值班老师已知危险苗头却放任不管，属学校未尽教育、管理职责，有过错，按过错责任原则应承担相应责任。抓住'是否尽职'这个判定核心，分就稳了。",
+          "answerKeywords": ["学校有过错", "未尽教育管理职责", "过错责任原则", "承担相应责任"]
+        },
+        {
+          "id": "B",
+          "text": "学生伤害与学校无关，是两个孩子自己打架，学校一概不担责。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -2, "studentTrust": -1, "classOrder": -1, "ethicsRisk": 1, "lawRisk": 2, "examScore": -3, "affection_lu": -2},
+          "feedback": "错在忽视'学校已知危险苗头却未处置'这一过错事实。无过错才不担责，本题学校明显有过错，不能一概免责。",
+          "answerKeywords": ["忽视学校过错", "误判无责", "未尽职却免责"]
+        },
+        {
+          "id": "C",
+          "text": "只要是在校内、上学时间受的伤，学校就该承担全部责任，照单全赔。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -1, "studentTrust": 0, "classOrder": -1, "ethicsRisk": 1, "lawRisk": 2, "examScore": -3, "affection_lu": -1},
+          "feedback": "错在把'校内受伤'等同于'学校全责'。我国采过错责任原则，担责与否、担多少要按过错程度认定，不是'校内即全赔'。",
+          "answerKeywords": ["误用无过错全赔", "混淆过错责任", "夸大学校责任"]
+        },
+        {
+          "id": "D",
+          "text": "让那位值班老师个人掏钱赔偿，跟学校没关系。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -2, "studentTrust": -1, "classOrder": -1, "ethicsRisk": 2, "lawRisk": 1, "examScore": -2, "affection_lu": -1},
+          "feedback": "错。教职工执行职务中的过错，对外由学校承担责任；学校担责后可视情形对失职人员内部追责，但不能把责任直接甩给个人对外赔付。",
+          "answerKeywords": ["混淆职务行为责任", "应由学校对外担责", "内部追责≠个人对外赔"]
+        }
+      ]
+    },
+    {
+      "id": "ch06_b_after",
+      "type": "dialogue",
+      "background": "meeting_room",
+      "speaker": "陆知行",
+      "expression": "neutral",
+      "text": "（他重新把那份办法收好，目光落在窗外那位还在低头的值班老师身上，语气复杂）\n学校该认的，一分不推；不该认的，一分不背。这才叫'守规则'——对家长，对孩子，对那位失职的同事，都公平。\n赔偿不是越多越显得有担当。准确，才是。"
+    },
+    {
+      "id": "ch06_b_heart",
+      "type": "dialogue",
+      "background": "meeting_room",
+      "speaker": "narrator",
+      "text": "他说这话时，没看我，眼神却柔了一瞬。\n我忽然懂了——他那身冰，不是无情，是怕。怕在最该冷静的时候被情绪带偏，怕规则一松，就有人被错伤。\n（一个把'公平'看得比'好人缘'还重的人……怎么办，我好像有点，被他吸进去了。）"
+    },
+    {
+      "id": "ch06_t2",
+      "type": "dialogue",
+      "background": "corridor",
+      "speaker": "顾承",
+      "expression": "neutral",
+      "text": "（傍晚，家长走了，事情压了下来。顾承靠在墙上长舒一口气，又皱起眉）\n法规这关过了，可还有件事卡我心里——刚才处理的时候，有位老老师私下跟我说，'这种刺头，当着全班罚站两节课、写检查念出来，保准老实'。\n这……到底算不算管教？陆主任在里头，你去问问？这道，是师德的题了。"
+    },
+    {
+      "id": "ch06_c_teach_1",
+      "type": "dialogue",
+      "background": "meeting_room",
+      "speaker": "陆知行",
+      "expression": "serious",
+      "text": "（陆知行听完，眉峰几不可察地拢了一下）\n罚站两节课、当众念检查——这不是管教，是**体罚与变相体罚**，踩的是师德的红线。\n《中小学教师职业道德规范》六条，今天我们对一对：爱国守法、爱岗敬业、**关爱学生**、教书育人、**为人师表**、终身学习。"
+    },
+    {
+      "id": "ch06_c_teach_2",
+      "type": "dialogue",
+      "background": "meeting_room",
+      "speaker": "陆知行",
+      "expression": "serious",
+      "text": "重点辨两条——\n**关爱学生**：关心爱护全体学生，尊重人格，平等公正，保护安全，关心身心健康，**不讽刺、挖苦、歧视，不体罚或变相体罚**。罚站羞辱、当众念检查，正踩在它的反面。\n**为人师表**：以身作则，作风正派，言行雅正，做学生表率。老师用羞辱去'治'学生，等于亲手教会孩子'强者可以羞辱弱者'。"
+    },
+    {
+      "id": "ch06_c_teach_3",
+      "type": "dialogue",
+      "background": "meeting_room",
+      "speaker": "陆知行",
+      "expression": "neutral",
+      "text": "管，要管；但'怎么管'，决定了你是老师还是施暴者。\n严格要求、批评教育、合理惩戒——可以；讽刺、辱骂、罚站示众、体罚——不行。前者护着孩子的尊严，后者踩碎它。这条线，比法规那条更隐蔽，也更要命，因为它最容易被'我是为他好'这五个字模糊掉。\n（他看了我一眼）来，最后一道。"
+    },
+    {
+      "id": "ch06_c_apply",
+      "type": "choice",
+      "background": "meeting_room",
+      "speaker": "陆知行",
+      "expression": "serious",
+      "knowledgeCheck": "q_ethics2_01",
+      "text": "（他声音放得很稳）\n现在，处理结果要落地。对惹事又嘴硬的赵宇，既要让他认识到错误、又不能踩师德红线。你这个经办老师，会怎么做？",
+      "examTags": {
+        "subject": "301",
+        "module": "教师职业道德",
+        "examPoint": "教师职业道德规范辨析（关爱学生 vs 体罚/变相体罚·为人师表）",
+        "questionType": "材料分析"
+      },
+      "choices": [
+        {
+          "id": "A",
+          "text": "单独与赵宇谈话，肯定他认错的可能，讲清网暴与约架的后果，约定合理的纪律与补偿，全程尊重其人格、不羞辱。",
+          "quality": "optimal",
+          "effects": {"professionalSkill": 2, "studentTrust": 3, "classOrder": 1, "ethicsRisk": -2, "lawRisk": -1, "examScore": 3, "affection_lu": 2, "affection_gu": 1},
+          "feedback": "正解。批评教育+合理惩戒+保护人格，正是'关爱学生'的内核：既管住了行为，又没碰体罚/变相体罚的红线，也守住了'为人师表'。",
+          "answerKeywords": ["尊重人格", "批评教育与合理惩戒", "不体罚不羞辱", "关爱学生"]
+        },
+        {
+          "id": "B",
+          "text": "采纳老老师的建议：罚赵宇当全班面站两节课、把检查大声念出来，杀鸡儆猴。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -2, "studentTrust": -2, "classOrder": 0, "ethicsRisk": 3, "lawRisk": 1, "examScore": -3, "affection_lu": -2, "affection_gu": -1},
+          "feedback": "典型踩雷。罚站示众、当众念检查属变相体罚+人格羞辱，违背'关爱学生'与'为人师表'。师德题里这是必扣的硬伤。",
+          "answerKeywords": ["变相体罚", "人格羞辱", "违背关爱学生为人师表"]
+        },
+        {
+          "id": "C",
+          "text": "在全班面前点名批评赵宇'品行差',让大家都别学他、孤立他。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -2, "studentTrust": -2, "classOrder": -1, "ethicsRisk": 3, "lawRisk": 1, "examScore": -3, "affection_lu": -2},
+          "feedback": "给学生贴'品行差'标签、煽动同学孤立，是讽刺歧视+冷暴力，严重违背关爱学生。教育是帮他改，不是把他钉死。",
+          "answerKeywords": ["贴标签歧视", "煽动孤立冷暴力", "违背关爱学生"]
+        },
+        {
+          "id": "D",
+          "text": "觉得他没救了，干脆不管，劝他家长把他转走拉倒。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -2, "studentTrust": -1, "classOrder": -1, "ethicsRisk": 2, "lawRisk": 2, "examScore": -2, "affection_lu": -2},
+          "feedback": "放弃学生、变相劝退，既违背'关爱全体学生'与'教书育人',又触碰义务教育阶段不得变相劝退的法规底线。",
+          "answerKeywords": ["放弃学生", "变相劝退", "违背关爱学生与法规"]
+        }
+      ]
+    },
+    {
+      "id": "ch06_c_after",
+      "type": "dialogue",
+      "background": "meeting_room",
+      "speaker": "陆知行",
+      "expression": "smile",
+      "text": "（他听完，唇角极轻地动了一下——那大概是我入职以来，离'笑'最近的一次。）\n对。管住手，才管得住人。\n这一天，从义务教育法到伤害事故，再到这条师德线，你一步没乱。林小满和赵宇，都被'规则'稳稳接住了。\n（他合上文件，看着我，眼神里有种我读不懂的、很轻的东西。）"
+    },
+    {
+      "id": "ch06_c_heart",
+      "type": "dialogue",
+      "background": "meeting_room",
+      "speaker": "narrator",
+      "text": "他那一下浅得几乎看不见的笑，却像有人在我心口轻轻敲了一记。\n那张永远结着冰的脸，原来也会化。而且化的时候，比谁都好看。\n（陆知行……你到底还藏了多少，没让人看见的温度。）"
+    },
+    {
+      "id": "ch06_end_1",
+      "type": "dialogue",
+      "background": "staff_room",
+      "speaker": "陆知行",
+      "expression": "neutral",
+      "text": "（夜里，教务处只剩我们俩。他收拾着桌上的文件，忽然开口）\n入职第一天，你在见面会签到表上，我在你名字旁边画了个记号。你一直没问。\n（他抬眼，目光落在我脸上，难得地没有躲闪。）……那个记号的意思是——'这个人，慌，但敢往规则里钻。可以教。'\n我很少在一个新人名字旁边，画那个。"
+    },
+    {
+      "id": "ch06_end_2",
+      "type": "dialogue",
+      "background": "staff_room",
+      "speaker": "narrator",
+      "text": "我愣在原地。\n原来那个困了我整整一段日子的小记号，不是'重点盯防',是'值得教'。\n（他说这话时，耳尖在台灯下，好像，悄悄红了一下。也可能是我看错了。可我自己的心跳，是真的，乱了一整夜。）\n这一天，我学会了把两个孩子都接住，也终于读懂了一个画在我名字旁的记号。备课铃明天还会响——但有些东西，已经不一样了。"
+    },
+    {
+      "id": "ch06_end",
+      "type": "summary",
+      "background": "staff_room",
+      "speaker": "narrator",
+      "text": "（规则之内，落幕。把今天的得失，一条条记进手账——这一桩，关乎的是两个孩子的一生，也关乎你心里那道，正在融化的冰。）",
+      "review": {
+        "learnedExamPoints": [
+          "301-法规-义务教育法(不得开除义务教育学生)+未成年人保护法(六大保护)— 陆知行",
+          "301-法规-学生伤害事故处理(学校过错责任认定)+教师法(教师权利义务)— 陆知行",
+          "301-师德-教师职业道德规范辨析(关爱学生 vs 体罚/变相体罚·为人师表)— 陆知行"
+        ],
+        "structure": "三个考点从同一桩学生纠纷事件层层长出：要求开除→义务教育法+未成年人保护法；学校要不要赔→伤害事故过错责任+教师权利义务；怎么管赵宇→师德规范辨析。走的是'剧情讲授→马上做题→应用→反馈'。章末月考为冷测。",
+        "mockExam": "core_ch06_mock",
+        "recommendedReview": [
+          "答错法规保护→陆知行重讲不得开除义务教育学生与未成年人六大保护",
+          "答错伤害事故→陆知行重讲过错责任原则与学校是否尽到教育管理职责",
+          "答错师德→陆知行重讲关爱学生(禁体罚/变相体罚)与为人师表的边界"
+        ]
+      }
+    }
+  ]
+}

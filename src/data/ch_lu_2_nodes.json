@@ -1,0 +1,175 @@
+{
+  "chapterId": "route_lu_2",
+  "route": "lu",
+  "requires": {"flagsAllTrue": ["route_locked_lu"]},
+  "title": "陆知行线 · 第二章 · 出事那天",
+  "summary": "黄金四拍第二、三拍'误会·对立'。一次体育课，周也在跑操时旧伤复发摔倒、又被慌乱中的同学绊到，膝盖韧带受了伤。家长情绪激动，校园里议论纷纷。陆知行第一时间封锁现场、按《学生伤害事故处理办法》一条条走程序——固定证据、查值班记录、不轻易表态、不擅自垫付。你站在哭红眼的周也和焦灼的家长面前，觉得他冷血到不近人情，冲突在'规则 vs 温度'里第一次正面爆发。深挖：学生伤害事故的过错责任认定、责任分担与处理程序。",
+  "designNote": "乙女向个人线 ch_lu_2，'误会/对立·学生伤害事故'。第一人称旁白。lu 表情仅 neutral|smile|serious|worried，背景仅 corridor|meeting_room|counseling_room|staff_room。深挖 301 教育法律法规·学生伤害事故处理办法(过错责任/责任分担/程序)。teach→knowledgeCheck(带 examTags)→apply→after→heart 微循环。本章是'对立'高潮：关键选择给玩家'依规则' vs '凭情绪'的分歧，chose_rule_and_warmth / chose_emotional_law 用 setFlag 记录；情绪化执法给 lawRisk 正分。学生(周也)仅作教学对象/事件源。",
+  "characters": ["lu", "shen", "jiang"],
+  "students": ["周也"],
+  "valueFields": ["professionalSkill", "studentTrust", "classOrder", "ethicsRisk", "lawRisk", "examScore", "affection_lu"],
+  "note": "ethicsRisk/lawRisk 为逆向指标，越低越好。knowledgeCheck 指向 ch_lu_quiz.json 的题目 id。",
+  "nodes": [
+    {
+      "id": "ch_lu_2_intro",
+      "type": "dialogue",
+      "background": "corridor",
+      "speaker": "narrator",
+      "text": "周三上午第三节，操场那头突然一阵骚动。\n等我跑到时，周也已经倒在跑道边，捂着右膝，脸白得吓人。旁边一个同学手足无措——跑操时挤到一起，周也旧伤的腿一软栽下去，又被身后的同学绊了一下。\n（这孩子本就一考试就崩，现在伤成这样……我心一下子揪紧了。）"
+    },
+    {
+      "id": "ch_lu_2_intro_2",
+      "type": "dialogue",
+      "background": "corridor",
+      "speaker": "陆知行",
+      "expression": "serious",
+      "text": "（陆知行几乎是和校医同时到的。他没去扶周也——校医在做这件事——而是站定，目光像尺子一样扫过现场。）\n别动伤腿，等校医。其他人退后，保持原样。\n（他对赶来的体育老师，语气没有一丝起伏。）几点几分、跑操队形、谁在周也前后、有没有教师在场、地面有没有问题——现在就记下来，趁记忆最准。"
+    },
+    {
+      "id": "ch_lu_2_intro_3",
+      "type": "dialogue",
+      "background": "corridor",
+      "speaker": "narrator",
+      "text": "我蹲在周也身边，他疼得直掉眼泪，小声说'老师我是不是要被赔死了'。\n我抬头想让陆知行说句安慰的话，可他正冷静地指挥人去调监控、通知家长，半句多余的情绪都没有。\n（孩子都疼成这样了，他怎么还能这么……这么像个机器？这就是他的'规则'吗。）"
+    },
+    {
+      "id": "ch_lu_2_conflict_1",
+      "type": "dialogue",
+      "background": "meeting_room",
+      "speaker": "narrator",
+      "text": "周也被送去医院，家长赶到，在教务处红着眼眶质问：是不是学校组织跑操不当、是不是没人管。\n我下意识想替学校先认个软、先垫付医药费安抚家长，话到嘴边，被陆知行一个眼神按了回去。\n（我心里那点火'噌'地起来了——人家长都哭了，你连句软话、连笔垫付都不肯松？）"
+    },
+    {
+      "id": "ch_lu_2_conflict_2",
+      "type": "dialogue",
+      "background": "meeting_room",
+      "speaker": "陆知行",
+      "expression": "serious",
+      "text": "（送走暂时冷静下来的家长，会议室里只剩我们俩。我没忍住，质问出口——'你就不能对周也、对家长，多一点温度吗？'）\n（他静了两秒，没动气。）你以为我不想说软话？\n说一句'都是学校的错、我们全赔',家长这一刻会舒服。可如果查下来周也是旧伤复发、学校组织并无过错，这句话就成了把柄，最后赔出去的，是全校学生本可以用的钱。\n温度，不能建在乱表态上。先把'谁错在哪、错多少'查清，才是真的对所有人负责。"
+    },
+    {
+      "id": "ch_lu_2_teach_1",
+      "type": "dialogue",
+      "background": "meeting_room",
+      "speaker": "陆知行",
+      "expression": "serious",
+      "text": "（他把《学生伤害事故处理办法》翻开，压住我的火气，一条条给我捋。）\n这类事故，认责只认一个核心——**过错责任**：谁有过错、谁担责，无过错不担责。不是'孩子在校受伤学校就全赔'。\n所以我才不让你乱认、乱垫付。乱认，等于替没有的过错认账。"
+    },
+    {
+      "id": "ch_lu_2_teach_2",
+      "type": "dialogue",
+      "background": "meeting_room",
+      "speaker": "陆知行",
+      "expression": "serious",
+      "text": "怎么判学校有没有过错？看学校尽没尽到**教育、管理职责**：\n设施有没有隐患、组织活动安不安全、对学生已知的特异体质(比如周也的旧伤)有没有注意、发现危险有没有及时处置。\n周也这桩要查三件事：跑操组织是否规范、校方事先知不知道他旧伤、出事后处置及不及时。哪一条没尽到，学校就在哪一条上有过错。"
+    },
+    {
+      "id": "ch_lu_2_teach_3",
+      "type": "dialogue",
+      "background": "meeting_room",
+      "speaker": "陆知行",
+      "expression": "neutral",
+      "text": "还要分清责任'落在谁头上'：\n是学校的过错，学校担；是绊倒他的那个学生有过错，由那名学生的监护人担相应责任；是周也自身原因(隐瞒旧伤、自身突发)，则相应减轻学校责任。**多因一果，按各自过错分担。**\n至于程序——固定证据、依法调解或申请处理、可走保险，绝不在事实查清前擅自全额垫付认账。这不是冷血，是给每个孩子都留一条公道。"
+    },
+    {
+      "id": "ch_lu_2_teach_4",
+      "type": "dialogue",
+      "background": "meeting_room",
+      "speaker": "陆知行",
+      "expression": "neutral",
+      "text": "（他说完，看着我还绷着的脸，语气忽然放软了。）\n我知道你看周也掉眼泪，心疼。我也心疼。\n（他别开眼。）但我心疼的方式，是把程序走到滴水不漏，让该赔的一分不少赔到他手上，让不该周也背的，他一分不背。……来，按我教你的，做一道。"
+    },
+    {
+      "id": "ch_lu_2_apply",
+      "type": "choice",
+      "background": "meeting_room",
+      "speaker": "陆知行",
+      "expression": "serious",
+      "knowledgeCheck": "q_lu_injury_accident_01",
+      "text": "（他把调查要点摊在我面前。）\n查清了：跑操组织规范、有教师在场，学校事先并不知道周也隐瞒了旧伤，出事后处置也及时；周也是旧伤复发为主因，身后同学跑动中无意绊到为次因。现在家长仍坚持要学校'全额赔偿'。你作为经办老师，怎么认定责任、怎么答复？",
+      "examTags": {
+        "subject": "301",
+        "module": "教育法律法规",
+        "examPoint": "学生伤害事故责任认定与分担（过错责任原则·学校是否尽到管理职责·多因一果的责任分担）",
+        "questionType": "材料分析"
+      },
+      "choices": [
+        {
+          "id": "A",
+          "text": "依过错责任原则：学校已尽教育管理职责、对隐瞒的旧伤无从知晓，过错很小或无过错；主因是学生自身旧伤、次因是另一学生无意行为，应按各自过错分担，学校据实承担(很小或不承担)，并主动协助走保险、调解。",
+          "quality": "optimal",
+          "effects": {"professionalSkill": 3, "studentTrust": 1, "classOrder": 1, "ethicsRisk": -1, "lawRisk": -3, "examScore": 3, "affection_lu": 3},
+          "feedback": "满分骨架：先定过错责任原则，再核学校是否尽职(尽到→过错小/无)，再按多因一果分担(自身主因+他人次因)，最后给出协助保险调解的暖处理。守法又有温度。",
+          "setFlag": {"route_lean_lu": 1, "chose_rule_and_warmth": true},
+          "answerKeywords": ["过错责任原则", "学校已尽管理职责", "多因一果按过错分担", "自身原因主因", "协助保险调解"]
+        },
+        {
+          "id": "B",
+          "text": "家长哭得可怜，先答应学校全额赔偿、安抚情绪要紧，过错怎么算回头再说。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -2, "studentTrust": 0, "classOrder": -1, "ethicsRisk": 1, "lawRisk": 3, "examScore": -3, "affection_lu": -3},
+          "feedback": "这正是陆知行拦着你别做的事。在无过错或过错很小时承诺全额赔偿，违背过错责任原则，替不存在的过错认账，对其他学生也不公平。情绪化处置，材料题必扣。",
+          "setFlag": {"chose_emotional_law": true},
+          "answerKeywords": ["违背过错责任", "乱认全赔", "情绪化处置"]
+        },
+        {
+          "id": "C",
+          "text": "一口咬定'学校无任何责任，是周也自己隐瞒旧伤',把责任全推给学生，让家长别闹。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -1, "studentTrust": -2, "classOrder": -1, "ethicsRisk": 2, "lawRisk": 2, "examScore": -2, "affection_lu": -2},
+          "feedback": "走向另一个极端：粗暴免责、不谈分担、不给协助，既忽视'多因一果需分担'，又缺乏对受伤学生的关怀。守了'冷'丢了'暖',同样不是优解。",
+          "answerKeywords": ["粗暴全推给学生", "忽视责任分担", "缺乏关怀"]
+        },
+        {
+          "id": "D",
+          "text": "让那个无意绊到周也的同学一个人承担全部赔偿，息事宁人。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -2, "studentTrust": -2, "classOrder": -1, "ethicsRisk": 2, "lawRisk": 2, "examScore": -3, "affection_lu": -2},
+          "feedback": "错。那名同学只是无意的次要因素，让其独担全责，违背'按各自过错分担'，等于又制造一个被冤枉的孩子。处理事故不是找替罪羊。",
+          "answerKeywords": ["误让次因独担全责", "违背按过错分担", "制造替罪羊"]
+        }
+      ]
+    },
+    {
+      "id": "ch_lu_2_after",
+      "type": "dialogue",
+      "background": "meeting_room",
+      "speaker": "陆知行",
+      "expression": "neutral",
+      "text": "（他听完我的答复，沉默了片刻，眼神里那点惯常的锋利，软了下来。）\n……你看，你能把'查清楚'和'对孩子好'放进同一句话里。\n这就是我一直想让你懂的：规则不是温度的反义词。冷的是程序，暖的，是程序走完之后，没有一个孩子被错赔、被冤枉。\n（他低声补了一句。）刚才……怪我没先跟你解释，让你以为我冷血。"
+    },
+    {
+      "id": "ch_lu_2_heart",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "narrator",
+      "text": "（后来我去咨询室看周也，江晚正陪着他。周也红着眼说，陆主任私下垫了打车送他去医院的钱，没让任何人知道。）\n我站在门口，心像被什么轻轻撞了一下。\n（原来他不是没有温度。他只是把'软话'换成了'把事办对'，把'垫付'藏在了没人看见的地方。我错怪他了。可越是知道错怪了他，这颗心，就越往他那边偏。）"
+    },
+    {
+      "id": "ch_lu_2_end_1",
+      "type": "dialogue",
+      "background": "staff_room",
+      "speaker": "陆知行",
+      "expression": "worried",
+      "text": "（夜里，事故处理告一段落。他罕见地没有立刻走，站在窗前，背影里有种我从没见过的沉。）\n这种事，我处理过太多次了。每一次，都得把自己摁进规则里，一寸都不能松。\n（他没回头。）你今天问我'能不能有点温度'……这句话，比你想的，扎得我深。\n（我愣住了。他这身'冰',底下，到底压着什么。）"
+    },
+    {
+      "id": "ch_lu_2_end",
+      "type": "summary",
+      "background": "staff_room",
+      "speaker": "narrator",
+      "text": "（陆知行线第二章落幕。'规则 vs 温度'的第一场对立，以我的错怪、他的沉默收尾。把今天的得失记进手账——也把那个没说出口的疑问，先压在心底。）",
+      "review": {
+        "learnedExamPoints": [
+          "301-法规-学生伤害事故责任认定（过错责任原则·学校是否尽到教育管理职责）— 陆知行",
+          "301-法规-学生伤害事故的责任分担与处理程序（多因一果按过错分担·依法调解保险·不擅自认账）— 陆知行"
+        ],
+        "structure": "从周也跑操受伤事件层层长出考点：要不要先认软垫付→过错责任原则；责任落在谁头上→多因一果按过错分担与程序。走'剧情讲授→马上做题→应用→反馈'，并把'规则 vs 温度'的情感对立嵌进抉择。",
+        "mockExam": "route_lu_mock",
+        "recommendedReview": [
+          "答错伤害事故→陆知行重讲过错责任原则、学校是否尽到管理职责、多因一果如何按过错分担与处理程序"
+        ]
+      }
+    }
+  ]
+}

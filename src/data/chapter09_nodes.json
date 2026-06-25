@@ -1,0 +1,610 @@
+{
+  "chapterId": "core_ch09",
+  "title": "第九章 · 文化素养之夜",
+  "summary": "校庆前夜，图书馆要办一场'中华文化之夜'，程砚被推去做学术把关，临时把我抓了壮丁。一摞要校对的展板、一沓抽测卡，全压在长桌上。他不肯替我念答案，只把每一块展板当成一道题，慢条斯理地反问我：朝代谁先谁后、四大发明算谁的、这位作家究竟写过什么、那幅名画到底出自谁手、'三省六部'是哪三省、袁隆平改写了什么。老语文组长钱守拙偶尔从书架那头探出头，扔来一句典故便又缩回去。一夜灯下，墨香、旧纸、和那个总能一句话把我点醒的男人——我的文化素养，也是我对他的心，都在这一晚被一格格擦亮。",
+  "designNote": "学术线·301综合素质文化素养专章：第一人称心声贯穿。主带教程砚(教研骨干·儒雅严谨)在图书馆/教研室/办公室借'校庆文化之夜校对展板'这一事件，长出6个文化素养考点：A 中外历史常识(朝代/事件)→B 科技常识(四大发明/科学家)→C 文学常识(作家-代表作-国别-体裁)→D 艺术常识(音乐/美术名家代表作)→E 成语典故与古代制度(三省六部等)→F 杰出人物-成就对应(袁隆平等)。每考点走'剧情讲授→随堂检测→应用→反馈→心动'微循环。文化题接近真题'下列对应正确/错误的是'单选，干扰项似是而非。新配角钱守拙(老语文组长)仅文本出场、无立绘、非攻略对象，负责掉书袋点缀。程砚有 affection_cheng；保留 ethicsRisk/lawRisk 逆向指标但文化章很少触发。贯穿钩子：程砚那支用来在展板上勾错的红笔。",
+  "characters": ["cheng"],
+  "students": [],
+  "valueFields": ["professionalSkill", "studentTrust", "classOrder", "ethicsRisk", "lawRisk", "examScore", "affection_lu", "affection_jiang", "affection_gu", "affection_cheng", "affection_shen"],
+  "note": "ethicsRisk/lawRisk 为逆向指标，越低越好。knowledgeCheck 指向 chapter09_quiz.json 的题目 id。钱守拙为仅文本出场的新配角，无立绘、非攻略对象。",
+  "nodes": [
+    {
+      "id": "ch09_intro_1",
+      "type": "dialogue",
+      "background": "library",
+      "speaker": "narrator",
+      "text": "校庆前夜，图书馆没关灯。\n推门进去，一股旧书和墨水混在一起的味道扑面而来。靠窗的长桌上摊着十几块半成品展板——'中华文化之夜'，明天要给全校师生和来宾看的。\n（程砚发消息叫我来'搭把手'。我以为是搬展板，结果……）"
+    },
+    {
+      "id": "ch09_intro_2",
+      "type": "dialogue",
+      "background": "library",
+      "speaker": "程砚",
+      "expression": "smile",
+      "text": "（他站在长桌后，一手端着杯早凉透的茶，另一只手转着支红笔，听见动静抬眼）\n来了。校庆要办'文化之夜'，校长点名让我做学术把关——展板上但凡有一处常识硬伤，明天就是全校看笑话。\n（他把那叠展板往我这边一推，红笔搁在最上面）这种'文化常识'，恰好是你们考的301《综合素质》最爱出的题。所以——今晚我不帮你校，我考你校。"
+    },
+    {
+      "id": "ch09_intro_3",
+      "type": "dialogue",
+      "background": "library",
+      "speaker": "narrator",
+      "text": "书架那头传来一声轻咳。\n老语文组长钱守拙——头发花白、戴老花镜的老先生——从书堆后面探出半个身子，慢悠悠扔来一句：'文化常识这东西，似是而非最害人。当年我改高考卷，把『司马光著《资治通鉴》』写成『司马迁著《资治通鉴》』，一字之差，错的可不少。'\n（说完又缩回书架后去了。程砚低低笑了一声：'钱老的那些『陷阱』，待会儿你会领教。'）"
+    },
+
+    {
+      "id": "ch09_a_teach_1",
+      "type": "dialogue",
+      "background": "library",
+      "speaker": "程砚",
+      "expression": "smile",
+      "text": "（他抽出第一块展板——一条标着朝代的历史长河图）\n第一块，历史。文化素养第一道坎，就是**中外历史常识**：朝代先后、重大事件谁在前谁在后。\n你别小看顺序题——'下列朝代按时间先后排列正确的是'，年年都考，错的人乌泱泱一片。"
+    },
+    {
+      "id": "ch09_a_teach_2",
+      "type": "dialogue",
+      "background": "library",
+      "speaker": "程砚",
+      "expression": "neutral",
+      "text": "中国朝代主线，背顺口溜最稳：**夏、商、西周、东周(春秋战国)，秦、汉，三国、两晋，南北朝，隋、唐，五代十国，宋(辽夏金)，元、明、清**。\n几个最爱被颠倒的：**秦在汉前**(秦统一在前，汉承秦制)；**隋在唐前**(隋开科举、修运河，唐承其制而盛)；**宋在元前、元在明前**。\n（他用红笔点了点展板）这块展板把'隋'排到了'唐'后面——第一处硬伤，我已经圈出来了。"
+    },
+    {
+      "id": "ch09_a_teach_3",
+      "type": "dialogue",
+      "background": "library",
+      "speaker": "程砚",
+      "expression": "smile",
+      "text": "再顺手把'重大事件'对上号：**商鞅变法**在秦(战国)、**文景之治**在西汉、**贞观之治**在唐、**安史之乱**也在唐、**王安石变法**在北宋、**郑和下西洋**在明、**戊戌变法**在清末。\n（他把红笔横过来递给我，笔身还带着他掌心的温度）这块展板剩下的朝代顺序，你来勾。先答我一道——"
+    },
+    {
+      "id": "ch09_a_apply",
+      "type": "choice",
+      "background": "library",
+      "speaker": "程砚",
+      "expression": "smile",
+      "knowledgeCheck": "q_history_01",
+      "text": "（他靠在桌沿，看我握着那支红笔）\n这块展板要在结尾放一行'朝代时间轴'。下面四组排列，哪一组按时间先后**完全正确**、可以印上去？",
+      "examTags": {
+        "subject": "301",
+        "module": "文化素养",
+        "examPoint": "中外历史常识：中国主要朝代的先后顺序",
+        "questionType": "单项选择"
+      },
+      "choices": [
+        {
+          "id": "A",
+          "text": "秦→汉→隋→唐→宋→元→明→清，顺序完全正确，可以印。",
+          "quality": "optimal",
+          "effects": {"professionalSkill": 2, "studentTrust": 1, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": 3, "affection_cheng": 3},
+          "feedback": "对。秦→汉→(三国两晋南北朝)→隋→唐→宋→元→明→清，这条主线是文化常识的地基，朝代顺序题先抓它准没错。",
+          "answerKeywords": ["秦在汉前", "隋在唐前", "宋元明清依次", "朝代主线"]
+        },
+        {
+          "id": "B",
+          "text": "汉→秦→唐→隋→元→宋→清→明，这样排也行。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -1, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": -2, "affection_cheng": -1},
+          "feedback": "全错。秦先于汉、隋先于唐、宋先于元、明先于清，这一组把四对关系全颠倒了，是顺序题最典型的'似是而非'干扰。",
+          "answerKeywords": ["秦汉颠倒", "隋唐颠倒", "宋元明清颠倒"]
+        },
+        {
+          "id": "C",
+          "text": "秦→汉→唐→隋→宋→元→明→清，把唐放在隋前面。",
+          "quality": "suboptimal",
+          "effects": {"professionalSkill": 0, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": -1, "affection_cheng": 0},
+          "feedback": "只错一处但要命：隋在唐前，唐承隋制(科举、运河)而盛。'隋唐'颠倒是高频陷阱，印上去就是硬伤。",
+          "answerKeywords": ["隋唐顺序错", "隋先于唐"]
+        },
+        {
+          "id": "D",
+          "text": "秦→汉→隋→唐→元→宋→明→清，把元放在宋前面。",
+          "quality": "suboptimal",
+          "effects": {"professionalSkill": 0, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": -1, "affection_cheng": 0},
+          "feedback": "也只错一处：宋在元前，元灭南宋后才一统。'宋元'颠倒同样是常见错点，不能印。",
+          "answerKeywords": ["宋元顺序错", "宋先于元"]
+        }
+      ]
+    },
+    {
+      "id": "ch09_a_after",
+      "type": "dialogue",
+      "background": "library",
+      "speaker": "程砚",
+      "expression": "smile",
+      "text": "（他接过我勾完的展板，扫了一眼，唇角动了动）\n顺序对了。文化常识没有捷径，可也不是死记——把主线串成一条河，事件就是河上的桥，错位的桥一眼就看得出。\n（他把这块靠到墙边，'啪'地立稳）第一块，过。"
+    },
+    {
+      "id": "ch09_a_heart",
+      "type": "dialogue",
+      "background": "library",
+      "speaker": "narrator",
+      "text": "他立展板的动作很轻，像怕碰皱了什么。\n台灯把他低头的侧影描得很清，那支红笔在他指间转着，慢条斯理，却一处错也没放过。\n（被他'考'着，竟一点也不慌。他从不直接给答案，可每一句反问，都像在帮我把脑子里乱成一团的线，一根根理直。……我在想什么。看展板。）"
+    },
+
+    {
+      "id": "ch09_t1",
+      "type": "dialogue",
+      "background": "library",
+      "speaker": "程砚",
+      "expression": "smile",
+      "text": "（他抽出第二块——画着指南针、活字、火药、纸张的展板）\n历史是骨，科技是脉。第二块，**科技常识**。\n这块最容易出'张冠李戴'的笑话——四大发明算谁的、哪位科学家做出了什么，错一个，明天来宾里随便一个理科老师都能挑出来。"
+    },
+    {
+      "id": "ch09_b_teach_1",
+      "type": "dialogue",
+      "background": "library",
+      "speaker": "程砚",
+      "expression": "neutral",
+      "text": "先把**中国四大发明**钉死：**造纸术**(东汉蔡伦改进)、**印刷术**(北宋毕昇发明活字印刷)、**火药**、**指南针**。这四样是中国的，别让展板写成'古希腊四大发明'。\n蔡伦不是'发明'纸——西汉已有纸，他是**改进**造纸术；毕昇发明的是**活字**印刷，不是印刷术本身(雕版更早)。这两个'改进/发明'的字眼，钱老最爱拿来挖坑。"
+    },
+    {
+      "id": "ch09_b_teach_2",
+      "type": "dialogue",
+      "background": "library",
+      "speaker": "程砚",
+      "expression": "smile",
+      "text": "世界科学家与成就也对上号：**牛顿**——万有引力与三大运动定律；**爱因斯坦**——相对论；**达尔文**——进化论(《物种起源》)；**居里夫人**——放射性研究(发现镭、钋)；**爱迪生**——电灯等大量发明；**瓦特**——改良蒸汽机。\n（钱守拙在书架后接了句：'当心『爱迪生发现电』——他是改进发明家，不是物理发现者。'）程砚笑：钱老说得对，这正是干扰项常做的手脚。"
+    },
+    {
+      "id": "ch09_b_apply",
+      "type": "choice",
+      "background": "library",
+      "speaker": "程砚",
+      "expression": "smile",
+      "knowledgeCheck": "q_science_01",
+      "text": "（他指着这块展板的'人物—成就'对照栏）\n这一栏明天要印。下面四组'科技人物与其成就'的对应，哪一组是**完全正确**的？",
+      "examTags": {
+        "subject": "301",
+        "module": "文化素养",
+        "examPoint": "科技常识：四大发明与中外科学家成就的对应",
+        "questionType": "单项选择"
+      },
+      "choices": [
+        {
+          "id": "A",
+          "text": "蔡伦——改进造纸术；牛顿——万有引力；达尔文——进化论。",
+          "quality": "optimal",
+          "effects": {"professionalSkill": 2, "studentTrust": 1, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": 3, "affection_cheng": 3},
+          "feedback": "对。蔡伦改进造纸术(非发明纸)、牛顿提出万有引力、达尔文创立进化论，三项一一对应、措辞精准，可以印。",
+          "answerKeywords": ["蔡伦改进造纸术", "牛顿万有引力", "达尔文进化论"]
+        },
+        {
+          "id": "B",
+          "text": "毕昇——发明造纸术；爱因斯坦——进化论；居里夫人——电灯。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -1, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": -2, "affection_cheng": -1},
+          "feedback": "全错。毕昇发明的是活字印刷(非造纸术)、爱因斯坦是相对论(进化论是达尔文)、电灯是爱迪生(居里夫人是放射性)，三项全张冠李戴。",
+          "answerKeywords": ["毕昇活字印刷非造纸", "爱因斯坦相对论", "电灯属爱迪生"]
+        },
+        {
+          "id": "C",
+          "text": "蔡伦——发明造纸术；牛顿——万有引力；达尔文——进化论。",
+          "quality": "suboptimal",
+          "effects": {"professionalSkill": 0, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": -1, "affection_cheng": 0},
+          "feedback": "差一个字就错：蔡伦是'改进'造纸术，纸在西汉已有。'发明/改进'的措辞陷阱印上去就是硬伤。",
+          "answerKeywords": ["蔡伦应为改进非发明", "措辞陷阱"]
+        },
+        {
+          "id": "D",
+          "text": "毕昇——发明活字印刷；爱迪生——相对论；达尔文——进化论。",
+          "quality": "suboptimal",
+          "effects": {"professionalSkill": 0, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": -1, "affection_cheng": 0},
+          "feedback": "毕昇、达尔文两项对，但'爱迪生——相对论'错：相对论是爱因斯坦，爱迪生是发明家(电灯等)。只要有一处错就不能印。",
+          "answerKeywords": ["相对论属爱因斯坦", "爱迪生为发明家"]
+        }
+      ]
+    },
+    {
+      "id": "ch09_b_after",
+      "type": "dialogue",
+      "background": "library",
+      "speaker": "程砚",
+      "expression": "smile",
+      "text": "（他用红笔在'爱因斯坦——相对论'那行下面轻轻画了道线）\n科技题就赢在'抠字眼'——发明还是改进、是谁的成就，差一个字，整块展板就立不住。\n你刚才那一下犹豫，正是对的。宁可停半秒去抠那个动词。"
+    },
+
+    {
+      "id": "ch09_t2",
+      "type": "dialogue",
+      "background": "staffroom",
+      "speaker": "narrator",
+      "text": "校对到第三块时，程砚提议挪去隔壁教研室——那里灯更亮，长桌更大，能把剩下的展板一字排开。\n他抱起一摞展板走在前面，我跟在后头，听见他低声自语：'文学这块，最考人。'\n（钱守拙抱着一本线装书也跟了过来，说『文学常识，我来当陪审』。）"
+    },
+    {
+      "id": "ch09_c_teach_1",
+      "type": "dialogue",
+      "background": "staffroom",
+      "speaker": "程砚",
+      "expression": "smile",
+      "text": "（第三块铺在教研室长桌上，满是作家头像和书名）\n第三块，**文学常识**。文化素养里出题最密的一块——考的就是'作家—代表作—国别—体裁'四个要素能不能对得严丝合缝。\n一个作家错一项，整条就废。"
+    },
+    {
+      "id": "ch09_c_teach_2",
+      "type": "dialogue",
+      "background": "staffroom",
+      "speaker": "程砚",
+      "expression": "neutral",
+      "text": "中国这边先钉牢：**司马迁**《史记》(纪传体通史，不是司马光)；**司马光**《资治通鉴》(编年体);**李白**(诗仙)、**杜甫**(诗圣);四大名著——《红楼梦》曹雪芹、《三国演义》罗贯中、《水浒传》施耐庵、《西游记》吴承恩;**鲁迅**《呐喊》《狂人日记》(中国现代小说)。\n（钱守拙点头：'司马迁、司马光，一字之差，年年有人栽。'）"
+    },
+    {
+      "id": "ch09_c_teach_3",
+      "type": "dialogue",
+      "background": "staffroom",
+      "speaker": "程砚",
+      "expression": "smile",
+      "text": "外国这边按国别串：**莎士比亚**(英·戏剧·《哈姆雷特》)、**列夫·托尔斯泰**(俄·长篇小说·《战争与和平》)、**巴尔扎克**(法·《人间喜剧》)、**雨果**(法·《巴黎圣母院》《悲惨世界》)、**海明威**(美·《老人与海》)、**泰戈尔**(印度·诗·《飞鸟集》)。\n（他把红笔抛给我）这块展板有一处国别、一处作品挂错了。你先答我一道——"
+    },
+    {
+      "id": "ch09_c_apply",
+      "type": "choice",
+      "background": "staffroom",
+      "speaker": "程砚",
+      "expression": "smile",
+      "knowledgeCheck": "q_literature_01",
+      "text": "（他双臂抱在胸前，等我）\n展板要印一组'作家—国别—代表作'。下面四组，哪一组对应**完全正确**？",
+      "examTags": {
+        "subject": "301",
+        "module": "文化素养",
+        "examPoint": "文学常识：作家、国别与代表作的对应",
+        "questionType": "单项选择"
+      },
+      "choices": [
+        {
+          "id": "A",
+          "text": "莎士比亚（英国）——《哈姆雷特》；托尔斯泰（俄国）——《战争与和平》；曹雪芹（中国）——《红楼梦》。",
+          "quality": "optimal",
+          "effects": {"professionalSkill": 2, "studentTrust": 1, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": 3, "affection_cheng": 3},
+          "feedback": "对。莎士比亚(英·《哈姆雷特》)、托尔斯泰(俄·《战争与和平》)、曹雪芹(中·《红楼梦》)，作家、国别、作品三项全对，可以印。",
+          "answerKeywords": ["莎士比亚英国哈姆雷特", "托尔斯泰俄国战争与和平", "曹雪芹红楼梦"]
+        },
+        {
+          "id": "B",
+          "text": "莎士比亚（法国）——《悲惨世界》；雨果（英国）——《哈姆雷特》；司马光（中国）——《史记》。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -1, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": -2, "affection_cheng": -1},
+          "feedback": "全错。莎士比亚是英国(《悲惨世界》是法国雨果)、雨果是法国(《哈姆雷特》是莎士比亚)、《史记》是司马迁(司马光著《资治通鉴》)，三项全错位。",
+          "answerKeywords": ["莎士比亚英国", "悲惨世界属雨果", "史记属司马迁"]
+        },
+        {
+          "id": "C",
+          "text": "海明威（美国）——《老人与海》；巴尔扎克（法国）——《人间喜剧》；司马迁（中国）——《资治通鉴》。",
+          "quality": "suboptimal",
+          "effects": {"professionalSkill": 0, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": -1, "affection_cheng": 0},
+          "feedback": "前两项对，最后一项错：《资治通鉴》是司马光，司马迁著《史记》。'司马迁/司马光—史记/资治通鉴'正是钱老说的一字之差陷阱。",
+          "answerKeywords": ["司马迁应配史记", "资治通鉴属司马光"]
+        },
+        {
+          "id": "D",
+          "text": "泰戈尔（印度）——《飞鸟集》；雨果（法国）——《巴黎圣母院》；罗贯中（中国）——《水浒传》。",
+          "quality": "suboptimal",
+          "effects": {"professionalSkill": 0, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": -1, "affection_cheng": 0},
+          "feedback": "前两项对，最后一项错：罗贯中著《三国演义》，《水浒传》是施耐庵。四大名著的作者配对也是高频考点。",
+          "answerKeywords": ["罗贯中应配三国演义", "水浒传属施耐庵"]
+        }
+      ]
+    },
+    {
+      "id": "ch09_c_after",
+      "type": "dialogue",
+      "background": "staffroom",
+      "speaker": "程砚",
+      "expression": "smile",
+      "text": "（他把展板上挂错的那张作家卡片揭下来，重新贴正，动作不疾不徐）\n文学题别贪快。'作家—国别—作品—体裁'，四个钩子，一个一个挂。最毒的从来不是你不知道的，是你'差点就对了'的。\n（钱守拙在一旁抚掌：'这话，比我讲得透。'）"
+    },
+    {
+      "id": "ch09_c_heart",
+      "type": "dialogue",
+      "background": "staffroom",
+      "speaker": "narrator",
+      "text": "他重贴卡片时，指尖很稳，像在对待一件要紧的东西。\n灯下，他和钱老一来一往地'拆台'，语气却都是惜字如金的认真。\n（原来他不是要难为我。他是把每一块展板，都当成我明天考场上可能撞见的那道题，提前替我，一处处排好了雷。）"
+    },
+
+    {
+      "id": "ch09_t3",
+      "type": "dialogue",
+      "background": "staffroom",
+      "speaker": "程砚",
+      "expression": "smile",
+      "text": "（他抽出第四块——印着五线谱、画作的展板）\n文字之外，还有声音和颜色。第四块，**艺术常识**：音乐、美术的名家与代表作。\n这块出题不算多，可一旦出，干扰项都长得'很有文化'，唬人。"
+    },
+    {
+      "id": "ch09_d_teach_1",
+      "type": "dialogue",
+      "background": "staffroom",
+      "speaker": "程砚",
+      "expression": "neutral",
+      "text": "音乐先记西方'三巨头'与几位绕不开的：**贝多芬**(德·《命运交响曲》《欢乐颂》)、**莫扎特**(奥·《费加罗的婚礼》)、**巴赫**('西方音乐之父')、**肖邦**(波兰·'钢琴诗人')、**柴可夫斯基**(俄·《天鹅湖》)。\n中国民乐别忘：**阿炳**(华彦钧)《二泉映月》、**聂耳**《义勇军进行曲》、**冼星海**《黄河大合唱》。"
+    },
+    {
+      "id": "ch09_d_teach_2",
+      "type": "dialogue",
+      "background": "staffroom",
+      "speaker": "程砚",
+      "expression": "smile",
+      "text": "美术这边钉几个最常考的：**达·芬奇**(意·《蒙娜丽莎》《最后的晚餐》)、**梵高**(荷·《向日葵》《星月夜》)、**毕加索**(西班牙·立体主义·《格尔尼卡》)；中国：**张择端**《清明上河图》、**顾恺之**《洛神赋图》、**齐白石**(画虾)、**徐悲鸿**(画马·《奔马图》)。\n（钱守拙补一句：'《蒙娜丽莎》达·芬奇、《向日葵》梵高——别让展板写反了，那可是要笑掉来宾大牙的。'）"
+    },
+    {
+      "id": "ch09_d_apply",
+      "type": "choice",
+      "background": "staffroom",
+      "speaker": "程砚",
+      "expression": "smile",
+      "knowledgeCheck": "q_art_01",
+      "text": "（他把红笔点在艺术展板的对照表上）\n这表明天要印。下面四组'艺术家与其代表作'的对应，哪一组**完全正确**？",
+      "examTags": {
+        "subject": "301",
+        "module": "文化素养",
+        "examPoint": "艺术常识：中外音乐、美术名家与代表作的对应",
+        "questionType": "单项选择"
+      },
+      "choices": [
+        {
+          "id": "A",
+          "text": "贝多芬——《命运交响曲》；达·芬奇——《蒙娜丽莎》；阿炳——《二泉映月》。",
+          "quality": "optimal",
+          "effects": {"professionalSkill": 2, "studentTrust": 1, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": 3, "affection_cheng": 3},
+          "feedback": "对。贝多芬《命运交响曲》、达·芬奇《蒙娜丽莎》、阿炳《二泉映月》，音乐、美术、民乐三项一一对应，可以印。",
+          "answerKeywords": ["贝多芬命运交响曲", "达芬奇蒙娜丽莎", "阿炳二泉映月"]
+        },
+        {
+          "id": "B",
+          "text": "莫扎特——《二泉映月》；梵高——《蒙娜丽莎》；张择端——《向日葵》。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -1, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": -2, "affection_cheng": -1},
+          "feedback": "全错。《二泉映月》是阿炳、《蒙娜丽莎》是达·芬奇(梵高代表作《向日葵》)、《向日葵》是梵高(张择端是《清明上河图》)，三项全张冠李戴。",
+          "answerKeywords": ["二泉映月属阿炳", "蒙娜丽莎属达芬奇", "清明上河图属张择端"]
+        },
+        {
+          "id": "C",
+          "text": "贝多芬——《命运交响曲》；梵高——《向日葵》；张择端——《洛神赋图》。",
+          "quality": "suboptimal",
+          "effects": {"professionalSkill": 0, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": -1, "affection_cheng": 0},
+          "feedback": "前两项对，最后一项错：张择端是《清明上河图》，《洛神赋图》是顾恺之。两幅中国名画的作者别配反。",
+          "answerKeywords": ["张择端清明上河图", "洛神赋图属顾恺之"]
+        },
+        {
+          "id": "D",
+          "text": "达·芬奇——《蒙娜丽莎》；毕加索——《格尔尼卡》；聂耳——《黄河大合唱》。",
+          "quality": "suboptimal",
+          "effects": {"professionalSkill": 0, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": -1, "affection_cheng": 0},
+          "feedback": "前两项对，最后一项错：《黄河大合唱》是冼星海，聂耳代表作是《义勇军进行曲》。两位人民音乐家别配反。",
+          "answerKeywords": ["黄河大合唱属冼星海", "聂耳义勇军进行曲"]
+        }
+      ]
+    },
+    {
+      "id": "ch09_d_after",
+      "type": "dialogue",
+      "background": "staffroom",
+      "speaker": "程砚",
+      "expression": "smile",
+      "text": "（他满意地'嗯'了一声，把艺术展板立到第三块旁边）\n艺术题的干扰项最'唬人'，全是真名家、真名作，只是配错了对。破它的办法只有一个——平时一组一组记牢'谁画了什么、谁作了什么'。\n半场过了。喝口水，剩下两块，最难。"
+    },
+
+    {
+      "id": "ch09_t4",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "narrator",
+      "text": "剩下两块展板，程砚要拿回自己办公室细抠——那里有他历年攒下的工具书。\n办公室不大，书架顶到天花板。他给我搬了把椅子，自己坐回那张堆满书的桌后，把台灯往我这边推了推。\n（钱守拙没跟来，临走撂下一句：'后面两块，『成语典故』和『杰出人物』，最见功底——程主任亲自押阵，我放心。'）"
+    },
+    {
+      "id": "ch09_e_teach_1",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "程砚",
+      "expression": "smile",
+      "text": "（他摊开第五块——画着成语漫画和古代官制图的展板）\n第五块，**成语典故与古代制度**。这块考的是'根'——成语出自哪个典故，'三省六部'到底是哪三省。\n答错了，外行看不出，行家一眼穿。"
+    },
+    {
+      "id": "ch09_e_teach_2",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "程砚",
+      "expression": "neutral",
+      "text": "成语典故先对几个最常考的：**完璧归赵**(蔺相如)、**负荆请罪**(廉颇)、**纸上谈兵**(赵括)、**卧薪尝胆**(勾践)、**三顾茅庐/草船借箭**(三国)、**闻鸡起舞**(祖逖)、**破釜沉舟**(项羽)、**指鹿为马**(赵高)。\n这些'人物—典故'的对应，最爱出'下列成语与历史人物对应错误的是'。"
+    },
+    {
+      "id": "ch09_e_teach_3",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "程砚",
+      "expression": "serious",
+      "text": "古代制度里，**三省六部制**(隋唐确立)是高频中的高频——**三省**是'**中书省**(决策/草拟)、**门下省**(审议/封驳)、**尚书省**(执行)'；**六部**(吏、户、礼、兵、刑、工)归尚书省管。\n常见陷阱：把'御史台''枢密院'塞进三省，或把六部少数一两个。别上当。\n（他把红笔搁到我手边）来，第五道——"
+    },
+    {
+      "id": "ch09_e_apply",
+      "type": "choice",
+      "background": "office",
+      "speaker": "程砚",
+      "expression": "smile",
+      "knowledgeCheck": "q_idiom_01",
+      "text": "（他屈指敲了敲制度图那一栏）\n这块展板讲隋唐'三省六部制'。下面关于'三省'的表述，哪一项是**正确**、可以印的？",
+      "examTags": {
+        "subject": "301",
+        "module": "文化素养",
+        "examPoint": "古代制度与成语典故：三省六部制的构成",
+        "questionType": "单项选择"
+      },
+      "choices": [
+        {
+          "id": "A",
+          "text": "三省指中书省、门下省、尚书省，分别负责决策、审议、执行。",
+          "quality": "optimal",
+          "effects": {"professionalSkill": 2, "studentTrust": 1, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": 3, "affection_cheng": 3},
+          "feedback": "对。隋唐三省六部制中，中书省决策草拟、门下省审议封驳、尚书省执行(下辖六部)，职能与名称一一对应，可以印。",
+          "answerKeywords": ["中书省决策", "门下省审议", "尚书省执行", "三省六部制"]
+        },
+        {
+          "id": "B",
+          "text": "三省指中书省、御史台、枢密院，共同掌管军政大权。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -1, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": -2, "affection_cheng": -1},
+          "feedback": "全错。御史台是监察机构、枢密院是宋代掌军事的机构，都不属于'三省'。三省是中书、门下、尚书。这是最典型的偷换陷阱。",
+          "answerKeywords": ["御史台是监察", "枢密院掌军非三省", "三省应为中书门下尚书"]
+        },
+        {
+          "id": "C",
+          "text": "三省指中书省、门下省、尚书省，但六部全部直属门下省。",
+          "quality": "suboptimal",
+          "effects": {"professionalSkill": 0, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": -1, "affection_cheng": 0},
+          "feedback": "三省名称对，归属错：吏户礼兵刑工六部隶属于'尚书省'(执行机构)，不是门下省。前半句对易让人放松警惕。",
+          "answerKeywords": ["六部隶属尚书省", "非门下省"]
+        },
+        {
+          "id": "D",
+          "text": "三省指尚书省、门下省、内阁，是明朝中央三大中枢。",
+          "quality": "suboptimal",
+          "effects": {"professionalSkill": 0, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": -1, "affection_cheng": 0},
+          "feedback": "错。内阁是明朝才设的，且明朝已废丞相、不行三省制。把'内阁'混入隋唐三省，是朝代+机构双重错配。",
+          "answerKeywords": ["内阁属明朝", "三省制在隋唐", "朝代错配"]
+        }
+      ]
+    },
+    {
+      "id": "ch09_e_after",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "程砚",
+      "expression": "smile",
+      "text": "（他在展板'三省'那栏旁，用红笔工工整整补了'决策—审议—执行'三个小字）\n制度题就考你认不认得'职能'。名字背下来不算本事，知道中书草拟、门下封驳、尚书去办——这一串动起来，你才真懂。\n（他抬眼看我，那点笑意比刚才深了些）就剩最后一块了。"
+    },
+    {
+      "id": "ch09_e_heart",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "narrator",
+      "text": "他补字的时候，红笔尖在纸上沙沙地响，写完还吹了吹墨。\n满屋子的书把灯光衬得很暖，他坐在书堆里，认真得像在批一份很要紧的卷子。\n（夜深了。我忽然不太希望这沓展板太快校完——好像只要还有一块，我就能名正言顺地，再多陪他坐一会儿。）"
+    },
+
+    {
+      "id": "ch09_t5",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "程砚",
+      "expression": "smile",
+      "text": "（他抽出最后一块——一排现当代杰出人物的照片墙）\n压轴这块，**杰出人物与成就**。校庆嘛，总要让师生记住几个'国之脊梁'。\n这块也是301的常客：'下列人物与其主要贡献对应正确的是'。错一个，就辜负了人家一辈子的功业。"
+    },
+    {
+      "id": "ch09_f_teach_1",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "程砚",
+      "expression": "neutral",
+      "text": "把几位国之栋梁钉死：**袁隆平**——杂交水稻('杂交水稻之父')；**钱学森**——'两弹一星'/中国航天奠基人；**邓稼先**——'两弹元勋'(原子弹、氢弹);**屠呦呦**——发现青蒿素、获诺贝尔生理学或医学奖；**钱三强**——核物理。\n最爱挖的坑：把'杂交水稻'安到钱学森头上，或把'两弹'安给袁隆平。一秒露馅。"
+    },
+    {
+      "id": "ch09_f_teach_2",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "程砚",
+      "expression": "smile",
+      "text": "再带几位'世界之最/标志性成就'垫底：**爱因斯坦**相对论、**屠呦呦**是首位获诺奖科学奖的中国本土科学家、**莫言**是首位获诺贝尔文学奖的中国籍作家。\n（他把红笔最后一次递到我手里，指节不经意擦过我的指尖，谁都没躲）最后一道。答完，这一夜，我们就把'文化之夜'，亲手立起来。"
+    },
+    {
+      "id": "ch09_f_apply",
+      "type": "choice",
+      "background": "office",
+      "speaker": "程砚",
+      "expression": "smile",
+      "knowledgeCheck": "q_figure_01",
+      "text": "（他看着我握紧红笔，目光很专注）\n照片墙下面要配一行'人物—贡献'。下面四组对应，哪一组**完全正确**、能印上去？",
+      "examTags": {
+        "subject": "301",
+        "module": "文化素养",
+        "examPoint": "杰出人物与成就：当代科学家的主要贡献对应",
+        "questionType": "单项选择"
+      },
+      "choices": [
+        {
+          "id": "A",
+          "text": "袁隆平——杂交水稻；屠呦呦——青蒿素；钱学森——中国航天/'两弹一星'。",
+          "quality": "optimal",
+          "effects": {"professionalSkill": 2, "studentTrust": 2, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": 3, "affection_cheng": 3},
+          "feedback": "对。袁隆平—杂交水稻、屠呦呦—青蒿素、钱学森—中国航天奠基('两弹一星'功勋)，三位贡献一一对应，可以印。",
+          "answerKeywords": ["袁隆平杂交水稻", "屠呦呦青蒿素", "钱学森航天两弹一星"]
+        },
+        {
+          "id": "B",
+          "text": "钱学森——杂交水稻；袁隆平——青蒿素；屠呦呦——'两弹一星'。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -1, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": -2, "affection_cheng": -1},
+          "feedback": "全错。杂交水稻是袁隆平、青蒿素是屠呦呦、'两弹一星'是钱学森(及邓稼先等)，三位的成就被整体打乱，是最典型的张冠李戴。",
+          "answerKeywords": ["杂交水稻属袁隆平", "青蒿素属屠呦呦", "两弹一星属钱学森"]
+        },
+        {
+          "id": "C",
+          "text": "袁隆平——杂交水稻；钱学森——中国航天；屠呦呦——首位获诺贝尔文学奖的中国作家。",
+          "quality": "suboptimal",
+          "effects": {"professionalSkill": 0, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": -1, "affection_cheng": 0},
+          "feedback": "前两项对，最后一项错：屠呦呦获的是诺贝尔生理学或医学奖；首位获诺贝尔文学奖的中国籍作家是莫言。奖项别张冠李戴。",
+          "answerKeywords": ["屠呦呦获医学奖非文学奖", "诺贝尔文学奖属莫言"]
+        },
+        {
+          "id": "D",
+          "text": "屠呦呦——青蒿素；邓稼先——'两弹元勋'；袁隆平——发现镭与钋。",
+          "quality": "suboptimal",
+          "effects": {"professionalSkill": 0, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": -1, "affection_cheng": 0},
+          "feedback": "前两项对，最后一项错：发现镭与钋的是居里夫人，袁隆平的贡献是杂交水稻。把外国科学家成就安到袁隆平头上，硬伤。",
+          "answerKeywords": ["镭与钋属居里夫人", "袁隆平为杂交水稻"]
+        }
+      ]
+    },
+    {
+      "id": "ch09_f_after",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "程砚",
+      "expression": "smile",
+      "text": "（他接过最后这块，从头到尾扫了一遍，把红笔轻轻搁下，搁得很慢）\n六块，全过了。\n杰出人物题，记的是'谁做成了什么'。可你今晚记住的，不该只是答案——是他们每个人，把一件事做到了顶。这一点，比考分金贵。"
+    },
+    {
+      "id": "ch09_end_1",
+      "type": "dialogue",
+      "background": "library",
+      "speaker": "程砚",
+      "expression": "tender",
+      "text": "（我们抱着校完的六块展板回到图书馆，沿墙一字排开。'中华文化之夜'六个字，在夜灯下立得端端正正）\n（程砚退后两步，和我并肩看着，半晌，侧过头）\n谢谢你。其实我一个人也能校完——可有人一道一道答出来，看着它立起来，比我自己埋头改，要好得多。"
+    },
+    {
+      "id": "ch09_end_2",
+      "type": "dialogue",
+      "background": "library",
+      "speaker": "narrator",
+      "text": "他把那支用了一整夜的红笔，转了转，忽然递给我。\n'拿着。'他说，'明天进考场，遇上文化常识，就当我在旁边，替你勾错。'\n（笔身还带着他的温度。我攥着它，没敢马上抬头——怕他看见，我耳根又悄悄热了。）"
+    },
+    {
+      "id": "ch09_end_3",
+      "type": "dialogue",
+      "background": "library",
+      "speaker": "narrator",
+      "text": "走出图书馆，夜风很凉，怀里却像揣着一盏灯。\n这一夜，我跟着他把六块展板一格格擦亮：历史的来路、科技的脉、文学的钩子、艺术的对照、制度的根、人物的功业。\n（也是这一夜，我好像第一次看清——那个总把'我考你'挂在嘴边的人，是在用他最笨拙也最郑重的方式，把我往前，轻轻推了一把。这支红笔，我会替他，好好收着。）"
+    },
+    {
+      "id": "ch09_end",
+      "type": "summary",
+      "background": "library",
+      "speaker": "narrator",
+      "text": "（文化素养之夜落幕。把今晚的得失，一条条记进手账吧——展板立起来了，分也得立起来。）",
+      "review": {
+        "learnedExamPoints": [
+          "301-文化素养-中外历史常识（朝代先后/重大事件对应）— 程砚",
+          "301-文化素养-科技常识（中国四大发明/中外科学家成就）— 程砚",
+          "301-文化素养-文学常识（作家-代表作-国别-体裁的对应）— 程砚",
+          "301-文化素养-艺术常识（中外音乐·美术名家与代表作）— 程砚",
+          "301-文化素养-成语典故与古代制度（三省六部制等）— 程砚",
+          "301-文化素养-杰出人物与成就（袁隆平/钱学森/屠呦呦等）— 程砚"
+        ],
+        "structure": "六个文化素养考点都从'校庆文化之夜校对展板'这一桩事件长出来：第一块历史→朝代先后；第二块科技→四大发明与科学家；第三块文学→作家国别作品；第四块艺术→名家代表作；第五块制度→三省六部；第六块人物→当代杰出人物成就。每块走'剧情讲授→随堂检测→应用→反馈'。章末月考为冷测，换情境、答案落不同选项。",
+        "mockExam": "core_ch09_mock",
+        "recommendedReview": [
+          "答错历史→程砚重讲朝代主线顺口溜与高频颠倒点(秦汉/隋唐/宋元/明清)",
+          "答错科技→程砚重讲四大发明'发明/改进'措辞与中外科学家成就对应",
+          "答错文学→程砚重讲'作家-国别-作品-体裁'四要素与司马迁/司马光等易混点",
+          "答错艺术→程砚重讲音乐美术名家代表作的成组记忆",
+          "答错成语制度→程砚重讲三省六部职能(中书决策/门下审议/尚书执行)与成语典故人物",
+          "答错杰出人物→程砚重讲袁隆平/钱学森/屠呦呦/莫言等人物-成就-奖项对应"
+        ]
+      }
+    }
+  ]
+}

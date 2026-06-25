@@ -1,0 +1,381 @@
+{
+  "chapterId": "core_ch07",
+  "title": "第七章 · 一堂好课",
+  "summary": "教研组把区里教学比赛的汇报课名额，落到了我头上。一节四十分钟的课，要从备课磨到上课，再扛过最难的评课。平时嬉皮笑脸的沈亦舟，这回破天荒地正经起来——他翻出自己当年比赛的旧教案，陪我一稿一稿地改，从'教学过程该照着什么规律走'，到'这堂课到底该用什么教法、怎么组织'，再到'评委会拿什么尺子量你'。三场打磨，三个高频考点，被他一句句揉进了我的教案，也揉进了那间只剩我们俩、灯亮到很晚的办公室。",
+  "designNote": "乙女向：第一人称心声(旁白)贯穿；本章主男主沈亦舟(阳光年下损友搭档)难得收起嬉笑、露出认真一面，甜线升温。结构对齐第一章：每个考点包在一段有心动 beat 的对手戏里(备课→上课→评课三幕)，teach→随堂检测(knowledgeCheck)→应用 微循环保留。顾承/陆知行 cameo。学生(周也/林小满)仅为教学对象。贯穿钩子：沈亦舟那本写满批注、却从没拿出来给人看过的旧比赛教案。",
+  "characters": ["shen", "gu", "lu"],
+  "students": ["周也", "林小满"],
+  "valueFields": ["professionalSkill", "studentTrust", "classOrder", "ethicsRisk", "lawRisk", "examScore", "affection_lu", "affection_jiang", "affection_gu", "affection_shen"],
+  "note": "ethicsRisk/lawRisk 为逆向指标，越低越好。knowledgeCheck 指向 chapter07_quiz.json 的题目 id。",
+  "nodes": [
+    {
+      "id": "ch07_intro_1",
+      "type": "dialogue",
+      "background": "staff_room",
+      "speaker": "narrator",
+      "text": "周三下午的教研组例会，散会前陆知行把一张纸推到桌子中央。\n区里的中学教学比赛，学校要报一节汇报课。\n他扫了一圈，目光最后停在我身上：'你来。'\n（就……就这么定了？我连'我不行'三个字都还没说出口。）"
+    },
+    {
+      "id": "ch07_intro_2",
+      "type": "dialogue",
+      "background": "staff_room",
+      "speaker": "陆知行",
+      "expression": "serious",
+      "text": "（他合上文件夹，语气没什么余地）\n一节四十分钟的课，备课、上课、评课，全程录像，区里评委现场打分。\n两周后。\n（他顿了顿，看了我一眼）……怕了？怕就更该上。怕的人，才会把每个环节抠到底。"
+    },
+    {
+      "id": "ch07_intro_3",
+      "type": "dialogue",
+      "background": "staff_room",
+      "speaker": "narrator",
+      "text": "散会后我抱着一摞资料发呆，连办公室的人都走光了都没察觉。\n直到一只手在我眼前晃了晃——沈亦舟，照例笑嘻嘻地拖着把椅子坐到我对面。\n可下一秒，他把一本卷了边、封皮都磨白了的旧教案'啪'地拍在桌上，脸上那点嬉笑，慢慢收了。"
+    },
+    {
+      "id": "ch07_intro_4",
+      "type": "dialogue",
+      "background": "staff_room",
+      "speaker": "沈亦舟",
+      "expression": "smile",
+      "text": "（他敲了敲那本旧教案）认得不？我去年那节比赛课的教案，从头到尾改了七稿。\n别看我平时吊儿郎当——这玩意儿，我可没给第二个人看过。\n（他笑了一下，那笑容比平时认真了好几分）这回，我陪你磨。从头到尾。"
+    },
+    {
+      "id": "ch07_intro_5",
+      "type": "dialogue",
+      "background": "staff_room",
+      "speaker": "narrator",
+      "text": "我愣了愣。这还是那个一天到晚插科打诨、躲着备课的沈亦舟吗？\n他翻开那本旧教案，密密麻麻的红笔批注，连页边都写满了。\n（原来他笑嘻嘻的壳子底下，藏着这么一个认真到较真的人。我的心，没出息地跳了一下。）"
+    },
+    {
+      "id": "ch07_a_teach_1",
+      "type": "dialogue",
+      "background": "staff_room",
+      "speaker": "沈亦舟",
+      "expression": "smile",
+      "text": "（他把我的初稿教案铺开，眉头一皱）你这节课，从头讲到尾全是你在'喂'知识，学生一句话没机会说。\n比赛课最忌这个。先别急着填环节——咱得知道，一堂课的'骨架'到底该照着什么规律长。\n教学过程有四条基本规律，是评委心里那把尺。"
+    },
+    {
+      "id": "ch07_a_teach_2",
+      "type": "dialogue",
+      "background": "staff_room",
+      "speaker": "沈亦舟",
+      "expression": "serious",
+      "text": "（他罕见地正了脸色，一条条点）\n第一，**间接经验与直接经验相结合**——学生主要学书本上的间接经验，但得拿一点亲身体验、实验、活动来'垫底'，不能光啃书；\n第二，**掌握知识与发展能力相统一**——知识不是终点，得在学知识的过程里把思维、能力练出来，别只灌结论。"
+    },
+    {
+      "id": "ch07_a_teach_3",
+      "type": "dialogue",
+      "background": "staff_room",
+      "speaker": "沈亦舟",
+      "expression": "serious",
+      "text": "第三，**教师主导与学生主体相统一**——你引方向、把节奏，但课堂的主角是学生，得给他们想、说、做的空间；\n第四，**传授知识与思想教育相统一**（也叫'科学性与思想性统一'）——一边教知识，一边自然地渗透情感态度价值观，别生硬地贴标签。\n（他点点你的稿子）你这稿，第三条全丢了——全程你一个人在台上独角戏。"
+    },
+    {
+      "id": "ch07_a_teach_4",
+      "type": "dialogue",
+      "background": "staff_room",
+      "speaker": "沈亦舟",
+      "expression": "smile",
+      "text": "（他凑近指着稿子，肩膀几乎挨到我）记区别别死记：\n'结合直接经验'是怕你光讲书；'发展能力'是怕你只灌结论；'学生主体'是怕你一言堂；'思想教育'是怕你只教知识、不育人。\n（他偏头看我，眼睛亮亮的）四句口诀，记住没？——来，趁热考你一道。"
+    },
+    {
+      "id": "ch07_a_apply",
+      "type": "choice",
+      "background": "staff_room",
+      "speaker": "沈亦舟",
+      "expression": "smile",
+      "knowledgeCheck": "q_teach_process_01",
+      "text": "（我答完，他咧嘴一笑，伸手在我稿子上画了道杠）\n好。那现在落到你这节课上——你这'老师从头讲到尾、学生只管记'的设计，最该照哪条规律去改？怎么改？",
+      "examTags": {
+        "subject": "302",
+        "module": "中学教学",
+        "examPoint": "教学过程基本规律（教师主导与学生主体相统一）在课堂设计中的应用",
+        "questionType": "材料分析"
+      },
+      "choices": [
+        {
+          "id": "A",
+          "text": "保留教师引导，但留出提问、讨论、动手的环节，让学生真正参与，体现学生主体。",
+          "quality": "optimal",
+          "effects": {"professionalSkill": 2, "studentTrust": 1, "classOrder": 1, "ethicsRisk": 0, "lawRisk": 0, "examScore": 3, "affection_shen": 2},
+          "feedback": "对。教师主导与学生主体相统一：你定方向、调节奏（主导），学生想说做（主体），二者缺一不可。一言堂正是丢了'学生主体'。",
+          "answerKeywords": ["教师主导与学生主体相统一", "发挥学生主动性", "师生双边活动", "避免一言堂"]
+        },
+        {
+          "id": "B",
+          "text": "把所有知识点讲得更细更满，把四十分钟塞满，确保不漏知识点。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -2, "studentTrust": -1, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": -3, "affection_shen": -1},
+          "feedback": "这是反向操作：满堂灌恰恰违背'学生主体'，也违背'掌握知识与发展能力相统一'。讲得满不等于学得好。",
+          "answerKeywords": ["满堂灌", "违背学生主体", "只灌结论"]
+        },
+        {
+          "id": "C",
+          "text": "干脆全程让学生自学讨论，老师只在旁边看，完全放手。",
+          "quality": "suboptimal",
+          "effects": {"professionalSkill": 0, "studentTrust": 0, "classOrder": -1, "ethicsRisk": 0, "lawRisk": 0, "examScore": 0, "affection_shen": 0},
+          "feedback": "矫枉过正了。完全放手丢了'教师主导'，学生容易跑偏低效。主导与主体要相统一，不是二选一。",
+          "answerKeywords": ["放任自流", "丢了教师主导", "主导与主体相统一"]
+        },
+        {
+          "id": "D",
+          "text": "在课末加一段口号式的价值观说教，凑齐'思想教育'就行。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -1, "studentTrust": -1, "classOrder": 0, "ethicsRisk": 1, "lawRisk": 0, "examScore": -2, "affection_shen": -1},
+          "feedback": "本题症结在'一言堂'，要改的是'学生主体'。生硬贴价值观标签反而违背'传授知识与思想教育自然结合'的本意。",
+          "answerKeywords": ["生硬说教", "未解决一言堂", "思想教育应自然渗透"]
+        }
+      ]
+    },
+    {
+      "id": "ch07_a_after",
+      "type": "dialogue",
+      "background": "staff_room",
+      "speaker": "沈亦舟",
+      "expression": "smile",
+      "text": "（他在我的稿子上'唰唰'划掉一整段独白，改成一个让学生分组探究的环节，写得又快又顺）\n看，这就活了。一堂好课不是你表演得多漂亮，是学生在你手底下'动'起来了多少。\n（他写完抬头，撞上我盯着他的眼神，愣了半秒，耳尖好像红了一下）……看什么，没见过我认真啊。"
+    },
+    {
+      "id": "ch07_a_heart",
+      "type": "dialogue",
+      "background": "staff_room",
+      "speaker": "narrator",
+      "text": "我赶紧移开视线，心跳却没刹住。\n是没见过。平时那个躲备课、抢我奶茶、拿陆主任开玩笑的沈亦舟，原来认真起来，是这个样子。\n（他低头改稿的侧脸，被台灯描了一层暖光。我假装看教案，眼睛却老往那边飘。这人……怎么忽然就，有点犯规。）"
+    },
+    {
+      "id": "ch07_t1",
+      "type": "dialogue",
+      "background": "corridor",
+      "speaker": "顾承",
+      "expression": "smile",
+      "text": "（走廊上撞见顾承，他抱着一摞作业本冲我们笑）哟，听说你接了比赛课？沈亦舟当陪练？\n（他冲沈亦舟挤挤眼）行啊，这位去年那节课可是拿了区一等奖的，藏得深。\n骨架搭好了，下一步就该挑'用什么教法、怎么把学生组织起来'了——这步最见功夫，加油。"
+    },
+    {
+      "id": "ch07_b_teach_1",
+      "type": "dialogue",
+      "background": "classroom",
+      "speaker": "沈亦舟",
+      "expression": "smile",
+      "text": "（我们借了高一(7)班的空教室试讲。他坐在最后一排当'学生'）\n骨架有了，现在填血肉——这节课你打算用什么教法？别张口就'讲授法讲到底'。\n常用教法就那几样，得看你这节课的内容和目标，对症下菜。"
+    },
+    {
+      "id": "ch07_b_teach_2",
+      "type": "dialogue",
+      "background": "classroom",
+      "speaker": "沈亦舟",
+      "expression": "serious",
+      "text": "（他掰着手指数）\n**讲授法**——系统传授，效率高，但学生被动；**谈话法**——一问一答，靠提问启发，激活旧知；**讨论法**——学生围绕问题互相辩论，适合有争议、要发散的内容；\n**演示法**——老师拿实物/标本/课件给学生看；**实验法**——学生亲自动手操作验证；**练习法**——靠反复练巩固技能。"
+    },
+    {
+      "id": "ch07_b_teach_3",
+      "type": "dialogue",
+      "background": "classroom",
+      "speaker": "沈亦舟",
+      "expression": "serious",
+      "text": "区别别背混：**演示法**是'老师做、学生看'，**实验法**是'学生自己动手'；**谈话法**是师生一问一答，**讨论法**是学生之间互相讨论。\n比赛课最忌讳从头讲到尾——多半得'讲授为主、谈话讨论演示穿插'，几种配着用，才显得你会'用'方法，而不是'背'方法。"
+    },
+    {
+      "id": "ch07_b_teach_4",
+      "type": "dialogue",
+      "background": "classroom",
+      "speaker": "沈亦舟",
+      "expression": "smile",
+      "text": "（他又补一句）还有'组织形式'——咱们最常见的是**班级授课制**：按班级、按课时、按课表上课，效率高、便于系统教学，但缺点是太整齐划一、难照顾个别差异、学生实践动手少。\n所以才有**个别教学**（一对一，因材施教但效率低）和**分组教学**（按水平或任务分组）来补它的短。\n（他坐直身子）来，模拟评委问你一道。"
+    },
+    {
+      "id": "ch07_b_apply",
+      "type": "choice",
+      "background": "classroom",
+      "speaker": "沈亦舟",
+      "expression": "smile",
+      "knowledgeCheck": "q_teach_method_01",
+      "text": "（他学着评委的腔调，憋着笑）\n'这位老师——你这节课有一个需要学生通过亲自操作、观察现象去得出结论的环节。请问你打算主要采用哪种教学方法？为什么？'",
+      "examTags": {
+        "subject": "302",
+        "module": "中学教学",
+        "examPoint": "教学方法的选择与辨别（实验法 vs 演示法 vs 讲授法）",
+        "questionType": "材料分析"
+      },
+      "choices": [
+        {
+          "id": "A",
+          "text": "用实验法：让学生分组亲自动手操作、观察、记录，自己归纳结论。",
+          "quality": "optimal",
+          "effects": {"professionalSkill": 2, "studentTrust": 1, "classOrder": 1, "ethicsRisk": 0, "lawRisk": 0, "examScore": 3, "affection_shen": 2},
+          "feedback": "对。'学生亲自操作、观察得结论'正是实验法的标志，既掌握知识又发展能力，呼应'直接经验'与'学生主体'。",
+          "answerKeywords": ["实验法", "学生亲自操作", "观察归纳结论", "发展能力"]
+        },
+        {
+          "id": "B",
+          "text": "用演示法：老师在讲台上把实验做一遍，学生看清楚就行。",
+          "quality": "suboptimal",
+          "effects": {"professionalSkill": 0, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": 0, "affection_shen": 0},
+          "feedback": "演示法是'老师做、学生看'，本题要的是'学生亲自操作'，所以更对症的是实验法。这俩最爱考辨别。",
+          "answerKeywords": ["演示法（老师做学生看）", "本题应学生动手", "区分实验法"]
+        },
+        {
+          "id": "C",
+          "text": "用讲授法：把实验结论和原理直接讲清楚，省时间又不会乱。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -1, "studentTrust": -1, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": -2, "affection_shen": -1},
+          "feedback": "直接讲结论丢了'让学生动手探究'的初衷，违背直接经验与能力培养。比赛课这样设计会被评委判'满堂灌'。",
+          "answerKeywords": ["讲授法直接灌结论", "失去探究", "违背学生主体"]
+        },
+        {
+          "id": "D",
+          "text": "用讨论法：让学生坐着讨论这个实验大概会出什么结果。",
+          "quality": "suboptimal",
+          "effects": {"professionalSkill": 1, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": 1, "affection_shen": 0},
+          "feedback": "讨论法适合有争议、需发散的内容，可作辅助；但本环节核心是'动手操作得结论'，主角应是实验法。",
+          "answerKeywords": ["讨论法（适合发散）", "本题核心是动手", "实验法为主"]
+        }
+      ]
+    },
+    {
+      "id": "ch07_b_after",
+      "type": "dialogue",
+      "background": "classroom",
+      "speaker": "周也",
+      "text": "（不知什么时候，周也抱着习题册站在门口，怯生生地探头）\n老师……我能进来当你的'学生'吗？我想看看你的课。\n（他顿了顿，小声补一句）上次你们帮我，我现在……上课没那么怕了。"
+    },
+    {
+      "id": "ch07_b_heart",
+      "type": "dialogue",
+      "background": "classroom",
+      "speaker": "沈亦舟",
+      "expression": "smile",
+      "text": "（沈亦舟招手让周也进来坐下，回头压低声音对我笑）\n看见没？你这'陪练'阵容都凑齐了。\n（他忽然认真起来）其实……我陪你磨这节课，一半是怕你紧张，一半是——想看你真的站上那个讲台。你比你以为的，厉害得多。\n（他说完自己先别开脸去翻教案，耳朵又红了。我捧着粉笔，半天没敢接话。）"
+    },
+    {
+      "id": "ch07_t2",
+      "type": "dialogue",
+      "background": "corridor",
+      "speaker": "沈亦舟",
+      "expression": "smile",
+      "text": "（试讲完，他一边帮我收教具一边碎碎念）课磨得差不多了。可比赛真正的鬼门关，不是上课——是上完之后的**评课**。\n评委会拿一套'尺子'来量你，你得知道他们量的是什么。还有'说课'，比赛多半要先说课再上课。\n走，最后一关，咱去会议室对着稿子过一遍。"
+    },
+    {
+      "id": "ch07_c_teach_1",
+      "type": "dialogue",
+      "background": "meeting_room",
+      "speaker": "沈亦舟",
+      "expression": "serious",
+      "text": "（会议室里只剩我们俩，他把灯调亮，难得地一脸正色）\n先说'教学评价'——评委手里的尺子分两种切法。\n**按功能分**：上课前摸底叫**诊断性评价**；上课中随时看学生学得怎么样、好及时调整叫**形成性评价**；一个单元/学期末给个总成绩、下结论叫**总结性评价**。"
+    },
+    {
+      "id": "ch07_c_teach_2",
+      "type": "dialogue",
+      "background": "meeting_room",
+      "speaker": "沈亦舟",
+      "expression": "serious",
+      "text": "**按基准分**：跟同一批人比、排名次，是**相对评价**（常模参照，如选拔考试）；跟固定标准比、看达没达标，是**绝对评价**（标准参照，如毕业会考）；跟自己的过去比、看进步多少，是**个体内差异评价**。\n口诀：和别人比=相对，和标准比=绝对，和自己比=个体内差异。"
+    },
+    {
+      "id": "ch07_c_teach_3",
+      "type": "dialogue",
+      "background": "meeting_room",
+      "speaker": "沈亦舟",
+      "expression": "serious",
+      "text": "再说'说课'和'面试要点'——说课不是上课，是对着评委讲'我为什么这么设计'：说教材（地位作用）、说学情、说教法学法、说教学过程、说板书设计、说目标重难点。\n面试要点就一句：教态自然、声音清楚、有师生互动意识、时间把控住、讲完别忘了小结升华。别背稿，要像真的在跟人讲课。\n（他看着我）来，最后一道——也是评委最爱问的。"
+    },
+    {
+      "id": "ch07_c_apply",
+      "type": "choice",
+      "background": "meeting_room",
+      "speaker": "沈亦舟",
+      "expression": "serious",
+      "knowledgeCheck": "q_teach_eval_01",
+      "text": "（他正色问）'这位老师，你这节课中间设计了好几次随堂提问和小练习，并据此现场调整了讲解节奏。请问这属于哪一种教学评价？目的是什么？'",
+      "examTags": {
+        "subject": "302",
+        "module": "中学教学",
+        "examPoint": "教学评价的类型辨别（形成性评价 vs 诊断性/总结性评价）",
+        "questionType": "材料分析"
+      },
+      "choices": [
+        {
+          "id": "A",
+          "text": "形成性评价：在教学过程中随时了解学情、及时反馈调整，以改进教与学。",
+          "quality": "optimal",
+          "effects": {"professionalSkill": 2, "studentTrust": 1, "classOrder": 1, "ethicsRisk": 0, "lawRisk": 0, "examScore": 3, "affection_shen": 2},
+          "feedback": "对。教学'过程中'随时监测、据此调整=形成性评价，核心目的是改进，不是给最终成绩定论。",
+          "answerKeywords": ["形成性评价", "教学过程中", "及时反馈调整", "改进教与学"]
+        },
+        {
+          "id": "B",
+          "text": "诊断性评价：是为了在课前摸清学生的基础和起点。",
+          "quality": "suboptimal",
+          "effects": {"professionalSkill": 0, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": 0, "affection_shen": 0},
+          "feedback": "诊断性评价发生在'教学之前'摸底；本题是'教学过程中'调整，更对症的是形成性评价。注意时间点的区别。",
+          "answerKeywords": ["诊断性评价（课前摸底）", "本题在过程中", "区分形成性"]
+        },
+        {
+          "id": "C",
+          "text": "总结性评价：是为了给学生这节课打个最终分数下结论。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -1, "studentTrust": -1, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": -2, "affection_shen": -1},
+          "feedback": "总结性评价是单元/学期末的终结性定论；课中随时调整不是为了打终评分。把形成性当成总结性是高频错点。",
+          "answerKeywords": ["总结性评价（期末终评）", "非课中调整", "区分形成性"]
+        },
+        {
+          "id": "D",
+          "text": "相对评价：是为了给学生排名次、比出谁强谁弱。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -1, "studentTrust": -2, "classOrder": 0, "ethicsRisk": 1, "lawRisk": 0, "examScore": -2, "affection_shen": -1},
+          "feedback": "排名次属于'按基准'分类里的相对评价，跟本题'按功能'问的形成性根本不是一个维度，且课堂随手排名易伤学生。",
+          "answerKeywords": ["相对评价属另一维度", "排名次不对题", "混淆分类标准"]
+        }
+      ]
+    },
+    {
+      "id": "ch07_c_after",
+      "type": "dialogue",
+      "background": "meeting_room",
+      "speaker": "陆知行",
+      "expression": "neutral",
+      "text": "（门被推开，陆知行抱着文件路过，瞥了眼我们改到一半的教案和满桌的草稿）\n（他停了两秒，淡淡地）骨架、教法、评价——三步都齐了。\n（他转身要走，又补了半句，声音低了些）……上场别背稿。让学生动起来，分自然就有了。沈亦舟当年，就赢在这点上。"
+    },
+    {
+      "id": "ch07_c_heart",
+      "type": "dialogue",
+      "background": "meeting_room",
+      "speaker": "narrator",
+      "text": "陆知行走后，会议室安静下来。\n我低头看那本被我们俩改得面目全非的教案，又看了眼沈亦舟那本卷边的旧教案——它一直摊在桌角，陪着我的稿子，从傍晚到此刻。\n（他说没给第二个人看过的东西，这两周一直摊在我面前。）\n（我忽然有点想知道——他陪我磨的，到底是这一节课，还是别的什么。）"
+    },
+    {
+      "id": "ch07_end_1",
+      "type": "dialogue",
+      "background": "staff_room",
+      "speaker": "沈亦舟",
+      "expression": "smile",
+      "text": "（深夜的办公室，灯只剩我们这一盏亮着。他伸了个懒腰，恢复了平时的笑嘻嘻）\n行了！备课、上课、评课，三关都给你磨穿了。明天上场，你就是这屋里最稳的那个。\n（他把那本旧教案推到我面前）这个……借你压场。等你比赛回来，再还我。\n（他顿了顿，没看我，声音轻轻的）……我等你回来讲给我听。讲你那节，一堂好课。"
+    },
+    {
+      "id": "ch07_end_2",
+      "type": "dialogue",
+      "background": "staff_room",
+      "speaker": "narrator",
+      "text": "我捧着那本带着他体温和七稿批注的旧教案，半天没说出话。\n这两周，我学会了一堂好课该怎么搭骨架、选教法、过评课——可我好像还顺手学会了别的。\n（备课铃明天还会响。但这一次，我不再是一个人站在讲台前。）\n（窗外的路灯下，他帮我拎着教具先下了楼，回头朝我笑。我把那本教案抱得紧了些——也把那个笑，悄悄收进了心里。）"
+    },
+    {
+      "id": "ch07_end",
+      "type": "summary",
+      "background": "staff_room",
+      "speaker": "narrator",
+      "text": "（一堂好课，从一张白纸磨到能站上讲台。把这两周的得失，一条条记进手账吧——课记住了，分也得记住。）",
+      "review": {
+        "learnedExamPoints": [
+          "302-中学教学-教学过程基本规律（间接/直接经验结合·掌握知识与发展能力统一·教师主导与学生主体统一·传授知识与思想教育统一）— 沈亦舟",
+          "302-中学教学-教学方法（讲授/谈话/讨论/演示/实验/练习法）与组织形式（班级授课制优缺点·个别教学·分组教学）— 沈亦舟",
+          "302-中学教学-教学评价（按功能:诊断性/形成性/总结性；按基准:相对/绝对/个体内差异）+ 说课与面试要点 — 沈亦舟"
+        ],
+        "structure": "比赛课打磨三步走：备课搭骨架→教学过程四规律；试讲填血肉→教学方法与组织形式；评课过尺子→教学评价类型与说课面试要点。每步'剧情讲授→马上做题(knowledgeCheck)→应用→反馈'。章末月考为冷测。",
+        "mockExam": "core_ch07_mock",
+        "recommendedReview": [
+          "答错教学过程→沈亦舟重讲四条规律口诀（结合直接经验/发展能力/学生主体/思想教育）",
+          "答错教学方法→沈亦舟重讲演示法vs实验法、谈话法vs讨论法及班级授课制优缺点",
+          "答错教学评价→沈亦舟重讲诊断性/形成性/总结性（按功能）与相对/绝对/个体内差异（按基准）"
+        ]
+      }
+    }
+  ]
+}

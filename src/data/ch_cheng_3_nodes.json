@@ -1,0 +1,248 @@
+{
+  "chapterId": "route_cheng_3",
+  "route": "cheng",
+  "requires": {"flagsAllTrue": ["route_locked_cheng"], "affectionGte": {"cheng": 16}},
+  "title": "程砚线 · 第三章 · 将回他的那堂课",
+  "summary": "黄金四拍第四拍'告白'。你决定上一堂他无法反驳的好课——把他教你的目标先行、三维落地、形成性评价，全用进去，再请他来做评审。这一次，你不是被将军的人，而是要用一堂真正站得住的课，把那个一再被否定的他'将'回来：原来他信的那套，是对的，是有人接得住的。课后，温润表象终于落地，他破天荒地没有用反问，而是认认真真地，向你告白。末尾依好感与教学论达标分三结局：Good(cheng≥24 且 教学论题达标)棋逢对手的恋人；Normal(≥16)互相欣赏的对手；Bad(fallback)他重新竖起反问的盾。",
+  "designNote": "乙女向个人线 ch_cheng_3，第四拍'告白'。第一人称旁白贯穿。程砚表情 neutral|smile|serious|worried|blush|tender，告白/心动处用 blush/tender；cameo 沈亦舟表情仅 neutral|smile|serious|worried。背景仅 staff_room|meeting_room|corridor|classroom|library 五键（本章用 classroom|meeting_room|corridor）。深挖模块 302 中学教学(说课/好课标准·综合教学论)。teach→knowledgeCheck(带 examTags 的 choice)→apply→after→heart 微循环；本章 1 个 teach(好课标准/综合)。末节点用 branch 三结局：condition.affectionGte.cheng + flagsAllTrue(教学论达标 flag cheng_pedagogy_passed)。各结局 2-4 节点。flag cheng_pedagogy_passed 由本章及前两章 examScore/答对累计触发(引擎按 minExamPointsCleared 或答题正确写入；此处以 flagsAllTrue 门控)。告白成功 setFlag route_cheng_good。腹黑毒舌但有尊严，恋爱仅成年同事。",
+  "characters": ["cheng", "shen"],
+  "students": ["林小满"],
+  "valueFields": ["professionalSkill", "studentTrust", "classOrder", "ethicsRisk", "lawRisk", "examScore", "affection_cheng"],
+  "note": "ethicsRisk/lawRisk 为逆向指标。knowledgeCheck 指向 ch_cheng_quiz.json。本章 route:cheng，requires 已锁线且 affection_cheng≥16。末节点 ch_cheng_3_branch 依 affectionGte.cheng 与 flag cheng_pedagogy_passed(教学论题达标) 分流 good/normal/bad。",
+  "nodes": [
+    {
+      "id": "ch_cheng_3_intro",
+      "type": "dialogue",
+      "background": "staff_room",
+      "speaker": "narrator",
+      "text": "那场方案评审过后，程砚像把自己锁回了温润的壳里。再见面，他仍是那个一句句反问的'笑面阎王'，只是反问里，少了点底气。\n我想了很久，决定做一件事：上一堂他无法反驳的好课。\n（不是为了证明我行。是为了证明——他信的那套'把过程还给学生'，真的能站得住。我要把他教我的，一样样还回去，'将'回他一次。）"
+    },
+    {
+      "id": "ch_cheng_3_intro_2",
+      "type": "dialogue",
+      "background": "staff_room",
+      "speaker": "narrator",
+      "text": "我把那节被他批得体无完肤的课，从目标开始重写。\n先问泰勒第一问：学生要到达哪儿？我写下三条可测的目标，删掉一半只为热闹的活动；中间埋好形成性评价——随堂的小任务、即时的反馈；让每个环节都对得上一个维度。\n（备到深夜，我忽然笑了。原来他那些扎心的反问，早把一套完整的'怎么备一堂对得起学生的课'，刻进了我心里。）"
+    },
+    {
+      "id": "ch_cheng_3_teach_1",
+      "type": "dialogue",
+      "background": "meeting_room",
+      "speaker": "程砚",
+      "expression": "neutral",
+      "text": "（我请他做评审。课前，他照例先'考'我，像是要给我最后一道关。）\n你要请我评，那我先问：什么叫一堂'好课'？别说'气氛好''学生开心'这种话。\n（他坐下，给自己倒茶。）说不清'好'的标准，你拿什么证明你这堂课'好'？"
+    },
+    {
+      "id": "ch_cheng_3_teach_2",
+      "type": "dialogue",
+      "background": "meeting_room",
+      "speaker": "程砚",
+      "expression": "neutral",
+      "text": "（见我答得有了章法，他难得没打断，反替我补全。）\n……算你长进了。一堂好课的常考标准，记五条：\n**目标明确**(可测、对得上三维)、**内容正确**(科学、有重难点)、**方法得当**(启发为主、以学定教)、**结构合理**(环节服务目标、详略得当)、**学生主体**(参与真实、思维被激活，不是表演式热闹)。\n（他看着我，眼神里有种我读不懂的郑重。）你今天这堂，要是这五条都立得住——我无话可说。"
+    },
+    {
+      "id": "ch_cheng_3_apply",
+      "type": "choice",
+      "background": "meeting_room",
+      "speaker": "程砚",
+      "expression": "serious",
+      "knowledgeCheck": "q_cheng_goodlesson_01",
+      "text": "（他把评课表推过来。）\n上课前，先验你最后一道——评价一堂课好不好，最根本的落脚点应该是下面哪一个？答对了，我才放心让你上台。",
+      "examTags": {
+        "subject": "302",
+        "module": "中学教学",
+        "examPoint": "好课的评价标准（以学生发展为本·目标达成与学生主体）与说课/评课",
+        "questionType": "单项选择"
+      },
+      "choices": [
+        {
+          "id": "A",
+          "text": "看教学目标是否达成、学生是否真正参与并有实质收获（以学生发展为本）。",
+          "quality": "optimal",
+          "effects": {"professionalSkill": 2, "studentTrust": 1, "classOrder": 0, "ethicsRisk": -1, "lawRisk": 0, "examScore": 3, "affection_cheng": 3},
+          "feedback": "对。评一堂课的根本落脚点是'学生学得怎样、目标达没达成'，即以学生发展为本，而非教师表演或形式热闹。这正是程砚一直死磕的那条根。",
+          "setFlag": {"route_lean_cheng": 1, "cheng_pedagogy_passed": true},
+          "answerKeywords": ["目标达成", "学生主体", "以学生发展为本"]
+        },
+        {
+          "id": "B",
+          "text": "看老师讲得是否流畅精彩、教态是否优雅、语言是否生动。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -1, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 1, "lawRisk": 0, "examScore": -3, "affection_cheng": -1},
+          "feedback": "本末倒置。教师表现是手段，不是目的。只看老师讲得好不好，恰恰是'教师中心'的老路；好课要看学生学得怎样。",
+          "answerKeywords": ["以教师表现为准", "教师中心", "本末倒置"]
+        },
+        {
+          "id": "C",
+          "text": "看课堂气氛是否热闹、活动是否多、有没有掌声。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -1, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 1, "lawRisk": 0, "examScore": -3, "affection_cheng": -1},
+          "feedback": "错。热闹≠有效。'有目标的热闹才叫课'——活动多寡是表象，要看活动是否指向目标、学生思维是否被真正激活。",
+          "answerKeywords": ["热闹非标准", "形式化", "活动需指向目标"]
+        },
+        {
+          "id": "D",
+          "text": "看这堂课的考试平均分、排名等可量化的数据是否好看。",
+          "quality": "suboptimal",
+          "effects": {"professionalSkill": 0, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": -1, "affection_cheng": 0},
+          "feedback": "片面。分数是结果之一，但'好看数据'易导向相对评价与应试表演(正是卫蓝那套)。好课的根本是学生真实的发展与目标达成，不只看分数。",
+          "answerKeywords": ["唯分数片面", "相对评价局限", "非根本标准"]
+        }
+      ]
+    },
+    {
+      "id": "ch_cheng_3_lesson",
+      "type": "dialogue",
+      "background": "classroom",
+      "speaker": "narrator",
+      "text": "上课铃响。这一堂课，我没有铺三个花哨的活动，只留了一个真问题，让学生在做中走到我预设好的那个目标上。\n中途我用一张小卡片做形成性评价，发现一半人卡在同一处，当场调整、补讲——就像程砚说的，'为改进而评'。\n（最后一排，程砚坐着，没有记一个挑刺的笔记。他的笔，从头到尾，一次没落下。\n林小满举手答出那个我最想听见的回答时，我看见他几不可察地，笑了。）"
+    },
+    {
+      "id": "ch_cheng_3_after",
+      "type": "dialogue",
+      "background": "meeting_room",
+      "speaker": "程砚",
+      "expression": "tender",
+      "text": "（评课室。这一次，他没有先开口反问。他把那张空白的评课表推到我面前——上面只写了一句话。）\n'目标明确，过程见学，无可挑剔。'\n（他抬眼看我，那身常年的锋利，第一次彻底落了地。）\n你把我教你的，一样样还给了我。还顺手——把我那套被退了三回的方案，用一堂课证明了：它是对的。"
+    },
+    {
+      "id": "ch_cheng_3_heart",
+      "type": "dialogue",
+      "background": "meeting_room",
+      "speaker": "narrator",
+      "text": "我等着他像往常一样，再补一句反问，把这点温柔盖回去。\n可他没有。他只是看着我，很久很久。\n（被一个总把人将到墙角的人，这样毫无防备地看着——我的心跳，比当年被他第一次反问时还乱。\n这一次，轮到我把他将到了无路可退。而他，竟然没想逃。）"
+    },
+    {
+      "id": "ch_cheng_3_branch",
+      "type": "dialogue",
+      "background": "meeting_room",
+      "speaker": "程砚",
+      "expression": "tender",
+      "text": "（他放下笔，难得地，把每一个字都说得很慢、很稳——没有一句反问。）\n我这个人，习惯用问题把人挡在外面。因为我怕，被人看清我信的东西，又被否定。\n可你不一样。你没有反驳我，你证明了我。\n（他顿了顿。）……所以这一次，我不问了。我想把话，正正经经地，说给你听。",
+      "branch": [
+        {"condition": {"affectionGte": {"cheng": 24}, "flagsAllTrue": ["cheng_pedagogy_passed"]}, "goto": "ch_cheng_3_good_1"},
+        {"condition": {"affectionGte": {"cheng": 16}}, "goto": "ch_cheng_3_normal_1"},
+        {"goto": "ch_cheng_3_bad_1"}
+      ]
+    },
+
+    {
+      "id": "ch_cheng_3_good_1",
+      "type": "dialogue",
+      "background": "meeting_room",
+      "speaker": "程砚",
+      "expression": "blush",
+      "text": "（他耳尖悄悄红了，却没有别开眼。这是我第一次，看见'笑面阎王'脸上挂不住那点温度。）\n第一次评你的课，我就在你名字旁画了个记号。我跟自己说，那只是'孺子可教'。\n（他轻轻笑了，眼里却很认真。）骗谁呢。我画的是——这个人，能接住我那套没人肯接的东西。能跟我，在讲台这件事上，棋逢对手地走很远。\n我喜欢你。不是欣赏一个学生，是想跟你并肩的那种喜欢。"
+    },
+    {
+      "id": "ch_cheng_3_good_2",
+      "type": "choice",
+      "background": "meeting_room",
+      "speaker": "narrator",
+      "knowledgeCheck": null,
+      "text": "（他罕见地有些紧张，指节抵着桌沿。轮到我，回答这个把我从地基处问醒、又被我用一堂课将回来的人。）",
+      "examTags": null,
+      "choices": [
+        {
+          "id": "A",
+          "text": "'那你以后别再用反问把我挡在外面了。有话，像今天这样，正正经经说给我听——我都接得住。'",
+          "quality": "optimal",
+          "effects": {"professionalSkill": 1, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": 0, "affection_cheng": 3},
+          "feedback": "你接住了他卸下盔甲的瞬间，也立了规矩：不再用反问相隔。程砚线 Good End——棋逢对手的恋人。",
+          "setFlag": {"route_cheng_good": true, "confessed_cheng": true},
+          "next": "ch_cheng_3_good_end"
+        },
+        {
+          "id": "B",
+          "text": "（笑）'程主任，您这是……破天荒不用反问了？那我可得记下来，当证据。'然后认真点头：'我也喜欢你。'",
+          "quality": "optimal",
+          "effects": {"professionalSkill": 1, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": 0, "affection_cheng": 3},
+          "feedback": "用他的方式回敬一句，再认真接住——分寸刚好。程砚线 Good End——棋逢对手的恋人。",
+          "setFlag": {"route_cheng_good": true, "confessed_cheng": true},
+          "next": "ch_cheng_3_good_end"
+        }
+      ]
+    },
+    {
+      "id": "ch_cheng_3_good_end",
+      "type": "dialogue",
+      "background": "meeting_room",
+      "speaker": "程砚",
+      "expression": "tender",
+      "text": "（他终于把那叠被退了三回的方案，从抽屉里拿出来，推到我们俩中间。）\n那……我们重写它。这次，用你那堂课当证据。\n你写目标，我把评价。卫蓝再说'不接地气'，我们就让她看看，一堂连目标都站得住的课，能把学生带到哪儿。\n（他伸手，极轻地碰了下我的手背。）以后这条路，有人跟我一起将军，也有人，跟我一起被将。挺好。"
+    },
+    {
+      "id": "ch_cheng_3_good_summary",
+      "type": "summary",
+      "background": "meeting_room",
+      "speaker": "narrator",
+      "text": "（程砚线 · Good End「棋逢对手」。一堂将回他的好课，把告白与考点一并记进手账。锋利终于有了软处可落。）",
+      "review": {
+        "ending": "good",
+        "learnedExamPoints": [
+          "302-中学教学-好课的评价标准（以学生发展为本·目标达成与学生主体）与说课评课 — 程砚",
+          "302-中学教学-综合教学论：目标先行→三维落地→形成性评价的完整设计回路 — 程砚"
+        ],
+        "structure": "以'上一堂他无法反驳的好课'为告白载体，先过好课标准微循环，再在末节点 branch 依 affection_cheng≥24 且教学论达标(cheng_pedagogy_passed) 进入 Good End——棋逢对手的恋人，共同重写课改方案。",
+        "mockExam": "route_cheng_mock",
+        "recommendedReview": [
+          "巩固好课五标准(目标明确/内容正确/方法得当/结构合理/学生主体)与'以学生发展为本'的评课落脚点"
+        ]
+      }
+    },
+
+    {
+      "id": "ch_cheng_3_normal_1",
+      "type": "dialogue",
+      "background": "meeting_room",
+      "speaker": "程砚",
+      "expression": "smile",
+      "text": "（他看着我，唇角是真心的温，可话到嘴边，又收了半分。）\n这堂课上得好。好到我想说点……评课表之外的话。\n（他笑了笑，把那点话压了下去。）不过，还不是时候。你在讲台上立住了，可你我之间，还差一点'棋逢对手'的笃定。\n（他把评课表推给我。）先做对手吧——一个，让我还想继续'考'下去的对手。"
+    },
+    {
+      "id": "ch_cheng_3_normal_end",
+      "type": "summary",
+      "background": "corridor",
+      "speaker": "narrator",
+      "text": "（程砚线 · Normal End「互相欣赏的对手」。他把那句没说出口的话收了回去，却留了一扇门。\n我们仍是教研室里最常交锋的两个人——他出题，我应战，谁也不肯先认输。\n或许差的不是心动，是我还没让他彻底相信：他信的那套，有人能稳稳接住、走到底。\n备课铃明天还会响。下一堂课，我会让他无话可说。）",
+      "review": {
+        "ending": "normal",
+        "learnedExamPoints": [
+          "302-中学教学-好课的评价标准（以学生发展为本·目标达成与学生主体）与说课评课 — 程砚"
+        ],
+        "structure": "末节点 branch 命中 affection_cheng≥16(未达24或教学论未达标) → Normal End——互相欣赏的对手，告白被收回但关系存续。",
+        "mockExam": "route_cheng_mock",
+        "recommendedReview": [
+          "提升 affection_cheng 至 24 并答稳教学论题(目标规范/教学评价/好课标准)，下一周目可解锁 Good End"
+        ]
+      }
+    },
+
+    {
+      "id": "ch_cheng_3_bad_1",
+      "type": "dialogue",
+      "background": "meeting_room",
+      "speaker": "程砚",
+      "expression": "serious",
+      "text": "（他刚要开口，目光扫过我评课表上那几处仍没站稳的目标与漏判的评价类型，那点温度，一寸寸收了回去。）\n……课，是有进步。可你看，这里——目标还是写虚了，这一处该用形成性评价，你又判成了总结性。\n（他重新端起茶，唇角的笑，又变回了那把尺子。）地基还没夯实，谈什么'将'我？\n本来想说的话，算了。先把这几处，给我重写十遍。"
+    },
+    {
+      "id": "ch_cheng_3_bad_end",
+      "type": "summary",
+      "background": "corridor",
+      "speaker": "narrator",
+      "text": "（程砚线 · Bad End「重新竖起的盾」。他把将要落地的那句话，又咽了回去，重新用一连串反问，把自己围回了那座温润的壳里。\n我懂了——这条线，输的从不是心动，是地基。教学设计的目标、教学评价的类型、好课的标准，我答得还不够稳，他便没有理由相信，我能接住他那套被否了三回的理想。\n锋利的人，只对能接住他的人卸下盔甲。\n备课铃还会响。这一次，我得先把脚下的地基，真正夯实。）",
+      "review": {
+        "ending": "bad",
+        "learnedExamPoints": [
+          "302-中学教学-好课的评价标准（以学生发展为本）— 程砚（待巩固）"
+        ],
+        "structure": "末节点 branch 未命中前两条(affection_cheng<16 或教学论屡错、cheng_pedagogy_passed 未置位) → fallback Bad End——他重新竖起反问的盾。",
+        "mockExam": "route_cheng_mock",
+        "recommendedReview": [
+          "回炉教学设计(目标三要素·ADDIE)、教学评价类型(诊断/形成/总结·相对/绝对)、好课标准；答稳后提升好感，重走告白"
+        ]
+      }
+    }
+  ]
+}

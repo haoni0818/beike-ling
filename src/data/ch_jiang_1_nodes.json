@@ -1,0 +1,175 @@
+{
+  "chapterId": "route_jiang_1",
+  "route": "jiang",
+  "requires": {"flagsAllTrue": ["route_locked_jiang"]},
+  "title": "江晚线 · 第一章 · 也有人听你说",
+  "summary": "锁定江晚线后的第一章。共通线里那句'这间屋子里平时，只有我一个人在听别人说话'，一直钩在你心上。一个放学后的黄昏，你拎着两杯热饮敲开心理中心的门，第一次不是为了哪个学生，而是为了她。你成了那个唯一听她说话的人——而她，借着给你讲皮亚杰与维果茨基，第一次把自己也放进了被理解的位置。两个成年人，在一屋暖光里，安静地、互相照亮。",
+  "designNote": "百合线个人章 ch_jiang_1，黄金四拍第一拍'心动·互相照亮'。第一人称旁白贯穿。江晚为绝对主导，温柔知性女；心动写成细腻克制、得体有尊严的同性吸引——并肩、低语、目光多停半秒、共写一行字，从不越界、不奇观化、不情色。jiang 表情仅 neutral|smile|serious|worried，背景仅 counseling_room|corridor|staff_room。深挖模块为 302 发展心理（皮亚杰认知发展深挖 + 维果茨基最近发展区）。teach→knowledgeCheck(带 examTags 的 choice，指向 ch_jiang_quiz.json)→apply→after→heart 微循环 1-2 个。关键选择用 setFlag 记录倾向(route_lean_jiang / chose_listen_back)，affection_jiang 通过 effects 累积。学生(周也)仅作教学对象/事件源，恋爱仅成年同事。沈亦舟可极短 cameo。",
+  "characters": ["jiang", "shen"],
+  "students": ["周也"],
+  "valueFields": ["professionalSkill", "studentTrust", "classOrder", "ethicsRisk", "lawRisk", "examScore", "affection_jiang"],
+  "note": "ethicsRisk/lawRisk 为逆向指标，越低越好。knowledgeCheck 指向 ch_jiang_quiz.json 的题目 id。本章 route:jiang，requires 已锁线。",
+  "nodes": [
+    {
+      "id": "ch_jiang_1_intro",
+      "type": "dialogue",
+      "background": "corridor",
+      "speaker": "narrator",
+      "text": "放学铃响过半小时，教学楼空了下来，只有心理中心那扇门缝里还漏着暖黄的光。\n我在门口站了两秒——手里两杯热饮，一杯她爱的桂花乌龙，一杯我的。\n（这是我第一次，不是为了哪个学生来敲这扇门。只是想起她说过的那句：'这间屋子里平时，只有我一个人在听别人说话。'……今天，换我来听。）"
+    },
+    {
+      "id": "ch_jiang_1_intro_2",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "smile",
+      "text": "（她正低头整理一摞咨询记录，听见敲门抬起头，先是怔了一下，随即弯起眼睛。）\n是你呀。这个点了，怎么没回家？\n（我把那杯桂花乌龙放到她手边。她指尖触到杯壁的温度，动作顿了顿，那点惯常的、professional 的镇定，松动了一瞬。）……还记得我爱喝这个。"
+    },
+    {
+      "id": "ch_jiang_1_intro_3",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "narrator",
+      "text": "我在她对面坐下，说不是来找她出主意的，就是想来坐坐，问她一句——'你今天，过得怎么样？'\n她捧着杯子，沉默了好几秒，睫毛轻轻颤了一下。\n（我忽然意识到，这样一句最寻常的问候，可能很久没人对她说过了。最会听别人的人，原来最少被问。）"
+    },
+    {
+      "id": "ch_jiang_1_intro_4",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "smile",
+      "text": "（她低低地笑了一声，像是被这问题问得有点不知所措，又有点暖。）\n……还行。今天周也来过，状态好了点。\n（她转了转杯子，岔开话题，语气重新落回她熟悉的轨道。）对了，你不是一直想把发展心理那块吃透么？正好周也这个年纪是最好的例子。我讲给你听——也算，有个人陪我说说话。"
+    },
+    {
+      "id": "ch_jiang_1_teach_1",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "smile",
+      "text": "（她把椅子挪近半步，摊开周也的成长记录，声音放得很轻很稳。）\n先说皮亚杰。他把认知发展分四个阶段，你只要抓住每个阶段'能做到什么、还做不到什么'——\n**感知运动**(0-2岁)：靠动作和感觉认识世界，末期获得'客体永久性'；\n**前运算**(2-7岁)：会用符号语言，但思维自我中心、不可逆、缺守恒。"
+    },
+    {
+      "id": "ch_jiang_1_teach_2",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "smile",
+      "text": "**具体运算**(7-11岁)：出现守恒、可逆，能逻辑思考，但还离不开具体事物；\n**形式运算**(11岁以后)：能做抽象的、假设演绎的推理，能在脑子里'如果……那么……'。\n周也十六岁，正卡在形式运算的门口——他第一次能抽象地思考'我是谁''活着为什么'，可这套刚长出来的抽象能力，也让他第一次能放大自己的失败。能力是双刃的。"
+    },
+    {
+      "id": "ch_jiang_1_teach_3",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "neutral",
+      "text": "（她抽出另一张纸，在上面画了三个同心圈。）\n再给你配一个皮亚杰常考的'邻居'——维果茨基的**最近发展区**。\n孩子'自己已经会的'是一个圈，'有人帮一把才会的'是外面那个圈，两圈之间的差距，就是最近发展区。教学要落在这个区里——太易他无聊，太难他放弃。给他'刚好够一够能到'的支持，这叫**支架式教学**。"
+    },
+    {
+      "id": "ch_jiang_1_teach_4",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "smile",
+      "text": "（她写到'支架'两个字时，笔顿了一下，把笔递到我手里，示意我接着她那行字往下补。）\n来，你写——'撤掉支架'四个字。等他自己能站稳了，扶着他的手，就该慢慢松开。\n（我握着那支还带着她体温的笔，在她的字迹后面接上我的。两行字，一句话，落在同一张纸上。我的耳尖，悄悄热了。）"
+    },
+    {
+      "id": "ch_jiang_1_apply",
+      "type": "choice",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "smile",
+      "knowledgeCheck": "q_piaget_deep_01",
+      "text": "（她把周也的随笔推过来，上面写着'反正我怎么努力都没用'。）\n那现在用刚才学的看周也——他能抽象地推演'努力→无用'这个结论，把一次失利上升成'我整个人不行'。从皮亚杰的认知发展看，他这种'能把单次失败抽象成全局否定'的思维，最贴合哪个阶段的特征？该怎么借维果茨基的思路帮他？",
+      "examTags": {
+        "subject": "302",
+        "module": "中学生发展心理",
+        "examPoint": "皮亚杰形式运算阶段特征的辨别 + 维果茨基最近发展区/支架式教学的应用",
+        "questionType": "材料分析"
+      },
+      "choices": [
+        {
+          "id": "A",
+          "text": "他已进入形式运算阶段，能做抽象的假设演绎推理，所以会把单次失败抽象成全局否定；应在他的最近发展区里搭支架——拆出一个'刚好够得着'的小目标，扶他完成、再慢慢撤掉支架，用真实的小成功反驳那套抽象的全局否定。",
+          "quality": "optimal",
+          "effects": {"professionalSkill": 2, "studentTrust": 2, "classOrder": 0, "ethicsRisk": -1, "lawRisk": 0, "examScore": 3, "affection_jiang": 3},
+          "feedback": "对。'把单次失败抽象成全局否定'正依赖形式运算的抽象推理能力；维果茨基的对策是在最近发展区内提供支架(可达成的小步目标+及时支持)，再适时撤架。阶段判断与方法应用都到位。",
+          "setFlag": {"route_lean_jiang": 1, "chose_listen_back": true},
+          "answerKeywords": ["形式运算阶段", "抽象/假设演绎推理", "最近发展区", "支架式教学", "适时撤架"]
+        },
+        {
+          "id": "B",
+          "text": "他还停在具体运算阶段，得靠具体事物才能想问题，所以钻牛角尖；多给他摆事实、举具体例子就行。",
+          "quality": "suboptimal",
+          "effects": {"professionalSkill": 0, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": 0, "affection_jiang": 0},
+          "feedback": "阶段判断错了。恰恰是因为他已能抽象推理(形式运算)，才会把单次失败上升为全局否定；具体运算阶段还做不到这种抽象的全局推演。阶段判断错，后面方法也就偏了。",
+          "answerKeywords": ["误判为具体运算", "形式运算才能抽象否定"]
+        },
+        {
+          "id": "C",
+          "text": "直接给他定一个很高的目标逼他冲，目标越高越能激发他。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -1, "studentTrust": -1, "classOrder": 0, "ethicsRisk": 1, "lawRisk": 0, "examScore": -2, "affection_jiang": -1},
+          "feedback": "把任务定在最近发展区之外(太难)，只会再次印证他'怎么努力都没用'。维果茨基强调任务要落在'够一够能到'的区间，过高的支架反而压垮他。",
+          "answerKeywords": ["任务超出最近发展区", "过难致放弃"]
+        },
+        {
+          "id": "D",
+          "text": "告诉他'你想太多了，别钻牛角尖'，让他自己想开点。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -1, "studentTrust": -1, "classOrder": 0, "ethicsRisk": 1, "lawRisk": 0, "examScore": -2, "affection_jiang": -1},
+          "feedback": "空泛劝解既没有阶段判断，也没有具体方法，对一个正用抽象能力否定自己的孩子往往无效。材料题需要写出阶段名+具体教学对策才有采分点。",
+          "answerKeywords": ["空泛劝解", "无阶段判断无方法"]
+        }
+      ]
+    },
+    {
+      "id": "ch_jiang_1_after",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "smile",
+      "text": "（她听完，眼里亮了一下，轻轻点头。）\n答得真好。你看，你已经会用'阶段'去看一个孩子，而不是用'对错'去评判他了——这一步，很多老师走了好多年。\n（她把那张两人共写的纸理平，没急着收，反而多停了一会儿目光在上面。）周也有救。被你这样看着的孩子，都有救。"
+    },
+    {
+      "id": "ch_jiang_1_heart",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "narrator",
+      "text": "暮色一点点漫进来，把屋里的暖光衬得更软。她说'被这样看着的孩子都有救'时，我心里忽然冒出一个不合时宜的念头——\n那她呢？谁来这样看着她。\n（这间屋子里，她听了那么多人的心事。今天我才发现，原来我也想，一直坐在这儿，听她说话。这念头来得安静，却很清楚。）"
+    },
+    {
+      "id": "ch_jiang_1_end_1",
+      "type": "dialogue",
+      "background": "corridor",
+      "speaker": "江晚",
+      "expression": "smile",
+      "text": "（她送我到楼道口，晚风把她的发丝吹乱了一缕。她没去拢，只是看着我，笑意很淡，很真。）\n谢谢你今天来。不是来问周也，是来问我。\n……这屋子安静太久了。下次，你还来么？\n（这句问出口时，她的眼神有一瞬的不确定，像在等一个不敢预设的答案。）"
+    },
+    {
+      "id": "ch_jiang_1_end_2",
+      "type": "dialogue",
+      "background": "corridor",
+      "speaker": "narrator",
+      "text": "我说，来。\n只说了一个字，她却像松了一口气似的，轻轻'嗯'了一声，转身回屋时，脚步比来时轻快了些。\n（沈亦舟不知什么时候在楼下探了个头，看见我俩，识趣地缩回去没出声。难得他没贫嘴。）\n我望着那扇重新亮起来的门，心里有什么东西，落了地。"
+    },
+    {
+      "id": "ch_jiang_1_end",
+      "type": "summary",
+      "background": "corridor",
+      "speaker": "narrator",
+      "text": "（江晚线第一章落幕。互相照亮的这个黄昏，把今天学的、心动的，一并记进手账。）",
+      "review": {
+        "learnedExamPoints": [
+          "302-发展心理-皮亚杰认知发展四阶段（感知运动/前运算/具体运算/形式运算）— 江晚",
+          "302-发展心理-维果茨基最近发展区与支架式教学（含适时撤架）— 江晚"
+        ],
+        "structure": "从'换我来听你说话'的反向问候切入，借周也的随笔把皮亚杰阶段与维果茨基最近发展区'用'出来。走'剧情讲授→马上做题→应用→反馈'。",
+        "mockExam": "route_jiang_mock",
+        "recommendedReview": [
+          "答错皮亚杰阶段→江晚重讲四阶段'能做到/做不到'的分界，重点辨具体运算 vs 形式运算",
+          "答错维果茨基→江晚重讲最近发展区与支架式教学，强调任务要落在'够一够能到'的区间"
+        ]
+      }
+    }
+  ]
+}

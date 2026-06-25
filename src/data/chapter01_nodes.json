@@ -1,0 +1,580 @@
+{
+  "chapterId": "core_ch01",
+  "title": "第一章 · 入职第一天",
+  "summary": "入职星澜高中第一天。你在楼梯口把一杯咖啡泼上了全校最难搞的男人——后来才知道他是教务主任陆知行。这一天，你被损友搭档沈亦舟一路拽着，在见面会上被陆知行当众敲打、在高一(7)班遇上阳光班主任顾承和刺头林小满、又被温柔的心理老师江晚拉去看一个怕考试的男生周也。三桩事、三位前辈，把三个高频考点'用'了出来，也把四个人记进了你心里。",
+  "designNote": "乙女向重写版：第一人称心声(旁白)贯穿；四位男主以反差人设立第一印象(陆=冰山上司/顾=阳光学长/江=温柔治愈/沈=损友搭档)；每个考点包在一段有心动 beat 的对手戏里。学生(林小满/周也)仅为教学对象与事件源，绝不涉及恋爱。teach→随堂检测→应用 结构与三考点保留。贯穿钩子：陆知行在你名字旁画的记号。",
+  "characters": [
+    "lu",
+    "gu",
+    "jiang",
+    "shen"
+  ],
+  "students": [
+    "林小满",
+    "周也"
+  ],
+  "valueFields": [
+    "professionalSkill",
+    "studentTrust",
+    "classOrder",
+    "ethicsRisk",
+    "lawRisk",
+    "examScore",
+    "affection_lu",
+    "affection_jiang",
+    "affection_gu",
+    "affection_shen"
+  ],
+  "note": "ethicsRisk/lawRisk 为逆向指标，越低越好。knowledgeCheck 指向 chapter_01_prototype_quiz.json 的题目 id。",
+  "nodes": [
+    {
+      "id": "ch01_intro_1",
+      "type": "dialogue",
+      "background": "corridor",
+      "speaker": "narrator",
+      "text": "九月一号，七点四十二。\n走廊里全是新书和清晨阳光的味道。我抱着一摞还烫手的教案往上冲——人生第一天当老师，居然要迟到了。\n脖子上的工牌一晃一晃，“见习教师”四个字，看得我心里又雀跃又发虚。"
+    },
+    {
+      "id": "ch01_intro_2",
+      "type": "dialogue",
+      "background": "corridor",
+      "speaker": "narrator",
+      "text": "就差最后一级台阶——砰，我结结实实撞上了一堵“墙”。\n教案哗啦散了一地，我那杯没盖紧的黑咖啡，不偏不倚泼在了“墙”的白衬衫袖口上。\n……可墙不会皱眉。我慢慢抬头——是个人。一个，过分好看的人。"
+    },
+    {
+      "id": "ch01_intro_3",
+      "type": "dialogue",
+      "background": "corridor",
+      "speaker": "陆知行",
+      "expression": "serious",
+      "text": "（他低头看了眼袖口上那道咖啡渍，再抬眼，语气平得没有一丝起伏）……新来的？\n第一天，迟到，顺手还能把咖啡泼别人身上。\n（他顿了半秒）齐了。"
+    },
+    {
+      "id": "ch01_intro_4",
+      "type": "dialogue",
+      "background": "corridor",
+      "speaker": "narrator",
+      "text": "他弯腰，捡起我摔出去的工牌，目光在“见习教师”上停了半秒，递还给我。\n指尖擦过的一瞬，凉得像金属。我手忙脚乱接住，心跳却没出息地漏了一拍。\n（这人嘴是淬过冰吧……可那双眼睛，凭什么这么好看。）"
+    },
+    {
+      "id": "ch01_intro_5",
+      "type": "dialogue",
+      "background": "corridor",
+      "speaker": "陆知行",
+      "expression": "serious",
+      "text": "（他抽出纸巾擦了擦袖口，随手揉成一团）东西捡好。八点，会议室，新教师见面会。\n别再迟到——我不喜欢等人。\n（说完转身，背影挺得笔直，连脚步声都规规矩矩。）"
+    },
+    {
+      "id": "ch01_intro_6",
+      "type": "dialogue",
+      "background": "staff_room",
+      "speaker": "沈亦舟",
+      "expression": "grin",
+      "text": "（一杯温豆浆冷不丁塞进我怀里，一个笑嘻嘻的男生不知从哪冒出来）诶哟喂——新来的吧？刚那一幕，我从头看到尾。\n你是真的猛啊，头一天就敢拿咖啡“洗”那位的袖子。"
+    },
+    {
+      "id": "ch01_intro_7",
+      "type": "dialogue",
+      "background": "staff_room",
+      "speaker": "沈亦舟",
+      "expression": "smile",
+      "text": "自我介绍：沈亦舟，去年入职，组里派我当你搭档。翻译一下——以后你要踩的坑，我基本都替你踩过一遍了。\n（他压低声音，朝楼梯口努努嘴）刚那位，教务主任陆知行。全校最难搞，没有之一。你这第一炮……响得可够亮的。"
+    },
+    {
+      "id": "ch01_intro_8",
+      "type": "dialogue",
+      "background": "staff_room",
+      "speaker": "沈亦舟",
+      "expression": "smile",
+      "text": "豆浆趁热喝，压压惊。走吧，见面会，我陪你去——真要挨训，也是先训我这个搭档。\n（我捧着那杯还温着的豆浆，心里那根紧绷的弦，悄悄松了一点。这第一天，好像也没那么吓人。）"
+    },
+    {
+      "id": "ch01_a_teach_1",
+      "type": "dialogue",
+      "background": "meeting_room",
+      "speaker": "陆知行",
+      "expression": "serious",
+      "text": "（会议室里，主持人正是他。目光在空中撞了一下，他面无表情，我却先心虚地低了头）\n不讲场面话。上周隔壁校，一位老师抓到学生上课玩手机，当场没收，还当着全班的面，把人家聊天记录一条条念出来——美其名曰“以儆效尤”。"
+    },
+    {
+      "id": "ch01_a_teach_2",
+      "type": "dialogue",
+      "background": "meeting_room",
+      "speaker": "陆知行",
+      "expression": "serious",
+      "text": "结果？家长投诉，学校上门赔礼，那位老师写了三千字检讨。\n（他扫过台下一张张新面孔）管手机，没错。错的是“怎么管”。你们最容易在不经意间踩到的，是学生的三条权利——今天，把边界给我记死。"
+    },
+    {
+      "id": "ch01_a_teach_3",
+      "type": "dialogue",
+      "background": "meeting_room",
+      "speaker": "陆知行",
+      "expression": "serious",
+      "text": "他那一套，一步踩三雷：念聊天记录、晒成绩排名，碰的是**隐私权**；当众羞辱、辱骂，碰的是**人格尊严权**；要是再把人赶出教室不让听课，碰的就是**受教育权**。\n（他抬眼，一字一顿）记一句话就够：公开私人信息=隐私权，羞辱贬损=人格尊严权，不让上课=受教育权。"
+    },
+    {
+      "id": "ch01_a_teach_4",
+      "type": "dialogue",
+      "background": "meeting_room",
+      "speaker": "沈亦舟",
+      "expression": "grin",
+      "text": "（沈亦舟凑过来，用气音吐槽）听见没……他开场永远这么吓人。不过这坑是真的，新人一年得栽好几个。\n——诶诶诶，他往这边看了，他往这边看了！"
+    },
+    {
+      "id": "ch01_a_teach_5",
+      "type": "dialogue",
+      "background": "meeting_room",
+      "speaker": "陆知行",
+      "expression": "serious",
+      "text": "（他的目光精准地落到我身上，全场的视线跟着转了过来）\n就你。早上那位“咖啡老师”。\n（他难得地、极轻地挑了下眉）考你一道——答得出来，今天这笔账，咱俩两清。"
+    },
+    {
+      "id": "ch01_a_apply",
+      "type": "choice",
+      "background": "meeting_room",
+      "speaker": "陆知行",
+      "expression": "serious",
+      "knowledgeCheck": "q_law_01",
+      "text": "（我答完，他几不可察地“嗯”了一声，听不出满意还是不满意）\n往下一步——换成你自己的课，眼前就有个学生在底下偷玩手机。这三条红线，你打算怎么绕开？",
+      "examTags": {
+        "subject": "301",
+        "module": "教育法律法规",
+        "examPoint": "学生权利（隐私权/人格尊严权/受教育权）在课堂违纪处理中的应用",
+        "questionType": "材料分析"
+      },
+      "choices": [
+        {
+          "id": "A",
+          "text": "先替他代为保管手机，下课单独问问怎么回事，绝不翻里面的东西。",
+          "quality": "optimal",
+          "effects": {
+            "professionalSkill": 2,
+            "studentTrust": 1,
+            "classOrder": 0,
+            "ethicsRisk": -1,
+            "lawRisk": -2,
+            "examScore": 3,
+            "affection_lu": 2
+          },
+          "feedback": "稳。代管违纪本身没毛病，不翻=不碰隐私权，不骂=不碰人格尊严权，不赶=不碰受教育权——三条红线一条没踩。陆知行那记号画得有道理。",
+          "answerKeywords": [
+            "代为保管",
+            "不翻看私人内容",
+            "单独沟通",
+            "对事不对人",
+            "程序正当"
+          ]
+        },
+        {
+          "id": "B",
+          "text": "当场没收，再当全班面把聊天记录翻给大家看，以儆效尤。",
+          "quality": "risk",
+          "effects": {
+            "professionalSkill": -2,
+            "studentTrust": -2,
+            "classOrder": 1,
+            "ethicsRisk": 2,
+            "lawRisk": 3,
+            "examScore": -3,
+            "affection_lu": -2
+          },
+          "feedback": "这不就是上周那位写检讨的老师的同款操作吗——翻记录碰隐私权，当众羞辱碰人格尊严权。材料题里见着这种处理，分是保不住的。",
+          "answerKeywords": [
+            "侵犯隐私权",
+            "侵犯人格尊严权",
+            "变相体罚"
+          ]
+        },
+        {
+          "id": "C",
+          "text": "没收手机，再罚他站到教室外，这节课别想进来听了。",
+          "quality": "risk",
+          "effects": {
+            "professionalSkill": -1,
+            "studentTrust": -1,
+            "classOrder": 0,
+            "ethicsRisk": 1,
+            "lawRisk": 2,
+            "examScore": -3,
+            "affection_lu": -1
+          },
+          "feedback": "把人赶出去不让听课=剥夺受教育权，还沾上变相体罚。维持纪律是对的，但不能拿学生上课的权利去抵。",
+          "answerKeywords": [
+            "侵犯受教育权",
+            "变相体罚"
+          ]
+        },
+        {
+          "id": "D",
+          "text": "当场把手机摔了，让他长长记性。",
+          "quality": "risk",
+          "effects": {
+            "professionalSkill": -2,
+            "studentTrust": -1,
+            "classOrder": 0,
+            "ethicsRisk": 2,
+            "lawRisk": 3,
+            "examScore": -3,
+            "affection_lu": -2
+          },
+          "feedback": "砸学生东西=侵财产权。一冲动就上手，是新教师最容易翻车的地方——记住陆知行那句，规矩是让你出事那天站得住。",
+          "answerKeywords": [
+            "侵犯财产权",
+            "情绪化执法"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch01_a_after",
+      "type": "dialogue",
+      "background": "meeting_room",
+      "speaker": "陆知行",
+      "expression": "neutral",
+      "text": "（他在签到名单上、我名字的旁边，落笔画了个什么记号，然后合上本子）\n记住——规矩不是用来卡你的，是让你在真出事的那天，站得住。\n（他顿了顿，声音低了半度）……早上那杯咖啡，算了。散会。"
+    },
+    {
+      "id": "ch01_a_heart",
+      "type": "dialogue",
+      "background": "meeting_room",
+      "speaker": "narrator",
+      "text": "他走后，我偷偷凑到名单前——我的名字旁边，是一个很小的、像星号又像对勾的记号。\n别人名字旁边都没有。\n（那是什么意思？是'重点盯防'，还是……算了，我在瞎想什么。）"
+    },
+    {
+      "id": "ch01_t1",
+      "type": "dialogue",
+      "background": "corridor",
+      "speaker": "沈亦舟",
+      "expression": "smile",
+      "text": "（出了会议室，沈亦舟夸张地长舒一口气）活着出来了！而且陆主任居然没揪着你不放，太阳打西边出来了。\n走，带你去高一(7)班串门——带班的是顾承，老班主任，喊他顾哥就行，人好得很。哦对，先打个预防针：那班有个林小满，迟到大王，嘴硬得很，别让她噎着你。"
+    },
+    {
+      "id": "ch01_b_teach_1",
+      "type": "dialogue",
+      "background": "classroom",
+      "speaker": "顾承",
+      "expression": "smile",
+      "text": "（教室里，一个卷着袖口、正翻周记本的男人抬头冲我一笑，午后的阳光不偏不倚落在他身上）\n来啦新老师！我顾承，叫顾哥就成。别杵门口呀，进来——来得正巧，让你见识见识我们班的“风云人物”。"
+    },
+    {
+      "id": "ch01_b_teach_2",
+      "type": "dialogue",
+      "background": "classroom",
+      "speaker": "林小满",
+      "text": "（一个女生踩着铃声后五分钟才晃进门，撞上顾承的目光，下巴一梗）\n……迟到怎么了。反正在你们老师眼里，我早就没救了。（说完别开脸，把书包往桌上重重一摔，坐下。）"
+    },
+    {
+      "id": "ch01_b_teach_3",
+      "type": "dialogue",
+      "background": "classroom",
+      "speaker": "顾承",
+      "expression": "tender",
+      "text": "（顾承没急着开口批评，反倒转过头，压低声音跟我说）看见没？先别急着琢磨怎么“治”她。\n带班这些年我就信一句话：带班跟种地一个理，你得先看清哪株苗缺水、哪株苗怕涝。她的“短”摆在脸上——迟到、自卑。可她也有“长”：上周我撞见她蹲在车棚给流浪猫喂火腿肠，一蹲二十分钟。"
+    },
+    {
+      "id": "ch01_b_teach_4",
+      "type": "dialogue",
+      "background": "classroom",
+      "speaker": "顾承",
+      "expression": "smile",
+      "text": "用她那点“长”，去拉动这片“短”——这就是**长善救失**，说白了，靠积极因素去克消极因素。\n（他笑了笑）这词最爱在卷子上跟俩兄弟撞脸：**因材施教**讲的是“人不一样、教法就不一样”，眼睛盯着差异；**疏导**讲的是“好好讲道理把人说通”，眼睛盯着说服。这仨分清楚，材料题能少丢一大截分。"
+    },
+    {
+      "id": "ch01_b_teach_5",
+      "type": "dialogue",
+      "background": "classroom",
+      "speaker": "顾承",
+      "expression": "tender",
+      "text": "（他瞥见我手忙脚乱翻不出本子，笑着把自己那本写得密密麻麻的带班笔记推过来）\n喏，用我的。别紧张，慢慢来。\n（笔记本还带着他的体温，字却意外地认真工整。我捏着笔，耳朵悄悄烧了起来。）——来，趁热，考你一道。"
+    },
+    {
+      "id": "ch01_b_apply",
+      "type": "choice",
+      "background": "classroom",
+      "speaker": "顾承",
+      "expression": "smile",
+      "knowledgeCheck": "q_de_01",
+      "text": "（顾承点点头，朝林小满那边努努嘴，声音压得极轻）\n行。那现在——她人就在那儿坐着。等会儿下课，这个口，你打算怎么跟她开？",
+      "examTags": {
+        "subject": "302",
+        "module": "德育",
+        "examPoint": "德育原则（长善救失）在后进生转化中的应用",
+        "questionType": "材料分析"
+      },
+      "choices": [
+        {
+          "id": "A",
+          "text": "从她蹲着喂猫那份心软聊起，先真心夸她，再陪她一块儿想想迟到的事怎么办。",
+          "quality": "optimal",
+          "effects": {
+            "professionalSkill": 2,
+            "studentTrust": 3,
+            "classOrder": 0,
+            "ethicsRisk": -1,
+            "lawRisk": 0,
+            "examScore": 3,
+            "affection_gu": 2,
+            "affection_jiang": 1
+          },
+          "feedback": "这就是顾哥说的长善救失：拿“爱心、责任心”这个积极因素，去拉动“迟到、自卑”那一面，顺手还撕掉了她“我没救了”的自我标签。",
+          "answerKeywords": [
+            "长善救失",
+            "依靠积极因素",
+            "扬长补短",
+            "保护自尊"
+          ]
+        },
+        {
+          "id": "B",
+          "text": "跟她摆事实讲道理，把“迟到害人害己”掰开揉碎讲清楚，盼她想通。",
+          "quality": "suboptimal",
+          "effects": {
+            "professionalSkill": 0,
+            "studentTrust": 0,
+            "classOrder": 0,
+            "ethicsRisk": 0,
+            "lawRisk": 0,
+            "examScore": 0,
+            "affection_gu": 0
+          },
+          "feedback": "这是疏导（讲道理）的路子，本身没错。可对一个已经自我否定的孩子，光说理不如先扬长——这一题更对症的是长善救失。",
+          "answerKeywords": [
+            "疏导（不够对症）",
+            "宜先扬长"
+          ]
+        },
+        {
+          "id": "C",
+          "text": "照着她的性子，单独给她量身定一套合适的要求。",
+          "quality": "suboptimal",
+          "effects": {
+            "professionalSkill": 1,
+            "studentTrust": 1,
+            "classOrder": 0,
+            "ethicsRisk": 0,
+            "lawRisk": 0,
+            "examScore": 1,
+            "affection_gu": 1
+          },
+          "feedback": "这偏因材施教（按差异施教），不算错，但没踩中“用她的优点去带动转变”这个最对症的点。因材施教和长善救失，别在卷子上混了。",
+          "answerKeywords": [
+            "因材施教（差异化）",
+            "未扬长补短"
+          ]
+        },
+        {
+          "id": "D",
+          "text": "直接立规矩：迟到一次扣一分，铁面执行，先把纪律给压住。",
+          "quality": "risk",
+          "effects": {
+            "professionalSkill": -1,
+            "studentTrust": -2,
+            "classOrder": 1,
+            "ethicsRisk": 1,
+            "lawRisk": 0,
+            "examScore": -2,
+            "affection_gu": -1
+          },
+          "feedback": "光靠扣分硬压、不去借她的闪光点，对一个认定“我没救了”的孩子，只会越压越对着干——正好跟长善救失反着来。",
+          "answerKeywords": [
+            "只压纪律",
+            "忽视积极因素"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch01_b_after",
+      "type": "dialogue",
+      "background": "classroom",
+      "speaker": "林小满",
+      "text": "（下课，我照着想法跟她聊了几句。她愣了一下，盯着桌面）\n……你怎么知道我喂猫。（耳朵悄悄红了，声音很小）哼，也就你们俩看得见。"
+    },
+    {
+      "id": "ch01_b_heart",
+      "type": "dialogue",
+      "background": "classroom",
+      "speaker": "顾承",
+      "expression": "tender",
+      "text": "（顾承在旁边没作声，只趁林小满没注意，冲我悄悄竖了个大拇指，又凑近半步，压着嗓子）\n可以啊新老师。我看你，是块当老师的料。\n（他离得太近，阳光、皂角的味道，还有那句夸，一股脑糊了我一脸。我慌忙低头，假装整理那本——还没顾得上还给他的笔记。）"
+    },
+    {
+      "id": "ch01_t2",
+      "type": "dialogue",
+      "background": "corridor",
+      "speaker": "沈亦舟",
+      "expression": "grin",
+      "text": "行啊你，连林小满那张臭脸都给整松动了——我带了她一学期都没混上这待遇。\n（他手机震了一下，扫了眼屏幕）哦，江老师喊你去趟心理咨询室，说有个学生周也，一到考试就崩，想拉你一起看看。\n江晚江老师……全校最会“听人说话”的那位。怎么讲呢，你会喜欢上那间屋子的。"
+    },
+    {
+      "id": "ch01_c_teach_1",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "smile",
+      "text": "（推门，一屋子暖光和绿植，空气里飘着淡淡茶香。她回过头，把一杯温水轻轻搁到我手边，声音又轻又稳）\n来啦。先别急着想办法，坐下喝口水。\n周也刚走。成绩中上的孩子，可一到大考就睡不着、手发抖、脑子一片空白，嘴里还反复念叨“自己很没用”。"
+    },
+    {
+      "id": "ch01_c_teach_2",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "tender",
+      "text": "做这行，第一步永远是“先听见，再判断”。把他的话听完，我心里就有数了——典型的**考试焦虑**。\n（她轻声接着说）难的是挑对方法。手抖心慌这种身体上的反应，得用**系统脱敏**：先放松，再由轻到重一级级去想象考场，慢慢“脱”掉那份怕；要是卡在“考砸=我没用”这种想法上，那是**合理情绪疗法**的活儿，专门跟错误信念较劲。至于**来访者中心**那种无条件接纳、共情倾听——是垫在底下的地基。"
+    },
+    {
+      "id": "ch01_c_teach_3",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "smile",
+      "text": "诀窍就一句：方法要冲着“问题的哪一面”去。身体的反应交给系统脱敏，脑子里的想法交给合理情绪疗法，可别一锅乱炖。\n（她倾身过来，帮我把摊乱的咨询记录一张张理齐，发梢几乎扫到我手背，温温的）来，考你一道——就当我们俩一起，给周也想个办法。"
+    },
+    {
+      "id": "ch01_c_apply",
+      "type": "choice",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "smile",
+      "knowledgeCheck": "q_xl_01",
+      "text": "（她眼里浮起一点笑意）答得很准。\n那——周也“一进考场就心慌、手抖、脑子空白”，这是身体在闹。你说，咱们先从哪儿下手？",
+      "examTags": {
+        "subject": "302",
+        "module": "中学生心理辅导",
+        "examPoint": "辅导方法与问题对症（系统脱敏对生理反应 / 合理情绪疗法对认知）",
+        "questionType": "材料分析"
+      },
+      "choices": [
+        {
+          "id": "A",
+          "text": "先教他放松，再带他由轻到重一级级想象考场，做系统脱敏，把心慌手抖压下去。",
+          "quality": "optimal",
+          "effects": {
+            "professionalSkill": 2,
+            "studentTrust": 2,
+            "classOrder": 0,
+            "ethicsRisk": -1,
+            "lawRisk": 0,
+            "examScore": 3,
+            "affection_jiang": 3
+          },
+          "feedback": "对症了。心慌、手抖、脑子空白是焦虑在身体上的反应，系统脱敏（放松+逐级想象）正是冲着这个去的。江老师的“先听见再判断”，你接住了。",
+          "answerKeywords": [
+            "系统脱敏",
+            "放松训练",
+            "逐级想象",
+            "对症生理反应"
+          ]
+        },
+        {
+          "id": "B",
+          "text": "先帮他掰扯掰扯“考砸=我没用”这个钻牛角尖的想法。",
+          "quality": "suboptimal",
+          "effects": {
+            "professionalSkill": 1,
+            "studentTrust": 1,
+            "classOrder": 0,
+            "ethicsRisk": 0,
+            "lawRisk": 0,
+            "examScore": 1,
+            "affection_jiang": 1
+          },
+          "feedback": "这是合理情绪疗法，要做、迟早也得做——但它治的是“我没用”这个想法。这一问问的是“心慌手抖”的身体反应，更对症的是系统脱敏。两个常常搭着用。",
+          "answerKeywords": [
+            "合理情绪疗法（对认知）",
+            "本问应先对症生理"
+          ]
+        },
+        {
+          "id": "C",
+          "text": "先共情倾听，无条件接住他那份紧张。",
+          "quality": "suboptimal",
+          "effects": {
+            "professionalSkill": 1,
+            "studentTrust": 2,
+            "classOrder": 0,
+            "ethicsRisk": 0,
+            "lawRisk": 0,
+            "examScore": 1,
+            "affection_jiang": 1
+          },
+          "feedback": "来访者中心的共情是必备的地基，方向没错——可对“心慌手抖”，还得搬出更能上手的系统脱敏。只共情、不给具体技术，材料题会卡在“方法不具体”上失分。",
+          "answerKeywords": [
+            "来访者中心（基础）",
+            "需补具体技术"
+          ]
+        },
+        {
+          "id": "D",
+          "text": "拍拍他说“别紧张，你肯定行的”，让他自己宽宽心。",
+          "quality": "risk",
+          "effects": {
+            "professionalSkill": -1,
+            "studentTrust": 0,
+            "classOrder": 0,
+            "ethicsRisk": 0,
+            "lawRisk": 0,
+            "examScore": -2,
+            "affection_jiang": -1
+          },
+          "feedback": "一句空泛的安慰算不上辅导方法，对焦虑的孩子往往没用，甚至更添压。材料题得写出具体疗法的名字，那才是采分点。",
+          "answerKeywords": [
+            "空泛安慰",
+            "无方法名"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch01_c_after",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "worried",
+      "text": "（她笑着点头，伸手揉了揉眉心，那一瞬间，眉眼里漏出一点没藏住的疲惫）\n周也就交给我们俩，慢慢来。\n……谢谢你今天，肯陪我多想这一会儿。这间屋子里平时，只有我一个人，在听别人说话。"
+    },
+    {
+      "id": "ch01_c_heart",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "narrator",
+      "text": "她说这话时，还是在笑的。可那句'只有我一个人在听别人说话'，却轻轻扎了我一下。\n（原来最会倾听的人，也会没人听。下次……我想多来坐坐。）"
+    },
+    {
+      "id": "ch01_end_1",
+      "type": "dialogue",
+      "background": "staff_room",
+      "speaker": "沈亦舟",
+      "expression": "smile",
+      "text": "（天黑了，操场的灯一盏一盏亮起来。沈亦舟端着两盒冒热气的泡面晃过来）\n唉哟，第一天，活过来啦！陆主任那道考题、林小满那张脸、江老师那间咨询室——你这一天，把别人一礼拜的份都过完了。\n来盒泡面庆祝下？哦对——明天你要上人生头一节课了，我陪你磨。别慌，真挨骂，咱俩一人一半。"
+    },
+    {
+      "id": "ch01_end_2",
+      "type": "dialogue",
+      "background": "staff_room",
+      "speaker": "narrator",
+      "text": "我捧着泡面，回头望了一眼。\n走廊尽头，教务处的灯还亮着——陆知行的办公室。那个画在我名字旁的小记号，我到现在也没敢问出口。\n这一天，我见了守规矩的人、种地的人、会听的人，还有一个肯陪我吃泡面的同路人。备课铃，明天还会响。\n但翻开教师手账的这一刻，我已经，不太一样了。"
+    },
+    {
+      "id": "ch01_end",
+      "type": "summary",
+      "background": "staff_room",
+      "speaker": "narrator",
+      "text": "（第一天落幕。把今天的得失，一条条记进手账吧——人记进去了，分也得记进去。）",
+      "review": {
+        "learnedExamPoints": [
+          "301-法规-学生权利（隐私权/人格尊严权/受教育权）— 陆知行",
+          "302-德育-长善救失（vs 因材施教/疏导）— 顾承",
+          "302-心理辅导-辅导方法对症（系统脱敏/合理情绪疗法/来访者中心）— 江晚"
+        ],
+        "structure": "每个考点从一桩真实事件长出来：手机风波→学生权利；林小满→长善救失；周也→辅导方法对症。走的是'剧情讲授→马上做题→应用→反馈'。章末月考为冷测。",
+        "mockExam": "core_ch01_proto_mock",
+        "recommendedReview": [
+          "答错法规→陆知行重讲三种权利边界",
+          "答错德育→顾承重讲长善救失 vs 因材施教 vs 疏导",
+          "答错心理→江晚重讲三种辅导方法各对症什么"
+        ]
+      }
+    }
+  ]
+}

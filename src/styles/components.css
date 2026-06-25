@@ -1,0 +1,151 @@
+/* ============================================================
+   备课铃响之前 · 基础组件规范
+   components.css — 依赖 tokens.css。所有弹窗/卡/按钮/标签只用这套
+   消除审计实锤：8 种弹窗外壳 / 3 套 chip / 6 套 label / 2 种关闭按钮
+   ============================================================ */
+
+/* ---------- .modal-card：统一弹窗外壳（取代 8 种外壳）----------
+   三段式：header（墨绿）+ body（纸面，唯一滚动区）+ footer（粘底操作）
+   三档宽度用 .is-sm / .is-md / .is-lg */
+.modal-card{
+  display:flex; flex-direction:column;
+  width:var(--modal-md); max-width:calc(100% - 48px);
+  max-height:calc(100% - 48px);          /* 永不外溢舞台 */
+  border-radius:var(--r-xl); overflow:hidden;
+  background:linear-gradient(180deg,var(--paper0),var(--paper1));
+  box-shadow:var(--sh-modal);
+  border:1px solid rgba(255,255,255,.5);
+  color:var(--text-ink); font-family:var(--font-body);
+}
+.modal-card.is-sm{ width:var(--modal-sm); }
+.modal-card.is-md{ width:var(--modal-md); }
+.modal-card.is-lg{ width:var(--modal-lg); }
+
+.modal-card__header{
+  flex:none; padding:var(--sp-5) var(--sp-6);
+  background:linear-gradient(180deg,var(--ink700),var(--ink900));
+  display:flex; align-items:center; justify-content:space-between; gap:var(--sp-4);
+}
+.modal-card__kicker{
+  font-family:var(--font-mono); font-size:var(--fs-kicker);
+  letter-spacing:var(--ls-kicker); color:var(--gold-hi); text-transform:uppercase;
+}
+.modal-card__title{
+  font-family:var(--font-title); font-weight:700; font-size:var(--fs-h2);
+  color:var(--paper0); letter-spacing:.04em; margin-top:2px;
+}
+.modal-card__body{
+  flex:1; min-height:0; overflow-y:auto;        /* 唯一滚动区，画布不滚 */
+  padding:var(--sp-6); display:flex; flex-direction:column; gap:var(--sp-4);
+}
+.modal-card__footer{
+  flex:none; padding:var(--sp-4) var(--sp-6);
+  border-top:1px solid var(--line);
+  display:flex; align-items:center; justify-content:flex-end; gap:var(--sp-3);
+  background:var(--paper0);
+}
+
+/* ---------- .card：浅色信息卡（唯一卡样式）---------- */
+.card{
+  border-radius:var(--r-lg);
+  background:linear-gradient(180deg,var(--paper0),#f6eede);
+  border:1px solid rgba(120,100,70,.16);
+  box-shadow:var(--sh-card);
+  padding:var(--sp-4) var(--sp-5);
+}
+.card.is-dark{
+  background:linear-gradient(180deg,var(--ink800),var(--ink900));
+  border-color:rgba(255,255,255,.1); color:var(--text-paper);
+}
+
+/* ---------- 按钮三级（取代散乱按钮样式）---------- */
+.btn{
+  display:inline-flex; align-items:center; justify-content:center; gap:var(--sp-2);
+  padding:14px 24px; border-radius:var(--r-md);
+  font-family:var(--font-body); font-size:var(--fs-body); font-weight:500;
+  letter-spacing:.06em; cursor:pointer; border:1px solid transparent;
+  transition:filter .15s, transform .15s, background .15s;
+}
+.btn--primary{
+  background:linear-gradient(180deg,var(--primary),var(--primary-deep));
+  color:var(--paper0);
+  box-shadow:0 14px 30px -14px rgba(20,60,52,.9), inset 0 1px 0 rgba(255,255,255,.16);
+  border-color:rgba(255,255,255,.14);
+}
+.btn--primary.is-gold{
+  background:linear-gradient(180deg,var(--gold),var(--gold-deep));
+  color:#21180a; box-shadow:0 14px 30px -14px rgba(193,154,82,.8);
+}
+.btn--primary:hover{ filter:brightness(1.08); }
+.btn--secondary{               /* 玻璃/描边，用于深色背景 */
+  background:rgba(255,250,241,.1); color:var(--paper0);
+  border-color:rgba(255,250,241,.24); backdrop-filter:blur(6px);
+}
+.btn--secondary:hover{ background:rgba(255,250,241,.2); }
+.btn--tertiary{                /* 幽灵文字按钮 */
+  background:transparent; color:var(--text-muted); padding:10px 16px;
+}
+.btn--tertiary:hover{ color:var(--text-ink); }
+.btn[disabled], .btn.is-disabled{
+  opacity:.5; cursor:not-allowed; filter:none; transform:none; pointer-events:none;
+}
+.btn.is-locked{                /* 锁定预告态 */
+  background:rgba(255,255,255,.04); color:var(--text-muted);
+  border:1px dashed rgba(216,184,119,.4);
+}
+
+/* ---------- .label：分类/科目标签（取代 6 套 label）---------- */
+.label{
+  display:inline-flex; align-items:center; gap:var(--sp-1);
+  padding:4px 11px; border-radius:var(--r-sm);
+  font-size:var(--fs-xs); font-weight:700; line-height:1; white-space:nowrap;
+}
+.label--subject{ background:var(--primary); color:#fff; }       /* 301/302 */
+.label--module{ background:rgba(193,154,82,.18); color:#8a6a22; font-weight:400; }
+.label--ink{ background:var(--ink700); color:var(--paper0); }
+
+/* ---------- .chip：关键词/胶囊（取代 3 套 chip）---------- */
+.chip{
+  display:inline-flex; align-items:center; gap:var(--sp-2);
+  padding:6px 13px; border-radius:var(--r-pill);
+  font-size:13px; white-space:nowrap; border:1px solid transparent;
+}
+.chip--key{ background:#fff; border-color:rgba(47,107,94,.3); color:var(--primary); } /* 答题关键词 */
+.chip--ghost{ background:rgba(255,255,255,.05); border-color:rgba(255,255,255,.14); color:var(--text-paper-sub); }
+.chip--filter{ background:rgba(255,255,255,.04); border-color:rgba(255,255,255,.1); color:var(--text-paper-sub); cursor:pointer; }
+.chip--filter.is-on{ background:rgba(216,184,119,.18); border-color:rgba(216,184,119,.5); color:var(--paper0); }
+
+/* ---------- .badge：徽章 / 状态点 ---------- */
+.badge{
+  display:inline-flex; align-items:center; gap:var(--sp-1);
+  padding:3px 9px; border-radius:var(--r-pill);
+  font-size:var(--fs-xs); font-weight:700; line-height:1;
+}
+.badge--ok{ background:rgba(63,155,110,.16); color:var(--ok); }
+.badge--warn{ background:rgba(199,154,62,.2); color:#8a6a22; }
+.badge--bad{ background:rgba(193,87,78,.16); color:var(--bad); }
+.badge--streak{ background:rgba(193,87,78,.92); color:#fff; }   /* 🔥连胜 */
+/* 三态掌握点 */
+.dot{ width:9px; height:9px; border-radius:50%; display:inline-block; }
+.dot--mastered{ background:var(--m-mastered); }
+.dot--learning{ background:var(--m-learning); }
+.dot--unseen{ background:var(--m-unseen); }
+
+/* ---------- .btn-close：唯一关闭按钮（取代 2 种）---------- */
+.btn-close{
+  width:36px; height:36px; border-radius:50%;
+  display:inline-flex; align-items:center; justify-content:center;
+  background:rgba(255,255,255,.1); color:var(--paper0);
+  border:1px solid rgba(255,255,255,.2); cursor:pointer; font-size:15px;
+}
+.btn-close:hover{ background:rgba(255,255,255,.2); }
+.btn-close.on-paper{                 /* 纸面上用 */
+  background:rgba(34,58,52,.08); color:var(--text-ink); border-color:rgba(34,58,52,.14);
+}
+
+/* ---------- 通用红线 utility ---------- */
+.u-minw0{ min-width:0; }              /* flex 子项文本省略必备 */
+.u-ellipsis{ white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.u-scroll{ overflow-y:auto; min-height:0; }
+.kicker{ font-family:var(--font-mono); font-size:var(--fs-kicker);
+  letter-spacing:var(--ls-kicker); color:var(--gold-hi); text-transform:uppercase; }

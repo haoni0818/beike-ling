@@ -1,0 +1,160 @@
+{
+  "chapterId": "route_lu_1",
+  "route": "lu",
+  "requires": {"flagsAllTrue": ["route_locked_lu"]},
+  "title": "陆知行线 · 第一章 · 名字旁的记号",
+  "summary": "锁定陆知行线后的第一章。共通线里那个画在你名字旁、像星号又像对勾的小记号，终于在一次深夜整理学籍档案的并肩里被你亲口问出。他承认，那是他给'值得带的新人'的暗标——冰山初融。借这次值班，他把《教师法》里教师的权利与义务一条条带你过，让你明白：他给你画记号，是认定你扛得住为人师的那份'权'与'责'。",
+  "designNote": "乙女向个人线 ch_lu_1，黄金四拍第一拍'心动·记号揭晓'。第一人称旁白贯穿。lu 表情仅 neutral|smile|serious|worried，背景仅 staff_room|meeting_room|corridor。深挖模块为 301 教育法律法规·教师权利义务。teach→knowledgeCheck(带 examTags 的 choice，指向 ch_lu_quiz.json)→apply→after→heart 微循环 1 个。关键选择用 setFlag 记录倾向(route_lean_lu / chose_rule_and_warmth)，affection_lu 通过 effects 累积；情绪化越界给 lawRisk 正分(逆指标)。学生仅作教学对象/事件源，恋爱仅成年同事。",
+  "characters": ["lu", "shen"],
+  "students": ["林小满"],
+  "valueFields": ["professionalSkill", "studentTrust", "classOrder", "ethicsRisk", "lawRisk", "examScore", "affection_lu"],
+  "note": "ethicsRisk/lawRisk 为逆向指标，越低越好。knowledgeCheck 指向 ch_lu_quiz.json 的题目 id。本章 route:lu，requires 已锁线。",
+  "nodes": [
+    {
+      "id": "ch_lu_1_intro",
+      "type": "dialogue",
+      "background": "staff_room",
+      "speaker": "narrator",
+      "text": "学期过半，一个加班到很晚的周五。\n教务处只剩两盏灯——我这一盏，和走廊尽头他那一盏。沈亦舟早溜了，临走还冲我挤眉弄眼：'就剩你跟陆主任了哦，加油。'\n（我手里攥着那张一直没敢扔的旧签到表。我名字旁边，那个小记号还在。今晚……我能问出口吗。）"
+    },
+    {
+      "id": "ch_lu_1_intro_2",
+      "type": "dialogue",
+      "background": "staff_room",
+      "speaker": "陆知行",
+      "expression": "neutral",
+      "text": "（他端着两杯热水走过来，把一杯放在我手边，自己在对面坐下，目光落在我攥皱的那张纸上。）\n学籍档案还没归完？……你手里那张，是入职见面会的签到表。\n（他没问我为什么留着它，只是极轻地、几不可察地，挑了下眉。）有话问，就问。我不喜欢人把话憋着。"
+    },
+    {
+      "id": "ch_lu_1_intro_3",
+      "type": "dialogue",
+      "background": "staff_room",
+      "speaker": "narrator",
+      "text": "我心一横，把纸推过去，指着那个记号：\n'第一天，你在我名字旁边画了这个。我以为是……重点盯防。'\n他低头看了两秒，喉结动了一下，难得地，没有立刻回我。\n（窗外的风灌进来，吹得档案纸沙沙响。我的心跳，比那风还乱。）"
+    },
+    {
+      "id": "ch_lu_1_teach_1",
+      "type": "dialogue",
+      "background": "staff_room",
+      "speaker": "陆知行",
+      "expression": "neutral",
+      "text": "（他把那张表抚平，放回我手里，语气比平时软了半度。）\n那不是盯防。是'可以教'。\n我给值得带的新人画这个——画的人，这些年，不超过三个。\n（他顿了顿，像是怕这句太重，又补了一句公事公办的。）既然你要留下教书，有些东西，今晚一并讲清。当老师，先得搞懂自己手里有什么'权'、肩上扛什么'责'。"
+    },
+    {
+      "id": "ch_lu_1_teach_2",
+      "type": "dialogue",
+      "background": "staff_room",
+      "speaker": "陆知行",
+      "expression": "serious",
+      "text": "《教师法》给老师的，是六项权利——记不住全部，先记这几个最常考的：\n**教育教学权**：组织教学、开展教学改革与实验，这是老师最核心的职业权利；\n**科学研究权**：搞教研、学术交流、参加专业团体；\n**管理学生权**(指导评价权)：指导学生学习、评定品行与学业成绩。"
+    },
+    {
+      "id": "ch_lu_1_teach_3",
+      "type": "dialogue",
+      "background": "staff_room",
+      "speaker": "陆知行",
+      "expression": "serious",
+      "text": "还有三项，关系到你的'活法'：\n**获取报酬权**：按时领工资、享受福利与寒暑假带薪休假；\n**民主管理权**：对学校教育教学、管理提建议，参与民主管理；\n**进修培训权**：参加进修或其他方式的培训。\n一句话拎清：教学、科研、管学生，是'怎么教'的权；报酬、民主、进修，是'被怎么待'的权。"
+    },
+    {
+      "id": "ch_lu_1_teach_4",
+      "type": "dialogue",
+      "background": "staff_room",
+      "speaker": "陆知行",
+      "expression": "neutral",
+      "text": "权利的背面是义务。最要命的一条，写死在《教师法》里——\n**关心爱护学生，尊重学生人格，促进学生全面发展。** 还有：遵守宪法法律与职业道德、完成教育教学任务、对学生进行教育、制止有害学生的行为、不断提高水平。\n（他看着我，眼神很认真。）权利让你'站得住'，义务让你'配得上'。我给你画那个记号，是赌你两样都扛得起。别让我看走眼。"
+    },
+    {
+      "id": "ch_lu_1_apply",
+      "type": "choice",
+      "background": "staff_room",
+      "speaker": "陆知行",
+      "expression": "serious",
+      "knowledgeCheck": "q_lu_teacher_rights_01",
+      "text": "（他把一份学生情况表推过来，是林小满的。）\n说个真事考考你。林小满最近又开始旷晚自习，有老师私下说'这种学生别浪费精力，由她去'。可你是她的任课老师。从《教师法》上的权利义务看，你该怎么定位自己这时候的角色？",
+      "examTags": {
+        "subject": "301",
+        "module": "教育法律法规",
+        "examPoint": "教师的权利与义务（教育教学权/管理学生权 与 关爱学生、制止有害行为的义务）",
+        "questionType": "材料分析"
+      },
+      "choices": [
+        {
+          "id": "A",
+          "text": "履行指导管理与教育的义务，主动了解她旷课原因、跟进帮扶，这既是我的管理学生权，更是关爱学生、促进其发展的法定义务。",
+          "quality": "optimal",
+          "effects": {"professionalSkill": 2, "studentTrust": 2, "classOrder": 1, "ethicsRisk": -1, "lawRisk": -2, "examScore": 3, "affection_lu": 3},
+          "feedback": "对。管学生既是教师的'管理学生权',更是'关心爱护学生、对学生进行教育、促进全面发展'的法定义务。'由她去'恰恰是放弃义务。答题点全在。",
+          "setFlag": {"route_lean_lu": 1, "chose_rule_and_warmth": true},
+          "answerKeywords": ["管理学生权", "关爱学生义务", "对学生进行教育", "促进全面发展", "不放弃"]
+        },
+        {
+          "id": "B",
+          "text": "采纳同事建议，'由她去'——我有教育教学权，重点该放在愿意学的学生身上。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -2, "studentTrust": -2, "classOrder": -1, "ethicsRisk": 2, "lawRisk": 2, "examScore": -3, "affection_lu": -2},
+          "feedback": "把'权利'当了挡箭牌，恰恰违背了'关心爱护学生、对学生进行教育'的法定义务。教师的权利不能用来推卸对个别学生的责任。",
+          "answerKeywords": ["放弃教育义务", "曲解权利", "违背关爱学生"]
+        },
+        {
+          "id": "C",
+          "text": "直接给她记旷课、扣操行分，用我的评价权'治'她，先把纪律压住再说。",
+          "quality": "suboptimal",
+          "effects": {"professionalSkill": 0, "studentTrust": -1, "classOrder": 1, "ethicsRisk": 1, "lawRisk": 0, "examScore": 0, "affection_lu": -1},
+          "feedback": "评定操行确属教师权利，但只罚不教、不先了解原因，等于只用了'权'、丢了'促进学生发展'的'责'。材料题里这是答得'不全'被扣分的典型。",
+          "answerKeywords": ["只用评价权", "未尽教育义务", "只罚不教"]
+        },
+        {
+          "id": "D",
+          "text": "气头上当全班面骂她'没救了',让她自己看着办。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -2, "studentTrust": -2, "classOrder": -1, "ethicsRisk": 3, "lawRisk": 2, "examScore": -3, "affection_lu": -3},
+          "feedback": "辱骂羞辱直接违背'尊重学生人格'的法定义务，是情绪化越界。教师义务的底线，第一条就是不侵害学生人格尊严。",
+          "setFlag": {"chose_emotional_law": true},
+          "answerKeywords": ["侵犯人格尊严", "情绪化执法", "违背法定义务"]
+        }
+      ]
+    },
+    {
+      "id": "ch_lu_1_after",
+      "type": "dialogue",
+      "background": "staff_room",
+      "speaker": "陆知行",
+      "expression": "neutral",
+      "text": "（他听完，几不可察地颔首。）\n嗯。把'权'和'责'分得清，又没把它们对立起来——这正是我当年在你名字旁画那个记号的原因。\n大多数新人，要么把权利当特权，要么把义务当苦役。你能看见它们其实是一回事：你护着学生的那只手，才是你站得住的那条腿。"
+    },
+    {
+      "id": "ch_lu_1_heart",
+      "type": "dialogue",
+      "background": "staff_room",
+      "speaker": "narrator",
+      "text": "他说这话时，台灯把他半张脸照得很暖，那身常年的冰，好像在灯下化了薄薄一层。\n'不超过三个人。'——我反复咀嚼这句话，心跳像被人攥住，又轻轻松开。\n（原来那个困了我整个学期的小记号，一直是一句没说出口的'我看好你'。陆知行……你到底，还有多少藏在规则底下的温度。）"
+    },
+    {
+      "id": "ch_lu_1_end_1",
+      "type": "dialogue",
+      "background": "corridor",
+      "speaker": "陆知行",
+      "expression": "neutral",
+      "text": "（归完档，他陪我锁了教务处的门。走廊很长，只有我们两个人的脚步声。）\n这么晚，我送你到门口。\n（他走在我半步之外，步子放得比平时慢。）……以后有拿不准的事，先来问我。别自己慌。\n规矩这东西，一个人扛着冷，两个人对着，就没那么冷了。"
+    },
+    {
+      "id": "ch_lu_1_end",
+      "type": "summary",
+      "background": "corridor",
+      "speaker": "narrator",
+      "text": "（陆知行线第一章落幕。冰山初融的这一晚，把今天学的、心动的，一并记进手账。）",
+      "review": {
+        "learnedExamPoints": [
+          "301-法规-教师的权利（教育教学权/科研权/管理学生权/报酬权/民主管理权/进修培训权）— 陆知行",
+          "301-法规-教师的义务（关爱学生、尊重人格、对学生进行教育、制止有害行为、促进全面发展）— 陆知行"
+        ],
+        "structure": "从'名字旁的记号'揭晓切入，借林小满旷课事件把《教师法》教师权利义务'用'出来。走'剧情讲授→马上做题→应用→反馈'。",
+        "mockExam": "route_lu_mock",
+        "recommendedReview": [
+          "答错教师权利义务→陆知行重讲六项权利与法定义务，重点辨'管理学生权'与'关爱学生义务'的一体两面"
+        ]
+      }
+    }
+  ]
+}

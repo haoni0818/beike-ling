@@ -1,0 +1,329 @@
+{
+  "chapterId": "npc_su",
+  "route": "npc",
+  "title": "侧章 · 校刊截稿前的两支笔",
+  "summary": "校庆特刊明天就要送印，可压轴那篇卷首语还卡在苏念手里——她是出了名的较真，宁可通宵也不肯让一句立意发虚的话上版。半夜的编辑部只剩我们俩、两杯凉掉的茶和一摞被红笔圈花的清样。她不爱旁人插手文字，却破天荒地把稿子推到我面前：'你帮我看看，这篇到底差在哪。'于是我陪她从立意吵到论证、从一段读者来信抠到一处逻辑漏洞，硬是把这篇稿子一寸寸磨亮。没有谁要追谁，只有两个爱文字的人，在截稿线前并肩较劲——而这一夜把字斟句酌的本事，悄悄也磨进了我自己的笔里。",
+  "designNote": "NPC苏念日常协作侧章（enrichment，非主线）：借'通宵赶校刊卷首语'一个事件，串起 kp_writing(议论文立意/论证)、kp_logic(逻辑思维)、kp_reading(阅读理解) 三个301基本能力考点，做3个 teach→随堂题→应用 微循环。以同事协作/求助为主，不推恋爱；无学生出场。苏念以 nameplate 出场，speaker 用'苏念'，性格：年轻、文字功底好、爱较真、刀子嘴热心肠。",
+  "characters": ["su"],
+  "students": [],
+  "valueFields": ["professionalSkill", "studentTrust", "classOrder", "ethicsRisk", "lawRisk", "examScore", "affection_lu", "affection_jiang", "affection_gu", "affection_cheng", "affection_shen"],
+  "note": "本侧章为 NPC 协作番外，无恋爱推进；knowledgeCheck 题在 npc_su_quiz.json 中有同 id 题；kpId 均用 knowledge_map 原值。",
+  "nodes": [
+    {
+      "id": "npc_su_1",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "narrator",
+      "text": "晚上十点半。\n校庆特刊《青萝》明天上午就要送印厂，可编辑部的灯还固执地亮着。\n我本来只是来还借的剪刀，却看见苏念一个人趴在大桌前，面前摊着一沓清样，红笔密密麻麻圈了一片，像下了一场不肯停的雨。"
+    },
+    {
+      "id": "npc_su_2",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "苏念",
+      "expression": "serious",
+      "text": "（她头也没抬，笔尖还停在某一行上）\n来得正好，别走。\n卷首语，主编那篇，明早必须定。可我越读越别扭——通篇华丽得很，读完却记不住它到底想说什么。这种稿子，我不敢让它上版。"
+    },
+    {
+      "id": "npc_su_3",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "narrator",
+      "text": "我认识的苏念，是全校最难伺候的那支笔。\n别人写完松口气，她写完才刚开始——一个词不准、一句逻辑松，她能跟你磨到天亮。同事们背地里叫她'校刊纪委'。\n可也正因为这股较真劲儿，经她手出去的字，从没塌过台。"
+    },
+    {
+      "id": "npc_su_4",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "苏念",
+      "expression": "neutral",
+      "text": "（她终于抬头，把椅子往旁边踢了踢，示意我坐）\n我一个人钻进去太久，眼睛都钝了。你帮我当回外人，从头捋。\n（她少见地放软了语气）……我承认，这种时候，有个一起较真的人，比一杯咖啡管用。"
+    },
+    {
+      "id": "npc_su_5",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "苏念",
+      "expression": "serious",
+      "text": "（她把卷首语推到我面前，指节敲了敲标题）\n先说最要命的——立意。\n这篇题目叫《校庆》，可它通篇在写'那天活动多热闹、灯多亮、人多激动'。这就是典型的'立意发飘'。\n一篇议论文好不好，第一关不是辞藻，是立意准不准、深不深、新不新。停在'真热闹真感动'，那是记叙文的水准，不是卷首语该有的分量。"
+    },
+    {
+      "id": "npc_su_6",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "苏念",
+      "expression": "neutral",
+      "text": "我心里那把尺是这样的：同一个题，能不能从'现象'往下挖到'本质'，从'一个人/一件事'推到'一群人/一段历史'——挖得越深、推得越远，立意越高。\n空喊'我爱母校'，谁都会写；可要是能写出'一代代普通师生的平凡坚守，怎么沉淀成一所学校的底色'，那才立得住。\n（她看我）来，先别急着改，你先替我把这几个候选立意排个高下。"
+    },
+    {
+      "id": "npc_su_7",
+      "type": "choice",
+      "background": "office",
+      "speaker": "苏念",
+      "expression": "serious",
+      "knowledgeCheck": "q_su_writing_01",
+      "text": "（她在便签上飞快写下四个立意，推到我面前）\n同样写'校庆'，你说，哪一个最适合做卷首语的立意？",
+      "examTags": {
+        "subject": "301",
+        "module": "基本能力",
+        "examPoint": "写作能力：议论文立意的优劣判断（准·深·新）",
+        "questionType": "single"
+      },
+      "choices": [
+        {
+          "id": "A",
+          "text": "选『一代代普通师生的平凡坚守，沉淀为一所学校的精神底色与传承』。",
+          "quality": "optimal",
+          "effects": {"professionalSkill": 3, "examScore": 3, "affection_lu": 0},
+          "feedback": "对。它紧扣'校庆'内核，又由现象（庆典）挖到本质（坚守与传承）、由个人推及集体与历史，立意既准又深还见新意——这才是卷首语该有的分量。苏念把这句圈了出来：'就它了，剩下的都是垫场。'",
+          "answerKeywords": ["立意准深新", "由现象到本质", "由个人到集体历史"]
+        },
+        {
+          "id": "B",
+          "text": "选『校庆那天的活动真是丰富多彩，令人难忘』。",
+          "quality": "acceptable",
+          "effects": {"professionalSkill": 1, "examScore": 1},
+          "feedback": "偏浅了。'活动丰富多彩'只在描述现象，是记叙的口吻，缺乏议论文该有的思辨深度——正是原稿要改掉的毛病。",
+          "answerKeywords": ["只述现象", "立意偏浅"]
+        },
+        {
+          "id": "C",
+          "text": "选『母校真美，我爱我的学校』。",
+          "quality": "acceptable",
+          "effects": {"professionalSkill": 1, "examScore": 1},
+          "feedback": "太空泛。纯抒情、停在表层，谁都能写，立意不深也不新，撑不起卷首语。",
+          "answerKeywords": ["抒情空泛", "停在表层"]
+        },
+        {
+          "id": "D",
+          "text": "选『回顾校庆当天的天气与流程安排』。",
+          "quality": "risk",
+          "effects": {"professionalSkill": 0, "examScore": 0, "ethicsRisk": 0},
+          "feedback": "跑题了。'天气与流程'是琐碎记录，连题意都没扣准，立意不准——这是最该排除的一项。苏念挑了挑眉：'你要真选这个，我今晚就别睡了。'",
+          "answerKeywords": ["跑偏题意", "立意不准"]
+        }
+      ]
+    },
+    {
+      "id": "npc_su_8",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "苏念",
+      "expression": "smile",
+      "text": "（她难得露出一点满意的神色，在标题旁改定了立意）\n看，定准了立意，整篇骨头就立起来了。\n应用一下——我把首段重写成'写一代代普通师生的坚守'，你顺着这个立意，帮我想：底下该用什么材料来撑？"
+    },
+    {
+      "id": "npc_su_9",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "narrator",
+      "text": "我顺着新立意，建议用'老教师退休前最后一堂课'和'毕业生回校翻旧校刊'两个细节去填。\n苏念一边听一边记，笔走得飞快，嘴上却照例不饶人：'还行，没我想得周到，但能用。'\n（被她夸一句'能用'，比别人夸十句'真好'还难得。）"
+    },
+    {
+      "id": "npc_su_10",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "narrator",
+      "text": "立意定了，骨架搭起来了。苏念喝了口凉透的茶，皱着眉翻到第二段。\n那一段她圈了一个大问号，旁边批了三个字：'逻辑塌'。"
+    },
+    {
+      "id": "npc_su_11",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "苏念",
+      "expression": "serious",
+      "text": "（她指着段里一句话念出来）\n你听这句——'只有热爱教育的人，才能成为好老师；张老师热爱教育，所以张老师一定是好老师。'\n听着挺顺，对吧？可它是个逻辑陷阱。\n'只有……才……'说的是必要条件：热爱是当好老师的'必要'前提，但光有热爱不'必然'就能教好。把必要条件当成充分条件用，是议论文里最常见的硬伤。"
+    },
+    {
+      "id": "npc_su_12",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "苏念",
+      "expression": "neutral",
+      "text": "记住这把尺：'只有p才q'里，p是q的必要条件。\n规则是——否定p，必否定q；肯定q，必能推回p；但肯定p，推不出q。\n卷首语上版前，这种'看着顺、其实推不通'的句子，必须一句句拆开验。来，给你一道，验验你的眼力。"
+    },
+    {
+      "id": "npc_su_13",
+      "type": "choice",
+      "background": "office",
+      "speaker": "苏念",
+      "expression": "serious",
+      "knowledgeCheck": "q_su_logic_01",
+      "text": "（她在清样背面写下一道，笔尖点点）\n已知'只有努力，才能成功'为真，且'小满努力了'。仅凭逻辑，下面哪句推得对？",
+      "examTags": {
+        "subject": "301",
+        "module": "基本能力",
+        "examPoint": "逻辑思维：必要条件假言命题（肯定前件不能肯定后件）",
+        "questionType": "single"
+      },
+      "choices": [
+        {
+          "id": "A",
+          "text": "小满不一定成功。",
+          "quality": "optimal",
+          "effects": {"professionalSkill": 3, "examScore": 3},
+          "feedback": "对。'只有p才q'中p是q的必要不充分条件，肯定前件p推不出q，所以'努力了'只能得出'不一定成功'。苏念点头：'就是这股不放过的劲儿，文字才靠得住。'",
+          "answerKeywords": ["必要条件", "肯定前件不能肯定后件", "不一定成功"]
+        },
+        {
+          "id": "B",
+          "text": "小满一定成功了。",
+          "quality": "risk",
+          "effects": {"professionalSkill": 0, "examScore": 0},
+          "feedback": "这正是那个'看着顺、其实塌'的陷阱——把必要条件当成了充分条件。努力只是成功的必要前提，推不出必然成功。",
+          "answerKeywords": ["误当充分条件", "高频陷阱"]
+        },
+        {
+          "id": "C",
+          "text": "小满一定没成功。",
+          "quality": "acceptable",
+          "effects": {"professionalSkill": 1, "examScore": 1},
+          "feedback": "也不对。必要条件下肯定前件，既推不出'成功'，也推不出'没成功'，结论只能是'不一定'。",
+          "answerKeywords": ["无依据", "推不出否定"]
+        },
+        {
+          "id": "D",
+          "text": "小满肯定没努力。",
+          "quality": "acceptable",
+          "effects": {"professionalSkill": 1, "examScore": 1},
+          "feedback": "和已知'小满努力了'直接打架，明显错误。",
+          "answerKeywords": ["与已知矛盾"]
+        }
+      ]
+    },
+    {
+      "id": "npc_su_14",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "苏念",
+      "expression": "smile",
+      "text": "（她把那个'逻辑塌'的问号划掉，重重改了一笔）\n眼力还行。那句我们改成'热爱是好老师的前提，但唯有把热爱化为日复一日的钻研，才真正立得住'——既保住了原意，又把逻辑捋顺了。\n应用一下：剩下半篇你也用这把尺扫一遍，但凡看见'只有……就……''因为……所以一定……'，就停下来想想，前件后件到底是哪种关系。"
+    },
+    {
+      "id": "npc_su_15",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "narrator",
+      "text": "我俩各执一支笔，把后半篇逐句过了一遍，又揪出两处似是而非的'一定'。\n苏念越改越精神，我却发现，被她这么一带，自己读句子的眼睛，好像也跟着变利了。\n（原来'较真'不是挑刺，是对每一个字负责。）"
+    },
+    {
+      "id": "npc_su_16",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "narrator",
+      "text": "改到最后一页，是一封随刊登的读者来信节选。苏念盯着它看了好一会儿，忽然把笔搁下。"
+    },
+    {
+      "id": "npc_su_17",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "苏念",
+      "expression": "neutral",
+      "text": "（她把那段读者来信推过来）\n这段我犹豫要不要删。你先别管删不删——先告诉我，这位读者到底想表达什么态度。\n做编辑，最忌讳'我以为他在夸'，结果人家通篇在委婉地批。读懂作者真正的态度，是阅读的第一关。"
+    },
+    {
+      "id": "npc_su_18",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "苏念",
+      "expression": "serious",
+      "text": "教你个抓态度的窍门：盯住'转折'。\n'诚然……但是……''固然……然而……'——'诚然'引出的让步只是铺垫，作者真正想说的，永远在'但是'之后。\n重心在哪儿，态度就在哪儿。来，读这段，看你抓不抓得准。"
+    },
+    {
+      "id": "npc_su_19",
+      "type": "choice",
+      "background": "office",
+      "speaker": "苏念",
+      "expression": "serious",
+      "knowledgeCheck": "q_su_reading_01",
+      "text": "（她念出那段读者来信）\n'诚然，短视频让知识唾手可得；但当人们习惯了十五秒的速食，便很少有人愿意再为一本书静坐一下午了。'——这位读者的态度，你判最准的是哪个？",
+      "examTags": {
+        "subject": "301",
+        "module": "基本能力",
+        "examPoint": "阅读理解：把握作者态度（让步转折，重心在转折后）",
+        "questionType": "single"
+      },
+      "choices": [
+        {
+          "id": "A",
+          "text": "肯定短视频的便利，但主要忧虑它带来的浅阅读倾向。",
+          "quality": "optimal",
+          "effects": {"professionalSkill": 3, "examScore": 3},
+          "feedback": "对。'诚然……但……'是让步转折，'诚然'只是铺垫，重心落在'但'之后——承认便利、真正忧虑'速食化、不再深读'。苏念把这段留了下来：'读懂了，就知道它该留。'",
+          "answerKeywords": ["让步转折", "重心在但之后", "忧虑浅阅读"]
+        },
+        {
+          "id": "B",
+          "text": "全面肯定短视频带来的便利。",
+          "quality": "risk",
+          "effects": {"professionalSkill": 0, "examScore": 0},
+          "feedback": "态度读反了——只抓了'诚然'的让步部分，丢了转折后的重心。这正是'以为人家在夸'的典型误读。",
+          "answerKeywords": ["只抓让步", "读反态度"]
+        },
+        {
+          "id": "C",
+          "text": "对短视频持中立客观、不偏不倚的态度。",
+          "quality": "acceptable",
+          "effects": {"professionalSkill": 1, "examScore": 1},
+          "feedback": "不算中立。'很少有人愿意再静坐一下午'里明显含着惋惜，作者是有倾向的。",
+          "answerKeywords": ["并非中立", "含惋惜"]
+        },
+        {
+          "id": "D",
+          "text": "彻底否定短视频，认为它毫无价值。",
+          "quality": "acceptable",
+          "effects": {"professionalSkill": 1, "examScore": 1},
+          "feedback": "过头了。作者用'诚然'明确承认了便利，是忧虑而非全盘否定。",
+          "answerKeywords": ["承认便利", "非全盘否定"]
+        }
+      ]
+    },
+    {
+      "id": "npc_su_20",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "苏念",
+      "expression": "smile",
+      "text": "（她把那段读者来信郑重地留在版上，旁边批：'留，且放大'）\n读懂了态度，就知道这段不能删——它正好呼应卷首语的立意。\n应用一下：你再扫一遍全刊别的来信，凡见'诚然''固然''虽然'打头的，都别急着下结论，先找到它后面的'但是'，态度自然就浮出来了。"
+    },
+    {
+      "id": "npc_su_21",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "narrator",
+      "text": "等我们把最后一处改定，窗外天边已经泛起一点灰白。\n苏念把整摞清样码齐，长长舒了口气，红笔终于盖上了笔帽。"
+    },
+    {
+      "id": "npc_su_22",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "苏念",
+      "expression": "smile",
+      "text": "（她揉着发酸的手腕，难得地笑了，语气还是那么直）\n成了。立意立住了，逻辑捋顺了，态度也读对了——这一版，我敢签字送印。\n（她瞥我一眼）平时谁来碰我的稿子我都嫌烦，今晚……还行，你这个'外人'当得合格。下回截稿，我还找你。"
+    },
+    {
+      "id": "npc_su_23",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "苏念",
+      "expression": "neutral",
+      "text": "（她把笔帽上的备用红笔塞进我手里）\n拿着。看在你今晚没让我失望的份上——\n以后你自己写东西，记住今晚这三道关：先问立意准不准，再验逻辑通不通，最后读态度对不对。这三关过了，字就不会塌。"
+    },
+    {
+      "id": "npc_su_24",
+      "type": "summary",
+      "background": "office",
+      "speaker": "narrator",
+      "text": "我攥着那支还带着她体温的红笔，走出编辑部时，天刚蒙蒙亮。\n这一夜没有谁追谁，只有两支较真的笔，在截稿线前把一篇稿子一寸寸磨亮。可奇怪的是，磨的是别人的卷首语，磨利的却好像是我自己的眼睛——立意、逻辑、态度，这三把尺，从此也成了我写字时下意识会去量一量的东西。\n（备课铃明天还会响。可苏念塞给我的这支红笔，我想，我会用很久很久。）",
+      "review": {
+        "learnedExamPoints": [
+          "议论文立意的优劣判断（准·深·新）",
+          "必要条件假言命题（肯定前件不能肯定后件）",
+          "把握作者态度（让步转折，重心在转折后）"
+        ],
+        "structure": "一夜赶校刊卷首语，串起 立意(写作)→逻辑(必要条件)→态度(阅读) 三个微循环，每个 teach→随堂题→应用。",
+        "mockExam": "npc_su_quiz"
+      }
+    }
+  ]
+}

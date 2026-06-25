@@ -1,0 +1,541 @@
+{
+  "chapterId": "core_ch10",
+  "title": "第十章 · 笔尖的力量",
+  "summary": "校刊《青萝》要赶在校庆前出特刊，主编临时调走，沈亦舟被推上来救场，又一把把我拽进了办公室——一摞学生投稿、几篇逻辑打架的议论文、一份做坏了的成绩统计表，全堆在桌上等人收拾。'综合素质的基本能力，全在这一摊里了，'他叼着笔晃过来笑，'你帮我，我教你——逻辑怎么挑刺、文章怎么读懂、立意怎么立得高、表格怎么算不出错、连那种A之于B的怪题怎么破，今天一起过。'一个下午，办公室、教研室、走廊来回跑，稿子改完，我也忽然发现：那个总没个正形的人，认真起来的侧脸，竟让我多看了半秒。",
+  "designNote": "用'赶制校庆特刊'这一桩事件，串起综合素质(301)基本能力模块的5个考点：逻辑思维(kp_logic)→阅读理解(kp_reading)→写作能力(kp_writing)→信息处理(kp_info_process)→类比/图形数列推理(kp_analogy_logic)。主带教沈亦舟全程主导，机灵幽默、点子多，把'教'藏进救场的兵荒马乱里。心动写成同事间得体的、带点斗嘴的暗涌，绝不越界。学生(写稿的林小满等)仅为投稿者/教学对象，不涉恋爱。每考点走'剧情讲授→马上做题→应用→反馈'微循环，章末月考冷测。",
+  "characters": ["shen", "cheng"],
+  "students": ["林小满"],
+  "valueFields": ["professionalSkill", "studentTrust", "classOrder", "ethicsRisk", "lawRisk", "examScore", "affection_lu", "affection_jiang", "affection_gu", "affection_cheng", "affection_shen"],
+  "note": "ethicsRisk/lawRisk 为逆向指标，越低越好。knowledgeCheck 指向 chapter10_quiz.json 的题目 id。subject 全为 301，module 为基本能力。",
+  "nodes": [
+    {
+      "id": "ch10_intro_1",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "narrator",
+      "text": "周三午后，我刚进办公室，就被一摞稿子砸了眼——A4纸堆得快垮，最上面那张写着《青萝》校庆特刊·待审。\n（校刊？这不是主编负责的吗……）\n话音未落，门被人用脚踹开，沈亦舟抱着电脑、嘴里叼着笔挤了进来。"
+    },
+    {
+      "id": "ch10_intro_2",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "沈亦舟",
+      "expression": "grin",
+      "text": "（他把电脑往桌上一墩，长叹一口气）救命。原主编临时被借去市里集训，特刊三天后要付印，烂摊子全甩我头上了。\n（他转过头，眼睛一亮，朝我笑）哎——你不是正缺'综合素质'的练手活儿吗？巧了。这一摞里头，逻辑题、阅读、议论文、统计表、还有几道怪里怪气的推理，基本能力的考点全凑齐了。"
+    },
+    {
+      "id": "ch10_intro_3",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "沈亦舟",
+      "expression": "smile",
+      "text": "（他拖了把椅子，'啪'地拍在我旁边）这么着——你帮我把稿子审完，我顺手把这几个考点给你讲透。包你这章过完，301基本能力那块儿，稳了。\n（他凑近半寸，压低声音坏笑）怎么样，这买卖，划算吧？\n（我还没答应，他已经把第一沓塞我手里了。）"
+    },
+    {
+      "id": "ch10_a_teach_1",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "沈亦舟",
+      "expression": "smile",
+      "text": "（他抽出一张读者来信，指着上面一句话）你看这位同学写：'有人说我们班同学都爱看校刊，我觉得这话不对。'然后下一句他论证成了'我们班没有一个人爱看校刊'。\n这就是逻辑思维里最爱考的坑——**矛盾关系**。'所有S是P'(全称肯定)的矛盾命题，不是'所有S不是P'，而是'有的S不是P'。他把矛盾给搞错了。"
+    },
+    {
+      "id": "ch10_a_teach_2",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "沈亦舟",
+      "expression": "smile",
+      "text": "记个对子，考场上够用：\n**所有S是P**（全称肯定A）⇄矛盾⇄ **有的S不是P**（特称否定O）；\n**所有S不是P**（全称否定E）⇄矛盾⇄ **有的S是P**（特称肯定I）。\n矛盾的意思是'必有一真、必有一假'——知道一个真，另一个一定假。\n复言命题也常考：'只有……才……'是必要条件，'如果……就……'是充分条件，**否定后件就能否定前件**(逆否)。"
+    },
+    {
+      "id": "ch10_a_teach_3",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "沈亦舟",
+      "expression": "grin",
+      "text": "（他把笔在指间转了个圈）再送你两个最常见的谬误：'你这观点不对，因为你人品不好'——这叫**人身攻击**，对人不对事；'大家都这么认为，所以是对的'——这叫**诉诸众人**。\n议论文里学生最爱踩这两个雷，你审稿时一眼揪出来，主编范儿就有了。\n（他用笔尖点了点我手边的稿）来，趁热，给你来一道——挑刺去。"
+    },
+    {
+      "id": "ch10_a_apply",
+      "type": "choice",
+      "background": "office",
+      "speaker": "沈亦舟",
+      "expression": "smile",
+      "knowledgeCheck": "q_logic_01_c10",
+      "text": "（他把一张投稿推到我面前，挑眉）这篇里有句推理，你判断一下：'只有努力，才能成功。小满努力了。'——按形式逻辑，能必然推出'小满成功了'吗？哪个判断对？",
+      "examTags": {
+        "subject": "301",
+        "module": "基本能力",
+        "examPoint": "逻辑思维：必要条件假言命题的推理规则（肯定前件不能肯定后件）",
+        "questionType": "单项选择"
+      },
+      "choices": [
+        {
+          "id": "A",
+          "text": "不能。'只有努力才能成功'是必要条件，努力只是成功的必要不充分条件，肯定'努力'推不出'成功'。",
+          "quality": "optimal",
+          "effects": {"professionalSkill": 2, "studentTrust": 1, "classOrder": 0, "ethicsRisk": -1, "lawRisk": 0, "examScore": 3, "affection_shen": 3},
+          "feedback": "对。'只有p才q'表示p是q的必要条件，规则是'否定p则否定q、肯定q则肯定p'，但肯定p不能推出q。努力了未必成功，推理无效。",
+          "answerKeywords": ["必要条件", "只有……才", "肯定前件不能肯定后件", "推理无效"]
+        },
+        {
+          "id": "B",
+          "text": "能。既然努力了，按'只有努力才能成功'就一定会成功。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -1, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": -2, "affection_shen": -1},
+          "feedback": "把必要条件当成了充分条件。'只有努力才能成功'只说不努力必不成功，不代表努力就一定成功，这正是最高频的逻辑陷阱。",
+          "answerKeywords": ["误把必要当充分", "推理无效"]
+        },
+        {
+          "id": "C",
+          "text": "能，因为'只有……才'和'如果……就'意思一样。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -1, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": -2, "affection_shen": -1},
+          "feedback": "二者恰好相反：'只有p才q'是必要条件，'如果p就q'才是充分条件。把它们混为一谈是概念硬伤。",
+          "answerKeywords": ["必要≠充分", "混淆假言类型"]
+        },
+        {
+          "id": "D",
+          "text": "题目信息不足，没法判断对错。",
+          "quality": "suboptimal",
+          "effects": {"professionalSkill": 0, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": -1, "affection_shen": 0},
+          "feedback": "信息其实足够：必要条件的推理规则就能直接判定'肯定前件推不出后件'，结论是推理无效，而非无法判断。",
+          "answerKeywords": ["规则可判定", "结论为推理无效"]
+        }
+      ]
+    },
+    {
+      "id": "ch10_a_after",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "沈亦舟",
+      "expression": "grin",
+      "text": "（他打了个响指）漂亮。你看，逻辑这玩意儿不玄乎，就是几对关系记死、几条规则用熟。\n以后审稿、改作文，谁的论证一拐弯，你立马能闻出味儿来。\n（他把那叠逻辑稿往旁边一推）一关过了。下一摊——读懂别人到底想说啥。"
+    },
+    {
+      "id": "ch10_a_heart",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "narrator",
+      "text": "他讲题的时候，语速忽然慢下来，笔尖在纸上点得很稳，跟平时那个咋咋呼呼的样子判若两人。\n（原来他不是没正形，是把正形都藏在了关键的地方。）\n我赶紧低头去看下一篇稿，假装没注意到自己愣了那一下。"
+    },
+    {
+      "id": "ch10_t1",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "沈亦舟",
+      "expression": "smile",
+      "text": "（他抽出一篇散文投稿，递过来）这篇你先读。读者来信里有人吐槽'看不懂作者到底想说啥'——\n这就是阅读理解的活儿了：一段文字，你得拎得出它的**主旨**、推得出**言外之意**、还得读得准作者的**态度**。审稿没这本事，要么误删好稿，要么放过跑题的。"
+    },
+    {
+      "id": "ch10_b_teach_1",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "沈亦舟",
+      "expression": "smile",
+      "text": "先说**主旨概括**。一段话别被细节带跑——抓那句'总起句/总结句'，看反复出现的关键词，问自己'去掉哪句，整段就散了'。那句撑着全段的，就是主旨。\n小窍门：议论性文字看论点句，记叙性文字看抒情议论句，说明性文字看那个被反复说明的对象。"
+    },
+    {
+      "id": "ch10_b_teach_2",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "沈亦舟",
+      "expression": "smile",
+      "text": "再说**文意推断**。推断要'有据'——结论必须能从原文找到落脚点，不能脑补。\n考场上最爱设的错项有三种：**无中生有**(原文没说)、**以偏概全**(把'有些'说成'所有')、**过度推断/绝对化**(原文是'可能'，选项写成'一定')。\n你审稿挑硬伤，也是这三板斧。"
+    },
+    {
+      "id": "ch10_b_teach_3",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "沈亦舟",
+      "expression": "grin",
+      "text": "最后**作者态度**。看作者用的褒贬词、看他举例是在'撑'还是在'驳'、看转折词后面那半句——'诚然……但是……'，重心永远在'但是'之后。\n别把作者引用别人的观点当成他自己的态度，这是个常见的坑。\n（他把稿子往我这边一送，眼里带笑）来，读一段，告诉我作者站哪边。"
+    },
+    {
+      "id": "ch10_b_apply",
+      "type": "choice",
+      "background": "office",
+      "speaker": "沈亦舟",
+      "expression": "smile",
+      "knowledgeCheck": "q_reading_01_c10",
+      "text": "（他念出投稿里的一段）'诚然，短视频让知识唾手可得；但当人们习惯了十五秒的速食，便很少有人愿意再为一本书静坐一下午了。'——这段话作者的态度，最贴切的是哪个？",
+      "examTags": {
+        "subject": "301",
+        "module": "基本能力",
+        "examPoint": "阅读理解：把握作者态度（转折结构中重心在转折之后）",
+        "questionType": "单项选择"
+      },
+      "choices": [
+        {
+          "id": "A",
+          "text": "在肯定短视频便利的同时，主要对其导致的浅阅读、缺乏深度阅读表示忧虑。",
+          "quality": "optimal",
+          "effects": {"professionalSkill": 2, "studentTrust": 1, "classOrder": 0, "ethicsRisk": -1, "lawRisk": 0, "examScore": 3, "affection_shen": 3},
+          "feedback": "对。'诚然……但是……'是让步转折，重心在'但是'之后；作者承认便利只是铺垫，真正的态度落在对'速食化、不再深读'的担忧。",
+          "answerKeywords": ["让步转折", "重心在但是之后", "对浅阅读的忧虑"]
+        },
+        {
+          "id": "B",
+          "text": "完全肯定短视频，认为它让知识唾手可得是好事。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -1, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": -2, "affection_shen": -1},
+          "feedback": "只抓了'诚然'引出的让步部分，丢了转折后的真正重心，把作者态度读反了。",
+          "answerKeywords": ["误读让步为主张", "忽略转折"]
+        },
+        {
+          "id": "C",
+          "text": "彻底否定短视频，认为它一无是处、毫无价值。",
+          "quality": "suboptimal",
+          "effects": {"professionalSkill": 0, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": -1, "affection_shen": 0},
+          "feedback": "过度了。作者用'诚然'明确承认了短视频的便利，态度是'肯定便利+忧虑深度'的辩证，而非全盘否定。",
+          "answerKeywords": ["绝对化否定", "忽略让步肯定"]
+        },
+        {
+          "id": "D",
+          "text": "态度中立，只是客观陈述事实，没有任何倾向。",
+          "quality": "suboptimal",
+          "effects": {"professionalSkill": 0, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": -1, "affection_shen": 0},
+          "feedback": "'很少有人愿意再为一本书静坐一下午'带明显的惋惜色彩，并非中立陈述，作者倾向清晰可辨。",
+          "answerKeywords": ["有褒贬倾向", "非中立"]
+        }
+      ]
+    },
+    {
+      "id": "ch10_b_after",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "沈亦舟",
+      "expression": "smile",
+      "text": "（他赞许地点头）就是这个'但是'后面才是真心话。\n会读了，你审稿就不会被漂亮句子忽悠，能一眼看见作者真正想立的那根骨头。\n（他伸了个懒腰，把椅子往后一仰）走，下一摊更对你胃口——怎么自己也写得立得高。"
+    },
+    {
+      "id": "ch10_t2",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "narrator",
+      "text": "他仰在椅子上，阳光从窗户斜进来，落在他的下颌线上。\n那支转个不停的笔忽然停了，他偏过头看我：'怎么，盯着我看，是觉得我讲得好？'\n（我猛地移开视线，去翻下一篇稿。耳根，有点热。这人，真是的。）"
+    },
+    {
+      "id": "ch10_c_teach_1",
+      "type": "dialogue",
+      "background": "staffroom",
+      "speaker": "沈亦舟",
+      "expression": "smile",
+      "text": "（我们挪到了教研室，桌上摊着几篇学生议论文）特刊要登一篇'以校庆为题'的范文。可这几篇，立意全不行。\n写作能力第一关，是**立意**——文章的'魂'。同一个题目，能不能立得'准、深、新'，差距全在这。立意跑偏，写得再花也白搭。"
+    },
+    {
+      "id": "ch10_c_teach_2",
+      "type": "dialogue",
+      "background": "staffroom",
+      "speaker": "沈亦舟",
+      "expression": "smile",
+      "text": "好立意的标准记三个字：**准**(扣住材料核心，不偏题)、**深**(从现象挖到本质、从个人推到家国)、**新**(角度不落俗套)。\n比如'校庆'，写'母校我爱你'就太浅；写'一代代人把平凡的坚守接力成学校的底色'，就既准又深。"
+    },
+    {
+      "id": "ch10_c_teach_3",
+      "type": "dialogue",
+      "background": "staffroom",
+      "speaker": "沈亦舟",
+      "expression": "smile",
+      "text": "再说**结构**和**论证方法**。议论文骨架是'提出问题—分析问题—解决问题'，常用'总分总'，分论点之间可并列、可递进。\n论证方法别记混：**举例论证**(摆事实)、**道理论证**(讲道理/引名言，引名言又叫引用论证)、**对比论证**(正反对照)、**比喻论证**(打比方把抽象说形象)。"
+    },
+    {
+      "id": "ch10_c_teach_4",
+      "type": "dialogue",
+      "background": "staffroom",
+      "speaker": "沈亦舟",
+      "expression": "grin",
+      "text": "（他把一篇范文片段推过来）你看这段：'谦虚使人进步，骄傲使人落后'，前后一正一反摆在一起——这是什么论证？\n别一看到有例子就全说成举例论证，得看它'怎么用'这些材料。\n（他笑着递笔）来，给你一道，认认论证方法。"
+    },
+    {
+      "id": "ch10_c_apply",
+      "type": "choice",
+      "background": "staffroom",
+      "speaker": "沈亦舟",
+      "expression": "smile",
+      "knowledgeCheck": "q_writing_01_c10",
+      "text": "（他指着范文里一段）'真正的强者，不在于从不跌倒，而在于每次跌倒后都能站起来。'这位同学若想把这句论点写深，下面哪种处理最能体现'对比论证'？",
+      "examTags": {
+        "subject": "301",
+        "module": "基本能力",
+        "examPoint": "写作能力：论证方法的辨别与运用（对比论证）",
+        "questionType": "单项选择"
+      },
+      "choices": [
+        {
+          "id": "A",
+          "text": "把'一跌倒就一蹶不振的人'与'屡败屡战、终成大器的人'两类人摆在一起对照着写。",
+          "quality": "optimal",
+          "effects": {"professionalSkill": 2, "studentTrust": 1, "classOrder": 0, "ethicsRisk": -1, "lawRisk": 0, "examScore": 3, "affection_shen": 3},
+          "feedback": "对。把正反两种情形并置对照、以差异凸显论点，正是对比论证的本质。",
+          "answerKeywords": ["对比论证", "正反对照", "并置凸显论点"]
+        },
+        {
+          "id": "B",
+          "text": "举爱迪生失败上千次终于发明电灯的事例来支撑论点。",
+          "quality": "suboptimal",
+          "effects": {"professionalSkill": 0, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": -1, "affection_shen": 0},
+          "feedback": "这是举例论证(摆事实)，不是对比论证。单举一个正面事例，没有正反对照。",
+          "answerKeywords": ["举例论证", "非对比"]
+        },
+        {
+          "id": "C",
+          "text": "把人生比作一场马拉松，跌倒只是途中一个小坑。",
+          "quality": "suboptimal",
+          "effects": {"professionalSkill": 0, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": -1, "affection_shen": 0},
+          "feedback": "这是比喻论证(打比方)，用形象说抽象，与'正反对照'的对比论证不同。",
+          "answerKeywords": ["比喻论证", "非对比"]
+        },
+        {
+          "id": "D",
+          "text": "引用孟子'天将降大任于斯人也'来增强说服力。",
+          "quality": "suboptimal",
+          "effects": {"professionalSkill": 0, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": -1, "affection_shen": 0},
+          "feedback": "这是道理论证中的引用论证(引名言)，属讲道理一类，不是把正反并置的对比论证。",
+          "answerKeywords": ["引用论证/道理论证", "非对比"]
+        }
+      ]
+    },
+    {
+      "id": "ch10_c_after",
+      "type": "dialogue",
+      "background": "staffroom",
+      "speaker": "沈亦舟",
+      "expression": "grin",
+      "text": "（他一拍桌子）对喽！正反一摆，高下立见，这才叫对比。\n立意立得高、论证使得对——这范文你来帮我定一篇，主编。\n（他朝我挤眼）行了，文章的活儿过关。下一摊，换个画风——跟数字和表格较劲去。"
+    },
+    {
+      "id": "ch10_c_heart",
+      "type": "dialogue",
+      "background": "staffroom",
+      "speaker": "narrator",
+      "text": "'主编'两个字他叫得随口，我却莫名受用。\n他说话时眼睛是亮的，那种把一件麻烦事当好玩游戏来打的劲头，会传染。\n（跟他一起干活，连枯燥的审稿都像在闯关。……我什么时候开始，盼着下一关了？）"
+    },
+    {
+      "id": "ch10_d_teach_1",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "沈亦舟",
+      "expression": "worried",
+      "text": "（回到办公室，他对着电脑屏幕直挠头）坏了。这份'各班投稿数量统计'，我想把每班占比一拉到底，结果分母全乱了，算出来的百分比稀奇古怪。\n信息处理这块儿你可得帮我——Excel、Word、PPT的基本操作，还有些检索常识，综合素质里年年考。"
+    },
+    {
+      "id": "ch10_d_teach_2",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "沈亦舟",
+      "expression": "smile",
+      "text": "你看我这错在哪——我在C2写了'=B2/B8'(B8是总数)，往下一拉，B8就变成B9、B10了，分母跑了。\n这就是**相对引用与绝对引用**的考点：默认的B8是相对引用，下拉会自动变；想让分母'钉死'不动，得写成**绝对引用 $B$8**。加了美元符，往哪拉都不变。"
+    },
+    {
+      "id": "ch10_d_teach_3",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "沈亦舟",
+      "expression": "smile",
+      "text": "顺手把常考的也给你拢一拢：\nExcel里求和用 **SUM**、求平均 **AVERAGE**、计数 **COUNT**；混合引用 B$8(锁行)、$B8(锁列)。\nWord里'格式刷'能快速复制格式，'查找替换'能批量改字。\nPPT放映用 **F5**(从头)、Shift+F5(从当前页)。\n检索常识：搜索引擎里加双引号是**精确匹配**，加减号能**排除**关键词。"
+    },
+    {
+      "id": "ch10_d_teach_4",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "沈亦舟",
+      "expression": "grin",
+      "text": "（他把键盘往我面前一推，让座）来，你来当一回特刊的'数据管理员'。\n这份占比表，要让分母固定、其余随行变化，公式该怎么写、往下填——\n（他撑着下巴看我，笑）答对了，这表就归你管了。"
+    },
+    {
+      "id": "ch10_d_apply",
+      "type": "choice",
+      "background": "office",
+      "speaker": "沈亦舟",
+      "expression": "smile",
+      "knowledgeCheck": "q_info_01",
+      "text": "（他指着屏幕）总数在B8。我要在C2算'B2占总数的比例'，再把C2向下填充到C7，让每行的分子随行变、分母始终指向B8。C2应当输入哪个公式？",
+      "examTags": {
+        "subject": "301",
+        "module": "基本能力",
+        "examPoint": "信息处理：Excel相对引用与绝对引用（$ 锁定单元格）",
+        "questionType": "单项选择"
+      },
+      "choices": [
+        {
+          "id": "A",
+          "text": "=B2/$B$8",
+          "quality": "optimal",
+          "effects": {"professionalSkill": 2, "studentTrust": 1, "classOrder": 0, "ethicsRisk": -1, "lawRisk": 0, "examScore": 3, "affection_shen": 3},
+          "feedback": "对。B2是相对引用，下拉会变成B3、B4…(分子随行变)；$B$8是绝对引用，下拉始终锁定B8(分母不变)。这正是占比计算的标准写法。",
+          "answerKeywords": ["相对引用B2随行变", "绝对引用$B$8锁定", "占比标准写法"]
+        },
+        {
+          "id": "B",
+          "text": "=B2/B8",
+          "quality": "risk",
+          "effects": {"professionalSkill": -1, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": -2, "affection_shen": -1},
+          "feedback": "B8是相对引用，向下填充会变成B9、B10……分母跟着跑掉，正是沈老师一开始算错的原因。",
+          "answerKeywords": ["B8相对引用会变", "分母跑偏"]
+        },
+        {
+          "id": "C",
+          "text": "=$B$2/B8",
+          "quality": "risk",
+          "effects": {"professionalSkill": -1, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": -2, "affection_shen": -1},
+          "feedback": "锁反了。分子被钉死成$B$2(每行都用B2)，分母B8反而乱跑，与需求完全相反。",
+          "answerKeywords": ["分子分母锁反", "需求相反"]
+        },
+        {
+          "id": "D",
+          "text": "=$B2/$B8",
+          "quality": "suboptimal",
+          "effects": {"professionalSkill": 0, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": -1, "affection_shen": 0},
+          "feedback": "这是混合引用，只锁了列不锁行。向下填充时行号仍会变，$B8会变成$B9……分母照样跑偏，达不到'分母固定'的要求。",
+          "answerKeywords": ["混合引用只锁列", "行号仍变", "分母仍跑偏"]
+        }
+      ]
+    },
+    {
+      "id": "ch10_d_after",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "沈亦舟",
+      "expression": "grin",
+      "text": "（他看着屏幕上一排整齐的百分比，长舒一口气）救我狗命。一个美元符号，差点让我重做半小时。\n你记住这个，以后做成绩表、做统计，绝对引用闭着眼都不会错。\n（他活动了下手腕）就剩最后一摊了——那几道我自己都看着发懵的怪题。"
+    },
+    {
+      "id": "ch10_t3",
+      "type": "dialogue",
+      "background": "corridor",
+      "speaker": "沈亦舟",
+      "expression": "smile",
+      "text": "（他抱着稿子带我往打印室走，边走边掏出最后一页）特刊末尾有个'趣味智力角'，约的题。你看这道——\n'医生∶医院'，相当于'教师∶？'。还有一组数列。这就是综合素质里的**类比推理**和**图形数列推理**，看着花哨，其实有套路。"
+    },
+    {
+      "id": "ch10_e_teach_1",
+      "type": "dialogue",
+      "background": "corridor",
+      "speaker": "沈亦舟",
+      "expression": "smile",
+      "text": "类比推理的核心就一句话：**先看A和B是什么关系，再去后面找一组同样关系的。**\n常见关系有：'职业∶工作场所'(医生∶医院→教师∶学校)、'整体∶部分'、'物品∶用途'、'近义/反义'、'因果'。\n做题先把前一组的关系'翻译'成一句话，再拿这句话去套选项，关系一模一样的才对。"
+    },
+    {
+      "id": "ch10_e_teach_2",
+      "type": "dialogue",
+      "background": "corridor",
+      "speaker": "沈亦舟",
+      "expression": "smile",
+      "text": "提醒你两个坑：一是**别只看词义、要看逻辑关系**——'苹果∶水果'是'种属'(苹果是一种水果)，可别选成'香蕉∶黄色'那种'事物∶属性'；二是**注意词序方向**，A∶B和B∶A是两码事，'老师∶学生'对应'医生∶病人'，不能反过来配。"
+    },
+    {
+      "id": "ch10_e_teach_3",
+      "type": "dialogue",
+      "background": "corridor",
+      "speaker": "沈亦舟",
+      "expression": "grin",
+      "text": "数列推理也送你几招：先看**相邻两项的差**(等差)，差不规则再看**比**(等比)，还不行看**平方/立方**、看**和差递推**(前两项之和等于第三项，如斐波那契)。\n图形推理则看**数量**(点、线、角、面)、**位置**(旋转、翻转)、**样式**(叠加、求同求异)的规律。\n（他把题往我手里一塞，靠在打印机上笑）压轴这道，你破。"
+    },
+    {
+      "id": "ch10_e_apply",
+      "type": "choice",
+      "background": "corridor",
+      "speaker": "沈亦舟",
+      "expression": "smile",
+      "knowledgeCheck": "q_analogy_01",
+      "text": "（他念出'智力角'压轴题）'医生∶医院'，二者关系是'从业者∶其工作场所'。下列哪一组与之逻辑关系最一致？",
+      "examTags": {
+        "subject": "301",
+        "module": "基本能力",
+        "examPoint": "类比推理：判断词项间逻辑关系并匹配（职业与工作场所）",
+        "questionType": "单项选择"
+      },
+      "choices": [
+        {
+          "id": "A",
+          "text": "教师∶学校",
+          "quality": "optimal",
+          "effects": {"professionalSkill": 2, "studentTrust": 1, "classOrder": 0, "ethicsRisk": -1, "lawRisk": 0, "examScore": 3, "affection_shen": 3},
+          "feedback": "对。医生在医院工作、教师在学校工作，都是'从业者∶其工作场所'，且词序方向一致，逻辑关系完全对应。",
+          "answerKeywords": ["职业与工作场所", "词序一致", "关系对应"]
+        },
+        {
+          "id": "B",
+          "text": "教师∶学生",
+          "quality": "risk",
+          "effects": {"professionalSkill": -1, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": -2, "affection_shen": -1},
+          "feedback": "关系错了。'教师∶学生'是'施动者∶对象'，对应的应是'医生∶病人'，不是'职业∶工作场所'。这是最迷惑的干扰项。",
+          "answerKeywords": ["施动者与对象", "关系不一致"]
+        },
+        {
+          "id": "C",
+          "text": "医生∶护士",
+          "quality": "suboptimal",
+          "effects": {"professionalSkill": 0, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": -1, "affection_shen": 0},
+          "feedback": "'医生∶护士'是'并列的两种职业'，不是'职业∶工作场所'，逻辑关系不匹配。",
+          "answerKeywords": ["并列职业", "关系不一致"]
+        },
+        {
+          "id": "D",
+          "text": "学校∶教师",
+          "quality": "suboptimal",
+          "effects": {"professionalSkill": 0, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": -1, "affection_shen": 0},
+          "feedback": "关系对，但词序反了。题干是'职业∶场所'，本项是'场所∶职业'，方向相反，类比推理务必保持词序一致。",
+          "answerKeywords": ["词序颠倒", "方向相反"]
+        }
+      ]
+    },
+    {
+      "id": "ch10_e_after",
+      "type": "dialogue",
+      "background": "corridor",
+      "speaker": "沈亦舟",
+      "expression": "grin",
+      "text": "（打印机吐出最后一版样张，他抽起来对着光看，满意地吹了声口哨）成了！特刊，齐活！\n你看，怪题不怪——关系翻译成一句话，方向别配反，十拿九稳。\n（他把热乎乎的样张递给我）第一份，给主编。"
+    },
+    {
+      "id": "ch10_end_1",
+      "type": "dialogue",
+      "background": "corridor",
+      "speaker": "程砚",
+      "expression": "smile",
+      "text": "（程砚抱着教案路过，扫了眼我们手里的样张，难得地笑了）赶出来了？我还以为这特刊要黄。\n（他冲沈亦舟点点头）小沈这回总算干了件正经事。\n（又看向我）这一下午，逻辑、阅读、写作、信息、推理，基本能力一条线走完——比上一整天课都顶用。"
+    },
+    {
+      "id": "ch10_end_2",
+      "type": "dialogue",
+      "background": "corridor",
+      "speaker": "沈亦舟",
+      "expression": "tender",
+      "text": "（程砚走远，他靠在墙边，难得没贫嘴，认真看着我）说真的，今天多亏你。\n一个人救场是兵荒马乱，两个人，倒像……挺好玩的一件事。\n（他顿了顿，把笔别回耳后，笑得有点不一样）下回有这种活儿，我还点你。可以吗，主编？"
+    },
+    {
+      "id": "ch10_end_heart",
+      "type": "dialogue",
+      "background": "corridor",
+      "speaker": "narrator",
+      "text": "夕阳把走廊染成暖橙，他耳后那支笔，和他认真起来的侧脸，一起落进了我眼里。\n（笔尖的力量——能把逻辑讲清、把文章立稳、把数字算准。可今天我才发现，最厉害的那一笔，是他不经意间，在我心上轻轻点的那一下。）\n'可以。'我听见自己说，声音比预想的，软了一点点。"
+    },
+    {
+      "id": "ch10_end",
+      "type": "summary",
+      "background": "office",
+      "speaker": "narrator",
+      "text": "（笔尖的力量这一课落幕。把今天的得失，一条条记进手账吧——稿子收了尾，分也得收进来。）",
+      "review": {
+        "learnedExamPoints": [
+          "301-基本能力-逻辑思维（直言命题矛盾关系·复言命题推理·常见谬误）— 沈亦舟",
+          "301-基本能力-阅读理解（主旨概括·文意推断·作者态度）— 沈亦舟",
+          "301-基本能力-写作能力（议论文立意·结构·论证方法）— 沈亦舟",
+          "301-基本能力-信息处理（Excel相对/绝对引用·Word/PPT操作·检索常识）— 沈亦舟",
+          "301-基本能力-类比推理与图形数列推理（先判关系再匹配·注意词序与方向）— 沈亦舟"
+        ],
+        "structure": "五个考点都从'赶制校庆特刊'这桩事件长出来：审来信揪逻辑硬伤→逻辑思维；读散文投稿→阅读理解；改议论文范文→写作能力；修占比统计表→信息处理；做智力角压轴题→类比/数列推理。每个考点走'剧情讲授→马上做题→应用→反馈'，章末月考为冷测。",
+        "mockExam": "core_ch10_mock",
+        "recommendedReview": [
+          "答错逻辑思维→沈亦舟重讲直言命题矛盾对子与必要/充分条件推理规则",
+          "答错阅读理解→沈亦舟重讲主旨抓总起句、转折结构看'但是'之后",
+          "答错写作能力→沈亦舟重讲立意准深新与四种论证方法的辨别",
+          "答错信息处理→沈亦舟重讲相对引用/绝对引用$与混合引用的区别",
+          "答错类比推理→沈亦舟重讲'先翻译关系再匹配'与词序方向不可颠倒"
+        ]
+      }
+    }
+  ]
+}

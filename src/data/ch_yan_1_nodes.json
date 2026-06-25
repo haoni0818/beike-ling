@@ -1,0 +1,363 @@
+{
+  "chapterId": "route_yan_1",
+  "route": "yan",
+  "requires": {"flagsAllTrue": ["route_locked_yan"]},
+  "title": "言修线 · 第一章 · 隔着玻璃的人",
+  "summary": "锁定言修线后的第一章，黄金四拍第一拍'心动·疏离来由'。海归出身、做生涯规划的言修，是全校最'冷'的那位——他给每个孩子做职业测评、画发展路径，自己却像隔着一层玻璃，从不让人靠近半步。一次晚自习后的生涯咨询室，你撞见他对着一份'被父母规划满当当'的学生档案出神，第一次听他说起：他'见过太多被规划毁掉的人生'，包括他自己。借这一夜，他把素质教育的内涵、学生观与教师观一条条带你过——你才懂，他的疏离不是冷，是怕。心动，从看清这层玻璃开始。",
+  "designNote": "乙女向个人线 ch_yan_1，第一拍'心动·疏离来由'。第一人称旁白(我=见习教师)贯穿。yan(言修)表情仅 neutral|serious|worried|tender，疏离克制为主，松动瞬间用 tender；cameo 沈亦舟表情仅 neutral|smile。背景仅 counseling_room|corridor|office。深挖模块 301 职业理念(素质教育kp_quality_edu / 学生观kp_student_view / 教师观kp_teacher_view)。teach→knowledgeCheck(带 examTags 的 choice，指向 ch_yan_quiz.json)→apply→after→heart 微循环，本章 3 个 teach。关键选择 setFlag(route_lean_yan / saw_through_yan)，affection_yan 经 effects 累积；选'把规划当唯一标尺/给学生贴标签'给负 affection 与正 ethicsRisk(逆指标)。恋爱仅成年同事，学生(周也)仅作教学/咨询对象。",
+  "characters": ["yan", "shen"],
+  "students": ["周也"],
+  "valueFields": ["professionalSkill", "studentTrust", "classOrder", "ethicsRisk", "lawRisk", "examScore", "affection_yan"],
+  "note": "ethicsRisk/lawRisk 为逆向指标，越低越好。knowledgeCheck 指向 ch_yan_quiz.json 的题目 id。本章 route:yan，requires 已锁线。",
+  "nodes": [
+    {
+      "id": "ch_yan_1_intro",
+      "type": "dialogue",
+      "background": "corridor",
+      "speaker": "narrator",
+      "text": "晚自习散场，教学楼一层只剩生涯咨询室还亮着灯。\n沈亦舟拎着包从我身边溜过，压低声音：'生涯中心那位言老师又在加班啦？我跟你说，那人海归回来三年，全校没一个同事进过他办公室喝过一杯水。'\n（他冲我挤眼，'你不是要还测评量表吗？胆子大点，进去呗。'）\n我攥着那叠周也的生涯测评表，在那扇半掩的门前，站了很久。"
+    },
+    {
+      "id": "ch_yan_1_intro_1b",
+      "type": "dialogue",
+      "background": "corridor",
+      "speaker": "narrator",
+      "text": "（关于言修的传闻，我入职那天就听了一耳朵。）\n海归博士，回国前在国外做青少年生涯发展研究，简历金光闪闪。可这三年，他没参加过一次组里的聚餐，办公室的门常年虚掩着一条缝，进出的人，从没超过过那条缝。\n（'清冷'，是同事们对他最客气的形容。沈亦舟的原话更直接：'那位啊，跟人之间永远隔着一块玻璃，看得见，摸不着。'）"
+    },
+    {
+      "id": "ch_yan_1_intro_2",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "言修",
+      "expression": "neutral",
+      "text": "（推门进去，他正对着一份摊开的学生档案出神，听见动静也没抬头。台灯把他半张脸照得很淡，像隔着一层磨砂玻璃。）\n量表放桌角就好。\n（他终于抬眼，目光落在我身上，礼貌、清楚，却划着一条看不见的线。）周也的测评，你看过了？她填的'理想职业'那一栏，写了三遍又划掉三遍。你怎么读这件事。"
+    },
+    {
+      "id": "ch_yan_1_intro_3",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "narrator",
+      "text": "我愣了一下。我以为他会例行公事地收表，没想到第一句就把球踢回给我。\n'她……可能还没想清楚自己想要什么？'我试探着答。\n他没点头也没摇头，只是把那份被父母'规划'得满满当当的家长期望表，轻轻推到我面前——补习、竞赛、留学路线，密密麻麻，唯独没有'周也想要什么'。\n（他的指尖在那张表上停了一秒，神情里有什么东西，一闪而过。）"
+    },
+    {
+      "id": "ch_yan_1_intro_4",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "narrator",
+      "text": "（我盯着那张密密麻麻的家长期望表，一时语塞。补习班、竞赛、留学中介的名片夹在里面，连周末的钢琴考级都精确到了几点几分。）\n'这……排得也太满了。'我没忍住。\n他闻言看了我一眼，那目光里第一次有了点别的东西，转瞬即逝，像冰面下游过的一尾鱼。\n'满。'他重复了一遍这个字，'满到，没给'她自己'留一寸地方。'"
+    },
+    {
+      "id": "ch_yan_1_teach_1",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "言修",
+      "expression": "neutral",
+      "text": "（他收回手，语气恢复了那种公事公办的平。）\n你既然要在这行待下去，有件事得先掰扯清楚——我们做生涯规划的，到底是在'安排'孩子，还是在'发展'孩子。\n这背后是一整套教育观，叫**素质教育**。它的根本宗旨是提高国民素质，核心有四条：**面向全体学生、促进学生全面发展、促进学生个性发展、以培养创新精神和实践能力为重点**。"
+    },
+    {
+      "id": "ch_yan_1_teach_2",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "言修",
+      "expression": "serious",
+      "text": "（他指了指周也那张被划了三遍的表。）\n应试教育只盯分数、只面向少数升学有望的人，把孩子塞进同一条流水线。素质教育反过来——它要的是'每个孩子'，要的是德智体美劳'全面'，更要的是承认每个孩子'不一样'。\n周也写了三遍又划掉，不是她蠢。是从来没人问过她'你想成为什么样的人'。我们这行最大的失职，就是拿一把尺子，去量一千个孩子。"
+    },
+    {
+      "id": "ch_yan_1_apply_1",
+      "type": "choice",
+      "background": "counseling_room",
+      "speaker": "言修",
+      "expression": "serious",
+      "knowledgeCheck": "q_yan_quality_edu_01",
+      "text": "（他把测评结果调出来，转向我。）\n那考你一道。周也家长来电，要求我们'按最稳的路线给她排满',别让她'瞎想'。从素质教育的要求看，我该怎么回应这位家长？",
+      "examTags": {
+        "subject": "301",
+        "module": "职业理念",
+        "examPoint": "素质教育的内涵（面向全体·全面发展·个性发展·创新实践）与对应试倾向的辨别",
+        "questionType": "材料分析"
+      },
+      "choices": [
+        {
+          "id": "A",
+          "text": "肯定家长的关心，同时说明素质教育要促进学生'全面与个性'发展，建议在尊重周也兴趣的基础上共同规划，而非单方排满。",
+          "quality": "optimal",
+          "effects": {"professionalSkill": 2, "studentTrust": 2, "classOrder": 1, "ethicsRisk": -1, "lawRisk": -1, "examScore": 3, "affection_yan": 3},
+          "feedback": "对。素质教育要面向全体、促进全面与个性发展。生涯规划要让孩子成为主体，与家长沟通而非替孩子'排满'，正中考点。",
+          "setFlag": {"route_lean_yan": 1, "saw_through_yan": true},
+          "answerKeywords": ["促进个性发展", "全面发展", "学生为主体", "尊重兴趣", "与家长沟通"]
+        },
+        {
+          "id": "B",
+          "text": "照家长说的办，把所有时间排满最稳的升学路线——家长是出钱的人，听他们的最省事。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -2, "studentTrust": -2, "classOrder": 0, "ethicsRisk": 2, "lawRisk": 1, "examScore": -3, "affection_yan": -3},
+          "feedback": "这是典型的应试教育倾向：只盯升学、把孩子当被安排的对象，违背素质教育'面向全体、促进个性发展'。材料题里这是直接判错的选项。",
+          "setFlag": {"chose_exam_oriented_yan": true},
+          "answerKeywords": ["应试倾向", "忽视个性", "学生客体化", "违背素质教育"]
+        },
+        {
+          "id": "C",
+          "text": "只跟周也谈，绕开家长——家长的意见不重要，孩子开心就行。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -1, "studentTrust": -1, "classOrder": 0, "ethicsRisk": 1, "lawRisk": 0, "examScore": -1, "affection_yan": -1},
+          "feedback": "尊重学生主体没错，但'绕开家长'走了另一个极端。生涯教育需要家校协同，全面发展不等于排斥家长合理关切。答得'偏'要被扣分。",
+          "answerKeywords": ["忽视家校协同", "走极端", "未促进全面发展"]
+        },
+        {
+          "id": "D",
+          "text": "用测评分数给周也定一个'最适合'的职业，直接告诉家长结论，让他们照办。",
+          "quality": "suboptimal",
+          "effects": {"professionalSkill": 0, "studentTrust": -1, "classOrder": 0, "ethicsRisk": 1, "lawRisk": 0, "examScore": 0, "affection_yan": -1},
+          "feedback": "测评是参考不是判决。用一个分数给孩子'定终身',恰恰是拿一把尺子量人，背离了'促进个性发展、培养创新与实践能力'。",
+          "answerKeywords": ["测评当判决", "标签化", "背离个性发展"]
+        }
+      ]
+    },
+    {
+      "id": "ch_yan_1_after_1a",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "narrator",
+      "text": "（我答完，紧张地等他的评判。他做过研究、教过大学生，我这点见习教师的浅见，在他面前，多少有点心虚。）\n（出乎意料，他没有用那种'纠正新人'的口吻。他只是把我的话在心里过了一遍，神情里有种被人接住的、极淡的松动。）"
+    },
+    {
+      "id": "ch_yan_1_after_1",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "言修",
+      "expression": "neutral",
+      "text": "（他听完，沉默了两秒，极轻地'嗯'了一声。）\n你能分清'关心'和'安排'，这点比大多数人强。\n（他重新看向那份档案，声音低下去。）大多数家长，包括很多老师，都把'为你好'当成了'你必须'。可孩子不是一张待填的路线图。"
+    },
+    {
+      "id": "ch_yan_1_bridge_1",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "narrator",
+      "text": "（窗外的天彻底黑了，咨询室里只剩我们两个人，和一桌摊开的档案。我本以为还完量表就该走，可他似乎并不急着结束这场临时的'课'。）\n（他起身给我和他自己各倒了一杯温水——这是个意外的举动，传闻里那个'谁也不让靠近'的人，此刻却像找到了一个难得能说话的对象。）\n沈亦舟没骗我，他真的很久没和人这样聊过了。只是他选择'说'的方式，是讲考点。"
+    },
+    {
+      "id": "ch_yan_1_teach_3",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "言修",
+      "expression": "serious",
+      "text": "（他像是被自己那句话带远了，顿了顿，转回正题。）\n你刚才说周也'还没想清自己想要什么'——这正好牵出'学生观'。\n现代学生观三句话：**学生是发展中的人**，用发展的眼光看，允许他犯错、给他成长的空间；**学生是独特的人**，尊重个体差异，不拿同一标准套所有人；**学生是具有独立意义的人**，他是独立主体，不是被你灌输、被你摆布的容器。"
+    },
+    {
+      "id": "ch_yan_1_apply_2",
+      "type": "choice",
+      "background": "counseling_room",
+      "speaker": "言修",
+      "expression": "serious",
+      "knowledgeCheck": "q_yan_student_view_01",
+      "text": "（他把周也三次划改的那栏指给我看。）\n再考你。有同事看了周也反复改志愿，说'这孩子没主见、定不下来,随她去吧'。用学生观怎么反驳？",
+      "examTags": {
+        "subject": "301",
+        "module": "职业理念",
+        "examPoint": "学生观（发展的人/独特的人/独立意义的人）的运用",
+        "questionType": "材料分析"
+      },
+      "choices": [
+        {
+          "id": "A",
+          "text": "学生是发展中的人，反复修改恰是她在探索、在成长；应用发展的眼光接纳过程，引导而非放弃，更不能贴'没主见'的标签。",
+          "quality": "optimal",
+          "effects": {"professionalSkill": 2, "studentTrust": 2, "classOrder": 1, "ethicsRisk": -1, "lawRisk": -1, "examScore": 3, "affection_yan": 3},
+          "feedback": "对。'发展中的人'要求用发展眼光看待学生的不成熟，'独特的人'要求不贴标签。把'反复修改'读成'探索成长'而非'没主见',正是学生观的核心。",
+          "setFlag": {"route_lean_yan": 1},
+          "answerKeywords": ["发展中的人", "发展的眼光", "不贴标签", "独特的人", "引导不放弃"]
+        },
+        {
+          "id": "B",
+          "text": "同事说得对，定不下来就是没主见，等她自己想明白再说，老师不用管。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -2, "studentTrust": -2, "classOrder": 0, "ethicsRisk": 2, "lawRisk": 0, "examScore": -3, "affection_yan": -3},
+          "feedback": "给学生贴'没主见'的标签，又放弃引导，双重违背学生观——既没把她当'发展中的人',也丢了教师的引导责任。",
+          "setFlag": {"chose_label_student_yan": true},
+          "answerKeywords": ["贴标签", "否定发展", "放弃引导"]
+        },
+        {
+          "id": "C",
+          "text": "直接替周也选一个最热门的志愿填上，省得她纠结。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -2, "studentTrust": -2, "classOrder": 0, "ethicsRisk": 2, "lawRisk": 0, "examScore": -2, "affection_yan": -2},
+          "feedback": "替学生做决定，把她当成被摆布的容器，违背'学生是具有独立意义的人'。生涯规划最忌越俎代庖。",
+          "answerKeywords": ["越俎代庖", "否定独立意义", "学生客体化"]
+        },
+        {
+          "id": "D",
+          "text": "让周也按测评分最高的那项填，分数最客观，不会错。",
+          "quality": "suboptimal",
+          "effects": {"professionalSkill": 0, "studentTrust": -1, "classOrder": 0, "ethicsRisk": 1, "lawRisk": 0, "examScore": 0, "affection_yan": -1},
+          "feedback": "用单一分数压过学生的探索过程，忽视了'独特的人'与'独立意义的人'。测评只是工具，不能替学生做主。",
+          "answerKeywords": ["唯分数", "忽视独特性", "工具替代主体"]
+        }
+      ]
+    },
+    {
+      "id": "ch_yan_1_after_2",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "言修",
+      "expression": "tender",
+      "text": "（他听完，第一次，那层玻璃后面的神情软了一瞬。）\n……'探索的过程',你说得很准。\n（他低头看着周也的档案，声音轻得几乎听不见。）我以前认识一个孩子，也是这样，志愿改了一遍又一遍。后来有人替他'定'了，定得很'稳',很'对'。\n他再没改过——因为那条路上，已经没有他自己了。"
+    },
+    {
+      "id": "ch_yan_1_heart",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "narrator",
+      "text": "'那个孩子',他说得那样轻，可我忽然听懂了——他说的是他自己。\n海归、清冷、做最理性的生涯规划，原来不是因为他冷，是因为他见过'被规划毁掉的人生'，那条路上空空荡荡，连他自己都不在。\n（我的心，在那一刻被什么轻轻撞了一下。隔着玻璃的人，原来玻璃里面，结着一层霜。）"
+    },
+    {
+      "id": "ch_yan_1_shen_cameo",
+      "type": "dialogue",
+      "background": "corridor",
+      "speaker": "沈亦舟",
+      "expression": "smile",
+      "text": "（第二天一早，沈亦舟堵在茶水间门口，一脸八卦。）\n哎我说，你昨晚是不是进言老师办公室了？！门卫大爷说你俩聊到快十点！\n（他凑近，压低声音，又带着点真诚的惊讶。）说真的，那块'玻璃'，三年了，我们谁都没敲开过。你小子……行啊。"
+    },
+    {
+      "id": "ch_yan_1_teach_4",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "言修",
+      "expression": "neutral",
+      "text": "（沈亦舟话音没落，言修就把我叫到了办公室，桌上是周也的新方案。他像是想把昨晚那点失态揭过去，刻意端回了专业的语气。）\n昨天讲了学生观，今天补'教师观'——这决定了我们站在孩子的哪一侧。\n新课改的教师观：**教师是学生学习的引导者和发展的促进者**，不是知识灌输者；是**课程的建设者和开发者**；是**教育教学的研究者**；从师生关系看，**教师是主导、学生是主体，二者相统一**。"
+    },
+    {
+      "id": "ch_yan_1_apply_3",
+      "type": "choice",
+      "background": "office",
+      "speaker": "言修",
+      "expression": "serious",
+      "knowledgeCheck": "q_yan_teacher_view_01",
+      "text": "（他把周也的方案推给我。）\n那么，给周也做生涯辅导时，最符合'促进者/引导者'这一教师观的做法是哪种？",
+      "examTags": {
+        "subject": "301",
+        "module": "职业理念",
+        "examPoint": "教师观（引导者与促进者/研究者/师生主导主体统一）的运用",
+        "questionType": "材料分析"
+      },
+      "choices": [
+        {
+          "id": "A",
+          "text": "提供信息与方法、引导周也自主分析利弊、自己做决定，老师做促进者而非替她拍板，必要时反思调整辅导策略。",
+          "quality": "optimal",
+          "effects": {"professionalSkill": 2, "studentTrust": 2, "classOrder": 1, "ethicsRisk": -1, "lawRisk": -1, "examScore": 3, "affection_yan": 3},
+          "feedback": "对。'引导者与促进者'要求教师引导学生主动建构、自主决策；'研究者'要求反思调整。教师主导(给方法)与学生主体(自己决定)相统一，全在点上。",
+          "setFlag": {"route_lean_yan": 1},
+          "answerKeywords": ["引导者促进者", "学生自主决策", "教师主导学生主体统一", "反思调整", "不替学生拍板"]
+        },
+        {
+          "id": "B",
+          "text": "凭多年经验直接告诉周也'你最适合走这条路',让她照做，省时高效。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -2, "studentTrust": -2, "classOrder": 0, "ethicsRisk": 2, "lawRisk": 0, "examScore": -3, "affection_yan": -3},
+          "feedback": "把教师当成结论的灌输者、学生当被动接受者，违背'促进者/引导者'与'学生主体'。'高效'换来的是学生主体性的丧失。",
+          "answerKeywords": ["灌输者", "否定学生主体", "违背促进者角色"]
+        },
+        {
+          "id": "C",
+          "text": "完全不介入，让周也自己上网查、自己摸索，老师不引导也不提供资源。",
+          "quality": "suboptimal",
+          "effects": {"professionalSkill": -1, "studentTrust": -1, "classOrder": 0, "ethicsRisk": 1, "lawRisk": 0, "examScore": -1, "affection_yan": -1},
+          "feedback": "走到'放任'的另一极端，丢了'教师主导'。促进者不是甩手掌柜，引导与提供支持仍是教师的职责。",
+          "answerKeywords": ["放任", "丢失教师主导", "未尽引导职责"]
+        },
+        {
+          "id": "D",
+          "text": "把周也的方案交给家长定，老师只负责执行家长的决定。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -2, "studentTrust": -1, "classOrder": 0, "ethicsRisk": 1, "lawRisk": 0, "examScore": -2, "affection_yan": -2},
+          "feedback": "把教育的主导权让渡给家长、把学生晾在一边，既非'引导者',也否定了'学生主体'。教师应做家校之间的专业引导者。",
+          "answerKeywords": ["让渡主导权", "否定学生主体", "未尽专业引导"]
+        }
+      ]
+    },
+    {
+      "id": "ch_yan_1_after_3",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "言修",
+      "expression": "neutral",
+      "text": "（他收起方案，难得地，多说了一句不属于'工作'的话。）\n你大概看出来了——我做这行，是想做那个'当年没人替我做的引导者'。\n（他没看我，目光落在窗外。）替孩子做决定很容易，难的是忍住，让他自己长出主见来。这点，我还在学。"
+    },
+    {
+      "id": "ch_yan_1_after_3a",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "narrator",
+      "text": "（'忍住，让他自己长出主见来。'——他说这话时，那向来很淡的眉眼间，有一瞬罕见的、近乎温柔的东西。）\n我忽然意识到，这两天他教我的素质教育、学生观、教师观，从来不是干巴巴的考点。每一条背后，都压着他自己走过的、那条'被规划'的路。\n（他是在用最理性的语言，讲一件最不理性的事——一个人的热爱，怎样被'为你好'三个字，一寸寸碾平。）"
+    },
+    {
+      "id": "ch_yan_1_choice_relation",
+      "type": "choice",
+      "background": "office",
+      "speaker": "narrator",
+      "text": "（他说完，办公室里安静下来。我知道，这是他第一次把玻璃后面的东西，露给我看一角。我该怎么接？）",
+      "choices": [
+        {
+          "id": "A",
+          "text": "'你现在做的事，就是在替很多个'当年的你'，把那条路找回来。'——认真地看着他。",
+          "quality": "optimal",
+          "effects": {"professionalSkill": 1, "studentTrust": 1, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": 1, "affection_yan": 4},
+          "feedback": "（他怔住，耳根几不可察地热了一下，别开眼：'……别说得这么肉麻。'——可那层玻璃，裂了一道很细的缝。）",
+          "setFlag": {"saw_through_yan": true},
+          "answerKeywords": []
+        },
+        {
+          "id": "B",
+          "text": "'谢谢你今天教我这么多。'——礼貌地收起笔记，保持距离。",
+          "quality": "acceptable",
+          "effects": {"professionalSkill": 1, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": 1, "affection_yan": 1},
+          "feedback": "（他点点头，恢复了那种公事公办的平。'应该的。'——玻璃，又合上了。）",
+          "answerKeywords": []
+        },
+        {
+          "id": "C",
+          "text": "追问：'那个'当年的你',后来怎么样了？'——好奇地探向他的过去。",
+          "quality": "risk",
+          "effects": {"professionalSkill": 0, "studentTrust": -1, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": 0, "affection_yan": -1},
+          "feedback": "（他眼神一冷，把档案合上：'与工作无关的，不必问。'——刚裂开的缝，被他亲手糊死了。逼问伤人，不如等他自己愿意说。）",
+          "answerKeywords": []
+        }
+      ]
+    },
+    {
+      "id": "ch_yan_1_bridge_2",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "narrator",
+      "text": "（接连两天的'临时授课'，让我对这个人的认识，一点点被改写。）\n他不是冷。他是把所有的温度，都收进了那层玻璃里，只透过'帮孩子把路走对'这一件事，小心翼翼地往外散一点。\n（我开始留意他办公桌上的细节：一摞翻烂的发展心理学专著、贴满便签的学生档案、还有一张压在玻璃板下、被剪掉了一角的旧照片——照片里的少年，眉眼像极了他。）"
+    },
+    {
+      "id": "ch_yan_1_end_1",
+      "type": "dialogue",
+      "background": "corridor",
+      "speaker": "言修",
+      "expression": "neutral",
+      "text": "（傍晚，他抱着一摞档案从办公室出来，正撞见在走廊等结果的周也。他蹲下身，把档案里那张'家长期望表'抽出来，又把空白的'我的志愿'递给她。）\n周也，这张，你自己慢慢填。填错了也不要紧——改一百遍都可以。\n（周也愣愣地接过，眼眶忽然红了。我远远看着，心里某个地方，也跟着热了一下。）"
+    },
+    {
+      "id": "ch_yan_1_end",
+      "type": "summary",
+      "background": "corridor",
+      "speaker": "narrator",
+      "text": "（言修线第一章落幕。隔着玻璃看清他的这一夜，把今天学的素质教育、学生观、教师观，和那点不敢声张的心动，一并记进手账。）",
+      "review": {
+        "learnedExamPoints": [
+          "301-职业理念-素质教育的内涵（面向全体/全面发展/个性发展/创新实践）— 言修",
+          "301-职业理念-学生观（发展的人/独特的人/具有独立意义的人）— 言修",
+          "301-职业理念-教师观（引导者促进者/研究者/师生主导主体统一）— 言修"
+        ],
+        "structure": "从'隔着玻璃的疏离教师'切入，借周也'被父母规划满当当'的生涯档案，把素质教育、学生观、教师观三个职业理念考点逐一'用'出来。走'剧情讲授→马上做题→应用→反馈',末尾揭开言修疏离的来由(他自己就是被规划毁掉的那个孩子)。",
+        "mockExam": "route_yan_mock",
+        "recommendedReview": [
+          "答错素质教育→言修重讲'面向全体·全面与个性发展·创新实践',重点辨应试倾向",
+          "答错学生观/教师观→言修重讲'发展的人不贴标签'与'引导者促进者·主导主体统一'"
+        ]
+      }
+    }
+  ]
+}

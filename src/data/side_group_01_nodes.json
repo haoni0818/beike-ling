@@ -1,0 +1,234 @@
+{
+  "chapterId": "side_group_01",
+  "title": "幕间 · 办公室的深夜食堂",
+  "summary": "期中阅卷夜，办公室的灯迟迟没灭。该走的人没走，反倒凑出了一顿简陋夜宵——半箱泡面、一盒不知谁带的卤味、顾承翻出来的电饭煲，还有陆知行那台'谁都不许碰'的咖啡机。四位前辈在同一片暖黄灯光下碰出火花：陆知行的疏离克制、顾承的周到温厚、沈亦舟的插科打诨、江晚的细腻体察。没有考点，没有学生，只有一群被红笔泡软了眼睛的大人，和你心跳数次漏拍的一夜。",
+  "designNote": "纯剧情番外/幕间，无随堂检测、无月考、无 examTags。定位是 ENSEMBLE 群戏：让四位主角的反差人设在同一空间相互映照、彼此打趣，制造轻量好感 beat 与微妙小火花（轻松、有尊严，不狗血、不刻意三角）。MC 以第一人称旁白观察、被照顾、数次心动。给每人一两个'高光小动作'。两处【纯风味选择】只小幅动 affection_xx，quality 仅用 optimal/suboptimal，无对错之分，让玩家决定'今晚多和谁说两句'。苏念以 nameplate（无立绘）做喜剧黏合。背景与表情严格落在既有素材范围内。",
+  "characters": ["lu", "gu", "shen", "jiang"],
+  "students": [],
+  "valueFields": ["professionalSkill", "studentTrust", "classOrder", "ethicsRisk", "lawRisk", "examScore", "affection_lu", "affection_jiang", "affection_gu", "affection_shen"],
+  "note": "ethicsRisk/lawRisk 为逆向指标，越低越好。本番外为线性幕间，无 knowledgeCheck / examTags；choice 仅为风味分支，effects 只小幅调整好感。",
+  "nodes": [
+    {
+      "id": "side01_1",
+      "type": "dialogue",
+      "background": "staff_room",
+      "speaker": "narrator",
+      "text": "晚上九点四十。\n期中阅卷第三天。我面前这摞卷子像永远改不完的山，红笔的墨快被我用秃了，眼睛干得能磨出火星。\n窗外的操场早黑透了，办公室却还亮着——奇怪，这个点，居然一个人都没走。"
+    },
+    {
+      "id": "side01_2",
+      "type": "dialogue",
+      "background": "staff_room",
+      "speaker": "narrator",
+      "text": "我揉了揉太阳穴，肚子不合时宜地叫了一声，在安静的办公室里格外响。\n我僵住，飞快扫了一圈——但愿没人听见。"
+    },
+    {
+      "id": "side01_3",
+      "type": "dialogue",
+      "background": "staff_room",
+      "speaker": "沈亦舟",
+      "expression": "smile",
+      "text": "（隔着两张桌子，一个脑袋'唰'地从卷子堆后面探出来，眼睛亮得像发现了新大陆）\n哈！我就说！刚才那一声，是你肚子吧？\n别装了别装了——全办公室就咱俩还是壮劳力，谁饿了瞒得过谁。"
+    },
+    {
+      "id": "side01_4",
+      "type": "dialogue",
+      "background": "staff_room",
+      "speaker": "narrator",
+      "text": "我正想反驳，门口传来轻轻的脚步声。\n江晚抱着一摞她那边的辅导记录走进来，发尾有点乱，显然也是刚从咨询室那头熬过来的。她把东西放下，先看了眼我们桌上的'红笔战场'，弯了弯眼睛。"
+    },
+    {
+      "id": "side01_5",
+      "type": "dialogue",
+      "background": "staff_room",
+      "speaker": "江晚",
+      "expression": "smile",
+      "text": "（声音很轻，像怕惊扰了这一室的疲惫）\n我刚路过茶水间，听见你们这边动静……还以为在开会。\n阅卷到这个钟点，是该吃点东西了。空着肚子改卷，分都会打偏的。"
+    },
+    {
+      "id": "side01_6",
+      "type": "dialogue",
+      "background": "staff_room",
+      "speaker": "沈亦舟",
+      "expression": "smile",
+      "text": "江老师懂我！（他'啪'地一拍桌子站起来）\n那就这么定了——深夜食堂，正式开张！我柜子里压箱底的泡面，今晚全员普惠。\n问题是……（他凑近，压低声音，神神秘秘地朝角落努嘴）就缺点'硬货'。我去探探敌情。"
+    },
+    {
+      "id": "side01_7",
+      "type": "dialogue",
+      "background": "staff_room",
+      "speaker": "narrator",
+      "text": "顺着他的目光看过去——办公室最里头那盏灯下，陆知行还端坐着，脊背挺得笔直，像这片混乱里唯一没被夜色泡软的人。\n他面前那台银色的咖啡机锃亮，是全办公室公认的'禁区'。沈亦舟搓搓手，像要去拆炸弹。"
+    },
+    {
+      "id": "side01_8",
+      "type": "dialogue",
+      "background": "staff_room",
+      "speaker": "沈亦舟",
+      "expression": "smile",
+      "text": "（他探到陆知行桌边，赔着笑）\n陆主任，加班辛苦——那个，您这咖啡机，能不能、稍微、临时、有偿借用一下？我们想给大伙儿煮点热的提提神……\n（话没说完，被一道目光钉在原地）"
+    },
+    {
+      "id": "side01_9",
+      "type": "dialogue",
+      "background": "staff_room",
+      "speaker": "陆知行",
+      "expression": "serious",
+      "text": "（他抬眼，从沈亦舟身上扫过，又落到我们这边乱糟糟的'食堂筹备现场'，停了半秒）\n这台机器，洗过三次没洗干净就会串味。\n（他放下笔，站起身）……我来。你们别碰。"
+    },
+    {
+      "id": "side01_10",
+      "type": "dialogue",
+      "background": "staff_room",
+      "speaker": "narrator",
+      "text": "我们都愣了一下。\n下一秒，全校最难搞的教务主任，居然真的卷起了白衬衫的袖口，走到咖啡机前，动作精准利落地开始磨豆、压粉。香气一点点漫开来。\n（这人……拒绝得那么干脆，做起来却比谁都认真。第一杯，他会给谁？）"
+    },
+    {
+      "id": "side01_11",
+      "type": "dialogue",
+      "background": "staff_room",
+      "speaker": "顾承",
+      "expression": "smile",
+      "text": "（这时，门被肩膀顶开，顾承抱着个东西挤进来，额头还冒着汗，笑得一脸得意）\n久等啦！我就知道你们今晚跑不掉——食堂阿姨给我留的，电饭煲一锅卤味，还热乎着！\n（他把电饭煲'咚'地放桌中央，掀开盖，白汽腾起来，香味瞬间盖过了咖啡。）大半夜的，光喝咖啡顶什么用，得吃顿正经的。"
+    },
+    {
+      "id": "side01_12",
+      "type": "dialogue",
+      "background": "staff_room",
+      "speaker": "narrator",
+      "text": "一瞬间，这间冷冰冰的办公室活了过来。\n沈亦舟欢呼着去撕泡面，江晚不知从哪儿摸出一沓纸杯和湿巾，挨个分下去；顾承熟练地把卤味拨进每个人碗里，连最角落改卷的老周慎之那份都没落下；陆知行端着两杯咖啡走回来，一杯放在自己桌上，另一杯——"
+    },
+    {
+      "id": "side01_13",
+      "type": "dialogue",
+      "background": "staff_room",
+      "speaker": "陆知行",
+      "expression": "neutral",
+      "text": "（他把那杯咖啡，放到了我手边。杯壁温热。）\n你改卷最久。\n（他顿了顿，目光扫过我那叠快堆成塔的卷子）……喝这个。别再揉眼睛了，会更累。"
+    },
+    {
+      "id": "side01_14",
+      "type": "dialogue",
+      "background": "staff_room",
+      "speaker": "narrator",
+      "text": "我捧着那杯咖啡，半天没说出话。\n他说完就转身回了座位，仿佛只是顺手。可'你改卷最久'这五个字——他是什么时候、留意到的？\n（不动声色地……记着每个人。这才是最要命的地方。）"
+    },
+    {
+      "id": "side01_15",
+      "type": "dialogue",
+      "background": "staff_room",
+      "speaker": "沈亦舟",
+      "expression": "smile",
+      "text": "（他嘴里塞着面，含糊不清地凑过来，眼睛在我和陆知行之间来回打转）\n哎我说……陆主任这台'传家宝'咖啡机，入职两年，我连边都没让摸过。\n你倒好。（他冲我挤眉弄眼）头一杯，啧。"
+    },
+    {
+      "id": "side01_16",
+      "type": "dialogue",
+      "background": "staff_room",
+      "speaker": "江晚",
+      "expression": "smile",
+      "text": "（江晚把一杯温水悄悄换到我另一只手边，替下那杯太烫的咖啡，声音温温柔柔地接话）\n亦舟，少说两句，吃你的面。\n（她转向我，眼里有种很懂的笑意）不过……陆主任确实，对在意的事情，从来都是行动比话多。"
+    },
+    {
+      "id": "side01_17",
+      "type": "dialogue",
+      "background": "staff_room",
+      "speaker": "narrator",
+      "text": "她这话说得轻，却让那头正在喝咖啡的陆知行，杯沿停了极短的一瞬。\n沈亦舟立刻'哦——'地拖长了音想接梗，被顾承一筷子卤蛋精准地堵进了碗里。一桌人都笑了。\n（这一刻我忽然觉得，比起白天那个剑拔弩张的办公室，我更喜欢现在这个。）"
+    },
+    {
+      "id": "side01_pick1",
+      "type": "choice",
+      "background": "staff_room",
+      "speaker": "narrator",
+      "expression": "neutral",
+      "text": "（热气、笑声、红笔暂时被推到一边。夜还长，泡面还有富余。\n这一桌人，今晚我想多挨着谁、多说两句？）",
+      "choices": [
+        {
+          "id": "A",
+          "text": "端着那杯他煮的咖啡，挪到陆知行桌边，小声谢他。",
+          "quality": "optimal",
+          "effects": {"affection_lu": 2, "affection_shen": 0},
+          "feedback": "你走过去道谢，他'嗯'了一声，没看你，却把自己那盘没动过的卤味往你这边推了半寸。'吃。改卷费脑子。'——疏离的人，把在意藏在最不起眼的动作里。",
+          "answerKeywords": []
+        },
+        {
+          "id": "B",
+          "text": "凑到顾承那头，问他那锅卤味到底怎么哄来的。",
+          "quality": "optimal",
+          "effects": {"affection_gu": 2, "affection_shen": 0},
+          "feedback": "顾承被你逗乐了，神秘兮兮地说'秘诀是帮阿姨家娃补了俩月数学'，又往你碗里添了块藕。阳光、踏实、永远把你喂得饱饱的——这就是顾哥。",
+          "answerKeywords": []
+        },
+        {
+          "id": "C",
+          "text": "坐到江晚旁边，问问她今天咨询室那头累不累。",
+          "quality": "optimal",
+          "effects": {"affection_jiang": 2, "affection_shen": 0},
+          "feedback": "江晚怔了一下，随即弯起眼睛：'今天……是有人先问起我了。'她轻轻碰了碰你的杯子。最会听别人的人，被人听见时，眼里有微光。",
+          "answerKeywords": []
+        },
+        {
+          "id": "D",
+          "text": "陪沈亦舟一起作妖，跟他抢最后半盒泡面。",
+          "quality": "suboptimal",
+          "effects": {"affection_shen": 2},
+          "feedback": "你俩为半盒面争得面红耳赤，最后被苏念远程一条消息裁定'平分，谁多吃谁刷碗'。沈亦舟笑骂着把面让给你——损友的快乐，简单又上头。",
+          "answerKeywords": []
+        }
+      ]
+    },
+    {
+      "id": "side01_18",
+      "type": "dialogue",
+      "background": "staff_room",
+      "speaker": "narrator",
+      "text": "我手机在桌上嗡嗡震起来。是苏念，那个今晚没赶上、正在隔壁楼监考补考的闺蜜。\n屏幕上弹出一连串消息，我没忍住，笑出了声。"
+    },
+    {
+      "id": "side01_19",
+      "type": "dialogue",
+      "background": "staff_room",
+      "speaker": "苏念",
+      "text": "【苏念】你们居然背着我开深夜食堂？？？\n【苏念】给我播报！陆主任今晚有没有'破冰'？顾哥带没带吃的？江老师在不在？沈亦舟那个吃货是不是已经吃了三碗了？\n【苏念】重点——他给你煮咖啡没有！！别瞒我，你那点小心思我闭着眼都看得见。"
+    },
+    {
+      "id": "side01_20",
+      "type": "dialogue",
+      "background": "staff_room",
+      "speaker": "narrator",
+      "text": "我飞快把手机扣在桌上，脸有点烫。\n苏念这张'乌鸦嘴'，隔着一栋楼都能精准点穴。我偷偷瞄了一眼陆知行那边——他正低头看一份卷子，灯光落在他眼睫上，安静得像幅画。\n（没有，什么都没有。我在心虚什么。）"
+    },
+    {
+      "id": "side01_21",
+      "type": "dialogue",
+      "background": "staff_room",
+      "speaker": "顾承",
+      "expression": "smile",
+      "text": "（顾承一边收拾空碗，一边随口感慨，语气里是熬过无数个这样夜晚的笃定）\n你们看，这就是当老师的命——白天对着几十张脸，晚上对着几百张卷。\n可你说怪不怪，每年这么熬，第二年还是一群人傻乎乎地凑在一块儿，啃着泡面把它熬过去。（他笑着摇头）习惯了，就成家了。"
+    },
+    {
+      "id": "side01_22",
+      "type": "dialogue",
+      "background": "staff_room",
+      "speaker": "江晚",
+      "expression": "smile",
+      "text": "（江晚把最后一沓辅导记录理齐，轻声接道）\n顾哥这话，我记下了。\n其实今晚这顿饭，比我做十次团体辅导都管用。人撑不住的时候，不一定需要谁开导——有时候，只是需要这么一桌灯，和几个不走的人。"
+    },
+    {
+      "id": "side01_23",
+      "type": "dialogue",
+      "background": "staff_room",
+      "speaker": "陆知行",
+      "expression": "neutral",
+      "text": "（一直没参与闲聊的陆知行，忽然开了口，声音不高，却让满桌人都静了下来）\n……明天阅卷，分两组。改得久的先轮休。\n（他合上手里的卷子，目光在我脸上停了一瞬）尤其是你。别逞强。这个'传统'，今年我批了。"
+    },
+    {
+      "id": "side01_24",
+      "type": "dialogue",
+      "background": "staff_room",
+      "speaker": "narrator",
+      "text": "沈亦舟在旁边夸张地'哇'了一声，说陆主任今晚怕不是被卤味腐蚀了铁石心肠；顾承笑着给每个人续了最后一口热汤；江晚收走我手边那只空了的咖啡杯，杯底还留着一点没化开的暖意。\n窗外是漆黑的操场，窗内是这一小片不肯熄灭的灯。\n我望着这四个人——冰的、暖的、闹的、柔的，在同一张桌子上，谁也没多说什么，却让这个加班的深夜，变得像一顿真正的、有人等你的晚饭。\n（备课铃明天还会响。可今晚，我想把这盏灯，悄悄记进手账的最后一页。）"
+    }
+  ]
+}

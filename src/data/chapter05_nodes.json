@@ -1,0 +1,390 @@
+{
+  "chapterId": "core_ch05",
+  "title": "第五章 · 学习的密码",
+  "summary": "高一(7)班的陈嘉树，天天最后一个离开自习室，笔记抄得满满当当，成绩却卡在中游下不来——'努力却低效'的典型。江晚把这个孩子的卷子摊在我面前，说想和我一起，替他破解'学习的密码'。这一回，没有冰山上司也没有阳光学长，只有江晚和我，在心理咨询室、在空教室、在走廊的暮色里，一点点拆开'他到底是怎么学的'。三段对手戏，三组高频考点：学习理论流派的辨析、记忆与遗忘的规律、学习迁移与学习策略。教得越深，我越想多看她一眼。",
+  "designNote": "乙女向：第一人称心声(旁白)贯穿。本章双人成局——LEAD=江晚(女,百合可攻略,细腻克制)，沈亦舟做搭档调剂。江晚的'心动'走克制路线：一次并肩翻卷子、一次替我挡住自我怀疑、一次暮色里的对视，不越界、不滥情。学生陈嘉树仅为教学对象与事件源，绝不涉及恋爱。三考点各包在一段有 beat 的对手戏里，走'剧情讲授→随堂检测(knowledgeCheck)→应用选择→反馈→心动'结构。章末月考为冷测 core_ch05_mock。贯穿钩子：陈嘉树那本'抄得最满却记得最少'的笔记。",
+  "characters": ["jiang", "shen"],
+  "students": ["陈嘉树"],
+  "valueFields": ["professionalSkill", "studentTrust", "classOrder", "ethicsRisk", "lawRisk", "examScore", "affection_lu", "affection_jiang", "affection_gu", "affection_shen"],
+  "note": "ethicsRisk/lawRisk 为逆向指标，越低越好。knowledgeCheck 指向 chapter05_quiz.json 的题目 id。",
+  "nodes": [
+    {
+      "id": "ch05_intro_1",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "narrator",
+      "text": "十一月的傍晚来得早。\n我抱着一摞要批的卷子推开心理咨询室的门，暖光、绿植、淡淡的茶香——还有江晚。她坐在窗边，面前摊着一本厚厚的笔记，眉头微蹙。\n（自从第一天在这间屋子认识她，我好像越来越喜欢往这儿跑。）"
+    },
+    {
+      "id": "ch05_intro_2",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "worried",
+      "text": "（她抬头，看见是我，眉头松了些）来得正好。\n你看这个孩子——高一(7)班的陈嘉树。每天最后一个走，笔记抄得密不透风，错题本三大本，可成绩一直卡在中游，怎么也上不去。\n他妈妈昨天来找我，红着眼问：'我儿子这么用功，是不是脑子笨？'"
+    },
+    {
+      "id": "ch05_intro_3",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "neutral",
+      "text": "（她把那本笔记轻轻推到我面前，指尖在密密麻麻的字上点了点）\n他不笨。我翻了一晚上——问题不在'努不努力'，在'怎么学'。\n你愿不愿意，陪我把这孩子'学习的密码'，一起拆开看看？这事儿，我一个人想，总差个能搭话的人。"
+    },
+    {
+      "id": "ch05_intro_4",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "narrator",
+      "text": "她说'差个能搭话的人'的时候，眼睛是看着我的。\n（我想起她说过——这间屋子平时只有她一个人在听别人说话。）\n我把卷子往旁边一放，拉了把椅子坐到她身边：'拆。从哪儿开始？'\n她笑了一下，那点笑意，比窗外的暮色软。"
+    },
+    {
+      "id": "ch05_a_teach_1",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "smile",
+      "text": "（她翻开笔记第一页）想拆开'怎么学'，得先有把尺子——也就是各家学习理论怎么看'学习是怎么发生的'。考试最爱拿情境让你辨：这是哪一派、哪个人、哪个概念。\n先说**行为主义**：它只看刺激和反应，不管脑子里发生了什么。"
+    },
+    {
+      "id": "ch05_a_teach_2",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "smile",
+      "text": "行为主义里你要分清两个人：**桑代克的试误说**——学习是'尝试—错误'，在一次次试错中，把正确反应和情境联结起来，讲究练习律、效果律；\n**斯金纳的操作条件作用**——核心是'强化'，行为后果决定行为频率，奖励(正强化)让行为变多。\n陈嘉树反复刷同类错题、做对了就划个勾给自己'奖励'——这就带着操作条件作用的影子。"
+    },
+    {
+      "id": "ch05_a_teach_3",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "neutral",
+      "text": "再说**认知派**，它关心脑子里怎么加工知识：\n**布鲁纳的发现学习**——老师给材料，让学生自己探究、发现规律，强调'学科结构'和内在动机；\n**奥苏贝尔的有意义接受学习**——主张通过'先行组织者'把新知识挂到已有认知结构上，关键是新旧知识建立非任意的、实质性联系。\n一句话区别：发现学习让你**自己找**，有意义接受学习是老师**讲清楚、你挂上去**。"
+    },
+    {
+      "id": "ch05_a_teach_4",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "neutral",
+      "text": "还有两派别混：\n**建构主义**——知识不是被灌进去的，是学习者在已有经验上**主动建构**出来的，强调情境、协作、对话；\n**人本主义罗杰斯**——主张'以学生为中心'、有意义的自由学习，老师做'促进者'，营造真诚、接纳、共情的氛围。\n（她侧过脸看我）记法：行为主义看'外部刺激—反应'，认知看'内部加工'，建构主义看'主动建构'，人本主义看'人的成长与自我'。"
+    },
+    {
+      "id": "ch05_a_teach_5",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "smile",
+      "text": "（她替我把被风吹乱的一页卷子按住，发梢扫过我的手腕，温温的）\n陈嘉树最大的毛病，就是把'抄完=学会'，纯靠反复抄写这种机械重复。\n来，先考你一道——就当我们一起给他诊断。把情境对到那个最准的概念上。"
+    },
+    {
+      "id": "ch05_a_apply",
+      "type": "choice",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "smile",
+      "knowledgeCheck": "q_learn_theory2_01",
+      "text": "（我答完，她轻轻'嗯'了一声，眼里有赞许）\n那再贴着陈嘉树往下问：他学新课文，总是死记硬背、和已经学过的东西完全不挂钩。如果要让他学得'有意义'，从理论上看，最该补的是哪一招？",
+      "examTags": {
+        "subject": "302",
+        "module": "中学生学习心理",
+        "examPoint": "学习理论流派辨析（行为主义/认知/建构主义/人本主义）在学习诊断中的应用",
+        "questionType": "材料分析"
+      },
+      "choices": [
+        {
+          "id": "A",
+          "text": "用'先行组织者'帮他把新知识和已有认知结构挂钩，建立实质性联系（奥苏贝尔有意义接受学习）。",
+          "quality": "optimal",
+          "effects": {"professionalSkill": 2, "studentTrust": 1, "classOrder": 0, "ethicsRisk": -1, "lawRisk": 0, "examScore": 3, "affection_jiang": 3},
+          "feedback": "对。'死记硬背、不和旧知识挂钩'正是机械学习，奥苏贝尔的有意义接受学习靠先行组织者建立新旧知识的非任意、实质性联系，对症。",
+          "answerKeywords": ["奥苏贝尔", "有意义接受学习", "先行组织者", "新旧知识实质性联系", "认知结构"]
+        },
+        {
+          "id": "B",
+          "text": "让他每篇课文都自己从头探究、发现规律，老师尽量不讲（布鲁纳发现学习）。",
+          "quality": "suboptimal",
+          "effects": {"professionalSkill": 1, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": 1, "affection_jiang": 1},
+          "feedback": "发现学习方向不错，但本题的病根是'新知识没挂到旧知识上'，更对症的是有意义接受学习。注意区分发现学习(自己找)与有意义接受学习(挂上去)。",
+          "answerKeywords": ["布鲁纳发现学习（不够对症）", "宜先建立新旧联系"]
+        },
+        {
+          "id": "C",
+          "text": "他每抄对一遍就给自己一个奖励，靠强化把抄写行为变多（斯金纳操作条件作用）。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -1, "studentTrust": -1, "classOrder": 0, "ethicsRisk": 1, "lawRisk": 0, "examScore": -2, "affection_jiang": -1},
+          "feedback": "强化只会让'机械抄写'这个低效行为更顽固，治标反伤本。问题恰恰是抄写无意义，不该再强化它。",
+          "answerKeywords": ["误用操作条件作用", "强化了低效行为"]
+        },
+        {
+          "id": "D",
+          "text": "让他不停尝试、试错，错够了自然就对了（桑代克试误说）。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -1, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 1, "lawRisk": 0, "examScore": -2, "affection_jiang": -1},
+          "feedback": "试误说适用于盲目尝试型的技能学习，对'理解性的课文学习'并不对症，也没解决'不和旧知识挂钩'这个核心。材料题会因张冠李戴失分。",
+          "answerKeywords": ["桑代克试误说（张冠李戴）", "未解决意义联系"]
+        }
+      ]
+    },
+    {
+      "id": "ch05_a_after",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "smile",
+      "text": "（她在笔记空白处替我把答案要点记下，字迹清秀）\n看，你一下就摸到了——他不是笨，是没人教过他'怎么把新东西挂到旧东西上'。\n这孩子的妈妈要是听见你刚才那段，得当场松一口气。"
+    },
+    {
+      "id": "ch05_a_heart",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "narrator",
+      "text": "她说话时，侧脸被台灯描出一道很柔的边。\n我忽然意识到，我们的椅子不知什么时候已经挨得很近，近到能闻到她身上淡淡的茶香。\n（江晚……平时总在听别人，今天却肯把一整页笔记，和我一起翻。）\n我没敢看她太久，赶紧低头去看陈嘉树的卷子——可那行字，我看了三遍都没看进去。"
+    },
+    {
+      "id": "ch05_t1",
+      "type": "dialogue",
+      "background": "corridor",
+      "speaker": "沈亦舟",
+      "expression": "smile",
+      "text": "（走廊里，沈亦舟拎着两瓶热豆奶晃过来，挤眉弄眼）\n哟，又泡在江老师那屋？我说你最近往咨询室跑得比往厕所还勤。\n（他塞给我一瓶）正经的——陈嘉树这孩子我也教，他不是不背，是'背了就忘'。你俩要拆密码，下一关绕不开'记忆'这道坎。江老师在空教室等你呢，去吧。"
+    },
+    {
+      "id": "ch05_b_teach_1",
+      "type": "dialogue",
+      "background": "classroom",
+      "speaker": "江晚",
+      "expression": "smile",
+      "text": "（空教室里，江晚把陈嘉树一周的背诵记录画成一条曲线，贴在黑板上）\n你看这条线——他周一背得滚瓜烂熟，周二忘一半，到周末几乎清零。这不是他一个人的毛病，这是规律。\n**艾宾浩斯遗忘曲线**：遗忘的进程是不均匀的，**先快后慢**——刚学完忘得最快，之后越来越慢。"
+    },
+    {
+      "id": "ch05_b_teach_2",
+      "type": "dialogue",
+      "background": "classroom",
+      "speaker": "江晚",
+      "expression": "neutral",
+      "text": "既然'先快后慢'，对策就清楚了：\n**及时复习**——趁还没忘大半，抢在遗忘最快的那段赶紧复习；\n**分散复习**——同样的时间，分几次复习比一次集中'啃'效果好；\n**过度学习**——学到刚好会了别停，再多学一点点，**约150%**时记忆保持最好；超太多则是浪费，效率反降。\n陈嘉树的错，是'一次背到吐，背完就扔'——集中学习又没及时复习，正好踩在遗忘最快的那段。"
+    },
+    {
+      "id": "ch05_b_teach_3",
+      "type": "dialogue",
+      "background": "classroom",
+      "speaker": "江晚",
+      "expression": "neutral",
+      "text": "再补一块常考的——**记忆的三级系统**：\n**瞬时记忆(感觉记忆)**，时间极短、容量大，像照相一闪而过；\n**短时记忆**，约5到9个组块、维持几十秒，是'当下正在用'的工作台；\n**长时记忆**，容量近乎无限、保持长久。\n信息要进长时记忆，得靠**复述**——尤其是带理解的精细复述，而不是干巴巴地重复。陈嘉树的抄写，恰恰是没理解的机械复述。"
+    },
+    {
+      "id": "ch05_b_teach_4",
+      "type": "dialogue",
+      "background": "classroom",
+      "speaker": "江晚",
+      "expression": "smile",
+      "text": "（她回过头，发现我一直盯着她，愣了半秒，耳尖微微泛红，却很快稳住）\n……怎么了，是我讲得太快？\n（不，是你认真讲课的样子太好看了。这句话我当然没敢说出口。）\n来，趁热考你一道——把陈嘉树的复习方案，对到那个最准的规律上。"
+    },
+    {
+      "id": "ch05_b_apply",
+      "type": "choice",
+      "background": "classroom",
+      "speaker": "江晚",
+      "expression": "smile",
+      "knowledgeCheck": "q_memory2_01",
+      "text": "（她答完点头，把粉笔递到我手里）\n那你来排——陈嘉树周日刚背完一整章古诗文，下一步怎么安排复习，最能抗住遗忘？",
+      "examTags": {
+        "subject": "302",
+        "module": "中学生学习心理",
+        "examPoint": "记忆与遗忘规律（艾宾浩斯曲线·先快后慢/及时复习/分散复习/过度学习）的应用",
+        "questionType": "材料分析"
+      },
+      "choices": [
+        {
+          "id": "A",
+          "text": "当天晚上和第二天先各复习一次（及时复习），之后改成隔几天一次的分散复习，每次学到刚会再多巩固一点（过度学习约150%）。",
+          "quality": "optimal",
+          "effects": {"professionalSkill": 2, "studentTrust": 2, "classOrder": 0, "ethicsRisk": -1, "lawRisk": 0, "examScore": 3, "affection_jiang": 3},
+          "feedback": "对。先抢在遗忘最快段及时复习，再用分散复习拉长保持，配合约150%的过度学习——三招正面硬刚'先快后慢'，全踩在采分点上。",
+          "answerKeywords": ["及时复习", "分散复习", "过度学习150%", "对抗先快后慢"]
+        },
+        {
+          "id": "B",
+          "text": "等到月考前一晚，再把这一章集中突击复习一遍。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -2, "studentTrust": -1, "classOrder": 0, "ethicsRisk": 1, "lawRisk": 0, "examScore": -3, "affection_jiang": -2},
+          "feedback": "考前突击=没有及时复习+集中复习，正好放任了遗忘最快的那一段，还违背分散复习。这是陈嘉树原来的错法，必扣分。",
+          "answerKeywords": ["违背及时复习", "集中突击低效", "放任遗忘高峰"]
+        },
+        {
+          "id": "C",
+          "text": "让他把每首诗一口气抄写五十遍，抄到完全不会错为止。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -2, "studentTrust": -1, "classOrder": 0, "ethicsRisk": 1, "lawRisk": 0, "examScore": -3, "affection_jiang": -2},
+          "feedback": "无理解的机械复述+严重超量，远超过度学习150%的最佳点，效率反降，还加重负担。记忆靠的是带理解的精细复述与合理复习节奏。",
+          "answerKeywords": ["机械复述无效", "超量浪费", "缺理解"]
+        },
+        {
+          "id": "D",
+          "text": "今天背完就先放着，等他自己'什么时候想起来'再说。",
+          "quality": "suboptimal",
+          "effects": {"professionalSkill": 0, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": 0, "affection_jiang": 0},
+          "feedback": "完全不安排复习，等于直接交给遗忘曲线。看似'顺其自然'，其实放弃了及时复习这个关键窗口，留存率极低。",
+          "answerKeywords": ["未及时复习", "放任遗忘"]
+        }
+      ]
+    },
+    {
+      "id": "ch05_b_after",
+      "type": "dialogue",
+      "background": "classroom",
+      "speaker": "江晚",
+      "expression": "smile",
+      "text": "（她拿起板擦把曲线擦掉一半，又在旁边画了几道间隔的小竖线，像是复习的节拍）\n你看，把这条'先快后慢'的曲线，用复习一格一格地'撑'住——他妈妈口中那个'笨孩子'，缺的从来不是脑子，是节奏。\n（她侧头看我，声音放轻）谢谢你今天又陪我到这么晚。"
+    },
+    {
+      "id": "ch05_b_heart",
+      "type": "dialogue",
+      "background": "classroom",
+      "speaker": "narrator",
+      "text": "空教室只剩我们两个，窗外天已经全黑了，走廊的声控灯灭了又被远处的脚步声点亮。\n她把粉笔灰在手上拍了拍，无意间蹭到了脸颊。我下意识抬手想替她擦，又在半空顿住，最后只是指了指自己的脸：'这儿，沾到了。'\n她'啊'了一声，慌忙去擦，反而擦花成一道。我们俩对着那道白印，同时笑出了声。\n（这间总是很安静的屋子，今晚好像，有了点别的温度。）"
+    },
+    {
+      "id": "ch05_t2",
+      "type": "dialogue",
+      "background": "corridor",
+      "speaker": "沈亦舟",
+      "expression": "smile",
+      "text": "（第二天午后，沈亦舟堵在走廊上，一脸'我都懂'的坏笑）\n陈嘉树今早跟我说，他按你俩教的法子复习，居然第一次默写满分！这孩子眼睛都亮了。\n（他拍拍我肩）就差最后一块了——他还有个怪毛病：数学函数学得挺好，一换成物理里的图像题就懵，知识'搬不过去'。这是'迁移'和'学习策略'的事，江老师还是在咨询室，去收尾吧。"
+    },
+    {
+      "id": "ch05_c_teach_1",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "smile",
+      "text": "（咨询室，江晚把数学卷和物理卷并排摊开）\n最后一块密码——**学习迁移**：一种学习对另一种学习的影响。它有好几组要分清。\n按**影响方向**：促进的叫**正迁移**(数学函数帮他理解物理图像)，干扰、阻碍的叫**负迁移**(把生活口语习惯带进英语写作)。"
+    },
+    {
+      "id": "ch05_c_teach_2",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "neutral",
+      "text": "再按**时间先后**：先学的影响后学的，叫**顺向迁移**；后学的反过来影响先学的，叫**逆向迁移**。\n还有按**抽象与概括水平**：**水平迁移(横向)**是同一难度层次间的相互影响(学了苹果、梨，理解'水果')；**垂直迁移(纵向)**是上下位、不同概括层次间的影响(先会加减，再学乘除)。\n陈嘉树'函数搬不到图像题'，本该是正迁移没发生——他没看出两者底层是同一个数学结构。"
+    },
+    {
+      "id": "ch05_c_teach_3",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "neutral",
+      "text": "想让迁移真的发生，得教他会'管理自己的学习'——也就是**学习策略**，分三类：\n**认知策略**——直接加工材料：复述、精细加工(联想、举例)、组织(列提纲、画结构图)；\n**元认知策略**——对自己学习的'监控与调节'：计划、监视、调节(比如'我这步是不是没理解'就停下来检查)；\n**资源管理策略**——管时间、环境、努力、求助(合理安排时间、遇到不懂会去问)。\n一句话：认知策略管'怎么记怎么加工'，元认知策略管'我会不会、要不要调整'，资源管理管'外部条件'。"
+    },
+    {
+      "id": "ch05_c_teach_4",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "smile",
+      "text": "（她合上两份卷子，转过来认真看着我，难得地，没有先去看别的）\n陈嘉树的'密码'，到这儿就拆全了：会挂知识、会抗遗忘、会迁移会管自己。\n这一路，我说真的——很久没有人，肯陪我把一个孩子想得这么细了。\n来，最后一道，替他收尾。"
+    },
+    {
+      "id": "ch05_c_apply",
+      "type": "choice",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "smile",
+      "knowledgeCheck": "q_transfer_01",
+      "text": "（她把笔放进我手心，指尖停了一瞬才收回）\n陈嘉树'数学函数好、物理图像题懵'，你想帮他把数学里的本事用到物理上。从迁移和策略的角度，最该做什么？",
+      "examTags": {
+        "subject": "302",
+        "module": "中学生学习心理",
+        "examPoint": "学习迁移分类与学习策略（正负/顺逆/水平垂直；认知/元认知/资源管理）的应用",
+        "questionType": "材料分析"
+      },
+      "choices": [
+        {
+          "id": "A",
+          "text": "帮他点破函数和物理图像'底层是同一种数学关系'，再教他每做一道就自检'这和我会的哪个像'，促成正迁移。",
+          "quality": "optimal",
+          "effects": {"professionalSkill": 2, "studentTrust": 2, "classOrder": 0, "ethicsRisk": -1, "lawRisk": 0, "examScore": 3, "affection_jiang": 3},
+          "feedback": "对。揭示两个领域的共同结构/原理，是促进正迁移的关键；让他自检'这像我会的什么'用的是元认知策略。迁移与策略一起到位。",
+          "answerKeywords": ["促进正迁移", "揭示共同结构", "元认知自我监控", "概括化原理"]
+        },
+        {
+          "id": "B",
+          "text": "让他把物理图像题当成全新的东西，从零开始反复刷题。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -2, "studentTrust": -1, "classOrder": 0, "ethicsRisk": 1, "lawRisk": 0, "examScore": -3, "affection_jiang": -2},
+          "feedback": "把本可迁移的知识当成毫无关联的新内容，正是放弃了正迁移、退回机械刷题，与本章诊断完全相反。",
+          "answerKeywords": ["放弃正迁移", "退回机械刷题"]
+        },
+        {
+          "id": "C",
+          "text": "只帮他列个漂亮的提纲、画结构图就算了（只给认知策略）。",
+          "quality": "suboptimal",
+          "effects": {"professionalSkill": 1, "studentTrust": 1, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": 1, "affection_jiang": 1},
+          "feedback": "组织、画结构图是认知策略，有帮助，但没点破'共同结构'、也没教他监控迁移，单给认知策略不够对症。本题更要的是促正迁移+元认知。",
+          "answerKeywords": ["只给认知策略（不够）", "未促迁移与监控"]
+        },
+        {
+          "id": "D",
+          "text": "提醒他物理和数学'完全不一样'，别把数学思路带过来，免得搞混。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -2, "studentTrust": -1, "classOrder": 0, "ethicsRisk": 1, "lawRisk": 0, "examScore": -3, "affection_jiang": -2},
+          "feedback": "这是怕负迁移就把正迁移也堵死了，等于亲手切断本可发生的正向促进。方向相反，材料题硬伤。",
+          "answerKeywords": ["误堵正迁移", "因噎废食"]
+        }
+      ]
+    },
+    {
+      "id": "ch05_c_after",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "smile",
+      "text": "（她把陈嘉树那本'抄得最满'的笔记轻轻合上，放回我手边）\n这本笔记，下周该重写了——不是抄得更满，是学会挂知识、留记忆、能迁移。\n我会把咱们今天理出来的方法，一条条写给他和他妈妈。这一回，他们该听见'你不笨'了。"
+    },
+    {
+      "id": "ch05_c_heart",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "narrator",
+      "text": "暮色又一次漫进这间屋子，绿植的影子被拉得很长。\n她送我到门口，忽然轻声说：'下次……不用等有学生，你也可以来。'\n说完她像是有点不好意思，先低了头。\n（我握着那本失而复得般的笔记，心跳又一次漏了拍。这间她口中'只有一个人在听别人说话'的屋子，我想，以后会有两个人了。）"
+    },
+    {
+      "id": "ch05_end_1",
+      "type": "dialogue",
+      "background": "corridor",
+      "speaker": "沈亦舟",
+      "expression": "smile",
+      "text": "（走廊尽头，沈亦舟靠着窗，逆着暮光朝我招手）\n收工啦？我刚听说，陈嘉树妈妈给江老师发了一长串感谢，江老师把功劳全推给你了。\n（他难得正经地笑了笑）你俩这一章，把一个孩子从'我是不是笨'里捞出来了——这事儿，比泡面庆祝有分量。走，回办公室，把今天学的，记进手账。"
+    },
+    {
+      "id": "ch05_end_2",
+      "type": "dialogue",
+      "background": "staff_room",
+      "speaker": "narrator",
+      "text": "回到办公室，我把陈嘉树的卷子放进文件夹，最上面压着江晚替我记的那页要点，字迹清秀。\n这一章没有惊心动魄的事，只有一盏台灯、两把挨近的椅子、一条被复习撑住的遗忘曲线。\n（学习有密码，心动好像也有。和她并肩拆一个孩子的'怎么学'，竟成了我这阵子最盼的事。）\n备课铃，明天还会响。但翻开手账的这一刻，那间安静的屋子里，已经，多了一个我。"
+    },
+    {
+      "id": "ch05_end",
+      "type": "summary",
+      "background": "staff_room",
+      "speaker": "narrator",
+      "text": "（第五章落幕。和江晚一起拆开的三段'学习密码'，连同心跳，一条条记进手账吧——人记进去了，分也得记进去。）",
+      "review": {
+        "learnedExamPoints": [
+          "302-学习心理-学习理论流派辨析（行为主义:桑代克试误/斯金纳操作条件；认知:布鲁纳发现学习/奥苏贝尔有意义接受；建构主义；人本主义罗杰斯）— 江晚",
+          "302-学习心理-记忆与遗忘（艾宾浩斯曲线先快后慢/及时·分散复习/过度学习150%/记忆三级系统）— 江晚",
+          "302-学习心理-学习迁移与学习策略（正负·顺逆·水平垂直迁移；认知/元认知/资源管理策略）— 江晚"
+        ],
+        "structure": "三个考点都从陈嘉树'努力却低效'这一桩事长出来：死记硬背不挂旧知→学习理论流派；背完就忘→记忆与遗忘；函数搬不到图像题→迁移与策略。走'剧情讲授→随堂检测(knowledgeCheck)→应用选择→反馈→心动'。章末月考 core_ch05_mock 为冷测。",
+        "mockExam": "core_ch05_mock",
+        "recommendedReview": [
+          "答错学习理论→江晚重讲四派与各代表人物概念（试误/操作条件/发现学习/有意义接受/建构/人本）",
+          "答错记忆遗忘→江晚重讲艾宾浩斯先快后慢与及时·分散复习·过度学习150%",
+          "答错迁移策略→江晚重讲正负/顺逆/水平垂直迁移与认知·元认知·资源管理三类策略"
+        ]
+      }
+    }
+  ]
+}

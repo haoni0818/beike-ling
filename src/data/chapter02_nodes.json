@@ -1,0 +1,362 @@
+{
+  "chapterId": "core_ch02",
+  "title": "第二章 · 第一堂公开课",
+  "summary": "入职第二周，你被排了人生第一节'推门公开课'，评委里赫然坐着教务主任陆知行。前一晚，损友搭档沈亦舟陪你磨课，帮你把'满堂灌'改成'会启发'；上课时刺头林小满中途捣乱，幸亏顾承提前给你递过处理课堂问题行为的招；课后江晚又点拨你，怎么用学习动机把那些闷头不说话的孩子'撬'开。三桩事、三位前辈，把三个高频考点用进了你的第一堂课。而陆知行那张评分表的角落，又出现了那个小记号。",
+  "designNote": "乙女向第二章：第一人称心声贯穿；以'第一堂公开课'为线把三考点串成一条课前→课中→课后的完整教学闭环。沈亦舟(教学原则·磨课搭档)→顾承(课堂问题行为·临场救火)→江晚(学习动机·课后复盘)。陆知行作公开课评委做简短cameo，延续第一章'名字旁的小记号'钩子(冷而公正，藏一丝暖)。学生(林小满)仅为教学对象与事件源，绝不涉及恋爱。teach→随堂检测→应用 结构与三考点保留。新模块不与第一章重复(学生权利/长善救失/辅导方法对症已讲过)。",
+  "characters": ["shen", "gu", "jiang", "lu"],
+  "students": ["林小满"],
+  "valueFields": ["professionalSkill", "studentTrust", "classOrder", "ethicsRisk", "lawRisk", "examScore", "affection_lu", "affection_jiang", "affection_gu", "affection_shen"],
+  "note": "ethicsRisk/lawRisk 为逆向指标，越低越好。knowledgeCheck 指向 chapter02_quiz.json 的题目 id。",
+  "nodes": [
+    {
+      "id": "ch02_intro_1",
+      "type": "dialogue",
+      "background": "staff_room",
+      "speaker": "narrator",
+      "text": "入职第二周。我还没把同事的名字认全，一张排课表先把我钉在了原地。\n第三周周四，第二节，高一(7)班——'推门公开课'。课题《细胞膜的结构与功能》。备注栏那行小字看得我心一沉：评委名单，第一个名字，陆知行。\n（……第一节公开课，连个热身都不给，直接上满级难度。）"
+    },
+    {
+      "id": "ch02_intro_2",
+      "type": "dialogue",
+      "background": "staff_room",
+      "speaker": "沈亦舟",
+      "expression": "grin",
+      "text": "（两杯冒着热气的可可'咚咚'落在我桌上，沈亦舟一屁股坐到对面）\n听说了听说了！头一节公开课就摊上陆主任坐镇，你这手气，我服。\n别哭丧着脸——今晚我陪你磨。说课、试讲，去年我面试那套苦头全吃过一遍。你要踩的坑，我替你踩在前头了，记得吧？"
+    },
+    {
+      "id": "ch02_intro_3",
+      "type": "dialogue",
+      "background": "staff_room",
+      "speaker": "narrator",
+      "text": "我把连夜赶出来的教案推过去——满满三页，密密麻麻全是字，连一句过渡都没漏。\n他翻了两页，眉头越拧越紧，最后'啪'一声合上本子，抬眼看我，那表情写得清清楚楚：你完了。\n（怎、怎么了……我可是熬到一点才写完的啊。）"
+    },
+    {
+      "id": "ch02_a_teach_1",
+      "type": "dialogue",
+      "background": "staff_room",
+      "speaker": "沈亦舟",
+      "expression": "serious",
+      "text": "（他难得收了那张笑脸，把教案推回我面前，指尖点着满纸的字）\n认真是真认真。可你这哪是上课，是照着稿子念。从头到尾，你说、你写、你总结，学生连插嘴的缝都没有。\n这种'满堂灌'，恰恰是陆主任最看不上的。你这堂课缺的，是一条最基本的教学原则——**启发性原则**。"
+    },
+    {
+      "id": "ch02_a_teach_2",
+      "type": "dialogue",
+      "background": "staff_room",
+      "speaker": "沈亦舟",
+      "expression": "smile",
+      "text": "（他抽过笔，在我教案背面边写边讲，像在给我画一张避坑地图）\n这几条原则最爱考、最爱混，我帮你按'考的时候怎么认'捋一遍：\n**启发性**——看老师有没有设疑、引导，让学生自己想、自己得出结论，它反的就是你这种满堂灌；\n**直观性**——看有没有上实物、模型、图片、动画，先给学生一点感性认识，细胞膜你就能摆个模型；\n**巩固性**——'学而时习之'，看有没有及时复习、反复练习把知识记牢；\n**循序渐进**——看有没有按学科逻辑和认知顺序，由易到难、由浅入深，不能跳着来。"
+    },
+    {
+      "id": "ch02_a_teach_3",
+      "type": "dialogue",
+      "background": "staff_room",
+      "speaker": "沈亦舟",
+      "expression": "smile",
+      "text": "一句话帮你卡死区别：**启发**看'有没有让学生主动想'，**直观**看'有没有用图像实物帮理解'，**巩固**看'有没有复习练习记牢'，**循序渐进**看'有没有按顺序由浅入深'。\n（他凑近帮我圈重点，热可可的甜味混着他身上淡淡的洗衣液味。我盯着他笔尖，忽然觉得这顿'批评'，挨得也没那么疼了。）\n来，趁热考你一道，就当顺手帮你这堂课定个方向。"
+    },
+    {
+      "id": "ch02_a_apply",
+      "type": "choice",
+      "background": "staff_room",
+      "speaker": "沈亦舟",
+      "expression": "smile",
+      "knowledgeCheck": "q_teach_principle_01",
+      "text": "（他把我那三页字纸抖了抖，挑眉）\n那现在说——你这节《细胞膜》，第一刀该往哪儿动，才能从'念稿子'变成'像样的课'？陆主任那一关，靠的就是这一刀。",
+      "examTags": {
+        "subject": "302",
+        "module": "中学教学",
+        "examPoint": "教学原则的辨别与运用（启发性 vs 直观性 vs 巩固性 vs 循序渐进）",
+        "questionType": "材料分析"
+      },
+      "choices": [
+        {
+          "id": "A",
+          "text": "把'我讲'改成'设疑引导'：抛问题让学生先猜细胞膜怎么控制物质进出，引导他们自己得出结论。",
+          "quality": "optimal",
+          "effects": {"professionalSkill": 2, "studentTrust": 1, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": 3, "affection_shen": 2},
+          "feedback": "对。设疑、引导、让学生主动思考并自己得出结论，正是启发性原则，专治你这堂'满堂灌'。这也是公开课评委最看重的一条。",
+          "answerKeywords": ["启发性原则", "调动主动性", "设疑引导", "反对满堂灌", "学生自己得出结论"]
+        },
+        {
+          "id": "B",
+          "text": "加一段动画和细胞膜模型演示，让学生先看明白结构。",
+          "quality": "suboptimal",
+          "effects": {"professionalSkill": 1, "studentTrust": 1, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": 1, "affection_shen": 1},
+          "feedback": "用模型动画帮理解，这是直观性原则，本身很好、也该加。但你这堂课最致命的是'全程没让学生动脑'，最该先补的是启发性。注意区分直观与启发。",
+          "answerKeywords": ["直观性原则（不够对症）", "宜先补启发"]
+        },
+        {
+          "id": "C",
+          "text": "课末多留十分钟做配套练习、反复背诵记牢知识点。",
+          "quality": "suboptimal",
+          "effects": {"professionalSkill": 0, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": 0, "affection_shen": 0},
+          "feedback": "及时复习练习是巩固性原则，方向不错，但它解决的是'记不牢'，解决不了你这堂'学生全程不动脑'的核心病。本题最对症的是启发性原则。",
+          "answerKeywords": ["巩固性原则（不对症）", "未解决满堂灌"]
+        },
+        {
+          "id": "D",
+          "text": "干脆把内容讲得更细更全，从头到尾一句不落，确保不出错。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -2, "studentTrust": -1, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": -3, "affection_shen": -1},
+          "feedback": "讲得越满越糟。一味灌输、不给学生思考空间，正是启发性原则反对的'注入式/满堂灌'，公开课必扣分。",
+          "answerKeywords": ["满堂灌", "注入式", "违反启发性"]
+        }
+      ]
+    },
+    {
+      "id": "ch02_a_after",
+      "type": "dialogue",
+      "background": "staff_room",
+      "speaker": "沈亦舟",
+      "expression": "smile",
+      "text": "（他把我那三页讲稿改成了一串'问题链'，删到只剩半页，递回来）\n瞧——课不是讲得多就好，是让学生脑子转起来才好。明天你就抛问题、然后等，等他们自己往外蹦答案，千万别急着自己接。\n（窗外天早黑透了，他陪我磨到这会儿还没走。我心里悄悄软了一下。）"
+    },
+    {
+      "id": "ch02_a_heart",
+      "type": "dialogue",
+      "background": "staff_room",
+      "speaker": "narrator",
+      "text": "临走他在门口回头，冲我比了个加油的手势，笑得没心没肺：'放心，明天我坐后排给你举牌。'\n（八成是随口一说。可那张被他改得清清爽爽的教案，还有那句'我在后排'，让我紧绷了一整天的肩膀，忽然就塌了下来。）\n（沈亦舟啊沈亦舟……你这人，怎么总在我最慌的时候，刚好出现。）"
+    },
+    {
+      "id": "ch02_t1",
+      "type": "dialogue",
+      "background": "corridor",
+      "speaker": "顾承",
+      "expression": "smile",
+      "text": "（第二天课前，我在(7)班门口撞见顾承。他靠着墙，端着保温杯，笑得跟没事人似的）\n紧张啦新老师？松快点。不过我得先给你打个底——这节课在我们班上，林小满那丫头，最近又有点'皮'。\n推门课上她要真给你来一出，你别慌。我教你几招，处理课堂问题行为，老班主任的看家本领。"
+    },
+    {
+      "id": "ch02_b_teach_1",
+      "type": "dialogue",
+      "background": "corridor",
+      "speaker": "顾承",
+      "expression": "serious",
+      "text": "（他放下保温杯，神色认真了几分，压低声音）\n先记死一句：处理课堂违纪，**最忌讳的就是停下整堂课、当众跟她'刚正面'**。你一急、一吼，全班的眼睛唰地全黏她身上了——正中她下怀，课也散了。\n真正高明的处理，讲究'不动声色、不打断教学'。我给你四招，由轻到重。"
+    },
+    {
+      "id": "ch02_b_teach_2",
+      "type": "dialogue",
+      "background": "corridor",
+      "speaker": "顾承",
+      "expression": "smile",
+      "text": "（他伸出四根手指，一根一根掰给我看）\n**非言语暗示**——一个眼神、一个手势、或者讲到她那儿故意停一下，不出声就把她点醒；\n**邻近控制**——边讲边踱到她旁边，老师人一站近，她自然就收敛；\n**有意忽视**——她那点小动作要是冲着博关注来的，你越理她越来劲，那就当没看见，不给她搭台；\n**正面引导/移除诱因**——顺势点她答个一定答得上的简单问题，或把她手里玩的东西自然收走，把人拉回课堂。\n这四招有个共同点：**都不打断上课、不当众羞辱**。记住这条，你就丢不了。"
+    },
+    {
+      "id": "ch02_b_teach_3",
+      "type": "dialogue",
+      "background": "classroom",
+      "speaker": "林小满",
+      "text": "（公开课进行到一半。我刚抛出一个问题，林小满'啪'地把笔一摔，抱着臂往后一靠，故意拔高了嗓门）\n这破课有啥好上的。又不考……老师你讲你的，别叫我。\n（全班的目光'唰'地分了两半，一半看她，一半瞟向后排的评委。我后背瞬间沁出一层汗。）"
+    },
+    {
+      "id": "ch02_b_teach_4",
+      "type": "dialogue",
+      "background": "classroom",
+      "speaker": "narrator",
+      "text": "（顾哥早上那几句话在我脑子里过电：别停课、别刚正面、别当众羞辱。）\n后排，陆知行抬起了眼，笔尖悬在评分表上方，没落下。再后一点，沈亦舟悄悄朝我做了个'稳住'的口型。\n（就是现在。这一下，决定我这堂课，是塌，还是稳。）"
+    },
+    {
+      "id": "ch02_b_apply",
+      "type": "choice",
+      "background": "classroom",
+      "speaker": "narrator",
+      "knowledgeCheck": "q_class_behavior_01",
+      "text": "全班都在等我反应。林小满抱着臂，挑衅地盯着我看。\n（这一下我该怎么接——既不被她带偏，又不伤她，还得让课不散？）",
+      "examTags": {
+        "subject": "302",
+        "module": "班级管理",
+        "examPoint": "课堂问题行为的处理（非言语暗示/邻近控制/有意忽视/正面引导 vs 当众训斥）",
+        "questionType": "材料分析"
+      },
+      "choices": [
+        {
+          "id": "A",
+          "text": "不停课，边讲边自然走到她身边，用眼神和站位提醒她，再顺势点她答一个她答得上的简单问题。",
+          "quality": "optimal",
+          "effects": {"professionalSkill": 2, "studentTrust": 2, "classOrder": 2, "ethicsRisk": -1, "lawRisk": 0, "examScore": 3, "affection_gu": 2, "affection_lu": 1},
+          "feedback": "正是顾哥教的组合拳：邻近控制+非言语暗示+正面引导。不打断教学、不当众羞辱，把她拉回课堂，课堂秩序与教学节奏双保。",
+          "answerKeywords": ["邻近控制", "非言语暗示", "正面引导", "不打断教学", "不当众羞辱"]
+        },
+        {
+          "id": "B",
+          "text": "暂时不理会她这句挑衅，继续推进教学，等她安静后下课再单独沟通。",
+          "quality": "suboptimal",
+          "effects": {"professionalSkill": 1, "studentTrust": 1, "classOrder": 1, "ethicsRisk": 0, "lawRisk": 0, "examScore": 1, "affection_gu": 1},
+          "feedback": "有意忽视+课后沟通，方向对、也不激化矛盾。但她已经'大声'公开挑衅、全班注意力被牵走，单纯忽视稍显被动，加一点邻近控制/正面引导把她拉回来会更稳。",
+          "answerKeywords": ["有意忽视（略被动）", "课后单独沟通"]
+        },
+        {
+          "id": "C",
+          "text": "立刻停下课，严肃地当全班面批评她'态度有问题'，要她当场道歉。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -2, "studentTrust": -2, "classOrder": -2, "ethicsRisk": 2, "lawRisk": 0, "examScore": -3, "affection_gu": -2, "affection_lu": -1},
+          "feedback": "停课+当众训斥+逼道歉，正是顾哥说的大忌：打断教学、把全班注意力引到冲突上，还伤她自尊，正中博关注的下怀，课堂彻底失控。",
+          "answerKeywords": ["当众训斥", "打断教学", "激化对抗", "伤害自尊"]
+        },
+        {
+          "id": "D",
+          "text": "把她叫到教室外面罚站，等她想清楚了再让她回来。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -2, "studentTrust": -1, "classOrder": -1, "ethicsRisk": 1, "lawRisk": 2, "examScore": -3, "affection_gu": -1, "affection_lu": -2},
+          "feedback": "罚站门外既打断了教学、也剥夺了她的受教育权（变相体罚），处理课堂行为绝不能以牺牲学生上课权利为代价——这是法规与管理的双重雷区。",
+          "answerKeywords": ["罚站门外", "变相体罚", "侵犯受教育权"]
+        }
+      ]
+    },
+    {
+      "id": "ch02_b_after",
+      "type": "dialogue",
+      "background": "classroom",
+      "speaker": "林小满",
+      "text": "（我边讲边踱到她桌边，眼睛没看她，只把那个问题轻轻递过去——一个我笃定她答得上的。她愣了两秒，含含糊糊嘟囔出半句）\n……不就是控制进出嘛。（她别过脸去，可手里那支被摔下的笔，悄悄又被她攥了起来。课，稳稳地往下走。）"
+    },
+    {
+      "id": "ch02_b_heart",
+      "type": "dialogue",
+      "background": "classroom",
+      "speaker": "narrator",
+      "text": "（下课铃响。我这才发觉手心全是汗。后排，顾承靠在门框上，一句话没说，只是稳稳地、慢慢地，朝我点了一下头。）\n那一下点头，比任何一句夸奖都让我安心。像身后一直站着一座山，风再大也吹不动。\n（顾哥那句'我教你几招'，原来不是随口客套。他是真的，怕我一个人扛不住。）"
+    },
+    {
+      "id": "ch02_t2",
+      "type": "dialogue",
+      "background": "corridor",
+      "speaker": "江晚",
+      "expression": "smile",
+      "text": "（下课后，江晚在走廊口等我，递过来一瓶温水）\n课我在后面听了一段，处理林小满那一下，漂亮。\n不过——你有没有留意，除了她在闹，还有一片孩子，从头到尾埋着头，一句话也不接？来咨询室坐坐，我跟你说说，怎么把这群孩子'撬'开口。"
+    },
+    {
+      "id": "ch02_c_teach_1",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "smile",
+      "text": "（暖光的咨询室，她给我倒了杯茶，捧着自己那杯，慢慢开口）\n那些埋着头不吭声的孩子，不是笨，是'懒得动'——说穿了，是**学习动机**没被点起来。\n先分清两种：**内部动机**，出于兴趣、求知欲、'我自己就想搞懂'，这种最经得起久；**外部动机**，是为了表扬、分数、奖励，或者怕挨批，靠外力推着往前走。课堂上最理想的，是把外部动机一点点往内部动机那边引。"
+    },
+    {
+      "id": "ch02_c_teach_2",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "serious",
+      "text": "（她放下茶杯，在我笔记本上比划出一道弧线）\n还有一条特别爱考的规律——**耶克斯-多德森定律**：动机水平和学习效率，不是越高越好，而是这么一道**倒U形**。\n动机太低，提不起劲；动机太高、太紧绷，反倒发挥失常。**中等强度的动机，效率最高**。\n而且它还跟任务难度挂钩：**越简单的任务，最佳动机水平越高；越难的任务，最佳动机水平反而要偏低**——难题面前太亢奋，人容易乱。"
+    },
+    {
+      "id": "ch02_c_teach_3",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "smile",
+      "text": "所以要撬开那些孩子，绝不是把他们逼到'你必须答、答不出就罚站'那种高压——那只会把动机推过了头。\n得先给他们一点够得着的小成功，用兴趣和好奇，把内部动机一寸一寸养起来，让动机停在那个'刚刚好'的中等区间。\n（她说话时，发梢垂下来，轻轻扫过摊开的笔记。我看得有点出神，赶紧低头掩饰。）来，考你一道，顺便替你想想下节课怎么上。"
+    },
+    {
+      "id": "ch02_c_apply",
+      "type": "choice",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "smile",
+      "knowledgeCheck": "q_motiv_01",
+      "text": "（她眼里带着笑）那——对那些埋头不出声、提不起兴趣的孩子，下节课你打算怎么把他们调动起来？",
+      "examTags": {
+        "subject": "302",
+        "module": "中学生学习心理",
+        "examPoint": "学习动机（内部/外部动机 + 耶克斯-多德森定律：中等动机最佳）",
+        "questionType": "材料分析"
+      },
+      "choices": [
+        {
+          "id": "A",
+          "text": "设计够得着的小问题让他们尝到成功，用好奇和兴趣培养内部动机，把动机维持在中等水平。",
+          "quality": "optimal",
+          "effects": {"professionalSkill": 2, "studentTrust": 2, "classOrder": 1, "ethicsRisk": -1, "lawRisk": 0, "examScore": 3, "affection_jiang": 3},
+          "feedback": "对。激发内部动机（兴趣/成功体验）+把动机控制在中等强度，正合耶克斯-多德森定律'中等动机效率最高'，对闷头不参与的孩子最对症。",
+          "answerKeywords": ["内部动机", "兴趣与成功体验", "中等动机最佳", "耶克斯-多德森定律"]
+        },
+        {
+          "id": "B",
+          "text": "设置积分排名、答对发小奖品，用奖励刺激他们开口。",
+          "quality": "suboptimal",
+          "effects": {"professionalSkill": 1, "studentTrust": 1, "classOrder": 1, "ethicsRisk": 0, "lawRisk": 0, "examScore": 1, "affection_jiang": 1},
+          "feedback": "奖励是外部动机，短期能见效、可以用，但靠外力推不持久，理想做法是借此过渡、最终培养内部动机。注意区分外部动机与内部动机。",
+          "answerKeywords": ["外部动机（不持久）", "宜引向内部动机"]
+        },
+        {
+          "id": "C",
+          "text": "明确告诉他们这是考试重点、答不出要单独留下补，把紧迫感拉满。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -1, "studentTrust": -2, "classOrder": 0, "ethicsRisk": 1, "lawRisk": 0, "examScore": -3, "affection_jiang": -2},
+          "feedback": "用高压、威胁把动机推到过高，违背耶克斯-多德森定律——动机过强反而降低效率、加重焦虑，对本就退缩的孩子是反效果。",
+          "answerKeywords": ["动机过高", "违背耶克斯-多德森定律", "高压威胁"]
+        },
+        {
+          "id": "D",
+          "text": "随他们去，反正爱学的自然会学，不想学的逼也没用。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -2, "studentTrust": -2, "classOrder": -1, "ethicsRisk": 1, "lawRisk": 0, "examScore": -3, "affection_jiang": -1},
+          "feedback": "放任不管是失职。学习动机是可以被激发和培养的，教师的责任正是点燃它，而非'听之任之'。",
+          "answerKeywords": ["放任失职", "动机可培养", "教师责任"]
+        }
+      ]
+    },
+    {
+      "id": "ch02_c_after",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "tender",
+      "text": "（她笑着点头，提起茶壶给我的杯子续上热水）\n下节课你试试看。别把课堂当成'我必须教完'的任务，把它当成一个'让他们想多懂一点'的地方。\n动机这东西，逼出来的是怕，养出来的才是爱。教孩子是这样……（她顿了一下，轻轻笑了笑）其实，教自己也是这样。"
+    },
+    {
+      "id": "ch02_c_heart",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "narrator",
+      "text": "'养出来的才是爱。'\n她说这句话的时候，眼神飘开了一下，像在说别人，又像在说她自己。\n（这个总在照亮别人的人，她自己那点动机，又是谁来养呢。我捧着那杯一直温着的茶，忽然很想，多坐一会儿。）"
+    },
+    {
+      "id": "ch02_end_1",
+      "type": "dialogue",
+      "background": "corridor",
+      "speaker": "陆知行",
+      "expression": "neutral",
+      "text": "（傍晚，我在走廊撞见陆知行。他指间还夹着那张公开课评分表）\n（他看了我一眼，合上评分表）课堂出状况那一下，没停课、没失态，处理得……不算差。\n启发那条线，也立住了。第一次上公开课，能到这个份上，过关。"
+    },
+    {
+      "id": "ch02_end_2",
+      "type": "dialogue",
+      "background": "corridor",
+      "speaker": "narrator",
+      "text": "他说完转身要走，那张评分表的一角从他指间露了出来——\n我的名字旁边，又是那个很小的、像星号又像对勾的记号。和入职那天，一模一样。\n（我张了张嘴，想问。可他已经走出老远，背影还是那么直。）\n（那记号到底是什么意思……陆知行，你能不能，别每次都只留半句话给我。）"
+    },
+    {
+      "id": "ch02_end_3",
+      "type": "dialogue",
+      "background": "staff_room",
+      "speaker": "沈亦舟",
+      "expression": "grin",
+      "text": "（沈亦舟不知从哪儿冒出来，手里举着两根烤肠，活像举着两面庆功旗）\n听说过关啦？我就说我后排举牌管用吧！\n你这头一节公开课，启发、救场、撬学生，一口气把三样真本事全使出来了。来，烤肠庆功——下回，咱争取让陆主任在你名字旁多写两个字，别老画那神秘记号吊人胃口。"
+    },
+    {
+      "id": "ch02_end",
+      "type": "summary",
+      "background": "staff_room",
+      "speaker": "narrator",
+      "text": "（第一堂公开课落幕。把课前、课中、课后的得失，一条条记进手账吧——人记进去了，分也得记进去。）",
+      "review": {
+        "learnedExamPoints": [
+          "302-中学教学-教学原则（启发性 vs 直观性 vs 巩固性 vs 循序渐进）— 沈亦舟",
+          "302-班级管理-课堂问题行为的处理（非言语暗示/邻近控制/有意忽视/正面引导 vs 当众训斥）— 顾承",
+          "302-中学生学习心理-学习动机（内部/外部动机 + 耶克斯-多德森定律·中等动机最佳）— 江晚"
+        ],
+        "structure": "三个考点串成一条'第一堂公开课'的完整闭环：课前磨课→教学原则（启发性）；课中救场→课堂问题行为处理；课后复盘→学习动机。走的是'剧情讲授→马上做题→应用→反馈'。章末月考为冷测。",
+        "mockExam": "core_ch02_mock",
+        "recommendedReview": [
+          "答错教学原则→沈亦舟重讲启发性 vs 直观性 vs 巩固性 vs 循序渐进",
+          "答错课堂行为→顾承重讲非言语暗示/邻近控制/有意忽视/正面引导，及'当众训斥'之忌",
+          "答错学习动机→江晚重讲内部/外部动机与耶克斯-多德森定律（中等动机最佳、难任务动机宜偏低）"
+        ]
+      }
+    }
+  ]
+}

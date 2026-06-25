@@ -1,0 +1,250 @@
+{
+  "chapterId": "route_jiang_3",
+  "route": "jiang",
+  "requires": {"flagsAllTrue": ["route_locked_jiang"], "affectionGte": {"jiang": 16}},
+  "title": "江晚线 · 第三章 · 互为彼此的咨询室",
+  "summary": "江晚线第三章·告白与三结局。期中考后的一个雨夜，你终于等到了她肯卸下'治愈者'铠甲的那一刻。她讲完最后一课——学习策略，把'元认知'这件帮学生管理自己的工具，第一次也用回了自己身上。你接住了那个倦怠到几乎要碎掉的她，两个习惯了照顾别人的成年人，第一次学会被对方照顾。这是一场克制、有尊严、温柔的互救式告白。结局依好感、心理题达标与学生信任度三向分流：Good（互为彼此的咨询室）/ Normal（温暖的知己）/ Bad（笑着退回职业距离）。",
+  "designNote": "百合线个人章 ch_jiang_3，黄金四拍第四拍'告白'。第一人称旁白贯穿。告白写成两个成年同事之间细腻克制、得体有尊严的互救式同性情感——以'被对方接住'与'第一次让别人照顾'为核心意象，绝不奇观化、不情色，肢体接触止于递茶、并肩、一次得体的拥抱/十指相扣的留白。jiang 表情 neutral|smile|serious|worried，背景仅 counseling_room|staff_room|corridor。深挖模块为 302 学习心理·学习策略（认知/元认知/资源管理三类），并让'元认知'回扣主题：会管理学生学习的人，也终于学会管理、照顾自己。teach→knowledgeCheck(choice+examTags，指向 ch_jiang_quiz.json)→apply→after→heart，末节点为 type:dialogue 带 branch，按 condition 分流到 good/normal/bad 结局节点（各 2-4 节点）。Good 要求 affectionGte.jiang>=24 且 flagsAllTrue:[jiang_psych_mastered] 且 studentTrust 高（以 flag jiang_student_trust_high 表征，由学生信任度阈值在引擎侧置位）；Normal 走 affectionGte.jiang>=16；Bad 为 fallback。关键选择 setFlag(chose_catch_her/chose_empty_comfort)。affection_jiang 经 effects。学生仅作教学对象/事件源，恋爱仅成年同事。",
+  "characters": ["jiang", "shen"],
+  "students": ["周也"],
+  "valueFields": ["professionalSkill", "studentTrust", "classOrder", "ethicsRisk", "lawRisk", "examScore", "affection_jiang"],
+  "note": "ethicsRisk/lawRisk 为逆向指标，越低越好。knowledgeCheck 指向 ch_jiang_quiz.json 的题目 id。末节点 ch_jiang_3_branch 含 branch：Good 需 jiang>=24 且 flag jiang_psych_mastered 且 flag jiang_student_trust_high；Normal 需 jiang>=16；都不中 fallback 到 Bad。flag jiang_psych_mastered 由章末/线月考心理题达标置位，jiang_student_trust_high 由 studentTrust 阈值置位（引擎侧）。",
+  "nodes": [
+    {
+      "id": "ch_jiang_3_intro",
+      "type": "dialogue",
+      "background": "corridor",
+      "speaker": "narrator",
+      "text": "期中考后的一个雨夜，雨下得又急又密，把整栋楼敲得发响。\n我撑着伞回学校取落下的教案，远远看见心理中心的灯还亮着——这个点，本该没人了。\n（她又留下了。说好了要给自己留时间的人，怎么还在。）我的心一沉，加快了脚步。"
+    },
+    {
+      "id": "ch_jiang_3_intro_2",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "worried",
+      "text": "（推开门，她坐在沙发上，没开顶灯，只留一盏小台灯。手边是周也的结案报告——那孩子，好起来了。她却在哭，很安静的那种，眼泪一颗颗砸在报告上。）\n（看见我，她慌忙去擦，却越擦越多。）\n……他好了。周也真的好起来了。我应该高兴的，对不对？可我坐在这儿，忽然觉得好空、好累，像被掏空了一样。我是不是，哪里坏掉了。"
+    },
+    {
+      "id": "ch_jiang_3_intro_3",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "narrator",
+      "text": "我把伞靠在门边，走过去，在她身边坐下。\n这是我第一次见她哭。那个总是稳稳地接住所有人的江晚，此刻像一个终于撑不住的、很疲惫的小孩。\n（她没有坏掉。她只是把自己烧得太旺，照亮了所有人，然后忘了给自己留一点光。今晚，换我来给她留。）"
+    },
+    {
+      "id": "ch_jiang_3_teach_1",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "neutral",
+      "text": "（她吸了吸鼻子，像抓住浮木一样抓住专业，想把自己拉回平稳。）\n……我给你讲完最后一块吧，讲点正事，我就不慌了。学习策略，三大类，你记好——\n**认知策略**：直接加工材料的——复述(反复读背)、精细加工(联想、举例、做笔记)、组织(列提纲、画结构图)。"
+    },
+    {
+      "id": "ch_jiang_3_teach_2",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "neutral",
+      "text": "**元认知策略**：管理你'怎么学'的——计划(定目标、做规划)、监控(学的时候盯着自己懂没懂)、调节(发现不对就改方法)。它是'对认知的认知'，是会学习的人最关键的一环。\n**资源管理策略**：管外部条件的——管时间、管学习环境、调努力、会求助。\n周也后来能自己爬出来，靠的就是我帮他装上了元认知这套'自我监控'——他学会了在掉下去之前，自己喊停。"
+    },
+    {
+      "id": "ch_jiang_3_teach_3",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "worried",
+      "text": "（她讲到'监控''调节'，声音忽然低下去，像被自己的话绊住了。）\n监控……发现不对，就停下来调整。\n（她苦笑，眼泪又涌上来。）我教会了周也对自己喊停。可我自己，明明早就监控到我撑不住了，却一次都没舍得给自己'调节'一下。\n我把元认知教给了每一个孩子，唯独，没用在我自己身上。"
+    },
+    {
+      "id": "ch_jiang_3_apply",
+      "type": "choice",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "worried",
+      "knowledgeCheck": "q_learn_strategy_01",
+      "text": "（她抬眼看我，这一次，问的不是考点，是她自己。）\n那你说——一个人监控到自己快耗竭了，知道该'调节'，却一次都做不到。问题出在哪一环？又该怎么帮她，真正用上这套策略？",
+      "examTags": {
+        "subject": "302",
+        "module": "中学生学习心理",
+        "examPoint": "学习策略三分类（认知/元认知/资源管理）的辨别 + 元认知调节与资源管理（求助）的应用",
+        "questionType": "材料分析"
+      },
+      "choices": [
+        {
+          "id": "A",
+          "text": "她卡在元认知的'调节'环和资源管理的'求助'上——监控到了却不肯调节、更不肯求助；帮她不是再讲一遍道理，而是陪她把'调节'落地：一起退掉超额预约、设界限，并让她知道'求助'本身就是资源管理策略的一部分，不是软弱。",
+          "quality": "optimal",
+          "effects": {"professionalSkill": 2, "studentTrust": 2, "classOrder": 0, "ethicsRisk": -1, "lawRisk": 0, "examScore": 3, "affection_jiang": 4},
+          "feedback": "对。'监控到却不调节'卡在元认知调节环，'不肯求助'是资源管理策略的缺位。正确帮助是陪她把调节落地+把'求助'正常化。策略归类与应用全到位，也正好接住了她。",
+          "setFlag": {"route_lean_jiang": 1, "chose_catch_her": true},
+          "answerKeywords": ["元认知-调节环", "资源管理-求助", "调节落地", "求助非软弱", "陪伴而非说教"]
+        },
+        {
+          "id": "B",
+          "text": "是她认知策略没学好——多做点笔记、列个提纲把工作理清楚就不累了。",
+          "quality": "suboptimal",
+          "effects": {"professionalSkill": 0, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": 0, "affection_jiang": 0},
+          "feedback": "归类错了。她的问题不在'加工材料'的认知策略，而在元认知的'调节'与资源管理的'求助'。把耗竭当成笔记没做好，方向就偏了。",
+          "answerKeywords": ["误判为认知策略", "实为元认知调节缺位"]
+        },
+        {
+          "id": "C",
+          "text": "告诉她'你已经很棒了，别多想，好好睡一觉就好了',让她自己调整。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -1, "studentTrust": -1, "classOrder": 0, "ethicsRisk": 1, "lawRisk": 0, "examScore": -2, "affection_jiang": -2},
+          "feedback": "又是空泛安慰，既没指出卡在哪一环，也没给可落地的调节/求助方案。对一个已经监控到自己耗竭的人，'好好睡一觉'解决不了元认知层面的问题。材料题需写出策略名与具体对策。",
+          "setFlag": {"chose_empty_comfort": true},
+          "answerKeywords": ["空泛安慰", "无策略名无落地方案"]
+        },
+        {
+          "id": "D",
+          "text": "让她靠意志力硬扛过去，扛过这阵就好了，做老师哪有不累的。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -2, "studentTrust": -1, "classOrder": 0, "ethicsRisk": 2, "lawRisk": 0, "examScore": -3, "affection_jiang": -2},
+          "feedback": "用意志力硬扛恰恰是放弃了'调节'与'求助'两条出路，会把耗竭推向崩溃。元认知的价值就在于'发现不对、及时改'，而不是死扛。",
+          "answerKeywords": ["否定调节与求助", "硬扛加剧耗竭"]
+        }
+      ]
+    },
+    {
+      "id": "ch_jiang_3_after",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "smile",
+      "text": "（她怔怔地看着我，眼泪还挂着，唇角却慢慢弯起来。）\n'求助，不是软弱。'\n（她极轻地、像第一次学一个新词那样，把这句话念了一遍。）我对孩子说过无数次，今天，第一次有人把它说给我听。\n（她伸手，擦掉自己脸上的泪，动作不再慌张。）你说得对。我该调节了。我该……求助了。"
+    },
+    {
+      "id": "ch_jiang_3_confess_1",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "serious",
+      "text": "（雨声把屋子围成一座孤岛。她转过身，正对着我，眼神第一次没有任何'老师'的成分，只是一个女人，看着另一个她在乎的人。）\n那我现在，就向你求助一件，我准备了很久的事。\n这半年，是你一次次来敲这扇门，问我'今天过得怎么样'。是你让我知道，原来我也可以，被人放在心上。\n我想……以后，也能一直听你说话。也让你，一直听我说。不是作为同事。"
+    },
+    {
+      "id": "ch_jiang_3_confess_2",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "narrator",
+      "text": "她说得很慢，很稳，没有一个字是越界的，可每一个字都重得砸在我心上。\n窗外雨声很大，我却觉得，这间小小的咨询室里，从来没有这么安静、这么暖过。\n（我想起第一次推开这扇门时，她说'只有我一个人在听别人说话'。原来兜兜转转，是为了等这一句——从今往后，这间屋子里，有两个人，互相听着。）"
+    },
+    {
+      "id": "ch_jiang_3_branch",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "narrator",
+      "text": "我看着她，把这半年想说的话，在心里理成了一句最简单的回答。\n雨势渐歇，台灯把我们两个人的影子，叠在同一面墙上。\n（接下来，是我们两个成年人之间，最郑重也最温柔的一次选择。）",
+      "branch": [
+        {
+          "condition": {"affectionGte": {"jiang": 24}, "flagsAllTrue": ["jiang_psych_mastered", "jiang_student_trust_high"]},
+          "goto": "ch_jiang_3_good_1"
+        },
+        {
+          "condition": {"affectionGte": {"jiang": 16}},
+          "goto": "ch_jiang_3_normal_1"
+        }
+      ],
+      "branchFallback": "ch_jiang_3_bad_1"
+    },
+    {
+      "id": "ch_jiang_3_good_1",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "narrator",
+      "text": "我没有用很多话。我只是伸出手，把她那只一直局促地攥着报告的手，轻轻握住，十指相扣。\n她的手很凉，握住的那一刻，却一点点暖了过来。\n'好。'我说，'以后换我做你的咨询室。你也做我的。'"
+    },
+    {
+      "id": "ch_jiang_3_good_2",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "smile",
+      "text": "（她反握住我的手，肩膀终于彻底松了下来，把额头轻轻抵在我肩上。这一次，是她在被接住。）\n那我们说好——你累的时候，也要对我说。\n我们都太会照顾别人了。从今天起，得学着照顾对方，也照顾自己。\n（她的声音闷闷的，带着哭过的鼻音，却是我听过最安心的一句。）"
+    },
+    {
+      "id": "ch_jiang_3_good_3",
+      "type": "dialogue",
+      "background": "corridor",
+      "speaker": "narrator",
+      "text": "雨停了。我们一起锁了心理中心的门，并肩走在湿漉漉、亮着灯的走廊里。\n她把超额的预约退了，给自己排了固定的午休；我们约好每周有一个晚上，谁都不许加班，只是一起吃顿热饭，互相问一句'今天过得怎么样'。\n（沈亦舟后来知道了，难得没起哄，只发来一句：'挺好。你俩都该被人好好待着。'）"
+    },
+    {
+      "id": "ch_jiang_3_good_end",
+      "type": "summary",
+      "background": "corridor",
+      "speaker": "narrator",
+      "text": "（江晚线 · Good End「互为彼此的咨询室」。最会倾听的人，终于也有人听。两个习惯照亮别人的成年人，学会了被对方照亮，也学会了照顾自己。这是一段克制而有尊严的、可持续的爱。）",
+      "ending": {
+        "id": "jiang_good",
+        "type": "Good",
+        "title": "互为彼此的咨询室",
+        "condition": "affection_jiang≥24 且 心理题达标(flag jiang_psych_mastered) 且 studentTrust 高(flag jiang_student_trust_high)",
+        "learnedExamPoints": [
+          "302-学习心理-学习策略三分类（认知/元认知/资源管理）— 江晚",
+          "全线串联：皮亚杰认知发展、维果茨基最近发展区、埃里克森人格发展、学习理论四流派、学习策略"
+        ],
+        "note": "Good End 以'心理题达标'为必要条件之一——学得好，才接得住她。呼应'玩通=学完'承诺。"
+      }
+    },
+    {
+      "id": "ch_jiang_3_normal_1",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "narrator",
+      "text": "我心里那句话，差一点就要出口。可看着她哭红的眼、透支的脸，我忽然停住了——\n此刻的她，太累、太脆弱。我怕她现在点的头，是被疲惫推着、被感激裹着，而不是真的看清了自己想要什么。\n（我不想趁她最弱的时候要一个答案。她值得在站稳了之后，清清楚楚地，做这个选择。）"
+    },
+    {
+      "id": "ch_jiang_3_normal_2",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "smile",
+      "text": "（我握了握她的手，又轻轻松开，替她理了理被风吹乱的头发。）\n（她看着我，似乎读懂了我的克制，眼里有一点失落，更多的是被尊重的安心。）\n……谢谢你，没有趁现在。你总是这样，先想着我。\n那我们，先做最好的知己，好不好？等我把自己照顾好了，等我们都站稳了——有些话，再说也不迟。"
+    },
+    {
+      "id": "ch_jiang_3_normal_end",
+      "type": "summary",
+      "background": "counseling_room",
+      "speaker": "narrator",
+      "text": "（江晚线 · Normal End「温暖的知己」。你接住了倦怠的她，却把那句告白，体面地留给了一个她更清醒、更有力气的未来。你们成了彼此最暖的知己——门是开着的，只是时机还没到。）",
+      "ending": {
+        "id": "jiang_normal",
+        "type": "Normal",
+        "title": "温暖的知己",
+        "condition": "16≤affection_jiang<24（或未同时满足 Good 的心理题达标/studentTrust 条件）",
+        "note": "克制收尾，不强行圆满；保留再续的可能。"
+      }
+    },
+    {
+      "id": "ch_jiang_3_bad_1",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "narrator",
+      "text": "我张了张嘴，却只憋出一句'你已经做得很好了，别给自己太大压力'。\n话一出口，我就后悔了。这半年我太多次用这种轻飘飘的安慰打发她，而她要的，从来不是这个。\n（我看见她眼里那点刚刚亮起来的光，慢慢黯了下去。）"
+    },
+    {
+      "id": "ch_jiang_3_bad_2",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "neutral",
+      "text": "（她迅速地、熟练地，把那张'治愈者'的笑脸重新戴了回去。她最擅长的，就是把自己藏好。）\n……你说得对。是我矫情了。让你看笑话了。\n（她站起身，把报告收进抽屉，语气重新变回那个客气而疏离的江老师。）时候不早，雨也停了，你快回吧。我再坐一会儿就走。\n谢谢你今天来。真的。"
+    },
+    {
+      "id": "ch_jiang_3_bad_end",
+      "type": "summary",
+      "background": "counseling_room",
+      "speaker": "narrator",
+      "text": "（江晚线 · Bad End「笑着退回的距离」。你终究没能接住那个卸下铠甲的瞬间。她笑着，把那层最客气的距离，重新拉了回来。最会倾听的人，又一个人，留在了那间亮着灯的屋子里。——多陪她、少敷衍，下一次别再让那盏灯只为别人亮。）",
+      "ending": {
+        "id": "jiang_bad",
+        "type": "Bad",
+        "title": "笑着退回的距离",
+        "condition": "fallback：affection_jiang<16 / studentTrust 低 / 屡选空泛安慰(flag chose_empty_comfort)",
+        "note": "Bad End 不奇观化、不羞辱角色；以'她体面地退回职业距离'收束，呼应百合线克制有尊严的基调。"
+      }
+    }
+  ]
+}

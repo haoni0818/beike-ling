@@ -1,0 +1,984 @@
+{
+  "chapterId": "core_ch15",
+  "title": "第十五章 · 带班的艺术",
+  "summary": "我被临时任命为高一(7)班的实习副班主任，第一天就赶上一锅乱粥：上课有人接话起哄、刚组起来的小组各自为政、有个总迟到的男生张子默被任课老师贴上'后进生'的标签，连我自己都被一股说不清的疲惫与自我怀疑缠住。资深班主任顾承没有急着帮我'摆平'，而是带着我，从一节课的最小干预，到一个班集体怎么从'一盘散沙'长成'一个家',从课堂纪律怎样由他律走向自律，到一个老师如何照看好自己的职业心理。一整天走下来，我才明白——带班从来不是压住一个班，而是把一群人，连同自己，一起带向更好的样子。",
+  "designNote": "本章以'我首次代理副班主任、用一天处理班级失序'这一事件，串起7个302班级管理与教师心理考点：课堂问题行为处理→班集体发展阶段→班主任工作(后进生转化)→课堂管理原则→课堂纪律发展阶段→教师心理(角色/发展阶段/职业倦怠)→教师专业发展与教育反思。主带教顾承(资深班主任·德育担当)沉稳有力，自然把'带班章法'讲进剧情。学生张子默、班长林悦等仅为教学对象与事件源，绝不涉及恋爱或性化。每考点一段teach+一道随堂题，题库每考点两题(_01随堂/_02冷测)。",
+  "characters": [
+    "gu",
+    "jiang",
+    "cheng"
+  ],
+  "students": [
+    "张子默",
+    "林悦",
+    "高一(7)班"
+  ],
+  "valueFields": [
+    "professionalSkill",
+    "studentTrust",
+    "classOrder",
+    "ethicsRisk",
+    "lawRisk",
+    "examScore",
+    "affection_lu",
+    "affection_jiang",
+    "affection_gu",
+    "affection_cheng",
+    "affection_shen"
+  ],
+  "note": "ethicsRisk/lawRisk 为逆向指标，越低越好。knowledgeCheck 指向 chapter15_quiz.json 的题目 id。",
+  "nodes": [
+    {
+      "id": "ch15_intro_1",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "顾承",
+      "expression": "neutral",
+      "text": "（清晨的办公室，顾承把一只搪瓷杯推到我面前，茶气袅袅）\n高一(7)班这周开始，你来做实习副班主任，跟着我学带班。\n（他看我一眼，沉稳里带点考量）别紧张。带班不是一门'压人'的活，是一门'带人'的艺术。今天这一天，你会撞上不少事——我不替你摆平，我陪你看懂。"
+    },
+    {
+      "id": "ch15_intro_2",
+      "type": "dialogue",
+      "background": "corridor",
+      "speaker": "narrator",
+      "text": "上午第一节，我跟着顾承去(7)班听课。\n教室里却不太平：一个叫张子默的男生踩着铃声冲进来，又在老师讲题时随口接了句俏皮话，引得后排哄笑；刚分好的学习小组也像没分一样，各做各的。\n（这……我若是站上讲台，第一步该怎么办？）"
+    },
+    {
+      "id": "ch15_a_teach_1",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "顾承",
+      "expression": "serious",
+      "text": "（回到办公室，他放下听课本）\n你刚看见的——学生接话、起哄、走神，这叫**课堂问题行为**。处理它，有三条铁律，记牢了一辈子受用。\n第一，**能用非言语暗示，就别用言语打断**。一个眼神、走到他身边站一会儿、轻轻敲一下他的桌子，往往比当众点名管用得多。"
+    },
+    {
+      "id": "ch15_a_teach_2",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "顾承",
+      "expression": "serious",
+      "text": "第二，**不打断教学的连贯**。为一个走神的孩子停下整节课、跟他理论半天，是拿全班四十多人的时间，赔一个人的错——得不偿失。\n第三，也是最重的一条——**绝不当众羞辱学生**。挖苦、贴标签、叫他罚站示众，看着是'镇住了'，实则把他的自尊和你跟他的关系，一起踩碎了。问题行为没解决，对立反而种下了。"
+    },
+    {
+      "id": "ch15_a_teach_3",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "顾承",
+      "expression": "neutral",
+      "text": "（他端起茶杯，语气放缓）\n张子默接那句话，未必是存心捣乱，可能就是想刷点存在感。你当众一吼，他下不来台，只会更要面子地顶回来。\n（他看着我）来，假设下节课你站上讲台，又碰上这一幕——考你一道，看你拎不拎得清这三条。"
+    },
+    {
+      "id": "ch15_a_apply",
+      "type": "choice",
+      "background": "classroom",
+      "speaker": "顾承",
+      "expression": "neutral",
+      "knowledgeCheck": "q_behavior_01",
+      "text": "（顾承靠在窗边，示意我假想自己正在上课）\n你正讲到关键处，张子默又低声接话、引得旁边人发笑。这时候，最稳妥的处理是——",
+      "examTags": {
+        "subject": "302",
+        "module": "班级管理",
+        "examPoint": "课堂问题行为的处理（非言语暗示·不打断教学·不当众羞辱）",
+        "questionType": "材料分析"
+      },
+      "choices": [
+        {
+          "id": "A",
+          "text": "一边继续讲课，一边自然地走到他身边站一会儿、用眼神示意，用非言语暗示制止，不打断教学节奏。",
+          "quality": "optimal",
+          "effects": {
+            "professionalSkill": 2,
+            "studentTrust": 2,
+            "classOrder": 2,
+            "ethicsRisk": -1,
+            "lawRisk": 0,
+            "examScore": 3,
+            "affection_gu": 3
+          },
+          "feedback": "对。优先用非言语暗示(走近、眼神、手势)制止轻微问题行为，既止住了行为，又不打断教学、不伤学生自尊，是处理课堂问题行为的首选。",
+          "answerKeywords": [
+            "非言语暗示",
+            "走近/眼神制止",
+            "不打断教学",
+            "保护学生自尊"
+          ]
+        },
+        {
+          "id": "B",
+          "text": "停下讲课，点名批评他几句，讲清纪律的重要性，再继续上课。",
+          "quality": "acceptable",
+          "effects": {
+            "professionalSkill": 0,
+            "studentTrust": 0,
+            "classOrder": 1,
+            "ethicsRisk": 0,
+            "lawRisk": 0,
+            "examScore": 0,
+            "affection_gu": 0
+          },
+          "feedback": "点名批评虽不算违规，但打断了教学连贯、占用了全班时间，且当众点名易使学生下不来台。能用非言语暗示先处理的，不必升级到当众言语批评。",
+          "answerKeywords": [
+            "打断教学连贯",
+            "占用全班时间",
+            "宜先用非言语"
+          ]
+        },
+        {
+          "id": "C",
+          "text": "当众讽刺他'就你话多，是不是想上来替老师讲'，让他在全班面前出个丑长记性。",
+          "quality": "risk",
+          "effects": {
+            "professionalSkill": -2,
+            "studentTrust": -2,
+            "classOrder": -1,
+            "ethicsRisk": 2,
+            "lawRisk": 0,
+            "examScore": -3,
+            "affection_gu": -2
+          },
+          "feedback": "当众讽刺、羞辱学生是课堂管理的高发雷区：踩碎学生自尊、激化师生对立，问题行为不仅不消反而升级，也违背关爱学生的师德要求。",
+          "answerKeywords": [
+            "当众羞辱（错）",
+            "伤自尊激化对立",
+            "违背师德"
+          ]
+        },
+        {
+          "id": "D",
+          "text": "假装没看见，等下课后再说，课上绝不理会任何接话。",
+          "quality": "risk",
+          "effects": {
+            "professionalSkill": -1,
+            "studentTrust": 0,
+            "classOrder": -2,
+            "ethicsRisk": 0,
+            "lawRisk": 0,
+            "examScore": -2,
+            "affection_gu": -1
+          },
+          "feedback": "一味放任会让起哄蔓延、课堂失序。处理问题行为讲究'最小干预'而非'不干预'——一个眼神、走近示意正是恰到好处的及时制止。",
+          "answerKeywords": [
+            "放任失序（错）",
+            "应及时最小干预",
+            "非不干预"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch15_a_after",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "顾承",
+      "expression": "smile",
+      "text": "（他难得露出一点笑意，点头）\n拎得清。记住——管行为，是为了护住人。一个老师最厉害的本事，是不动声色地把事儿处理了，孩子还觉得你护着他。\n（他顿了顿）行为是面子，班集体才是里子。走，下一课。"
+    },
+    {
+      "id": "ch15_b_teach_1",
+      "type": "dialogue",
+      "background": "classroom",
+      "speaker": "顾承",
+      "expression": "neutral",
+      "text": "（他领我站在空教室后排，环视整间屋子）\n你看(7)班现在——小组各管各的、谁也不服谁，这很正常。一个班集体，不是一开学就有的，是'长'出来的，分三个阶段。\n第一阶段，**组建阶段（松散群体）**：刚凑到一起，彼此陌生，没有共同目标，靠老师一个个去抓。"
+    },
+    {
+      "id": "ch15_b_teach_2",
+      "type": "dialogue",
+      "background": "classroom",
+      "speaker": "顾承",
+      "expression": "neutral",
+      "text": "第二阶段，**形成阶段（合作群体）**：班干部立起来了、班规认下了，开始有共同目标，同学之间有了合作，但还得靠制度和骨干撑着。\n第三阶段，**发展阶段（集体）**：这才是真正的'班集体'——有共同的奋斗目标、健全的舆论和班风，学生能自我教育、自我管理，从'要我守'变成了'我们一起守'。"
+    },
+    {
+      "id": "ch15_b_teach_3",
+      "type": "dialogue",
+      "background": "classroom",
+      "speaker": "顾承",
+      "expression": "serious",
+      "text": "(7)班现在卡在哪？刚选完班委、定了班规，可小组还各自为政、没拧成一股绳——这是典型的**组建到形成的过渡**，离'集体'还远。\n（他看我）这个阶段，老师得做两件事：一是培养得力的班干部、树正确的舆论导向；二是组织共同活动，把这群人'粘'起来。\n来，考你——怎么判断一个班到了哪个阶段。"
+    },
+    {
+      "id": "ch15_b_apply",
+      "type": "choice",
+      "background": "classroom",
+      "speaker": "顾承",
+      "expression": "neutral",
+      "knowledgeCheck": "q_classbuild_01",
+      "text": "（他指着教室里那几张'各自为政'的小组桌）\n如果让你给(7)班现在的发展阶段下个判断、并说出此刻最该做的工作，你会选——",
+      "examTags": {
+        "subject": "302",
+        "module": "班级管理",
+        "examPoint": "班集体发展阶段的判断与相应培养工作（组建→形成→发展）",
+        "questionType": "材料分析"
+      },
+      "choices": [
+        {
+          "id": "A",
+          "text": "正处在组建向形成过渡的阶段——当务之急是培养得力班干部、树立正确舆论，并组织共同活动把同学凝聚起来。",
+          "quality": "optimal",
+          "effects": {
+            "professionalSkill": 2,
+            "studentTrust": 1,
+            "classOrder": 2,
+            "ethicsRisk": 0,
+            "lawRisk": 0,
+            "examScore": 3,
+            "affection_gu": 3
+          },
+          "feedback": "对。已选班委、定班规但尚未凝聚，属组建向形成的过渡；此阶段核心工作正是培养班干部、树立正确舆论导向、以共同活动凝聚集体。",
+          "answerKeywords": [
+            "组建向形成过渡",
+            "培养班干部",
+            "树立正确舆论",
+            "共同活动凝聚"
+          ]
+        },
+        {
+          "id": "B",
+          "text": "已是成熟的班集体——可以放手让学生完全自我管理，老师只需偶尔过问。",
+          "quality": "risk",
+          "effects": {
+            "professionalSkill": -1,
+            "studentTrust": 0,
+            "classOrder": -2,
+            "ethicsRisk": 1,
+            "lawRisk": 0,
+            "examScore": -2,
+            "affection_gu": -1
+          },
+          "feedback": "阶段判断过高。能'自我教育、自我管理'是发展阶段(成熟集体)的特征；(7)班还各自为政，此时放手撒手会让班级更乱。",
+          "answerKeywords": [
+            "误判为成熟集体",
+            "尚不能完全自我管理"
+          ]
+        },
+        {
+          "id": "C",
+          "text": "还是完全松散的群体——老师只能一个个单独抓，没法谈班级建设。",
+          "quality": "acceptable",
+          "effects": {
+            "professionalSkill": 0,
+            "studentTrust": 0,
+            "classOrder": 0,
+            "ethicsRisk": 0,
+            "lawRisk": 0,
+            "examScore": -1,
+            "affection_gu": 0
+          },
+          "feedback": "判断略低。完全松散是刚开学的组建初期；(7)班已选出班委、认可班规，已迈入向形成阶段过渡，可着手培养骨干与组织活动，而非只能单兵作战。",
+          "answerKeywords": [
+            "判断偏低",
+            "已有班委班规非纯松散"
+          ]
+        },
+        {
+          "id": "D",
+          "text": "阶段不重要，先把纪律压住、谁乱罚谁，秩序好了班集体自然就成了。",
+          "quality": "risk",
+          "effects": {
+            "professionalSkill": -2,
+            "studentTrust": -1,
+            "classOrder": 0,
+            "ethicsRisk": 1,
+            "lawRisk": 0,
+            "examScore": -3,
+            "affection_gu": -2
+          },
+          "feedback": "靠强压罚出的'秩序'不是班集体。班集体的标志是共同目标、健全舆论与自我管理，靠的是培养凝聚而非单纯压制，方向错了。",
+          "answerKeywords": [
+            "强压非班集体",
+            "应靠凝聚培养"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch15_b_after",
+      "type": "dialogue",
+      "background": "classroom",
+      "speaker": "顾承",
+      "expression": "smile",
+      "text": "（他赞许地'嗯'了一声）\n带班最忌'拔苗助长'——一个班在哪个阶段，老师就站在哪个阶段的位置上使劲。\n（他望向窗外操场）把一盘散沙拢成一个家，急不得。可有些孩子，得单独再拉一把。比如——张子默。"
+    },
+    {
+      "id": "ch15_c_teach_1",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "顾承",
+      "expression": "serious",
+      "text": "（他翻开张子默的档案）\n班主任的活儿，粗看就两块：一块是**常规管理**——组织班级、建设班集体、做好日常事务；另一块是**个别教育**，里头最难啃的，就是'后进生转化'。\n张子默成绩垫底、爱迟到、上课接话，已经被几个任课老师私下叫'差生'了。可'后进生'三个字，是结果，不是原因。"
+    },
+    {
+      "id": "ch15_c_teach_2",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "顾承",
+      "expression": "serious",
+      "text": "转化后进生，有几条要刻在心里：\n**一，关爱尊重、不歧视**——别贴标签，先相信他能变好；\n**二，找准原因、对症下药**——是基础差、是家庭、还是没人看见他？\n**三，发现闪光点、培养自信**——哪怕只是体育好、嘴甜、肯帮忙，都要放大；\n**四，反复抓、抓反复**——后进生转化必有反复，不能因一次犯错就否定全部。"
+    },
+    {
+      "id": "ch15_c_teach_3",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "顾承",
+      "expression": "neutral",
+      "text": "（他合上档案，看着我）\n操行评定也一样——不是给学生'判分定性'，是用客观、发展的眼光，看他这一学期'走了多远'，再写下能让他往前走的评语。\n张子默上周主动留下来擦了三天黑板，这就是闪光点。\n来，考你——碰上'后进生'，第一步该怎么做。"
+    },
+    {
+      "id": "ch15_c_apply",
+      "type": "choice",
+      "background": "office",
+      "speaker": "顾承",
+      "expression": "neutral",
+      "knowledgeCheck": "q_headteacher15_01",
+      "text": "（他把张子默的档案推到我面前）\n几位任课老师都说张子默'没救了'。作为副班主任，你着手转化他，最关键的第一步是——",
+      "examTags": {
+        "subject": "302",
+        "module": "班级管理",
+        "examPoint": "班主任个别教育与后进生转化（关爱尊重·查因·扬长·反复抓）",
+        "questionType": "材料分析"
+      },
+      "choices": [
+        {
+          "id": "A",
+          "text": "先放下'差生'的标签、真诚关爱接纳他，深入了解他迟到、接话背后的真实原因，再对症下药。",
+          "quality": "optimal",
+          "effects": {
+            "professionalSkill": 2,
+            "studentTrust": 2,
+            "classOrder": 1,
+            "ethicsRisk": -1,
+            "lawRisk": 0,
+            "examScore": 3,
+            "affection_gu": 3
+          },
+          "feedback": "对。后进生转化的前提是关爱尊重、不歧视、不贴标签，并查清行为背后的真实原因对症下药，这是'转化'区别于'放弃'的第一步。",
+          "answerKeywords": [
+            "关爱尊重不歧视",
+            "撕掉标签",
+            "查清真实原因",
+            "对症下药"
+          ]
+        },
+        {
+          "id": "B",
+          "text": "把他的毛病一条条列出来，先和家长一起严厉施压，让他知道再不改就没退路。",
+          "quality": "risk",
+          "effects": {
+            "professionalSkill": -1,
+            "studentTrust": -2,
+            "classOrder": 0,
+            "ethicsRisk": 1,
+            "lawRisk": 0,
+            "examScore": -2,
+            "affection_gu": -1
+          },
+          "feedback": "一上来只罗列缺点、联合施压，会坐实'差生'标签、激化抵触。转化应先建立信任、发现闪光点，而非以否定和高压开场。",
+          "answerKeywords": [
+            "只列缺点高压（错）",
+            "坐实标签激抵触"
+          ]
+        },
+        {
+          "id": "C",
+          "text": "认同任课老师的判断，把精力集中到中上等学生身上，对他顺其自然、不放弃也不强求。",
+          "quality": "risk",
+          "effects": {
+            "professionalSkill": -2,
+            "studentTrust": -1,
+            "classOrder": 0,
+            "ethicsRisk": 1,
+            "lawRisk": 0,
+            "examScore": -3,
+            "affection_gu": -2
+          },
+          "feedback": "'顺其自然'实为变相放弃，违背面向全体、关爱每一个学生的要求。后进生最需要的恰是被看见、被相信。",
+          "answerKeywords": [
+            "变相放弃（错）",
+            "应面向全体不放弃"
+          ]
+        },
+        {
+          "id": "D",
+          "text": "立刻表扬他擦黑板的事、给他记功，先把他哄高兴，别的以后再说。",
+          "quality": "acceptable",
+          "effects": {
+            "professionalSkill": 1,
+            "studentTrust": 1,
+            "classOrder": 0,
+            "ethicsRisk": 0,
+            "lawRisk": 0,
+            "examScore": 1,
+            "affection_gu": 1
+          },
+          "feedback": "发现并放大闪光点(擦黑板)方向是对的，能帮他建立自信；但只'哄'而不去查清问题根源、对症转化，仍是半步——关爱与查因、对症要结合。",
+          "answerKeywords": [
+            "扬长建自信（对一半）",
+            "还需查因对症"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch15_c_after",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "顾承",
+      "expression": "tender",
+      "text": "（他眼神里有种带了多年班才有的厚重）\n我带过的'后进生'，没有一个是真的差，只是被看晚了、被等久了。\n（他拍拍我肩）你愿意先撕掉那张标签，就已经比一半老师强了。下一课——回到讲台本身，聊聊'课堂'到底该怎么管。"
+    },
+    {
+      "id": "ch15_d_teach_1",
+      "type": "dialogue",
+      "background": "classroom",
+      "speaker": "程砚",
+      "expression": "smile",
+      "text": "（教研组的程砚抱着一摞教案路过，顺势加入）\n顾老师讲带班，我来补一刀'课堂管理'的章法。课堂管理不是'出了事再救火'，讲究三句口诀——\n第一，**预防为先**：好的课堂秩序，是设计出来的，不是吼出来的。把课备充实、把规则讲在前头、把节奏排紧凑，乱子自然就少。"
+    },
+    {
+      "id": "ch15_d_teach_2",
+      "type": "dialogue",
+      "background": "classroom",
+      "speaker": "程砚",
+      "expression": "smile",
+      "text": "第二，**最小干预**：真出了问题，用能解决问题的最小动作就好——一个眼神能解决的，绝不停课说教；停顿一下能解决的，绝不大动干戈。干预越小，对教学和学生的扰动越小。\n第三，**对事不对人**：批评的是'这个行为'，不是'这个人'。说'现在请安静'，而不是'你这人怎么这么吵'——前者就事论事，后者就成了人身否定。"
+    },
+    {
+      "id": "ch15_d_teach_3",
+      "type": "dialogue",
+      "background": "classroom",
+      "speaker": "顾承",
+      "expression": "neutral",
+      "text": "（顾承接过话）\n程老师这三条，和我上午讲的处理问题行为是一套的：预防为先，是从源头少出事；最小干预，是出事了别小题大做；对事不对人，是守住学生的尊严。\n（他看我）来——给你一个真实情境，看你认不认得出它体现的是哪条原则。"
+    },
+    {
+      "id": "ch15_d_apply",
+      "type": "choice",
+      "background": "classroom",
+      "speaker": "程砚",
+      "expression": "smile",
+      "knowledgeCheck": "q_mgmt_01",
+      "text": "（程砚笑着出题）\n有位老师上课前先和学生一起约定好'课堂三件事'、把每个环节排得满满当当，结果一学期几乎没出过乱子。这种做法主要体现了课堂管理的哪条原则？",
+      "examTags": {
+        "subject": "302",
+        "module": "班级管理",
+        "examPoint": "课堂管理原则的辨别（预防为先·最小干预·对事不对人）",
+        "questionType": "材料分析"
+      },
+      "choices": [
+        {
+          "id": "A",
+          "text": "预防为先——靠事先约定规则、精心设计教学与节奏，从源头减少问题行为的发生。",
+          "quality": "optimal",
+          "effects": {
+            "professionalSkill": 2,
+            "studentTrust": 1,
+            "classOrder": 2,
+            "ethicsRisk": 0,
+            "lawRisk": 0,
+            "examScore": 3,
+            "affection_cheng": 3,
+            "affection_gu": 1
+          },
+          "feedback": "对。事先立规、精心设计教学和节奏以防患于未然，正是'预防为先'：好秩序靠设计而非补救，把问题挡在发生之前。",
+          "answerKeywords": [
+            "预防为先",
+            "事先约定规则",
+            "设计教学节奏",
+            "防患未然"
+          ]
+        },
+        {
+          "id": "B",
+          "text": "最小干预——出了问题只用最小的动作去制止，不打断教学。",
+          "quality": "acceptable",
+          "effects": {
+            "professionalSkill": 0,
+            "studentTrust": 0,
+            "classOrder": 0,
+            "ethicsRisk": 0,
+            "lawRisk": 0,
+            "examScore": -1,
+            "affection_cheng": 0
+          },
+          "feedback": "最小干预针对的是'问题已经发生'后的处理；本题强调的是'事先约定、精心设计、几乎没出乱子'，落点在事前预防，而非事后干预。",
+          "answerKeywords": [
+            "最小干预是事后",
+            "本题是事前预防"
+          ]
+        },
+        {
+          "id": "C",
+          "text": "对事不对人——批评行为而不否定学生人格。",
+          "quality": "acceptable",
+          "effects": {
+            "professionalSkill": 0,
+            "studentTrust": 0,
+            "classOrder": 0,
+            "ethicsRisk": 0,
+            "lawRisk": 0,
+            "examScore": -1,
+            "affection_cheng": 0
+          },
+          "feedback": "对事不对人讲的是'如何批评'，本题里并没有出现批评情境，而是事前的规则约定与教学设计，对应的是预防为先。",
+          "answerKeywords": [
+            "对事不对人是批评方式",
+            "本题无批评情境"
+          ]
+        },
+        {
+          "id": "D",
+          "text": "严惩立威——靠开学先抓几个典型，把全班震住，自然没人敢乱。",
+          "quality": "risk",
+          "effects": {
+            "professionalSkill": -2,
+            "studentTrust": -1,
+            "classOrder": 0,
+            "ethicsRisk": 2,
+            "lawRisk": 0,
+            "examScore": -3,
+            "affection_cheng": -2,
+            "affection_gu": -1
+          },
+          "feedback": "'抓典型立威'靠的是威吓压制，并非课堂管理原则，反而伤害师生关系。真正的良好秩序靠预防设计与最小干预，而非杀鸡儆猴。",
+          "answerKeywords": [
+            "立威压制（错）",
+            "非课堂管理原则"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch15_d_after",
+      "type": "dialogue",
+      "background": "classroom",
+      "speaker": "程砚",
+      "expression": "smile",
+      "text": "（程砚冲我比了个赞）\n聪明。课堂管理的最高境界，是'看不见管理'——一切都被设计好了，乱子还没冒头就被化解了。\n（他抱起教案要走）剩下的'纪律怎么从他律到自律'，还是交给顾老师这位带班老师傅。"
+    },
+    {
+      "id": "ch15_e_teach_1",
+      "type": "dialogue",
+      "background": "classroom",
+      "speaker": "顾承",
+      "expression": "neutral",
+      "text": "（顾承在黑板上画了一条从左到右的箭头）\n带班最终要带到哪？带到'我不在，班也不乱'。这背后，是**课堂纪律从他律走向自律**的四步。\n第一步，**教师促成的纪律**：全靠老师定规矩、盯着、奖惩——这是最初级的他律，老师一走就散。"
+    },
+    {
+      "id": "ch15_e_teach_2",
+      "type": "dialogue",
+      "background": "classroom",
+      "speaker": "顾承",
+      "expression": "neutral",
+      "text": "第二步，**集体促成的纪律**：靠同伴、靠班集体的舆论和规范来约束——'大家都在认真，我也不好意思乱'。\n第三步，**任务促成的纪律**：被一件有意思、有挑战的任务吸引住了，注意力全在事上，纪律是任务自带的——'忙着做，没空乱'。\n第四步，**自我促成的纪律**：把外在的规范变成了自己的信念，无需谁监督，自觉自律——这是纪律发展的最高境界。"
+    },
+    {
+      "id": "ch15_e_teach_3",
+      "type": "dialogue",
+      "background": "classroom",
+      "speaker": "顾承",
+      "expression": "serious",
+      "text": "你品——这四步，正是'他律'一点点变'自律'：从老师管，到集体管，到事情管，最后到自己管自己。\n带班的功夫，就在'怎么把学生从前一步，往后一步推'。比如(7)班现在多在'教师促成'，我就想用一个全班合力的活动，把他们往'集体促成'和'任务促成'带。\n来，考你——认出这四个阶段。"
+    },
+    {
+      "id": "ch15_e_apply",
+      "type": "choice",
+      "background": "classroom",
+      "speaker": "顾承",
+      "expression": "neutral",
+      "knowledgeCheck": "q_discipline_01",
+      "text": "（他指着黑板上那条箭头）\n(7)班有个学生，原先全靠老师盯着才不讲话；后来他被一项有趣的研究性学习任务迷住，整节课埋头做、根本顾不上说闲话。他守纪律的方式，从哪一阶段进到了哪一阶段？",
+      "examTags": {
+        "subject": "302",
+        "module": "班级管理",
+        "examPoint": "课堂纪律发展阶段的辨别（教师促成→集体促成→任务促成→自我促成）",
+        "questionType": "材料分析"
+      },
+      "choices": [
+        {
+          "id": "A",
+          "text": "从'教师促成的纪律'进到了'任务促成的纪律'——由老师盯着，变成被任务吸引而自然守纪。",
+          "quality": "optimal",
+          "effects": {
+            "professionalSkill": 2,
+            "studentTrust": 1,
+            "classOrder": 2,
+            "ethicsRisk": 0,
+            "lawRisk": 0,
+            "examScore": 3,
+            "affection_gu": 3
+          },
+          "feedback": "对。原先靠老师盯属'教师促成'；被有趣任务吸引、注意力全在事上而自然守纪，属'任务促成'，体现了纪律由他律向自律的推进。",
+          "answerKeywords": [
+            "教师促成→任务促成",
+            "被任务吸引",
+            "他律走向自律"
+          ]
+        },
+        {
+          "id": "B",
+          "text": "从'教师促成'进到了'集体促成'——是被班级舆论和同伴约束住了。",
+          "quality": "acceptable",
+          "effects": {
+            "professionalSkill": 0,
+            "studentTrust": 0,
+            "classOrder": 0,
+            "ethicsRisk": 0,
+            "lawRisk": 0,
+            "examScore": -1,
+            "affection_gu": 0
+          },
+          "feedback": "集体促成靠的是同伴舆论与集体规范；本题里他守纪是因为'被任务迷住、顾不上说闲话'，约束来自任务本身，应判为任务促成。",
+          "answerKeywords": [
+            "集体促成靠同伴舆论",
+            "本题约束来自任务"
+          ]
+        },
+        {
+          "id": "C",
+          "text": "已经达到了'自我促成的纪律'——完全自觉、无需任何外部条件。",
+          "quality": "acceptable",
+          "effects": {
+            "professionalSkill": 0,
+            "studentTrust": 0,
+            "classOrder": 0,
+            "ethicsRisk": 0,
+            "lawRisk": 0,
+            "examScore": -1,
+            "affection_gu": 0
+          },
+          "feedback": "判断过高。自我促成是把规范内化为信念、脱离任何外在条件的自觉自律；本题的守纪仍依赖'有趣任务'这一外部吸引，属任务促成。",
+          "answerKeywords": [
+            "自我促成需内化无外在依赖",
+            "本题仍靠任务吸引"
+          ]
+        },
+        {
+          "id": "D",
+          "text": "还停在'教师促成'阶段——只要老师不在，他照样会讲话，没有任何进步。",
+          "quality": "risk",
+          "effects": {
+            "professionalSkill": -1,
+            "studentTrust": 0,
+            "classOrder": 0,
+            "ethicsRisk": 0,
+            "lawRisk": 0,
+            "examScore": -2,
+            "affection_gu": -1
+          },
+          "feedback": "判断偏低且与材料矛盾。他已不靠老师盯、而靠任务吸引守纪，纪律方式明显前移；笼统说'没有进步'忽略了从他律向自律的推进。",
+          "answerKeywords": [
+            "误判停留教师促成",
+            "已被任务吸引前移"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch15_e_after",
+      "type": "dialogue",
+      "background": "classroom",
+      "speaker": "顾承",
+      "expression": "smile",
+      "text": "（他擦掉黑板上的箭头，意味深长）\n你看，最好的纪律，是最后老师把自己'管'没了——学生自己长出了规矩。\n（他转过身，神情忽然柔和下来）讲了一上午别人，差点忘了——带班最容易累垮的，其实是老师自己。坐下，喝口茶，这一课，讲讲'老师'这个人。"
+    },
+    {
+      "id": "ch15_f_teach_1",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "江晚",
+      "expression": "tender",
+      "text": "（心理中心的江晚端着两杯热茶进来，在我对面坐下）\n顾老师把这棒交给我——聊聊你。当老师，得先照看好自己这颗心。\n先说'你是谁'：教师不是只有一个角色。你是**传道授业的'教者'、班级的'管理者'、学生的'朋友与知己'、家校之间的'沟通者'，更是一个需要不断成长的'研究者与学习者'**。角色太多，难免拉扯。"
+    },
+    {
+      "id": "ch15_f_teach_2",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "江晚",
+      "expression": "smile",
+      "text": "再说'你会怎么长大'：教师专业发展通常走过几个阶段——\n**关注生存**（新手期，满脑子'我能不能站稳讲台、学生喜不喜欢我'）→\n**关注情境**（开始操心'怎么把这节课教好、班怎么管好'）→\n**关注学生**（成熟期，真正盯住'每个学生学得怎样、发展得怎样'）。\n你现在，正是最焦虑的'关注生存'期——慌，是正常的。"
+    },
+    {
+      "id": "ch15_f_teach_3",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "江晚",
+      "expression": "serious",
+      "text": "最后，得防一个东西——**职业倦怠**。长期高压、付出得不到回应，老师会出现三种信号：\n**情绪衰竭**（心被掏空、提不起劲）、**去个性化**（对学生变冷漠、当成任务而非人）、**低成就感**（觉得自己干啥都没用、否定自身价值）。\n（她看着我，眼神很暖）你今天那股说不清的累和自我怀疑，就是身体在提醒你——照看好自己，也是专业能力的一部分。"
+    },
+    {
+      "id": "ch15_f_apply",
+      "type": "choice",
+      "background": "office",
+      "speaker": "江晚",
+      "expression": "tender",
+      "knowledgeCheck": "q_teacherpsych_01",
+      "text": "（她把茶推近我一点）\n有位带了多年班的老教师，近来对学生越来越冷淡、把上课当成例行公事、常觉得'教这么多年也没什么用'，提不起一点劲。从教师心理看，这最可能是——",
+      "examTags": {
+        "subject": "302",
+        "module": "班级管理与教师心理",
+        "examPoint": "教师职业倦怠的识别（情绪衰竭·去个性化·低成就感）",
+        "questionType": "材料分析"
+      },
+      "choices": [
+        {
+          "id": "A",
+          "text": "职业倦怠——同时出现情绪衰竭、对学生去个性化的冷漠、以及低个人成就感，是典型的倦怠表现。",
+          "quality": "optimal",
+          "effects": {
+            "professionalSkill": 2,
+            "studentTrust": 0,
+            "classOrder": 0,
+            "ethicsRisk": -1,
+            "lawRisk": 0,
+            "examScore": 3,
+            "affection_jiang": 2,
+            "affection_gu": 1
+          },
+          "feedback": "对。情绪衰竭(提不起劲)、去个性化(对学生冷漠)、低成就感(觉得没用)三者并现，正是教师职业倦怠的三大核心维度。",
+          "answerKeywords": [
+            "职业倦怠",
+            "情绪衰竭",
+            "去个性化",
+            "低成就感"
+          ]
+        },
+        {
+          "id": "B",
+          "text": "正常的专业成熟——带久了变得淡定从容，是经验丰富的表现。",
+          "quality": "risk",
+          "effects": {
+            "professionalSkill": -2,
+            "studentTrust": -1,
+            "classOrder": 0,
+            "ethicsRisk": 1,
+            "lawRisk": 0,
+            "examScore": -3,
+            "affection_jiang": -1
+          },
+          "feedback": "把'冷漠、空心、自我否定'误读为'淡定从容'，会贻误干预时机。成熟教师关注的是学生发展，而非对学生失去热情，二者性质相反。",
+          "answerKeywords": [
+            "误读为成熟（错）",
+            "冷漠空心是倦怠非从容"
+          ]
+        },
+        {
+          "id": "C",
+          "text": "处在'关注生存'阶段——还在担心自己能否站稳讲台。",
+          "quality": "acceptable",
+          "effects": {
+            "professionalSkill": 0,
+            "studentTrust": 0,
+            "classOrder": 0,
+            "ethicsRisk": 0,
+            "lawRisk": 0,
+            "examScore": -1,
+            "affection_jiang": 0
+          },
+          "feedback": "阶段判断错。'关注生存'是新手期对自身能否胜任的焦虑；本题是带班多年的老教师出现冷漠空心，是职业倦怠，而非新手的生存焦虑。",
+          "answerKeywords": [
+            "关注生存属新手期",
+            "本题为多年老教师倦怠"
+          ]
+        },
+        {
+          "id": "D",
+          "text": "单纯的身体疲劳——好好睡一觉、放个假就彻底好了。",
+          "quality": "acceptable",
+          "effects": {
+            "professionalSkill": 0,
+            "studentTrust": 0,
+            "classOrder": 0,
+            "ethicsRisk": 0,
+            "lawRisk": 0,
+            "examScore": -1,
+            "affection_jiang": 0
+          },
+          "feedback": "把职业倦怠简化为身体累，低估了问题。倦怠是情绪、人际态度与自我评价的综合耗竭，需调适认知、寻求支持、调整工作方式，单靠休息难以根治。",
+          "answerKeywords": [
+            "不止身体累",
+            "倦怠是综合性心理耗竭"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch15_f_after",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "江晚",
+      "expression": "tender",
+      "text": "（她轻声说）\n所以，慌、累、怀疑自己，都不丢人——认得出它、接得住它，才是专业。\n（她把茶往我手里塞）那么，怎么让自己越带越稳、而不是越带越倦？这就要说到最后一课了——让顾老师告诉你，老师是怎么'在教中学、在教中长'的。"
+    },
+    {
+      "id": "ch15_g_teach_1",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "顾承",
+      "expression": "neutral",
+      "text": "（顾承重新坐回来，手边是一本翻旧了的教学札记）\n防倦怠也好、越带越好也罢，靠的是同一件事——**专业发展，靠的是持续的教育反思**。\n我带班这些年，每天放学都逼自己写两行：今天哪步处理得好、哪步若重来该怎么改。这就是**教学反思**——对自己的教育实践不断回看、追问、改进。"
+    },
+    {
+      "id": "ch15_g_teach_2",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "顾承",
+      "expression": "neutral",
+      "text": "比反思再进一步，是**行动研究**：老师把自己课堂里的真问题，当课题来做——'我班纪律乱'就研究'怎么用任务促成纪律'，边干边改、边改边记，最后写成经验。\n它不是为了发论文摆样子，是'为了改进自己的教育实践、由教师本人在真实情境中开展的研究'。教研、听评课、写教学论文，都是它的载体。"
+    },
+    {
+      "id": "ch15_g_teach_3",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "顾承",
+      "expression": "tender",
+      "text": "（他把那本札记推到我面前）\n你看，会反思的老师，每一届学生、每一次失误，都成了他往上走的台阶；不反思的，教三十年，也只是把第一年重复了三十遍。\n（他眼神郑重）今天这一天，你也该写下你的'第一页'。来——最后一道题，看你认不认得'反思'与'行动研究'的样子。"
+    },
+    {
+      "id": "ch15_g_apply",
+      "type": "choice",
+      "background": "office",
+      "speaker": "顾承",
+      "expression": "neutral",
+      "knowledgeCheck": "q_teacherdev_01",
+      "text": "（他指了指那本札记）\n一位老师发现自己班课堂纪律总乱，于是把'如何用任务驱动改善课堂纪律'当成课题，在自己班上设计方案、实施、观察记录、再不断调整改进。这种专业发展方式属于——",
+      "examTags": {
+        "subject": "302",
+        "module": "班级管理与教师心理",
+        "examPoint": "教师专业发展方式的辨别（教学反思 / 行动研究）",
+        "questionType": "材料分析"
+      },
+      "choices": [
+        {
+          "id": "A",
+          "text": "行动研究——教师为改进自己的教育实践，把课堂真问题作为课题，在真实情境中边研究边改进。",
+          "quality": "optimal",
+          "effects": {
+            "professionalSkill": 2,
+            "studentTrust": 0,
+            "classOrder": 1,
+            "ethicsRisk": 0,
+            "lawRisk": 0,
+            "examScore": 3,
+            "affection_gu": 3
+          },
+          "feedback": "对。由教师本人针对自身实践中的真问题、在真实教学情境中'设计-实施-观察-改进'的循环研究，且目的在于改进实践，正是行动研究。",
+          "answerKeywords": [
+            "行动研究",
+            "自身真问题作课题",
+            "真实情境边研究边改进",
+            "改进实践"
+          ]
+        },
+        {
+          "id": "B",
+          "text": "教学反思——课后回想这节课哪里好、哪里不好，下次改进。",
+          "quality": "acceptable",
+          "effects": {
+            "professionalSkill": 1,
+            "studentTrust": 0,
+            "classOrder": 0,
+            "ethicsRisk": 0,
+            "lawRisk": 0,
+            "examScore": 1,
+            "affection_gu": 1
+          },
+          "feedback": "教学反思是回看追问、有改进意识，方向相近；但本题更进一步——系统地立题、设计方案、实施观察、循环改进，已构成完整的行动研究。",
+          "answerKeywords": [
+            "反思是回看追问",
+            "本题成系统行动研究"
+          ]
+        },
+        {
+          "id": "C",
+          "text": "理论研究——查阅文献、构建理论体系，得出普适的教育规律。",
+          "quality": "risk",
+          "effects": {
+            "professionalSkill": -1,
+            "studentTrust": 0,
+            "classOrder": 0,
+            "ethicsRisk": 0,
+            "lawRisk": 0,
+            "examScore": -2,
+            "affection_gu": -1
+          },
+          "feedback": "本题不是为追求普适理论而做的纯理论研究，而是教师在自己班级、为解决自身实践问题开展的研究，落点在改进实践，属行动研究。",
+          "answerKeywords": [
+            "非纯理论研究",
+            "目的在改进自身实践"
+          ]
+        },
+        {
+          "id": "D",
+          "text": "经验总结——把过去带班的成功做法写成文章，供别人借鉴。",
+          "quality": "acceptable",
+          "effects": {
+            "professionalSkill": 0,
+            "studentTrust": 0,
+            "classOrder": 0,
+            "ethicsRisk": 0,
+            "lawRisk": 0,
+            "examScore": -1,
+            "affection_gu": 0
+          },
+          "feedback": "经验总结是对既往做法的回顾整理；本题是面向当前真问题、边实施边改进的循环过程，强调'在行动中研究、在研究中行动'，属行动研究。",
+          "answerKeywords": [
+            "经验总结是回顾既往",
+            "行动研究是边做边改"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch15_g_after",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "顾承",
+      "expression": "smile",
+      "text": "（他合上札记，郑重地把它放进我手里）\n这本，送你。从今天起，每天写两行。\n（他声音低沉而有力）会带班的老师，带的不只是一个班，还有他自己——往更好的地方带。"
+    },
+    {
+      "id": "ch15_end_1",
+      "type": "dialogue",
+      "background": "classroom",
+      "speaker": "narrator",
+      "text": "放学后，空教室只剩夕阳。\n张子默主动留下来擦黑板，林悦在整理小组评比栏，几个原本各自为政的孩子凑在一起商量班级活动——只一天，(7)班好像悄悄'长'了一点点。\n我翻开顾承送的札记，在第一页写下今天处理的每一件事、踩过的每一个坑。"
+    },
+    {
+      "id": "ch15_end_2",
+      "type": "dialogue",
+      "background": "classroom",
+      "speaker": "narrator",
+      "text": "这一天，我学会了用'最小干预'处理问题行为，用'三阶段'读懂一个班怎么长大，用'撕掉标签'去转化一个被叫作'差生'的少年；学会了课堂管理的三条章法、纪律从他律到自律的四步路；也第一次认真看见——老师这个人，会累、会倦，更要靠反思与研究，一直长。\n（合上札记，我抬头望了眼这间渐渐有了'家'的样子的教室。带班的艺术，原来是把一群人，连同自己，一起，慢慢带向更好的地方。）"
+    },
+    {
+      "id": "ch15_end",
+      "type": "summary",
+      "background": "classroom",
+      "speaker": "narrator",
+      "text": "（带班这一课落幕。把今天的得失，一条条记进札记吧——人记进去了，分也得记进去。）",
+      "review": {
+        "learnedExamPoints": [
+          "302-班级管理-课堂问题行为的处理（非言语暗示·不打断教学·不当众羞辱）— 顾承",
+          "302-班级管理-班集体发展阶段与培养（组建→形成→发展）— 顾承",
+          "302-班级管理-班主任工作（常规/个别教育·操行评定·后进生转化）— 顾承",
+          "302-班级管理-课堂管理原则（预防为先·最小干预·对事不对人）— 程砚/顾承",
+          "302-班级管理-课堂纪律发展阶段（教师促成→集体促成→任务促成→自我促成）— 顾承",
+          "302-班级管理与教师心理-教师心理（角色·专业发展阶段·职业倦怠）— 江晚",
+          "302-班级管理与教师心理-教师专业发展与教育反思/行动研究 — 顾承"
+        ],
+        "structure": "七个考点都从'我首次代理副班主任、用一天处理班级失序'这一事件长出来：学生接话起哄→课堂问题行为处理；班级一盘散沙→班集体发展阶段；张子默被叫差生→班主任工作与后进生转化；课堂怎么管→课堂管理原则；纪律怎样从他律到自律→课堂纪律发展阶段；老师自己累垮→教师心理与职业倦怠；越带越好靠什么→教师专业发展与反思/行动研究。走的是'剧情讲授→马上做题→应用→反馈'。章末月考为冷测。",
+        "mockExam": "core_ch15_mock",
+        "recommendedReview": [
+          "答错课堂问题行为→顾承重讲非言语暗示·不打断教学·不当众羞辱三铁律",
+          "答错班集体阶段→顾承重讲组建/形成/发展三阶段及各阶段培养工作",
+          "答错班主任工作→顾承重讲个别教育与后进生转化(关爱·查因·扬长·反复抓)",
+          "答错课堂管理原则→程砚重讲预防为先·最小干预·对事不对人",
+          "答错课堂纪律阶段→顾承重讲教师促成→集体促成→任务促成→自我促成",
+          "答错教师心理→江晚重讲教师角色·专业发展三阶段·职业倦怠三维度",
+          "答错教师专业发展→顾承重讲教学反思与行动研究的区别"
+        ]
+      }
+    }
+  ]
+}

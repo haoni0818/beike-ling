@@ -1,0 +1,226 @@
+{
+  "chapterId": "route_cheng_1",
+  "route": "cheng",
+  "requires": {"flagsAllTrue": ["route_locked_cheng"]},
+  "title": "程砚线 · 第一章 · 被将军的那堂课",
+  "summary": "锁定程砚线后的第一章。一节推门公开课，程砚坐在评审席最后一排，全程一句句反问把你的教学设计挑得体无完肤——你被他将军，几乎下不来台。可课后他没走，留下一句精准到扎心的点拨：你这堂课，连'目标'都没站对地方。被否定的羞，和被看穿的痛，混着一丝说不清的心动。借这次评课，他把教育学的人物来路与课程理论一层层铺给你听——他挑的不是你这个人，是你脚下那块没踩实的地基。",
+  "designNote": "乙女向个人线 ch_cheng_1，黄金四拍第一拍'心动·被将军也被点醒'。第一人称旁白贯穿。程砚现已有立绘，表情仅 neutral|smile|serious|worried|blush|tender，心动 beat 用 tender/blush；cameo 沈亦舟表情仅 neutral|smile|serious|worried。背景仅 staff_room|meeting_room|corridor|classroom|library 五键内取用（本章用 classroom|meeting_room|corridor）。深挖模块为 302 教育基础原理(教育学人物史)+中学课程(课程理论)。teach→knowledgeCheck(带 examTags 的 choice，指向 ch_cheng_quiz.json)→apply→after→heart 微循环，本章 2 个 teach。关键选择用 setFlag 记录倾向(route_lean_cheng / saw_through_cheng)，affection_cheng 通过 effects 累积；答错教学论给 examScore 负分。学生仅作教学对象/事件源，恋爱仅成年同事。腹黑毒舌但有尊严，不刻薄伤人。",
+  "characters": ["cheng", "shen"],
+  "students": ["林小满"],
+  "valueFields": ["professionalSkill", "studentTrust", "classOrder", "ethicsRisk", "lawRisk", "examScore", "affection_cheng"],
+  "note": "ethicsRisk/lawRisk 为逆向指标，越低越好。knowledgeCheck 指向 ch_cheng_quiz.json 的题目 id。本章 route:cheng，requires 已锁线。程砚立绘表情 neutral|smile|serious|worried|blush|tender。",
+  "nodes": [
+    {
+      "id": "ch_cheng_1_intro",
+      "type": "dialogue",
+      "background": "classroom",
+      "speaker": "narrator",
+      "text": "周二上午，第三节。教研中心给我排了一节'推门课'——不打招呼直接来听的那种。\n我讲的是一节新授课，自以为环节齐全、活动热闹。可教室最后一排，坐着一个我最不想见的人：程砚，今天的评审。\n（他没记笔记，只把双手交叠搁在桌上，安安静静地看。越安静，我心里越发毛。）"
+    },
+    {
+      "id": "ch_cheng_1_intro_2",
+      "type": "dialogue",
+      "background": "classroom",
+      "speaker": "沈亦舟",
+      "expression": "worried",
+      "text": "（下课铃响，沈亦舟从隔壁班溜过来，压着嗓子。）\n完了完了，怎么是他来评？你不知道啊——'笑面阎王'评课，从不拍桌子，他就问。\n一句句'你为什么这么设计''你这一步想达成什么'，问到你自己开始怀疑人生为止。挺住啊兄弟。"
+    },
+    {
+      "id": "ch_cheng_1_intro_3",
+      "type": "dialogue",
+      "background": "meeting_room",
+      "speaker": "程砚",
+      "expression": "smile",
+      "text": "（评课在小教研室。他给我倒了杯茶，唇角是温的，开口却不留情。）\n坐。课，很'热闹'。小组活动三个，多媒体两段，最后还有个抢答。\n（他不紧不慢地呷了口茶。）我只问一句——你这节课，到底想让学生'学会'什么？一句话，说清。"
+    },
+    {
+      "id": "ch_cheng_1_intro_4",
+      "type": "dialogue",
+      "background": "meeting_room",
+      "speaker": "narrator",
+      "text": "我张了张嘴，想说'让学生掌握知识、提升能力、培养兴趣'——话到一半，自己都觉得空。\n他没催，就那么看着我，眼神温温的，却像一把尺子，量出了我设计里全是'我要做什么活动'，没有'学生要到达哪儿'。\n（一节课我备了三天，被他一句话戳穿：我装满了'怎么教'，却没想清'教到哪'。脸上发烫，心里却莫名地——服。）"
+    },
+    {
+      "id": "ch_cheng_1_teach_1",
+      "type": "dialogue",
+      "background": "meeting_room",
+      "speaker": "程砚",
+      "expression": "serious",
+      "text": "（见我答不上，他放下茶杯，语气反倒缓了。）\n答不上不丢人。丢人的是天天'教育、教育'，却不知道这门学问的根。我替你捋。\n先认人——这是教育学最爱考的'人物·著作·主张'一一对应：\n**夸美纽斯**，《大教学论》，'教育学之父'，第一个系统论述**班级授课制**，主张'把一切知识教给一切人'，让教育学独立成科。"
+    },
+    {
+      "id": "ch_cheng_1_teach_2",
+      "type": "dialogue",
+      "background": "meeting_room",
+      "speaker": "程砚",
+      "expression": "serious",
+      "text": "（他竖起两根手指，慢慢比划。）\n往后是两座对立的山。\n**赫尔巴特**，《普通教育学》，'**现代教育学之父**'/'科学教育学之父'，主张**教师中心、课堂中心、教材中心**——'传统教育'三中心；他还提出**教学过程四阶段**(明了—联想—系统—方法)。\n**杜威**，《民主主义与教育》，针锋相对，'教育即生活''学校即社会''**做中学**'，主张**儿童中心、活动中心、经验中心**——'现代教育'新三中心。\n记区别一句话：赫尔巴特把话筒递给**老师**，杜威把它递给**孩子**。"
+    },
+    {
+      "id": "ch_cheng_1_apply",
+      "type": "choice",
+      "background": "meeting_room",
+      "speaker": "程砚",
+      "expression": "serious",
+      "knowledgeCheck": "q_cheng_thinkers_01",
+      "text": "（他把讲义合上，抛来第一问。）\n那我先验验你的地基。你刚才那节课，活动一个接一个、让学生在做中悟、几乎不正面讲授——这种'重活动、重经验、以儿童为中心'的取向，最接近下面哪位的主张？答错，今天这课我们就从头补起。",
+      "examTags": {
+        "subject": "302",
+        "module": "教育基础知识与基本原理",
+        "examPoint": "教育学代表人物与著作、主张的对应（夸美纽斯/赫尔巴特/杜威）",
+        "questionType": "单项选择"
+      },
+      "choices": [
+        {
+          "id": "A",
+          "text": "杜威：'做中学'、儿童中心、活动中心、经验中心的现代教育主张。",
+          "quality": "optimal",
+          "effects": {"professionalSkill": 2, "studentTrust": 0, "classOrder": 0, "ethicsRisk": -1, "lawRisk": 0, "examScore": 3, "affection_cheng": 3},
+          "feedback": "对。'做中学、儿童/活动/经验中心'是杜威(《民主主义与教育》)现代教育思想的核心。能给自己的课贴对'流派标签'，才谈得上改进。",
+          "setFlag": {"route_lean_cheng": 1},
+          "answerKeywords": ["杜威", "做中学", "儿童中心", "现代教育"]
+        },
+        {
+          "id": "B",
+          "text": "赫尔巴特：教师中心、课堂中心、教材中心的传统教育主张。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -1, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 1, "lawRisk": 0, "examScore": -3, "affection_cheng": -1},
+          "feedback": "正相反。赫尔巴特是'三中心'的传统教育、把重心交给老师；你这堂课重活动、重儿童，属杜威一脉。'旧师新童'要分清。",
+          "answerKeywords": ["赫尔巴特", "传统教育三中心", "教师中心"]
+        },
+        {
+          "id": "C",
+          "text": "夸美纽斯：班级授课制、把一切知识教给一切人。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -1, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 1, "lawRisk": 0, "examScore": -3, "affection_cheng": -1},
+          "feedback": "错。夸美纽斯的贡献是班级授课制、使教育学独立，与'儿童中心、做中学'不是一回事。人物-主张错配是本类题最大的雷。",
+          "answerKeywords": ["夸美纽斯", "班级授课制", "教育学独立"]
+        },
+        {
+          "id": "D",
+          "text": "苏霍姆林斯基：培养全面和谐发展的人。",
+          "quality": "suboptimal",
+          "effects": {"professionalSkill": 0, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": -1, "affection_cheng": 0},
+          "feedback": "苏霍姆林斯基主张'全面和谐发展'(《把整个心灵献给孩子》)，是暖色补充，但题干指向的'做中学、儿童中心'最贴切的是杜威。",
+          "answerKeywords": ["苏霍姆林斯基", "全面和谐发展", "非本题最贴切"]
+        }
+      ]
+    },
+    {
+      "id": "ch_cheng_1_after",
+      "type": "dialogue",
+      "background": "meeting_room",
+      "speaker": "程砚",
+      "expression": "neutral",
+      "text": "（他'嗯'了一声，听不出褒贬，却把我的紧张卸下半截。）\n答对了。可你看——你的课明明走的是杜威的路子，'让孩子在做中学'，方向不坏。\n问题在于：你只学了杜威的'热闹'，没学他的'目的'。活动不是为了活动，是为了让孩子在活动里到达一个你预先想清楚的地方。\n这就引到你今天最该补的——**课程**。"
+    },
+    {
+      "id": "ch_cheng_1_teach_3",
+      "type": "dialogue",
+      "background": "meeting_room",
+      "speaker": "程砚",
+      "expression": "neutral",
+      "text": "（他翻到课程那页，条分缕析。）\n课程理论有两座灯塔，必考：\n**泰勒**，《课程与教学的基本原理》，'课程理论之父'，提出**目标模式**——课程开发先问四件事：定什么目标、选什么经验、怎么组织、如何评价。'**泰勒原理**'的核心，是**目标先行**。\n**斯滕豪斯**反过来，提'**过程模式**'，主张课程不该被预设目标框死，重在展开过程本身。\n（他抬眼看我。）你那节课的毛病，就出在'目标'这一步——泰勒第一问，你没答。"
+    },
+    {
+      "id": "ch_cheng_1_teach_4",
+      "type": "dialogue",
+      "background": "meeting_room",
+      "speaker": "程砚",
+      "expression": "neutral",
+      "text": "（他放下笔。）\n再补一个新课改的硬核：'**三维目标**'。一节课的目标要写三个维度——\n**知识与技能**(学到什么、会做什么)、**过程与方法**(怎么学、用什么方法探究)、**情感态度与价值观**(养成什么态度与价值取向)。\n（他忽然反问，眼神又利起来。）你那三个小组活动，分别想达成哪个维度的目标？……还是说，你压根没分？"
+    },
+    {
+      "id": "ch_cheng_1_apply_2",
+      "type": "choice",
+      "background": "meeting_room",
+      "speaker": "程砚",
+      "expression": "serious",
+      "knowledgeCheck": "q_cheng_curriculum_01",
+      "text": "（他把我的教案推回来，指着其中一个环节。）\n那我考你这一道，答对今天就算过关——有位老师在教学目标里写：'学生能够独立设计并完成一次社会调查问卷。'按新课改三维目标划分，这一条属于哪个维度？",
+      "examTags": {
+        "subject": "302",
+        "module": "中学课程",
+        "examPoint": "新课改三维目标的辨别（知识与技能/过程与方法/情感态度与价值观）",
+        "questionType": "单项选择"
+      },
+      "choices": [
+        {
+          "id": "A",
+          "text": "知识与技能：指向'学到什么知识、形成什么技能、会做什么'。",
+          "quality": "optimal",
+          "effects": {"professionalSkill": 2, "studentTrust": 1, "classOrder": 0, "ethicsRisk": -1, "lawRisk": 0, "examScore": 3, "affection_cheng": 3},
+          "feedback": "对。'能独立设计并完成问卷'落在'会做什么、形成什么技能'，属知识与技能维度。抓'结果性、可操作的能力'这个特征。",
+          "setFlag": {"route_lean_cheng": 1},
+          "answerKeywords": ["知识与技能", "会做什么", "技能形成"]
+        },
+        {
+          "id": "B",
+          "text": "过程与方法：指向'怎么学、用什么方法去探究'。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -1, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 1, "lawRisk": 0, "examScore": -3, "affection_cheng": -1},
+          "feedback": "易混。若写成'在小组合作探究中学会观察比较归纳的方法'才是过程与方法；本题强调'能完成、会做'，是知识与技能。",
+          "answerKeywords": ["过程与方法", "怎么学", "易混点"]
+        },
+        {
+          "id": "C",
+          "text": "情感态度与价值观：指向兴趣、态度、价值取向的养成。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -1, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 1, "lawRisk": 0, "examScore": -3, "affection_cheng": -1},
+          "feedback": "错。本题没提态度、价值的养成，只说'能设计完成'，是技能层面。情感态度维度要看到'体会、关切、形成态度'这类表述。",
+          "answerKeywords": ["情感态度与价值观", "态度价值养成", "本题未涉及"]
+        },
+        {
+          "id": "D",
+          "text": "这属于课程目标的'过程模式'，不分维度。",
+          "quality": "suboptimal",
+          "effects": {"professionalSkill": 0, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": -1, "affection_cheng": 0},
+          "feedback": "偷换概念。'过程模式/目标模式'是课程开发的两种取向，'三维目标'是新课改对课时目标的维度划分，两套概念别串。本题应按三维目标判，选知识与技能。",
+          "answerKeywords": ["过程模式与三维目标混淆", "偷换概念"]
+        }
+      ]
+    },
+    {
+      "id": "ch_cheng_1_after_2",
+      "type": "dialogue",
+      "background": "meeting_room",
+      "speaker": "程砚",
+      "expression": "tender",
+      "text": "（他听完，唇角那点温度终于落进了眼睛里，神色软了下来。）\n对了。你看——你不是不会，你只是从没被人逼着把'目标'摆到桌面上看。\n（他把我的教案推回来，在扉页空白处写了一行瘦劲的字。）\n回去把这节课重写一遍：先写清你要学生到达哪儿，再回头删掉那些只为热闹的活动。能减掉一半，你就出师了。"
+    },
+    {
+      "id": "ch_cheng_1_heart",
+      "type": "dialogue",
+      "background": "meeting_room",
+      "speaker": "narrator",
+      "text": "我低头看那行字：'有目标的热闹，才叫课；没目标的热闹，叫玩。'\n落款没有名字，只画了一个极小的、像对勾的记号。\n（明明被他从头将到尾，问得无地自容，可这会儿心里却亮堂堂的——他挑的从来不是我，是我没踩实的地基。\n这人嘴是真毒，话也是真——准。被这样一个人逼着长进，怎么……还有点心动。）"
+    },
+    {
+      "id": "ch_cheng_1_end_1",
+      "type": "dialogue",
+      "background": "corridor",
+      "speaker": "沈亦舟",
+      "expression": "smile",
+      "text": "（走廊上，沈亦舟探头探脑。）\n哟，活着出来了？脸还在，没被问哭，行啊！\n（他瞄了眼我手里的教案，眼睛瞪圆。）……他给你写批注了？我磨了他两年的课，他就甩我四个字'重新设计'。完了，你这是被'笑面阎王'当苗子盯上了。"
+    },
+    {
+      "id": "ch_cheng_1_end",
+      "type": "summary",
+      "background": "corridor",
+      "speaker": "narrator",
+      "text": "（程砚线第一章落幕。被将军、也被点醒的这一课，把今天学的、心动的，一并记进手账。）",
+      "review": {
+        "learnedExamPoints": [
+          "302-教育基础原理-教育学代表人物与著作（夸美纽斯/赫尔巴特/杜威/苏霍姆林斯基）— 程砚",
+          "302-中学课程-课程理论（泰勒目标模式·泰勒原理/斯滕豪斯过程模式）与新课改三维目标 — 程砚"
+        ],
+        "structure": "从一节被将军的推门课切入，先认人物来路，再补课程理论与三维目标，借'你的课目标缺位'把考点用出来。走'反问点拨→马上做题→应用→反馈'微循环两轮。",
+        "mockExam": "route_cheng_mock",
+        "recommendedReview": [
+          "答错人物→程砚重讲夸美纽斯/赫尔巴特/杜威的人物-著作-主张一一对应（旧师新童）",
+          "答错课程→程砚重讲泰勒目标模式与斯滕豪斯过程模式、新课改三维目标的维度辨别"
+        ]
+      }
+    }
+  ]
+}

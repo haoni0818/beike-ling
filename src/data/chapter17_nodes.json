@@ -1,0 +1,687 @@
+{
+  "chapterId": "core_ch17",
+  "title": "第十七章 · 教育的根基",
+  "summary": "笔试只剩最后一周。程砚把你拉进教研中心，桌上摊着一沓他亲手整理的'冲刺清单'。这一次他不挑某一科，而是把你这一路学过的根全摆出来——教育与社会、教育与人、学制、教育学人物、课程理论、素质教育、结构化面试、教育测量，跨着301和302，一题一题替你查漏。他依旧是那副温言利眼的样子，可临到收尾，那句'根扎稳了，铃响你就不慌了'，却让我在满桌讲义间，悄悄红了耳根。这是冲刺，也像是有人，认认真真送我上考场。",
+  "designNote": "考前综合冲刺章·学术线收束：主带教程砚(教研中心主任·儒雅严谨·腹黑学术派)，全员可短client客串(陆/江/顾/沈)。程砚【暂无立绘】，speaker='程砚'不写expression，靠反问张力承载人设。本章跨科目(301职业理念+302多模块)，用'考前一周查漏'这一事件串起8个考点：教育与社会发展、教育与人的发展、学校教育制度、教育学人物著作主张、课程理论与三维目标、素质教育内涵、结构化面试框架、教育测量技术指标。每考点走'反问点拨→马上做题→应用→反馈'微循环。程砚无affection字段，cameo同事可带各自affection。贯穿钩子：程砚那沓写满批注的'冲刺清单'，最后整本交到你手里。",
+  "characters": ["cheng", "lu", "jiang", "gu", "shen"],
+  "students": [],
+  "valueFields": ["professionalSkill", "studentTrust", "classOrder", "ethicsRisk", "lawRisk", "examScore", "affection_lu", "affection_jiang", "affection_gu", "affection_cheng", "affection_shen"],
+  "note": "ethicsRisk/lawRisk 为逆向指标，越低越好。knowledgeCheck 指向 chapter17_quiz.json 的题目 id。本章跨科目，每题 subject/module 按各考点单独标注。程砚暂无立绘，speaker='程砚' 不写 expression。",
+  "nodes": [
+    {
+      "id": "ch17_intro_1",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "narrator",
+      "text": "笔试倒计时，整整七天。\n办公室里这几天的空气都是绷着的——有人翻真题翻到手指起毛边，有人对着错题本叹气。我也一样，301、302两本书摊在桌上，越临近越觉得脑子里那些考点像散了一地的珠子，串不起来。\n（就在我第三次把'个人本位'和'社会本位'记反的时候，桌上多了一张瘦劲的便签：'教研中心，带上你的错题。冲刺最后一程，我陪你过一遍根。——程砚'。）"
+    },
+    {
+      "id": "ch17_intro_2",
+      "type": "dialogue",
+      "background": "corridor",
+      "speaker": "沈亦舟",
+      "expression": "grin",
+      "text": "（走廊上沈亦舟探头探脑，看见我手里的便签就乐了）\n哟，又被程主任'传唤'啦？这回还是冲刺前的总复习待遇——\n（他压低声音，挤眉弄眼）我跟你说，临考还肯给你一对一过一遍的人，这学校没几个。别紧张，他嘴毒心软，去吧去吧。"
+    },
+    {
+      "id": "ch17_intro_3",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "程砚",
+      "text": "（教研中心里，他桌上摊着一沓厚厚的纸，密密麻麻是手写的条目和批注。还是那块'程砚'名牌，还是那杯凉茶。他抬眼看我，唇角温，眼神利）\n来了。坐。\n这是我替你理的'冲刺清单'——把你这一路学过的根，全列在这儿了。最后七天，不求你新学什么，只求一件事：把根，扎稳。\n（他把清单往中间一推）规矩你懂——我问，你答。答岔了的，咱们当场补回来。从最根上的开始。"
+    },
+    {
+      "id": "ch17_a_teach_1",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "程砚",
+      "text": "（他用笔尖点了点清单第一行）\n第一根：**教育与社会发展**的关系。这一块爱出选择，也爱埋在材料里。\n记两个字——'制约'与'反作用'。社会的政治经济文化人口，制约着教育；教育又反过来，对它们起反作用。一来一回，互相牵着。"
+    },
+    {
+      "id": "ch17_a_teach_2",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "程砚",
+      "text": "（他一条条拆给我听）\n**生产力**决定教育的规模速度、人才规格、内容手段——经济落后，学校就办不大、办不精；\n**政治经济制度**决定教育的领导权、受教育权、目的与性质——谁掌权，教育就替谁说话；\n**文化**影响教育的内容与价值取向，教育又传承、创新文化；\n**人口**的数量结构影响教育规模与布局。\n（他忽然反问）那反过来——'科教兴国，教育推动经济发展'，这说的是教育对哪一项的反作用？"
+    },
+    {
+      "id": "ch17_a_apply",
+      "type": "choice",
+      "background": "office",
+      "speaker": "程砚",
+      "knowledgeCheck": "q_edusociety_01",
+      "text": "（我答'生产力'，他几不可察点了下头，又翻出一道）\n那这道你辨清楚——'一个国家把什么样的人定为培养目标、谁有权办学、教育为谁服务'，这些首先是由社会的哪一方面决定的？",
+      "examTags": {
+        "subject": "302",
+        "module": "教育基础知识与基本原理",
+        "examPoint": "教育与社会发展的相互制约（政治经济制度对教育的决定作用）",
+        "questionType": "单项选择"
+      },
+      "choices": [
+        {
+          "id": "A",
+          "text": "政治经济制度——它决定教育的领导权、受教育权、教育目的与性质。",
+          "quality": "optimal",
+          "effects": {"professionalSkill": 2, "studentTrust": 0, "classOrder": 0, "ethicsRisk": -1, "lawRisk": 0, "examScore": 3, "affection_cheng": 2},
+          "feedback": "对。'领导权、受教育权、目的与性质'是政治经济制度对教育的决定作用，必背的对应。生产力管的是规模速度与人才规格，别串。",
+          "answerKeywords": ["政治经济制度", "领导权", "受教育权", "教育目的与性质"]
+        },
+        {
+          "id": "B",
+          "text": "生产力——它决定教育的领导权和教育的性质。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -1, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 1, "lawRisk": 0, "examScore": -3, "affection_cheng": -1},
+          "feedback": "错配。生产力决定的是教育的规模速度、人才规格、内容与手段；'领导权、性质、目的'是政治经济制度决定的。这是本块最常错的张冠李戴。",
+          "answerKeywords": ["生产力管规模速度人才规格", "非领导权与性质"]
+        },
+        {
+          "id": "C",
+          "text": "文化——它决定谁有权办学、教育为谁服务。",
+          "quality": "suboptimal",
+          "effects": {"professionalSkill": 0, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": -1, "affection_cheng": 0},
+          "feedback": "文化影响的是教育的内容与价值取向，并与教育相互传承创新；'领导权、为谁服务'属政治经济制度的决定作用，对应错了。",
+          "answerKeywords": ["文化影响内容与价值取向", "非领导权"]
+        },
+        {
+          "id": "D",
+          "text": "人口——人口结构决定教育的领导权与目的。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -1, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 1, "lawRisk": 0, "examScore": -3, "affection_cheng": -1},
+          "feedback": "错。人口数量结构影响的是教育的规模、布局与结构，不决定领导权与目的。领导权、受教育权、目的与性质由政治经济制度决定。",
+          "answerKeywords": ["人口影响规模布局", "非领导权与目的"]
+        }
+      ]
+    },
+    {
+      "id": "ch17_a_after",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "程砚",
+      "text": "（他'嗯'了一声）\n记住口诀就不慌：生产力管'多大多快、要什么样的人'，政治经济制度管'谁说了算、为谁、什么性质'。\n材料题里见到'领导权、为谁服务、目的性质'，眼睛就该亮——那是政治经济制度在场。"
+    },
+    {
+      "id": "ch17_t1",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "程砚",
+      "text": "（他把第一页翻过去，露出第二行）\n社会这条线你站住了。那往里收一寸——同样是'影响人',社会之外,**遗传、环境、教育、人自己**这几样,各在一个人的发展里扮什么角色?\n这一块,选择和辨析都爱考。"
+    },
+    {
+      "id": "ch17_b_teach_1",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "程砚",
+      "text": "（他竖起四根手指，一根根放下）\n影响人发展的因素，背四样、记清各自的'身份'——\n**遗传**：提供发展的**生理前提与物质基础**，是'可能性'，但不能预定发展；\n**环境**：把遗传的可能变成现实，提供发展的**条件与对象**，影响有顺有逆；\n**学校教育**：在人的发展中起**主导作用**——因为它有目的、有计划、有组织，由专业的人来做；\n**个体主观能动性**：是发展的**内在动力**，最终的决定性因素。"
+    },
+    {
+      "id": "ch17_b_teach_2",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "程砚",
+      "text": "（他敲了敲桌面）\n最爱考的就是这两顶帽子别戴错：\n**学校教育起'主导作用'**——不是'决定作用'，因为再好的教育，也得靠学生自己动起来才算数；\n真正起'**决定**'分量的，是**个体的主观能动性**。\n（他侧头反问）那我问你：'同样的老师同样的课，有人脱胎换骨，有人无动于衷'——这句话最想强调哪个因素？"
+    },
+    {
+      "id": "ch17_b_apply",
+      "type": "choice",
+      "background": "office",
+      "speaker": "程砚",
+      "knowledgeCheck": "q_eduperson_01",
+      "text": "（我说'主观能动性'，他不置可否，反手又加一道）\n那这道你定准了——'狼孩'被狼群带大，错过了语言关键期，回到人类社会后再难学会说话。这个例子最有力地说明了哪一因素在人发展中的作用？",
+      "examTags": {
+        "subject": "302",
+        "module": "教育基础知识与基本原理",
+        "examPoint": "影响人发展的因素（遗传/环境/学校教育/主观能动性）的辨别与作用定位",
+        "questionType": "单项选择"
+      },
+      "choices": [
+        {
+          "id": "A",
+          "text": "环境——环境为发展提供条件，错过适宜环境会使某些发展难以实现。",
+          "quality": "optimal",
+          "effects": {"professionalSkill": 2, "studentTrust": 0, "classOrder": 0, "ethicsRisk": -1, "lawRisk": 0, "examScore": 3, "affection_cheng": 2},
+          "feedback": "对。狼孩有正常的人类遗传素质（生理前提在），却因脱离人类语言环境、错过关键期而难以发展，最有力地说明了环境（条件）对发展的影响。",
+          "answerKeywords": ["环境提供条件", "关键期", "遗传前提仍在", "条件未满足"]
+        },
+        {
+          "id": "B",
+          "text": "遗传——狼孩说明遗传素质直接决定了语言能力的高低。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -1, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 1, "lawRisk": 0, "examScore": -3, "affection_cheng": -1},
+          "feedback": "错。狼孩遗传上具备正常人的语言潜能（可能性在），恰恰是缺了环境才没发展出来，说明的是环境而非遗传起决定。遗传只提供可能性，不预定发展。",
+          "answerKeywords": ["遗传只提供可能性", "不预定发展", "本例反证遗传决定论"]
+        },
+        {
+          "id": "C",
+          "text": "学校教育——说明没有学校教育人就无法发展语言。",
+          "quality": "suboptimal",
+          "effects": {"professionalSkill": 0, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": -1, "affection_cheng": 0},
+          "feedback": "范围窄了。语言发展靠的是整个人类生活环境，不限于学校；本例核心是'脱离人类环境、错过关键期'，落点在环境而非学校教育的主导作用。",
+          "answerKeywords": ["学校教育是环境的一部分", "本例强调整体环境"]
+        },
+        {
+          "id": "D",
+          "text": "主观能动性——说明狼孩自己不努力学说话。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -1, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 1, "lawRisk": 0, "examScore": -3, "affection_cheng": -1},
+          "feedback": "误读。问题不在'努不努力'，而在他成长期缺乏人类语言环境、错过了发展窗口。本例最有力说明的是环境（条件）的作用。",
+          "answerKeywords": ["非努力问题", "缺乏环境条件", "错过关键期"]
+        }
+      ]
+    },
+    {
+      "id": "ch17_b_after",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "程砚",
+      "text": "（江晚正好抱着一摞心理档案路过，听见这道，停了一步）\n江晚：（笑）狼孩这题我最爱拿来吓唬人——它专治'遗传决定论'。记住，遗传给的是种子，环境决定种子能不能发芽。\n（程砚朝她点头致意，等她走了才接）她说得对。四个因素你别只会排座次，要会在材料里'指认'：谁在场、谁缺席。"
+    },
+    {
+      "id": "ch17_b_heart",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "narrator",
+      "text": "他低头在清单上替我把这道勾掉，笔尖顿了顿，又在旁边补了行小字：'遗传给可能，环境给现实，教育给方向，自己给动力'。\n（他写字的时候很专注，侧脸在灯下显得格外安静。\n明明是临考查漏，可他把每一根都捋得这样细，倒让我心里那点慌，一点点落了地。）"
+    },
+    {
+      "id": "ch17_t2",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "程砚",
+      "text": "（他抽出第三页）\n人和社会都摸到了。接下来这根偏'实在'——**学校教育制度**，学制。\n这块爱出'辨识题'：给你一种学制的样子，让你说它是什么类型、对应哪个国家路子。还会夹带义务教育的硬条文。"
+    },
+    {
+      "id": "ch17_c_teach_1",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "程砚",
+      "text": "（他在纸上画了三种结构）\n现代学制，记三种类型——\n**双轨制**（如英法）：一轨为上层子弟通向大学，一轨为平民通向就业，两轨平行不相通，等级色彩浓；\n**单轨制**（如美国）：自下而上一个系统、一个阶梯，人人同一通道，最利于普及；\n**分支型**（如苏联、我国）：前段统一（共同基础），到中等后期再分支（普通/职业），是双轨与单轨的折中。"
+    },
+    {
+      "id": "ch17_c_teach_2",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "程砚",
+      "text": "（他又点出一行条文）\n再把**义务教育**的硬骨头啃下：它最鲜明的三个特征是**强制性、免费性（公益性）、普及性（统一性）**。\n我国实行**九年义务教育**。'强制'意味着家长不送孩子上学要担责，'免费'意味着不收学费杂费——这些是法定的，材料里常拿来设伦理/法律陷阱。\n（他反问）那我考你：'前段所有孩子读一样的基础课，初中后期再分流到普高或职高'——这是哪种学制？"
+    },
+    {
+      "id": "ch17_c_apply",
+      "type": "choice",
+      "background": "office",
+      "speaker": "程砚",
+      "knowledgeCheck": "q_edusystem_01",
+      "text": "（我答'分支型'，他点头，又翻出一道辨识）\n那这道你认准——'一套从小学到大学自下而上、人人走同一阶梯、最便于教育普及'的学制，属于下面哪一种类型？",
+      "examTags": {
+        "subject": "302",
+        "module": "教育基础知识与基本原理",
+        "examPoint": "现代学制类型的辨识（双轨制/单轨制/分支型）与义务教育特征",
+        "questionType": "单项选择"
+      },
+      "choices": [
+        {
+          "id": "A",
+          "text": "单轨制——自下而上单一系统、同一阶梯，最有利于教育普及。",
+          "quality": "optimal",
+          "effects": {"professionalSkill": 2, "studentTrust": 0, "classOrder": 0, "ethicsRisk": -1, "lawRisk": 0, "examScore": 3, "affection_cheng": 2},
+          "feedback": "对。'自下而上、人人同一阶梯、利于普及'是单轨制（以美国为代表）的标志。抓'一个系统一个阶梯'这个特征。",
+          "answerKeywords": ["单轨制", "自下而上同一阶梯", "利于普及", "美国"]
+        },
+        {
+          "id": "B",
+          "text": "双轨制——一轨通大学、一轨通就业，两轨平行不相通。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -1, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 1, "lawRisk": 0, "examScore": -3, "affection_cheng": -1},
+          "feedback": "正好相反。双轨制（英法）是两条平行、不相通的轨道，等级色彩浓、不利普及；题干说的是'人人同一阶梯'，应是单轨制。",
+          "answerKeywords": ["双轨制平行不相通", "等级色彩", "非同一阶梯"]
+        },
+        {
+          "id": "C",
+          "text": "分支型学制——前段统一、后段分支，是双轨与单轨的折中。",
+          "quality": "suboptimal",
+          "effects": {"professionalSkill": 0, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": -1, "affection_cheng": 0},
+          "feedback": "分支型（苏联、我国）的特征是'前段统一、中后期再分支'，题干强调的是'始终同一阶梯、最利普及'，更贴单轨制。注意'有没有分支'这个分界。",
+          "answerKeywords": ["分支型前段统一后分支", "题干无分支"]
+        },
+        {
+          "id": "D",
+          "text": "学分制——按修满学分毕业的教学管理制度。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -1, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 1, "lawRisk": 0, "examScore": -3, "affection_cheng": -1},
+          "feedback": "偷换概念。学分制是教学管理制度，不是学制类型；本题问的是现代学制的三种结构类型，应在双轨/单轨/分支型里选，答案是单轨制。",
+          "answerKeywords": ["学分制非学制类型", "属教学管理制度"]
+        }
+      ]
+    },
+    {
+      "id": "ch17_c_after",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "程砚",
+      "text": "（陆知行恰好进来取文件，瞥见'义务教育'四个字，顺口补了一句）\n陆知行：（认真）记牢——义务教育是'强制、免费、普及'，这三条是写进《义务教育法》的硬条文。考伦理题时，家长不让孩子上学，那不是'家务事'，是违法。\n（他放下文件就走，程砚看着他背影笑了笑）法规的事，他比我严。这三个特征，背死。"
+    },
+    {
+      "id": "ch17_t3",
+      "type": "dialogue",
+      "background": "staffroom",
+      "speaker": "程砚",
+      "text": "（他端起凉茶抿了一口，把场地换到了隔壁更宽敞的教研组活动室）\n换个地方，喝口水。下一根，是你最该熟、又最容易在细节上栽跟头的——**教育学的人物、著作、主张**。\n夸美纽斯、赫尔巴特、杜威……这三个名字，我得确认你是真'对应'上了，不是混着背。"
+    },
+    {
+      "id": "ch17_d_teach_1",
+      "type": "dialogue",
+      "background": "staffroom",
+      "speaker": "程砚",
+      "text": "（他在白板上写下三行）\n一一对应，背到能默写——\n**夸美纽斯**，《大教学论》，'教育学之父'，系统提出**班级授课制**，主张'把一切知识教给一切人'，使教育学走向独立；\n**赫尔巴特**，《普通教育学》，'科学教育学之父'/'现代教育学之父'，主张**教师中心、课堂中心、教材中心**（传统教育三中心）；\n**杜威**，《民主主义与教育》，'教育即生活''学校即社会''**做中学**'，主张**儿童中心、活动中心、经验中心**（现代教育新三中心）。"
+    },
+    {
+      "id": "ch17_d_teach_2",
+      "type": "dialogue",
+      "background": "staffroom",
+      "speaker": "程砚",
+      "text": "（他在三行之间画箭头）\n记区别一句话：赫尔巴特把课堂交给**老师**，杜威把它交给**孩子**。一'旧'一'新'，一'师'一'童'。\n出题最阴的玩法，就是把'著作'和'主张'对调——比如说'夸美纽斯主张儿童中心'，或'杜威著《普通教育学》'，引你点头。\n（他反问）那我考你：'做中学、教育即生活'，是谁的旗号？他那本书叫什么？"
+    },
+    {
+      "id": "ch17_d_apply",
+      "type": "choice",
+      "background": "staffroom",
+      "speaker": "程砚",
+      "knowledgeCheck": "q_thinkers_01",
+      "text": "（我答'杜威，《民主主义与教育》'，他唇角动了下）\n那这道你认准——下面四组'人物—著作—主张'的搭配，哪一组是**完全正确**的？这种一一对应题，错一个字都算错。",
+      "examTags": {
+        "subject": "302",
+        "module": "教育基础知识与基本原理",
+        "examPoint": "教育学代表人物—著作—主张的一一对应（夸美纽斯/赫尔巴特/杜威）",
+        "questionType": "单项选择"
+      },
+      "choices": [
+        {
+          "id": "A",
+          "text": "赫尔巴特—《普通教育学》—教师中心、课堂中心、教材中心。",
+          "quality": "optimal",
+          "effects": {"professionalSkill": 2, "studentTrust": 0, "classOrder": 0, "ethicsRisk": -1, "lawRisk": 0, "examScore": 3, "affection_cheng": 2},
+          "feedback": "对。赫尔巴特《普通教育学》+传统教育'三中心'（教师/课堂/教材），人物、著作、主张全部对应正确。这是必背的标准搭配。",
+          "answerKeywords": ["赫尔巴特", "普通教育学", "教师课堂教材三中心", "传统教育"]
+        },
+        {
+          "id": "B",
+          "text": "夸美纽斯—《民主主义与教育》—系统提出班级授课制。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -1, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 1, "lawRisk": 0, "examScore": -3, "affection_cheng": -1},
+          "feedback": "著作错配。班级授课制确是夸美纽斯的，但他的书是《大教学论》；《民主主义与教育》是杜威的。人物对、主张对、书错，整组就错。",
+          "answerKeywords": ["夸美纽斯著《大教学论》", "《民主主义与教育》是杜威"]
+        },
+        {
+          "id": "C",
+          "text": "杜威—《大教学论》—主张做中学、儿童中心。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -1, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 1, "lawRisk": 0, "examScore": -3, "affection_cheng": -1},
+          "feedback": "著作错配。'做中学、儿童中心'确是杜威，但《大教学论》是夸美纽斯的；杜威的代表作是《民主主义与教育》。",
+          "answerKeywords": ["杜威著《民主主义与教育》", "《大教学论》是夸美纽斯"]
+        },
+        {
+          "id": "D",
+          "text": "赫尔巴特—《大教学论》—主张儿童中心、活动中心。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -1, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 1, "lawRisk": 0, "examScore": -3, "affection_cheng": -1},
+          "feedback": "全错。赫尔巴特的书是《普通教育学》、主张'三中心'（师/课/教材）；'儿童/活动中心'是杜威，《大教学论》是夸美纽斯。著作和主张都安错了。",
+          "answerKeywords": ["赫尔巴特非儿童中心", "三中心非儿童活动中心"]
+        }
+      ]
+    },
+    {
+      "id": "ch17_d_after",
+      "type": "dialogue",
+      "background": "staffroom",
+      "speaker": "程砚",
+      "text": "（他擦掉白板，留下三个名字）\n这三人是教育学的脊梁，别只会背，要会'一眼认错'：看到搭配题，先在心里默念各自的书与主张，对不上的立刻划掉。\n人物你过关了。下一根，是我教研中心的本行——课程。"
+    },
+    {
+      "id": "ch17_e_teach_1",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "程砚",
+      "text": "（回到教研中心，他翻到'课程理论'那页）\n课程这块，除了你学过的类型，冲刺还得记两套'设计模式'和一套'目标'——\n**泰勒的目标模式**：课程开发围绕四个问题——确定目标、选择经验、组织经验、评价结果，以'目标'为核心，重结果、可测量；\n**斯滕豪斯的过程模式**：反对把目标先定死，主张课程是开放的探究'过程'，重学生在过程中的生成与体验，淡化预设目标。"
+    },
+    {
+      "id": "ch17_e_teach_2",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "程砚",
+      "text": "（他写下三行）\n再把新课改的'**三维目标**'钉死——一节课目标写三维：\n**知识与技能**（学到什么、会做什么）；\n**过程与方法**（怎么学、用什么方法探究）；\n**情感态度与价值观**（养成什么态度、价值取向）。\n（他反问，眼神又利了）那我考你：'有学者反对先把目标定死，主张课程是一个开放生成的探究过程，重在学生的体验'——这是哪种课程模式？"
+    },
+    {
+      "id": "ch17_e_apply",
+      "type": "choice",
+      "background": "office",
+      "speaker": "程砚",
+      "knowledgeCheck": "q_curriculum_01",
+      "text": "（我答'过程模式'，他点头，又给我落到三维目标上一道）\n那这道你定准——'让学生在一次实验探究中，亲历提出假设、动手操作、合作交流的全过程'，这一目标主要落在三维目标的哪个维度？",
+      "examTags": {
+        "subject": "302",
+        "module": "中学课程",
+        "examPoint": "课程理论（泰勒目标模式/斯滕豪斯过程模式）与新课改三维目标的辨别",
+        "questionType": "单项选择"
+      },
+      "choices": [
+        {
+          "id": "A",
+          "text": "过程与方法——强调亲历探究过程、习得学习与思维的方法。",
+          "quality": "optimal",
+          "effects": {"professionalSkill": 2, "studentTrust": 1, "classOrder": 0, "ethicsRisk": -1, "lawRisk": 0, "examScore": 3, "affection_cheng": 2},
+          "feedback": "对。'亲历提出假设、操作、合作交流的全过程'指向'过程与方法'维度——它关注的是'怎么学、用什么方法'。",
+          "answerKeywords": ["过程与方法", "亲历探究过程", "习得方法"]
+        },
+        {
+          "id": "B",
+          "text": "知识与技能——掌握实验涉及的具体知识点和操作技能。",
+          "quality": "suboptimal",
+          "effects": {"professionalSkill": 1, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": 0, "affection_cheng": 0},
+          "feedback": "有点沾边但偏了。'知识与技能'指向'学到什么、会做什么'的结果；题干强调的是'亲历全过程',落点在'过程与方法'。要分清'学到了什么'与'怎么学的'。",
+          "answerKeywords": ["知识与技能指结果", "题干强调过程"]
+        },
+        {
+          "id": "C",
+          "text": "情感态度与价值观——培养对科学的热爱与求真态度。",
+          "quality": "suboptimal",
+          "effects": {"professionalSkill": 0, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": -1, "affection_cheng": 0},
+          "feedback": "维度错位。'情感态度与价值观'指向态度与价值取向的养成；题干的关键词是'亲历过程、合作交流',对应'过程与方法'。",
+          "answerKeywords": ["情感态度价值观指态度养成", "非过程"]
+        },
+        {
+          "id": "D",
+          "text": "这是泰勒目标模式，与三维目标无关。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -1, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 1, "lawRisk": 0, "examScore": -3, "affection_cheng": -1},
+          "feedback": "答非所问。泰勒目标模式是课程开发模式，本题问的是三维目标的维度归属，二者是不同问题。题干落在'过程与方法'维度。",
+          "answerKeywords": ["混淆课程模式与三维目标", "应判过程与方法"]
+        }
+      ]
+    },
+    {
+      "id": "ch17_e_after",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "程砚",
+      "text": "（他在清单上勾掉这条）\n记住对照：泰勒'看结果'，斯滕豪斯'看过程'；写教案的三维目标，则是把一节课的'学到、学会、学懂、学得有温度'分成三层来写。\n这是我的本行，你答得没让我失望。"
+    },
+    {
+      "id": "ch17_t4",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "程砚",
+      "text": "（他把302的几页合上，抽出一页颜色不同的纸——抬头印着301）\n现在跨一科。301《综合素质》里，最爱考、也最有'立场'的一根——**素质教育的内涵**。\n这块爱出选择，也常埋在材料里让你判断'某老师的做法符不符合素质教育'。"
+    },
+    {
+      "id": "ch17_f_teach_1",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "程砚",
+      "text": "（顾承端着保温杯进来旁听，程砚把这页推给他，让他这位老班主任补两句）\n顾承：（笑）素质教育的内涵，我带班最有体会，背五条——\n**面向全体学生**（不是只抓尖子）；\n**促进学生全面发展**（德智体美劳，不是只盯分数）；\n**促进学生个性发展**（尊重差异、因材施教）；\n**以培养创新精神和实践能力为重点**；\n还有一条根：**着眼于学生的终身可持续发展**。"
+    },
+    {
+      "id": "ch17_f_teach_2",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "程砚",
+      "text": "（程砚接回话头）\n它最鲜明的，是和'**应试教育**'划清界限——\n应试教育面向少数、片面追求分数升学、忽视个性；素质教育面向全体、全面发展、尊重个性、重创新实践。\n（他反问）那我考你：'一位老师只把精力放在班里几个尖子生身上，对其他学生不闻不问'——这违背了素质教育的哪一条？"
+    },
+    {
+      "id": "ch17_f_apply",
+      "type": "choice",
+      "background": "office",
+      "speaker": "程砚",
+      "knowledgeCheck": "q_qualityedu_01",
+      "text": "（我答'面向全体',他点头，又给我换一个角度）\n那这道你判准——'老师只按统一标准要求所有学生，不允许任何与众不同，谁特别就压谁'。这最主要违背了素质教育的哪一内涵？",
+      "examTags": {
+        "subject": "301",
+        "module": "职业理念",
+        "examPoint": "素质教育内涵的辨别（面向全体/全面发展/个性发展/创新实践）与应试教育的区别",
+        "questionType": "单项选择"
+      },
+      "choices": [
+        {
+          "id": "A",
+          "text": "促进学生的个性发展——素质教育要尊重个体差异、因材施教。",
+          "quality": "optimal",
+          "effects": {"professionalSkill": 2, "studentTrust": 1, "classOrder": 0, "ethicsRisk": -1, "lawRisk": 0, "examScore": 3, "affection_cheng": 2},
+          "feedback": "对。'压制与众不同、强求整齐划一'违背的是'促进个性发展'——素质教育强调尊重差异、因材施教，让每个学生的个性得到发展。",
+          "answerKeywords": ["促进个性发展", "尊重差异", "因材施教", "反对整齐划一"]
+        },
+        {
+          "id": "B",
+          "text": "面向全体学生——这位老师没有面向全体。",
+          "quality": "suboptimal",
+          "effects": {"professionalSkill": 0, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": -1, "affection_cheng": 0},
+          "feedback": "看岔了。'面向全体'针对的是'只抓部分学生';本题老师其实是对'全体'用同一把尺子、压制个性，违背的是'个性发展'。两条要看准情境。",
+          "answerKeywords": ["面向全体针对只抓部分", "本题是压制个性"]
+        },
+        {
+          "id": "C",
+          "text": "促进学生全面发展——只重分数、忽视德体美劳。",
+          "quality": "suboptimal",
+          "effects": {"professionalSkill": 0, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": -1, "affection_cheng": 0},
+          "feedback": "对应错了。'全面发展'针对的是'只抓某一方面（如只重分数）';本题强调的是'不许与众不同、压制个性',落点在'个性发展'。",
+          "answerKeywords": ["全面发展针对片面", "本题是压制个性"]
+        },
+        {
+          "id": "D",
+          "text": "这是严格管理的正常要求，不违背素质教育。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -2, "studentTrust": -1, "classOrder": 0, "ethicsRisk": 2, "lawRisk": 0, "examScore": -3, "affection_cheng": -2},
+          "feedback": "立场错了。'压制一切与众不同'不是严格，是抹杀个性，恰恰违背素质教育'促进个性发展'的内涵。把违背原则的做法当'正常'，材料题里必扣分。",
+          "answerKeywords": ["压制个性非严格管理", "违背个性发展"]
+        }
+      ]
+    },
+    {
+      "id": "ch17_f_after",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "程砚",
+      "text": "（顾承拍拍我肩，乐呵呵地走了）\n顾承：（临走）素质教育五条，背的时候想想你班里那几个'不一样'的孩子——你愿不愿意按住他们，还是托一把。答案就在心里。\n（程砚看着他背影）他不爱讲理论，可句句在点子上。301的'立场题',你得先站对人，再讲道理。"
+    },
+    {
+      "id": "ch17_t5",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "程砚",
+      "text": "（他翻到倒数第二页，纸上画着几个方框）\n笔试过了，还有面试这一关——但'**结构化面试**'的答题框架，现在就该刻进脑子里。\n它有套路，认准题型，套对框架，临场就不会慌。这是送你的'保命模板'。"
+    },
+    {
+      "id": "ch17_g_teach_1",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "程砚",
+      "text": "（他在每个方框里写上题型）\n结构化面试，常见四大题型，认准它问的是什么——\n**综合分析类**（'你怎么看……'）：摆观点→多角度分析（是什么/为什么）→怎么办，重在辩证、有立场；\n**应急应变类**（'课堂突发……你怎么办'）：先稳住局面/控制事态→分清主次先处理紧急→事后跟进总结，重在'先救场再善后'；\n**人际沟通类**（'同事/家长误会你……'）：自我反省与换位→主动沟通澄清→维护关系与大局，重在不激化、向内归因；\n**计划组织类**（'让你组织一次活动……'）：明确目标→分阶段安排（前期准备/中期实施/后期总结）→突出重点与应变，重在条理。"
+    },
+    {
+      "id": "ch17_g_teach_2",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "程砚",
+      "text": "（沈亦舟不知何时溜进来蹭听，插了句嘴）\n沈亦舟：（嘿嘿）我考面试就靠这个——先听清考官问的是'怎么看'还是'怎么办',是'人'的事还是'事'的事，框架往上一套，稳！\n（程砚瞥他一眼，没赶他，反问我）那我考你：考官问'上课时两名学生突然打了起来，你怎么处理'——这属于哪种题型？"
+    },
+    {
+      "id": "ch17_g_apply",
+      "type": "choice",
+      "background": "office",
+      "speaker": "程砚",
+      "knowledgeCheck": "q_interview_01",
+      "text": "（我答'应急应变',他点头，又抛来一道辨型）\n那这道你认准——考官问：'你的同事在背后议论你抢了他的功劳，你知道后怎么办？'这道题属于结构化面试的哪种题型？该用什么框架？",
+      "examTags": {
+        "subject": "302",
+        "module": "中学教学",
+        "examPoint": "结构化面试题型的识别与作答框架（综合分析/应急应变/人际沟通/计划组织）",
+        "questionType": "单项选择"
+      },
+      "choices": [
+        {
+          "id": "A",
+          "text": "人际沟通类——先自我反省与换位，再主动沟通澄清，最后维护关系与大局。",
+          "quality": "optimal",
+          "effects": {"professionalSkill": 2, "studentTrust": 0, "classOrder": 0, "ethicsRisk": -1, "lawRisk": 0, "examScore": 3, "affection_cheng": 2},
+          "feedback": "对。'同事误会、关系处理'是典型人际沟通类；框架是反省换位→主动沟通→维护关系大局，核心是向内归因、不激化矛盾。",
+          "answerKeywords": ["人际沟通类", "自我反省换位", "主动沟通", "维护关系大局"]
+        },
+        {
+          "id": "B",
+          "text": "应急应变类——先控制事态、分清主次紧急处理，再事后跟进。",
+          "quality": "suboptimal",
+          "effects": {"professionalSkill": 0, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": -1, "affection_cheng": 0},
+          "feedback": "题型认错了。应急应变针对的是'突发紧急事件'（如课堂冲突、安全事故）;同事议论是人际关系矛盾，应判'人际沟通类'。",
+          "answerKeywords": ["应急应变针对突发事件", "本题是人际矛盾"]
+        },
+        {
+          "id": "C",
+          "text": "综合分析类——先摆观点，再多角度分析，最后谈怎么办。",
+          "quality": "suboptimal",
+          "effects": {"professionalSkill": 0, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": -1, "affection_cheng": 0},
+          "feedback": "题型错位。综合分析针对的是'你怎么看某现象/观点'的评论类问题;本题是具体的人际矛盾处理，应判'人际沟通类'。",
+          "answerKeywords": ["综合分析针对怎么看", "本题是怎么办的人际题"]
+        },
+        {
+          "id": "D",
+          "text": "计划组织类——明确目标、分阶段安排、突出重点。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -1, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 1, "lawRisk": 0, "examScore": -3, "affection_cheng": -1},
+          "feedback": "错。计划组织针对的是'组织一次活动/调研'的统筹类问题;本题是处理同事误会的人际矛盾，框架完全不对，应判'人际沟通类'。",
+          "answerKeywords": ["计划组织针对组织活动", "本题是人际沟通"]
+        }
+      ]
+    },
+    {
+      "id": "ch17_g_after",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "程砚",
+      "text": "（沈亦舟竖个大拇指溜走了，程砚摇头失笑）\n他人不正经，方法是对的：结构化面试，'识别题型'比'背答案'更要紧。\n四个框架背熟，临场只做一件事——先判'你问的是哪一类',再把框架往上套。慌，是因为没认出题型。"
+    },
+    {
+      "id": "ch17_t6",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "程砚",
+      "text": "（他翻到清单最后一页，上面是几个名词：难度、区分度、信度、效度）\n最后一根，也是最'技术'的一根——**教育测量与评价**的几个指标。\n你以后天天要出卷、要评卷，这几个词分不清，连自己出的题好不好都判断不了。这是收尾，也最该带进考场。"
+    },
+    {
+      "id": "ch17_h_teach_1",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "程砚",
+      "text": "（他逐个拆解）\n四个指标，一个一个钉死——\n**难度**：题目的难易程度，常用通过率表示，值越大题越容易（一般0.3~0.7较合适）；\n**区分度**：题目把'好学生'和'差学生'区分开的能力，高区分度题让水平高的更易答对；\n**信度**：测验结果的**可靠、稳定**程度——同一份卷多次测、结果一致不一致；\n**效度**：测验**测到了它想测的东西**的准确程度——想测数学能力，是不是真测的数学。"
+    },
+    {
+      "id": "ch17_h_teach_2",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "程砚",
+      "text": "（他强调最容易混的一对）\n信度和效度，是最爱考的一对——\n打个比方：一把秤每次称同一袋米都显示一样的数，这叫**信度高**（稳定可靠）；但如果它每次都比真实重量多两斤，那它再'稳定'，也**效度低**（没测准真值）。\n记住：**有效度必有信度，有信度未必有效度**。信度是效度的必要不充分条件。\n（他反问）那我考你：'一份英语卷，因为题目文字太晦涩，结果很多英语好的学生反而因看不懂题意而失分'——这最主要反映了什么问题？"
+    },
+    {
+      "id": "ch17_h_apply",
+      "type": "choice",
+      "background": "office",
+      "speaker": "程砚",
+      "knowledgeCheck": "q_measurement_01",
+      "text": "（我答'效度问题',他点头，又给我落到最后一道辨析）\n那这道你定准——'一份测验，无论哪个班、哪次考，分数排名都高度一致、很稳定',这说明该测验的哪个指标好？但这能保证它一定测准了目标吗？",
+      "examTags": {
+        "subject": "302",
+        "module": "中学教学",
+        "examPoint": "教育测量技术指标的辨别（难度/区分度/信度/效度及其关系）",
+        "questionType": "单项选择"
+      },
+      "choices": [
+        {
+          "id": "A",
+          "text": "信度好（结果稳定可靠）；但信度高不必然效度高，仍需另外检验是否测准目标。",
+          "quality": "optimal",
+          "effects": {"professionalSkill": 2, "studentTrust": 0, "classOrder": 0, "ethicsRisk": -1, "lawRisk": 0, "examScore": 3, "affection_cheng": 2},
+          "feedback": "对。'结果稳定一致'说明信度高;但'有信度未必有效度'——稳定不等于测准了想测的内容。信度是效度的必要不充分条件。",
+          "answerKeywords": ["信度高", "结果稳定可靠", "信度高未必效度高", "必要不充分"]
+        },
+        {
+          "id": "B",
+          "text": "效度好；结果稳定就说明它准确测到了目标内容。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -1, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 1, "lawRisk": 0, "examScore": -3, "affection_cheng": -1},
+          "feedback": "概念混了。'稳定一致'是信度，不是效度;效度指'测没测准想测的东西'。稳定的测验也可能稳定地测错（像那把每次都多两斤的秤）。",
+          "answerKeywords": ["稳定属信度非效度", "稳定不等于测准"]
+        },
+        {
+          "id": "C",
+          "text": "难度好；分数稳定说明题目难度适中。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -1, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 1, "lawRisk": 0, "examScore": -3, "affection_cheng": -1},
+          "feedback": "错。难度指题目的难易程度（通过率），与'结果是否稳定一致'无关;'多次测排名稳定'反映的是信度。",
+          "answerKeywords": ["难度指难易程度", "稳定一致属信度"]
+        },
+        {
+          "id": "D",
+          "text": "区分度好；稳定说明它能区分好生差生。",
+          "quality": "suboptimal",
+          "effects": {"professionalSkill": 0, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": -1, "affection_cheng": 0},
+          "feedback": "对应错了。区分度指题目对不同水平学生的鉴别力;'多次测结果稳定一致'描述的是信度。两个指标问的不是一回事。",
+          "answerKeywords": ["区分度指鉴别力", "稳定一致属信度"]
+        }
+      ]
+    },
+    {
+      "id": "ch17_h_after",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "程砚",
+      "text": "（他在清单最后一行画了个圈，缓缓合上那一沓纸）\n口诀给你：难度看'难易'，区分度看'分得开分不开',信度看'稳不稳',效度看'准不准'。\n那把'每次多两斤的秤',你记一辈子——稳定，不等于准确。这是你以后命题、评价时，最该有的清醒。"
+    },
+    {
+      "id": "ch17_end_1",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "程砚",
+      "text": "（他把那沓写满批注的'冲刺清单'对齐、码好，没有像往常那样推回中间，而是直接放进了我手里）\n八根，今天都替你查了一遍。教育与社会、与人，学制，人物，课程，素质教育，面试，测量——这些不是散的知识点，是你站在讲台上'为什么这么做'的根。\n（他顿了顿，声音放缓了半度）这沓清单，你带进考场前再翻一遍。根扎稳了，铃响，你就不慌了。"
+    },
+    {
+      "id": "ch17_end_heart",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "narrator",
+      "text": "清单最后一页的空白处，他不知什么时候写了一行小字：'枝叶我教不了你，根，我替你扎好了。剩下的路，你自己走，也走得稳。——砚'。\n（他把整本都给了我。那个总用反问把我将到哑口无言的人，临到我上考场，却把自己最珍重的东西，一句嘱咐都没多说地，交到了我手上。\n我抱紧那沓纸，没敢抬头——怕他看见，我的眼眶，悄悄热了。）"
+    },
+    {
+      "id": "ch17_end_2",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "narrator",
+      "text": "走出教研中心，夕阳把走廊染成蜜色。陆知行、江晚、顾承、沈亦舟，不知怎么都凑在楼梯口，看见我出来，齐刷刷比了个加油的手势。\n（这一路，是江晚教我读懂少年心事，是顾承教我带住一个班，是陆知行教我守住法与规的底线，是沈亦舟陪我笑着把难关闯过，是程砚把我将到教育的根上。\n备课铃明天还会响。后天，考场的铃也会响。\n但这一次，我抱着满怀的根，站得稳稳的——因为我知道，铃响之前，有人替我，把每一根都扎好了。）"
+    },
+    {
+      "id": "ch17_end",
+      "type": "summary",
+      "background": "office",
+      "speaker": "narrator",
+      "text": "（考前冲刺这一课落幕。把程砚替我查的这八根，一条条记进手账——这一次记的，是带我走进考场的底气。）",
+      "review": {
+        "learnedExamPoints": [
+          "302-教育基础知识与基本原理-教育与社会发展的相互制约（政治经济文化人口与教育）— 程砚",
+          "302-教育基础知识与基本原理-教育与人的发展（遗传/环境/学校教育主导/主观能动性决定）— 程砚",
+          "302-教育基础知识与基本原理-学校教育制度（双轨/单轨/分支型学制·义务教育特征）— 程砚",
+          "302-教育基础知识与基本原理-教育学人物著作主张一一对应（夸美纽斯/赫尔巴特/杜威）— 程砚",
+          "302-中学课程-课程理论（泰勒目标模式/斯滕豪斯过程模式）与新课改三维目标 — 程砚",
+          "301-职业理念-素质教育内涵（面向全体/全面发展/个性发展/创新实践·区别应试）— 顾承&程砚",
+          "302-中学教学-结构化面试题型与作答框架（综合分析/应急应变/人际沟通/计划组织）— 程砚",
+          "302-中学教学-教育测量与评价技术指标（难度/区分度/信度/效度及其关系）— 程砚"
+        ],
+        "structure": "考前一周'查漏'事件串起跨科目8考点，从'根'到'技术'层层推进：社会→人→学制→人物→课程→素质教育(跨301)→面试→测量。程砚不讲新课而'考问查漏'，走'反问点拨→马上做题→应用→反馈'微循环，全员同事短cameo收束群像。章末月考为冷测。",
+        "mockExam": "core_ch17_mock",
+        "recommendedReview": [
+          "答错教育与社会→程砚重讲生产力vs政治经济制度各决定什么",
+          "答错教育与人→程砚重讲遗传/环境/学校教育主导/主观能动性决定的对应",
+          "答错学制→程砚重讲双轨/单轨/分支型辨识与义务教育三特征",
+          "答错人物→程砚重讲夸美纽斯/赫尔巴特/杜威的人物-著作-主张对应",
+          "答错课程理论→程砚重讲泰勒目标模式vs斯滕豪斯过程模式与三维目标",
+          "答错素质教育→顾承&程砚重讲素质教育五条内涵与应试区别",
+          "答错面试→程砚重讲四大题型识别与对应作答框架",
+          "答错测量→程砚重讲难度/区分度/信度/效度及'信度未必效度'"
+        ]
+      }
+    }
+  ]
+}

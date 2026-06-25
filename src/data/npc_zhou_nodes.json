@@ -1,0 +1,327 @@
+{
+  "chapterId": "npc_zhou",
+  "title": "周慎之侧章 · 旧教案里的来路",
+  "route": "npc",
+  "summary": "一个没有课的午后，我钻进资料室找一份老学案，撞见了周慎之——那位被全办公室喊作'活字典'的老教研员，正俯在一摞泛黄的旧教案前。他没赶我走，反倒拉过一把椅子，借着那些被红笔批了又批的纸页，把教育的来路一页页摊给我看：从《学记》到夸美纽斯，从赫尔巴特的三中心到杜威的'做中学'，再到教育到底'为了谁'这道根上的问题。他问得不急，答错了也只是推推眼镜笑笑'再想想'。一个下午，旧纸的味道、茶的热气、他不疾不徐的声音，把那些我背得发昏的考点，第一次串成了有血有肉的来路。临走时我忽然明白：有些前辈给你的不是答案，是看待这一行的眼睛。",
+  "designNote": "NPC 日常侧章（enrichment，非主线、不计进度）：用'周慎之翻旧教案/聊教育史'的一个午后，串起 kp_edu_history / kp_edu_thinkers_deep / kp_edu_aim 三个考点，3 个 teach→随堂题(knowledgeCheck)→应用 微循环。以师友求教为主，不强推恋爱。",
+  "characters": ["zhou"],
+  "students": [],
+  "valueFields": ["professionalSkill", "studentTrust", "classOrder", "ethicsRisk", "lawRisk", "examScore", "affection_zhou"],
+  "note": "enrichment 侧章，非主线，不计主线进度。speaker 用'周慎之'。随堂题 knowledgeCheck 对应 npc_zhou_quiz 同 id 题。ethicsRisk/lawRisk 为逆向指标。本篇以师友/求教为主、不强推恋爱。",
+  "nodes": [
+    {
+      "id": "zhou_1",
+      "type": "dialogue",
+      "background": "library",
+      "speaker": "narrator",
+      "text": "周三下午没有课。\n我想找一份去年的老学案做参考，循着记忆摸到了教学楼最里头那间资料室——平时没什么人来，灯都懒得开。\n推门进去，一股旧纸和油墨的味道扑面而来，混着一点淡淡的茶香。"
+    },
+    {
+      "id": "zhou_2",
+      "type": "dialogue",
+      "background": "library",
+      "speaker": "narrator",
+      "text": "靠窗的长桌前，坐着一位头发花白的老先生。\n他俯在一摞泛黄的旧教案上，戴着老花镜，手里一支红笔悬而未落，像在跟纸上某行字较劲。阳光斜斜落在他肩上，安静得我都不敢出声。\n（这位是……周老师？教研组那位被大家叫'活字典'的周慎之。）"
+    },
+    {
+      "id": "zhou_3",
+      "type": "dialogue",
+      "background": "library",
+      "speaker": "周慎之",
+      "expression": "smile",
+      "text": "（他听见动静，抬起头，把老花镜往下推了推，露出一双温和的眼睛）\n来找东西？不必拘着。这间屋子，年轻人来得太少喽。\n（他拍了拍身边那把空椅子）找学案是吧——正好，我手上这摞，比你要的那份还老些。坐。"
+    },
+    {
+      "id": "zhou_4",
+      "type": "dialogue",
+      "background": "library",
+      "speaker": "narrator",
+      "text": "我有点局促地坐下。桌上摊开的旧教案，纸页脆得发黄，边角卷起，上头密密麻麻全是红笔的批注，一层压一层，像年轮。\n周慎之的手指轻轻拂过其中一页，神情里有种我说不上来的郑重。"
+    },
+    {
+      "id": "zhou_5",
+      "type": "dialogue",
+      "background": "library",
+      "speaker": "周慎之",
+      "expression": "tender",
+      "text": "你们现在备考，背人物、背著作、背年代，背得头昏脑涨，对不对？\n（他笑了笑）我教了一辈子书，越到后来越觉得——教育这门学问，得先知道它从哪儿来，才知道我们今天站在哪儿。\n来，趁这个清净下午，我陪你把这条'来路'走一遍。不考你死记，只讲给你听。"
+    },
+    {
+      "id": "zhou_6",
+      "type": "dialogue",
+      "background": "library",
+      "speaker": "周慎之",
+      "expression": "neutral",
+      "text": "（他翻开最上面一页，上面誊着几行古文）\n先说咱们自己的根。《学记》——战国末年的东西，世界上最早专门讲教育、讲教学的文字，'教学相长''不陵节而施'，到今天还鲜活。\n可那时候，教育的道理还混在哲学、政论里头，没单独立门户。这叫教育学的'萌芽阶段'。"
+    },
+    {
+      "id": "zhou_7",
+      "type": "dialogue",
+      "background": "library",
+      "speaker": "周慎之",
+      "expression": "neutral",
+      "text": "（他往后翻了几页，红笔点在一个名字上）\n真正让教育学'独立成科'的，是西方两座里程碑。\n一座是夸美纽斯，1632年那本《大教学论》，头一回系统讲班级授课制，讲'泛智'、讲直观，被尊为'近代教育学之父'。另一座是赫尔巴特，《普通教育学》，把教育学做成了一门规范的科学。\n来路上的这两块界碑，你得钉死。"
+    },
+    {
+      "id": "zhou_8",
+      "type": "choice",
+      "background": "library",
+      "speaker": "周慎之",
+      "expression": "smile",
+      "knowledgeCheck": "q_zhou_history_01",
+      "text": "（他合上书，眼里有考较的笑意）\n来路捋到这儿，我考你一道——别紧张，答错了再想就是。\n第一个系统论述班级授课制、出版《大教学论》、让教育学开始走向独立、被称'近代教育学之父'的，是哪位？",
+      "examTags": {
+        "subject": "302",
+        "module": "教育基础知识与基本原理",
+        "examPoint": "教育学发展阶段中代表人物与历史地位（夸美纽斯/赫尔巴特/杜威）",
+        "questionType": "single"
+      },
+      "choices": [
+        {
+          "id": "A",
+          "text": "夸美纽斯——《大教学论》、班级授课制、'近代教育学之父'。",
+          "quality": "optimal",
+          "effects": {"professionalSkill": 3, "examScore": 3, "affection_zhou": 2, "ethicsRisk": 0, "lawRisk": 0},
+          "feedback": "对。夸美纽斯《大教学论》系统论述班级授课制、提出泛智与直观性原则，使教育学走向独立，'近代教育学之父'。周慎之满意地点头：'界碑钉对了。'",
+          "answerKeywords": ["夸美纽斯", "大教学论", "班级授课制", "近代教育学之父"]
+        },
+        {
+          "id": "B",
+          "text": "赫尔巴特——《普通教育学》。",
+          "quality": "acceptable",
+          "effects": {"professionalSkill": 1, "examScore": 1, "affection_zhou": 1, "ethicsRisk": 0, "lawRisk": 0},
+          "feedback": "差一步。赫尔巴特《普通教育学》标志教育学成为规范、独立的科学（'科学/现代教育学之父'），但'班级授课制系统论述+《大教学论》'是夸美纽斯。周慎之笑：'两座界碑别串了。'",
+          "answerKeywords": ["赫尔巴特", "普通教育学", "科学教育学"]
+        },
+        {
+          "id": "C",
+          "text": "杜威——《民主主义与教育》。",
+          "quality": "risk",
+          "effects": {"professionalSkill": 0, "examScore": 0, "affection_zhou": 0, "ethicsRisk": 0, "lawRisk": 0},
+          "feedback": "不对。杜威是现代教育（实用主义）代表，主张'做中学'，时代靠后，与班级授课制的系统奠基无关。再想想来路的先后。",
+          "answerKeywords": ["杜威", "做中学", "现代教育"]
+        },
+        {
+          "id": "D",
+          "text": "卢梭——《爱弥儿》。",
+          "quality": "risk",
+          "effects": {"professionalSkill": 0, "examScore": 0, "affection_zhou": 0, "ethicsRisk": 0, "lawRisk": 0},
+          "feedback": "不对。卢梭《爱弥儿》倡自然主义教育，是教育思想家，并非教育学'独立成学科'的奠基著作作者。",
+          "answerKeywords": ["卢梭", "爱弥儿", "自然主义"]
+        }
+      ]
+    },
+    {
+      "id": "zhou_9",
+      "type": "dialogue",
+      "background": "library",
+      "speaker": "narrator",
+      "text": "我答上来时，周慎之没多夸，只是把那页旧教案往我这边推了推，让我看得更清楚些。\n阳光把纸上的红字照得透亮。我忽然觉得，那些原本冷冰冰的名字和年代，借着他的手、他的声音，第一次有了温度。"
+    },
+    {
+      "id": "zhou_10",
+      "type": "dialogue",
+      "background": "library",
+      "speaker": "周慎之",
+      "expression": "tender",
+      "text": "（他给我倒了半杯温茶，茶香混进旧纸味里）\n光记住界碑还不够。教育史最要紧的，是把'人—书—主张'三样钉死，别张冠李戴。\n这是考你们最爱设的坑：把杜威的话安到赫尔巴特头上，把《爱弥儿》记成别人的。来，我给你拆几个最常考的。"
+    },
+    {
+      "id": "zhou_11",
+      "type": "dialogue",
+      "background": "library",
+      "speaker": "周慎之",
+      "expression": "neutral",
+      "text": "（他屈起手指，一个个数）\n赫尔巴特——'传统教育'的旗，《普通教育学》，'教师中心、教材中心、课堂中心'三中心，教学还分'明了、联想、系统、方法'四阶段。\n杜威——'现代教育'的旗，《民主主义与教育》，反着来：'儿童中心、活动中心、经验中心'，一句'做中学'。\n这两面旗，正好对着干。记住一面，另一面照镜子就出来了。"
+    },
+    {
+      "id": "zhou_12",
+      "type": "dialogue",
+      "background": "library",
+      "speaker": "周慎之",
+      "expression": "neutral",
+      "text": "（他又点了点桌角一本更旧的册子）\n再往前，咱们老祖宗也有。孔子'不愤不启，不悱不发'，启发式的源头；苏格拉底有'产婆术'，问答里头逼出真知——主张相近，可别把出处认混了。\n苏霍姆林斯基呢，《把整个心灵献给孩子》，讲全面和谐发展。每个人，都该配得上他自己那本书。"
+    },
+    {
+      "id": "zhou_13",
+      "type": "choice",
+      "background": "library",
+      "speaker": "周慎之",
+      "expression": "smile",
+      "knowledgeCheck": "q_zhou_thinker_01",
+      "text": "（他推了推眼镜）\n人物、著作、主张要钉死，我考你一道——\n提出'教师中心、教材中心、课堂中心'的传统教育三中心，把教学概括成'明了—联想—系统—方法'四阶段的，是哪位教育家、哪本代表作？",
+      "examTags": {
+        "subject": "302",
+        "module": "教育基础知识与基本原理",
+        "examPoint": "教育家人物—著作—主张的对应（赫尔巴特/杜威/苏霍姆林斯基/卢梭）",
+        "questionType": "single"
+      },
+      "choices": [
+        {
+          "id": "A",
+          "text": "杜威——《民主主义与教育》。",
+          "quality": "risk",
+          "effects": {"professionalSkill": 0, "examScore": 0, "affection_zhou": 0, "ethicsRisk": 0, "lawRisk": 0},
+          "feedback": "正好认反了。杜威是'现代教育'，主张儿童中心、活动中心、经验中心、'做中学'，跟'三中心'对着干。照镜子，另一面才对。",
+          "answerKeywords": ["杜威", "儿童中心", "做中学"]
+        },
+        {
+          "id": "B",
+          "text": "赫尔巴特——《普通教育学》。",
+          "quality": "optimal",
+          "effects": {"professionalSkill": 3, "examScore": 3, "affection_zhou": 2, "ethicsRisk": 0, "lawRisk": 0},
+          "feedback": "对。赫尔巴特《普通教育学》，传统教育'三中心'+教学形式'明了—联想—系统—方法'四阶段（后衍为五段教学法）。周慎之颔首：'人、书、主张，三样钉得稳。'",
+          "answerKeywords": ["赫尔巴特", "普通教育学", "传统教育三中心", "明了联想系统方法"]
+        },
+        {
+          "id": "C",
+          "text": "卢梭——《爱弥儿》。",
+          "quality": "risk",
+          "effects": {"professionalSkill": 0, "examScore": 0, "affection_zhou": 0, "ethicsRisk": 0, "lawRisk": 0},
+          "feedback": "不对。卢梭《爱弥儿》倡自然主义、儿童本位的自然教育，与'三中心'相反。",
+          "answerKeywords": ["卢梭", "爱弥儿", "自然主义"]
+        },
+        {
+          "id": "D",
+          "text": "苏霍姆林斯基——《给教师的建议》。",
+          "quality": "risk",
+          "effects": {"professionalSkill": 0, "examScore": 0, "affection_zhou": 0, "ethicsRisk": 0, "lawRisk": 0},
+          "feedback": "不对。苏霍姆林斯基主张全面和谐发展（《把整个心灵献给孩子》《给教师的建议》），与四阶段教学无关。",
+          "answerKeywords": ["苏霍姆林斯基", "全面和谐发展"]
+        }
+      ]
+    },
+    {
+      "id": "zhou_14",
+      "type": "dialogue",
+      "background": "library",
+      "speaker": "narrator",
+      "text": "'两面旗照镜子'——这个法子真好使。我心里那团一直纠缠不清的人名，忽然各归各位，清爽了。\n周慎之像是看出我的开窍，眼角的皱纹舒展开来，端起茶啜了一口，没说话。这种安静的认可，比直白的夸奖更让人踏实。"
+    },
+    {
+      "id": "zhou_15",
+      "type": "dialogue",
+      "background": "library",
+      "speaker": "narrator",
+      "text": "我顺势多问了一句：'周老师，您批了一辈子教案，背了这么多人物著作……到最后，您觉得这一行最要紧的，是什么？'\n他没立刻回答，反而把手里那摞旧教案轻轻合上，望向窗外的操场，沉默了一会儿。"
+    },
+    {
+      "id": "zhou_16",
+      "type": "dialogue",
+      "background": "library",
+      "speaker": "周慎之",
+      "expression": "tender",
+      "text": "（他声音放得很慢）\n人物、著作，都是术。再往里走一层，是道——教育，到底'为了谁'？\n这道题，吵了几百年。一派说，从人的本性、需要出发，让天性自然舒展，把个人价值摆第一，叫'个人本位论'，卢梭、福禄贝尔他们。\n另一派说，教育目的得由社会需要定，根本是让人'社会化'、成为社会要的人，叫'社会本位论'，涂尔干、凯兴斯泰纳。"
+    },
+    {
+      "id": "zhou_17",
+      "type": "dialogue",
+      "background": "library",
+      "speaker": "周慎之",
+      "expression": "neutral",
+      "text": "（他转回头看我）\n你别急着站队。这两座山，各有各的偏。只讲个人，容易飘；只讲社会，容易把人当工具。\n咱们国家的教育目的，落在更实的地方——为社会主义现代化建设服务、为人民服务，培养德智体美劳全面发展的社会主义建设者和接班人。说到底，是回答'培养什么人、为谁培养人'。"
+    },
+    {
+      "id": "zhou_18",
+      "type": "choice",
+      "background": "library",
+      "speaker": "周慎之",
+      "expression": "smile",
+      "knowledgeCheck": "q_zhou_aim_01",
+      "text": "（他放下茶杯，目光温和而郑重）\n教育到底为了谁，我考你最后一道——\n有一种主张：确定教育目的要从人的本性、本能和需要出发，让天性自然发展，把促进个人价值实现放在首位。这属于哪一派？",
+      "examTags": {
+        "subject": "302",
+        "module": "教育基础知识与基本原理",
+        "examPoint": "教育目的理论的辨别（个人本位论 vs 社会本位论）",
+        "questionType": "single"
+      },
+      "choices": [
+        {
+          "id": "A",
+          "text": "社会本位论。",
+          "quality": "risk",
+          "effects": {"professionalSkill": 0, "examScore": 0, "affection_zhou": 0, "ethicsRisk": 0, "lawRisk": 0},
+          "feedback": "认反了。社会本位论是'由社会需要决定、使人社会化'（涂尔干、凯兴斯泰纳），跟'从人的本性出发'正相对。两座山别坐错。",
+          "answerKeywords": ["社会本位论", "社会需要", "社会化"]
+        },
+        {
+          "id": "B",
+          "text": "个人本位论。",
+          "quality": "optimal",
+          "effects": {"professionalSkill": 3, "examScore": 3, "affection_zhou": 2, "ethicsRisk": 0, "lawRisk": 0},
+          "feedback": "对。'从人的本性需要出发、个性自由发展、个人价值为首'是个人本位论（卢梭、福禄贝尔、裴斯泰洛齐）。周慎之欣慰：'道这一层，你摸到门了。'",
+          "answerKeywords": ["个人本位论", "人的本性需要", "个性自由发展", "卢梭福禄贝尔"]
+        },
+        {
+          "id": "C",
+          "text": "教育无目的论。",
+          "quality": "risk",
+          "effects": {"professionalSkill": 0, "examScore": 0, "affection_zhou": 0, "ethicsRisk": 0, "lawRisk": 0},
+          "feedback": "不对。教育无目的论是杜威主张'教育过程内在目的、反对外在固定目的'，不等于'以个人本性为准'。",
+          "answerKeywords": ["教育无目的论", "杜威", "过程内在目的"]
+        },
+        {
+          "id": "D",
+          "text": "生活本位论。",
+          "quality": "risk",
+          "effects": {"professionalSkill": 0, "examScore": 0, "affection_zhou": 0, "ethicsRisk": 0, "lawRisk": 0},
+          "feedback": "不对。教育目的两大对立流派的规范表述是'个人本位论'与'社会本位论'，'生活本位论'不是本题对应的标准主张。",
+          "answerKeywords": ["个人本位论", "社会本位论", "规范流派"]
+        }
+      ]
+    },
+    {
+      "id": "zhou_19",
+      "type": "dialogue",
+      "background": "library",
+      "speaker": "narrator",
+      "text": "答对的那一刻，我心里却没只剩做对题的轻快。\n'为了谁'这三个字，被他这么一问，忽然沉甸甸地压在了我心上。原来我背了那么久的'教育目的'，从来不只是一道选择题的四个选项。"
+    },
+    {
+      "id": "zhou_20",
+      "type": "dialogue",
+      "background": "library",
+      "speaker": "周慎之",
+      "expression": "tender",
+      "text": "（他看着我若有所思的样子，轻轻笑了）\n你这个表情，对喽。能为这三个字发会儿呆的年轻人，才走得远。\n考点要拿分，可别只为拿分而背。等你将来站在讲台上，对着底下几十张脸，'为了谁'这道题，每天都得重答一遍。"
+    },
+    {
+      "id": "zhou_21",
+      "type": "dialogue",
+      "background": "library",
+      "speaker": "narrator",
+      "text": "窗外的光不知不觉斜了，操场上响起了放学前的喧闹。\n我看了看时间，竟在这间小小的资料室坐了一个多下午。桌上的茶早凉了，可那摞旧教案、那条被他一页页摊开的来路，却在我心里热乎着。"
+    },
+    {
+      "id": "zhou_22",
+      "type": "dialogue",
+      "background": "library",
+      "speaker": "周慎之",
+      "expression": "smile",
+      "text": "（他重新戴上老花镜，把那摞旧教案理齐，动作很轻，像在收拢一段岁月）\n你要的那份老学案，在东头第三个柜子，标着'历届'的盒子里，自己取。\n（他顿了顿，抬眼看我）想聊了，随时来。这屋子安静，旧纸又多——年轻人肯坐下来听来路的，难得喽。"
+    },
+    {
+      "id": "zhou_23",
+      "type": "dialogue",
+      "background": "library",
+      "speaker": "narrator",
+      "text": "我抱着取到的老学案，在门口回头看了一眼。\n夕照里，周慎之又俯回了那摞旧教案，红笔悬起，神情和我进来时一模一样，仿佛这一个下午只是他漫长教书岁月里寻常的一页。\n（有些前辈给你的，从来不是答案。是一双——看待这一行的眼睛。我把这个安静的下午，悄悄记进了手账。）"
+    },
+    {
+      "id": "zhou_24",
+      "type": "summary",
+      "background": "library",
+      "speaker": "narrator",
+      "text": "一个翻旧教案的午后，周慎之借着那些泛黄的纸页，把教育的来路一页页讲给我听：从《学记》的萌芽，到夸美纽斯、赫尔巴特让教育学独立成科；把赫尔巴特的'传统三中心'与杜威的'做中学'当作两面照镜子的旗，人—书—主张钉死；最后落到那道根上的问题——教育'为了谁'：个人本位论与社会本位论的两座山，以及我国'培养德智体美劳全面发展的社会主义建设者和接班人'的方向。考点没变，可经他一讲，第一次有了来路、有了温度。这是一场不计进度的求教，却让我对这一行多了一双眼睛。",
+      "review": {
+        "learnedExamPoints": [
+          "教育学发展阶段与代表人物（萌芽/独立·夸美纽斯《大教学论》/赫尔巴特《普通教育学》）",
+          "教育家人物—著作—主张对应（赫尔巴特三中心四阶段 vs 杜威做中学；孔子启发；苏霍姆林斯基全面和谐）",
+          "教育目的理论（个人本位论 vs 社会本位论；我国教育目的精神实质与全面发展教育）"
+        ],
+        "structure": "1个'翻旧教案聊教育史'的午后，串起 kp_edu_history / kp_edu_thinkers_deep / kp_edu_aim 三个考点，各走一遍 teach→随堂题(knowledgeCheck)→应用反馈 微循环。",
+        "mockExam": "npc_zhou_mock"
+      }
+    }
+  ]
+}

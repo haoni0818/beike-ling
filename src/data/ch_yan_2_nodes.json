@@ -1,0 +1,329 @@
+{
+  "chapterId": "route_yan_2",
+  "route": "yan",
+  "requires": {"flagsAllTrue": ["route_locked_yan"], "affectionGte": {"yan": 16}},
+  "title": "言修线 · 第二章 · 破例的人",
+  "summary": "黄金四拍第二、三、四拍合章'误解→对立→告白'。周也铁了心要走父母最反对的那条路——读戏曲、学唱昆曲，把生涯方向押在'没前途'的传统艺术上。家长闹到学校，要言修'用专业把她劝回正轨'。所有人都以为这个最理性的生涯规划师会站在'稳妥'那边——包括你，你一度误解他终究也是个'规划至上'的人，与他正面争执。直到你看见他熬夜替周也整理戏曲源流、写下一封给家长的信：他破了自己'绝不替学生站台'的例，只因为不想再看一个孩子，被规划碾碎热爱。借这场风波，他把中国历史与文学常识(文化素养)讲透；冰封三年的人，终于在你面前，把那层玻璃，亲手推开。",
+  "designNote": "乙女向个人线 ch_yan_2，合并第二拍'误解'(误把言修当规划至上)、第三拍'对立'(你与他正面争执)、第四拍'告白'。第一人称旁白(我=见习教师)贯穿。yan 表情 neutral|serious|worried|tender，对立用 serious/worried，破例与告白用 tender；cameo 沈亦舟表情仅 neutral|smile。背景仅 counseling_room|corridor|office|library。深挖模块 301 文化素养(中国历史kp_culture_history / 文学常识kp_culture_literature)。teach→knowledgeCheck(带 examTags 的 choice，指向 ch_yan_quiz.json)→apply→after→heart，本章 2 个 teach。关键选择 setFlag(yan_confessed / route_lean_yan)，affection_yan 经 effects；告白前置 affectionGte≥16。恋爱仅成年同事(我与言修)，周也仅作学生/咨询对象，绝不性化。",
+  "characters": ["yan", "shen"],
+  "students": ["周也"],
+  "valueFields": ["professionalSkill", "studentTrust", "classOrder", "ethicsRisk", "lawRisk", "examScore", "affection_yan"],
+  "note": "ethicsRisk/lawRisk 为逆向指标，越低越好。knowledgeCheck 指向 ch_yan_quiz.json 的题目 id。本章 route:yan，requires 已锁线且需 affection_yan≥16(信任门槛，解锁误解/对立/告白)。",
+  "nodes": [
+    {
+      "id": "ch_yan_2_intro",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "narrator",
+      "text": "事情是从周也那张'我的志愿'表炸开的。\n她在空白处一笔一画写下：'我想学昆曲，做戏曲。'\n家长当天就杀到了学校，拍着桌子要个说法：'让她瞎想的就是你们生涯中心！请那位言老师，用他的'专业',把孩子劝回正路！'\n（我站在门外，听见办公室里一片争执。我下意识地想——言修那么理性的人，这次，多半也会站在'稳妥'那边吧。）"
+    },
+    {
+      "id": "ch_yan_2_intro_1b",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "沈亦舟",
+      "expression": "serious",
+      "text": "（沈亦舟挤到我身边，难得收了那副嬉皮笑脸。）\n周也家长这阵仗，我看悬。学昆曲？在家长眼里跟'自毁前程'没两样。\n（他叹了口气。）这种事，最稳的处理就是各打五十大板，把孩子'劝回正轨'。我赌言老师也会这么办——他那么理性的人，不会为一个孩子去得罪家长的。"
+    },
+    {
+      "id": "ch_yan_2_intro_2",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "言修",
+      "expression": "serious",
+      "text": "（出乎我意料，他没有立刻附和家长，只是平静地听完，然后说：）\n周也的方向，我需要先做完整的评估，才能给您一个负责任的答复。\n（家长不满地拂袖而去。门关上后，他久久没说话，神情疲惫。我误读了那份沉默——）\n（我以为，他终究也是要'评估'出一个'稳妥'的答案，把周也劝回去。）"
+    },
+    {
+      "id": "ch_yan_2_conflict",
+      "type": "choice",
+      "background": "office",
+      "speaker": "narrator",
+      "text": "（那点误解在我心里发酵。我没忍住，当面质问了他——）\n'你不是说过，最恨'拿一把尺子量所有孩子'吗？现在轮到周也，你也要拿'前途''稳妥'这把尺子，把她量回去？'\n（话出口我就后悔了，可他抬起眼，那眼神，比我想的复杂得多。我该怎么收场？）",
+      "choices": [
+        {
+          "id": "A",
+          "text": "把话说完，但留余地：'……如果我误会了你，对不起。我只是不想看周也变成你说的那种孩子。'",
+          "quality": "optimal",
+          "effects": {"professionalSkill": 1, "studentTrust": 1, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": 1, "affection_yan": 3},
+          "feedback": "（他沉默良久，竟极轻地笑了一下：'你急着替周也撑腰的样子……和我很像。'——对立里，留了一道彼此能走近的门。）",
+          "setFlag": {"route_lean_yan": 1},
+          "answerKeywords": []
+        },
+        {
+          "id": "B",
+          "text": "把话憋回去，冷着脸转身就走，不给他解释的机会。",
+          "quality": "risk",
+          "effects": {"professionalSkill": 0, "studentTrust": -1, "classOrder": 0, "ethicsRisk": 1, "lawRisk": 0, "examScore": 0, "affection_yan": -2},
+          "feedback": "（他张了张口，最终什么也没说。误会没解开，反倒结了冰。把话憋着、用沉默对抗，恰恰是他最不喜欢的方式。）",
+          "answerKeywords": []
+        },
+        {
+          "id": "C",
+          "text": "继续逼问，把质疑升级成指责：'别狡辩了，你们这些做规划的，最后都一个样！'",
+          "quality": "risk",
+          "effects": {"professionalSkill": -1, "studentTrust": -1, "classOrder": 0, "ethicsRisk": 2, "lawRisk": 0, "examScore": -1, "affection_yan": -3},
+          "feedback": "（他眼底的光彻底暗下去：'原来在你眼里，我也只是个'做规划的'。'——把人一杆子打翻，是对立里最伤人的走法。）",
+          "answerKeywords": []
+        }
+      ]
+    },
+    {
+      "id": "ch_yan_2_conflict_after",
+      "type": "dialogue",
+      "background": "corridor",
+      "speaker": "narrator",
+      "text": "（争执过后，我心里堵得难受。我不知道自己是气他'可能要妥协',还是气自己一开口就把话说重了。）\n接下来两天，他对我比从前更客气，也更远。每次照面，那层玻璃都擦得锃亮，把我清清楚楚地，挡在外面。\n（我开始怀疑：是不是我真的看错了人？这个连家长都敢顶回去的'冷面规划师',会不会终究，只是更高明地把孩子'规划'回去？）"
+    },
+    {
+      "id": "ch_yan_2_reveal",
+      "type": "dialogue",
+      "background": "library",
+      "speaker": "narrator",
+      "text": "那天深夜，我回办公室拿落下的东西，路过资料室，灯还亮着。\n言修伏在桌上，面前摊着十几本戏曲史料，密密麻麻写满批注。他不是在'评估怎么劝回周也'——他在替她，把昆曲这条路的来龙去脉、能走到哪里，一笔一笔铺出来。\n（桌角压着一封没写完的信，抬头是：'致周也家长——关于一个孩子的热爱，我想为她说几句话。'）\n我站在门口，眼眶一下子热了。我错得多离谱。"
+    },
+    {
+      "id": "ch_yan_2_teach_1",
+      "type": "dialogue",
+      "background": "library",
+      "speaker": "言修",
+      "expression": "tender",
+      "text": "（他发现了我，没有掩饰，反而招手让我进来，把一本翻旧的书推过来。）\n既然撞见了，就帮我把把关。要替周也说服家长，我得先把'戏曲'这条文脉讲清楚——这也是你考编要的'文化素养'。\n中国戏曲的源流你得有个谱：**元曲(元杂剧)**是第一座高峰，关汉卿《窦娥冤》、王实甫《西厢记》、马致远《汉宫秋》、白朴——合称'元曲四大家';**明代传奇**里，汤显祖《牡丹亭》是巅峰;到清代，**昆曲**被称'百戏之祖',后有'京剧'集大成。"
+    },
+    {
+      "id": "ch_yan_2_apply_1",
+      "type": "choice",
+      "background": "library",
+      "speaker": "言修",
+      "expression": "serious",
+      "knowledgeCheck": "q_yan_culture_lit_01",
+      "text": "（他把几本剧作摊开，考我。）\n信里我要举几部经典给家长看'戏曲不是没文化的玩意'。下面哪一组'作品—作者—朝代'的对应，全部正确？",
+      "examTags": {
+        "subject": "301",
+        "module": "文化素养",
+        "examPoint": "中国古代文学常识（戏曲名家名作的作者与朝代对应）",
+        "questionType": "材料分析"
+      },
+      "choices": [
+        {
+          "id": "A",
+          "text": "《窦娥冤》—关汉卿—元；《西厢记》—王实甫—元；《牡丹亭》—汤显祖—明。",
+          "quality": "optimal",
+          "effects": {"professionalSkill": 2, "studentTrust": 1, "classOrder": 0, "ethicsRisk": -1, "lawRisk": 0, "examScore": 3, "affection_yan": 3},
+          "feedback": "对。关汉卿《窦娥冤》、王实甫《西厢记》均为元杂剧;汤显祖《牡丹亭》是明代传奇代表作。三组对应全准，是文学常识高频考点。",
+          "setFlag": {"route_lean_yan": 1},
+          "answerKeywords": ["窦娥冤关汉卿元", "西厢记王实甫元", "牡丹亭汤显祖明"]
+        },
+        {
+          "id": "B",
+          "text": "《牡丹亭》—关汉卿—元；《窦娥冤》—汤显祖—明；《西厢记》—马致远—元。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -2, "studentTrust": -1, "classOrder": 0, "ethicsRisk": 1, "lawRisk": 0, "examScore": -3, "affection_yan": -2},
+          "feedback": "全错位了：《牡丹亭》是汤显祖(明)，《窦娥冤》是关汉卿(元)，《西厢记》是王实甫(元)。作者与朝代张冠李戴，文学常识题最忌如此。",
+          "answerKeywords": ["作者错位", "朝代张冠李戴"]
+        },
+        {
+          "id": "C",
+          "text": "《西厢记》—汤显祖—明；《窦娥冤》—关汉卿—元；《牡丹亭》—王实甫—元。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -1, "studentTrust": -1, "classOrder": 0, "ethicsRisk": 1, "lawRisk": 0, "examScore": -2, "affection_yan": -2},
+          "feedback": "《西厢记》是王实甫(元)而非汤显祖，《牡丹亭》是汤显祖(明)而非王实甫，两组对调致错。只有《窦娥冤》对。",
+          "answerKeywords": ["西厢记牡丹亭对调", "部分正确"]
+        },
+        {
+          "id": "D",
+          "text": "《汉宫秋》—关汉卿—元；《窦娥冤》—马致远—元；《牡丹亭》—汤显祖—明。",
+          "quality": "suboptimal",
+          "effects": {"professionalSkill": 0, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": 0, "affection_yan": -1},
+          "feedback": "《汉宫秋》是马致远、《窦娥冤》是关汉卿，这两组把作者对调了。《牡丹亭》一组虽对，整组仍错。元曲四大家的代表作要分清。",
+          "answerKeywords": ["汉宫秋窦娥冤作者对调", "元曲四大家"]
+        }
+      ]
+    },
+    {
+      "id": "ch_yan_2_after_1a",
+      "type": "dialogue",
+      "background": "library",
+      "speaker": "narrator",
+      "text": "（我答完，他眼里掠过一点赞许。那是这两天对立之后，他第一次正眼看我，不再隔着那层擦得锃亮的玻璃。）\n'你记得很牢。'他说，'比我想的牢。'\n（一句寻常的话，却让我耳根发热。我赶紧低头去翻下一本剧作，掩饰那点不合时宜的雀跃。）"
+    },
+    {
+      "id": "ch_yan_2_after_1",
+      "type": "dialogue",
+      "background": "library",
+      "speaker": "言修",
+      "expression": "neutral",
+      "text": "（他在我答对后，把那几本书重新码好，神情认真。）\n对。家长怕的是'没文化没前途',那我就用文化本身，把这层偏见拆给他看。\n（他低声补了一句。）周也喜欢的不是'戏子',是关汉卿笔下那个'地也，你不分好歹何为地'的窦娥，是一整套活了七百年的东西。"
+    },
+    {
+      "id": "ch_yan_2_bridge_1",
+      "type": "dialogue",
+      "background": "library",
+      "speaker": "narrator",
+      "text": "（资料室里很静，只有翻书声和笔尖摩擦的沙沙响。我替他核对作者朝代，他在一旁写信，偶尔抬头确认一句。）\n这是我见过他最'松'的样子——没有那条划在人与人之间的线，没有那层玻璃，只有一个为了一个孩子的热爱、肯熬到后半夜的人。\n（他写得很慢，每一句都斟酌，像是在替'当年的自己',把那些没人替他说过的话，一字一句补回来。）"
+    },
+    {
+      "id": "ch_yan_2_teach_2",
+      "type": "dialogue",
+      "background": "library",
+      "speaker": "言修",
+      "expression": "neutral",
+      "text": "（他翻开信的下半页，那里是给家长讲'戏曲背后的历史'。）\n光讲作品不够，还得把历史的坐标摆出来——这也是文化素养的另一块：**中国历史朝代脉络**。\n替你顺一遍主线：**夏—商—周(西周/东周，东周分春秋、战国)—秦(首次大一统)—汉—三国两晋南北朝—隋—唐—五代十国—宋—元—明—清**。元杂剧出在元，昆曲盛在明清——文学从来长在历史的土壤里。"
+    },
+    {
+      "id": "ch_yan_2_apply_2",
+      "type": "choice",
+      "background": "library",
+      "speaker": "言修",
+      "expression": "serious",
+      "knowledgeCheck": "q_yan_culture_hist_01",
+      "text": "（他指着信里那行朝代时间轴，考我最后一道。）\n信里要给家长一个直观的'时间感'。下列关于朝代先后与史实，表述正确的是哪一项？",
+      "examTags": {
+        "subject": "301",
+        "module": "文化素养",
+        "examPoint": "中国历史朝代顺序与重要史实",
+        "questionType": "材料分析"
+      },
+      "choices": [
+        {
+          "id": "A",
+          "text": "秦完成首次大一统，其后是汉；唐在宋之前，元在明之前——朝代顺序为秦、汉、唐、宋、元、明、清。",
+          "quality": "optimal",
+          "effects": {"professionalSkill": 2, "studentTrust": 1, "classOrder": 0, "ethicsRisk": -1, "lawRisk": 0, "examScore": 3, "affection_yan": 3},
+          "feedback": "对。秦汉相承、秦是首次大一统;唐在宋前、元在明前，整条主线顺序无误。朝代先后是文化素养必考的基础。",
+          "setFlag": {"route_lean_yan": 1},
+          "answerKeywords": ["秦首次大一统", "秦汉相承", "唐先于宋", "元先于明", "朝代顺序"]
+        },
+        {
+          "id": "B",
+          "text": "朝代顺序为秦、唐、汉、元、宋、明、清，汉在唐之后、元在宋之前。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -2, "studentTrust": -1, "classOrder": 0, "ethicsRisk": 1, "lawRisk": 0, "examScore": -3, "affection_yan": -2},
+          "feedback": "错。汉在唐之前(秦后即汉)，元在宋之后(宋—元—明)。这里把汉、唐和宋、元的先后都颠倒了。",
+          "answerKeywords": ["汉唐顺序颠倒", "宋元顺序颠倒"]
+        },
+        {
+          "id": "C",
+          "text": "隋朝在唐朝之后，结束了唐末的分裂，重新统一全国。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -1, "studentTrust": -1, "classOrder": 0, "ethicsRisk": 1, "lawRisk": 0, "examScore": -2, "affection_yan": -2},
+          "feedback": "错。是隋在唐之前(隋统一—唐继之)，隋结束的是南北朝的分裂，不是'唐末'。隋唐先后是高频易错点。",
+          "answerKeywords": ["隋先于唐", "隋结束南北朝分裂"]
+        },
+        {
+          "id": "D",
+          "text": "首次完成大一统的是汉朝，秦只是诸侯国之一，未曾统一。",
+          "quality": "suboptimal",
+          "effects": {"professionalSkill": 0, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": -1, "affection_yan": -1},
+          "feedback": "错。公元前221年秦始皇灭六国，建立了我国历史上第一个大一统王朝;汉承秦制。首次大一统是秦，不是汉。",
+          "answerKeywords": ["秦首次大一统", "公元前221年", "非汉"]
+        }
+      ]
+    },
+    {
+      "id": "ch_yan_2_after_2",
+      "type": "dialogue",
+      "background": "library",
+      "speaker": "言修",
+      "expression": "tender",
+      "text": "（他把信的最后一段写完，搁下笔，长长舒了口气。我瞥见末尾一行字——）\n'……我曾经也有一样想守护的东西。后来它被'为我好'三个字，规划没了。请别让周也，重走我的路。'\n（他没有遮挡，任我看见。台灯下，那层我以为永远推不开的玻璃，第一次，从里面透出了光。）"
+    },
+    {
+      "id": "ch_yan_2_heart",
+      "type": "dialogue",
+      "background": "library",
+      "speaker": "narrator",
+      "text": "破例的人。\n三年里他对谁都隔着一层玻璃，做最理性、最不动声色的生涯规划，唯独这一次，他破了自己'绝不替学生站台'的例——为了一个不肯放弃热爱的孩子，也为了那个被规划碾碎的、当年的自己。\n（而他把这一切，毫无保留地，摊在了我面前。我忽然懂了：他不是不会靠近谁，是终于，肯为谁靠近。）"
+    },
+    {
+      "id": "ch_yan_2_apology",
+      "type": "dialogue",
+      "background": "library",
+      "speaker": "narrator",
+      "text": "（核对完最后一处，我终于把那句话说出口。）\n'那天我说你'拿尺子量周也'……对不起。我把你看小了。'\n他搁下笔，安静地看了我一会儿，摇摇头。\n'你没看小我。'他说，'你是太怕周也走我的老路——那种怕，我太懂了。所以我没法生你的气。'\n（那一刻我才发现，我们俩，原来是同一种人。）"
+    },
+    {
+      "id": "ch_yan_2_confess_setup",
+      "type": "dialogue",
+      "background": "corridor",
+      "speaker": "言修",
+      "expression": "tender",
+      "text": "（信寄出后的那个傍晚，他在走廊叫住我。一向疏离克制的人，这一次，目光落在我脸上没有挪开。）\n那天你质问我'是不是也要拿尺子量周也'——我没生气。\n我反倒在想，为什么偏偏是你的误会，让我那么想解释。\n（他停了一下，像是在跟自己那层玻璃做最后的告别。）我习惯了把所有人挡在外面。可你……我好像，不想把你挡在外面。"
+    },
+    {
+      "id": "ch_yan_2_confess",
+      "type": "choice",
+      "background": "corridor",
+      "speaker": "narrator",
+      "text": "（夕阳从走廊尽头斜照进来，落在他向来很淡的眉眼上，这一刻竟那样清晰、那样近。他在等我的回答。我的心跳，比那满走廊的金光还要烫。）",
+      "choices": [
+        {
+          "id": "A",
+          "text": "'那就别挡。'——迎着他的目光，认真地说，'你为周也破的那个例，我想，对我，你也可以。'",
+          "quality": "optimal",
+          "effects": {"professionalSkill": 1, "studentTrust": 1, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": 1, "affection_yan": 5},
+          "feedback": "（他眼底的光彻底亮了，伸手，极轻地替我拢了下被风吹乱的发：'……第一次觉得，'破例'这两个字，是暖的。'——那层冰封三年的玻璃，被他亲手，推开了。）",
+          "setFlag": {"yan_confessed": true, "route_lean_yan": 1},
+          "answerKeywords": []
+        },
+        {
+          "id": "B",
+          "text": "'我也是。'——耳根发烫，轻轻地、却很坚定地回应他。",
+          "quality": "optimal",
+          "effects": {"professionalSkill": 1, "studentTrust": 1, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": 1, "affection_yan": 4},
+          "feedback": "（他怔了一瞬，随即极轻地笑起来，那笑意一直漫到眼底：'三个字，我等了很久。'——疏离的人，终于把心也递了出来。）",
+          "setFlag": {"yan_confessed": true},
+          "answerKeywords": []
+        },
+        {
+          "id": "C",
+          "text": "'我们……是同事，这样合适吗？'——下意识后退半步，回避他的目光。",
+          "quality": "acceptable",
+          "effects": {"professionalSkill": 0, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": 0, "affection_yan": -1},
+          "feedback": "（他敛了神情，退回那条熟悉的线后：'……是我冒昧了。当我没说。'——他把刚推开的玻璃，又轻轻合上了一道。心动需要被接住，而非被推开。）",
+          "answerKeywords": []
+        }
+      ]
+    },
+    {
+      "id": "ch_yan_2_confess_after",
+      "type": "dialogue",
+      "background": "corridor",
+      "speaker": "narrator",
+      "text": "（走廊尽头的风灌进来，吹动他额前的碎发。他向来疏离的人，此刻站在我面前，竟有一点不知所措的、近乎少年的局促。）\n三年里，他把所有人挡在那层玻璃外面，连呼吸都收得克制。而此刻，他把那层玻璃，连同玻璃后面那个结了霜的、受过伤的自己，一起交到了我手里。\n（我知道这一步，对他有多难。也正因如此，我格外珍重。）"
+    },
+    {
+      "id": "ch_yan_2_shen_cameo2",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "沈亦舟",
+      "expression": "smile",
+      "text": "（消息不知怎么传到了沈亦舟耳朵里。他第二天看我的眼神，活像见了鬼。）\n等等等等——言老师那块'三年没人敲开'的玻璃，被你给敲开了？！\n（他长长吐出一口气，难得正经地拍了拍我肩。）行，那人值得。能为一个孩子破自己的例，对你，肯定也错不了。"
+    },
+    {
+      "id": "ch_yan_2_end_1",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "narrator",
+      "text": "几天后，周也红着眼睛跑来——家长读完那封信，松了口，答应让她'先试一年昆曲'。\n她把一张戏票塞给言修：'老师，等我第一次正式登台，您一定要来。'\n（言修接过票，难得地，唇角弯了一下。他侧头看我，那目光里有一句没说出口的话：你也一起。我读懂了，悄悄红了脸。）"
+    },
+    {
+      "id": "ch_yan_2_end",
+      "type": "summary",
+      "background": "office",
+      "speaker": "narrator",
+      "text": "（言修线第二章落幕。'破例'的这一程，把今天学的文学常识、历史朝代脉络，和那句终于被接住的告白，一并记进手账。冰封的人，原来一旦肯暖，便是滚烫。）",
+      "review": {
+        "learnedExamPoints": [
+          "301-文化素养-中国古代文学常识（元曲四大家·戏曲名家名作的作者与朝代）— 言修",
+          "301-文化素养-中国历史朝代顺序与重要史实（秦首次大一统·朝代先后）— 言修"
+        ],
+        "structure": "从周也'要学昆曲、家长闹到学校'切入，经'误会言修规划至上→正面对立→撞见他破例替孩子整理戏曲源流与写信'三拍递进，把文学常识(戏曲名家名作)与历史朝代脉络两个文化素养考点'用'出来，末尾以告白收束黄金四拍。走'剧情讲授→马上做题→应用→反馈'。",
+        "mockExam": "route_yan_mock",
+        "recommendedReview": [
+          "答错文学常识→言修重讲'元曲四大家·窦娥冤/西厢记/牡丹亭的作者与朝代'",
+          "答错历史朝代→言修重讲'秦首次大一统·隋先于唐·宋元明清先后'"
+        ]
+      }
+    }
+  ]
+}

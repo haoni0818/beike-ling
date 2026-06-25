@@ -1,0 +1,327 @@
+{
+  "chapterId": "core_ch08",
+  "title": "第八章 · 教育的来路",
+  "summary": "教研中心主任程砚——传说中温润表象下一肚子毒舌的学术派——把你叫到了教研中心。他不讲课，他'考'你：从夸美纽斯到杜威，从教育目的到中学课程，一路用反问把你将军，逼你回到教育学的根上。你答得磕磕绊绊，却被他几句精准到扎心的点拨敲醒。这一章没有立绘，只有一块名牌、一杯凉掉的茶、和一个让你又气又服的男人——你的学术线，从这里起步。",
+  "designNote": "乙女向第八章·学术线起点：第一人称心声贯穿。新主线程砚(教研中心主任·36·腹黑毒舌学术派)登场，但【暂无立绘】，游戏内只显示名牌+对话，speaker 用'程砚'，不写 expression，不依赖表情演出，全靠台词的反问张力与'被将军'的心动 beat 承载人设。沈亦舟做有立绘的 cameo(在门口给你壮胆/吐槽)。三考点回到教育学的根：A 教育学发展与代表人物(夸美纽斯/赫尔巴特/杜威/苏霍姆林斯基)；B 教育目的(个人本位vs社会本位·我国全面发展教育德智体美劳)；C 中学课程(课程类型·新课改三维目标)。teach→随堂检测→应用→反馈 结构保留。程砚无 affection 字段，只用 professionalSkill/examScore/studentTrust 等。贯穿钩子：程砚在你的随手笔记上写的批注。",
+  "characters": ["cheng", "shen"],
+  "students": [],
+  "valueFields": ["professionalSkill", "studentTrust", "classOrder", "ethicsRisk", "lawRisk", "examScore", "affection_lu", "affection_jiang", "affection_gu", "affection_shen"],
+  "note": "ethicsRisk/lawRisk 为逆向指标，越低越好。knowledgeCheck 指向 chapter08_quiz.json 的题目 id。程砚暂无立绘，speaker='程砚' 不写 expression。",
+  "nodes": [
+    {
+      "id": "ch08_intro_1",
+      "type": "dialogue",
+      "background": "staff_room",
+      "speaker": "narrator",
+      "text": "周三下午第三节后，我收到一张便签，字迹瘦劲：'教研中心，方便时来一趟。——程砚'。\n程砚。教研中心主任。我只远远见过一回：三十六七岁，穿得一丝不苟，说话慢条斯理，温温和和。\n（沈亦舟却给他起了个外号——'笑面阎王'。说被他评过一次课的人，回来都得缓三天。）"
+    },
+    {
+      "id": "ch08_intro_2",
+      "type": "dialogue",
+      "background": "corridor",
+      "speaker": "沈亦舟",
+      "expression": "worried",
+      "text": "（走廊拐角，沈亦舟一把拽住我，压低声音）真去啊？我跟你说，程主任那张脸越温柔越要命。\n他不骂人，他'问'人——一句句反问，问到你自己承认自己不会为止。比挨骂难受多了。"
+    },
+    {
+      "id": "ch08_intro_3",
+      "type": "dialogue",
+      "background": "corridor",
+      "speaker": "沈亦舟",
+      "expression": "smile",
+      "text": "（他又咧嘴一笑，拍拍我肩）不过……能被他点名'考'的新人不多。说明他觉得你这块料，值得费这功夫。\n去吧去吧，我在门口给你望风。要是你三十分钟没出来，我就当你已经'光荣'了。"
+    },
+    {
+      "id": "ch08_intro_4",
+      "type": "dialogue",
+      "background": "meeting_room",
+      "speaker": "程砚",
+      "text": "（教研中心里光线很静。他没有立绘——我是说，桌上只有一块写着'程砚'的名牌，和一杯早凉了的茶。他抬眼看我，唇角是温的，眼神却是利的）\n来了。坐。\n听说你这阵子，课上得有声有色，考点也'用'得很顺。"
+    },
+    {
+      "id": "ch08_intro_5",
+      "type": "dialogue",
+      "background": "meeting_room",
+      "speaker": "程砚",
+      "text": "（他把我随手带的那个笔记本拿过去，翻了翻，似笑非笑）\n方法、技巧、招式……你学了不少。\n那我问你——你天天'教育、教育'挂在嘴上，可教育这门学问，是从哪儿长出来的？谁第一个把它讲成了一门'学'？\n（他把本子合上，轻轻推回来）连根都不知道，枝叶长得再热闹，风一来，你站得住吗？"
+    },
+    {
+      "id": "ch08_a_teach_1",
+      "type": "dialogue",
+      "background": "meeting_room",
+      "speaker": "程砚",
+      "text": "（见我答不利索，他也不催，慢悠悠给自己续了杯茶）\n那我替你把这条来路捋一遍——记好，这是教育学最爱考的'人物-著作-主张'一一对应。\n先说独立的起点：**夸美纽斯**，《大教学论》，被称为'教育学之父'。他第一个系统提出**班级授课制**，主张'把一切知识教给一切人'，让教育学开始独立成科。"
+    },
+    {
+      "id": "ch08_a_teach_2",
+      "type": "dialogue",
+      "background": "meeting_room",
+      "speaker": "程砚",
+      "text": "（他竖起两根手指，慢慢比划）\n往后，是两座对立的山。\n**赫尔巴特**，《普通教育学》，标志教育学成为一门规范、独立的学科，他被称为'**现代教育学之父**'/'科学教育学之父'。他主张**教师中心、课堂中心、教材中心**——这就是'**传统教育**'三中心。\n**杜威**，《民主主义与教育》，针锋相对，提出'教育即生活''学校即社会''**做中学**'，主张**儿童中心、活动中心、经验中心**——这是'**现代教育**'新三中心。"
+    },
+    {
+      "id": "ch08_a_teach_3",
+      "type": "dialogue",
+      "background": "meeting_room",
+      "speaker": "程砚",
+      "text": "（他放下茶杯，看着我）\n记区别就一句话：赫尔巴特把课堂的重心交给**老师**，杜威把它交给**孩子**。一'旧'一'新'，一'师'一'童'。\n再补一个常考的暖色：**苏霍姆林斯基**，《把整个心灵献给孩子》，主张培养'**全面和谐发展**的人'——既要分数，也要灵魂。\n（他忽然反问）那我问你：如果有人说'教育要尊重儿童的兴趣、在活动中学习'，这是谁的旗号？"
+    },
+    {
+      "id": "ch08_a_apply",
+      "type": "choice",
+      "background": "meeting_room",
+      "speaker": "程砚",
+      "knowledgeCheck": "q_edu_history_01",
+      "text": "（我刚把'杜威'两个字说出口，他几不可察地点了下头，又抛来下一问）\n那再走一步——下面这四种说法，哪一个，才是真正属于**夸美纽斯**的贡献？答错，可别怪我把你刚才那点底子也收回去。",
+      "examTags": {
+        "subject": "302",
+        "module": "教育基础知识与基本原理",
+        "examPoint": "教育学发展中的代表人物与著作、主张的对应（夸美纽斯/赫尔巴特/杜威/苏霍姆林斯基）",
+        "questionType": "单项选择"
+      },
+      "choices": [
+        {
+          "id": "A",
+          "text": "著《大教学论》，系统论述班级授课制，使教育学走向独立。",
+          "quality": "optimal",
+          "effects": {"professionalSkill": 2, "studentTrust": 0, "classOrder": 0, "ethicsRisk": -1, "lawRisk": 0, "examScore": 3},
+          "feedback": "对。夸美纽斯《大教学论》+班级授课制+'把一切知识教给一切人'，是教育学开始独立的标志，被称'教育学之父'。这是必背的一一对应。",
+          "answerKeywords": ["夸美纽斯", "大教学论", "班级授课制", "教育学独立"]
+        },
+        {
+          "id": "B",
+          "text": "著《普通教育学》，主张教师中心、课堂中心、教材中心。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -1, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 1, "lawRisk": 0, "examScore": -3},
+          "feedback": "张冠李戴。这是赫尔巴特（'现代教育学之父'）的'传统教育'三中心，不是夸美纽斯。人物-著作-主张错配，是本类题最大的雷。",
+          "answerKeywords": ["赫尔巴特", "普通教育学", "传统教育三中心"]
+        },
+        {
+          "id": "C",
+          "text": "著《民主主义与教育》，提出'做中学'、儿童中心。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -1, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 1, "lawRisk": 0, "examScore": -3},
+          "feedback": "错。这是杜威的现代教育主张（做中学、儿童/活动/经验中心），与夸美纽斯无关。'旧师新童'要分清。",
+          "answerKeywords": ["杜威", "民主主义与教育", "做中学", "儿童中心"]
+        },
+        {
+          "id": "D",
+          "text": "著《把整个心灵献给孩子》，主张全面和谐发展。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -1, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 1, "lawRisk": 0, "examScore": -3},
+          "feedback": "错。这是苏霍姆林斯基的主张。四位人物各自的著作与核心观点必须一一对应，混了就丢分。",
+          "answerKeywords": ["苏霍姆林斯基", "全面和谐发展"]
+        }
+      ]
+    },
+    {
+      "id": "ch08_a_after",
+      "type": "dialogue",
+      "background": "meeting_room",
+      "speaker": "程砚",
+      "text": "（他'嗯'了一声，那一声里听不出褒贬，却把我刚才那点紧张悄悄放下了半截）\n答对了。记住——这些名字不是用来背的，是用来站队的。\n你站在杜威这边，还是赫尔巴特这边，决定了你这堂课，是把话筒递给自己，还是递给孩子。"
+    },
+    {
+      "id": "ch08_a_heart",
+      "type": "dialogue",
+      "background": "meeting_room",
+      "speaker": "narrator",
+      "text": "他说话时一直没什么表情起伏，可'把话筒递给孩子'那句，却像一根细针，轻轻挑开了我一直没想透的东西。\n（明明是在'考'我，怎么……反而像被人替我把脑子里那团乱麻，一根根理顺了。\n这人嘴是真毒，话也是真——准。）"
+    },
+    {
+      "id": "ch08_t1",
+      "type": "dialogue",
+      "background": "meeting_room",
+      "speaker": "程砚",
+      "text": "（他不给我喘息，翻开一页讲义）\n人物你勉强过关。那往上一层——你天天教书，到底为了什么？或者说，教育，到底是为了'人'，还是为了'社会'？\n这一问，从古吵到今，吵出了两大阵营。也是必考。"
+    },
+    {
+      "id": "ch08_b_teach_1",
+      "type": "dialogue",
+      "background": "meeting_room",
+      "speaker": "程砚",
+      "text": "（他用茶杯在桌上虚虚点出两个位置）\n**个人本位论**——以卢梭、福禄贝尔为代表，主张教育目的要**根据人的本性、需要去定**，培养'人'本身，让个性自由发展。一句话：人，是目的。\n**社会本位论**——以涂尔干、凯兴斯泰纳为代表，主张教育目的要**由社会需要决定**，培养社会需要的人，使个人社会化。一句话：人，是手段。"
+    },
+    {
+      "id": "ch08_b_teach_2",
+      "type": "dialogue",
+      "background": "meeting_room",
+      "speaker": "程砚",
+      "text": "（他把杯子放回正中）\n这两座山都太偏。我国的立场是**把两者统一起来**：教育目的，既要促进人的全面发展，也要适应社会发展的需要。\n落到操作上，就是我国的'**全面发展教育**'——**德、智、体、美、劳**五育并举。\n（他忽然侧头反问）那我考你：'教育要为社会主义现代化建设服务，培养社会需要的建设者和接班人'——这句话，更偏哪个本位？"
+    },
+    {
+      "id": "ch08_b_apply",
+      "type": "choice",
+      "background": "meeting_room",
+      "speaker": "程砚",
+      "knowledgeCheck": "q_edu_aim_01",
+      "text": "（我犹豫着说'社会本位'，他不置可否，反手又给我加了道难的）\n那这道你再答——有位老师说：'我办教育，只为让每个孩子的天性自由舒展，至于社会要什么，不必管。'这种主张，最接近下面哪一种教育目的论？",
+      "examTags": {
+        "subject": "302",
+        "module": "教育基础知识与基本原理",
+        "examPoint": "教育目的的理论（个人本位论 vs 社会本位论）与我国全面发展教育",
+        "questionType": "单项选择"
+      },
+      "choices": [
+        {
+          "id": "A",
+          "text": "个人本位论：教育目的应依据人的本性与需要，促进个性自由发展。",
+          "quality": "optimal",
+          "effects": {"professionalSkill": 2, "studentTrust": 1, "classOrder": 0, "ethicsRisk": -1, "lawRisk": 0, "examScore": 3},
+          "feedback": "对。'依据人的天性、让个性自由舒展、不顾社会需要'是个人本位论（卢梭、福禄贝尔）的典型主张。抓'以人为目的'这个根。",
+          "answerKeywords": ["个人本位论", "依据人的本性", "个性自由发展", "卢梭福禄贝尔"]
+        },
+        {
+          "id": "B",
+          "text": "社会本位论：教育目的应由社会需要决定，使个人社会化。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -1, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 1, "lawRisk": 0, "examScore": -3},
+          "feedback": "正好相反。题中明确'不必管社会要什么'，是反社会本位的。社会本位（涂尔干、凯兴斯泰纳）主张'人是手段、服务社会'。",
+          "answerKeywords": ["社会本位论", "社会需要决定", "个人社会化"]
+        },
+        {
+          "id": "C",
+          "text": "教育无目的论：教育过程之外没有目的，过程即目的。",
+          "quality": "suboptimal",
+          "effects": {"professionalSkill": 0, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": 0},
+          "feedback": "杜威的'教育无目的'指反对外在强加的固定目的，强调过程内在目的，与本题'为孩子天性'的人本立场不是一回事。本题最贴切的是个人本位论。",
+          "answerKeywords": ["教育无目的论（杜威）", "过程内在目的", "非本题最贴切"]
+        },
+        {
+          "id": "D",
+          "text": "我国教育目的：促进人的全面发展与适应社会需要相统一。",
+          "quality": "suboptimal",
+          "effects": {"professionalSkill": 0, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": -1},
+          "feedback": "我国主张是'两者统一'，恰恰不会说'不必管社会'。题中是单边偏向人的极端表述，应归为个人本位论，而非我国的统一立场。",
+          "answerKeywords": ["全面发展与社会需要相统一", "我国立场非单边"]
+        }
+      ]
+    },
+    {
+      "id": "ch08_b_after",
+      "type": "dialogue",
+      "background": "meeting_room",
+      "speaker": "程砚",
+      "text": "（他难得停顿了一下，声音放缓了半度）\n答得不错。但我提醒你一句——\n在考卷上，你要会分两座山；可真站到讲台上，别真把孩子和社会拆成两边。\n好的教育，是让孩子长成他自己，同时也长成这个时代用得上的人。德智体美劳，缺一个，他都活得不够舒展。"
+    },
+    {
+      "id": "ch08_t2",
+      "type": "dialogue",
+      "background": "meeting_room",
+      "speaker": "程砚",
+      "text": "（他抬手看了眼表，又落回我身上）\n根、目的，你都摸到了。最后一层，最实在，也最是我教研中心的本行——**课程**。\n你天天在排课、备课，可你说得清，你教的东西，到底被人怎么'分类'、怎么'设计'的吗？\n这是我要考你的最后一道。"
+    },
+    {
+      "id": "ch08_c_teach_1",
+      "type": "dialogue",
+      "background": "meeting_room",
+      "speaker": "程砚",
+      "text": "（他把讲义翻到课程那页，条分缕析）\n中学课程的分类，记四对：\n按内容性质——**学科课程**（分科系统知识，如语数外）vs **活动课程**（从兴趣经验出发，如社团实践）；\n按修习要求——**必修课** vs **选修课**；\n按呈现方式——**显性课程**（明列在课表里的）vs **隐性课程**（校风、师生关系等潜移默化的）；\n按管理主体——**国家课程 / 地方课程 / 校本课程**（三级课程管理）。"
+    },
+    {
+      "id": "ch08_c_teach_2",
+      "type": "dialogue",
+      "background": "meeting_room",
+      "speaker": "程砚",
+      "text": "（他放下笔，看着我）\n再加一个新课改的硬核：'**三维目标**'。一节课的目标要写三个维度——\n**知识与技能**（学到什么、会做什么）、**过程与方法**（怎么学、用什么方法去探究）、**情感态度与价值观**（在这过程里养成什么态度、价值取向）。\n（他忽然反问，眼神又利了起来）那我问你：你带学生做一次社会调查，让他们学会问卷设计、亲历采集分析、再体会到对社会的关切——这分别落在哪个维度？别只会念名字。"
+    },
+    {
+      "id": "ch08_c_apply",
+      "type": "choice",
+      "background": "meeting_room",
+      "speaker": "程砚",
+      "knowledgeCheck": "q_curriculum2_01",
+      "text": "（我磕磕巴巴对了一遍，他终于松了口气似的，给我最后一问）\n那这道做完，今天就算两清——'校园里的文化氛围、师生关系，悄悄影响着学生'，这种'没写进课表、却真在育人'的课程，属于下面哪一类？",
+      "examTags": {
+        "subject": "302",
+        "module": "中学课程",
+        "examPoint": "课程类型的辨别（显性/隐性、学科/活动、必修/选修、三级课程）与新课改三维目标",
+        "questionType": "单项选择"
+      },
+      "choices": [
+        {
+          "id": "A",
+          "text": "隐性课程：以校风、师生关系等潜移默化方式影响学生。",
+          "quality": "optimal",
+          "effects": {"professionalSkill": 2, "studentTrust": 1, "classOrder": 0, "ethicsRisk": -1, "lawRisk": 0, "examScore": 3},
+          "feedback": "对。'没列入课表、通过校园文化与师生关系潜移默化育人'正是隐性课程；与之相对、明列课表的是显性课程。",
+          "answerKeywords": ["隐性课程", "潜移默化", "校风师生关系", "未列入课表"]
+        },
+        {
+          "id": "B",
+          "text": "显性课程：以课程标准明确规定、列入课表的形式实施。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -1, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 1, "lawRisk": 0, "examScore": -3},
+          "feedback": "正好相反。显性课程是明列在课表、有计划公开实施的；题干强调'没写进课表、潜移默化'，应是隐性课程。",
+          "answerKeywords": ["显性课程", "列入课表", "公开有计划"]
+        },
+        {
+          "id": "C",
+          "text": "活动课程：从学生兴趣经验出发组织的实践性课程。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -1, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 1, "lawRisk": 0, "examScore": -3},
+          "feedback": "错。活动课程是按'内容性质'分类、与学科课程相对的；本题考的是按'呈现方式'分类的显性/隐性，应选隐性课程。注意分类维度别串。",
+          "answerKeywords": ["活动课程", "兴趣经验", "分类维度不符"]
+        },
+        {
+          "id": "D",
+          "text": "校本课程：由学校根据自身条件自主开发的课程。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -1, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 1, "lawRisk": 0, "examScore": -3},
+          "feedback": "错。校本课程属于按'管理主体'分类的三级课程（国家/地方/校本），与'隐性育人'不是一个维度。题干指向隐性课程。",
+          "answerKeywords": ["校本课程", "三级课程管理", "分类维度不符"]
+        }
+      ]
+    },
+    {
+      "id": "ch08_c_after",
+      "type": "dialogue",
+      "background": "meeting_room",
+      "speaker": "程砚",
+      "text": "（他把我的笔记本又拿过去，提笔，在我那页潦草的记录旁写了一行小字，然后合上推回来）\n显性课程教知识，隐性课程教做人。你今天上的每一节课，孩子学到的，从来不止课表上写的那些。\n……今天到此。回去吧。"
+    },
+    {
+      "id": "ch08_c_heart",
+      "type": "dialogue",
+      "background": "meeting_room",
+      "speaker": "narrator",
+      "text": "出了门，我才低头翻开本子——他在我那行字旁写着：'有根，方有枝。——孺子可教。'\n落款那两个字，看得我耳朵有点发烫。\n（'孺子可教'……是夸我吗？被一个能把人问到哑口无言的人这么写一句，怎么……比谁的表扬都让人心跳。\n这位没有立绘的程主任，我大概，是记住了。）"
+    },
+    {
+      "id": "ch08_end_1",
+      "type": "dialogue",
+      "background": "corridor",
+      "speaker": "沈亦舟",
+      "expression": "smile",
+      "text": "（走廊上，沈亦舟果然还杵着，一脸'你居然活着出来了'的表情）\n哟！四十分钟，比预期久。脸还在，没被问哭，行啊你！\n（他凑过来瞄了眼我手里的本子，眼睛一下瞪圆）……他给你写批注了？我入职两年都没这待遇。完了完了，你被'笑面阎王'看上了——是当苗子看上了啊我说！"
+    },
+    {
+      "id": "ch08_end_2",
+      "type": "dialogue",
+      "background": "corridor",
+      "speaker": "narrator",
+      "text": "我把本子抱紧了点，没接他的话。\n今天没上一节课，却像把'教育'这两个字，从头到脚重新擦了一遍：夸美纽斯到杜威的来路，个人与社会的两座山，课表里里外外的课程。\n（原来我一直忙着学'怎么教'，却很少停下来问'为什么教'。\n那个没有立绘、只有一块名牌的人，用一连串反问，把我将到了根上。\n备课铃明天还会响。但这一次，我想我会站得更稳一点。）"
+    },
+    {
+      "id": "ch08_end",
+      "type": "summary",
+      "background": "meeting_room",
+      "speaker": "narrator",
+      "text": "（教研中心这一课落幕。把程砚问出来的三层学问，一条条记进手账——这次记的，是教育的根。）",
+      "review": {
+        "learnedExamPoints": [
+          "302-教育基础原理-教育学代表人物与著作（夸美纽斯/赫尔巴特/杜威/苏霍姆林斯基）— 程砚",
+          "302-教育基础原理-教育目的（个人本位vs社会本位·我国全面发展教育德智体美劳）— 程砚",
+          "302-中学课程-课程类型（学科/活动·必修/选修·显性/隐性·三级课程）与新课改三维目标 — 程砚"
+        ],
+        "structure": "三层考点层层向'根'递进：人物来路→教育目的→中学课程。程砚不讲授而'考问'，走的是'反问点拨→马上做题→应用→反馈'的微循环。章末月考为冷测。",
+        "mockExam": "core_ch08_mock",
+        "recommendedReview": [
+          "答错人物→程砚重讲夸美纽斯/赫尔巴特/杜威/苏霍姆林斯基的人物-著作-主张一一对应",
+          "答错教育目的→程砚重讲个人本位vs社会本位与我国全面发展教育（德智体美劳）",
+          "答错课程→程砚重讲四对课程类型的分类维度与新课改三维目标"
+        ]
+      }
+    }
+  ]
+}

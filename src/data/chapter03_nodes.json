@@ -1,0 +1,387 @@
+{
+  "chapterId": "core_ch03",
+  "title": "第三章 · 班级的重量",
+  "summary": "高一(7)班的运动会落幕，顾承却把你留了下来——林小满又出事了。这一回，顾哥不再只让你'见识'，而是真把带班的担子压到你肩上：怎么用一个榜样、一种氛围去带动一个班，怎么把一群学生'拢'成一个集体，怎么在操行评定那张薄薄的纸上，写下一个孩子的整个学期。三桩班务、一位年上的班主任，把三个德育实务高频考点'扛'了出来，也让那个总笑着的男人，第一次在你面前卸下了一点点重量。",
+    "designNote": "乙女向：第一人称心声(旁白)贯穿；本章主男主=顾承(厚重年上/可靠)，沈亦舟插科打诨当搭档，江晚短暂cameo递茶。接续ch1林小满线索——顾承带主角从'旁观'走到'上手带班'。三考点全部包在班级建设/德育实务的真实事件里：榜样示范与陶冶教育→德育方法辨析；运动会备战→班集体发展阶段与培养方法；学期末操行评定→班主任工作与后进生转化。学生(林小满/周也)仅为教学对象与事件源，绝不涉及恋爱。teach→随堂检测→应用→反馈→心动 结构与三考点保留。贯穿钩子：顾承那本越写越厚、却总在某一页停笔的带班笔记。",
+  "characters": ["gu", "shen", "jiang"],
+  "students": ["林小满", "周也"],
+  "valueFields": ["professionalSkill", "studentTrust", "classOrder", "ethicsRisk", "lawRisk", "examScore", "affection_lu", "affection_jiang", "affection_gu", "affection_shen"],
+  "note": "ethicsRisk/lawRisk 为逆向指标，越低越好。knowledgeCheck 指向 chapter03_quiz.json 的题目 id。",
+  "nodes": [
+    {
+      "id": "ch03_intro_1",
+      "type": "dialogue",
+      "background": "corridor",
+      "speaker": "narrator",
+      "text": "入职第三周，秋季运动会刚散场。\n操场上还飘着几面没人收的彩旗，广播里循环了一下午的进行曲，总算歇了。我抱着记分册往回走，脚底像踩在棉花上——原来当老师的累，不是站一天那种累，是嗓子喊哑了、心还吊在半空、生怕哪个孩子出岔子的那种累。"
+    },
+    {
+      "id": "ch03_intro_2",
+      "type": "dialogue",
+      "background": "corridor",
+      "speaker": "顾承",
+      "expression": "worried",
+      "text": "（顾承在走廊尽头叫住我，手里攥着一张皱巴巴的请假条，平日那点笑全收了）\n新老师，留一步。\n林小满……接力赛最后一棒，她摔了，名次也没拿到。这会儿一个人钻进器材室哭，门反锁着，谁敲都不应。"
+    },
+    {
+      "id": "ch03_intro_3",
+      "type": "dialogue",
+      "background": "corridor",
+      "speaker": "顾承",
+      "expression": "serious",
+      "text": "（他把请假条折好塞回口袋，叹了口气）\n这班我带了一年，运动会本来想拿它'拢一拢'人心——结果差一点功亏一篑。\n上次你跟她聊喂猫那回，我就看出来了，你跟她对得上话。这回我不光让你看，我想让你跟我一起，把这个班，真正带起来。"
+    },
+    {
+      "id": "ch03_intro_4",
+      "type": "dialogue",
+      "background": "staff_room",
+      "speaker": "沈亦舟",
+      "expression": "smile",
+      "text": "（办公室里，沈亦舟一边给我递降温的酸梅汤一边幸灾乐祸）\n哟，顾哥这是要正式收徒了啊？带班可比泼咖啡难多了。\n（他凑近压低声音）实话跟你说，顾哥那本带班笔记，我偷瞄过——厚得像本字典，全校班主任公认的'武功秘籍'。你这是要学真东西了，羡慕。"
+    },
+    {
+      "id": "ch03_intro_5",
+      "type": "dialogue",
+      "background": "staff_room",
+      "speaker": "narrator",
+      "text": "我捧着冰凉的酸梅汤，心里却有点发烫。\n（'真正带起来'……顾哥说这话时眼神是亮的。那不是上司派活，是把一个班、一群孩子，郑重地交到我手上。）\n我深吸一口气。好。那就从林小满，从这个摔了一跤的班，开始。"
+    },
+    {
+      "id": "ch03_a_teach_1",
+      "type": "dialogue",
+      "background": "classroom",
+      "speaker": "顾承",
+      "expression": "serious",
+      "text": "（教室里只剩一地夕阳。顾承没急着去敲器材室的门，反倒拉了把椅子，掉个头坐我对面）\n你先别急着冲进去喊'别哭了'。林小满这种孩子，你越哄'没事的'，她越觉得你在敷衍她。\n带学生跟下地一样，得先挑对家伙什。德育这门手艺，五种方法，新人最爱抓错的那把——就是张嘴讲大道理。"
+    },
+    {
+      "id": "ch03_a_teach_2",
+      "type": "dialogue",
+      "background": "classroom",
+      "speaker": "顾承",
+      "expression": "serious",
+      "text": "（他扳着手指，一样一样数给我听，像在数地里几垄菜）\n这五把家伙，各管一摊，你听好——\n**说服教育法**：摆事实、讲道理，靠一张嘴把'理'说通；\n**榜样示范法**：搬出先进人物、典型事迹，让孩子'照着这股劲'学；\n**陶冶教育法**：靠环境、气氛、你自己的为人去'熏'，润物细无声；\n**实际锻炼法**：把人扔进事里、活动里，磨出品德来；\n**品德评价法**：用表扬、奖惩、评比，给一个行为'定个调'。"
+    },
+    {
+      "id": "ch03_a_teach_3",
+      "type": "dialogue",
+      "background": "classroom",
+      "speaker": "顾承",
+      "expression": "smile",
+      "text": "（他把那本厚笔记翻到一页推过来，那页贴着张运动会的照片）\n你瞧林小满——道理她缺吗？'重在参与'她比咱俩背得都熟。她缺的是一口气，是看见一个'有人跟我一样摔过、爬起来照样跑'的样子。\n到这一步，你讲一万句大道理（说服法），都不如往她眼前立个看得见的榜样；要么，干脆拿整个班的气氛，把她稳稳'托'住。"
+    },
+    {
+      "id": "ch03_a_teach_4",
+      "type": "dialogue",
+      "background": "classroom",
+      "speaker": "顾承",
+      "expression": "smile",
+      "text": "（他把笔记又往我这边推了半寸，指尖在'榜样'和'陶冶'两个词上点了点，离我的手很近）\n记住辨析的窍门：看材料里到底用了'谁'、'什么'去影响人。\n用'人/事迹'让人学=榜样示范；用'环境/氛围/人格'去熏=陶冶；用'嘴讲理'=说服；用'活动锻炼'=实际锻炼；用'奖惩评比'=品德评价。\n——来，趁热，考你一道。"
+    },
+    {
+      "id": "ch03_a_apply",
+      "type": "choice",
+      "background": "classroom",
+      "speaker": "顾承",
+      "expression": "smile",
+      "knowledgeCheck": "q_de_method_01",
+      "text": "（顾承合上笔记，朝器材室的方向努努嘴，声音放得很轻）\n好。那现在——林小满摔了一跤就觉得自己'又给班里拖后腿了'。你想帮她、也帮全班缓过这口气，你打算主要用哪种德育方法？",
+      "examTags": {
+        "subject": "302",
+        "module": "德育",
+        "examPoint": "德育方法的辨析与选用（榜样示范法 / 陶冶教育法 vs 说服教育法 / 品德评价法）",
+        "questionType": "材料分析"
+      },
+      "choices": [
+        {
+          "id": "A",
+          "text": "找出班里同样摔过、却坚持跑完的同学事迹，开个简短分享会，让林小满'照着这股劲'学。",
+          "quality": "optimal",
+          "effects": {"professionalSkill": 2, "studentTrust": 2, "classOrder": 1, "ethicsRisk": -1, "lawRisk": 0, "examScore": 3, "affection_gu": 2},
+          "feedback": "对。用'同伴的先进事迹/榜样'让她照着学，正是榜样示范法——它用看得见的人和事去影响人，比单纯讲道理更打动一个正在自我否定的孩子。",
+          "answerKeywords": ["榜样示范法", "先进典型/事迹", "以身示范", "榜样带动"]
+        },
+        {
+          "id": "B",
+          "text": "把教室和班级布置成'我们都拼过、都不容易'的暖氛围，用集体的接纳和你自己的态度去'熏'她。",
+          "quality": "optimal",
+          "effects": {"professionalSkill": 2, "studentTrust": 2, "classOrder": 1, "ethicsRisk": -1, "lawRisk": 0, "examScore": 3, "affection_gu": 2},
+          "feedback": "也对。靠环境、集体氛围、师长人格潜移默化地感染学生，正是陶冶教育法——润物细无声，最适合'道理都懂、只是缺一口气'的情况。本题榜样示范与陶冶教育皆为优解。",
+          "answerKeywords": ["陶冶教育法", "环境氛围", "潜移默化", "情感感染"]
+        },
+        {
+          "id": "C",
+          "text": "把她叫来，认真讲清'胜败乃兵家常事、重在参与'的道理，争取说服她想通。",
+          "quality": "suboptimal",
+          "effects": {"professionalSkill": 0, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": 0, "affection_gu": 0},
+          "feedback": "这是说服教育法（讲道理），本身没错。但题干里'道理她比谁都懂'，缺的是情感托底而非认知。对这种情境，榜样/陶冶比单纯说理更对症。",
+          "answerKeywords": ["说服教育法（讲道理）", "不够对症", "宜情感托底"]
+        },
+        {
+          "id": "D",
+          "text": "在班会上当众公布运动会评比扣分，奖优罚劣，让她知道'拖后腿'的后果。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -2, "studentTrust": -2, "classOrder": 0, "ethicsRisk": 2, "lawRisk": 0, "examScore": -3, "affection_gu": -2},
+          "feedback": "这是品德评价法用错了场合——当众惩戒、强化'拖后腿'标签，会击碎一个正在自责的孩子的自尊，与德育的疏导、尊重原则相悖，材料题里是硬伤。",
+          "answerKeywords": ["品德评价法（误用）", "当众惩戒伤自尊", "强化负面标签"]
+        }
+      ]
+    },
+    {
+      "id": "ch03_a_after",
+      "type": "dialogue",
+      "background": "classroom",
+      "speaker": "林小满",
+      "text": "（半小时后，那个分享会真把她'熏'出来了。她红着眼睛从器材室磨蹭出来，小声开口）\n……原来不止我一个人摔过啊。\n（她踢了踢地面）哼，下次接力，我还想跑。这回别给我换人。"
+    },
+    {
+      "id": "ch03_a_heart",
+      "type": "dialogue",
+      "background": "classroom",
+      "speaker": "narrator",
+      "text": "顾承站在我身侧，没说话，只是看着林小满走远的背影，嘴角慢慢扬起来，眼角的疲惫也化开了些。\n夕阳把他的侧脸镀成暖金色。他忽然偏过头看我，那句话很轻：'你比我想的，更适合干这行。'\n（我别开脸，假装去翻记分册。可耳朵根的热度，骗不了自己。顾哥，你这样夸人，是会让人当真的。）"
+    },
+    {
+      "id": "ch03_t1",
+      "type": "dialogue",
+      "background": "corridor",
+      "speaker": "沈亦舟",
+      "expression": "smile",
+      "text": "（出了教室，沈亦舟靠墙嗑着瓜子，一脸看好戏）\n器材室那只哭包都被你哄出来啦？可以啊。\n不过先给你泼盆冷水——劝好一个林小满算啥，把一整个班拧成一股绳，那才是顾哥压箱底的本事。明儿起他就把下届运动会的班级备战甩给你了。一盘散沙怎么变成能一块儿拼的班，里头是有门道、有阶段的。这考点，你今晚最好先眼熟眼熟。"
+    },
+    {
+      "id": "ch03_b_teach_1",
+      "type": "dialogue",
+      "background": "classroom",
+      "speaker": "顾承",
+      "expression": "smile",
+      "text": "（第二天放学，顾承把座位表、值日表、小组名单哗啦摊了一桌，像摊开一张作战地图）\n一个班拢成一股绳，不是哪天早上醒来就成了的——它是一垄一垄长出来的，有阶段。\n刚开学那阵，谁跟谁都不熟，全靠我这个班主任在前头压着——这叫**组建阶段**：人是松散的，靠外头的要求绷着。"
+    },
+    {
+      "id": "ch03_b_teach_2",
+      "type": "dialogue",
+      "background": "classroom",
+      "speaker": "顾承",
+      "expression": "smile",
+      "text": "再往后，选出了班干部，有几个肯带头的，班规立起来了，嘴里也开始念'我们班'——这是**形成阶段**：核心初步有了，制度规范也搭起来了。\n最让我惦记的是再往上那一步——**发展（成熟）阶段**：学生自己教育自己、自己管自己，班里的舆论是正的，用不着我天天杵在后门盯，他们心里就有杆秤。运动会拼不拼得起来，说穿了就看这个班，长到哪一节了。"
+    },
+    {
+      "id": "ch03_b_teach_3",
+      "type": "dialogue",
+      "background": "classroom",
+      "speaker": "顾承",
+      "expression": "serious",
+      "text": "（他拿笔尖在那张作战地图上点了点）\n光晓得它分几个阶段没用，你得会'催'它往上长。催的法子，就这么几样，你给我记死——\n**确定共同目标**（让全班有个一起奔的头）、**培养班干部骨干**（挑出能领头的）、**建立班级规章秩序**（把规矩立住）、**组织丰富的集体活动**（在一块儿干事里把心凝起来）、**培养正确的集体舆论与班风**（让对的风气替你说话）。"
+    },
+    {
+      "id": "ch03_b_teach_4",
+      "type": "dialogue",
+      "background": "classroom",
+      "speaker": "顾承",
+      "expression": "smile",
+      "text": "（他把笔塞进我手里，指尖擦过我的掌心，温热）\n我们(7)班现在卡在'形成阶段'——有骨干、有规矩，可一盘散沙的劲还没散尽，缺一个把大家'拧'到一起的东西。\n你接手运动会备战。我就问你：这个节骨眼上，最该先抓哪一把刷子？——想清楚再答。"
+    },
+    {
+      "id": "ch03_b_apply",
+      "type": "choice",
+      "background": "classroom",
+      "speaker": "顾承",
+      "expression": "smile",
+      "knowledgeCheck": "q_class_build_01",
+      "text": "（顾承双手抱臂，靠在课桌边等我，眼里带着考较的笑意）\n说吧。一个'形成阶段'、还差一口凝聚力的班，要冲下届运动会，你打算从哪儿下手把它往'成熟'里带？",
+      "examTags": {
+        "subject": "302",
+        "module": "班级管理",
+        "examPoint": "班集体发展阶段（组建/形成/成熟）与培养班集体的基本途径",
+        "questionType": "材料分析"
+      },
+      "choices": [
+        {
+          "id": "A",
+          "text": "定下'全员参与、共同夺旗'的运动会目标，再组织系列集体训练活动，在一起拼的过程里凝聚班风。",
+          "quality": "optimal",
+          "effects": {"professionalSkill": 2, "studentTrust": 2, "classOrder": 2, "ethicsRisk": -1, "lawRisk": 0, "examScore": 3, "affection_gu": 2},
+          "feedback": "对。确立共同目标 + 组织丰富的集体活动，正是把'形成阶段'推向'成熟阶段'的核心抓手——在共同奋斗里凝聚集体、形成正确舆论。",
+          "answerKeywords": ["确定共同目标", "组织集体活动", "形成正确舆论", "推向成熟阶段"]
+        },
+        {
+          "id": "B",
+          "text": "先重选并集中培训班干部，让骨干带头把训练张罗起来。",
+          "quality": "suboptimal",
+          "effects": {"professionalSkill": 1, "studentTrust": 1, "classOrder": 1, "ethicsRisk": 0, "lawRisk": 0, "examScore": 1, "affection_gu": 1},
+          "feedback": "培养骨干是培养班集体的重要途径，方向对。但题干说骨干已初步形成，当下更紧要的是'共同目标+集体活动'去凝聚全员，单抓骨干稍欠对症。",
+          "answerKeywords": ["培养班干部骨干（已有）", "更需共同目标"]
+        },
+        {
+          "id": "C",
+          "text": "把班级纪律和训练考勤的规章再细化、严格执行，先把秩序压住。",
+          "quality": "suboptimal",
+          "effects": {"professionalSkill": 0, "studentTrust": 0, "classOrder": 1, "ethicsRisk": 0, "lawRisk": 0, "examScore": 0, "affection_gu": 0},
+          "feedback": "建立规章秩序也是途径之一，但秩序更适合'组建阶段'起步；该班已有规矩，靠加码纪律凝聚不出向心力，不如用目标和活动。",
+          "answerKeywords": ["建立规章秩序（偏早期）", "难凝向心力"]
+        },
+        {
+          "id": "D",
+          "text": "只挑跑得快的几个尖子重点训，其他人按老样子，先保住名次再说。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -2, "studentTrust": -2, "classOrder": -1, "ethicsRisk": 1, "lawRisk": 0, "examScore": -3, "affection_gu": -2},
+          "feedback": "只抓尖子、放弃全员，与'培养班集体'背道而驰——会让多数人更游离，凝聚力不升反降，也违背面向全体学生的要求。",
+          "answerKeywords": ["只抓尖子", "放弃全体", "削弱凝聚力"]
+        }
+      ]
+    },
+    {
+      "id": "ch03_b_after",
+      "type": "dialogue",
+      "background": "classroom",
+      "speaker": "林小满",
+      "text": "（一周后的训练场上，林小满居然成了那个喊口号最大声的。她跑过来塞给我一张皱巴巴的纸）\n老师，这是我画的班旗设计，上面每个小人是一个同学，一个都没落下。\n（她不好意思地挠头）大家说……这次要一起夺旗。"
+    },
+    {
+      "id": "ch03_b_heart",
+      "type": "dialogue",
+      "background": "classroom",
+      "speaker": "narrator",
+      "text": "顾承走过来，和我并肩看着操场上那群笑闹着拉伸的孩子，看了很久。\n'你看，'他声音低低的，带着笑，'一盘散沙，开始有形状了。'\n他侧身的时候，肩膀不经意撞了我一下，又很自然地没有退开。秋天的风里，我闻到他身上那点淡淡的皂角味。\n（我们离得这么近，一起看着同一个'成形'的班。这一刻，我突然懂了他为什么会爱这份累人的工作——也突然，有点贪恋这种并肩。）"
+    },
+    {
+      "id": "ch03_t2",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "smile",
+      "text": "（路过心理咨询室，江晚端着两杯热茶探出头，把一杯塞进我手里，笑意温温的）\n听说你被顾老师'征用'去带班了？辛苦。\n（她替我理了理被风吹乱的衣领）顾老师那个人，把'重'都自己扛着，笑给别人看。期末快到了，操行评定那一关，最磨人——他每年都熬到很晚。你多帮帮他。这杯，给你也给他。"
+    },
+    {
+      "id": "ch03_c_teach_1",
+      "type": "dialogue",
+      "background": "staff_room",
+      "speaker": "顾承",
+      "expression": "serious",
+      "text": "（期末。办公室的灯亮到很晚，顾承面前摊着一沓操行评定表，眉头拧成个结——正是江晚说的那个'熬到很晚'的样子）\n来得正好，搭把手。班主任的活，三块你得先拎清：**常规工作**——纪律、卫生、出勤这些天天要转的；**个别教育**——一个孩子一个孩子去抠的转化；还有期末这张磨人的**操行评定**。"
+    },
+    {
+      "id": "ch03_c_teach_2",
+      "type": "dialogue",
+      "background": "staff_room",
+      "speaker": "顾承",
+      "expression": "smile",
+      "text": "个别教育这块，最吃功夫的是两头——**后进生**和**优等生**。\n转化后进生，你记牢三句：得**关爱尊重、保护自尊**，别一棍子把人打死；得**一分为二**地看，扒拉出他身上的闪光点（上回那个长善救失，还记得吧？）；还得**反复抓、抓反复**，别指望浇一回水苗就直了。\n优等生也不是夸两句就完——得防着他骄傲自满，给个更高的坎，磨磨他经不经摔，别养出个'一碰就碎的尖子'。"
+    },
+    {
+      "id": "ch03_c_teach_3",
+      "type": "dialogue",
+      "background": "staff_room",
+      "speaker": "顾承",
+      "expression": "serious",
+      "text": "（他抽出林小满那张评定表，停在'操行评定'那栏，迟迟没下笔）\n这张纸薄，可它是一个孩子一整个学期的'定调'。写评语得**客观全面、实事求是**，既肯定进步、也实实在在指出问题，还要给可行的努力方向——不能只挑好听的写，更不能一句'该生表现一般'糊弄过去。\n（他抬眼看我）林小满这学期，你比我更懂她。这评语，你来跟我一起拟。"
+    },
+    {
+      "id": "ch03_c_teach_4",
+      "type": "dialogue",
+      "background": "staff_room",
+      "speaker": "narrator",
+      "text": "我接过笔，才发现他这一栏底下，已经写废了好几行又划掉。\n（原来这个全校公认最会带班的顾哥，为一个孩子的一句评语，也会反复斟酌到下不去笔。）\n他把那本厚笔记又翻到某一页——那页停着，是一个早已毕业的学生名字，旁边一行小字：'当年那句话，写重了。'\n我心里轻轻一颤。顾哥，原来你扛的'重'，是这个。"
+    },
+    {
+      "id": "ch03_c_apply",
+      "type": "choice",
+      "background": "staff_room",
+      "speaker": "顾承",
+      "expression": "serious",
+      "knowledgeCheck": "q_headteacher_01",
+      "text": "（顾承把笔留在我手里，指了指林小满那栏空白）\n林小满这学期：进步很大、敢拼了、肯帮人，但成绩仍偏弱、偶尔还会迟到。这条操行评语、以及接下来对她的个别教育，你打算怎么落笔、怎么做？",
+      "examTags": {
+        "subject": "302",
+        "module": "班主任工作",
+        "examPoint": "班主任工作（操行评定的要求与后进生转化）",
+        "questionType": "材料分析"
+      },
+      "choices": [
+        {
+          "id": "A",
+          "text": "评语客观全面：先实事求是肯定她拼搏、助人的进步，再具体点出成绩与守时的不足，并给出可行的努力方向；后续转化坚持关爱尊重、一分为二、反复抓。",
+          "quality": "optimal",
+          "effects": {"professionalSkill": 2, "studentTrust": 3, "classOrder": 1, "ethicsRisk": -2, "lawRisk": 0, "examScore": 3, "affection_gu": 3, "affection_jiang": 1},
+          "feedback": "对。操行评定要客观全面、实事求是，既肯定进步又指明问题、给方向；后进生转化要尊重保护自尊、一分为二看待、反复抓抓反复。这才是采分要点全中。",
+          "answerKeywords": ["客观全面/实事求是", "肯定进步并指明不足", "给努力方向", "关爱尊重·一分为二·反复抓"]
+        },
+        {
+          "id": "B",
+          "text": "评语多写鼓励、报喜不报忧，缺点一笔带过甚至不写，怕打击她刚建立的信心。",
+          "quality": "suboptimal",
+          "effects": {"professionalSkill": 0, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 1, "lawRisk": 0, "examScore": 0, "affection_gu": 0},
+          "feedback": "出发点是善意的，但违背操行评定'客观全面、实事求是'的要求——只报喜不报忧会让评定失真，也帮不到她真正改进。鼓励应与如实指出问题、给方向并行。",
+          "answerKeywords": ["报喜不报忧（失真）", "应客观全面"]
+        },
+        {
+          "id": "C",
+          "text": "套用模板写'该生本学期表现一般，望继续努力'，省时省力，全班统一。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -2, "studentTrust": -2, "classOrder": 0, "ethicsRisk": 1, "lawRisk": 0, "examScore": -3, "affection_gu": -2},
+          "feedback": "千人一面的套话评语，既不客观全面也不实事求是，是操行评定的典型失职——对一个进步明显的孩子尤其敷衍，材料题必扣分。",
+          "answerKeywords": ["套话模板（敷衍）", "缺乏针对性", "违背实事求是"]
+        },
+        {
+          "id": "D",
+          "text": "重点写她迟到、成绩弱的问题，措辞严厉点，好让她长记性、来年别松懈。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -1, "studentTrust": -2, "classOrder": 0, "ethicsRisk": 2, "lawRisk": 0, "examScore": -3, "affection_gu": -2},
+          "feedback": "只抓缺点、措辞过重，违背后进生转化'关爱尊重、保护自尊、一分为二'的要求，极易击碎她刚建立的自信——正是顾承笔记里'写重了'的那种悔。",
+          "answerKeywords": ["只写缺点/措辞过重", "伤自尊", "未一分为二"]
+        }
+      ]
+    },
+    {
+      "id": "ch03_c_after",
+      "type": "dialogue",
+      "background": "staff_room",
+      "speaker": "顾承",
+      "expression": "smile",
+      "text": "（他逐字看完我和他一起拟的那段评语，沉默了几秒，然后郑重地在评定表上签下名字）\n好。这一句，林小满二十年后翻出来，也不会被它扎到。\n（他合上那本厚笔记，那一页'写重了'的旧字，被他轻轻压在了下面）……谢谢你。今晚这一栏，我下笔，没那么沉了。"
+    },
+    {
+      "id": "ch03_c_heart",
+      "type": "dialogue",
+      "background": "staff_room",
+      "speaker": "narrator",
+      "text": "办公室只剩我们俩和一盏台灯。他揉了揉发酸的后颈，难得露出一点疲惫又松快的神情。\n'带班这事，'他轻声说，'第一次有人陪我熬到这么晚，还能帮我把话写对。'\n灯光把他的影子和我的，叠在了同一张评定表上。\n（顾哥，你把全班的重量都一个人扛着，笑给别人看。可今晚，让我也帮你扛一点点，好不好。）\n我没说出口，只是又往他那边，挪近了半张椅子。"
+    },
+    {
+      "id": "ch03_end_1",
+      "type": "dialogue",
+      "background": "staff_room",
+      "speaker": "沈亦舟",
+      "expression": "smile",
+      "text": "（夜更深了。沈亦舟拎着夜宵推门进来，看见我俩并排的椅子，意味深长地'哦——'了一声）\n评定表都搞定啦？高一(7)班这学期，从散沙到能一起夺旗，进步最大的班，板上钉钉。\n（他把烤串往桌上一放，挤眉弄眼）我说真的，顾哥带徒弟，是真把压箱底的都掏给你了。这一章你学到的，可全是班主任的命根子。"
+    },
+    {
+      "id": "ch03_end_2",
+      "type": "dialogue",
+      "background": "staff_room",
+      "speaker": "narrator",
+      "text": "我捏着那支还带着顾承体温的笔，回头看了一眼。\n顾承正低头收拾那一沓评定表，动作很轻，像在收拾一个又一个孩子的整学期。那本厚笔记被他重新塞进包里，'写重了'的那页，再没翻开。\n这一章，我学会了选对的德育方法、把一群人带成一个班、在薄薄一张纸上郑重地'定调'一个孩子。\n（可我记住的，不只是考点。还有一个把重量都自己扛、却肯把笔交到我手里的人。备课铃，明天还会响。而我，好像越来越喜欢，铃响之前的这些时刻了。）"
+    },
+    {
+      "id": "ch03_end",
+      "type": "summary",
+      "background": "staff_room",
+      "speaker": "narrator",
+      "text": "（第三章落幕。把这一程的班务得失，连同那个并肩到深夜的晚上，一条条记进手账吧——人记进去了，分也得记进去。）",
+      "review": {
+        "learnedExamPoints": [
+          "302-德育-德育方法的辨析与选用（榜样示范法/陶冶教育法 vs 说服/品德评价）— 顾承",
+          "302-班级管理-班集体发展阶段（组建/形成/成熟）与培养班集体的基本途径 — 顾承",
+          "302-班主任工作-操行评定的要求与后进生/优等生转化 — 顾承"
+        ],
+        "structure": "三个考点都从高一(7)班的一桩真实班务里长出来：林小满运动会摔跤→德育方法辨析；运动会备战→班集体发展阶段与培养途径；期末评定→班主任工作与操行评定。走的是'剧情讲授→马上做题→应用→反馈'，章末月考为冷测。",
+        "mockExam": "core_ch03_mock",
+        "recommendedReview": [
+          "答错德育方法→顾承重讲五种方法各靠'谁/什么'去影响（人/事迹=榜样，环境氛围=陶冶，讲理=说服，活动=锻炼，奖惩=评价）",
+          "答错班集体→顾承重讲三阶段(组建/形成/成熟)对应特征 + 五条培养途径(目标/骨干/规章/活动/舆论)",
+          "答错班主任工作→顾承重讲操行评定'客观全面·实事求是·给方向'与后进生转化'尊重·一分为二·反复抓'"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,228 @@
+{
+  "chapterId": "side_group_03",
+  "title": "群像 · 公开课评审席",
+  "summary": "你上人生第一节'推门课'，评审席上坐着三个人、三套逻辑：程砚拿着教学设计逐条挑刺，要的是学术上的严丝合缝；卫蓝盯着听课率与续班数据，要的是'好不好看、招不招生'；沈亦舟坐在最后一排，只想让你别慌。一节课，照出学术严苛、现实KPI、同伴温度三种价值观的对照。你怎么回应评课，既是教学评价的真功夫，也悄悄记下了——你站了谁的逻辑。",
+  "designNote": "群像事件§4-1：3位攻略/相关角色同席，靠专业风格对照制造极轻微妙张力，克制不狗血。锚定教学评价（诊断性/形成性/总结性评价 + 发展性评价观）与教育观冲突（学术本位 vs 生源KPI vs 以学生发展为本）。1个knowledgeCheck（q_grp_eval_01，单选，教学评价类型辨别）放在choice节点；1个风味choice（side03_pick1）微调 affection_cheng/affection_shen，并 setFlag 记录'你站了谁的逻辑'（eval_lean_cheng / eval_lean_pragmatic / eval_lean_balance）。卫蓝=压力源非反派，立场是真实的现实压力。程砚毒舌但点子精准，可用tender/blush表情但此处克制。背景仅5键。线性，结尾落在dialogue节点。",
+  "route": "npc",
+  "characters": ["cheng", "wei", "shen"],
+  "students": [],
+  "valueFields": ["professionalSkill", "studentTrust", "classOrder", "ethicsRisk", "lawRisk", "examScore", "affection_lu", "affection_jiang", "affection_gu", "affection_shen", "affection_cheng"],
+  "note": "ethicsRisk/lawRisk 为逆向指标，越低越好。knowledgeCheck 指向 side_group_quiz.json 的题目 id。卫蓝为现实压力源、非反派；effects 含 affection_cheng（已并入价值字段）。",
+  "nodes": [
+    {
+      "id": "side03_1",
+      "type": "dialogue",
+      "background": "classroom",
+      "speaker": "narrator",
+      "text": "周四第三节，我的第一节'推门课'。\n所谓推门课，就是评审组不打招呼、直接推门进来听——美其名曰'看常态'，实则是把你扔进聚光灯下烤。\n后排一字排开三把椅子。我一抬头，心就先沉了半截。"
+    },
+    {
+      "id": "side03_2",
+      "type": "dialogue",
+      "background": "classroom",
+      "speaker": "narrator",
+      "text": "最左边，教研组的程砚，手里一支笔、一沓我的教学设计，已经开始逐行画线，神情像在批改一份漏洞百出的论文。\n中间，分管招生的卫蓝主任，面前摊着一张表格，目光不在我身上，在那些密密麻麻的数字上。\n最后一排靠门，沈亦舟缩着脖子，朝我比了个'稳住'的手势，差点把笔筒碰翻。"
+    },
+    {
+      "id": "side03_3",
+      "type": "dialogue",
+      "background": "classroom",
+      "speaker": "narrator",
+      "text": "（三个人，三个方向。一节课还没开始，我已经感觉自己站在三股气流的交叉口。）\n深呼吸。铃响了。\n我把第一张幻灯片打出来——这节课，无论如何得自己走完。"
+    },
+    {
+      "id": "side03_4",
+      "type": "dialogue",
+      "background": "classroom",
+      "speaker": "narrator",
+      "text": "四十五分钟，像四十五年。\n我讲完最后一句、合上课本的瞬间，后排三个人几乎同时动了——程砚把笔一搁，卫蓝合上表格，沈亦舟长长舒了一口气。\n下课铃和评课，无缝衔接。"
+    },
+    {
+      "id": "side03_5",
+      "type": "dialogue",
+      "background": "meeting_room",
+      "speaker": "cheng",
+      "expression": "serious",
+      "text": "（评课在小会议室。程砚第一个开口，把那沓画满红线的设计推到桌子中央）\n先说设计。你这节课，导入八分钟，新授二十分钟，练习只剩五分钟——本末倒置。\n更要命的是：你通篇没有一次像样的'评价'。你怎么知道学生听懂了？靠那几个举手的？那叫错觉。"
+    },
+    {
+      "id": "side03_6",
+      "type": "dialogue",
+      "background": "meeting_room",
+      "speaker": "cheng",
+      "expression": "neutral",
+      "text": "（他语气没缓，逻辑却清楚得让人没法反驳）\n一节课里，评价至少该有三层：上课前摸底学生已经会什么——那叫**诊断性评价**；课中随时抓反馈、随时调整——那叫**形成性评价**；课后看目标达成没有——那叫**总结性评价**。\n你只顾着把内容'倒'完，从头到尾没'量'过一次。这不是教学，是单方面广播。"
+    },
+    {
+      "id": "side03_7",
+      "type": "dialogue",
+      "background": "meeting_room",
+      "speaker": "wei",
+      "expression": "neutral",
+      "text": "（卫蓝把那张数据表轻轻转向我，语气是公事公办的客气，却字字带着分量）\n程老师说的我外行，不插嘴。我只看我该看的——这节课,中途有三个学生开始走神，后排两个趴下了。\n下学期续班宣传，我们要拍'金课'素材。家长来听课、来选班，第一眼看的不是你的'形成性评价'，是孩子坐得直不直、课堂热不热闹。这关系到招生。"
+    },
+    {
+      "id": "side03_8",
+      "type": "dialogue",
+      "background": "meeting_room",
+      "speaker": "cheng",
+      "expression": "serious",
+      "text": "（程砚抬眼，淡淡看了卫蓝一眼，语气依旧平，火药味却起来了）\n卫主任，'坐得直''热闹'，是表演课的标准，不是好课的标准。\n一节课为了好看而设计，和为了让学生真学会而设计，是两条路。我们这是评教学，不是评招生宣传片。"
+    },
+    {
+      "id": "side03_9",
+      "type": "dialogue",
+      "background": "meeting_room",
+      "speaker": "wei",
+      "expression": "serious",
+      "text": "（卫蓝也不恼，只是把表格往程砚那边推了半寸，笑意里有疲惫）\n程老师，没有招生，就没有你这个教研组的编制。\n我不是要她作秀。我是要她明白——学校要活下去。理想主义的好课，得先有人愿意来上，才谈得上'真学会'。"
+    },
+    {
+      "id": "side03_10",
+      "type": "dialogue",
+      "background": "meeting_room",
+      "speaker": "narrator",
+      "text": "会议室一时安静。\n一个要'学术上站得住'，一个要'现实里活下去'，两套逻辑都不算错，却结结实实地撞在一起，把我夹在正中间。\n（这不是谁对谁错的问题。这是两种'为你好'，朝着不同方向用力。）"
+    },
+    {
+      "id": "side03_11",
+      "type": "dialogue",
+      "background": "meeting_room",
+      "speaker": "shen",
+      "expression": "smile",
+      "text": "（沈亦舟在角落里坐不住了，举手，像怕场子太冷）\n那个……二位先消消气。她第一次上推门课，能把四十五分钟撑下来，没卡壳没冷场，已经很猛了。\n（他冲我使眼色，小声）别慌，深呼吸——你刚那个分组讨论的点子，其实挺亮的。捡能改的先改，啊。"
+    },
+    {
+      "id": "side03_12",
+      "type": "dialogue",
+      "background": "meeting_room",
+      "speaker": "cheng",
+      "expression": "neutral",
+      "text": "（程砚没理会沈亦舟的打圆场，目光直直落到我身上，把那沓设计又往前推了推）\n打气的话留到课后。现在我问你——\n抛开'好不好看'，单说专业：你这节课最缺的那一环'评价'，到底缺的是哪一类？想清楚了再答。我不接受含糊。"
+    },
+    {
+      "id": "side03_12b",
+      "type": "choice",
+      "background": "meeting_room",
+      "speaker": "cheng",
+      "expression": "serious",
+      "knowledgeCheck": "q_grp_eval_01",
+      "text": "（三道目光齐刷刷压过来。程砚要的是精准，卫蓝在等我会不会'懂行'，沈亦舟在替我捏一把汗。）\n我定了定神——这道，是真功夫，得答在点子上。",
+      "examTags": {
+        "subject": "302",
+        "module": "教学评价",
+        "examPoint": "教学评价类型的辨别（诊断性/形成性/总结性评价）",
+        "questionType": "材料分析"
+      },
+      "choices": [
+        {
+          "id": "A",
+          "text": "缺的是课中'形成性评价'——上课时没设提问、练习、即时反馈去检验学生是否跟上，无法随堂调整。",
+          "quality": "optimal",
+          "effects": {"professionalSkill": 2, "studentTrust": 1, "classOrder": 1, "ethicsRisk": 0, "lawRisk": 0, "examScore": 3, "affection_cheng": 2, "affection_shen": 1},
+          "feedback": "对。程砚批的正是'课中没量过一次'——形成性评价是教学过程中收集反馈、据此调整教学的评价，缺它就成了单向广播。诊断性在课前摸底、总结性在课后看达成，本节最致命的缺口在过程中。",
+          "answerKeywords": ["形成性评价", "教学过程中", "及时反馈", "调整教学", "随堂检测"]
+        },
+        {
+          "id": "B",
+          "text": "缺的是课后的'总结性评价'——下课没安排一张测验卷给整节课打分。",
+          "quality": "suboptimal",
+          "effects": {"professionalSkill": 0, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": 1, "affection_cheng": 0, "affection_shen": 0},
+          "feedback": "总结性评价（课后看目标达成）确实也可加强，但程砚批的核心是'整节课都没抓反馈'——问题发生在过程中，对症的是形成性评价。只补课后测验，过程依旧失控。",
+          "answerKeywords": ["总结性评价（课后）", "未对准过程缺口"]
+        },
+        {
+          "id": "C",
+          "text": "缺的是课前的'诊断性评价'——没先摸清学生原有水平就开讲。",
+          "quality": "suboptimal",
+          "effects": {"professionalSkill": 1, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": 1, "affection_cheng": 0, "affection_shen": 0},
+          "feedback": "诊断性评价（课前摸底、定起点）也值得做，但本节最突出的硬伤是'讲的过程中从不检验是否听懂'，那是形成性评价。注意三者按时机区分：课前诊断、课中形成、课后总结。",
+          "answerKeywords": ["诊断性评价（课前）", "时机不符"]
+        },
+        {
+          "id": "D",
+          "text": "评价没那么要紧——只要把内容讲清楚、讲完整，学生自然就学会了。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -2, "studentTrust": -1, "classOrder": -1, "ethicsRisk": 0, "lawRisk": 0, "examScore": -3, "affection_cheng": -2, "affection_shen": 0},
+          "feedback": "这正是程砚说的'单方面广播'。讲完≠学会，没有评价就无法知道学生是否跟上，更谈不上调整。'以教代评'是新教师的高发误区，材料题里必扣分。",
+          "answerKeywords": ["以教代评", "讲完不等于学会", "缺反馈"]
+        }
+      ]
+    },
+    {
+      "id": "side03_13",
+      "type": "dialogue",
+      "background": "meeting_room",
+      "speaker": "cheng",
+      "expression": "neutral",
+      "text": "（我答完，程砚沉默了两秒，难得没有立刻反驳。他在我那张设计的空白处写了一行字，把笔帽'咔'地按上）\n……答到点子上了。比我预期的强。\n记住：评价不是给学生定罪的，是给你这个老师当眼睛的。看不见学生，你就是在黑屋子里讲课。"
+    },
+    {
+      "id": "side03_14",
+      "type": "dialogue",
+      "background": "meeting_room",
+      "speaker": "wei",
+      "expression": "neutral",
+      "text": "（卫蓝合上表格，站起身，临走丢下一句，语气缓和了些）\n专业的我说不过程老师。但有句话我得提醒你——\n你今天答得漂亮，可下学期那两个走神趴下的孩子，家长是真会用脚投票的。'让学生学会'和'让学生愿意来'，你迟早得自己学会两手都抓。"
+    },
+    {
+      "id": "side03_15",
+      "type": "dialogue",
+      "background": "meeting_room",
+      "speaker": "narrator",
+      "text": "卫蓝走后，会议室空了大半。\n程砚还在低头给我那沓设计做批注，红线密得吓人，却一条都没冤枉过我；沈亦舟挪过来，假装整理椅子，其实在等着捞我出场。\n（一个严苛得不留情面，一个现实得不讲情面，一个，全程只想接住我。三股力，我心里其实早有了倾向。）"
+    },
+    {
+      "id": "side03_pick1",
+      "type": "choice",
+      "background": "meeting_room",
+      "speaker": "narrator",
+      "expression": "neutral",
+      "text": "（评课结束。程砚的红线、卫蓝的数据、沈亦舟的手势，在我脑子里打架。\n如果只能认一条逻辑作为我今后站讲台的底色——我心里更认哪一种？）",
+      "choices": [
+        {
+          "id": "A",
+          "text": "认程砚那套：好课先得在专业上站得住，宁可不好看，也不糊弄学生。",
+          "quality": "optimal",
+          "effects": {"professionalSkill": 1, "examScore": 1, "affection_cheng": 2, "affection_shen": 0},
+          "setFlag": {"eval_lean_cheng": true, "route_lean_cheng": 1},
+          "feedback": "你说完，程砚握笔的手顿了一下，没看你，只极轻地'嗯'了一声：'……至少，你没把这话当耳旁风。'冷面人难得没有反驳——这大概就是他给的认可。",
+          "answerKeywords": []
+        },
+        {
+          "id": "B",
+          "text": "认卫蓝那点现实：先让学生愿意来、坐得住，理想才有落地的地方。",
+          "quality": "suboptimal",
+          "effects": {"professionalSkill": 1, "studentTrust": 1, "affection_cheng": 0, "affection_shen": 0},
+          "setFlag": {"eval_lean_pragmatic": true},
+          "feedback": "你认下这条，沈亦舟在旁边小声替你补了句'其实主任也是为学校扛着'。现实有现实的重量——但你心里清楚，这只是底线，不是上限。",
+          "answerKeywords": []
+        },
+        {
+          "id": "C",
+          "text": "谁的都认一半：专业是骨、人心是肉，好课得让学生既学得会、又愿意来。",
+          "quality": "optimal",
+          "effects": {"professionalSkill": 1, "studentTrust": 1, "examScore": 1, "affection_cheng": 1, "affection_shen": 1},
+          "setFlag": {"eval_lean_balance": true},
+          "feedback": "你这话出口，沈亦舟咧嘴一笑：'我就说她不傻。'程砚没接茬，却把批注好的设计推回给你，多附了一句'下次让我看到课中评价'——两边，你好像都没真正得罪。",
+          "answerKeywords": []
+        }
+      ]
+    },
+    {
+      "id": "side03_16",
+      "type": "dialogue",
+      "background": "corridor",
+      "speaker": "shen",
+      "expression": "smile",
+      "text": "（出了会议室，沈亦舟一把搂过我的肩，长出一口气）\n活——下——来——了！我跟你讲，程砚那张嘴，全校挂过的人能从这头排到操场。他今天给你写批注，已经是发糖了，懂不懂。\n（他晃了晃我那沓设计，又压低声音）卫主任的话你也别全往心里去……她不坏，就是肩上压着整个学校的招生表。难。"
+    },
+    {
+      "id": "side03_17",
+      "type": "dialogue",
+      "background": "corridor",
+      "speaker": "narrator",
+      "text": "我捏着那沓红线密布的教学设计，走廊的风从窗口灌进来，吹得纸页哗哗响。\n程砚的严、卫蓝的难、沈亦舟的暖——一节推门课，把三个人、三种价值观，齐齐摆到了我面前。\n（我大概一时还学不会'两手都抓'。但今天我至少知道了：站上讲台，我得先想清楚——我究竟为谁而教。\n这一页，我要好好记进手账。）"
+    }
+  ]
+}

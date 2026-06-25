@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&family=Noto+Serif+SC:wght@500;600;700;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; -webkit-font-smoothing: antialiased; }
+  html, body { margin: 0; padding: 0; height: 100%; background: #15171a; font-family: "Noto Sans SC", sans-serif; }
+  @keyframes blrUp { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
+  @keyframes blrIn { from { opacity: 0; transform: scale(.94); } to { opacity: 1; transform: scale(1); } }
+  @keyframes blrPulse { 0%,100% { opacity: .35; transform: translateY(0); } 50% { opacity: 1; transform: translateY(3px); } }
+  @keyframes blrSheen { 0% { transform: translateX(-120%); } 100% { transform: translateX(220%); } }
+  @keyframes blrFloat { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+  @keyframes blrPop { 0% { opacity: 0; transform: translateY(10px) scale(.9); } 60% { transform: translateY(-2px) scale(1.03); } 100% { opacity: 1; transform: translateY(0) scale(1); } }
+</style>
+</helmet>
+<div style="position:fixed; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center; background:radial-gradient(120% 120% at 50% 0%, #20242a 0%, #131519 70%); overflow:hidden;">
+  <div style="position:absolute; top:26px; left:0; right:0; text-align:center; pointer-events:none;">
+    <div style="font-family:'Space Mono',monospace; font-size:12px; letter-spacing:.32em; color:#6b727c; text-transform:uppercase;">备课铃响之前 · Otome UI Prototype · 1280 × 720</div>
+  </div>
+
+  <div style="transform:scale({{ scale }}); transform-origin:center center; transition:transform .2s;">
+    <div style="position:relative; width:1280px; height:720px; border-radius:22px; overflow:hidden; box-shadow:0 50px 120px -30px rgba(0,0,0,.85), 0 0 0 1px rgba(255,255,255,.05), 0 0 0 9px #0d0f12; background:#0d0f12; font-size:16px; color:#f6efe2;">
+
+      <!-- ===================== BACKGROUND SCENE ===================== -->
+      <div style="position:absolute; inset:0; background:{{ bgStyle }};"></div>
+      <div style="position:absolute; inset:0; background:radial-gradient(130% 90% at 78% -10%, rgba(255,255,255,.45), rgba(255,255,255,0) 55%);"></div>
+      <div style="position:absolute; inset:0; background:linear-gradient(180deg, rgba(12,18,16,0) 40%, rgba(12,18,16,.34) 100%);"></div>
+      <div style="position:absolute; left:0; top:0; bottom:0; width:34%; background:repeating-linear-gradient(125deg, rgba(255,255,255,.05) 0 2px, rgba(255,255,255,0) 2px 22px); mix-blend-mode:overlay;"></div>
+      <div style="position:absolute; top:18px; left:20px; font-family:'Space Mono',monospace; font-size:11px; letter-spacing:.18em; color:rgba(20,32,28,.42); background:rgba(255,255,255,.28); padding:3px 9px; border-radius:6px;">BG · {{ bgLabel }}</div>
+
+      <!-- ===================== CHARACTER LAYER ===================== -->
+      <sc-if value="{{ hasChar }}" hint-placeholder-val="{{ false }}">
+        <div style="position:absolute; right:46px; bottom:0; width:372px; height:600px; animation:blrUp .5s ease;">
+          <div style="position:absolute; inset:0; border-radius:200px 200px 26px 26px; overflow:hidden; box-shadow:0 30px 60px -24px rgba(0,0,0,.6); background:linear-gradient(170deg, {{ charDeep }} 0%, {{ charDeepFade }} 78%, rgba(255,255,255,0) 100%); border:1px solid rgba(255,255,255,.14);">
+            <div style="position:absolute; inset:0; background:repeating-linear-gradient(135deg, rgba(255,255,255,.06) 0 1px, rgba(255,255,255,0) 1px 16px);"></div>
+            <div style="position:absolute; top:54px; left:0; right:0; text-align:center; font-family:'Noto Serif SC',serif; font-weight:900; font-size:230px; line-height:1; color:rgba(255,255,255,.1);">{{ charInitial }}</div>
+            <div style="position:absolute; top:30px; left:0; right:0; height:120px; background:linear-gradient(90deg, transparent, rgba(255,255,255,.16), transparent); transform:skewX(-18deg);"></div>
+          </div>
+          <div style="position:absolute; left:50%; bottom:30px; transform:translateX(-50%); text-align:center;">
+            <div style="font-family:'Noto Serif SC',serif; font-weight:700; font-size:26px; color:#fffaf0; letter-spacing:.06em; text-shadow:0 2px 12px rgba(0,0,0,.5);">{{ charName }}</div>
+            <div style="margin-top:4px; font-size:12px; color:rgba(255,255,255,.72); letter-spacing:.1em;">{{ charRole }}</div>
+          </div>
+          <div style="position:absolute; top:18px; left:50%; transform:translateX(-50%); font-family:'Space Mono',monospace; font-size:10px; letter-spacing:.2em; color:rgba(255,255,255,.5); border:1px solid rgba(255,255,255,.25); padding:2px 8px; border-radius:5px;">立绘占位 · neutral</div>
+        </div>
+      </sc-if>
+
+      <!-- ===================== TITLE / MAIN MENU ===================== -->
+      <sc-if value="{{ isMenu }}" hint-placeholder-val="{{ true }}">
+        <div style="position:absolute; inset:0; background:linear-gradient(105deg, rgba(16,26,23,.62) 0%, rgba(16,26,23,.2) 46%, rgba(16,26,23,0) 70%);"></div>
+        <div style="position:absolute; left:88px; top:50%; transform:translateY(-50%); width:520px; animation:blrUp .7s ease;">
+          <div style="display:flex; align-items:center; gap:14px; margin-bottom:22px;">
+            <div style="width:34px; height:1px; background:#c19a52;"></div>
+            <div style="font-family:'Space Mono',monospace; font-size:12px; letter-spacing:.4em; color:#e7d9bb; text-transform:uppercase;">Teacher · Cert · Otome</div>
+          </div>
+          <div style="font-family:'Noto Serif SC',serif; font-weight:900; font-size:84px; line-height:1.04; color:#fffaf0; letter-spacing:.04em; text-shadow:0 8px 36px rgba(0,0,0,.5);">备课铃<br>响之前</div>
+          <div style="margin-top:18px; font-size:17px; letter-spacing:.16em; color:#e9ddc6;">教师资格 · 校园乙女向视觉小说</div>
+          <div style="margin-top:40px; display:flex; flex-direction:column; gap:13px; width:330px;">
+            <div onClick="{{ onChapters }}" style="position:relative; overflow:hidden; cursor:pointer; padding:17px 24px; border-radius:14px; background:linear-gradient(180deg,#2f6b5e,#244f46); color:#fffaf0; font-size:18px; font-weight:500; letter-spacing:.08em; box-shadow:0 14px 30px -14px rgba(20,60,52,.9), inset 0 1px 0 rgba(255,255,255,.16); border:1px solid rgba(255,255,255,.14);" style-hover="filter:brightness(1.08);">
+              <div style="position:absolute; top:0; bottom:0; width:50%; background:linear-gradient(90deg,transparent,rgba(255,255,255,.22),transparent); animation:blrSheen 3.6s ease-in-out infinite;"></div>
+              开始游戏 · 选择章节
+            </div>
+            <div onClick="{{ onStart }}" style="cursor:pointer; padding:15px 24px; border-radius:14px; background:rgba(255,250,241,.1); color:#fffaf0; font-size:16px; letter-spacing:.08em; border:1px solid rgba(255,250,241,.24); backdrop-filter:blur(6px);" style-hover="background:rgba(255,250,241,.2);">继续游戏</div>
+            <div style="display:flex; gap:13px;">
+              <div style="flex:1; cursor:pointer; text-align:center; padding:13px; border-radius:14px; background:rgba(255,250,241,.07); color:#f3ead7; font-size:15px; border:1px solid rgba(255,250,241,.18);" style-hover="background:rgba(255,250,241,.16);">读取存档</div>
+              <div onClick="{{ openPrefs }}" style="flex:1; cursor:pointer; text-align:center; padding:13px; border-radius:14px; background:rgba(255,250,241,.07); color:#f3ead7; font-size:15px; border:1px solid rgba(255,250,241,.18);" style-hover="background:rgba(255,250,241,.16);">设置</div>
+            </div>
+          </div>
+          <div style="margin-top:34px; font-family:'Space Mono',monospace; font-size:11px; letter-spacing:.16em; color:rgba(255,250,241,.45);">v0.1 prototype · 1280×720 · 中小学教师资格</div>
+        </div>
+      </sc-if>
+
+      <!-- ===================== STORY HUD + DIALOGUE ===================== -->
+      <sc-if value="{{ isStory }}" hint-placeholder-val="{{ false }}">
+        <!-- top-left chapter chip -->
+        <div style="position:absolute; top:22px; left:22px; display:flex; align-items:center; gap:10px; padding:9px 16px 9px 12px; border-radius:30px; background:rgba(16,26,23,.5); border:1px solid rgba(255,255,255,.14); backdrop-filter:blur(8px); animation:blrIn .5s ease;">
+          <div style="width:26px; height:26px; border-radius:50%; background:linear-gradient(150deg,#c19a52,#8f6f30); display:flex; align-items:center; justify-content:center; font-family:'Noto Serif SC',serif; font-weight:700; font-size:14px; color:#fffaf0;">一</div>
+          <div style="line-height:1.2;">
+            <div style="font-size:13px; color:#fffaf0; font-weight:500;">第一章 · 入职第一天</div>
+            <div style="font-family:'Space Mono',monospace; font-size:10px; letter-spacing:.14em; color:rgba(255,255,255,.55);">PROGRESS {{ progressPct }}%</div>
+          </div>
+        </div>
+        <!-- top-right HUD -->
+        <div style="position:absolute; top:22px; right:22px; display:flex; gap:9px; animation:blrIn .5s ease;">
+          <div onClick="{{ openNotebook }}" style="cursor:pointer; display:flex; align-items:center; gap:7px; padding:9px 15px; border-radius:30px; background:rgba(16,26,23,.5); border:1px solid rgba(255,255,255,.14); backdrop-filter:blur(8px); color:#fffaf0; font-size:13px;" style-hover="background:rgba(193,154,82,.34);">
+            <span style="width:7px; height:7px; border-radius:50%; background:#d8b877; box-shadow:0 0 8px #d8b877;"></span>手账
+          </div>
+          <div onClick="{{ openReview }}" style="cursor:pointer; padding:9px 15px; border-radius:30px; background:rgba(16,26,23,.5); border:1px solid rgba(255,255,255,.14); backdrop-filter:blur(8px); color:#fffaf0; font-size:13px;" style-hover="background:rgba(255,255,255,.16);">复盘</div>
+          <div style="cursor:pointer; width:36px; height:36px; border-radius:50%; display:flex; align-items:center; justify-content:center; background:rgba(16,26,23,.5); border:1px solid rgba(255,255,255,.14); backdrop-filter:blur(8px); color:#fffaf0; font-size:14px;" style-hover="background:rgba(255,255,255,.16);">▤</div>
+          <div onClick="{{ openPrefs }}" style="cursor:pointer; width:36px; height:36px; border-radius:50%; display:flex; align-items:center; justify-content:center; background:rgba(16,26,23,.5); border:1px solid rgba(255,255,255,.14); backdrop-filter:blur(8px); color:#fffaf0; font-size:14px;" style-hover="background:rgba(255,255,255,.16);">⚙</div>
+        </div>
+
+        <!-- dialogue box -->
+        <div onClick="{{ onAdvance }}" style="position:absolute; left:50%; bottom:34px; transform:translateX(-50%); width:1130px; cursor:pointer; animation:blrUp .45s ease;">
+          <!-- name plate -->
+          <sc-if value="{{ showName }}" hint-placeholder-val="{{ true }}">
+            <div style="position:absolute; top:-22px; left:34px; display:flex; align-items:center; gap:0; z-index:2;">
+              <div style="width:5px; height:30px; border-radius:3px; background:{{ spColor }}; box-shadow:0 0 14px {{ spColorGlow }};"></div>
+              <div style="padding:7px 22px 8px; border-radius:0 12px 12px 0; background:rgba(16,26,23,.92); border:1px solid rgba(255,255,255,.12); border-left:none; white-space:nowrap;">
+                <span style="font-family:'Noto Serif SC',serif; font-weight:700; font-size:21px; color:{{ spColor }}; letter-spacing:.05em;">{{ spName }}</span>
+              </div>
+            </div>
+          </sc-if>
+          <div style="position:relative; border-radius:20px; background:rgba(18,28,25,.86); border:1px solid rgba(255,255,255,.12); box-shadow:0 24px 60px -24px rgba(0,0,0,.7), inset 0 1px 0 rgba(255,255,255,.08); backdrop-filter:blur(14px); padding:30px 38px 26px;">
+            <div style="position:absolute; top:0; left:34px; right:34px; height:1px; background:linear-gradient(90deg, transparent, rgba(216,184,119,.5), transparent);"></div>
+            <div style="font-size:{{ textSize }}; line-height:1.78; color:#f7f0e3; letter-spacing:.02em; min-height:88px; font-weight:{{ textWeight }}; font-style:{{ textStyle }};">{{ typed }}</div>
+            <sc-if value="{{ showContinue }}" hint-placeholder-val="{{ false }}">
+              <div style="position:absolute; right:30px; bottom:20px; display:flex; align-items:center; gap:14px;">
+                <span style="font-family:'Space Mono',monospace; font-size:11px; letter-spacing:.18em; color:rgba(255,255,255,.4);">AUTO · SKIP · LOG</span>
+                <span style="font-size:14px; color:#d8b877; animation:blrPulse 1.3s ease-in-out infinite;">▼</span>
+              </div>
+            </sc-if>
+          </div>
+        </div>
+
+        <!-- ===================== CHOICE OVERLAY ===================== -->
+        <sc-if value="{{ choiceActive }}" hint-placeholder-val="{{ false }}">
+          <div style="position:absolute; inset:0; background:radial-gradient(80% 80% at 50% 42%, rgba(10,16,14,.34), rgba(10,16,14,.6));"></div>
+          <div style="position:absolute; left:50%; top:46%; transform:translate(-50%,-50%); width:880px;">
+            <div style="text-align:center; margin-bottom:22px; animation:blrUp .4s ease;">
+              <div style="display:inline-flex; align-items:center; gap:10px; padding:7px 18px; border-radius:30px; background:rgba(193,154,82,.16); border:1px solid rgba(216,184,119,.4);">
+                <span style="width:6px; height:6px; border-radius:50%; background:#d8b877;"></span>
+                <span style="font-size:13px; letter-spacing:.18em; color:#f0e2c4;">如何回应 · 你的选择会被记入手账</span>
+              </div>
+            </div>
+            <div style="display:flex; flex-direction:column; gap:13px;">
+              <sc-for list="{{ choiceOptions }}" as="opt" hint-placeholder-count="4">
+                <div onClick="{{ opt.onPick }}" style="position:relative; overflow:hidden; cursor:pointer; display:flex; align-items:center; gap:18px; padding:18px 24px; border-radius:15px; background:linear-gradient(180deg, rgba(247,240,227,.97), rgba(240,230,212,.95)); border:1px solid rgba(120,100,70,.22); box-shadow:0 16px 34px -20px rgba(0,0,0,.55); animation:blrUp .45s ease both; animation-delay:{{ opt.delay }};" style-hover="transform:translateY(-3px); box-shadow:0 22px 44px -18px rgba(20,60,52,.55);">
+                  <div style="flex:none; width:40px; height:40px; border-radius:11px; background:linear-gradient(150deg,#2f6b5e,#23433c); color:#fffaf0; display:flex; align-items:center; justify-content:center; font-family:'Noto Serif SC',serif; font-weight:700; font-size:19px;">{{ opt.key }}</div>
+                  <div style="font-size:17px; line-height:1.5; color:#223a34; letter-spacing:.01em;">{{ opt.caption }}</div>
+                  <div style="position:absolute; left:0; top:0; bottom:0; width:4px; background:#c19a52; opacity:0; transition:opacity .2s;" class="ch-bar"></div>
+                </div>
+              </sc-for>
+            </div>
+          </div>
+        </sc-if>
+
+        <!-- ===================== FEEDBACK MODAL ===================== -->
+        <sc-if value="{{ fbActive }}" hint-placeholder-val="{{ false }}">
+          <div style="position:absolute; inset:0; background:rgba(8,14,12,.66); backdrop-filter:blur(3px);"></div>
+          <div style="position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); width:740px; border-radius:22px; overflow:hidden; background:linear-gradient(180deg,#fffaf1,#f6eede); box-shadow:0 40px 90px -30px rgba(0,0,0,.7); border:1px solid rgba(255,255,255,.5); animation:blrPop .5s cubic-bezier(.2,.8,.25,1);">
+            <!-- result banner -->
+            <div style="position:relative; padding:22px 32px; background:{{ fbBannerBg }}; overflow:hidden;">
+              <div style="position:absolute; inset:0; background:repeating-linear-gradient(125deg, rgba(255,255,255,.1) 0 1px, transparent 1px 14px);"></div>
+              <div style="position:relative; display:flex; align-items:center; justify-content:space-between;">
+                <div style="display:flex; align-items:center; gap:14px;">
+                  <div style="width:46px; height:46px; border-radius:13px; background:rgba(255,255,255,.22); display:flex; align-items:center; justify-content:center; font-size:24px; border:1px solid rgba(255,255,255,.4);">{{ fbIcon }}</div>
+                  <div>
+                    <div style="font-family:'Space Mono',monospace; font-size:11px; letter-spacing:.28em; color:rgba(255,255,255,.8);">即时判定 · INSTANT</div>
+                    <div style="font-family:'Noto Serif SC',serif; font-weight:700; font-size:28px; color:#fffaf0; letter-spacing:.04em;">{{ fbResult }}</div>
+                  </div>
+                </div>
+                <div style="text-align:right; font-family:'Space Mono',monospace;">
+                  <div style="font-size:11px; letter-spacing:.2em; color:rgba(255,255,255,.7);">EXAM SCORE</div>
+                  <div style="font-size:26px; font-weight:700; color:#fffaf0;">{{ fbScoreDelta }}</div>
+                </div>
+              </div>
+            </div>
+            <div style="padding:24px 32px 28px;">
+              <div style="font-size:13px; color:#8a7c63; margin-bottom:6px;">你的选择</div>
+              <div style="font-size:15px; line-height:1.55; color:#3a4f48; padding:12px 16px; border-radius:11px; background:rgba(47,107,94,.07); border:1px solid rgba(47,107,94,.13); margin-bottom:16px;">{{ fbChoice }}</div>
+              <div style="font-size:13px; color:#8a7c63; margin-bottom:6px;">判定解析</div>
+              <div style="font-size:14px; line-height:1.7; color:#4a5d56; margin-bottom:18px;">{{ fbFeedback }}</div>
+
+              <!-- stat deltas -->
+              <div style="display:flex; flex-wrap:wrap; gap:9px; margin-bottom:18px;">
+                <sc-for list="{{ fbDeltas }}" as="d" hint-placeholder-count="3">
+                  <div style="display:flex; align-items:center; gap:7px; padding:7px 13px; border-radius:10px; white-space:nowrap; background:{{ d.bg }}; border:1px solid {{ d.border }}; animation:blrPop .5s ease both; animation-delay:{{ d.delay }};">
+                    <span style="font-size:13px; color:{{ d.fg }}; font-weight:500;">{{ d.label }}</span>
+                    <span style="font-family:'Space Mono',monospace; font-size:14px; font-weight:700; color:{{ d.fg }};">{{ d.text }}</span>
+                  </div>
+                </sc-for>
+              </div>
+
+              <!-- exam tag -->
+              <div style="display:flex; gap:12px; padding:14px 16px; border-radius:13px; background:linear-gradient(180deg,#1f3d36,#1a332d); margin-bottom:16px;">
+                <div style="flex:none; align-self:flex-start; padding:4px 11px; border-radius:7px; background:#c19a52; color:#21180a; font-size:12px; font-weight:700; letter-spacing:.06em;">{{ fbSubject }}</div>
+                <div>
+                  <div style="font-size:12px; color:#9fcabb; letter-spacing:.04em; margin-bottom:3px;">考点 · {{ fbModule }}</div>
+                  <div style="font-size:14px; line-height:1.5; color:#f1ece0;">{{ fbExamPoint }}</div>
+                </div>
+              </div>
+
+              <!-- keywords -->
+              <div style="font-size:13px; color:#8a7c63; margin-bottom:9px;">答题关键词</div>
+              <div style="display:flex; flex-wrap:wrap; gap:8px; margin-bottom:24px;">
+                <sc-for list="{{ fbKeywords }}" as="kw" hint-placeholder-count="4">
+                  <div style="padding:6px 13px; border-radius:30px; white-space:nowrap; background:#fff; border:1px solid rgba(47,107,94,.3); color:#2f6b5e; font-size:13px; font-weight:500; animation:blrPop .4s ease both; animation-delay:{{ kw.delay }};">{{ kw.text }}</div>
+                </sc-for>
+              </div>
+
+              <div onClick="{{ onFbContinue }}" style="cursor:pointer; text-align:center; padding:15px; border-radius:13px; background:linear-gradient(180deg,#2f6b5e,#23433c); color:#fffaf0; font-size:16px; font-weight:500; letter-spacing:.1em; box-shadow:0 14px 28px -14px rgba(20,60,52,.8);" style-hover="filter:brightness(1.08);">记录到手账并继续 →</div>
+            </div>
+          </div>
+        </sc-if>
+
+      </sc-if>
+
+      <!-- ===================== TEACHER NOTEBOOK ===================== -->
+      <sc-if value="{{ nbActive }}" hint-placeholder-val="{{ false }}">
+        <div style="position:absolute; inset:0; background:rgba(8,14,12,.55); backdrop-filter:blur(3px);"></div>
+        <div style="position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); width:1120px; height:632px; border-radius:22px; overflow:hidden; background:linear-gradient(160deg,#f8f2e4,#efe6d2); box-shadow:0 44px 100px -30px rgba(0,0,0,.7); border:1px solid rgba(255,255,255,.5); display:flex; animation:blrPop .45s cubic-bezier(.2,.8,.25,1);">
+          <!-- left rail -->
+          <div style="flex:none; width:230px; background:linear-gradient(170deg,#23433c,#1a332d); padding:30px 22px; display:flex; flex-direction:column;">
+            <div style="font-family:'Noto Serif SC',serif; font-weight:700; font-size:27px; color:#fffaf0; letter-spacing:.04em;">教师手账</div>
+            <div style="font-family:'Space Mono',monospace; font-size:10px; letter-spacing:.2em; color:#9fcabb; margin-top:5px;">FIELD NOTEBOOK</div>
+            <div style="margin-top:30px; display:flex; flex-direction:column; gap:7px;">
+              <div onClick="{{ tabAbility }}" style="cursor:pointer; padding:13px 16px; border-radius:11px; font-size:15px; background:{{ tabAbilityBg }}; color:{{ tabAbilityFg }}; border:1px solid {{ tabAbilityBd }};">能力状态</div>
+              <div onClick="{{ tabBond }}" style="cursor:pointer; padding:13px 16px; border-radius:11px; font-size:15px; background:{{ tabBondBg }}; color:{{ tabBondFg }}; border:1px solid {{ tabBondBd }};">同事羁绊</div>
+              <div onClick="{{ tabCodex }}" style="cursor:pointer; padding:13px 16px; border-radius:11px; font-size:15px; background:{{ tabCodexBg }}; color:{{ tabCodexFg }}; border:1px solid {{ tabCodexBd }};">考点图鉴</div>
+            </div>
+            <div style="margin-top:auto; padding-top:20px;">
+              <div style="font-size:12px; color:#9fcabb; line-height:1.6;">已覆盖考点<br><span style="font-family:'Space Mono',monospace; font-size:30px; color:#d8b877; font-weight:700;">{{ coveredCount }}</span></div>
+            </div>
+            <div onClick="{{ closeNotebook }}" style="cursor:pointer; margin-top:18px; text-align:center; padding:11px; border-radius:11px; background:rgba(255,255,255,.1); color:#fffaf0; font-size:14px; border:1px solid rgba(255,255,255,.2);" style-hover="background:rgba(255,255,255,.2);">← 返回剧情</div>
+          </div>
+          <!-- content -->
+          <div style="flex:1; padding:32px 34px; overflow:hidden;">
+            <!-- ABILITY -->
+            <sc-if value="{{ isAbility }}" hint-placeholder-val="{{ true }}">
+              <div style="font-family:'Noto Serif SC',serif; font-weight:600; font-size:21px; color:#223a34; margin-bottom:6px;">能力状态</div>
+              <div style="font-size:13px; color:#8a7c63; margin-bottom:22px;">随剧情选择实时变化 · 风险值越低越好</div>
+              <div style="display:flex; flex-direction:column; gap:16px;">
+                <sc-for list="{{ statList }}" as="s" hint-placeholder-count="6">
+                  <div>
+                    <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:7px;">
+                      <span style="font-size:15px; color:#33453f; font-weight:500;">{{ s.label }}</span>
+                      <span style="font-family:'Space Mono',monospace; font-size:15px; font-weight:700; color:{{ s.color }};">{{ s.value }}<span style="font-size:11px; color:#a99; font-weight:400;"> / 100</span></span>
+                    </div>
+                    <div style="height:9px; border-radius:6px; background:rgba(34,58,52,.1); overflow:hidden;">
+                      <div style="height:100%; border-radius:6px; width:{{ s.pct }}; background:{{ s.barBg }};"></div>
+                    </div>
+                  </div>
+                </sc-for>
+              </div>
+            </sc-if>
+            <!-- BOND -->
+            <sc-if value="{{ isBond }}" hint-placeholder-val="{{ false }}">
+              <div style="font-family:'Noto Serif SC',serif; font-weight:600; font-size:21px; color:#223a34; margin-bottom:6px;">同事羁绊</div>
+              <div style="font-size:13px; color:#8a7c63; margin-bottom:22px;">成熟克制的同事情谊 · 影响支线与协作</div>
+              <div style="display:flex; flex-direction:column; gap:13px;">
+                <sc-for list="{{ affList }}" as="a" hint-placeholder-count="4">
+                  <div onClick="{{ a.onOpen }}" style="cursor:pointer; display:flex; align-items:center; gap:16px; padding:14px 16px; border-radius:14px; background:#fff; border:1px solid rgba(120,100,70,.16); box-shadow:0 6px 16px -12px rgba(0,0,0,.4);" style-hover="border-color:rgba(193,154,82,.5); box-shadow:0 10px 24px -12px rgba(0,0,0,.5);">
+                    <div style="flex:none; width:46px; height:46px; border-radius:13px; background:{{ a.color }}; display:flex; align-items:center; justify-content:center; font-family:'Noto Serif SC',serif; font-weight:700; font-size:22px; color:#fffaf0;">{{ a.initial }}</div>
+                    <div style="flex:1;">
+                      <div style="display:flex; align-items:center; justify-content:space-between;">
+                        <span style="font-size:16px; color:#223a34; font-weight:600;">{{ a.name }}</span>
+                        <span style="font-size:13px; color:{{ a.color }};">{{ a.hearts }}</span>
+                      </div>
+                      <div style="font-size:12px; color:#8a7c63; margin:3px 0 7px;">{{ a.role }}</div>
+                      <div style="height:7px; border-radius:5px; background:rgba(34,58,52,.1); overflow:hidden;">
+                        <div style="height:100%; border-radius:5px; width:{{ a.pct }}; background:{{ a.color }};"></div>
+                      </div>
+                    </div>
+                    <div style="font-family:'Space Mono',monospace; font-size:18px; font-weight:700; color:{{ a.color }};">{{ a.value }}</div>
+                  </div>
+                </sc-for>
+              </div>
+            </sc-if>
+            <!-- CODEX -->
+            <sc-if value="{{ isCodex }}" hint-placeholder-val="{{ false }}">
+              <div style="display:flex; align-items:baseline; justify-content:space-between; margin-bottom:18px;">
+                <div>
+                  <div style="font-family:'Noto Serif SC',serif; font-weight:600; font-size:21px; color:#223a34;">考点图鉴</div>
+                  <div style="font-size:13px; color:#8a7c63; margin-top:4px;">触发即收录 · 点亮你的备考地图</div>
+                </div>
+                <div style="font-family:'Space Mono',monospace; font-size:13px; color:#2f6b5e;">{{ coveredCount }} COLLECTED</div>
+              </div>
+              <div style="display:grid; grid-template-columns:1fr 1fr; gap:11px; max-height:430px; overflow-y:auto; padding-right:6px;">
+                <sc-for list="{{ codexList }}" as="c" hint-placeholder-count="6">
+                  <div style="padding:14px 16px; border-radius:13px; background:#fff; border:1px solid rgba(120,100,70,.16); box-shadow:0 6px 16px -12px rgba(0,0,0,.35);">
+                    <div style="display:flex; gap:7px; margin-bottom:9px;">
+                      <span style="padding:3px 9px; border-radius:6px; background:#2f6b5e; color:#fff; font-size:11px; font-weight:700;">{{ c.subject }}</span>
+                      <span style="padding:3px 9px; border-radius:6px; background:rgba(193,154,82,.18); color:#8a6a22; font-size:11px;">{{ c.module }}</span>
+                    </div>
+                    <div style="font-size:13px; line-height:1.5; color:#33453f;">{{ c.point }}</div>
+                  </div>
+                </sc-for>
+              </div>
+            </sc-if>
+          </div>
+        </div>
+      </sc-if>
+
+      <!-- ===================== CHAPTER REVIEW ===================== -->
+      <sc-if value="{{ rvActive }}" hint-placeholder-val="{{ false }}">
+        <div style="position:absolute; inset:0; background:linear-gradient(160deg,#12201c,#0c1613);"></div>
+        <div style="position:absolute; inset:0; background:radial-gradient(90% 70% at 50% 0%, rgba(193,154,82,.18), transparent 60%);"></div>
+        <div style="position:absolute; left:0; right:0; top:46px; text-align:center; animation:blrUp .6s ease;">
+          <div style="font-family:'Space Mono',monospace; font-size:12px; letter-spacing:.4em; color:#d8b877;">CHAPTER 01 · COMPLETE</div>
+          <div style="font-family:'Noto Serif SC',serif; font-weight:700; font-size:46px; color:#fffaf0; margin-top:8px; letter-spacing:.06em;">第一章 · 复盘</div>
+          <div style="font-size:15px; color:#9fcabb; margin-top:6px;">入职第一天 · 你已经不太一样了</div>
+        </div>
+        <div style="position:absolute; left:50%; top:188px; transform:translateX(-50%); width:1080px; display:flex; gap:18px;">
+          <!-- covered -->
+          <div style="flex:1; border-radius:18px; background:rgba(255,250,241,.05); border:1px solid rgba(255,255,255,.12); padding:22px; animation:blrUp .6s ease both; animation-delay:.1s;">
+            <div style="display:flex; align-items:center; gap:9px; margin-bottom:16px;">
+              <span style="width:8px; height:8px; border-radius:50%; background:#3f9b6e;"></span>
+              <span style="font-size:16px; color:#fffaf0; font-weight:600;">本章覆盖考点</span>
+              <span style="font-family:'Space Mono',monospace; font-size:13px; color:#3f9b6e; margin-left:auto;">{{ rvCoveredCount }}</span>
+            </div>
+            <div style="display:flex; flex-direction:column; gap:8px; max-height:300px; overflow-y:auto; padding-right:4px;">
+              <sc-for list="{{ rvCovered }}" as="p" hint-placeholder-count="6">
+                <div style="display:flex; gap:9px; align-items:flex-start; font-size:13px; line-height:1.5; color:#e7ddc9;"><span style="color:#3f9b6e; margin-top:1px;">✓</span>{{ p.text }}</div>
+              </sc-for>
+            </div>
+          </div>
+          <!-- weak -->
+          <div style="flex:1; border-radius:18px; background:rgba(255,250,241,.05); border:1px solid rgba(255,255,255,.12); padding:22px; animation:blrUp .6s ease both; animation-delay:.2s;">
+            <div style="display:flex; align-items:center; gap:9px; margin-bottom:16px;">
+              <span style="width:8px; height:8px; border-radius:50%; background:#c79a3e;"></span>
+              <span style="font-size:16px; color:#fffaf0; font-weight:600;">易失分预警</span>
+            </div>
+            <div style="display:flex; flex-direction:column; gap:10px; max-height:300px; overflow-y:auto; padding-right:4px;">
+              <sc-for list="{{ rvWeak }}" as="w" hint-placeholder-count="4">
+                <div style="font-size:13px; line-height:1.55; color:#ead9bd; padding:10px 12px; border-radius:10px; background:rgba(199,154,62,.12); border-left:3px solid #c79a3e;">{{ w.text }}</div>
+              </sc-for>
+            </div>
+          </div>
+          <!-- recommend -->
+          <div style="flex:1; border-radius:18px; background:rgba(255,250,241,.05); border:1px solid rgba(255,255,255,.12); padding:22px; animation:blrUp .6s ease both; animation-delay:.3s;">
+            <div style="display:flex; align-items:center; gap:9px; margin-bottom:16px;">
+              <span style="width:8px; height:8px; border-radius:50%; background:#8fb4e6;"></span>
+              <span style="font-size:16px; color:#fffaf0; font-weight:600;">推荐复习</span>
+            </div>
+            <div style="display:flex; flex-direction:column; gap:8px; max-height:300px; overflow-y:auto; padding-right:4px;">
+              <sc-for list="{{ rvRecommend }}" as="r" hint-placeholder-count="6">
+                <div style="display:flex; gap:9px; align-items:flex-start; font-size:13px; line-height:1.5; color:#dbe6f3;"><span style="color:#8fb4e6;">›</span>{{ r.text }}</div>
+              </sc-for>
+            </div>
+          </div>
+        </div>
+        <div style="position:absolute; left:50%; bottom:40px; transform:translateX(-50%); display:flex; gap:14px;">
+          <div onClick="{{ closeReview }}" style="cursor:pointer; padding:15px 34px; border-radius:13px; background:rgba(255,255,255,.1); color:#fffaf0; font-size:15px; border:1px solid rgba(255,255,255,.22);" style-hover="background:rgba(255,255,255,.2);">返回</div>
+          <div onClick="{{ closeReview }}" style="cursor:pointer; padding:15px 40px; border-radius:13px; background:linear-gradient(180deg,#c19a52,#9a7833); color:#21180a; font-size:15px; font-weight:600; letter-spacing:.08em; box-shadow:0 14px 30px -14px rgba(193,154,82,.7);" style-hover="filter:brightness(1.06);">进入第二章 →</div>
+        </div>
+      </sc-if>
+
+      <!-- ===================== CHAPTER SELECT ===================== -->
+      <sc-if value="{{ isChapters }}" hint-placeholder-val="{{ false }}">
+        <div style="position:absolute; inset:0; background:linear-gradient(160deg, rgba(14,22,19,.82), rgba(14,22,19,.6));"></div>
+        <div style="position:absolute; inset:0; background:radial-gradient(80% 60% at 50% -10%, rgba(193,154,82,.16), transparent 60%);"></div>
+        <div style="position:absolute; top:42px; left:0; right:0; text-align:center; animation:blrUp .55s ease;">
+          <div style="font-family:'Space Mono',monospace; font-size:12px; letter-spacing:.4em; color:#d8b877;">SELECT CHAPTER</div>
+          <div style="font-family:'Noto Serif SC',serif; font-weight:700; font-size:42px; color:#fffaf0; margin-top:8px; letter-spacing:.06em;">选择章节</div>
+        </div>
+        <div style="position:absolute; left:50%; top:52%; transform:translate(-50%,-50%); display:flex; gap:22px;">
+          <sc-for list="{{ chapterList }}" as="ch" hint-placeholder-count="3">
+            <div onClick="{{ ch.onEnter }}" style="position:relative; width:340px; cursor:pointer; border-radius:18px; overflow:hidden; background:rgba(255,250,241,.06); border:1px solid rgba(255,255,255,.13); box-shadow:0 24px 50px -24px rgba(0,0,0,.6); opacity:{{ ch.cardOpacity }}; animation:blrUp .6s ease both;" style-hover="border-color:rgba(216,184,119,.5); transform:translateY(-4px);">
+              <div style="height:150px; background:linear-gradient(150deg,#23433c,#1a332d); position:relative; overflow:hidden;">
+                <div style="position:absolute; inset:0; background:repeating-linear-gradient(125deg, rgba(255,255,255,.05) 0 1px, transparent 1px 16px);"></div>
+                <div style="position:absolute; right:14px; bottom:-16px; font-family:'Noto Serif SC',serif; font-weight:900; font-size:120px; line-height:1; color:rgba(216,184,119,.16);">{{ ch.no }}</div>
+                <div style="position:absolute; top:14px; left:16px; padding:5px 12px; border-radius:30px; background:{{ ch.statusBg }}; color:{{ ch.statusFg }}; font-size:12px; letter-spacing:.06em;">{{ ch.statusText }}</div>
+              </div>
+              <div style="padding:18px 20px 22px;">
+                <div style="font-family:'Space Mono',monospace; font-size:11px; letter-spacing:.2em; color:#9fcabb;">CHAPTER · 第{{ ch.no }}章</div>
+                <div style="font-family:'Noto Serif SC',serif; font-weight:600; font-size:24px; color:#fffaf0; margin:5px 0 9px;">{{ ch.title }}</div>
+                <div style="font-size:13px; line-height:1.6; color:#cdd9d2; min-height:62px;">{{ ch.intro }}</div>
+                <div style="margin-top:12px; height:7px; border-radius:5px; background:rgba(255,255,255,.1); overflow:hidden;">
+                  <div style="height:100%; border-radius:5px; width:{{ ch.progressPct }}; background:linear-gradient(90deg,#c19a52,#d8b877);"></div>
+                </div>
+                <div style="margin-top:9px; display:flex; align-items:center; justify-content:space-between;">
+                  <span style="font-size:12px; color:#9fcabb;">已覆盖考点 <span style="font-family:'Space Mono',monospace; color:#d8b877; font-weight:700;">{{ ch.covered }}</span></span>
+                  <span style="font-size:12px; color:#fffaf0;">进度 {{ ch.progressPct }}</span>
+                </div>
+              </div>
+            </div>
+          </sc-for>
+        </div>
+        <div onClick="{{ backToMenu }}" style="position:absolute; top:30px; left:26px; cursor:pointer; padding:10px 18px; border-radius:30px; background:rgba(16,26,23,.5); border:1px solid rgba(255,255,255,.16); color:#fffaf0; font-size:14px; backdrop-filter:blur(8px);" style-hover="background:rgba(255,255,255,.16);">← 返回主菜单</div>
+        <div style="position:absolute; bottom:34px; left:50%; transform:translateX(-50%); display:flex; align-items:center; gap:12px; padding:11px 20px; border-radius:14px; background:rgba(255,250,241,.05); border:1px solid rgba(255,255,255,.1);">
+          <span style="font-size:13px; color:#d8b877;">学科 DLC</span>
+          <span style="font-size:12px; color:#9fcabb;">语文 · 数学 · 英语 ……</span>
+          <span style="padding:3px 10px; border-radius:6px; background:rgba(255,255,255,.08); color:#9aa6a2; font-size:11px;">敬请期待</span>
+        </div>
+      </sc-if>
+
+      <!-- ===================== PREFERENCES ===================== -->
+      <sc-if value="{{ prefActive }}" hint-placeholder-val="{{ false }}">
+        <div style="position:absolute; inset:0; background:rgba(8,14,12,.6); backdrop-filter:blur(3px);"></div>
+        <div style="position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); width:880px; height:540px; border-radius:22px; overflow:hidden; display:flex; background:linear-gradient(160deg,#f8f2e4,#efe6d2); box-shadow:0 44px 100px -30px rgba(0,0,0,.7); border:1px solid rgba(255,255,255,.5); animation:blrPop .45s cubic-bezier(.2,.8,.25,1);">
+          <div style="flex:none; width:210px; background:linear-gradient(170deg,#23433c,#1a332d); padding:30px 20px; display:flex; flex-direction:column;">
+            <div style="font-family:'Noto Serif SC',serif; font-weight:700; font-size:25px; color:#fffaf0;">设置</div>
+            <div style="font-family:'Space Mono',monospace; font-size:10px; letter-spacing:.2em; color:#9fcabb; margin-top:5px;">PREFERENCES</div>
+            <div style="margin-top:28px; display:flex; flex-direction:column; gap:7px;">
+              <div onClick="{{ setGroupDisplay }}" style="cursor:pointer; padding:12px 15px; border-radius:11px; font-size:14px; background:{{ pgDisplayBg }}; color:{{ pgDisplayFg }}; border:1px solid {{ pgDisplayBd }};">显示</div>
+              <div onClick="{{ setGroupSound }}" style="cursor:pointer; padding:12px 15px; border-radius:11px; font-size:14px; background:{{ pgSoundBg }}; color:{{ pgSoundFg }}; border:1px solid {{ pgSoundBd }};">声音</div>
+              <div onClick="{{ setGroupText }}" style="cursor:pointer; padding:12px 15px; border-radius:11px; font-size:14px; background:{{ pgTextBg }}; color:{{ pgTextFg }}; border:1px solid {{ pgTextBd }};">文字</div>
+              <div onClick="{{ setGroupSystem }}" style="cursor:pointer; padding:12px 15px; border-radius:11px; font-size:14px; background:{{ pgSystemBg }}; color:{{ pgSystemFg }}; border:1px solid {{ pgSystemBd }};">系统</div>
+            </div>
+            <div onClick="{{ closePrefs }}" style="cursor:pointer; margin-top:auto; text-align:center; padding:11px; border-radius:11px; background:rgba(255,255,255,.1); color:#fffaf0; font-size:14px; border:1px solid rgba(255,255,255,.2);" style-hover="background:rgba(255,255,255,.2);">完成 ✓</div>
+          </div>
+          <div style="flex:1; padding:34px 38px; overflow:hidden auto;">
+            <sc-if value="{{ prefText }}" hint-placeholder-val="{{ true }}">
+              <div style="font-family:'Noto Serif SC',serif; font-weight:600; font-size:20px; color:#223a34; margin-bottom:22px;">文字</div>
+              <div style="margin-bottom:24px;">
+                <div style="display:flex; justify-content:space-between; margin-bottom:9px;"><span style="font-size:15px; color:#33453f;">文字显示速度</span><span style="font-family:'Space Mono',monospace; font-size:14px; color:#2f6b5e; font-weight:700;">{{ stTextSpeedPct }}</span></div>
+                <input type="range" min="0" max="100" value="{{ stTextSpeed }}" onChange="{{ onTextSpeed }}" style="width:100%; accent-color:#2f6b5e; cursor:pointer;" />
+              </div>
+              <div style="margin-bottom:24px;">
+                <div style="display:flex; justify-content:space-between; margin-bottom:9px;"><span style="font-size:15px; color:#33453f;">自动播放速度</span><span style="font-family:'Space Mono',monospace; font-size:14px; color:#2f6b5e; font-weight:700;">{{ stAutoSpeedPct }}</span></div>
+                <input type="range" min="0" max="100" value="{{ stAutoSpeed }}" onChange="{{ onAutoSpeed }}" style="width:100%; accent-color:#2f6b5e; cursor:pointer;" />
+              </div>
+              <div style="display:flex; align-items:center; justify-content:space-between; padding:14px 16px; border-radius:13px; background:#fff; border:1px solid rgba(120,100,70,.16);">
+                <div><div style="font-size:15px; color:#33453f;">跳过未读文本</div><div style="font-size:12px; color:#8a7c63; margin-top:2px;">关闭时仅跳过已读过的剧情</div></div>
+                <div onClick="{{ toggleSkip }}" style="cursor:pointer; width:46px; height:26px; border-radius:30px; background:{{ skOnBg }}; position:relative; transition:background .2s;"><div style="position:absolute; top:2px; left:{{ skKnobX }}; width:22px; height:22px; border-radius:50%; background:#fff; box-shadow:0 1px 3px rgba(0,0,0,.3); transition:left .2s;"></div></div>
+              </div>
+            </sc-if>
+            <sc-if value="{{ prefSound }}" hint-placeholder-val="{{ false }}">
+              <div style="font-family:'Noto Serif SC',serif; font-weight:600; font-size:20px; color:#223a34; margin-bottom:22px;">声音</div>
+              <div style="margin-bottom:24px;">
+                <div style="display:flex; justify-content:space-between; margin-bottom:9px;"><span style="font-size:15px; color:#33453f;">背景音乐 BGM</span><span style="font-family:'Space Mono',monospace; font-size:14px; color:#2f6b5e; font-weight:700;">{{ stBgmPct }}</span></div>
+                <input type="range" min="0" max="100" value="{{ stBgm }}" onChange="{{ onBgm }}" style="width:100%; accent-color:#2f6b5e; cursor:pointer;" />
+              </div>
+              <div>
+                <div style="display:flex; justify-content:space-between; margin-bottom:9px;"><span style="font-size:15px; color:#33453f;">音效 SFX</span><span style="font-family:'Space Mono',monospace; font-size:14px; color:#2f6b5e; font-weight:700;">{{ stSfxPct }}</span></div>
+                <input type="range" min="0" max="100" value="{{ stSfx }}" onChange="{{ onSfx }}" style="width:100%; accent-color:#2f6b5e; cursor:pointer;" />
+              </div>
+            </sc-if>
+            <sc-if value="{{ prefDisplay }}" hint-placeholder-val="{{ false }}">
+              <div style="font-family:'Noto Serif SC',serif; font-weight:600; font-size:20px; color:#223a34; margin-bottom:22px;">显示</div>
+              <div style="display:flex; align-items:center; justify-content:space-between; padding:14px 16px; border-radius:13px; background:#fff; border:1px solid rgba(120,100,70,.16); margin-bottom:14px;">
+                <div style="font-size:15px; color:#33453f;">全屏显示</div>
+                <div onClick="{{ toggleFullscreen }}" style="cursor:pointer; width:46px; height:26px; border-radius:30px; background:{{ fsOnBg }}; position:relative; transition:background .2s;"><div style="position:absolute; top:2px; left:{{ fsKnobX }}; width:22px; height:22px; border-radius:50%; background:#fff; box-shadow:0 1px 3px rgba(0,0,0,.3); transition:left .2s;"></div></div>
+              </div>
+              <div style="display:flex; align-items:center; justify-content:space-between; padding:14px 16px; border-radius:13px; background:#fff; border:1px solid rgba(120,100,70,.16);">
+                <div style="font-size:15px; color:#33453f;">界面语言</div>
+                <div style="display:flex; gap:7px;">
+                  <span style="padding:6px 14px; border-radius:9px; background:#2f6b5e; color:#fff; font-size:13px;">简体中文</span>
+                  <span style="padding:6px 14px; border-radius:9px; background:rgba(34,58,52,.08); color:#8a7c63; font-size:13px;">繁體</span>
+                </div>
+              </div>
+            </sc-if>
+            <sc-if value="{{ prefSystem }}" hint-placeholder-val="{{ false }}">
+              <div style="font-family:'Noto Serif SC',serif; font-weight:600; font-size:20px; color:#223a34; margin-bottom:22px;">系统</div>
+              <div style="display:flex; flex-direction:column; gap:12px;">
+                <div style="display:flex; align-items:center; justify-content:space-between; padding:14px 16px; border-radius:13px; background:#fff; border:1px solid rgba(120,100,70,.16);"><span style="font-size:15px; color:#33453f;">退出时确认</span><span style="font-size:13px; color:#2f6b5e;">开启</span></div>
+                <div style="display:flex; align-items:center; justify-content:space-between; padding:14px 16px; border-radius:13px; background:#fff; border:1px solid rgba(120,100,70,.16);"><span style="font-size:15px; color:#33453f;">版本</span><span style="font-family:'Space Mono',monospace; font-size:13px; color:#8a7c63;">v0.1 prototype</span></div>
+                <div style="text-align:center; padding:13px; border-radius:13px; background:rgba(193,87,78,.1); color:#c1574e; font-size:14px; cursor:pointer; border:1px solid rgba(193,87,78,.24);">返回主菜单</div>
+              </div>
+            </sc-if>
+          </div>
+        </div>
+      </sc-if>
+
+      <!-- ===================== CHARACTER PROFILE ===================== -->
+      <sc-if value="{{ profActive }}" hint-placeholder-val="{{ false }}">
+        <div style="position:absolute; inset:0; background:rgba(8,14,12,.66); backdrop-filter:blur(4px);"></div>
+        <div style="position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); width:960px; height:560px; border-radius:22px; overflow:hidden; display:flex; background:linear-gradient(160deg,#f8f2e4,#efe6d2); box-shadow:0 44px 100px -30px rgba(0,0,0,.7); border:1px solid rgba(255,255,255,.5); animation:blrPop .45s cubic-bezier(.2,.8,.25,1);">
+          <!-- left portrait -->
+          <div style="flex:none; width:360px; position:relative; background:linear-gradient(170deg,{{ pDeep }},{{ pDeepFade }});">
+            <div style="position:absolute; inset:0; background:repeating-linear-gradient(135deg, rgba(255,255,255,.05) 0 1px, transparent 1px 16px);"></div>
+            <div style="position:absolute; top:70px; left:0; right:0; text-align:center; font-family:'Noto Serif SC',serif; font-weight:900; font-size:260px; line-height:1; color:rgba(255,255,255,.12);">{{ pInitial }}</div>
+            <div style="position:absolute; top:24px; left:50%; transform:translateX(-50%); font-family:'Space Mono',monospace; font-size:10px; letter-spacing:.2em; color:rgba(255,255,255,.55); border:1px solid rgba(255,255,255,.25); padding:2px 8px; border-radius:5px;">档案立绘占位</div>
+            <div style="position:absolute; left:0; right:0; bottom:26px; text-align:center;">
+              <div style="font-family:'Noto Serif SC',serif; font-weight:700; font-size:30px; color:#fffaf0; text-shadow:0 2px 12px rgba(0,0,0,.5);">{{ pName }}</div>
+              <div style="margin-top:4px; font-size:13px; color:rgba(255,255,255,.78);">{{ pRole }}</div>
+            </div>
+          </div>
+          <!-- right info -->
+          <div style="flex:1; padding:30px 34px; display:flex; flex-direction:column;">
+            <div style="display:flex; align-items:center; justify-content:space-between;">
+              <div style="font-size:13px; color:#8a7c63;">{{ pSubject }}</div>
+              <div onClick="{{ closeProfile }}" style="cursor:pointer; width:32px; height:32px; border-radius:50%; display:flex; align-items:center; justify-content:center; background:rgba(34,58,52,.08); color:#33453f; font-size:15px;" style-hover="background:rgba(34,58,52,.16);">✕</div>
+            </div>
+            <div style="margin-top:18px; padding:16px 18px; border-radius:14px; background:rgba(47,107,94,.07); border-left:3px solid #2f6b5e;">
+              <div style="font-size:11px; letter-spacing:.16em; color:#2f6b5e; margin-bottom:6px;">SIGNATURE</div>
+              <div style="font-family:'Noto Serif SC',serif; font-size:17px; line-height:1.6; color:#223a34;">「{{ pSign }}」</div>
+            </div>
+            <div style="margin-top:18px; display:flex; align-items:center; gap:14px;">
+              <div style="flex:1;">
+                <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:6px;">
+                  <span style="font-size:13px; color:#33453f;">羁绊 · {{ pLv }} {{ pLvName }}</span>
+                  <span style="font-size:14px; color:#c8817c;">{{ pHearts }}</span>
+                </div>
+                <div style="height:8px; border-radius:5px; background:rgba(34,58,52,.1); overflow:hidden;"><div style="height:100%; border-radius:5px; width:{{ pAffPct }}; background:#c8817c;"></div></div>
+              </div>
+              <div style="font-family:'Space Mono',monospace; font-size:20px; font-weight:700; color:#c8817c;">{{ pAff }}</div>
+            </div>
+            <div style="margin-top:20px; font-size:13px; color:#8a7c63; margin-bottom:10px;">档案条目</div>
+            <div style="display:flex; flex-direction:column; gap:9px;">
+              <sc-for list="{{ pEntries }}" as="e" hint-placeholder-count="3">
+                <div style="display:flex; gap:10px; align-items:flex-start; font-size:14px; line-height:1.6; color:#3a4f48; padding:11px 14px; border-radius:11px; background:#fff; border:1px solid rgba(120,100,70,.14);"><span style="color:#c19a52;">◆</span>{{ e.text }}</div>
+              </sc-for>
+            </div>
+            <div style="margin-top:auto; display:flex; gap:10px; padding-top:18px;">
+              <div onClick="{{ prevProfile }}" style="flex:1; cursor:pointer; text-align:center; padding:12px; border-radius:12px; background:rgba(34,58,52,.07); color:#33453f; font-size:14px; border:1px solid rgba(120,100,70,.16);" style-hover="background:rgba(34,58,52,.13);">‹ 上一位</div>
+              <div onClick="{{ nextProfile }}" style="flex:1; cursor:pointer; text-align:center; padding:12px; border-radius:12px; background:rgba(34,58,52,.07); color:#33453f; font-size:14px; border:1px solid rgba(120,100,70,.16);" style-hover="background:rgba(34,58,52,.13);">下一位 ›</div>
+            </div>
+          </div>
+        </div>
+      </sc-if>
+
+    </div>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+const CHARS = {
+  lu:   { name:'陆知行', initial:'陆', color:'#8fb4e6', deep:'#21425f', role:'教务主任 · 规则的守护者' },
+  jiang:{ name:'江晚',  initial:'江', color:'#84c7a6', deep:'#2c5a47', role:'心理教师 · 温柔的倾听者' },
+  gu:   { name:'顾承',  initial:'顾', color:'#d9b76a', deep:'#5f4a1f', role:'年级组长 · 可靠的引路人' },
+  shen: { name:'沈亦舟', initial:'沈', color:'#aaa2e6', deep:'#3a3469', role:'语文教师 · 并肩的伙伴' },
+};
+const BG = {
+  staff_room:      { label:'青年教师办公室', css:'linear-gradient(160deg,#e0e8e1,#c5d3cc 58%,#a0b4ac)' },
+  meeting_room:    { label:'会议室',         css:'linear-gradient(160deg,#dee4ef,#bdc9dc 58%,#94a4bd)' },
+  classroom:       { label:'普通教室',       css:'linear-gradient(160deg,#ede4d0,#d9caa7 58%,#b6a279)' },
+  corridor:        { label:'走廊',           css:'linear-gradient(160deg,#dee2e4,#c3ccd0 58%,#9aa6ab)' },
+  counseling_room: { label:'心理咨询室',     css:'linear-gradient(160deg,#e0ebe5,#c5d9d0 58%,#9dbcae)' },
+};
+const STAT_LABELS = { professionalSkill:'专业判断', studentTrust:'学生信任', classOrder:'课堂秩序', examScore:'教资得分', ethicsRisk:'师德风险', lawRisk:'法规风险' };
+const STAT_ORDER = ['professionalSkill','studentTrust','classOrder','examScore','ethicsRisk','lawRisk'];
+const RISK_STATS = ['ethicsRisk','lawRisk'];
+
+const SCRIPT = {
+  intro: { type:'line', bg:'staff_room', sp:'narrator', text:'九月的清晨，星澜高中的青年教师办公室还带着昨夜未散的凉意。你攥着印有"见习教师"字样的工牌，手心微微出汗——今天，是你成为老师的第一天。', next:'shen_intro' },
+  shen_intro: { type:'line', bg:'staff_room', sp:'shen', text:'哎——你就是新来的吧？我是沈亦舟，语文组的。今年荣升你的"入职搭档"。简单说，以后我俩拴一根绳上：一起备课、一起被前辈点评。走，主任快开场了！', next:'c1' },
+  c1: { type:'choice', bg:'meeting_room', sp:'lu', prompt:'在座都是今年的新人。先做个一分钟自我介绍——我不听套话，我想知道你为什么站在这间教室里。', options:[
+    { key:'A', caption:'我喜欢稳定，老师有寒暑假，也体面。', quality:'risk', effects:{professionalSkill:-1,examScore:-2,affection_lu:-1}, feedback:'把"稳定、假期"放在最前面，是职业认知类最典型的失分答法。面试官想听的是你对"育人"的理解，而不是对待遇的计算。', keywords:['避免功利动机','职业认同'], examTags:{subject:'面试通用',module:'职业认知',examPoint:'从教动机与职业理解（结构化面试·职业认知类）'} },
+    { key:'B', caption:'我成绩好，教中学绰绰有余，想找个能发挥的地方。', quality:'suboptimal', effects:{examScore:-1}, feedback:'有自信不是坏事，但"我很强"不等于"我懂教育"。职业认知更看重你对教师角色、对学生的理解，而非学科优越感。', keywords:['学科能力≠育人能力','教师角色理解'], examTags:{subject:'面试通用',module:'职业认知',examPoint:'从教动机与职业理解（结构化面试·职业认知类）'} },
+    { key:'C', caption:'我想成为能影响学生一生的人。教书是手段，育人才是目的，所以我会一直学下去。', quality:'optimal', effects:{professionalSkill:2,examScore:3,affection_lu:2}, feedback:'满分思路。落点在"育人""立德树人""终身学习"，既表达从教情怀，又点出教师专业成长方向。陆知行不动声色地在名单上你的名字旁画了一笔。', keywords:['立德树人','热爱教育','教书育人','终身学习','为人师表'], examTags:{subject:'面试通用',module:'职业认知',examPoint:'从教动机与职业理解（结构化面试·职业认知类）'} },
+    { key:'D', caption:'（紧张到忘词）呃……我叫……我会努力的！', quality:'suboptimal', effects:{affection_shen:1}, feedback:'真实但浪费机会。面试的心理素质与言语表达也是采分点：哪怕紧张，也要给出"有结构的一句话"。建议练习"动机+理解+承诺"的三句式模板。', keywords:['心理素质','言语表达','三句式结构'], examTags:{subject:'面试通用',module:'职业认知',examPoint:'从教动机与职业理解（结构化面试·职业认知类）'} },
+  ], next:'after_c1' },
+  after_c1: { type:'line', bg:'meeting_room', sp:'lu', text:'记住一句话：在这所学校，你做的每一件事，都有人在看，也都有规矩在管。我们接着讲。', next:'c2' },
+  c2: { type:'choice', bg:'meeting_room', sp:'lu', prompt:'上一届有位新老师，把自己当成"唯一的知识来源"，课堂上学生不许插话。你们觉得，这位老师对"教师角色"的理解，问题出在哪？', options:[
+    { key:'A', caption:'没问题啊，老师就该有权威，课堂得他说了算。', quality:'risk', effects:{professionalSkill:-1,studentTrust:-1,classOrder:1,ethicsRisk:1,examScore:-2,affection_lu:-1}, feedback:'这是把"教师主导"误读成"教师专制"。新课改教师观强调教师是学习的促进者，要尊重学生主体地位。一言堂违背"教师主导与学生主体相统一"。', keywords:['一言堂','忽视学生主体'], examTags:{subject:'301',module:'职业理念',examPoint:'教师观：促进者、课程建设者与开发者、研究者'} },
+    { key:'B', caption:'他没把自己当成学生学习的促进者，应该引导学生主动建构，而不是单向灌输。', quality:'optimal', effects:{professionalSkill:2,examScore:3,affection_lu:1}, feedback:'准确命中新课改教师观第一条——促进者。可再补"课程的建设者与开发者""研究者""教师主导与学生主体相统一"，答案就更完整。', keywords:['教师是学习的促进者','学生主体','引导建构'], examTags:{subject:'301',module:'职业理念',examPoint:'教师观：促进者、课程建设者与开发者、研究者'} },
+    { key:'C', caption:'他不够严格？应该多布置作业管住学生。', quality:'risk', effects:{professionalSkill:-1,examScore:-2}, feedback:'完全跑偏。题问的是"教师角色"理解，不是"管得严不严"。把问题归到作业量上，说明没有抓住教师观这一考点。', keywords:['跑题','误抓纪律'], examTags:{subject:'301',module:'职业理念',examPoint:'教师观：促进者、课程建设者与开发者、研究者'} },
+    { key:'D', caption:'他只顾教书，没把自己当成研究者和课程开发者，容易因循守旧。', quality:'suboptimal', effects:{professionalSkill:1,examScore:1}, feedback:'方向对，命中教师观中的"研究者/课程开发者"，但漏掉了最核心的"促进者/学生主体"。在材料分析里属于"答对一半"，建议补全。', keywords:['教师是研究者','课程建设者与开发者'], examTags:{subject:'301',module:'职业理念',examPoint:'教师观：促进者、课程建设者与开发者、研究者'} },
+  ], next:'c3' },
+  c3: { type:'choice', bg:'meeting_room', sp:'lu', prompt:'再给你们一个真实情境：你发现学生上课玩手机。同事老周当场没收，还当全班的面翻看了里面的聊天记录"以儆效尤"。老周哪里出了问题？', options:[
+    { key:'A', caption:'没毛病，学生上课玩手机就该被查，杀鸡儆猴有威慑力。', quality:'risk', effects:{professionalSkill:-2,studentTrust:-2,classOrder:1,ethicsRisk:2,lawRisk:3,examScore:-3,affection_lu:-2}, feedback:'高危答案。当众翻看聊天记录侵犯隐私权，"以儆效尤"式公开羞辱侵犯人格尊严权，属变相体罚/侮辱。这在法规材料题里是必扣分、甚至一票否决的硬伤。', keywords:['侵犯隐私权','侵犯人格尊严权','变相体罚'], examTags:{subject:'301',module:'教育法律法规',examPoint:'学生隐私权、人格尊严权；不得变相体罚或侮辱学生'} },
+    { key:'B', caption:'代为保管手机可以，但不能翻看私人内容、更不能当众羞辱，那侵犯了隐私权和人格尊严权。', quality:'optimal', effects:{professionalSkill:2,studentTrust:1,ethicsRisk:-1,lawRisk:-2,examScore:3,affection_lu:2}, feedback:'标准法理答法。先肯定"管理违纪行为"的正当性（代管/课后沟通），再指出越界点：隐私权、人格尊严权、不得变相体罚。处理违纪要对事不对人、程序正当。', keywords:['隐私权','人格尊严权','不得变相体罚','程序正当'], examTags:{subject:'301',module:'教育法律法规',examPoint:'学生隐私权、人格尊严权；不得变相体罚或侮辱学生'} },
+    { key:'C', caption:'直接把手机没收充公或摔了，让他长记性。', quality:'risk', effects:{professionalSkill:-2,studentTrust:-1,ethicsRisk:2,lawRisk:3,examScore:-3,affection_lu:-2}, feedback:'损毁学生财物侵犯财产权，"长记性"式惩罚同样越界。情绪化执法是新教师高发雷区。', keywords:['侵犯财产权','情绪化执法'], examTags:{subject:'301',module:'教育法律法规',examPoint:'学生隐私权、人格尊严权；不得变相体罚或侮辱学生'} },
+    { key:'D', caption:'先把手机放讲台，下课单独找他谈，了解为什么上课要看手机。', quality:'suboptimal', effects:{professionalSkill:1,studentTrust:2,ethicsRisk:-1,lawRisk:-1,examScore:1,affection_lu:1}, feedback:'处理方式得体、合法，体现关爱与疏导。从考点踩分看，少了对"老周错在侵犯哪些权利"的法理点名，所以踩分略低，但实务与师德分很高。', keywords:['单独沟通','疏导','关爱学生'], examTags:{subject:'301',module:'教育法律法规',examPoint:'学生隐私权、人格尊严权；不得变相体罚或侮辱学生'} },
+  ], next:'demo_end' },
+  demo_end: { type:'line', bg:'staff_room', sp:'narrator', text:'（UI 原型演示到此。点击右上角「手账」查看你积累的能力、羁绊与考点图鉴；点击「复盘」预览章末结算界面。备课铃，明天还会响。）', next:null },
+};
+
+const REVIEW = {
+  covered: ['301｜职业理念｜教师观','301｜职业理念｜学生观','301｜教育法律法规｜隐私权与人格尊严权','301｜教师职业道德｜师德六条','301｜基本能力｜信息处理','302｜班级管理｜班集体发展阶段','302｜德育｜德育原则（长善救失/尊重与严格）','302｜教学｜教学原则（启发性/直观性）','302｜学习心理｜学习动机激发','302｜发展心理｜青春期自我意识与逆反','302｜心理辅导｜考试焦虑识别','302｜心理辅导｜辅导方法','面试通用｜职业认知','面试通用｜教学设计'],
+  weak: ['把"教师主导"误读成"一言堂"、把"自主学习"误读成"放手不管"','处理违纪时只顾纪律、忽视隐私权/人格尊严权/财产权','心理辅导只共情不给方法，或诊断写错（漏诊考试焦虑、误诊抑郁）','教学设计目标空泛、不写难点突破策略'],
+  recommend: ['302 第3章 中学教学：教学原则与教学过程规律','302 第6章 心理辅导：方法名称（合理情绪疗法/系统脱敏）','302 第7章 德育：德育原则与方法','302 第8章 班级管理：班集体发展阶段','301 第1章 职业理念：学生观/教师观','301 第3章 师德：师德六条'],
+};
+
+const HEART = (v) => { const n = Math.max(0, Math.min(5, Math.round((v+20)/24))); return '♥'.repeat(n) + '♡'.repeat(5-n); };
+
+const AFF_LEVELS = [
+  { min:-99, lv:'Lv.0', name:'初识' },
+  { min:1,   lv:'Lv.1', name:'同事' },
+  { min:6,   lv:'Lv.2', name:'信任' },
+  { min:14,  lv:'Lv.3', name:'默契' },
+  { min:30,  lv:'Lv.4', name:'并肩' },
+];
+const affLevel = (v) => { let r = AFF_LEVELS[0]; for (const a of AFF_LEVELS) if (v >= a.min) r = a; return r; };
+
+const PROFILES = {
+  lu:   { subject:'教务处 · 师德与法规', sign:'你做的每一件事，都有人在看，也都有规矩在管。', entries:['原则分明，却会在名单上你的名字旁悄悄画一笔。','最看重「育人」与「守法」两条底线。','对越界零容忍，对成长有耐心。'] },
+  jiang:{ subject:'心理咨询室 · 学生发展与辅导', sign:'先别急着给建议——先听见他。', entries:['共情但不纵容，总是先诊断、再开方。','擅长把「考试焦虑」这类问题，一层层拆给你看。','相信每个孩子都有可被看见的微光。'] },
+  gu:   { subject:'高三年级组 · 班级管理与德育', sign:'带班不像考试有标准答案，但也有它的章法。', entries:['十几年班主任，话不多，但句句在点上。','用「长善救失」撬动一个被叫做差生的女孩。','把「章法」与「温度」同时教给你。'] },
+  shen: { subject:'语文组 · 教学设计与搭档', sign:'以后我俩拴一根绳上——一起备课，一起紧张。', entries:['你的「入职搭档」，关键时刻顶你一把。','会在你试讲时，帮你盯着全场。','紧张时比你还紧张，但从不缺席。'] },
+};
+
+const CHAPTERS = [
+  { no:'一', title:'入职第一天', intro:'见规则的守护者、温柔的倾听者、可靠的引路人，与并肩的伙伴。', covered:14, progress:100, state:'playable', label:'第一章' },
+  { no:'二', title:'第一次月考', intro:'成绩单背后，是一个个具体的孩子。数据要怎么读，分该怎么谈？', covered:0, progress:0, state:'locked', label:'第二章' },
+  { no:'三', title:'家长会之夜', intro:'当家庭的期望与孩子的真实迎面相撞，你站在哪一边？', covered:0, progress:0, state:'locked', label:'第三章' },
+];
+
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = {
+      scale: 0.62,
+      screen: 'menu',
+      cur: 'intro',
+      typed: '',
+      typing: false,
+      overlay: null,        // null | 'feedback' | 'notebook' | 'review'
+      pendingNext: null,
+      lastFb: null,
+      tab: 'ability',
+      stats: { professionalSkill:50, studentTrust:50, classOrder:50, examScore:50, ethicsRisk:0, lawRisk:0 },
+      aff: { lu:0, jiang:0, gu:0, shen:0 },
+      covered: [],
+      profileId: 'lu',
+      prefGroup: 'text',
+      settings: { textSpeed: 70, autoSpeed: 45, bgm: 60, sfx: 80, fullscreen: true, skipUnread: false, lang: '简体中文' },
+    };
+    this._timer = null;
+  }
+
+  componentDidMount() {
+    this.fit();
+    this._onResize = () => this.fit();
+    window.addEventListener('resize', this._onResize);
+  }
+  componentWillUnmount() {
+    window.removeEventListener('resize', this._onResize);
+    clearInterval(this._timer);
+  }
+  fit() {
+    const s = Math.min(window.innerWidth / 1280, (window.innerHeight - 70) / 720) * 0.97;
+    this.setState({ scale: Math.max(0.3, Math.min(1, s)) });
+  }
+
+  startType(text) {
+    clearInterval(this._timer);
+    this.setState({ typed: '', typing: true });
+    let i = 0;
+    this._timer = setInterval(() => {
+      i += 1;
+      if (i >= text.length) {
+        clearInterval(this._timer);
+        this.setState({ typed: text, typing: false });
+      } else {
+        this.setState({ typed: text.slice(0, i) });
+      }
+    }, 24);
+  }
+
+  goTo(id) {
+    const node = SCRIPT[id];
+    this.setState({ cur: id });
+    if (node && node.type === 'line') this.startType(node.text);
+    else { clearInterval(this._timer); this.setState({ typed: '', typing: false }); }
+  }
+
+  onStart = () => {
+    this.setState({ screen: 'story', overlay: null });
+    this.goTo('intro');
+  };
+
+  onAdvance = () => {
+    const s = this.state;
+    if (s.overlay) return;
+    const node = SCRIPT[s.cur];
+    if (!node) return;
+    if (s.typing) { clearInterval(this._timer); this.setState({ typed: node.text, typing: false }); return; }
+    if (node.type === 'choice') return;
+    if (node.next) this.goTo(node.next);
+  };
+
+  clamp(name, v) {
+    if (name.startsWith('aff_')) return Math.max(-20, Math.min(100, v));
+    return Math.max(0, Math.min(100, v));
+  }
+
+  pick = (opt) => {
+    const node = SCRIPT[this.state.cur];
+    const stats = { ...this.state.stats };
+    const aff = { ...this.state.aff };
+    Object.entries(opt.effects || {}).forEach(([k, d]) => {
+      if (k.startsWith('affection_')) { const id = k.slice('affection_'.length); aff[id] = this.clamp('aff_'+id, (aff[id]||0)+d); }
+      else if (k in stats) stats[k] = this.clamp(k, stats[k]+d);
+    });
+    const t = opt.examTags;
+    const tag = t ? (t.subject+'｜'+t.module+'｜'+t.examPoint) : null;
+    const covered = this.state.covered.slice();
+    if (tag && !covered.includes(tag)) covered.push(tag);
+    this.setState({ stats, aff, covered, overlay: 'feedback', pendingNext: node.next, lastFb: { ...opt, choiceText: opt.caption } });
+  };
+
+  fbContinue = () => {
+    const nxt = this.state.pendingNext;
+    this.setState({ overlay: null });
+    if (nxt) this.goTo(nxt);
+  };
+
+  openNotebook = () => this.setState({ overlay: 'notebook' });
+  closeNotebook = () => this.setState({ overlay: null });
+  openReview = () => this.setState({ overlay: 'review' });
+  closeReview = () => this.setState({ overlay: null });
+  openPrefs = () => this.setState({ overlay: 'preferences' });
+  closePrefs = () => this.setState({ overlay: null });
+  setPref = (k, v) => this.setState(s => ({ settings: { ...s.settings, [k]: v } }));
+
+  goChapters = () => this.setState({ screen: 'chapters', overlay: null });
+  backToMenu = () => { clearInterval(this._timer); this.setState({ screen: 'menu', overlay: null, cur: 'intro', typed: '' }); };
+  enterChapter = (ch) => { if (ch.state === 'locked') return; this.onStart(); };
+
+  openProfile = (id) => this.setState({ overlay: 'profile', profileId: id });
+  closeProfile = () => this.setState({ overlay: 'notebook' });
+  cycleProfile = (dir) => { const ids = ['lu','jiang','gu','shen']; const i = ids.indexOf(this.state.profileId); this.setState({ profileId: ids[(i + dir + 4) % 4] }); };
+
+  statColor(name, v) {
+    if (RISK_STATS.includes(name)) return v >= 40 ? '#c1574e' : (v >= 15 ? '#c79a3e' : '#3f9b6e');
+    return v >= 65 ? '#3f9b6e' : (v >= 40 ? '#c79a3e' : '#c1574e');
+  }
+
+  renderVals() {
+    const s = this.state;
+    const node = SCRIPT[s.cur] || {};
+    const isMenu = s.screen === 'menu';
+    const isStory = s.screen === 'story';
+    const bg = BG[node.bg] || BG.staff_room;
+
+    // speaker
+    const ch = CHARS[node.sp];
+    const isChoice = node.type === 'choice';
+    const isNarrator = node.sp === 'narrator';
+    const spName = ch ? ch.name : (isNarrator ? '' : node.sp);
+    const spColor = ch ? ch.color : '#e6dcc4';
+
+    // dialogue text: choice prompt vs line text
+    const fullText = isChoice ? node.prompt : (node.text || '');
+    const showTyped = isChoice ? fullText : s.typed;
+
+    // choice availability: prompt fully shown & no overlay
+    const promptShown = isChoice && (s.typed === fullText || !s.typing);
+    const choiceActive = isStory && isChoice && !s.overlay;
+
+    // when entering a choice node we still want the prompt visible — show full prompt immediately
+    const dialogueText = isChoice ? fullText : s.typed;
+
+    const choiceOptions = (isChoice ? node.options : []).map((o, i) => ({
+      key: o.key, caption: o.caption, onPick: () => this.pick(o), delay: (i*0.06)+'s',
+    }));
+
+    // feedback
+    const fb = s.lastFb;
+    let fbVals = {};
+    if (fb) {
+      const q = fb.quality;
+      const map = {
+        optimal: { result:'满分思路', icon:'✓', banner:'linear-gradient(135deg,#3f9b6e,#2c7752)' },
+        suboptimal: { result:'可优化', icon:'～', banner:'linear-gradient(135deg,#c79a3e,#a37c26)' },
+        risk: { result:'失分预警', icon:'!', banner:'linear-gradient(135deg,#c1574e,#9c4039)' },
+      }[q] || {};
+      const deltas = [];
+      Object.entries(fb.effects || {}).forEach(([k, d]) => {
+        if (!d) return;
+        let label, good;
+        if (k.startsWith('affection_')) { const id = k.slice(10); label = CHARS[id] ? CHARS[id].name : id; good = d > 0; const rose = '#c8817c'; deltas.push({ label, text:(d>0?'+':'')+d, fg:rose, bg:'rgba(200,129,124,.12)', border:'rgba(200,129,124,.32)', delay:'0s' }); return; }
+        label = STAT_LABELS[k] || k;
+        if (RISK_STATS.includes(k)) good = d < 0; else good = d > 0;
+        const col = good ? '#2f8a5f' : '#c1574e';
+        const bgc = good ? 'rgba(47,138,95,.1)' : 'rgba(193,87,78,.1)';
+        const bd = good ? 'rgba(47,138,95,.3)' : 'rgba(193,87,78,.3)';
+        const arrow = d > 0 ? '▲' : '▼';
+        deltas.push({ label, text:arrow+' '+(d>0?'+':'')+d, fg:col, bg:bgc, border:bd, delay:'0s' });
+      });
+      deltas.forEach((d,i)=> d.delay = (0.05+i*0.05)+'s');
+      const sd = (fb.effects && fb.effects.examScore) || 0;
+      fbVals = {
+        fbResult: map.result, fbIcon: map.icon, fbBannerBg: map.banner,
+        fbScoreDelta: (sd>0?'+':'')+sd,
+        fbChoice: fb.choiceText,
+        fbFeedback: fb.feedback,
+        fbDeltas: deltas,
+        fbSubject: fb.examTags ? fb.examTags.subject : '',
+        fbModule: fb.examTags ? fb.examTags.module : '',
+        fbExamPoint: fb.examTags ? fb.examTags.examPoint : '',
+        fbKeywords: (fb.keywords||[]).map((k,i)=>({ text:k, delay:(0.1+i*0.05)+'s' })),
+      };
+    }
+
+    // notebook stat list
+    const statList = STAT_ORDER.map(k => {
+      const v = s.stats[k];
+      const col = this.statColor(k, v);
+      return { label: STAT_LABELS[k], value: v, pct: v+'%', color: col, barBg: 'linear-gradient(90deg,'+col+'cc,'+col+')' };
+    });
+    const affList = ['lu','jiang','gu','shen'].map(id => {
+      const c = CHARS[id]; const v = s.aff[id];
+      const pct = Math.max(0, Math.min(100, ((v+20)/120)*100));
+      return { name:c.name, initial:c.initial, role:c.role, color:c.color, value:v, pct:pct.toFixed(0)+'%', hearts:HEART(v), onOpen: () => this.openProfile(id) };
+    });
+    const codexList = s.covered.map(p => { const a = p.split('｜'); return { subject:a[0], module:a[1], point:a[2] }; });
+
+    const tabStyle = (on) => on
+      ? { bg:'rgba(216,184,119,.22)', fg:'#fffaf0', bd:'rgba(216,184,119,.5)' }
+      : { bg:'rgba(255,255,255,.04)', fg:'#bcd3ca', bd:'rgba(255,255,255,.08)' };
+    const ta = tabStyle(s.tab==='ability'), tb = tabStyle(s.tab==='bond'), tc = tabStyle(s.tab==='codex');
+
+    // progress
+    const order = ['intro','shen_intro','c1','after_c1','c2','c3','demo_end'];
+    const pi = order.indexOf(s.cur); const progressPct = pi < 0 ? 0 : Math.round((pi/(order.length-1))*100);
+
+    // chapters
+    const isChapters = s.screen === 'chapters';
+    const chapterList = CHAPTERS.map(ch => {
+      const locked = ch.state === 'locked';
+      return {
+        no: ch.no, title: ch.title, intro: ch.intro, covered: ch.covered, progressPct: ch.progress + '%',
+        locked, onEnter: () => this.enterChapter(ch),
+        statusText: locked ? '未解锁' : (ch.progress >= 100 ? '已通关' : '进行中'),
+        cardOpacity: locked ? 0.5 : 1,
+        statusBg: locked ? 'rgba(255,255,255,.08)' : (ch.progress>=100 ? 'rgba(63,155,110,.2)' : 'rgba(193,154,82,.2)'),
+        statusFg: locked ? '#9aa6a2' : (ch.progress>=100 ? '#9be3bc' : '#e7c982'),
+      };
+    });
+
+    // profile
+    const pid = s.profileId; const pc = CHARS[pid]; const pf = PROFILES[pid];
+    const plv = affLevel(s.aff[pid]);
+
+    // preferences
+    const prefBtn = (g) => ({ on: s.prefGroup === g, fg: s.prefGroup===g ? '#fffaf0' : '#bcd3ca', bg: s.prefGroup===g ? 'rgba(216,184,119,.22)' : 'rgba(255,255,255,.04)', bd: s.prefGroup===g ? 'rgba(216,184,119,.5)' : 'rgba(255,255,255,.08)' });
+    const pgDisplay = prefBtn('display'), pgSound = prefBtn('sound'), pgText = prefBtn('text'), pgSystem = prefBtn('system');
+
+    return {
+      scale: s.scale,
+      isMenu, isStory, isChapters,
+      onChapters: this.goChapters, backToMenu: this.backToMenu,
+      chapterList,
+      // preferences
+      prefActive: s.overlay === 'preferences',
+      openPrefs: this.openPrefs, closePrefs: this.closePrefs,
+      prefDisplay: s.prefGroup==='display', prefSound: s.prefGroup==='sound', prefText: s.prefGroup==='text', prefSystem: s.prefGroup==='system',
+      setGroupDisplay: () => this.setState({prefGroup:'display'}), setGroupSound: () => this.setState({prefGroup:'sound'}), setGroupText: () => this.setState({prefGroup:'text'}), setGroupSystem: () => this.setState({prefGroup:'system'}),
+      pgDisplayBg:pgDisplay.bg, pgDisplayFg:pgDisplay.fg, pgDisplayBd:pgDisplay.bd,
+      pgSoundBg:pgSound.bg, pgSoundFg:pgSound.fg, pgSoundBd:pgSound.bd,
+      pgTextBg:pgText.bg, pgTextFg:pgText.fg, pgTextBd:pgText.bd,
+      pgSystemBg:pgSystem.bg, pgSystemFg:pgSystem.fg, pgSystemBd:pgSystem.bd,
+      stTextSpeed: s.settings.textSpeed, stTextSpeedPct: s.settings.textSpeed+'%',
+      stAutoSpeed: s.settings.autoSpeed, stAutoSpeedPct: s.settings.autoSpeed+'%',
+      stBgm: s.settings.bgm, stBgmPct: s.settings.bgm+'%',
+      stSfx: s.settings.sfx, stSfxPct: s.settings.sfx+'%',
+      stFullscreen: s.settings.fullscreen, stSkipUnread: s.settings.skipUnread, stLang: s.settings.lang,
+      toggleFullscreen: () => this.setPref('fullscreen', !s.settings.fullscreen),
+      toggleSkip: () => this.setPref('skipUnread', !s.settings.skipUnread),
+      onTextSpeed: (e) => this.setPref('textSpeed', +e.target.value),
+      onAutoSpeed: (e) => this.setPref('autoSpeed', +e.target.value),
+      onBgm: (e) => this.setPref('bgm', +e.target.value),
+      onSfx: (e) => this.setPref('sfx', +e.target.value),
+      fsOnBg: s.settings.fullscreen ? '#2f6b5e' : 'rgba(34,58,52,.18)', fsKnobX: s.settings.fullscreen ? '22px' : '2px',
+      skOnBg: s.settings.skipUnread ? '#2f6b5e' : 'rgba(34,58,52,.18)', skKnobX: s.settings.skipUnread ? '22px' : '2px',
+      // profile
+      profActive: s.overlay === 'profile',
+      closeProfile: this.closeProfile, prevProfile: () => this.cycleProfile(-1), nextProfile: () => this.cycleProfile(1),
+      pName: pc.name, pInitial: pc.initial, pColor: pc.color, pDeep: pc.deep, pDeepFade: pc.deep+'00',
+      pRole: pc.role, pSubject: pf.subject, pSign: pf.sign,
+      pEntries: pf.entries.map(t=>({text:t})), pLv: plv.lv, pLvName: plv.name, pAff: s.aff[pid],
+      pAffPct: Math.max(0, Math.min(100, ((s.aff[pid]+20)/120)*100)).toFixed(0)+'%', pHearts: HEART(s.aff[pid]),
+      bgStyle: bg.css, bgLabel: bg.label,
+      hasChar: isStory && !!ch && !s.overlay ? true : (isStory && !!ch),
+      charName: ch ? ch.name : '', charInitial: ch ? ch.initial : '', charRole: ch ? ch.role : '',
+      charDeep: ch ? ch.deep : '#333', charDeepFade: ch ? ch.deep+'00' : '#33333300',
+      // dialogue
+      onAdvance: this.onAdvance, onStart: this.onStart,
+      typed: dialogueText,
+      showName: isStory && !isNarrator,
+      spName, spColor, spColorGlow: spColor+'88',
+      textSize: isChoice ? '19px' : '20px',
+      textWeight: isNarrator ? '300' : '400',
+      textStyle: isNarrator ? 'italic' : 'normal',
+      showContinue: isStory && !s.overlay && !isChoice && !s.typing,
+      progressPct,
+      // choice
+      choiceActive, choiceOptions,
+      // hud
+      openNotebook: this.openNotebook, openReview: this.openReview,
+      // feedback
+      fbActive: s.overlay === 'feedback',
+      onFbContinue: this.fbContinue,
+      ...fbVals,
+      // notebook
+      nbActive: s.overlay === 'notebook',
+      closeNotebook: this.closeNotebook,
+      isAbility: s.tab==='ability', isBond: s.tab==='bond', isCodex: s.tab==='codex',
+      tabAbility: () => this.setState({tab:'ability'}), tabBond: () => this.setState({tab:'bond'}), tabCodex: () => this.setState({tab:'codex'}),
+      tabAbilityBg: ta.bg, tabAbilityFg: ta.fg, tabAbilityBd: ta.bd,
+      tabBondBg: tb.bg, tabBondFg: tb.fg, tabBondBd: tb.bd,
+      tabCodexBg: tc.bg, tabCodexFg: tc.fg, tabCodexBd: tc.bd,
+      statList, affList, codexList, coveredCount: s.covered.length,
+      // review
+      rvActive: s.overlay === 'review',
+      closeReview: this.closeReview,
+      rvCovered: REVIEW.covered.map(t=>({text:t})), rvCoveredCount: REVIEW.covered.length,
+      rvWeak: REVIEW.weak.map(t=>({text:t})), rvRecommend: REVIEW.recommend.map(t=>({text:t})),
+    };
+  }
+}
+</script>
+</body>
+</html>

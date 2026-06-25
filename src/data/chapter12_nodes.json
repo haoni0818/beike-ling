@@ -1,0 +1,606 @@
+{
+  "chapterId": "core_ch12",
+  "title": "第十二章 · 教学的章法",
+  "summary": "我交上去的第一份完整教学设计，被程砚用红笔圈得密密麻麻。他没说一句重话，只把我叫到教研室，一页页摊开：'目标写成了你的事，不是学生的事''这节课你想教，可学生在哪一步该会、该被怎么量，全是空的。'接下来的几个下午，他从教学原则讲到教学设计，从评价类型讲到一堂好课的尺子，最后陪我把一节真课从纸面磨进了课堂，又站到教室后排，看我第一次像个真正的老师那样上完四十分钟。儒雅、严谨、话不多，可他改我的教案时，指尖在纸上停留的每一处，都让我莫名想认真给他看——这一章，我学的是教学的章法，记住的，却好像不止章法。",
+  "designNote": "本章用'一份被打回的教学设计→磨成一节真课→站上讲台'这一桩事件，串起六个中学教学考点：教学原则的辨别(启发/直观/巩固/循序渐进)→教学设计与可观察可测量的行为目标(ADDIE)→教学评价的三类型与三参照→一堂好课的标准→教学方法与组织形式(讲授/讨论/演示/实验·班级授课制)→说课要点与班级授课制优劣。主带教程砚(教研骨干·儒雅严谨)为绝对主导，心动写成克制内敛的吸引——并肩看教案、低声点拨、指尖在纸页停留、上完课后一句不多却落在心上的肯定，从不越界。学生周也/林小满仅为教学对象，绝不涉及恋爱或性化。每考点一段teach→随堂检测(knowledgeCheck)→应用→反馈的微循环。沈亦舟/陆知行可极短cameo。贯穿钩子：程砚那支只圈重点、从不替你写答案的红笔。",
+  "characters": ["cheng", "shen", "lu"],
+  "students": ["周也", "林小满"],
+  "valueFields": ["professionalSkill", "studentTrust", "classOrder", "ethicsRisk", "lawRisk", "examScore", "affection_lu", "affection_jiang", "affection_gu", "affection_cheng", "affection_shen"],
+  "note": "ethicsRisk/lawRisk 为逆向指标，越低越好。knowledgeCheck 指向 chapter12_quiz.json 的题目 id。",
+  "nodes": [
+    {
+      "id": "ch12_intro_1",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "narrator",
+      "text": "周一一早，我那份熬了两个通宵的教学设计被退了回来。\n封面上夹着一张便签，字迹清隽：'写得用功，但章法不对。教研室找我。——程'\n（用功……但章法不对。这六个字，比直接打个'不合格'还让我心里发紧。）"
+    },
+    {
+      "id": "ch12_intro_2",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "程砚",
+      "expression": "neutral",
+      "text": "（推开教研室的门，他正低头在我的教案上圈画，一支红笔在指间转了半圈，听见动静抬起头）\n来了。坐。\n（他把教案转向我，上面圈了一片，却没替我改一个字）我从不替人写答案——只圈出该想清楚的地方。你这份，毛病不在不努力，在不懂'章法'。教学是有章法的：先有原则，再有设计，再有评价，最后才谈得上'一堂好课'。"
+    },
+    {
+      "id": "ch12_intro_3",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "沈亦舟",
+      "expression": "grin",
+      "text": "（沈亦舟探头进来，挤眉弄眼）哟，程老师亲自带？啧，多少人排队都排不上。\n（他冲我比了个加油的口型，又压低声音）他这人话少，红笔狠，但凡他肯花时间圈你的教案——那是真把你当苗子了。珍惜啊。\n（程砚淡淡瞥他一眼，沈亦舟立刻举手投降，溜了。）"
+    },
+    {
+      "id": "ch12_a_teach_1",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "程砚",
+      "expression": "neutral",
+      "text": "（他指尖点在我教案的开头）你这节课，从头到尾都是你在讲、在给结论，学生没有一处需要自己动脑。\n这违了教学第一条原则——**启发性原则**：教学要调动学生主动思考，引导他们自己去探求，而不是把现成结论塞给他们。孔子说'不愤不启，不悱不发'，讲的就是这个。"
+    },
+    {
+      "id": "ch12_a_teach_2",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "程砚",
+      "expression": "neutral",
+      "text": "中学教学最常考的几条原则，你得先分清——\n**启发性原则**：调动主动性，引导独立思考，'引而不发'；\n**直观性原则**：用实物、模型、图像、语言直观，帮学生形成清晰表象（'百闻不如一见'）；\n**巩固性原则**：及时复习、防止遗忘，让知识扎下根（'温故而知新'）；\n**循序渐进原则**：按学科逻辑和学生认识顺序，由浅入深、由易到难，不能贪快越级（'不陵节而施'）。"
+    },
+    {
+      "id": "ch12_a_teach_3",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "程砚",
+      "expression": "serious",
+      "text": "辨别它们的窍门，是看'这条原则到底在解决什么问题'——\n要解决'学生被动、不思考'，是启发性；要解决'概念太抽象、学生没表象'，是直观性；要解决'学过就忘'，是巩固性；要解决'步子太大、跳着教'，是循序渐进。\n（他把红笔搁下，看我）记住问题，原则就不会混。来，看你能不能对症。"
+    },
+    {
+      "id": "ch12_a_apply",
+      "type": "choice",
+      "background": "office",
+      "speaker": "程砚",
+      "expression": "neutral",
+      "knowledgeCheck": "q_principle_01",
+      "text": "（他翻到我教案的一处，指给我看）\n你这里，一上来就把'光合作用的完整定义'抄给学生背，没有任何铺垫和追问。我要你改——首先，你这个设计违背了哪条原则？该怎么改？",
+      "examTags": {
+        "subject": "302",
+        "module": "中学教学",
+        "examPoint": "教学原则的辨别与运用（启发性原则）",
+        "questionType": "材料分析"
+      },
+      "choices": [
+        {
+          "id": "A",
+          "text": "违背启发性原则——应创设问题情境、引导学生自己观察归纳出定义，而非直接塞给现成结论。",
+          "quality": "optimal",
+          "effects": {"professionalSkill": 2, "studentTrust": 1, "classOrder": 0, "ethicsRisk": -1, "lawRisk": 0, "examScore": 3, "affection_cheng": 3},
+          "feedback": "对。直接给结论让学生背，剥夺了主动思考的机会，正违启发性原则；改法是设疑、引导探究，让学生自己得出定义，即'引而不发'。",
+          "answerKeywords": ["启发性原则", "调动主动性", "引导独立思考", "创设问题情境", "引而不发"]
+        },
+        {
+          "id": "B",
+          "text": "违背直观性原则——只要配一张光合作用的示意图就行了。",
+          "quality": "acceptable",
+          "effects": {"professionalSkill": 1, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": 1, "affection_cheng": 1},
+          "feedback": "加直观确实有帮助，但本题的根本问题是'让学生背现成结论、不思考'，对症的是启发性原则；只补图仍可能是被动接受。",
+          "answerKeywords": ["直观性（不对症）", "根本问题是缺启发"]
+        },
+        {
+          "id": "C",
+          "text": "违背巩固性原则——多让学生抄几遍、课后多默写就能记牢。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -1, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 1, "lawRisk": 0, "examScore": -2, "affection_cheng": -1},
+          "feedback": "巩固性针对的是'学过就忘'；本题问题是一开始就让学生死记不思考，抄默更强化了被动接受，方向反了。",
+          "answerKeywords": ["巩固性误用", "抄默强化被动"]
+        },
+        {
+          "id": "D",
+          "text": "没违背任何原则——把准确定义直接给学生，最高效、最不会出错。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -1, "studentTrust": -1, "classOrder": 0, "ethicsRisk": 1, "lawRisk": 0, "examScore": -2, "affection_cheng": -1},
+          "feedback": "'灌输最高效'恰恰是启发性原则要纠正的误区；教学不只是传结论，更要发展学生主动思考的能力。",
+          "answerKeywords": ["否认问题", "灌输违启发性"]
+        }
+      ]
+    },
+    {
+      "id": "ch12_a_after",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "程砚",
+      "expression": "smile",
+      "text": "（他几不可察地点了下头，红笔在那一行旁边画了个小小的对勾）\n对。原则不是用来背的，是用来'看病'的——先看清这节课病在哪，原则就是药方。\n你这份教案，病不止一处。下一刀，落在'目标'上。"
+    },
+    {
+      "id": "ch12_t1",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "narrator",
+      "text": "他翻到我写'教学目标'的那一页，停了停。\n我偷偷瞄他，他侧脸很专注，长睫垂着，红笔悬在纸上方迟迟没落——像是在斟酌怎么说才不打击我。\n（他批评起人来，比夸人还让人想做得更好。这是什么道理。）"
+    },
+    {
+      "id": "ch12_b_teach_1",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "程砚",
+      "expression": "neutral",
+      "text": "（他把我写的目标念出来）'让学生深刻理解光合作用，体会大自然的奇妙。'\n——'深刻理解''体会'，这是你的期望，不是可观察、可测量的目标。考试一来，你怎么知道他'深刻'到哪、'体会'了没？\n教学目标，得写成学生'做得出来、看得见、量得了'的行为。"
+    },
+    {
+      "id": "ch12_b_teach_2",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "程砚",
+      "expression": "neutral",
+      "text": "先把'设计'的整盘棋告诉你——经典的**ADDIE模型**：分析(Analysis)、设计(Design)、开发(Develop)、实施(Implement)、评价(Evaluate)。一节课、一门课，都按这五步循环打磨。\n而'设计'这一步的核心，是**编写行为目标**：要明确'谁、在什么条件下、做出什么可观察的行为、达到什么标准'。"
+    },
+    {
+      "id": "ch12_b_teach_3",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "程砚",
+      "expression": "serious",
+      "text": "把动词换掉，目标立刻就活了——\n把'理解'改成'能用自己的话**说出**光合作用的反应物和产物'；把'掌握'改成'能在图中**标出**光合作用发生的场所'；把'体会'改成'能**举出**两个生活中应用光合作用的例子'。\n说出、标出、举出、列举、比较、画出——这些都是**可观察可测量的行为动词**。而'理解、掌握、了解、体会'这类内部心理词，不能直接做行为目标的核心动词。"
+    },
+    {
+      "id": "ch12_b_teach_4",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "程砚",
+      "expression": "smile",
+      "text": "（他把红笔递到我手里——这是头一回，他让我自己改）\n你来。把这条'体会大自然的奇妙'，改成一条我挑不出毛病的行为目标。\n（我接笔时指尖碰到他的，他没躲，只是很轻地说）别急，想清楚再落笔。来，先做道题，热热手。"
+    },
+    {
+      "id": "ch12_b_apply",
+      "type": "choice",
+      "background": "office",
+      "speaker": "程砚",
+      "expression": "neutral",
+      "knowledgeCheck": "q_design_01",
+      "text": "（他看着我）\n下面四条'教学目标'，哪一条写法最规范——也就是最符合'可观察、可测量的行为目标'？",
+      "examTags": {
+        "subject": "302",
+        "module": "中学教学",
+        "examPoint": "教学设计与行为目标编写（可观察可测量·ADDIE）",
+        "questionType": "单项选择"
+      },
+      "choices": [
+        {
+          "id": "A",
+          "text": "学生能在显微镜下找出并说出叶片气孔的位置，正确率达80%以上。",
+          "quality": "optimal",
+          "effects": {"professionalSkill": 2, "studentTrust": 1, "classOrder": 0, "ethicsRisk": -1, "lawRisk": 0, "examScore": 3, "affection_cheng": 3},
+          "feedback": "对。'找出并说出'是可观察的行为动词，'在显微镜下'是条件，'正确率80%以上'是可测量的标准，主体是学生——完全符合行为目标的规范。",
+          "answerKeywords": ["可观察可测量", "行为动词", "条件", "标准", "学生为主体"]
+        },
+        {
+          "id": "B",
+          "text": "使学生深刻理解光合作用的本质和意义。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -1, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": -2, "affection_cheng": -1},
+          "feedback": "'使学生……'以教师为主体，且'深刻理解'是内部心理状态，不可观察、不可测量，是最典型的不规范写法。",
+          "answerKeywords": ["教师为主体", "理解不可测量"]
+        },
+        {
+          "id": "C",
+          "text": "培养学生热爱科学、探索自然的情感。",
+          "quality": "acceptable",
+          "effects": {"professionalSkill": 0, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": 0, "affection_cheng": 0},
+          "feedback": "情感态度目标方向没错，但'培养……情感'笼统、不可直接测量，作为'行为目标'仍不规范；需转化为可观察的行为表现。",
+          "answerKeywords": ["情感目标笼统", "不可直接测量"]
+        },
+        {
+          "id": "D",
+          "text": "本节课要讲清楚光合作用的全部反应过程。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -1, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": -2, "affection_cheng": -1},
+          "feedback": "这是写教师'要做什么'（讲清楚），是教学任务而非学生的学习目标，主体错位，也不可测量。",
+          "answerKeywords": ["写成教师任务", "非学生目标"]
+        }
+      ]
+    },
+    {
+      "id": "ch12_b_after",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "程砚",
+      "expression": "smile",
+      "text": "（他看了眼我刚改完的那条目标，眼底有点笑意，把红笔收回去，指尖在桌沿轻轻一叩）\n'能举出两个例子'——可数、可看、可量。这才叫目标。\n目标立住了，下一个问题就来了：你凭什么说学生'达到'了？这就要靠下一样东西——评价。"
+    },
+    {
+      "id": "ch12_t2",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "narrator",
+      "text": "他起身去给我倒了杯茶，杯壁温温的，递过来时没碰到我的手，却也只差那么一点。\n教研室很静，只有窗外操场隐约的喊操声。\n（他这样一个话不多的人，却愿意把一个下午，一笔一画地花在我的教案上。我捧着茶，心里某个角落，悄悄软了一下。）"
+    },
+    {
+      "id": "ch12_c_teach_1",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "程砚",
+      "expression": "neutral",
+      "text": "评价不是'考完打个分'这么简单。按它在教学里出现的**时机和功能**，分三种——\n**诊断性评价**：教学'前'，摸清学生原有水平和准备情况，好对症下药（比如开学摸底、课前小测）；\n**形成性评价**：教学'中'，随时了解学习进展、及时反馈调整（随堂提问、课堂练习、单元小测）；\n**总结性评价**：教学'后'（一段告一段落时），对最终成果做总评、定等第（期末考、结业考）。"
+    },
+    {
+      "id": "ch12_c_teach_2",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "程砚",
+      "expression": "neutral",
+      "text": "还有一套，是按'拿什么当尺子'分的**三种参照**——\n**相对评价**(常模参照)：拿学生在群体中的相对位置比，如排名、按比例划线（看你比别人强还是弱）；\n**绝对评价**(标准参照)：拿一个固定标准衡量，如及格线60分、达标即过（看你够不够标准，不管别人）；\n**个体内差异评价**：拿学生自己跟自己比，如这次比上次进步了多少（看你自己有没有长进）。"
+    },
+    {
+      "id": "ch12_c_teach_3",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "程砚",
+      "expression": "serious",
+      "text": "两套别串了：'诊断/形成/总结'分的是**时机功能**，'相对/绝对/个体内'分的是**参照标准**。\n窍门——看到'课前摸底/随堂调整/期末总评'，想时机三类；看到'排名比高低/对照及格线/和自己上次比'，想参照三类。\n（他把茶杯往我这边推了推）来，给你个情境，分清它属于哪一类。"
+    },
+    {
+      "id": "ch12_c_apply",
+      "type": "choice",
+      "background": "office",
+      "speaker": "程砚",
+      "expression": "neutral",
+      "knowledgeCheck": "q_evaluation_01",
+      "text": "（他放下茶杯）\n开学第一周，你想知道新接的这个班学生'起点'在哪，于是出了一份不计入成绩的小测，专门摸他们已有的基础。按功能划分，这属于哪种评价？",
+      "examTags": {
+        "subject": "302",
+        "module": "中学教学",
+        "examPoint": "教学评价类型的辨别（诊断性评价·按功能时机）",
+        "questionType": "单项选择"
+      },
+      "choices": [
+        {
+          "id": "A",
+          "text": "诊断性评价——教学前摸清学生原有水平和准备情况，为后续教学对症下药。",
+          "quality": "optimal",
+          "effects": {"professionalSkill": 2, "studentTrust": 1, "classOrder": 0, "ethicsRisk": -1, "lawRisk": 0, "examScore": 3, "affection_cheng": 3},
+          "feedback": "对。在教学'前'、为摸清起点和准备情况而做的评价是诊断性评价，开学摸底小测是其典型形式。",
+          "answerKeywords": ["诊断性评价", "教学前", "摸清原有水平", "对症教学"]
+        },
+        {
+          "id": "B",
+          "text": "形成性评价——在教学过程中随时了解进展、及时调整。",
+          "quality": "acceptable",
+          "effects": {"professionalSkill": 0, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": -1, "affection_cheng": 0},
+          "feedback": "形成性评价发生在教学'中'、为调整进程而做；本题是教学'前'摸底定起点，应为诊断性评价。这是最常见的混淆点。",
+          "answerKeywords": ["形成性属教学中", "本题为教学前"]
+        },
+        {
+          "id": "C",
+          "text": "总结性评价——对一段学习结束后的成果做总评、定等第。",
+          "quality": "acceptable",
+          "effects": {"professionalSkill": 0, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": -1, "affection_cheng": 0},
+          "feedback": "总结性评价在教学'后'、为评定最终成果（如期末考）；本题在教学'前'摸底，不是总结性评价。",
+          "answerKeywords": ["总结性属教学后", "本题为教学前"]
+        },
+        {
+          "id": "D",
+          "text": "相对评价——把学生按这次小测的成绩排名次。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -1, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": -2, "affection_cheng": -1},
+          "feedback": "相对评价是按'参照标准'划分（看相对位置），与本题问的'按功能时机'不是同一套维度；且本题目的是摸底而非排名。",
+          "answerKeywords": ["相对评价属参照维度", "混淆两套分类"]
+        }
+      ]
+    },
+    {
+      "id": "ch12_c_after",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "程砚",
+      "expression": "smile",
+      "text": "（他靠回椅背，难得地松了口气）\n原则、目标、评价——一节课的'里子'，你算是摸到门了。\n可比赛也好、考核也罢，评委手里还有一把更大的尺：到底什么样，才算'一堂好课'？这把尺，你得自己拎清。"
+    },
+    {
+      "id": "ch12_d_teach_1",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "程砚",
+      "expression": "neutral",
+      "text": "（他在纸上写下几个词）一堂好课，公认的几条标准，记牢——\n**目标明确**：这节课要让学生学会什么，清清楚楚、可检测；\n**内容正确**：知识科学无误、重难点突出；\n**方法得当**：教法学法选得贴切，启发为主、因材施教；\n**结构紧凑**：环节合理、节奏张弛有度、时间分配得当。"
+    },
+    {
+      "id": "ch12_d_teach_2",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "程砚",
+      "expression": "serious",
+      "text": "但所有标准里，最容易丢、也最要命的一条是——\n**落脚在学生主体**：好课的最终落点，不是'老师讲得多精彩'，而是'学生学得怎么样、参与得够不够、有没有真正发展'。\n（他看着我，语气重了一分）一堂老师讲得天花乱坠、学生却干坐着听的课，再流畅也不是好课。这一点，评委盯得最紧，也是你初稿最大的坑。"
+    },
+    {
+      "id": "ch12_d_teach_3",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "程砚",
+      "expression": "neutral",
+      "text": "所以判断'好不好'，别只盯老师的表演，要回到学生：他们的主体地位有没有被尊重，参与度高不高，目标达成了没有。\n（他把那页标准推给我）拿好。来——给你一个评课情境，看你能不能一眼挑出真正的硬伤。"
+    },
+    {
+      "id": "ch12_d_apply",
+      "type": "choice",
+      "background": "office",
+      "speaker": "程砚",
+      "expression": "neutral",
+      "knowledgeCheck": "q_goodlesson_01",
+      "text": "（他递来一份听课记录）\n一位老师的公开课：讲解流利、课件精美、板书漂亮，全程几乎一个人讲完，学生只在最后齐声答了一句'是'。按'一堂好课'的标准看，这节课最主要的问题是什么？",
+      "examTags": {
+        "subject": "302",
+        "module": "中学教学",
+        "examPoint": "一堂好课的标准（落脚学生主体·学生参与与发展）",
+        "questionType": "材料分析"
+      },
+      "choices": [
+        {
+          "id": "A",
+          "text": "忽视了学生的主体地位——课堂以教师讲授为中心，学生参与不足，未体现学生的真正学习与发展。",
+          "quality": "optimal",
+          "effects": {"professionalSkill": 2, "studentTrust": 1, "classOrder": 0, "ethicsRisk": -1, "lawRisk": 0, "examScore": 3, "affection_cheng": 3},
+          "feedback": "对。好课的最终落点是学生学得如何、参与与发展如何；本课讲得再流畅，学生只是被动旁观，恰恰违背了'落脚学生主体'这一核心标准。",
+          "answerKeywords": ["忽视学生主体地位", "学生参与不足", "教师中心", "未体现学生发展"]
+        },
+        {
+          "id": "B",
+          "text": "课件还不够精美、板书可以再漂亮一些。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -1, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": -2, "affection_cheng": -1},
+          "feedback": "课件板书属表层形式，材料已说明它们很好；纠结于此恰恰错过了'学生缺位'这个根本问题，是评课的典型误区。",
+          "answerKeywords": ["纠结形式", "错过主体缺位"]
+        },
+        {
+          "id": "C",
+          "text": "没什么大问题——老师讲得流利、课件漂亮，本来就是好课的标志。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -1, "studentTrust": -1, "classOrder": 0, "ethicsRisk": 1, "lawRisk": 0, "examScore": -2, "affection_cheng": -1},
+          "feedback": "把'老师表演得好'当成好课标准，正是最该纠正的观念；好课要看学生学得怎样，而非老师讲得多精彩。",
+          "answerKeywords": ["误以教师表演为标准", "忽视学生"]
+        },
+        {
+          "id": "D",
+          "text": "内容讲得太流利了，应该故意讲慢一点、留点停顿。",
+          "quality": "acceptable",
+          "effects": {"professionalSkill": 0, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": 0, "affection_cheng": 0},
+          "feedback": "节奏只是细枝末节，且方向不对；本课的根本硬伤是学生主体缺位、参与不足，而非讲得太流利。",
+          "answerKeywords": ["纠结节奏", "未抓主体问题"]
+        }
+      ]
+    },
+    {
+      "id": "ch12_d_after",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "程砚",
+      "expression": "tender",
+      "text": "（他难得地露出一点近乎温柔的神情，把那页标准在我手里按了按）\n记住这句——'你教得多好'从来不是终点，'学生学得多好'才是。\n你这份教案的魂，现在算是立起来了。剩下的，是把它放进真课堂：用什么方法教，怎么组织。"
+    },
+    {
+      "id": "ch12_t3",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "narrator",
+      "text": "不知不觉，窗外的天已经擦黑。\n他起身开了灯，暖黄的光落下来，把教研室和我们俩都笼在里头。\n（他说'这份教案的魂立起来了'的时候，我心里那点因为被退稿而起的慌，早就不见了。取而代之的，是一种很想把这节课、也把自己，认认真真做好给他看的冲动。）"
+    },
+    {
+      "id": "ch12_e_teach_1",
+      "type": "dialogue",
+      "background": "classroom",
+      "speaker": "程砚",
+      "expression": "neutral",
+      "text": "（第二天，他把我带到空教室，让我站到讲台上试讲。讲完一段，他从后排走上来）\n方法选得太单一——你整节都在'讲授'。讲授不是不好，但要看内容。\n常用的几种教学方法，得对症选——"
+    },
+    {
+      "id": "ch12_e_teach_2",
+      "type": "dialogue",
+      "background": "classroom",
+      "speaker": "程砚",
+      "expression": "neutral",
+      "text": "**讲授法**：教师系统口头传授知识，效率高、容量大，但易使学生被动，需配合启发；\n**讨论法**：学生围绕问题相互启发、各抒己见，利于调动主动性、培养思辨，适合有一定基础、有争议的内容；\n**演示法**：教师展示实物、教具、实验、多媒体，让学生通过观察获得感性认识（直观）；\n**实验法**：学生在教师指导下亲自动手操作、观察验证，重在培养实践与探究能力。"
+    },
+    {
+      "id": "ch12_e_teach_3",
+      "type": "dialogue",
+      "background": "classroom",
+      "speaker": "程砚",
+      "expression": "serious",
+      "text": "再说'组织形式'——你现在用的、也是我国中小学最基本的教学组织形式，叫**班级授课制**：把年龄、程度相近的学生编成固定班级，按课程表、固定课时、由教师面向全班集体上课。\n它的好处是效率高、能大面积培养人才、便于系统传授和班集体教育；短板是难以照顾个别差异、学生主动性和实践机会相对受限。\n（他看着站在讲台上的我）方法和组织形式，都是为'让学生学会'服务的。来，做一道。"
+    },
+    {
+      "id": "ch12_e_apply",
+      "type": "choice",
+      "background": "classroom",
+      "speaker": "程砚",
+      "expression": "neutral",
+      "knowledgeCheck": "q_method_01",
+      "text": "（他站在讲台下，抬头看我）\n你这节课的重头戏，是让学生'亲手解剖叶片、用显微镜观察气孔结构，并记录发现'。这个环节最适合采用哪种教学方法？",
+      "examTags": {
+        "subject": "302",
+        "module": "中学教学",
+        "examPoint": "教学方法的辨别与选择（实验法）",
+        "questionType": "单项选择"
+      },
+      "choices": [
+        {
+          "id": "A",
+          "text": "实验法——让学生在教师指导下亲自动手操作、观察记录，培养实践与探究能力。",
+          "quality": "optimal",
+          "effects": {"professionalSkill": 2, "studentTrust": 1, "classOrder": 0, "ethicsRisk": -1, "lawRisk": 0, "examScore": 3, "affection_cheng": 3},
+          "feedback": "对。'学生亲手解剖、操作显微镜、记录发现'强调学生动手操作与验证，正是实验法的核心特征。",
+          "answerKeywords": ["实验法", "学生亲自操作", "观察记录", "培养探究能力"]
+        },
+        {
+          "id": "B",
+          "text": "演示法——由老师在讲台上解剖、操作显微镜给学生看。",
+          "quality": "acceptable",
+          "effects": {"professionalSkill": 1, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": -1, "affection_cheng": 0},
+          "feedback": "演示法是'教师展示、学生观察'；本环节要的是学生'亲自动手'，主体在学生，应为实验法。二者最易混：动手在谁，是关键。",
+          "answerKeywords": ["演示是教师展示", "实验是学生动手"]
+        },
+        {
+          "id": "C",
+          "text": "讲授法——把叶片结构和气孔的知识系统讲给学生听。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -1, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": -2, "affection_cheng": -1},
+          "feedback": "讲授法以口头传授为主，无法落实'亲手操作、观察记录'的实践目标，与本环节的设计意图相违。",
+          "answerKeywords": ["讲授无操作", "不符实践目标"]
+        },
+        {
+          "id": "D",
+          "text": "讨论法——组织学生分组讨论叶片为什么要有气孔。",
+          "quality": "acceptable",
+          "effects": {"professionalSkill": 0, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": 0, "affection_cheng": 0},
+          "feedback": "讨论法适合有争议、需思辨的问题，可作辅助；但本环节核心是'动手做实验、观察记录'，最对症的是实验法。",
+          "answerKeywords": ["讨论重思辨", "本环节重操作"]
+        }
+      ]
+    },
+    {
+      "id": "ch12_e_after",
+      "type": "dialogue",
+      "background": "classroom",
+      "speaker": "程砚",
+      "expression": "smile",
+      "text": "（他点点头，走到讲台边，仰头看我，灯光下神情比平时柔和）\n讲授打底、实验做眼、讨论提神——一节课的方法，要像配药，君臣佐使。\n教案磨到这儿，最后就剩一件事：明天的汇报课，你不光要'上'，还要先'说'——给评委说课。这是临门一脚。"
+    },
+    {
+      "id": "ch12_t4",
+      "type": "dialogue",
+      "background": "classroom",
+      "speaker": "narrator",
+      "text": "空教室里只剩我们俩。他靠在第一排课桌边，仰头看我站在讲台上，没催我下来。\n夕光从窗格里斜进来，把他半边脸照得很亮。\n（站在这个我练了无数遍的讲台上，被他这样安静地看着——我忽然一点都不慌了。我想，明天，我也想让他，站在后排，看我上完整整一节课。）"
+    },
+    {
+      "id": "ch12_f_teach_1",
+      "type": "dialogue",
+      "background": "staffroom",
+      "speaker": "程砚",
+      "expression": "neutral",
+      "text": "（回到办公室，他给我讲最后一课）'说课'和'上课'不是一回事——上课是面对学生'教'，说课是面对同行评委，把你'为什么这么教'讲清楚、讲出道理。\n说课的要点，记牢这条主线：**说教材、说学情、说目标、说教法学法、说教学过程、说板书设计**——核心是说出每一步'背后的依据'。"
+    },
+    {
+      "id": "ch12_f_teach_2",
+      "type": "dialogue",
+      "background": "staffroom",
+      "speaker": "程砚",
+      "expression": "serious",
+      "text": "说课最忌两件事：一是把说课讲成'再上一遍课'，只复述流程、不讲理由；二是只说'怎么做'，不说'为什么这么做、依据什么原则和学情'。\n评委要听的，是你的**教学设计思路和理论依据**——你凭哪条教学原则、依据学生哪个发展阶段、为达成哪条目标，才这样设计。"
+    },
+    {
+      "id": "ch12_f_teach_3",
+      "type": "dialogue",
+      "background": "staffroom",
+      "speaker": "程砚",
+      "expression": "neutral",
+      "text": "再帮你把'班级授课制'的优劣收个尾，说课、评课、笔试都爱考——\n**优点**：能大面积、高效率地培养人才；有利于发挥教师主导、系统传授知识；有利于发挥班集体的教育作用。\n**缺点**：强调统一、难以照顾学生个别差异（因材施教受限）；学生的主动性、独立性和实践活动相对不足；不利于培养探索精神与创新能力。\n（他看我）来，最后一道。"
+    },
+    {
+      "id": "ch12_f_apply",
+      "type": "choice",
+      "background": "staffroom",
+      "speaker": "程砚",
+      "expression": "neutral",
+      "knowledgeCheck": "q_lessondemo_01",
+      "text": "（他合上我那本终于磨好的教案）\n明天就要说课了。下面关于'说课'的理解，哪一项是正确的？",
+      "examTags": {
+        "subject": "302",
+        "module": "中学教学",
+        "examPoint": "说课要点与班级授课制（说课须讲清设计依据）",
+        "questionType": "单项选择"
+      },
+      "choices": [
+        {
+          "id": "A",
+          "text": "说课是面向同行评委，重在讲清'教什么、怎么教'以及'为什么这样教'的设计思路与理论依据。",
+          "quality": "optimal",
+          "effects": {"professionalSkill": 2, "studentTrust": 1, "classOrder": 0, "ethicsRisk": -1, "lawRisk": 0, "examScore": 3, "affection_cheng": 3},
+          "feedback": "对。说课的对象是同行评委、核心在阐述设计思路与理论依据（为什么这样教），这正是它区别于'上课'的关键。",
+          "answerKeywords": ["面向同行评委", "讲清设计思路", "理论依据", "为什么这样教"]
+        },
+        {
+          "id": "B",
+          "text": "说课就是面对学生把这节课的流程再走一遍、讲一遍。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -1, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": -2, "affection_cheng": -1},
+          "feedback": "把说课等同于'再上一遍课'、对象错成学生，是最典型的误区；说课面向评委、重在讲依据而非复述流程。",
+          "answerKeywords": ["误把说课当上课", "对象错成学生"]
+        },
+        {
+          "id": "C",
+          "text": "说课只要把教学过程的每个步骤说得越细越好，不必解释依据。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -1, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": -2, "affection_cheng": -1},
+          "feedback": "只说'怎么做'、不说'为什么'，恰恰丢了说课的核心；评委最想听的是设计背后的原则、学情与目标依据。",
+          "answerKeywords": ["只说做法缺依据", "丢失说课核心"]
+        },
+        {
+          "id": "D",
+          "text": "班级授课制能完美照顾每个学生的个别差异，是它最大的优点。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -1, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": -2, "affection_cheng": -1},
+          "feedback": "说反了。'难以照顾个别差异'恰恰是班级授课制的主要缺点，而非优点；其优点在于高效率、大面积培养人才。",
+          "answerKeywords": ["照顾个别差异是缺点", "非优点"]
+        }
+      ]
+    },
+    {
+      "id": "ch12_f_after",
+      "type": "dialogue",
+      "background": "staffroom",
+      "speaker": "程砚",
+      "expression": "tender",
+      "text": "（他把那本磨得起了毛边的教案，端端正正放回我手里，指尖在封面停了一瞬）\n从'章法不对'到现在——原则、设计、评价、好课、方法、说课，你这一路，走得踏实。\n明天上台，别想着取悦谁。记住一句话：让学生学会，把道理讲清。其他的，交给你两周的功夫。"
+    },
+    {
+      "id": "ch12_end_1",
+      "type": "dialogue",
+      "background": "classroom",
+      "speaker": "narrator",
+      "text": "比赛那天，四十分钟的课，我从设疑导入到学生动手实验，从随堂反馈到当堂总结，一步没乱。\n下课铃响时，周也举着她画的叶片结构图冲我笑，林小满把记录本递上来：'老师，我观察到气孔真的会开合！'\n我抬头，看见教室最后一排——程砚靠墙站着，没鼓掌，只是极轻地，对我点了一下头。"
+    },
+    {
+      "id": "ch12_end_2",
+      "type": "dialogue",
+      "background": "corridor",
+      "speaker": "程砚",
+      "expression": "smile",
+      "text": "（评课结束，走廊上，他把那张评委打分表折好递给我，分数很高，他却没提分）\n比起这个——你今天站在台上的样子，比两周前，像个老师了。\n（他顿了顿，难得地补了半句）……教案我留了张复印件。下回，换你来给别人圈红笔。"
+    },
+    {
+      "id": "ch12_end_3",
+      "type": "dialogue",
+      "background": "corridor",
+      "speaker": "narrator",
+      "text": "我捏着那张分数很高的评分表，却一直盯着他那句'像个老师了'。\n走廊尽头的光打在他身上，他还是那副儒雅严谨、话不多的样子，可我知道，这两周，他把'教学的章法'，一笔一画地，刻进了我的教案，也刻进了我心里。\n（原来一个肯花整整两周、只圈重点从不替你写答案的人，是想让你，真正长成你自己。……这样的人，我好像，已经移不开眼了。）"
+    },
+    {
+      "id": "ch12_end",
+      "type": "summary",
+      "background": "office",
+      "speaker": "narrator",
+      "text": "（'教学的章法'这一课，落幕了。把这两周的得失，一条条记进手账吧——课磨好了，分，也得记进去。）",
+      "review": {
+        "learnedExamPoints": [
+          "302-中学教学-教学原则（启发性/直观性/巩固性/循序渐进）的辨别与运用 — 程砚",
+          "302-中学教学-教学设计与行为目标编写（ADDIE·可观察可测量）— 程砚",
+          "302-中学教学-教学评价类型（诊断性/形成性/总结性；相对/绝对/个体内差异）— 程砚",
+          "302-中学教学-一堂好课的标准（目标明确/内容正确/方法得当/落脚学生主体）— 程砚",
+          "302-中学教学-教学方法与组织形式（讲授/讨论/演示/实验·班级授课制）— 程砚",
+          "302-中学教学-说课要点与班级授课制优劣 — 程砚"
+        ],
+        "structure": "六个考点都从'一份被打回的教学设计→磨成真课→站上讲台'这一桩事件长出来：教案缺启发→教学原则；目标写成期望→教学设计与行为目标；凭什么说达标→教学评价；什么算好课→一堂好课标准；方法太单一→教学方法与班级授课制；临门说课→说课要点。走的是'剧情讲授→马上做题→应用→反馈'微循环。章末月考为冷测。",
+        "mockExam": "core_ch12_mock",
+        "recommendedReview": [
+          "答错教学原则→程砚重讲启发/直观/巩固/循序渐进的'对症'辨别",
+          "答错教学设计→程砚重讲行为目标的'可观察可测量'与ADDIE五步",
+          "答错教学评价→程砚重讲诊断/形成/总结（时机）与相对/绝对/个体内（参照）两套维度勿混",
+          "答错好课标准→程砚重讲'落脚学生主体'这条核心",
+          "答错教学方法→程砚重讲演示(教师展示)与实验(学生动手)的辨别及班级授课制特征",
+          "答错说课→程砚重讲说课须讲'为什么这样教'及班级授课制优劣"
+        ]
+      }
+    }
+  ]
+}

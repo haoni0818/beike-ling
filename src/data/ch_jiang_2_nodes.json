@@ -1,0 +1,183 @@
+{
+  "chapterId": "route_jiang_2",
+  "route": "jiang",
+  "requires": {"flagsAllTrue": ["route_locked_jiang"], "affectionGte": {"jiang": 16}},
+  "title": "江晚线 · 第二章 · 治愈者谁来治愈",
+  "summary": "江晚线第二章·误会与对立。期中前后，心理中心的来访挤满了她的每一格时间。你发现她把每个学生的心事都背回了家——失眠、忘吃饭、为一个孩子的家事红了眼眶。你劝她设界限、把自己也照顾一点，她却第一次对你竖起刺：'你也要我闭嘴、别那么往心里去吗？'两个都把别人放在自己前面的人，在'共情'与'耗竭'的边界上撞了个正着。这一章，你们借埃里克森与学习理论流派把课讲完，也把那句没人替她问的话，逼到了台面上：治愈别人的人，谁来治愈。",
+  "designNote": "百合线个人章 ch_jiang_2，黄金四拍第二、三拍'误会/对立'。第一人称旁白贯穿。冲突核心：江晚过度共情(over-identification)致职业耗竭，玩家劝其设职业界限，她抗拒、把劝告误读为'要我变冷漠/闭嘴'，争执落在'治愈者谁来治愈'。情绪写得克制、是两个成年人的体面争执，不歇斯底里、不奇观化。jiang 表情 neutral|smile|serious|worried，背景仅 counseling_room|staff_room|corridor。深挖模块为 302：埃里克森人格发展八阶段（重青春期同一性 + 成年早期亲密对孤独，呼应'界限'主题）+ 学习理论四流派（行为/认知/建构/人本）。teach→knowledgeCheck(choice+examTags，指向 ch_jiang_quiz.json)→apply→after→heart。关键选择 setFlag 记录(chose_set_boundary / chose_push_away)，affection_jiang 经 effects。学生仅作教学对象/事件源，恋爱仅成年同事。",
+  "characters": ["jiang", "shen"],
+  "students": ["周也"],
+  "valueFields": ["professionalSkill", "studentTrust", "classOrder", "ethicsRisk", "lawRisk", "examScore", "affection_jiang"],
+  "note": "ethicsRisk/lawRisk 为逆向指标，越低越好。knowledgeCheck 指向 ch_jiang_quiz.json 的题目 id。本章 route:jiang，requires 含 affectionGte.jiang>=16（信任档解锁误会/冲突 beat）。",
+  "nodes": [
+    {
+      "id": "ch_jiang_2_intro",
+      "type": "dialogue",
+      "background": "corridor",
+      "speaker": "narrator",
+      "text": "期中前两周，心理中心门口的预约表排得密密麻麻，连午休都被填满了。\n我送材料路过，看见她送走一个哭红了眼的女生，回身时扶了下门框，脸色白得像纸。桌上的午饭还封着膜，凉透了。\n（她瘦了。这半个月，她把每个孩子的心事，好像都背回了家。）"
+    },
+    {
+      "id": "ch_jiang_2_intro_2",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "worried",
+      "text": "（她揉着太阳穴，没什么力气地冲我笑了笑。）\n你来啦。坐……不好意思，我有点没睡好。\n昨晚周也家里又出事了，他半夜给我发消息，我回到三点。还有高三那个女孩，她说的那些，我一闭眼就在脑子里转……\n（她说着，眼眶不受控地红了一下，又迅速撑住。）没事。做这行的，哪能不往心里去。"
+    },
+    {
+      "id": "ch_jiang_2_intro_3",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "narrator",
+      "text": "'哪能不往心里去'——这句话扎了我一下。\n她把每个孩子的痛，都当成自己的痛在扛。可她不是无底的井，她也会枯。\n（我张了张嘴，想劝她给自己留条线。话到嘴边，又怕戳到她。但看着她那张透支的脸，我没忍住。）"
+    },
+    {
+      "id": "ch_jiang_2_conflict_1",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "serious",
+      "text": "（我刚说出'你要不要给自己设个界限，别把每个孩子都背回家'，她脸上的笑就淡了。）\n设界限？你的意思是，让我别那么往心里去，对孩子的事，听完就放下、下班就关机？\n（她声音不高，却第一次对我有了刺。）……你也要我闭嘴、要我变成一个冷冰冰按流程走的人吗？那我跟那种'听完就忘'的人，有什么区别。"
+    },
+    {
+      "id": "ch_jiang_2_conflict_2",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "narrator",
+      "text": "她的眼睛亮得有点危险，那是疲惫到极点又被戳中软肋的人才有的倔强。\n我愣住了。我想说的根本不是'闭嘴'，是'你也值得被照顾'。可话堵在这儿，越解释越像在否定她最看重的东西——她的共情，是她当老师的全部尊严。\n（原来劝一个把别人放在自己前面的人'先顾自己'，这么难。难就难在，那份'太往心里去'，恰恰是她最不肯放下的好。）"
+    },
+    {
+      "id": "ch_jiang_2_teach_1",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "neutral",
+      "text": "（沉默了一会儿，她像是想缓和气氛，又像在借专业把自己拉回理智，重新拿起周也的档案。）\n……抱歉，我口气冲了。我们说正事。\n你不是要弄懂埃里克森么。他把人的一生分八个阶段，每个阶段一对核心矛盾——周也这个年纪，是第五阶段：**自我同一性 对 角色混乱**(12-18岁)，任务是把'我是谁'整合成一个稳定的自我，顺过来就得到'忠诚'。"
+    },
+    {
+      "id": "ch_jiang_2_teach_2",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "neutral",
+      "text": "（她笔尖往下移了一格，停在第六阶段，语气慢了下来，像在说别人，又像在说自己。）\n再往后一步，成年早期：**亲密 对 孤独**。任务是建立真正的亲密关系——不是谁都给，而是敢把真实的自己，交付给一个值得的人。\n顺利度过的人，能跟人深交而不丢掉自己；过不去的，要么谁都不让靠近，要么……把自己整个搭进别人的需要里，分不清哪是别人、哪是自己。"
+    },
+    {
+      "id": "ch_jiang_2_teach_3",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "neutral",
+      "text": "（她顿住，似乎听见了自己话里的弦外之音，飞快地把话题拐回安全的学术地带。）\n……扯远了。再给你理一遍学习理论四大流派，材料题最爱混：\n**行为主义**——学习是刺激-反应联结(华生、斯金纳强化)；**认知主义**——学习是内部信息加工(布鲁纳、加涅)；\n**建构主义**——知识是学习者主动建构的(强调情境、协作)；**人本主义**——以学生为中心、关注自我实现与情感(罗杰斯、马斯洛)。"
+    },
+    {
+      "id": "ch_jiang_2_teach_4",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "smile",
+      "text": "（她讲到人本主义'无条件积极关注'时，自己先苦笑了一下。）\n罗杰斯说，要给人'无条件积极关注'——不带评判地接纳一个人本来的样子。\n（她抬眼看我，笑意里有点自嘲，也有点松动。）我天天对孩子讲这个。可我好像，从来没把这八个字，留给过我自己。"
+    },
+    {
+      "id": "ch_jiang_2_apply",
+      "type": "choice",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "serious",
+      "knowledgeCheck": "q_erikson_deep_01",
+      "text": "（她合上档案，看着我，像是把刚才的争执也一并摆上了桌。）\n那我考你一道，也替我自己问一句——一个人把所有学生的痛都当成自己的痛、不肯设任何界限，长期下去耗竭、失眠、分不清自己和对方的情绪。从埃里克森的人格发展看，这种'把自己整个搭进别人需要里'的状态，更接近哪一对矛盾没处理好？该怎么帮她，才不是'让她变冷漠'？",
+      "examTags": {
+        "subject": "302",
+        "module": "中学生发展心理",
+        "examPoint": "埃里克森人格发展阶段（亲密对孤独）的辨别 + 助人者职业界限/无条件积极关注的应用",
+        "questionType": "材料分析"
+      },
+      "choices": [
+        {
+          "id": "A",
+          "text": "更接近成年早期'亲密对孤独'没处理好——把自己整个融进他人需要、分不清你我，是亲密失衡的一种；帮她不是让她变冷漠，而是协助她设职业界限、保留对自己的'无条件积极关注'，先把自己照顾好，才有可持续的共情。",
+          "quality": "optimal",
+          "effects": {"professionalSkill": 2, "studentTrust": 2, "classOrder": 0, "ethicsRisk": -1, "lawRisk": 0, "examScore": 3, "affection_jiang": 3},
+          "feedback": "对。'融进他人需要、丧失自我边界'对应成年早期亲密对孤独的失衡；正确的帮助是建立职业界限+自我关怀，而非要求她冷漠。界限不是不共情，是让共情可持续。阶段判断与对策都到位。",
+          "setFlag": {"route_lean_jiang": 1, "chose_set_boundary": true},
+          "answerKeywords": ["亲密对孤独", "丧失自我边界", "设职业界限", "自我关怀/无条件积极关注", "可持续共情"]
+        },
+        {
+          "id": "B",
+          "text": "这是青春期'自我同一性对角色混乱'没解决，她还没想清楚'我是谁'；让她先去做职业规划就好。",
+          "quality": "suboptimal",
+          "effects": {"professionalSkill": 0, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": 0, "affection_jiang": 0},
+          "feedback": "阶段错位。'分不清自己和对方、把自己搭进他人需要'落在成年早期亲密对孤独，而非青春期的同一性整合。把成年人的界限问题误判成青少年的身份探索，方向就偏了。",
+          "answerKeywords": ["误判为同一性对角色混乱", "应为亲密对孤独"]
+        },
+        {
+          "id": "C",
+          "text": "让她以后听完学生倾诉就立刻放下、下班关机、别再回任何消息，彻底切断，最省心。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -1, "studentTrust": -2, "classOrder": 0, "ethicsRisk": 1, "lawRisk": 0, "examScore": -2, "affection_jiang": -2},
+          "feedback": "把'设界限'误读成'变冷漠/切断共情'，正是她最害怕、也最伤她的那种劝法。职业界限是有限度地投入，不是关闭情感。这恰恰会印证她'你要我闭嘴'的担心。",
+          "setFlag": {"chose_push_away": true},
+          "answerKeywords": ["界限≠冷漠", "切断共情有害", "误读为关机"]
+        },
+        {
+          "id": "D",
+          "text": "夸她有爱心、让她继续这样扛着，能扛是敬业，扛不住是她不够坚强。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -2, "studentTrust": -1, "classOrder": 0, "ethicsRisk": 2, "lawRisk": 0, "examScore": -3, "affection_jiang": -2},
+          "feedback": "把职业耗竭归因成'不够坚强'，是对助人者最常见也最有害的误解。无界限的过度共情会导致耗竭与共情疲劳，鼓励她硬扛只会加速崩溃。",
+          "answerKeywords": ["否认耗竭风险", "过度共情致共情疲劳", "归因错误"]
+        }
+      ]
+    },
+    {
+      "id": "ch_jiang_2_after",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "worried",
+      "text": "（她听完我的回答，很久没说话。窗外的光一寸寸暗下去。）\n……'界限不是不共情，是让共情可持续。'\n（她低声重复了一遍，眼眶又红了，这次没躲。）我懂这个道理，我对孩子讲过一百遍。可轮到自己，我就是……做不到把自己也当成一个值得被照顾的人。\n对不起，刚才冲你发脾气。你说的不是要我闭嘴，我知道。我只是，太久没人这样担心过我了，一时不知道该怎么接。"
+    },
+    {
+      "id": "ch_jiang_2_heart",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "narrator",
+      "text": "我走过去，没有说大道理，只是把她那杯早就凉透的茶端走，重新沏了一杯热的，放回她手里。\n'你先喝口热的。剩下的，我们慢慢来。'\n她捧着杯子，肩膀一点点塌下来，像终于卸下了背了太久的东西。\n（治愈别人的人，谁来治愈？这个问题我没有标准答案。但此刻我只想做那个，肯陪她一起找答案的人。哪怕只是先递上一杯热茶。）"
+    },
+    {
+      "id": "ch_jiang_2_end_1",
+      "type": "dialogue",
+      "background": "corridor",
+      "speaker": "江晚",
+      "expression": "smile",
+      "text": "（她送我出门，夜色已经很深。她忽然叫住我，声音轻得像怕惊扰什么。）\n……明天的预约，我退掉两个。\n给自己留一个午休，吃顿热饭。你说得对——我得先照顾好自己。\n（她顿了顿，眼神有点不好意思。）这是我第一次，为了我自己，对学生说'不'。有点难，但……有你这句话，好像没那么难了。"
+    },
+    {
+      "id": "ch_jiang_2_end_2",
+      "type": "dialogue",
+      "background": "corridor",
+      "speaker": "narrator",
+      "text": "我点头，说我陪你一起退、一起吃那顿热饭。\n她笑了，这回的笑，比这半个月里任何一次都要松快、都要真。\n（我们之间隔着一场刚平息的争执，可奇怪的是，这场争执没把我们推远，反倒把那层最客气的距离，吵掉了一点。）\n（楼下沈亦舟发来消息：'你俩没事吧？'我回他：'没事，比以前好。'）"
+    },
+    {
+      "id": "ch_jiang_2_end",
+      "type": "summary",
+      "background": "corridor",
+      "speaker": "narrator",
+      "text": "（江晚线第二章落幕。'治愈者谁来治愈'这一问还没有答案，但那层最客气的距离，今晚松动了。把今天学的、争的、心动的，一并记进手账。）",
+      "review": {
+        "learnedExamPoints": [
+          "302-发展心理-埃里克森人格发展八阶段（重青春期'自我同一性对角色混乱'与成年早期'亲密对孤独'）— 江晚",
+          "302-学习心理-学习理论四大流派（行为/认知/建构/人本，含罗杰斯无条件积极关注）— 江晚"
+        ],
+        "structure": "从'她过度共情致耗竭、抗拒设界限'的冲突切入，借埃里克森阶段与学习理论流派把'界限不是不共情'这一课'用'出来。走'剧情讲授→马上做题→应用→反馈'，并在冲突中推进关系。",
+        "mockExam": "route_jiang_mock",
+        "recommendedReview": [
+          "答错埃里克森→江晚重讲八阶段对应矛盾，重点辨青春期同一性 vs 成年早期亲密对孤独",
+          "答错学习理论→江晚重讲行为/认知/建构/人本四流派的核心主张与代表人物"
+        ]
+      }
+    }
+  ]
+}

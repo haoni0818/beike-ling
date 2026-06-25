@@ -1,0 +1,165 @@
+{
+  "chapterId": "route_gu_1",
+  "route": "gu",
+  "requires": {"flagsAllTrue": ["route_locked_gu"], "affectionGte": {"gu": 16}},
+  "title": "顾承线 · 第一章 · 并肩接一个濒散的班",
+  "summary": "锁线之后，顾承做了件全校班主任都意外的事——他把高二（4）班这个'烫手山芋'，主动要了过来，还点名要你跟他一起带。一个原班主任请长假、纪律松垮、谁都不愿接的班，被他当成两个人的战场。从'你来看我带班'到'我们一起把这个班拢起来'，顾承第一次把你当成真正的搭档，而不是要照看的新人。这一章，他用接班这件事，把科尔伯格的道德发展阶段'用'了出来——也第一次让你看见，那本越写越厚的带班笔记背后，是一个怎样把整个班扛在肩上的人。",
+  "designNote": "顾承个人线开篇【心动】。主男主=顾承（厚重年上/可靠搭档），仅 narrator 旁白心声贯穿，沈亦舟一句 cameo 调侃。表情仅 neutral|smile|serious|worried。背景仅 corridor|classroom|staff_room|meeting_room|counseling_room。深挖302德育实务：科尔伯格三水平六阶段（道德判断的发展）。teach→knowledgeCheck(q_kohlberg_gu1)→apply→after→heart 微循环。学生（林小满及（4）班学生）仅为教学对象与事件源，绝不涉及恋爱。恋爱仅成年同事。钩子：顾承带班笔记里那一页停笔的空白。affection_gu 经 choice.effects 累积；关键选择 setFlag 累计 route 倾向与德育flag。",
+  "characters": ["gu", "shen"],
+  "students": ["林小满", "(4)班学生"],
+  "valueFields": ["professionalSkill", "studentTrust", "classOrder", "ethicsRisk", "lawRisk", "examScore", "affection_lu", "affection_jiang", "affection_gu", "affection_shen"],
+  "note": "ethicsRisk/lawRisk 为逆向指标，越低越好。knowledgeCheck 指向 ch_gu_quiz.json 的题目 id。subject 302。",
+  "nodes": [
+    {
+      "id": "ch_gu_1_intro_1",
+      "type": "dialogue",
+      "background": "staff_room",
+      "speaker": "narrator",
+      "text": "锁线之后的第一个周一。\n我以为'走顾承的路'只是心里悄悄认定的一件事——直到他端着两杯热豆浆，把我堵在了办公室门口，一脸我没见过的郑重。\n（顾哥这表情……不像要请喝豆浆，倒像要拉我去打仗。）"
+    },
+    {
+      "id": "ch_gu_1_intro_2",
+      "type": "dialogue",
+      "background": "staff_room",
+      "speaker": "顾承",
+      "expression": "serious",
+      "text": "（他把豆浆塞到我手里，压低声音）\n高二（4）班，听说过吧？原班主任身体不行，请了长假。那班现在——上课像菜市场，作业三成不交，连值日生都凑不齐。\n年级主任开会问谁接，全场鸦雀无声。"
+    },
+    {
+      "id": "ch_gu_1_intro_3",
+      "type": "dialogue",
+      "background": "staff_room",
+      "speaker": "顾承",
+      "expression": "smile",
+      "text": "（他挠了挠头，笑得有点不好意思，又有点豁出去的痛快）\n我举手了。\n……而且我跟主任说，我想带一个人一起。不是当我助手，是当搭档——两个人，一人一半，把这个班拢回来。\n我说的那个人，是你。怎么样，敢不敢跟我一起跳这个坑？"
+    },
+    {
+      "id": "ch_gu_1_intro_4",
+      "type": "dialogue",
+      "background": "staff_room",
+      "speaker": "narrator",
+      "text": "他说这话的时候，眼睛亮得像高一那天落在他身上的阳光。\n'搭档'，'一人一半'——不是'你看我怎么带'，而是'我们一起带'。\n（被全校最靠谱的顾哥，当成对等的搭档……我捧着那杯烫手的豆浆，心跳比豆浆还烫。）"
+    },
+    {
+      "id": "ch_gu_1_intro_5",
+      "type": "dialogue",
+      "background": "staff_room",
+      "speaker": "沈亦舟",
+      "expression": "smile",
+      "text": "（沈亦舟从隔壁桌探出头，啧啧两声）\n好家伙，全校最难带的班 + 全校最靠谱的顾哥，这是要组CP——啊不是，组战队啊。\n（他朝我挤挤眼）我就说嘛，顾哥那本武功秘籍，从不轻易借人。你这是要被收编咯。"
+    },
+    {
+      "id": "ch_gu_1_teach_1",
+      "type": "dialogue",
+      "background": "classroom",
+      "speaker": "narrator",
+      "text": "（4）班的门一推开，喧闹像潮水一样涌出来：后排几个男生在传零食，靠窗的女生在补别科作业，讲台上的黑板还留着上节课没擦的涂鸦。\n顾承却不急，他靠在门框上，先看了整整一分钟，才低声跟我说话。"
+    },
+    {
+      "id": "ch_gu_1_teach_2",
+      "type": "dialogue",
+      "background": "classroom",
+      "speaker": "顾承",
+      "expression": "serious",
+      "text": "（他抬了抬下巴，示意我看那几个传零食的男生）\n你看那仨。一个是'只要老师不在就敢闹，老师一进门马上装乖'——这是怕被罚才守规矩，**前习俗水平**，眼里只有奖惩和自己的利害。\n中间那个递零食又怕被同伴说小气的，是图'大家都说我够意思'——这是看重别人评价、想当'好孩子'，**习俗水平**。"
+    },
+    {
+      "id": "ch_gu_1_teach_3",
+      "type": "dialogue",
+      "background": "classroom",
+      "speaker": "顾承",
+      "expression": "smile",
+      "text": "再看靠窗那个女生——别人闹她不闹，不是怕罚，是她自己认死理'上课就该好好上'，哪怕没人看着也一样。这就到了**后习俗水平**，按自己认同的原则行事。\n这套'三水平六阶段'，是科尔伯格的道德发展阶段论。带班的窍门就在这儿：你得先认出每个孩子'卡在哪一层'，才知道该跟他讲奖惩、讲面子，还是讲道理讲原则。一刀切，必翻车。"
+    },
+    {
+      "id": "ch_gu_1_teach_4",
+      "type": "dialogue",
+      "background": "classroom",
+      "speaker": "顾承",
+      "expression": "smile",
+      "text": "（他把那本厚厚的带班笔记翻开，里面密密麻麻记着每个学生的名字和一行行小字，推到我面前）\n喏，我习惯给每个娃在旁边标一句'他现在在哪一层'。带班一年，最值钱的不是这本子，是这本子背后——你真的把每个孩子当成一个会长大的人。\n（笔记的某一页停在半截，墨迹断了，像是写到一半被什么卡住。我没敢问。）来，趁热考你一道。"
+    },
+    {
+      "id": "ch_gu_1_apply",
+      "type": "choice",
+      "background": "classroom",
+      "speaker": "顾承",
+      "expression": "smile",
+      "knowledgeCheck": "q_kohlberg_gu1",
+      "text": "（我答完，他眼里有了点笑意，朝那个传零食的领头男生努努嘴）\n好。那现在——这孩子典型的'老师在就乖、老师走就闹'，按科尔伯格，他卡在哪一层？你打算用哪种'话'撬动他？",
+      "examTags": {
+        "subject": "302",
+        "module": "德育",
+        "examPoint": "科尔伯格道德发展阶段（三水平六阶段）在学生行为判断中的应用",
+        "questionType": "材料分析"
+      },
+      "choices": [
+        {
+          "id": "A",
+          "text": "判断他处于前习俗水平（看奖惩利害），先用清晰一致的规则与后果让他有边界，再逐步往'集体里的角色'引。",
+          "quality": "optimal",
+          "effects": {"professionalSkill": 2, "studentTrust": 1, "classOrder": 1, "ethicsRisk": -1, "lawRisk": 0, "examScore": 3, "affection_gu": 2},
+          "feedback": "对。'老师在就乖、走就闹'是典型前习俗水平——道德判断系于外在奖惩与自身利害。对症做法是先给稳定一致的规则边界，再向习俗水平（在意集体角色与评价）牵引，循序而非跨级说理。",
+          "answerKeywords": ["前习俗水平", "奖惩/利害定向", "稳定一致的规则", "循序引导不跨级"],
+          "setFlag": {"route_lean_gu": 1, "gu_de_mastery": true}
+        },
+        {
+          "id": "B",
+          "text": "判断他处于后习俗水平，直接跟他讲'班级是大家的、要为集体负责'的大道理。",
+          "quality": "suboptimal",
+          "effects": {"professionalSkill": 0, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": 0, "affection_gu": 0},
+          "feedback": "误判了层级。后习俗水平才会按内化的原则行事；一个'没人看着就闹'的孩子还在前习俗水平，跨级讲原则往往落空。注意区分三水平的判断依据。",
+          "answerKeywords": ["误判为后习俗", "跨级说理失效"]
+        },
+        {
+          "id": "C",
+          "text": "判断他在意'同伴怎么看'，主要靠发动同学评价、让他要面子来约束。",
+          "quality": "suboptimal",
+          "effects": {"professionalSkill": 1, "studentTrust": 0, "classOrder": 1, "ethicsRisk": 0, "lawRisk": 0, "examScore": 1, "affection_gu": 1},
+          "feedback": "这是把他当成习俗水平（在意他人评价/好孩子定向）来处理，对在意面子的孩子有效，但本题这名学生的行为更系于奖惩利害，属前习俗。识别层级要看其行为真正受什么驱动。",
+          "answerKeywords": ["误归习俗水平", "重在奖惩定向"]
+        },
+        {
+          "id": "D",
+          "text": "不必分层，谁闹就重罚谁，全班统一从严，先把场面压住。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -1, "studentTrust": -2, "classOrder": 1, "ethicsRisk": 1, "lawRisk": 0, "examScore": -2, "affection_gu": -1},
+          "feedback": "只压不引、无视道德发展层级差异，短期镇得住、长期激化对立，也违背因材施教。科尔伯格的意义正是反对'一刀切'。",
+          "answerKeywords": ["一刀切重罚", "无视发展层级"]
+        }
+      ]
+    },
+    {
+      "id": "ch_gu_1_after",
+      "type": "dialogue",
+      "background": "classroom",
+      "speaker": "顾承",
+      "expression": "smile",
+      "text": "（顾承走到那男生桌前，没发火，只是平静地把'传零食=本周值日翻倍'这条新规当众讲清楚，又单独留了一句'下周你要是能管住自己，这差事我替你免了'）\n（男生先是撇嘴，听到后半句愣了一下，居然没顶嘴。）\n（顾承回头冲我比了个'看见没'的眼神。）规则先立稳，台阶也留好。带班，是这么个软硬。"
+    },
+    {
+      "id": "ch_gu_1_heart",
+      "type": "dialogue",
+      "background": "staff_room",
+      "speaker": "narrator",
+      "text": "放学后，办公室只剩我们俩。顾承在那本笔记上，给（4）班每个学生新起了一页，写到林小满那页时，他停了笔，抬头问我'你说她现在算到哪一层了'，认真得像在商量一件天大的事。\n灯光把他低头写字的侧脸描得很暖。\n（原来'搭档'是这个意思——不是他带着我，是有件难事，他第一个想到的人是我。这一刻，我莫名地，不想这个濒散的班太快被拢好。这样我们就能，多并肩一阵子。）"
+    },
+    {
+      "id": "ch_gu_1_end",
+      "type": "summary",
+      "background": "staff_room",
+      "speaker": "narrator",
+      "text": "（顾承线第一章落幕。接下一个濒散的班是起点，也是我们成为搭档的开始。把今天的得失记进手账吧——心动归心动，分也得记牢。）",
+      "review": {
+        "learnedExamPoints": [
+          "302-德育-科尔伯格道德发展阶段（前习俗/习俗/后习俗·三水平六阶段）— 顾承"
+        ],
+        "structure": "考点从真实带班事件长出来：（4）班学生百态→认出每个孩子'卡在哪一层'→对症'用哪种话撬动'。走'剧情讲授→马上做题→应用→反馈→心动'微循环。",
+        "mockExam": "ch_gu_mock",
+        "recommendedReview": [
+          "答错→顾承重讲三水平的判断依据：前习俗看奖惩利害、习俗看他人评价与角色、后习俗按内化原则"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,213 @@
+{
+  "chapterId": "side_group_04",
+  "title": "群像 · 学生伤害事故应急会",
+  "summary": "课间十分钟，高一(7)班一个男生在走廊追逐打闹时摔伤了手腕。一场临时应急会上，两种'负责'撞了个正着：陆知行要先走依规程序——报告、留证、通知家长、厘清责任；顾承心里只装着那个吓懵了的孩子——先送医、先安抚、先别让孩子觉得'闯了大祸'。制度的稳，现场的暖。你被夹在中间，得替这场处置排个先后顺序。这一排，既是伤害事故处理的真章，也悄悄给两个人各自的故事，埋下了一道因。",
+  "designNote": "群像事件§4-2：陆×顾两位主角同席，靠'制度vs温度'两种负责观对照，克制不狗血。锚定学生伤害事故处理（《学生伤害事故处理办法》：及时救助/报告/通知家长/保护现场留证/依责处理）与班级管理。1个knowledgeCheck（q_grp_injury_01，单选，伤害事故处理首要步骤辨别）放在choice节点；1个choice（side04_pick1）微调 affection_lu/affection_gu，并 setFlag 为各自个人线 ch2 的'误会/对立'埋因（lu_ch2_seed_rule / gu_ch2_seed_warmth / injury_balance）。陆=依规铁面但非冷血、顾=护学生但非无视规则。背景仅5键。线性，结尾落在dialogue节点。",
+  "route": "npc",
+  "characters": ["lu", "gu"],
+  "students": [],
+  "valueFields": ["professionalSkill", "studentTrust", "classOrder", "ethicsRisk", "lawRisk", "examScore", "affection_lu", "affection_jiang", "affection_gu", "affection_shen", "affection_cheng"],
+  "note": "ethicsRisk/lawRisk 为逆向指标，越低越好。knowledgeCheck 指向 side_group_quiz.json。choice 的 setFlag 为 ch_lu_2 / ch_gu_2 埋'误会/对立'之因。",
+  "nodes": [
+    {
+      "id": "side04_1",
+      "type": "dialogue",
+      "background": "corridor",
+      "speaker": "narrator",
+      "text": "课间十分钟，走廊永远是全校最沸腾的地方。\n我端着水杯刚拐过楼梯口，就听见'砰'的一声闷响，紧接着是一片惊呼——\n几个男生追逐打闹，跑在最前的那个收脚不及，撞上消防栓，整个人重重摔了下去，左手腕压在身下。"
+    },
+    {
+      "id": "side04_2",
+      "type": "dialogue",
+      "background": "corridor",
+      "speaker": "周也",
+      "text": "（是高一(7)班的周也。他脸白得吓人，捂着手腕缩在墙角，声音抖）\n老师……我、我不是故意的……我没想跑那么快……是不是要赔很多钱……我爸会不会……"
+    },
+    {
+      "id": "side04_3",
+      "type": "dialogue",
+      "background": "corridor",
+      "speaker": "narrator",
+      "text": "我心一紧，蹲下去先扶住他。\n几乎同一时间，两个方向同时传来脚步声——一边是闻讯赶来的顾承，一边是教务处方向疾步而至的陆知行。\n两个人，几乎在周也面前站定。"
+    },
+    {
+      "id": "side04_4",
+      "type": "dialogue",
+      "background": "corridor",
+      "speaker": "gu",
+      "expression": "worried",
+      "text": "（顾承先一步单膝跪下，托住周也的胳膊，声音又快又稳）\n别怕别怕，顾哥在。手能动吗？哪儿最疼？\n（他抬头朝我）别让他乱动手腕，先稳住情绪——周也你看着我，没事，摔一跤而已，天塌不下来。校医室钥匙我有，咱们先去看手。"
+    },
+    {
+      "id": "side04_5",
+      "type": "dialogue",
+      "background": "corridor",
+      "speaker": "lu",
+      "expression": "serious",
+      "text": "（陆知行站定，目光在周也的手腕、撞到的消防栓、围观的学生之间快速扫过一圈，语气冷静得近乎冷）\n先确认伤情，不要随意搬动，疑似骨折更不能硬掰。\n顾承，你陪学生。其余人——保持现场，谁都别动那块地面。围观的同学,记下刚才在场的几个人。我去打电话。"
+    },
+    {
+      "id": "side04_6",
+      "type": "dialogue",
+      "background": "corridor",
+      "speaker": "gu",
+      "expression": "serious",
+      "text": "（顾承皱了下眉，护着周也站起来，语气里有一丝不易察觉的较劲）\n陆主任，孩子手腕都肿了，脸都白了——能不能先送医？'记在场的人''保现场'这些，回头补也来得及。\n他现在最怕的不是骨折，是觉得自己'闯了大祸'。这个时候，先让他安心比什么都重要。"
+    },
+    {
+      "id": "side04_7",
+      "type": "dialogue",
+      "background": "corridor",
+      "speaker": "lu",
+      "expression": "serious",
+      "text": "（陆知行看了他一眼，语气没起伏，逻辑却密不透风）\n送医和留证，不冲突，是同时做。你送，我这边同步走程序。\n顾承，正因为你是班主任，更不能只顾'安心'。今天少留一个证、漏通知一次家长，明天追责、保险、甚至诉讼，扛不住的还是这个孩子和你自己。规矩不是冷血，是替你兜底。"
+    },
+    {
+      "id": "side04_8",
+      "type": "dialogue",
+      "background": "corridor",
+      "speaker": "narrator",
+      "text": "走廊里一时只剩周也压抑的抽气声。\n一个蹲在孩子身边，眼里只有'这孩子别吓着'；一个站得笔直，脑子里已经排好了'报告—留证—通知—担责'的整张流程。\n（一个暖，一个稳。都对，都是'负责'。可在这一刻，到底该让哪个先走一步？）"
+    },
+    {
+      "id": "side04_9",
+      "type": "dialogue",
+      "background": "corridor",
+      "speaker": "lu",
+      "expression": "neutral",
+      "text": "（陆知行转向我，把手机递过来，目光沉静）\n你刚才第一个到、第一个扶人，现场你最清楚。\n那我问你——抛开我和顾承谁说得对，单论流程：学生发生伤害事故，老师在现场，**第一位**该做的是什么？答错了，这场我们就真要乱。"
+    },
+    {
+      "id": "side04_9b",
+      "type": "choice",
+      "background": "corridor",
+      "speaker": "lu",
+      "expression": "serious",
+      "knowledgeCheck": "q_grp_injury_01",
+      "text": "（顾承也停下动作看我，眼神是另一种期待。两种目光，一冷一暖，都压在我身上。\n我深吸一口气——这道，关乎一个孩子的安危，不能答歪。）",
+      "examTags": {
+        "subject": "301",
+        "module": "教育法律法规",
+        "examPoint": "学生伤害事故处理的首要步骤与处置顺序（及时救助优先 / 报告 / 通知家长 / 留证担责）",
+        "questionType": "材料分析"
+      },
+      "choices": [
+        {
+          "id": "A",
+          "text": "第一位是及时救助、保护学生安全——稳住伤情、防止二次伤害，同时启动报告与通知家长，留证依规同步进行。",
+          "quality": "optimal",
+          "effects": {"professionalSkill": 2, "studentTrust": 2, "classOrder": 1, "ethicsRisk": -1, "lawRisk": -2, "examScore": 3, "affection_lu": 1, "affection_gu": 1},
+          "feedback": "对。伤害事故处理，'及时救助、确保学生生命健康安全'永远是第一位的——这正是顾承的本能；同时不耽误报告学校、通知家长、保护现场留证——这正是陆知行的程序。救助优先、程序同步，两人其实是一回事的两面。",
+          "answerKeywords": ["及时救助", "学生安全优先", "防止二次伤害", "同步报告通知家长", "保护现场留证"]
+        },
+        {
+          "id": "B",
+          "text": "第一位是保护现场、记下在场人员、固定证据，免得日后追责时说不清。",
+          "quality": "suboptimal",
+          "effects": {"professionalSkill": 0, "studentTrust": -1, "classOrder": 0, "ethicsRisk": 1, "lawRisk": 0, "examScore": -1, "affection_lu": 0, "affection_gu": -1},
+          "feedback": "留证、保现场确实是必要环节，但绝不能排在'救人'前面。把证据放在受伤学生的生命健康之前，本末倒置——任何伤害事故处理，救助永远第一位。",
+          "answerKeywords": ["留证不能优先于救人", "顺序颠倒"]
+        },
+        {
+          "id": "C",
+          "text": "第一位是先安抚孩子情绪、让他别害怕，别的回头再说。",
+          "quality": "suboptimal",
+          "effects": {"professionalSkill": 1, "studentTrust": 1, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 1, "examScore": 0, "affection_lu": 0, "affection_gu": 1},
+          "feedback": "安抚情绪很重要、也很暖，但'别的回头再说'是漏洞：救助伤情、报告、通知家长不能拖。安抚是救助的一部分，却不能替代'及时送医+依规报告'这条完整链条。",
+          "answerKeywords": ["安抚是必要但不完整", "不能漏报告通知"]
+        },
+        {
+          "id": "D",
+          "text": "第一位是先查清谁的责任、是谁先动手追跑的，分清对错再处理。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -2, "studentTrust": -2, "classOrder": -1, "ethicsRisk": 2, "lawRisk": 2, "examScore": -3, "affection_lu": -1, "affection_gu": -2},
+          "feedback": "事故现场先追责、先问是谁的错，是最典型的处置错误：耽误救助、激化矛盾、加重受伤学生的心理负担。责任认定是后续环节，绝不能放在救人之前。",
+          "answerKeywords": ["先追责是错误", "延误救助", "激化矛盾"]
+        }
+      ]
+    },
+    {
+      "id": "side04_10",
+      "type": "dialogue",
+      "background": "corridor",
+      "speaker": "lu",
+      "expression": "neutral",
+      "text": "（陆知行听完，几不可察地点了下头，已经在拨号）\n救助优先，程序同步。——对。\n顾承，送医，我陪你去，路上我通知家长、同步报备。现场交给在场老师看住。\n（他侧头看我一眼）你跟着记一下时间线，从摔倒那一刻起，每一步几点做的，都记。这叫'留痕'，将来护的是你们。"
+    },
+    {
+      "id": "side04_11",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "gu",
+      "expression": "worried",
+      "text": "（校医室初步处理后，周也手腕只是软组织挫伤，没伤到骨头。顾承一直攥着孩子另一只好手，到这才松了口气，眼眶有点红）\n没事就好，没事就好……周也你听着，这事儿不是你一个人的错，追跑打闹的几个都有份，顾哥会处理公道。\n你爸我来谈，你别自己吓自己。天塌下来，有老师顶着。"
+    },
+    {
+      "id": "side04_12",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "lu",
+      "expression": "neutral",
+      "text": "（陆知行打完所有电话，把一份刚记好的事故经过递给顾承核对，语气缓了一丝）\n家长在路上了，情绪稳定，没追责的意思——因为我们流程齐、留痕全，话好说。\n（他顿了顿，看向顾承）你今天护孩子，是对的。我走程序，也是为护孩子。我们俩，从来不是对着干。"
+    },
+    {
+      "id": "side04_13",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "gu",
+      "expression": "smile",
+      "text": "（顾承接过那份记录，扫了一眼那密密麻麻、精确到分钟的时间线，沉默了一下，难得朝陆知行认真点头）\n……这份东西，确实是我刚才顾不上的。\n（他低声，半是对陆知行半是对自己）我总觉得，对孩子，心到了就够了。可你今天让我看见——光有心，护不全他。"
+    },
+    {
+      "id": "side04_14",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "narrator",
+      "text": "我站在一旁，看着这两个截然不同的男人，第一次在同一件事上，彼此让了半步。\n一个把'稳'让出了一点'暖'，一个把'暖'补进了一点'稳'。\n（可我心里清楚，这只是这一次。下一次更难的事来了，他们各自骨子里的那套，迟早还要撞一回。\n而我今天站的位置、说的那番话，他们俩，都记下了。）"
+    },
+    {
+      "id": "side04_pick1",
+      "type": "choice",
+      "background": "counseling_room",
+      "speaker": "narrator",
+      "expression": "neutral",
+      "text": "（事故处理完，两个人都看向我，像在等我说句收尾的话。\n这件事，让我对'怎么算一个负责的老师'，心里悄悄偏向了哪一边？）",
+      "choices": [
+        {
+          "id": "A",
+          "text": "认陆知行那套：再多的暖，也得有规程兜底，规矩才是真正护住人的东西。",
+          "quality": "optimal",
+          "effects": {"professionalSkill": 1, "lawRisk": -1, "examScore": 1, "affection_lu": 2, "affection_gu": 0},
+          "setFlag": {"lu_ch2_seed_rule": true, "route_lean_lu": 1},
+          "feedback": "你这话出口，陆知行看了你一眼，那目光里有一点极淡的认同：'……至少你懂，规矩不是用来卡人的。'他没多说，却把那份事故记录的副本，留了一份给你存档。（这份'认同'，会在他自己的故事里，变成另一道更难的考题。）",
+          "answerKeywords": []
+        },
+        {
+          "id": "B",
+          "text": "认顾承那点本能：流程可以补，可孩子当下那一眼的怕，错过就再也补不回来了。",
+          "quality": "optimal",
+          "effects": {"professionalSkill": 1, "studentTrust": 2, "examScore": 0, "affection_lu": 0, "affection_gu": 2},
+          "setFlag": {"gu_ch2_seed_warmth": true, "route_lean_gu": 1},
+          "feedback": "顾承听见，重重拍了下你的肩，眼眶又有点热：'就是这句。多少老师，把流程走全了，把孩子的心走丢了。'（你站在了'人'这边——这份偏向，会在他自己的故事里，撞上他另一道'规则与集体'的坎。）",
+          "answerKeywords": []
+        },
+        {
+          "id": "C",
+          "text": "两边都得要：救人当下要顾承的暖，事后兜底要陆知行的稳，缺一不可。",
+          "quality": "optimal",
+          "effects": {"professionalSkill": 1, "studentTrust": 1, "lawRisk": -1, "examScore": 1, "affection_lu": 1, "affection_gu": 1},
+          "setFlag": {"injury_balance": true},
+          "feedback": "你说完，两个人对视了一眼，难得地都没反驳。陆知行'嗯'了一声，顾承笑了：'这丫头，比我俩都通透。'——你没站队，却让两边都觉得，被你说到了心里。",
+          "answerKeywords": []
+        }
+      ]
+    },
+    {
+      "id": "side04_15",
+      "type": "dialogue",
+      "background": "corridor",
+      "speaker": "narrator",
+      "text": "傍晚，周也被家长接走时，手腕缠着轻便的护具，回头朝我们鞠了一躬，眼睛还红着，却不再是那种'闯了大祸'的怕了。\n顾承送他们到校门口，一路还在叮嘱；陆知行站在教学楼下，把今天那份事故记录归了档，灯光把他的影子拉得很长。\n（一桩课间意外，照出了两种'负责'。\n制度的稳，现场的暖——原来一个真正护得住学生的老师，这两样，一样都不能少。\n今天这一课，我要郑重记进手账。）"
+    }
+  ]
+}

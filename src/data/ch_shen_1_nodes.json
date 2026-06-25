@@ -1,0 +1,168 @@
+{
+  "chapterId": "route_shen_1",
+  "route": "shen",
+  "requires": {"flagsAllTrue": ["route_locked_shen"]},
+  "title": "沈亦舟线 · 第一章 · 诶你今天好像不一样",
+  "summary": "锁定沈亦舟线后的第一章。学校要选两名年轻教师去区里参加'青年教师说课·公开课'评比，组里把名额给了你和沈亦舟——这对损友搭档第一次为同一件事并肩死磕。从挑教学方法、设计教学组织形式，到一遍遍磨说课稿，那个总是嬉皮笑脸的损友，在认真讲课的灯光里忽然让你看花了眼。一句脱口而出的'诶你今天好像不一样'，让两个人之间，第一次有了说不清的安静。",
+  "designNote": "乙女向个人线 ch_shen_1，甜线·黄金四拍第一拍'心动+轻误会'，冲突烈度刻意低于四条主线，节奏轻快。第一人称旁白贯穿。shen 表情仅 neutral|smile|serious|worried（沈可多用 smile）。背景仅 staff_room|classroom|meeting_room|corridor|counseling_room 五键内。深挖模块为 302 中学教学·教学方法/教学组织形式/说课实战。teach→knowledgeCheck(带 examTags 的 choice，指向 ch_shen_quiz.json)→apply→after→heart 微循环。关键选择用 setFlag 记录倾向(route_lean_shen)，affection_shen 通过 effects 累积。学生仅作教学对象/事件源，恋爱仅成年同事。",
+  "characters": ["shen", "gu"],
+  "students": ["林小满"],
+  "valueFields": ["professionalSkill", "studentTrust", "classOrder", "ethicsRisk", "lawRisk", "examScore", "affection_shen"],
+  "note": "knowledgeCheck 指向 ch_shen_quiz.json 的题目 id。本章 route:shen，requires 已锁线。甜线轻快，冲突烈度低。",
+  "nodes": [
+    {
+      "id": "ch_shen_1_intro",
+      "type": "dialogue",
+      "background": "staff_room",
+      "speaker": "narrator",
+      "text": "周一早会刚散，组长把一张通知拍在我桌上：区里'青年教师说课·公开课'评比，学校两个名额。\n我还没看清，旁边就伸来一只手，啪地把通知抢走——\n（不用看也知道，全校只有一个人敢这么没大没小。）"
+    },
+    {
+      "id": "ch_shen_1_intro_2",
+      "type": "dialogue",
+      "background": "staff_room",
+      "speaker": "沈亦舟",
+      "expression": "smile",
+      "text": "（他举着通知晃了晃，笑得一脸欠揍。）\n看见没看见没——两个名额，组长亲自点的，你跟我。\n啧，咱俩这是要在区里一起丢人了。放心，丢人也是肩并肩丢，分摊压力嘛。\n（他把通知拍回我桌上，凑近一点。）说真的，这回我想认真打一仗。你陪我磨不磨？"
+    },
+    {
+      "id": "ch_shen_1_intro_3",
+      "type": "dialogue",
+      "background": "staff_room",
+      "speaker": "narrator",
+      "text": "'认真'两个字从沈亦舟嘴里说出来，稀奇得我愣了一下。\n这家伙平时一副吊儿郎当的样子，可入职这一年，我踩过的坑他真的全替我踩过——原来他不是不上心，只是把上心藏在了笑里。\n（行吧。磨就磨。损友的请求，哪有不答应的道理。）"
+    },
+    {
+      "id": "ch_shen_1_teach_1",
+      "type": "dialogue",
+      "background": "classroom",
+      "speaker": "沈亦舟",
+      "expression": "smile",
+      "text": "（午后空教室，他把两人的教案摊了一桌子，难得收起了笑，进入正经状态。）\n说课评比，评委第一个挑的就是'教学方法'。咱俩得先把方法选对、说清，不然台上一开口就露怯。\n我先给你捋一遍，省得你又记混——这几个最爱考、也最爱被搞混。"
+    },
+    {
+      "id": "ch_shen_1_teach_2",
+      "type": "dialogue",
+      "background": "classroom",
+      "speaker": "沈亦舟",
+      "expression": "neutral",
+      "text": "**讲授法**：老师系统地口头传授知识，效率高、最常用，但学生容易被动；\n**讨论法**：学生围绕问题相互讨论、辩论，老师只引导，重在调动主动性；\n**演示法**：老师把实物、教具或实验过程'做给学生看'，学生观察——注意，学生只看不动手；\n**实验法**：学生'亲自动手'操作、观察、得结论——这一条和演示法就差在'谁动手'。"
+    },
+    {
+      "id": "ch_shen_1_teach_3",
+      "type": "dialogue",
+      "background": "classroom",
+      "speaker": "沈亦舟",
+      "expression": "smile",
+      "text": "记区别的口诀我都给你编好了——\n'讲'是老师说、'论'是学生吵、'演'是老师做学生看、'验'是学生自己上手。\n演示和实验最爱被掉包：老师演示≠学生实验。评委要是举个例子让你判，先问一句'谁动的手'，准没错。\n（他得意地敲敲桌子。）怎么样，比你那本厚书清楚吧？"
+    },
+    {
+      "id": "ch_shen_1_apply",
+      "type": "choice",
+      "background": "classroom",
+      "speaker": "沈亦舟",
+      "expression": "smile",
+      "knowledgeCheck": "q_shen_teach_method_01",
+      "text": "（他清清嗓子，学着评委的腔调，憋着笑。）\n那——'考生你好'，我模拟评委问你一道。你这节物理课设计里写：'让学生分组用弹簧测力计亲自测量、记录拉力数据并归纳规律'。请问你主要用的是哪种教学方法？为什么？",
+      "examTags": {
+        "subject": "302",
+        "module": "中学教学",
+        "examPoint": "教学方法的辨别（实验法 vs 演示法）",
+        "questionType": "说课/面试问答"
+      },
+      "choices": [
+        {
+          "id": "A",
+          "text": "实验法。学生亲自动手用测力计操作、记录、归纳规律，'谁动手'是学生，这正是实验法区别于演示法的标志。",
+          "quality": "optimal",
+          "effects": {"professionalSkill": 2, "studentTrust": 1, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": 3, "affection_shen": 3},
+          "feedback": "对。学生亲自操作、观察、归纳=实验法；老师做给学生看才是演示法。先抓'谁动手'，答案稳。",
+          "setFlag": {"route_lean_shen": 1},
+          "answerKeywords": ["实验法", "学生亲自操作", "观察归纳", "区分演示法"]
+        },
+        {
+          "id": "B",
+          "text": "演示法。老师把测量过程展示给学生看，让学生学会怎么测。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -2, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": -3, "affection_shen": -1},
+          "feedback": "掉进了'演示≠实验'的坑。题干明写'学生分组亲自测量'，动手的是学生，应是实验法。演示法是老师做、学生只看。",
+          "answerKeywords": ["误判演示法", "学生未动手则演示", "本题学生动手"]
+        },
+        {
+          "id": "C",
+          "text": "讨论法。让学生分组围绕拉力规律相互讨论得出结论。",
+          "quality": "suboptimal",
+          "effects": {"professionalSkill": 0, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": -1, "affection_shen": 0},
+          "feedback": "讨论法的核心是'言语上的讨论辩论'，本题核心是动手测量操作，而非围绕问题讨论。方法定位偏了。",
+          "answerKeywords": ["讨论法重言语", "本题重动手", "定位偏"]
+        },
+        {
+          "id": "D",
+          "text": "讲授法。老师把弹簧测力计的原理和规律系统讲清楚就行。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -1, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": -2, "affection_shen": -1},
+          "feedback": "讲授法是老师口头系统传授，与题干'学生分组亲自测量'完全相反。说课时方法说反，评委第一印象就丢了。",
+          "answerKeywords": ["讲授法重口授", "与题干相反", "方法说反"]
+        }
+      ]
+    },
+    {
+      "id": "ch_shen_1_after",
+      "type": "dialogue",
+      "background": "classroom",
+      "speaker": "沈亦舟",
+      "expression": "smile",
+      "text": "（他啪地打了个响指。）\n漂亮！'先问谁动手'，你学会了。\n（他把教案往前推了推，认真起来。）说课光把方法说对还不够，评委还爱追一刀——'你这节课打算用什么教学组织形式'。这个咱们也得磨。"
+    },
+    {
+      "id": "ch_shen_1_teach_4",
+      "type": "dialogue",
+      "background": "classroom",
+      "speaker": "沈亦舟",
+      "expression": "neutral",
+      "text": "教学组织形式，最核心的就是**班级授课制**：把年龄、程度相近的学生编成固定班级，按课程表、固定课时由老师统一教学。\n它的优点：效率高、便于系统教学、便于发挥老师主导；\n它的短板也得背熟——'整齐划一，难照顾个别差异、学生动手实践机会少'。\n说课时主动点出短板、再说你怎么用分组、个别指导去补，评委最吃这套。"
+    },
+    {
+      "id": "ch_shen_1_heart",
+      "type": "dialogue",
+      "background": "classroom",
+      "speaker": "narrator",
+      "text": "他讲到兴头上，站起来比划，夕阳从窗户斜斜照进来，落在他认真的侧脸上。\n那个平时只会嬉皮笑脸的损友，此刻眼里有光，连声音都沉稳了几分。\n我盯着他看了好几秒，鬼使神差地脱口而出：'诶……你今天看起来，好像不太一样。'\n（话一出口我就后悔了。空气安静了一拍。他比划的手，僵在了半空。）"
+    },
+    {
+      "id": "ch_shen_1_misunderstanding",
+      "type": "dialogue",
+      "background": "classroom",
+      "speaker": "沈亦舟",
+      "expression": "neutral",
+      "text": "（他愣了半秒，随即飞快地把笑容贴回脸上，可那笑，比平时虚了点。）\n哪……哪不一样，我不一直这么帅嘛。\n（他坐回去，耳朵尖却悄悄红了，慌忙低头翻教案。）行了行了别瞎看，磨稿磨稿——咱俩搭档归搭档，你可别真把我看出花来啊。\n（最后那句，他说得又快又轻，像是在跟我说，又像是在跟他自己说。）"
+    },
+    {
+      "id": "ch_shen_1_end_1",
+      "type": "dialogue",
+      "background": "corridor",
+      "speaker": "顾承",
+      "expression": "smile",
+      "text": "（磨到天黑，顾承抱着一摞作业路过，探头看了眼我们一桌子的教案，笑了。）\n哟，你俩这是要把区里的奖杯搬回来啊。\n（他冲我使了个意味深长的眼色，又压低声音，只让我听见。）……沈亦舟这小子，我头回见他为说课熬到这么晚。他啊，认真起来，可不只是损友那点样子。"
+    },
+    {
+      "id": "ch_shen_1_end",
+      "type": "summary",
+      "background": "corridor",
+      "speaker": "narrator",
+      "text": "（沈亦舟线第一章落幕。从损友到'好像不一样'的这一天，把学到的、心动的，一并记进手账。）",
+      "review": {
+        "learnedExamPoints": [
+          "302-中学教学-教学方法的辨别（讲授法/讨论法/演示法/实验法，核心'谁动手'）— 沈亦舟",
+          "302-中学教学-教学组织形式（班级授课制的优点与短板）— 沈亦舟"
+        ],
+        "structure": "从一起备说课/公开课评比切入，借选教学方法、设计教学组织形式把考点'用'出来。走'剧情讲授→马上做题→应用→反馈'。末尾'诶你好像不一样'埋下心动与轻误会。",
+        "mockExam": "route_shen_mock",
+        "recommendedReview": [
+          "答错教学方法→沈亦舟重讲'讲论演验'四法，重点辨演示法(老师做)与实验法(学生做)",
+          "答错教学组织形式→沈亦舟重讲班级授课制优点与'难照顾个别差异'的短板"
+        ]
+      }
+    }
+  ]
+}

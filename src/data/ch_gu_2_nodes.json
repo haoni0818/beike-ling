@@ -1,0 +1,232 @@
+{
+  "chapterId": "route_gu_2",
+  "route": "gu",
+  "requires": {"flagsAllTrue": ["route_locked_gu"], "affectionGte": {"gu": 16}},
+  "title": "顾承线 · 第二章 · 严与慈",
+  "summary": "（4）班渐渐有了起色，可一场'值日生顶撞代课老师、半个班集体起哄'的课堂事件，把你和顾承第一次推到了对立面。他要按班规当场严肃处理、维护'集体规则'的底线；你看见的是那个顶撞的孩子背后的委屈，想先给'个体关怀'。'严'还是'慈'，两种都对的'负责'撞在一起，谁也说服不了谁。这一章，分歧逼着你们各自把皮亚杰的道德发展（他律→自律）和课堂管理的真功夫掏出来——也第一次让那个总把班扛在肩上的男人，对你红了脸、提了声。",
+  "designNote": "顾承个人线【误会/对立】。冲突='严（集体规则）vs 慈（个体关怀）'，两种都正当的教育立场对撞，绝不写谁对谁错的狗血。主男主=顾承，narrator 旁白心声贯穿，无第三男主登场（沈亦舟不出现以保冲突纯度）。表情仅 neutral|smile|serious|worried。背景仅 classroom|corridor|staff_room|meeting_room|counseling_room。深挖302：皮亚杰道德发展两阶段（他律道德→自律道德）+ 课堂管理（问题行为处理、纪律与秩序）。两个 teach→knowledgeCheck→apply 微循环（q_piaget_moral_gu2 / q_classroom_mgmt_gu2）。学生仅为教学对象与事件源。钩子延续：那一页停笔的笔记，本章揭开半角。affection_gu 经 effects 累积，冲突节点选'兼顾严慈'者加分、选极端者扣分。",
+  "characters": ["gu"],
+  "students": ["林小满", "周也", "(4)班学生"],
+  "valueFields": ["professionalSkill", "studentTrust", "classOrder", "ethicsRisk", "lawRisk", "examScore", "affection_lu", "affection_jiang", "affection_gu", "affection_shen"],
+  "note": "ethicsRisk/lawRisk 为逆向指标，越低越好。knowledgeCheck 指向 ch_gu_quiz.json 的题目 id。subject 302。",
+  "nodes": [
+    {
+      "id": "ch_gu_2_intro_1",
+      "type": "dialogue",
+      "background": "classroom",
+      "speaker": "narrator",
+      "text": "带（4）班的第五周，班风肉眼可见地在回暖。直到那个下午——\n顾承临时被叫去开会，一位代课老师来上自习。不知怎么的，值日生小宇和老师顶起来了，'凭什么又是我擦黑板'，越说越冲，半个班跟着起哄拍桌子。\n等顾承赶回来，教室里乱成一团，代课老师气得脸发白。"
+    },
+    {
+      "id": "ch_gu_2_intro_2",
+      "type": "dialogue",
+      "background": "classroom",
+      "speaker": "顾承",
+      "expression": "serious",
+      "text": "（他站在讲台前，脸沉得我没见过）\n顶撞老师、带头起哄——这两条，班规白纸黑字写着。今天必须当全班的面处理清楚，规矩立不住，前五周白干。\n小宇，跟我去办公室。"
+    },
+    {
+      "id": "ch_gu_2_intro_3",
+      "type": "dialogue",
+      "background": "corridor",
+      "speaker": "narrator",
+      "text": "（我追到走廊拦住他。我刚才看见的，和他看见的，不太一样——小宇眼眶是红的，他不是恃强耍横，他是憋着什么委屈。）\n顾哥，等一下。我刚才注意到，小宇这周一直被排重复值日，他爸住院了，他天天医院学校两头跑……他不是冲老师，他是撑不住了。\n能不能先听他说，再处理？"
+    },
+    {
+      "id": "ch_gu_2_intro_4",
+      "type": "dialogue",
+      "background": "corridor",
+      "speaker": "顾承",
+      "expression": "serious",
+      "text": "（他停下，眉头拧紧，声音第一次对我提了起来）\n他有委屈，我可以私下管。但'顶撞老师、带头闹'这事，今天必须有个明确的态度——不然全班都学会了：'我有理由，规矩就能破'。\n我带了一年才把规矩立起来，你这一'先关怀'，是要把它推倒？"
+    },
+    {
+      "id": "ch_gu_2_intro_5",
+      "type": "dialogue",
+      "background": "corridor",
+      "speaker": "narrator",
+      "text": "（我们俩在走廊里僵住了。\n他要的是'集体规则'的稳，我护的是'这一个孩子'的暖。\n两边都没错——这才是最难的地方。我看着他绷紧的下颌，第一次意识到：当搭档，不只有并肩，还有这种谁也说服不了谁的、滚烫的对立。）"
+    },
+    {
+      "id": "ch_gu_2_a_teach_1",
+      "type": "dialogue",
+      "background": "staff_room",
+      "speaker": "顾承",
+      "expression": "serious",
+      "text": "（冷静下来后，他没急着处理小宇，反而把我叫到办公室，摊开那本笔记）\n吵归吵，事还得一起想明白。你说先关怀、我说先立规——其实我们俩争的，是同一个东西的两个阶段。皮亚杰早就讲透了。"
+    },
+    {
+      "id": "ch_gu_2_a_teach_2",
+      "type": "dialogue",
+      "background": "staff_room",
+      "speaker": "顾承",
+      "expression": "neutral",
+      "text": "皮亚杰把儿童道德发展分两段。小一点的孩子是**他律道德**——规则是大人定的、神圣不可改，只看行为后果、不太管动机，'闯了祸就该罚'，谁定的罚谁说了算。\n大一点会进到**自律道德**——明白规则是人们约定的、可以协商，开始看动机、讲公平互惠，'他是有苦衷才犯的错'这种判断，才做得出来。"
+    },
+    {
+      "id": "ch_gu_2_a_teach_3",
+      "type": "dialogue",
+      "background": "staff_room",
+      "speaker": "顾承",
+      "expression": "smile",
+      "text": "（他敲了敲桌子，语气软下来）\n你看——我那套'破了规矩就得当众担后果'，是按他律那一套在稳全班的底线；你那套'先看他的动机和苦衷'，是想引他们往自律那一头走。\n所以咱俩谁也没全错。难就难在：怎么既守住规则、又护住动机？来，这道你来判。"
+    },
+    {
+      "id": "ch_gu_2_a_apply",
+      "type": "choice",
+      "background": "staff_room",
+      "speaker": "顾承",
+      "expression": "neutral",
+      "knowledgeCheck": "q_piaget_moral_gu2",
+      "text": "（他把笔记转向我）\n小宇班上有同学嚷'他顶撞老师就该重罚，谁让他闹得最凶'，全然不问他爸住院的事——这种'只看后果、不问动机、规则一定要执行到底'的判断，按皮亚杰处在哪个阶段？这给我们处理这件事什么提示？",
+      "examTags": {
+        "subject": "302",
+        "module": "德育",
+        "examPoint": "皮亚杰儿童道德发展（他律道德 vs 自律道德）的识别与应用",
+        "questionType": "材料分析"
+      },
+      "choices": [
+        {
+          "id": "A",
+          "text": "这是他律道德（只看后果、规则神圣不可违、不顾动机）；可借此事引导全班从'只看后果'走向'兼看动机与公平'，即往自律道德发展。",
+          "quality": "optimal",
+          "effects": {"professionalSkill": 2, "studentTrust": 2, "classOrder": 1, "ethicsRisk": -1, "lawRisk": 0, "examScore": 3, "affection_gu": 2},
+          "feedback": "对。'只看后果、不问动机、规则不可违'是他律道德的典型特征；教育契机正在于以这件事为例，引导学生学会兼看动机与公平互惠，向自律道德过渡。",
+          "answerKeywords": ["他律道德", "只看后果不问动机", "规则神圣不可违", "引向自律道德"],
+          "setFlag": {"route_lean_gu": 1, "gu_de_mastery": true}
+        },
+        {
+          "id": "B",
+          "text": "这是自律道德，因为同学们已经在主动援引班规、要求执行规则。",
+          "quality": "suboptimal",
+          "effects": {"professionalSkill": 0, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": 0, "affection_gu": 0},
+          "feedback": "判反了。'援引规则'不等于自律——自律的核心是理解规则可协商、看重动机与公平。只认死后果、不问缘由，恰恰是他律道德。",
+          "answerKeywords": ["误判为自律", "援引规则≠自律"]
+        },
+        {
+          "id": "C",
+          "text": "这无关道德阶段，只是从众起哄，按课堂违纪统一处理即可。",
+          "quality": "suboptimal",
+          "effects": {"professionalSkill": 1, "studentTrust": 0, "classOrder": 1, "ethicsRisk": 0, "lawRisk": 0, "examScore": 1, "affection_gu": 0},
+          "feedback": "起哄确有从众成分，但题干问的是'只看后果不问动机'这种判断的发展阶段——这正是他律道德的考点，回避分层会丢采分词。",
+          "answerKeywords": ["回避道德阶段", "漏他律特征"]
+        },
+        {
+          "id": "D",
+          "text": "孩子已经长大，理应都处于自律道德，谁不讲动机就是品德有问题。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -1, "studentTrust": -1, "classOrder": 0, "ethicsRisk": 1, "lawRisk": 0, "examScore": -2, "affection_gu": -1},
+          "feedback": "把'年龄到了就该自律'当结论，并给学生扣品德帽子，既误用皮亚杰（发展有过渡、非一刀切），又伤害学生，是典型雷区。",
+          "answerKeywords": ["误以年龄定阶段", "给学生贴标签"]
+        }
+      ]
+    },
+    {
+      "id": "ch_gu_2_a_after",
+      "type": "dialogue",
+      "background": "staff_room",
+      "speaker": "顾承",
+      "expression": "smile",
+      "text": "（他听完，沉默了一会儿，忽然苦笑）\n……行吧。规矩照立，但小宇那份委屈，我也不能当没看见。\n我们各退半步：当全班面，把'课堂顶撞、起哄'这个'事'讲清楚、定后果；私下，把小宇他爸的难处接住。既不让规则塌，也不让那孩子寒心。\n（他看我的眼神软了下来。）……刚才提声了，对不住。"
+    },
+    {
+      "id": "ch_gu_2_b_teach_1",
+      "type": "dialogue",
+      "background": "classroom",
+      "speaker": "顾承",
+      "expression": "neutral",
+      "text": "（重新站到（4）班讲台前，他像换了个人，不疾不徐）\n光想明白'严与慈'还不够，落到这堂乱过的课上，得有真章法。\n带班这些年，课堂管理我就攥着几条死规矩——你听好，这些都是材料题的采分眼。"
+    },
+    {
+      "id": "ch_gu_2_b_teach_2",
+      "type": "dialogue",
+      "background": "classroom",
+      "speaker": "顾承",
+      "expression": "smile",
+      "text": "第一，**预防胜于处理**——好的课堂秩序是提前用清晰规则、合理节奏'设计'出来的，不是等闹起来才救火。\n第二，**对事不对人、就事论事**，处理问题行为别上升到人格否定。\n第三，**最小干预、不打断教学**——一个眼神、走近、点名能解决的，绝不停下全班来训话，避免'按下葫芦浮起瓢'的连锁失控。\n第四，**奖惩及时、前后一致、面向全体**，规则对谁都一个样，孩子才服。"
+    },
+    {
+      "id": "ch_gu_2_b_apply",
+      "type": "choice",
+      "background": "classroom",
+      "speaker": "顾承",
+      "expression": "neutral",
+      "knowledgeCheck": "q_classroom_mgmt_gu2",
+      "text": "（他把粉笔递给我）\n下节课你来上自习。要是又冒出俩学生小声讲话、还没影响全班——按课堂管理的章法，你第一反应该怎么做？",
+      "examTags": {
+        "subject": "302",
+        "module": "班级管理",
+        "examPoint": "课堂管理与问题行为处理（预防为主、最小干预、对事不对人）",
+        "questionType": "材料分析"
+      },
+      "choices": [
+        {
+          "id": "A",
+          "text": "用走近、目光示意或顺势点名提问等最小干预先制止，不打断全班教学，事后再私下了解缘由。",
+          "quality": "optimal",
+          "effects": {"professionalSkill": 2, "studentTrust": 1, "classOrder": 2, "ethicsRisk": -1, "lawRisk": 0, "examScore": 3, "affection_gu": 2},
+          "feedback": "对。轻微问题行为遵循'最小干预、不打断教学'：以非言语信号或自然提问制止，维持秩序又不放大事态，事后个别沟通。这是课堂管理的核心采分点。",
+          "answerKeywords": ["最小干预", "非言语信号/走近示意", "不打断教学", "事后个别沟通"],
+          "setFlag": {"route_lean_gu": 1, "gu_class_mastery": true}
+        },
+        {
+          "id": "B",
+          "text": "立刻停下全班，点名两人当众严厉批评，杀鸡儆猴。",
+          "quality": "suboptimal",
+          "effects": {"professionalSkill": -1, "studentTrust": -1, "classOrder": -1, "ethicsRisk": 1, "lawRisk": 0, "examScore": -1, "affection_gu": -1},
+          "feedback": "为轻微违纪打断全班、当众羞辱，违背最小干预与对事不对人，往往'按下葫芦浮起瓢'引发更大混乱。",
+          "answerKeywords": ["过度干预", "当众羞辱", "破坏教学连续"]
+        },
+        {
+          "id": "C",
+          "text": "假装没看见，反正没影响别人，等闹大了再说。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -1, "studentTrust": 0, "classOrder": -2, "ethicsRisk": 0, "lawRisk": 0, "examScore": -2, "affection_gu": -1},
+          "feedback": "一味放任违背'预防为主、及时处理'，小问题会蔓延成大失控——这正是（4）班之前乱掉的成因。",
+          "answerKeywords": ["放任不管", "违背及时预防"]
+        },
+        {
+          "id": "D",
+          "text": "罚两人到教室外站着，眼不见为净。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -2, "studentTrust": -1, "classOrder": 0, "ethicsRisk": 2, "lawRisk": 2, "examScore": -3, "affection_gu": -2},
+          "feedback": "罚站门外剥夺受教育权、属变相体罚，既违法规又违课堂管理原则。处理违纪不能以牺牲学生上课权利为代价。",
+          "answerKeywords": ["变相体罚", "侵犯受教育权"]
+        }
+      ]
+    },
+    {
+      "id": "ch_gu_2_b_after",
+      "type": "dialogue",
+      "background": "classroom",
+      "speaker": "narrator",
+      "text": "（那堂自习我真上了。两个讲话的男生，我只是边讲边走到他们身边、顺手点了其中一个回答问题，全班没断节奏，那俩就安静了。\n下课顾承靠在门边，没说话，只是把那本笔记翻到一页，递给我看——上面是他刚补的一行：'搭档今天，把我教的，用出来了。'）"
+    },
+    {
+      "id": "ch_gu_2_heart",
+      "type": "dialogue",
+      "background": "staff_room",
+      "speaker": "narrator",
+      "text": "（深夜的办公室，气也消了，事也圆了。我帮他整理笔记，无意翻到那一页停笔的空白——下面压着一张旧照片：很多年前的顾承，站在一个班的最后，笑得很勉强。\n他不知什么时候站到我身后，声音很轻：'那是我第一年带的班。我那时候只会严，不会慈，把一个像小宇这样的孩子，逼走了。'\n他顿了顿：'所以这回，谢谢你拦我那一下。'\n那一刻我忽然懂了，他扛着的'严'，是一道结了痂的旧伤。而'慈'，是我能替他补上的那半块。心跳得发疼。）"
+    },
+    {
+      "id": "ch_gu_2_end",
+      "type": "summary",
+      "background": "staff_room",
+      "speaker": "narrator",
+      "text": "（顾承线第二章落幕。'严'与'慈'的对立，没有谁输谁赢，只有各退半步、彼此补全。把今天的得失记进手账吧——吵过一架，反而离他更近了。）",
+      "review": {
+        "learnedExamPoints": [
+          "302-德育-皮亚杰儿童道德发展（他律道德→自律道德）— 顾承",
+          "302-班级管理-课堂管理与问题行为处理（预防为主/最小干预/对事不对人）— 顾承"
+        ],
+        "structure": "考点从一桩'课堂顶撞起哄'事件长出来：分歧逼出皮亚杰道德发展辨析（A 循环）→落到课堂管理真章法（B 循环）。走'剧情讲授→马上做题→应用→反馈→心动'微循环。",
+        "mockExam": "ch_gu_mock",
+        "recommendedReview": [
+          "答错皮亚杰→顾承重讲他律（只看后果、规则不可违）vs 自律（看动机、规则可协商）",
+          "答错课堂管理→顾承重讲预防为主、最小干预、对事不对人、奖惩一致"
+        ]
+      }
+    }
+  ]
+}

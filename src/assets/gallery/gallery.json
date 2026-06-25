@@ -1,0 +1,110 @@
+[
+  {
+    "id": "lu_outfit_home",
+    "char": "lu",
+    "title": "陆知行 · 居家",
+    "tier": "T1",
+    "cost": 8,
+    "thumb": "thumbs/lu_outfit_home_thumb.png",
+    "full": "lu_outfit_home.png"
+  },
+  {
+    "id": "lu_outfit_loose",
+    "char": "lu",
+    "title": "陆知行 · 加班松领带",
+    "tier": "T2",
+    "cost": 15,
+    "thumb": "thumbs/lu_outfit_loose_thumb.png",
+    "full": "lu_outfit_loose.png"
+  },
+  {
+    "id": "lu_outfit_cg",
+    "char": "lu",
+    "title": "陆知行 · 雪夜微醺",
+    "tier": "T3",
+    "cost": 25,
+    "thumb": "thumbs/lu_outfit_cg_thumb.png",
+    "full": "lu_outfit_cg.png"
+  },
+  {
+    "id": "jiang_outfit_home",
+    "char": "jiang",
+    "title": "江晚 · 居家",
+    "tier": "T1",
+    "cost": 8,
+    "thumb": "thumbs/jiang_outfit_home_thumb.png",
+    "full": "jiang_outfit_home.png"
+  },
+  {
+    "id": "jiang_outfit_loose",
+    "char": "jiang",
+    "title": "江晚 · 浴后浴袍",
+    "tier": "T2",
+    "cost": 15,
+    "thumb": "thumbs/jiang_outfit_loose_thumb.png",
+    "full": "jiang_outfit_loose.png"
+  },
+  {
+    "id": "jiang_outfit_cg",
+    "char": "jiang",
+    "title": "江晚 · 夏夜泳池",
+    "tier": "T3",
+    "cost": 25,
+    "thumb": "thumbs/jiang_outfit_cg_thumb.png",
+    "full": "jiang_outfit_cg.png"
+  },
+  {
+    "id": "gu_outfit_home",
+    "char": "gu",
+    "title": "顾承 · 居家",
+    "tier": "T1",
+    "cost": 8,
+    "thumb": "thumbs/gu_outfit_home_thumb.png",
+    "full": "gu_outfit_home.png"
+  },
+  {
+    "id": "gu_outfit_loose",
+    "char": "gu",
+    "title": "顾承 · 球场归来",
+    "tier": "T2",
+    "cost": 15,
+    "thumb": "thumbs/gu_outfit_loose_thumb.png",
+    "full": "gu_outfit_loose.png"
+  },
+  {
+    "id": "gu_outfit_cg",
+    "char": "gu",
+    "title": "顾承 · 海边泳装",
+    "tier": "T3",
+    "cost": 25,
+    "thumb": "thumbs/gu_outfit_cg_thumb.png",
+    "full": "gu_outfit_cg.png"
+  },
+  {
+    "id": "shen_outfit_home",
+    "char": "shen",
+    "title": "沈亦舟 · 居家",
+    "tier": "T1",
+    "cost": 8,
+    "thumb": "thumbs/shen_outfit_home_thumb.png",
+    "full": "shen_outfit_home.png"
+  },
+  {
+    "id": "shen_outfit_loose",
+    "char": "shen",
+    "title": "沈亦舟 · 解扣衬衫",
+    "tier": "T2",
+    "cost": 15,
+    "thumb": "thumbs/shen_outfit_loose_thumb.png",
+    "full": "shen_outfit_loose.png"
+  },
+  {
+    "id": "shen_outfit_cg",
+    "char": "shen",
+    "title": "沈亦舟 · 居酒屋微醺",
+    "tier": "T3",
+    "cost": 25,
+    "thumb": "thumbs/shen_outfit_cg_thumb.png",
+    "full": "shen_outfit_cg.png"
+  }
+]

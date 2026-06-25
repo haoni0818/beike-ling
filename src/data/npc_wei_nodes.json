@@ -1,0 +1,325 @@
+{
+  "chapterId": "npc_wei",
+  "title": "卫蓝 · 升学率与一个不肯放弃的名字",
+  "summary": "期中数据出来那天，分管招生与升学的卫蓝主任把我叫进数据室——红黄绿三色表格里，我班均分压了线，她要的是'再提五分'。一场关于'分数 vs 全面发展'的争论就此点着：我搬出素质教育、教育观、学生观，她搬出续班率、家长用脚投票、学校要活下去。我们谁也没说服谁，却各自松动了一点——我承认理想得先落地，她承认数字背后是一个个不能被淘汰的名字。从素质教育的内涵，到'教师该把自己定位成什么人'，再到'把学生当发展中、独特的人'，卫蓝用她那套最冷的现实，逼我把最暖的理念想透了。这一页，我记进手账：理想与现实，不是敌人，是同一堂课的两只手。",
+  "designNote": "NPC日常事件侧章（enrichment·非主线·不推恋爱）：以务实派卫蓝（盯招生数据/升学率）与理想化教育观的张力为主线，串起3个职业理念考点。微循环1=kp_quality_edu（素质教育内涵·区别应试），微循环2=kp_teacher_view（教师观/职业理念，因 kp_edu_view 偏素质教育与kp1重叠故选教师观以避免撞点），微循环3=kp_student_view（学生观:全面发展/独特性）。每个考点 teach→随堂题(knowledgeCheck)→应用。卫蓝=现实压力源、非反派，立场真实；'我'站理想、TA站现实，结尾各有领悟。学生小满仅为教学对象。线性，末尾 summary。",
+  "characters": ["wei"],
+  "students": ["小满"],
+  "valueFields": ["professionalSkill", "studentTrust", "classOrder", "ethicsRisk", "lawRisk", "examScore", "affection_lu", "affection_jiang", "affection_gu", "affection_cheng", "affection_shen"],
+  "note": "enrichment 侧章，非主线，不推恋爱；学生小满仅为教学对象。ethicsRisk/lawRisk 为逆向指标，越低越好。knowledgeCheck 指向 npc_wei_quiz.json 的题目 id（q_wei_*）。卫蓝(wei)为现实压力源、非反派，无好感字段（不推恋爱）。",
+  "nodes": [
+    {
+      "id": "wei_1",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "narrator",
+      "text": "期中数据出来那天下午，走廊广播喊了我的名字：'初二三班班主任，请到三楼数据室。'\n数据室我去过一次，冷气开得足，墙上一整面屏幕，全是红黄绿三色的表格。坐在屏幕前的，是分管招生与升学的卫蓝主任。\n（被叫到数据室，没一次是来表扬的。我深吸一口气，推门。）"
+    },
+    {
+      "id": "wei_2",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "wei",
+      "expression": "neutral",
+      "text": "（卫蓝没回头，手指在屏幕上点了点，把我班那一行调成高亮——一片刺眼的黄）\n坐。看这行。你班期中均分，压着区里的合格线过，年级排倒数第二。\n我不绕弯子：下次月考，我要你班均分再提五分。提得上去，皆大欢喜；提不上去，续班宣传册上就没你班的位置。"
+    },
+    {
+      "id": "wei_3",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "narrator",
+      "text": "（再提五分。她说得像在调一个仪表盘的数值。）\n我看着那片黄，第一反应不是分数，是脸——是小满上周交上来的那幅画，是后排几个孩子在运动会上喊哑的嗓子。\n（这些，那张表上一个格子都没有。）"
+    },
+    {
+      "id": "wei_4",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "wei",
+      "expression": "serious",
+      "text": "（她终于转过椅子，正眼看我，目光是数据训练出来的那种锐利）\n我知道你想说什么。你们这些新来的，张口就是'全面发展''兴趣''天性'。\n可家长拿到的，只有一张分数条。分数条难看，他们就把孩子转走。学生流失，下学期就有班被砍、有老师没课上。\n所以别跟我谈虚的——先把分提上来，行不行？"
+    },
+    {
+      "id": "wei_5",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "narrator",
+      "text": "（我握了握拳。她那套不是没有道理，可有个东西在我心里硬顶着，不肯低头。）\n卫主任，分数我认账，我班的均分我负责。\n但您说的'虚的'那部分，恰恰是我们这行的根。我能不能……先把我为什么不肯只盯分数，跟您说清楚？"
+    },
+    {
+      "id": "wei_6",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "wei",
+      "expression": "neutral",
+      "text": "（她挑了下眉，往椅背一靠，难得地给了我时间）\n说。我听理论，但我用结果检验理论。\n你要是能让我相信'你那套不光好听、还真能让学校活下去'，我就让你按你的方式带一个月。说不动我，下个月就按我的来。"
+    },
+    {
+      "id": "wei_7",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "narrator",
+      "text": "（一个月。她给了我一个回合。）\n我把手账翻开，深吸一口气——这是我入职以来，第一次要为自己信的东西辩护，对手还是全校最冷静的人。\n（第一件事，得先把'我到底在追求什么样的教育'说明白。）"
+    },
+    {
+      "id": "wei_8",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "narrator",
+      "text": "我在白板上写下两个词：应试，素质。\n（卫主任，您要的'再提五分'，本质是把教育压缩成一件事——选拔。可素质教育从来不是这个目标。）\n素质教育，是以提高国民素质为根本宗旨，面向全体学生、促进学生全面发展、促进个性发展，以培养创新精神和实践能力为重点。"
+    },
+    {
+      "id": "wei_9",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "wei",
+      "expression": "neutral",
+      "text": "（她拿过白板笔，在'面向全体'底下画了道线，语气是审稿的口吻）\n停。'面向全体'——这词我熟，宣传册年年印。可落到实处，不就是抓尖子、保住排名？\n你倒说说：素质教育和应试教育，到底分在哪一刀上？别背书，给我四个能拿来检验的标准。"
+    },
+    {
+      "id": "wei_10",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "narrator",
+      "text": "（这正是我要她明白的。我把四个判据一个个落到白板上。）\n判断一件事是不是素质教育，看四点：是否面向全体（不放弃任何一个，反对只抓尖子、淘汰差生）；是否全面发展（德智体美劳，反对片面追分）；是否重个性（尊重差异、因材施教）；是否育创新（培养独立思考与实践，反对死记硬背）。\n只盯分数与升学率，就是您说的'再提五分'——那一刀，落在'应试'这边。"
+    },
+    {
+      "id": "wei_11",
+      "type": "choice",
+      "background": "office",
+      "speaker": "wei",
+      "expression": "serious",
+      "knowledgeCheck": "q_wei_quality_01",
+      "text": "（卫蓝忽然把屏幕切到一份隔壁班的'提分方案'，推到我面前，像随手出了道考题）\n口号我会背了。那你用你那四个标准，给我判一判——这份方案，哪个班主任的做法，最不像素质教育？答对了，我才信你不是只会喊。",
+      "examTags": {
+        "subject": "301",
+        "module": "职业理念",
+        "examPoint": "素质教育内涵的辨别（区别应试教育倾向）",
+        "questionType": "材料分析"
+      },
+      "choices": [
+        {
+          "id": "A",
+          "text": "为冲均分，按成绩把学生分成快慢两班，差生集中到'慢班'少占资源，主要保尖子提排名。",
+          "quality": "optimal",
+          "effects": {"professionalSkill": 2, "studentTrust": 2, "classOrder": 1, "ethicsRisk": -1, "lawRisk": 0, "examScore": 3},
+          "feedback": "对。这恰恰违背素质教育的'面向全体'——它只抓尖子、变相淘汰差生，把学生当成提排名的工具，是典型的应试选拔逻辑。素质教育要求不放弃任何一个学生。",
+          "answerKeywords": ["违背面向全体", "只抓尖子", "淘汰差生", "应试选拔"]
+        },
+        {
+          "id": "B",
+          "text": "课上多设小组探究，让学生自己提问、动手做实验，哪怕进度慢一点。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -1, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": -2},
+          "feedback": "这恰恰是素质教育所提倡的——培养创新精神与实践能力。把它判成'不像素质教育'，正是误把'热闹好看'当标准、把'多讲多练'当唯一正道，方向反了。",
+          "answerKeywords": ["培养创新与实践", "符合素质教育", "判断方向反了"]
+        },
+        {
+          "id": "C",
+          "text": "针对不同学生的薄弱点，因材施教布置分层但都够得着的练习。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -1, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": -2},
+          "feedback": "因材施教、尊重个体差异正是素质教育'重个性'的体现。注意分清：分层练习帮每个人进步≠按成绩分快慢班放弃差生，前者面向全体，后者才是应试淘汰。",
+          "answerKeywords": ["因材施教", "重个性", "面向全体", "非淘汰"]
+        },
+        {
+          "id": "D",
+          "text": "组织一次结合学科的社会实践，让学生把知识用到真实问题上。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -1, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": -2},
+          "feedback": "实践活动正对应素质教育'培养实践能力、着眼全面发展'。把它当成'不务正业'，正是只盯分数的应试惯性，要警惕。",
+          "answerKeywords": ["实践能力", "全面发展", "符合素质教育"]
+        }
+      ]
+    },
+    {
+      "id": "wei_12",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "wei",
+      "expression": "neutral",
+      "text": "（卫蓝盯着我点出的那个选项，沉默了几秒，把屏幕关了）\n……分快慢班那条，确实是我们前年踩过的坑——慢班的孩子第二年走了一半。\n算你说对了一刀。素质教育不等于不要分数，是不能'只'要分数、不能为分数把人筛掉。这点我认。\n（她顿了顿）但理念归理念，你这个'老师'，到底打算把自己摆在什么位置上？"
+    },
+    {
+      "id": "wei_13",
+      "type": "dialogue",
+      "background": "staffroom",
+      "speaker": "narrator",
+      "text": "（她这一问，把战场从'什么是好教育'，推到了'什么是好老师'。\n我们换到了空一点的办公室。窗外是放学的操场，吵吵嚷嚷的，全是活人。）\n卫主任，您把老师默认成了一台'提分机'——下达指标，输出分数。可新课程里，教师的定位不是这个。"
+    },
+    {
+      "id": "wei_14",
+      "type": "dialogue",
+      "background": "staffroom",
+      "speaker": "wei",
+      "expression": "neutral",
+      "text": "（她给自己倒了杯水，示意我继续，语气里多了点真正的好奇）\n那是什么？我手底下的老师，述职报告第一行写的都是'本学期均分'。\n你要是有别的定位，我洗耳恭听——但记住，得是能在这所学校里站得住的定位，不是教科书里的圣人。"
+    },
+    {
+      "id": "wei_15",
+      "type": "dialogue",
+      "background": "staffroom",
+      "speaker": "narrator",
+      "text": "（这正是教师观的核心。我一条条说给她听。）\n现代教师观，至少四重身份：我是学生学习的促进者，引导他们主动建构，而不是单向灌；我是课程的建设者与开发者，不只照本宣科；我是教育教学的研究者，遇到问题会去琢磨、去改进；最要紧的——课堂上，教师主导和学生主体要统一。\n（我不是提分机。我是那个站在学生身边、帮他们学会自己学的人。）"
+    },
+    {
+      "id": "wei_16",
+      "type": "choice",
+      "background": "staffroom",
+      "speaker": "wei",
+      "expression": "serious",
+      "knowledgeCheck": "q_wei_teacher_01",
+      "text": "（卫蓝把水杯一放，又出了一道题，像是要看我说的'促进者'到底是不是真懂）\n好。'促进者'听着漂亮。那我问你：下面哪一种课堂，才是真把教师当成'学生学习的促进者'？别选最热闹的，选最对的。",
+      "examTags": {
+        "subject": "301",
+        "module": "职业理念",
+        "examPoint": "教师观（教师作为学生学习的促进者）",
+        "questionType": "材料分析"
+      },
+      "choices": [
+        {
+          "id": "A",
+          "text": "教师设计好问题情境，引导学生自己探究、讨论、得出结论，并在关键处点拨。",
+          "quality": "optimal",
+          "effects": {"professionalSkill": 2, "studentTrust": 2, "classOrder": 1, "ethicsRisk": 0, "lawRisk": 0, "examScore": 3},
+          "feedback": "对。促进者的核心是引导学生主动建构知识、由学生唱主角，教师在关键处搭桥点拨——这正是'教师主导与学生主体相统一'。",
+          "answerKeywords": ["促进者", "引导主动建构", "学生主体", "教师主导相统一"]
+        },
+        {
+          "id": "B",
+          "text": "教师从头讲到尾、把每个知识点都嚼碎喂到位，学生认真记笔记不走神。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -1, "studentTrust": -1, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": -2},
+          "feedback": "这是'传授者/灌输者'的旧角色，不是促进者。讲得再清楚，学生始终是被动接收，没有主动建构，恰恰是促进者要超越的模式。",
+          "answerKeywords": ["单向灌输", "学生被动", "非促进者"]
+        },
+        {
+          "id": "C",
+          "text": "教师完全放手，让学生爱学什么学什么、爱怎么学怎么学，自己不干预。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -1, "studentTrust": -1, "classOrder": -1, "ethicsRisk": 0, "lawRisk": 0, "examScore": -2},
+          "feedback": "这是放任，不是促进。促进者强调'教师主导与学生主体相统一'——既不灌输，也不撒手；放任会让主导缺位，违背教师的引导责任。",
+          "answerKeywords": ["放任非促进", "主导缺位", "需主导与主体统一"]
+        },
+        {
+          "id": "D",
+          "text": "教师严格按教材顺序讲、按标准答案改，确保不出一点差错。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -1, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": -2},
+          "feedback": "照本宣科、唯标准答案，正是教师观要超越的'教书匠'形象。现代教师还应是课程的建设者与开发者、教育教学的研究者，而非教材的搬运工。",
+          "answerKeywords": ["照本宣科", "非建设者", "非研究者"]
+        }
+      ]
+    },
+    {
+      "id": "wei_17",
+      "type": "dialogue",
+      "background": "staffroom",
+      "speaker": "wei",
+      "expression": "neutral",
+      "text": "（卫蓝听完我选的，端着杯子半天没喝）\n促进者……教师主导和学生主体统一。这词我第一次听人说得不像口号。\n说实话，我当年也当过几年班主任。后来坐到这个位置，看的全是行与列，慢慢就忘了——表格里每一个均分背后，蹲着三十几个不一样的人。\n（她忽然看向窗外操场，语气软了一瞬）你既然把学生当'主体'，那我再问最后一个。"
+    },
+    {
+      "id": "wei_18",
+      "type": "dialogue",
+      "background": "staffroom",
+      "speaker": "wei",
+      "expression": "serious",
+      "text": "（她指了指屏幕上那行倒数第二的均分）\n你班里那个叫小满的，月考语文又垫底。按我的逻辑，她就是拉低均分的那个'减项'。\n你跟我说说——你打算怎么'看'这个学生？我倒要听听，你那套'学生观'，到底拿这种孩子怎么办。"
+    },
+    {
+      "id": "wei_19",
+      "type": "dialogue",
+      "background": "staffroom",
+      "speaker": "narrator",
+      "text": "（小满。那个把作文写得乱七八糟、却能画出一整面墙黑板报的孩子。）\n卫主任，小满不是'减项'。学生观第一条：她是发展的人——现在的成绩是暂时的，得用发展的眼光看她、相信她还在长。\n第二条：她是独特的人——她语文弱，可她的画、她的观察力，是全班最亮的，得尊重这种差异。\n第三条：她是有独立意义的人——我不能因为一次垫底，就给她贴个'差生'的标签，把她在我心里写死。"
+    },
+    {
+      "id": "wei_20",
+      "type": "choice",
+      "background": "staffroom",
+      "speaker": "wei",
+      "expression": "serious",
+      "knowledgeCheck": "q_wei_student_01",
+      "text": "（卫蓝难得没有反驳，只是把那道题接着往深里逼）\n道理我听进去了。那落到做法上——面对小满这样一次考砸的孩子，哪种处理，才真正体现了你说的'学生观'？选最对的那个。",
+      "examTags": {
+        "subject": "301",
+        "module": "职业理念",
+        "examPoint": "学生观（发展的人·独特的人·有独立意义的人）",
+        "questionType": "材料分析"
+      },
+      "choices": [
+        {
+          "id": "A",
+          "text": "看到她美术上的长处，用画黑板报、配图作文的方式帮她重建信心，相信她语文还能慢慢追上来。",
+          "quality": "optimal",
+          "effects": {"professionalSkill": 2, "studentTrust": 3, "classOrder": 1, "ethicsRisk": -1, "lawRisk": 0, "examScore": 3},
+          "feedback": "对。这同时体现学生观三条：用发展的眼光相信她能进步（发展的人）、尊重她独特的美术优势（独特的人）、不因一次失利贴标签（有独立意义的人）。",
+          "answerKeywords": ["发展的人", "独特的人", "尊重差异", "不贴标签"]
+        },
+        {
+          "id": "B",
+          "text": "判定她'就不是读书的料'，劝她家长别抱太高期望，把精力放在能提分的学生身上。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -2, "studentTrust": -2, "classOrder": 0, "ethicsRisk": 1, "lawRisk": 0, "examScore": -3},
+          "feedback": "这违背学生观全部三条：用固定眼光否定她（非发展的人）、给她贴死标签（无视独立意义）、为均分放弃她（背离面向全体）。是把学生当'减项'的应试思维。",
+          "answerKeywords": ["贴标签", "用固定眼光否定", "放弃学生", "违背学生观"]
+        },
+        {
+          "id": "C",
+          "text": "让她和班里语文最好的同学'看齐'，按统一标准加倍刷题，争取尽快补上差距。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -1, "studentTrust": -1, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": -2},
+          "feedback": "'统一看齐、加倍刷题'忽视了她的独特性与个体差异，把所有学生当成同一个模子。学生观要求尊重差异、因材施教，而非削足适履。",
+          "answerKeywords": ["忽视独特性", "无视差异", "削足适履"]
+        },
+        {
+          "id": "D",
+          "text": "暂时不管她，等她自己想通、自己努力，是金子总会发光。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -1, "studentTrust": -1, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": -2},
+          "feedback": "放任不等于尊重。学生是发展的人，但'发展'需要教师主动引导和帮助；袖手旁观是推卸教育责任，不是学生观。",
+          "answerKeywords": ["放任非尊重", "发展需引导", "推卸责任"]
+        }
+      ]
+    },
+    {
+      "id": "wei_21",
+      "type": "dialogue",
+      "background": "staffroom",
+      "speaker": "wei",
+      "expression": "neutral",
+      "text": "（卫蓝看着我点的那个选项，很久没说话。窗外放学的喧闹漫进来。）\n……小满那孩子，去年校庆的舞台背景，是她画的。我还夸过好看，转头就忘了她叫什么。\n你说得对。在我那张表上，她是个减项。可在你那儿，她是个会画画、还在长的人。\n（她轻轻笑了一下，有点疲惫，也有点松动）这两种看法，原来不是非此即彼的。"
+    },
+    {
+      "id": "wei_22",
+      "type": "dialogue",
+      "background": "staffroom",
+      "speaker": "wei",
+      "expression": "neutral",
+      "text": "（她把那份'再提五分'的指标单，从桌上往回收了收）\n这个月，按你的方式带。我不撤那五分的目标——但我换个说法：让小满她们'愿意学、学得动'，分数自然会跟上来。\n这是我能给现实让的步。剩下的，你用结果说话。\n（她顿了顿，少见地补了一句）……别让我后悔松这个口。"
+    },
+    {
+      "id": "wei_23",
+      "type": "dialogue",
+      "background": "corridor",
+      "speaker": "narrator",
+      "text": "（走出数据室，冷气换成了走廊里温热的、带着汗味和笑声的空气。）\n我没真正'赢'她，她也没真正'输'。我承认了她的现实：理想得先让学校活下去、得让孩子愿意来；她也承认了我的理想：表格里的每个数字，是一个不能被淘汰的名字。\n（理想与现实，原来不是站在讲台两端的敌人。它们更像同一堂课的两只手——一只托着分数，一只托着人。）\n这一页，我要好好记进手账。"
+    },
+    {
+      "id": "wei_summary",
+      "type": "summary",
+      "background": "corridor",
+      "speaker": "narrator",
+      "text": "【本章手账】和卫蓝的这场争论，逼我把三件最'虚'的事想到了实处：\n① 素质教育不是不要分数，是不能只要分数、不能为分数把人筛掉——判据看四点：面向全体、全面发展、重个性、育创新（区别只盯升学率的应试）。\n② 我不是提分机：教师是学生学习的促进者、课程的建设者、教育的研究者，课堂上教师主导与学生主体相统一。\n③ 每个学生都是发展的人、独特的人、有独立意义的人——别用一次成绩给孩子贴死标签。\n理想与现实，是同一堂课的两只手。",
+      "review": {
+        "learnedExamPoints": [
+          "素质教育的内涵与实施（区别应试教育倾向）",
+          "教师观（促进者/建设者/研究者，主导与主体相统一）",
+          "学生观（发展的人·独特的人·有独立意义的人）"
+        ],
+        "structure": "1个'分数 vs 全面发展'争论事件 × 3个职业理念考点的 teach→随堂题→应用 微循环；卫蓝=现实压力源，与理想化教育观形成张力，结尾各有领悟。",
+        "mockExam": "npc_wei_mock"
+      }
+    }
+  ]
+}

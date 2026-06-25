@@ -1,0 +1,249 @@
+{
+  "chapterId": "route_shen_2",
+  "route": "shen",
+  "requires": {"flagsAllTrue": ["route_locked_shen"]},
+  "title": "沈亦舟线 · 第二章 · 搭档变恋人会不会弄丢你",
+  "summary": "说课·公开课评比前夜，那点说不清的安静在两人之间发了酵。沈亦舟忽然变得别扭起来——一会儿躲着你，一会儿又把话憋回去。原来这个总把心事藏在笑里的年下损友，怕的是'搭档一旦变成恋人，万一谈崩，连这个能并肩被骂的人都会弄丢'。评比当天，你用一场漂亮的面试问答稳住了他，也在最后，主动捅破了那层窗户纸。年下青春、共同成长式的告白，在备课铃响起的清晨落地。",
+  "designNote": "乙女向个人线 ch_shen_2，甜线·黄金四拍'小冲突→告白'，冲突烈度低、节奏轻快。第一人称旁白贯穿。shen 表情仅 neutral|smile|serious|worried（沈可多用 smile）。背景仅 staff_room|classroom|meeting_room|corridor|counseling_room 五键内。深挖模块为 302 中学教学·说课与面试实战（结构化面试答题）。teach→knowledgeCheck(带 examTags 的 choice，指向 ch_shen_quiz.json)→apply→after→heart 微循环。末节点 ch_shen_2_branch 按 affection_shen 与 flag 路由三结局：good(shen≥24)/normal(≥16)/bad(fallback)，各 2-4 节点。关键选择 setFlag(chose_confess_shen)、affection_shen 经 effects 累积。学生仅作教学对象/事件源，恋爱仅成年同事。",
+  "characters": ["shen", "jiang"],
+  "students": ["周也"],
+  "valueFields": ["professionalSkill", "studentTrust", "classOrder", "ethicsRisk", "lawRisk", "examScore", "affection_shen"],
+  "note": "knowledgeCheck 指向 ch_shen_quiz.json 的题目 id。本章 route:shen，requires 已锁线。末节点 branch 路由三结局：good(affectionGte shen 24)/normal(shen 16)/bad(fallback)。",
+  "nodes": [
+    {
+      "id": "ch_shen_2_intro",
+      "type": "dialogue",
+      "background": "staff_room",
+      "speaker": "narrator",
+      "text": "评比前夜。本该是最后一次合练的晚上，沈亦舟却反常地坐立不安。\n递稿子时手碰到我，他像被烫到一样缩回去；想说什么，话到嘴边又咽下去；好几次抬头看我，对上眼神又慌忙低头。\n（自从那句'你好像不一样'，这家伙就怪怪的。损友之间，什么时候变得这么别扭了。）"
+    },
+    {
+      "id": "ch_shen_2_intro_2",
+      "type": "dialogue",
+      "background": "staff_room",
+      "speaker": "沈亦舟",
+      "expression": "worried",
+      "text": "（他突然把笔一搁，没看我，盯着桌面。）\n……明天评完，咱俩这搭档，是不是也算告一段落了。\n（他扯了扯嘴角，想笑没笑出来。）我就是想说——你是我入职这一年，唯一一个能一起被骂、一起死磕、还不嫌我烦的人。这种人，丢了就没了。\n所以有些话，我宁可不说。说出去，万一……连这个都没了。"
+    },
+    {
+      "id": "ch_shen_2_intro_3",
+      "type": "dialogue",
+      "background": "staff_room",
+      "speaker": "narrator",
+      "text": "我一下子懂了。\n他不是不想往前走，他是怕。怕'搭档'升级成'恋人'这一步要是踩空了，连现在这份能并肩的踏实，都会一起摔碎。\n这个总把人逗得哈哈大笑的家伙，原来把最怂的那一面，藏得这么深。\n（先别急着接他这句。明天的硬仗还没打。我得先让他知道——我们俩，一起上场的时候，是什么样子。）"
+    },
+    {
+      "id": "ch_shen_2_teach_1",
+      "type": "dialogue",
+      "background": "meeting_room",
+      "speaker": "沈亦舟",
+      "expression": "serious",
+      "text": "（评比当天清晨，候考室。他把那点别扭暂时收进口袋，攥着稿子，认真陪我过最后一遍面试要点。）\n结构化面试，评委问的题逃不开几类，答题得有'框架'，不能想到哪说到哪——\n**综合分析类**（'你怎么看XX现象'）：先表态、再分析（多角度、辩证）、最后落到对策；\n**应急应变类**（'课上突发XX，你怎么办'）：先稳情绪保安全、再分清轻重缓急处理、最后事后反思跟进；\n**人际沟通类**（'同事/家长误会你'）：先自我反省、再主动沟通、最后总结改进。"
+    },
+    {
+      "id": "ch_shen_2_teach_2",
+      "type": "dialogue",
+      "background": "meeting_room",
+      "speaker": "沈亦舟",
+      "expression": "smile",
+      "text": "口诀我又给你编好了——\n综合分析'是什么、为什么、怎么办'；应急应变'先保命、分缓急、后反思'；人际沟通'先低头、再沟通、后改进'。\n关键是：**先判断这是哪一类题，套对框架，再往里填血肉**。判错类、套错框，内容再花也是跑题。\n（他难得没皮没脸地认真看着我。）这是我俩磨了这么久的命门，你一定记住。"
+    },
+    {
+      "id": "ch_shen_2_apply",
+      "type": "choice",
+      "background": "meeting_room",
+      "speaker": "沈亦舟",
+      "expression": "serious",
+      "knowledgeCheck": "q_shen_interview_01",
+      "text": "（轮到我进场。评委放下笔，抛出一道。）\n'你正在上公开课，突然一名学生情绪激动，站起来打断你、大声质疑你讲错了。此刻你怎么处理？'\n（我深吸一口气——先判断，这是哪一类题。）",
+      "examTags": {
+        "subject": "302",
+        "module": "中学教学",
+        "examPoint": "结构化面试·应急应变类题的作答框架（稳情绪→分缓急处理→事后反思）",
+        "questionType": "说课/面试问答"
+      },
+      "choices": [
+        {
+          "id": "A",
+          "text": "先判定是应急应变题：当下稳住自己和课堂、保护师生情绪不激化；再快速处理——先肯定学生敢质疑，课后核实对错、错了就当众更正；最后反思课堂氛围与备课严谨度。",
+          "quality": "optimal",
+          "effects": {"professionalSkill": 2, "studentTrust": 2, "classOrder": 1, "ethicsRisk": -1, "lawRisk": 0, "examScore": 3, "affection_shen": 3},
+          "feedback": "对。判类准(应急应变)、框架全(稳情绪→分缓急处理→事后反思)，还兼顾了保护学生尊严与教师严谨，采分点齐。",
+          "setFlag": {"route_lean_shen": 1},
+          "answerKeywords": ["应急应变框架", "先稳情绪", "分轻重缓急处理", "事后反思", "保护学生尊严"]
+        },
+        {
+          "id": "B",
+          "text": "当成综合分析题：先长篇大论分析'学生为什么会质疑老师'这一教育现象，再谈对策。",
+          "quality": "suboptimal",
+          "effects": {"professionalSkill": 0, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": -1, "affection_shen": 0},
+          "feedback": "判错了题类。题干是'此刻你怎么处理'的突发情境，属应急应变，要落到当场怎么做；套综合分析框架去空谈现象，会被评委判'跑题、不会临场处理'。",
+          "answerKeywords": ["判错题类", "应急应变非综合分析", "未落到临场处理"]
+        },
+        {
+          "id": "C",
+          "text": "当场制止学生，批评他'没礼貌、扰乱课堂',把纪律压住再继续讲课。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -2, "studentTrust": -2, "classOrder": 0, "ethicsRisk": 2, "lawRisk": 1, "examScore": -3, "affection_shen": -2},
+          "feedback": "情绪化压制、当众批评，既伤学生人格尊严，又丢了'稳情绪、保护学生'这一应急第一步。面试里这是硬伤。",
+          "answerKeywords": ["情绪化压制", "侵学生尊严", "丢应急第一步"]
+        },
+        {
+          "id": "D",
+          "text": "立刻承认'我讲错了'平息场面，也不课后核实，先把课上完再说。",
+          "quality": "suboptimal",
+          "effects": {"professionalSkill": -1, "studentTrust": -1, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": -2, "affection_shen": -1},
+          "feedback": "应变里少了'分清轻重缓急、课后核实'这步：没核实就认错或敷衍了事，都不严谨。应急应变要稳情绪也要负责任地跟进。",
+          "answerKeywords": ["缺核实跟进", "敷衍处理", "不严谨"]
+        }
+      ]
+    },
+    {
+      "id": "ch_shen_2_after",
+      "type": "dialogue",
+      "background": "meeting_room",
+      "speaker": "沈亦舟",
+      "expression": "smile",
+      "text": "（出了考场，他比我还紧张地凑上来。听完我复述，整个人松下来，咧嘴笑了。）\n稳！判类准、框架全——我俩磨的那套'先保命、分缓急、后反思'，你台上稳稳用出来了。\n（他抬手，像往常无数次那样要拍我肩，手伸到一半，却忽然顿住，悬在那儿，又慢慢收了回去。）\n……成绩稳了。可有件事，我好像越来越稳不住了。"
+    },
+    {
+      "id": "ch_shen_2_heart",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "smile",
+      "text": "（评比结束，我躲进江晚的咨询室喘口气。她递来一杯温水，看穿了我的心不在焉，温温地笑。）\n那个总陪你的男孩子，最近是不是不太敢看你了？\n（她轻声说。）有的人怕失去，反而先把自己缩起来。可'怕弄丢'恰恰说明，那个人有多重要。\n……要不要让他知道，这份重要，是两个人的？这一步，得有人先迈。"
+    },
+    {
+      "id": "ch_shen_2_confess_choice",
+      "type": "choice",
+      "background": "corridor",
+      "speaker": "narrator",
+      "text": "（放榜那天清晨，备课铃还没响，空走廊里只有我和他。他张了张嘴，又把话咽回去，像怕极了的样子。\n我知道，他不敢迈这一步。那——就由我来捅破这层窗户纸吧。）",
+      "choices": [
+        {
+          "id": "A",
+          "text": "主动握住他悬在半空的手：'搭档不会弄丢——因为我想把你升级成更弄不丢的人。'",
+          "quality": "optimal",
+          "effects": {"professionalSkill": 0, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": 0, "affection_shen": 4},
+          "feedback": "你替这个不敢的人迈了那一步。年下损友最怕的就是被推开，你偏偏主动迎上去——把'怕失去'变成了'一起拥有'。",
+          "setFlag": {"chose_confess_shen": true, "route_lean_shen": 1},
+          "answerKeywords": ["主动告白", "接住他的怕", "搭档升级恋人"]
+        },
+        {
+          "id": "B",
+          "text": "笑着打趣他几句缓和气氛，把那句话再往后压一压：'急什么，先看成绩。'",
+          "quality": "suboptimal",
+          "effects": {"professionalSkill": 0, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": 0, "affection_shen": 0},
+          "feedback": "你也退了半步。两个都不敢迈的人，那层窗户纸就还会再蒙一阵子——心动是真的，可没人捅破，它就还是悬着。",
+          "answerKeywords": ["回避告白", "维持搭档现状", "都退半步"]
+        }
+      ]
+    },
+    {
+      "id": "ch_shen_2_branch",
+      "type": "dialogue",
+      "background": "corridor",
+      "speaker": "narrator",
+      "text": "（话说出口，或没说出口。备课铃，就要响了。\n这一学期和沈亦舟并肩走来的路，到此刻，要给出它的答案。）",
+      "branch": [
+        {"condition": {"affectionGte": {"shen": 24}, "flagsAllTrue": ["chose_confess_shen"]}, "goto": "ch_shen_2_good_1"},
+        {"condition": {"affectionGte": {"shen": 16}}, "goto": "ch_shen_2_normal_1"},
+        {"condition": {}, "goto": "ch_shen_2_bad_1"}
+      ]
+    },
+    {
+      "id": "ch_shen_2_good_1",
+      "type": "dialogue",
+      "background": "corridor",
+      "speaker": "沈亦舟",
+      "expression": "smile",
+      "text": "（他僵了两秒，耳朵红透，忽然反手紧紧扣住我的手，像抓住了什么再不肯松开的东西。）\n……你你你你怎么——怎么能比我还先说出口啊！\n（他低下头，声音发抖却笑得灿烂。）我准备了一晚上的怂，全被你一句话拆了。\n行，搭档升级。以后被骂还是肩并肩，但下班——下班归我一个人。"
+    },
+    {
+      "id": "ch_shen_2_good_2",
+      "type": "dialogue",
+      "background": "staff_room",
+      "speaker": "沈亦舟",
+      "expression": "smile",
+      "text": "（区里成绩贴出来：公开课评比，我们组双双过关。他举着喜报在办公室嗷嗷叫，回头冲我挤眼。）\n你看——我就说，咱俩一起，没有打不赢的仗。\n以前是'一起被骂分摊压力'，现在是'一起成长，分享高兴'。\n（他凑近，压低声音，只给我听。）谢谢你那天，肯先迈那一步。我那点怂……以后交给你治了。"
+    },
+    {
+      "id": "ch_shen_2_good_end",
+      "type": "summary",
+      "background": "staff_room",
+      "speaker": "narrator",
+      "text": "（沈亦舟线 · Good End「一起成长的恋人搭档」。备课铃响起的清晨，损友变成了爱人，搭档升级成了同路人。把这一路的甜，记进手账。）",
+      "review": {
+        "ending": "good",
+        "endingTitle": "一起成长的恋人搭档",
+        "condition": "affection_shen ≥ 24 且 flag chose_confess_shen（你主动捅破了窗户纸）",
+        "learnedExamPoints": [
+          "302-中学教学-教学方法/教学组织形式（讲论演验·班级授课制）— 沈亦舟",
+          "302-中学教学-说课与结构化面试作答框架（综合分析/应急应变/人际沟通）— 沈亦舟"
+        ],
+        "structure": "甜线两章·黄金四拍'心动+轻误会→小冲突→告白'轻快收束。借说课·公开课评比把教学方法、组织形式、面试框架'用'出来；以年下损友'怕弄丢搭档'的退缩为唯一冲突，由你主动告白破局。",
+        "note": "好结局额外绑定'面试/教学方法题达标'，呼应'学不好=也谈不成'。"
+      }
+    },
+    {
+      "id": "ch_shen_2_normal_1",
+      "type": "dialogue",
+      "background": "corridor",
+      "speaker": "沈亦舟",
+      "expression": "smile",
+      "text": "（不管那句话有没有说出口，他到底还是把伸出去又收回的手，笑着按回我肩上——回到了最熟悉的损友姿势。）\n……嗐，想那么多干嘛。成绩出来了，咱俩都过了！\n（他笑得一如往常，只是那笑底下，藏了一点没说尽的东西。）走，泡面庆功。搭档嘛，就该一直一直当下去。"
+    },
+    {
+      "id": "ch_shen_2_normal_end",
+      "type": "summary",
+      "background": "staff_room",
+      "speaker": "narrator",
+      "text": "（沈亦舟线 · Normal End「最好的损友」。那层窗户纸最终没被谁捅破，但你们依然是彼此入职路上最踏实的同路人。心动悬在原地，搭档情谊却结实如初。）",
+      "review": {
+        "ending": "normal",
+        "endingTitle": "最好的损友",
+        "condition": "16 ≤ affection_shen < 24（或未主动告白）",
+        "learnedExamPoints": [
+          "302-中学教学-教学方法/教学组织形式（讲论演验·班级授课制）— 沈亦舟",
+          "302-中学教学-说课与结构化面试作答框架（综合分析/应急应变/人际沟通）— 沈亦舟"
+        ],
+        "structure": "甜线两章收束于'友情留白'：心动是真的，但没人迈出最后一步，关系停在最好的损友。考点学习不受影响。",
+        "note": "想要 Good End：多刷 affection_shen（关键应用题选最优项）并在结尾选主动告白。"
+      }
+    },
+    {
+      "id": "ch_shen_2_bad_1",
+      "type": "dialogue",
+      "background": "corridor",
+      "speaker": "沈亦舟",
+      "expression": "neutral",
+      "text": "（他把手收了回去，揉了揉鼻子，笑容里有点说不清的勉强。）\n……算了，当我没说啊。\n（他后退半步，重新拉开了搭档之间那道安全的距离。）这阵子忙评比，可能都有点累过头、想多了。\n还是当搭档好吧——这样最稳，谁也不会弄丢谁。"
+    },
+    {
+      "id": "ch_shen_2_bad_2",
+      "type": "dialogue",
+      "background": "corridor",
+      "speaker": "narrator",
+      "text": "我看着他重新挂回那副吊儿郎当的笑，忽然明白：\n这一学期，我大概忙着别的，忘了好好接住他那点藏在笑里的认真。\n备课铃响了。他冲我挥挥手，转身去上课，背影还是那个熟悉的损友。\n（'还是当搭档好吧。'——这句话，我们俩谁都没敢再往下接。）"
+    },
+    {
+      "id": "ch_shen_2_bad_end",
+      "type": "summary",
+      "background": "corridor",
+      "speaker": "narrator",
+      "text": "（沈亦舟线 · Bad End「还是当搭档好吧」。心动来不及生根，就被他先一步缩了回去。你们退回安全的搭档距离，那句话，永远停在了备课铃响起之前。）",
+      "review": {
+        "ending": "bad",
+        "endingTitle": "还是当搭档好吧",
+        "condition": "fallback（affection_shen < 16 / 冷落他 / 面试·教学方法题屡错）",
+        "learnedExamPoints": [
+          "302-中学教学-教学方法/教学组织形式（讲论演验·班级授课制）— 沈亦舟",
+          "302-中学教学-说课与结构化面试作答框架（综合分析/应急应变/人际沟通）— 沈亦舟"
+        ],
+        "structure": "好感或备考不足时的兜底结局：年下损友的退缩没被接住，关系停在搭档。考点仍已学到，可重刷提升 affection_shen 与题目正确率冲 Good。",
+        "note": "重点回看：应用题选最优项可涨 affection_shen；结尾选主动告白。"
+      }
+    }
+  ]
+}

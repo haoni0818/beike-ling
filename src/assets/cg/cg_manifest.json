@@ -1,0 +1,157 @@
+[
+  {
+    "id": "cg_lu_coffee",
+    "char": "lu",
+    "title": "陆知行 · 清晨咖啡",
+    "chapter": 1,
+    "tier": "CG",
+    "cost": 30,
+    "full": "cg_lu_coffee.png"
+  },
+  {
+    "id": "cg_gu_praise",
+    "char": "gu",
+    "title": "顾承 · 午后夸奖",
+    "chapter": 1,
+    "tier": "CG",
+    "cost": 30,
+    "full": "cg_gu_praise.png"
+  },
+  {
+    "id": "cg_jiang_lean",
+    "char": "jiang",
+    "title": "江晚 · 咨询记录",
+    "chapter": 1,
+    "tier": "CG",
+    "cost": 30,
+    "full": "cg_jiang_lean.png"
+  },
+  {
+    "id": "cg_shen_noodle",
+    "char": "shen",
+    "title": "沈亦舟 · 夜宵庆祝",
+    "chapter": 1,
+    "tier": "CG",
+    "cost": 30,
+    "full": "cg_shen_noodle.png"
+  },
+  {
+    "id": "cg_shen_cocoa",
+    "char": "shen",
+    "title": "沈亦舟 · 深夜热可可",
+    "tier": "CG",
+    "cost": 30,
+    "full": "cg_shen_cocoa.png",
+    "chapter": 2
+  },
+  {
+    "id": "cg_gu_nod",
+    "char": "gu",
+    "title": "顾承 · 操场夕照并肩",
+    "tier": "CG",
+    "cost": 30,
+    "full": "cg_gu_nod.png",
+    "chapter": 3
+  },
+  {
+    "id": "cg_jiang_notebook",
+    "char": "jiang",
+    "title": "江晚 · 旧笔记本",
+    "tier": "CG",
+    "cost": 30,
+    "full": "cg_jiang_notebook.png",
+    "chapter": 4
+  },
+  {
+    "id": "cg_jiang_dusk",
+    "char": "jiang",
+    "title": "江晚 · 暮色空教室",
+    "tier": "CG",
+    "cost": 30,
+    "full": "cg_jiang_dusk.png",
+    "chapter": 5
+  },
+  {
+    "id": "cg_lu_mark",
+    "char": "lu",
+    "title": "陆知行 · 名字旁的记号",
+    "tier": "CG",
+    "cost": 30,
+    "full": "cg_lu_mark.png",
+    "chapter": 6
+  },
+  {
+    "id": "cg_shen_teaching_plan",
+    "char": "shen",
+    "title": "沈亦舟 · 旧教案压场",
+    "tier": "CG",
+    "cost": 30,
+    "full": "cg_shen_teaching_plan.png",
+    "chapter": 7
+  },
+  {
+    "id": "cg_cheng_annotation",
+    "char": "cheng",
+    "title": "程砚 · 孺子可教",
+    "tier": "CG",
+    "cost": 30,
+    "full": "cg_cheng_annotation.png",
+    "chapter": 8
+  },
+  {
+    "id": "cg_group_latenight",
+    "char": "group",
+    "title": "群像 · 办公室深夜食堂",
+    "tier": "CG",
+    "cost": 30,
+    "full": "cg_group_latenight.png"
+  },
+  {
+    "id": "cg_group_blackout",
+    "char": "group",
+    "title": "群像 · 暴雨停电",
+    "tier": "CG",
+    "cost": 30,
+    "full": "cg_group_blackout.png"
+  },
+  {
+    "id": "cg_lu_confession",
+    "char": "lu",
+    "title": "陆知行 · 规则与温度",
+    "tier": "CG",
+    "cost": 60,
+    "full": "cg_lu_confession.png"
+  },
+  {
+    "id": "cg_gu_confession",
+    "char": "gu",
+    "title": "顾承 · 最佳拍档",
+    "tier": "CG",
+    "cost": 60,
+    "full": "cg_gu_confession.png"
+  },
+  {
+    "id": "cg_jiang_confession",
+    "char": "jiang",
+    "title": "江晚 · 互为咨询室",
+    "tier": "CG",
+    "cost": 60,
+    "full": "cg_jiang_confession.png"
+  },
+  {
+    "id": "cg_shen_confession",
+    "char": "shen",
+    "title": "沈亦舟 · 一起成长",
+    "tier": "CG",
+    "cost": 60,
+    "full": "cg_shen_confession.png"
+  },
+  {
+    "id": "cg_cheng_confession",
+    "char": "cheng",
+    "title": "程砚 · 棋逢对手",
+    "tier": "CG",
+    "cost": 60,
+    "full": "cg_cheng_confession.png"
+  }
+]

@@ -1,0 +1,531 @@
+{
+  "chapterId": "core_ch14",
+  "title": "第十四章 · 心灵的护航",
+  "summary": "期中之后，心理中心一下子忙了起来——林小满临考就手心冒汗、脑子发空，沈砚反复检查书包要查到深夜，还有个孩子整宿泡在网上、白天像抽了魂。江晚把我叫去，说一个人接不住这么多心事，想要我陪她一起，'学着把每一种不安，都先听懂，再托住'。一个下午，从心理健康的标尺，到四种辅导取向的分寸，再到皮亚杰与维果茨基、埃里克森与四大学习流派，最后落回身心发展的几条铁律。窗外的光一点点斜过来，我忽然懂了：原来'护航'两个字，是要先看清风从哪里来。",
+  "designNote": "本章以'期中后心理中心扎堆求助'一桩事件，串起5个考点：林小满考试焦虑→心理健康标准与常见问题；为不同孩子选不同辅导路子→四大辅导取向区别；用'跳一跳够得着'教学→皮亚杰四阶段+维果茨基最近发展区/支架；理解青春期身份探索与学习方式→埃里克森八阶段+学习理论四大流派；面对个体差异与关键期→身心发展一般规律。主带教江晚为绝对主导，温柔细腻；学生(林小满/沈砚)仅为教学对象与事件源，绝不恋爱或性化。每考点走'剧情讲授→马上做题→应用→反馈'微循环。本章发展心理与第4章不同：这里是四阶段全表+维果茨基、八阶段全表+学习流派，更系统进阶。",
+  "characters": ["jiang", "gu"],
+  "students": ["林小满", "沈砚"],
+  "valueFields": ["professionalSkill", "studentTrust", "classOrder", "ethicsRisk", "lawRisk", "examScore", "affection_lu", "affection_jiang", "affection_gu", "affection_cheng", "affection_shen"],
+  "note": "ethicsRisk/lawRisk 为逆向指标，越低越好。knowledgeCheck 指向 chapter14_quiz.json 的题目 id。学生仅为教学/辅导对象，绝不恋爱化。",
+  "nodes": [
+    {
+      "id": "ch14_intro_1",
+      "type": "dialogue",
+      "background": "corridor",
+      "speaker": "narrator",
+      "text": "期中考刚过，成绩贴出去的那两天，心理中心门口忽然排起了小小的队。\n我抱着一摞登记表往里走，迎面是顾承，眉头拧着，手里捏着三四张请假条和家长留言。\n（这阵子，怎么一下子冒出这么多'不对劲'的孩子？）"
+    },
+    {
+      "id": "ch14_intro_2",
+      "type": "dialogue",
+      "background": "corridor",
+      "speaker": "顾承",
+      "expression": "worried",
+      "text": "（顾承把几张纸摊给我看）\n林小满，平时成绩不差，可一进考场就手心冒汗、脑子一片空白，这次又交了张空了大半的卷子；沈砚，书包反复检查到半夜，明知没必要还停不下来；还有个孩子，整宿泡在网上，白天上课像没了魂。\n我带班这些年，'管行为'我有招，可这些'心里的结'，我真不如江老师懂。我已经跟她说了——她想叫你也去搭把手。"
+    },
+    {
+      "id": "ch14_intro_3",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "smile",
+      "text": "（推开门，还是那一屋暖光和淡淡茶香。她正一张张翻着登记表，听见动静抬头，眉眼弯了一下）\n你来啦。我就猜顾老师会把你也'借'给我。\n（她把一杯温水推到我手边）这么多孩子一起涌进来，我一个人，真的接不过来。先别急着'怎么劝'——想护住一颗心，得先学会，把每一种不安，都先听懂、分清楚，再去托住它。"
+    },
+    {
+      "id": "ch14_a_teach_1",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "smile",
+      "text": "（她抽出林小满那张表）\n先说怎么'分清楚'。判断一个孩子心理是不是健康，我们心里得有一把尺子。\n心理健康的标准，大致几条：智力正常、情绪稳定且协调、自我意识正确、人际关系和谐、社会适应良好、人格健全统一。\n注意——健康不是'从不难过'，而是这些方面大体协调、能自我调节。偶尔考砸了沮丧，是正常的；持续地、严重地失调，才要警惕。"
+    },
+    {
+      "id": "ch14_a_teach_2",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "serious",
+      "text": "中学生常见的几类问题，最爱考，我帮你串成一句口诀——\n**焦虑症**：'紧张不安怕'，过度紧张担忧；其中**考试焦虑**最典型，临考心慌、出汗、脑子一片空白，林小满就是这一类。\n**抑郁症**：'持续低落没兴趣'，长时间情绪低落、兴趣丧失、自我评价过低，要特别警惕轻生念头。\n**强迫症**：'明知没必要却反复做'，反复检查、反复洗手，自己控制不住又痛苦——沈砚查书包，就接近这一类。\n**网络成瘾**：'离不开网络'，无节制上网、不上网就烦躁，影响学习生活。"
+    },
+    {
+      "id": "ch14_a_teach_3",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "smile",
+      "text": "（她把那句口诀写在便签上推给我）\n'紧张不安怕'=焦虑、'持续低落没兴趣'=抑郁、'明知没必要却反复做'=强迫、'离不开网络'=网瘾。\n分清楚类别，不是为了给孩子贴标签，是为了知道——他到底卡在哪里，我们该往哪个方向使劲。\n（她侧头看我，眼里很温）来，趁热，先考你一道。"
+    },
+    {
+      "id": "ch14_a_apply",
+      "type": "choice",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "smile",
+      "knowledgeCheck": "q_mentalhealth_01",
+      "text": "（她把林小满的卷子翻给我看，上面大片空白）\n林小满平时会，一上考场就心慌、出汗、脑子空白，越急越答不出。用我们刚说的标准看，她最可能是哪一类问题？",
+      "examTags": {
+        "subject": "302",
+        "module": "中学生心理辅导",
+        "examPoint": "中学生常见心理问题的辨别（考试焦虑/焦虑症）",
+        "questionType": "材料分析"
+      },
+      "choices": [
+        {
+          "id": "A",
+          "text": "考试焦虑（焦虑症的一种）——临考过度紧张，出现心慌、出汗、思维阻滞，属于'紧张不安怕'这一类。",
+          "quality": "optimal",
+          "effects": {"professionalSkill": 2, "studentTrust": 1, "classOrder": 0, "ethicsRisk": -1, "lawRisk": 0, "examScore": 3, "affection_jiang": 3},
+          "feedback": "对。临考心慌、出汗、脑子空白、越急越乱，是考试焦虑的典型表现，属焦虑症范畴，可用系统脱敏、放松训练等行为方法处理。",
+          "answerKeywords": ["考试焦虑", "焦虑症", "临考紧张心慌脑空", "系统脱敏"]
+        },
+        {
+          "id": "B",
+          "text": "抑郁症——她考不好，肯定是情绪低落、对什么都没兴趣了。",
+          "quality": "suboptimal",
+          "effects": {"professionalSkill": 0, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": -1, "affection_jiang": 0},
+          "feedback": "辨别错了。抑郁是'持续低落、兴趣丧失'，是长期的情绪基调；林小满平时会、只在临考时紧张失常，核心是焦虑而非抑郁。",
+          "answerKeywords": ["误判为抑郁", "实为焦虑（临考紧张）"]
+        },
+        {
+          "id": "C",
+          "text": "强迫症——她一定是反复检查答案才耽误了时间。",
+          "quality": "suboptimal",
+          "effects": {"professionalSkill": 0, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": -1, "affection_jiang": 0},
+          "feedback": "对不上症状。强迫症的核心是'明知没必要却反复做'的强迫观念/行为；材料里是临考紧张、思维阻滞，属焦虑，不是强迫。",
+          "answerKeywords": ["误判为强迫", "实为焦虑"]
+        },
+        {
+          "id": "D",
+          "text": "她就是心理不健康、有病，得让家长带去医院。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -1, "studentTrust": -1, "classOrder": 0, "ethicsRisk": 2, "lawRisk": 0, "examScore": -2, "affection_jiang": -1},
+          "feedback": "既不专业也伤人。把一次考试焦虑直接扣上'有病'的标签，违背心理健康观（健康不等于从不难过），还会加重孩子的病耻感，是要避免的雷区。",
+          "answerKeywords": ["乱贴有病标签", "病耻感", "违背心理健康标准"]
+        }
+      ]
+    },
+    {
+      "id": "ch14_a_after",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "smile",
+      "text": "（她轻轻'嗯'了一声，像在为我高兴）\n你看——同样是'考砸了'，背后可能是焦虑、是抑郁、是别的，根子不同，托法就不同。\n先听懂'她是哪一种不安'，才不会用错力气。这一步，你已经站稳了。"
+    },
+    {
+      "id": "ch14_a_heart",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "narrator",
+      "text": "她说话时，指尖在那张登记表上一行行划过，认真得像在数每一个名字。\n（她总能把'毛病'重新说成'不安'。在她这间屋子里，连'被看见'这件事，都显得格外郑重。……我是来学本事的，专心点。）"
+    },
+    {
+      "id": "ch14_t1",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "smile",
+      "text": "（她给我续了点温水，话锋自然地往下接）\n分清了'是哪一种不安'，下一步就是'用哪一种方法'。\n林小满的焦虑、沈砚的反复、还有那个泡网的孩子——不能一种话术包打天下。心理辅导有几条不同的路子，得对症选。"
+    },
+    {
+      "id": "ch14_b_teach_1",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "smile",
+      "text": "常考的辅导取向，主要四种，我帮你抓住各自的'抓手'——\n**认知疗法**：盯的是'想法'。它认为困扰来自不合理信念，要去辩驳、改错误认知。比如艾利斯的理性情绪疗法ABC：让你难过的不是事情(A)，而是你对它的看法(B)。\n**行为疗法**：盯的是'行为'。它基于学习理论，直接矫正外显行为，常用系统脱敏(治考试焦虑、恐惧)、强化法、代币法等，不太深究你心里怎么想。"
+    },
+    {
+      "id": "ch14_b_teach_2",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "smile",
+      "text": "另外两种——\n**精神分析疗法**(弗洛伊德)：盯的是'潜意识里的童年'。它把症状归因于被压抑的早期经验和冲突，靠自由联想、梦的分析、移情，把它'挖'到意识层面。\n**来访者中心疗法**(罗杰斯)：盯的是'人本身'。它不给现成答案，靠真诚、无条件积极关注、共情，营造安全氛围，相信来访者自己有自我实现的潜能、能自己长出力量。"
+    },
+    {
+      "id": "ch14_b_teach_3",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "smile",
+      "text": "（她又写了一句口诀推给我）\n改'想法'=认知、改'行为'=行为、挖'潜意识童年'=精神分析、'陪伴共情不评判'=来访者中心。\n像林小满的考试焦虑，行为疗法的系统脱敏特别对症；可有些孩子需要的，其实只是先被无条件地接住一次。\n（她看着我，声音放柔）来，再考你一道。"
+    },
+    {
+      "id": "ch14_b_apply",
+      "type": "choice",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "smile",
+      "knowledgeCheck": "q_counsel_01",
+      "text": "（她托着腮）\n为了帮林小满克服考试焦虑，我打算让她在逐级放松的状态下，从'想象小测'到'想象大考'一步步适应，慢慢把'考试'和'紧张'解开。这种做法属于哪种辅导取向？",
+      "examTags": {
+        "subject": "302",
+        "module": "中学生心理辅导",
+        "examPoint": "心理辅导方法的辨别（行为疗法·系统脱敏）",
+        "questionType": "材料分析"
+      },
+      "choices": [
+        {
+          "id": "A",
+          "text": "行为疗法——这是系统脱敏，基于学习理论，通过逐级暴露+放松直接矫正焦虑反应。",
+          "quality": "optimal",
+          "effects": {"professionalSkill": 2, "studentTrust": 1, "classOrder": 0, "ethicsRisk": -1, "lawRisk": 0, "examScore": 3, "affection_jiang": 3},
+          "feedback": "对。'逐级放松+从弱到强暴露'解开焦虑联结，正是系统脱敏，属行为疗法，是治考试焦虑与恐惧的经典技术。",
+          "answerKeywords": ["行为疗法", "系统脱敏", "学习理论", "逐级暴露放松"]
+        },
+        {
+          "id": "B",
+          "text": "认知疗法——通过改变她'我一定考不好'的不合理想法来缓解。",
+          "quality": "suboptimal",
+          "effects": {"professionalSkill": 0, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": -1, "affection_jiang": 0},
+          "feedback": "抓手错了。认知疗法的核心是辩驳、改'想法'；而本题做的是'逐级放松+暴露'去改外显的焦虑反应，是行为疗法。",
+          "answerKeywords": ["认知改想法（不对症）", "本题为行为/系统脱敏"]
+        },
+        {
+          "id": "C",
+          "text": "精神分析疗法——挖出她考试焦虑背后压抑的童年经历。",
+          "quality": "suboptimal",
+          "effects": {"professionalSkill": 0, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": -1, "affection_jiang": 0},
+          "feedback": "方向不符。精神分析靠自由联想、梦的分析挖潜意识童年；本题没有'挖潜意识'，只是逐级脱敏，属行为疗法。",
+          "answerKeywords": ["精神分析挖潜意识（不对症）", "本题为行为疗法"]
+        },
+        {
+          "id": "D",
+          "text": "来访者中心疗法——只要真诚地共情陪伴，焦虑自然会好。",
+          "quality": "suboptimal",
+          "effects": {"professionalSkill": 0, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": -1, "affection_jiang": 0},
+          "feedback": "取向错位。来访者中心靠真诚、共情、无条件积极关注促自我成长；本题用的是带具体技术步骤的系统脱敏，属行为疗法。",
+          "answerKeywords": ["来访者中心靠共情（不对症）", "本题为行为/系统脱敏"]
+        }
+      ]
+    },
+    {
+      "id": "ch14_b_after",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "smile",
+      "text": "（她轻轻拍了下手）\n好——分清'是哪种不安'，再选对'用哪种方法'，护航的前半程，你已经摸到门道了。\n不过，要真正读懂这些孩子，还得退一步，看见他们'正长在哪个阶段'。先从他们的脑子怎么发育说起。"
+    },
+    {
+      "id": "ch14_t2",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "narrator",
+      "text": "她起身，从书架上取下一本厚厚的、画满了表格和小图的活页本。\n（这本好像和上次那本旧笔记不一样，更像她的'备课脑图'。）她把它摊在我们俩中间，肩膀挨得很近。"
+    },
+    {
+      "id": "ch14_c_teach_1",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "smile",
+      "text": "（她指着那张四阶段的表）\n皮亚杰把认知发展分四个阶段，顺序固定，记的诀窍是'每个阶段能做到什么、做不到什么'——\n**感知运动**(0-2岁)：靠动作感觉认识世界，末期才有客体永久性；\n**前运算**(2-7岁)：会用符号语言了，但自我中心、不可逆、还没有守恒；\n**具体运算**(7-11岁)：出现守恒、可逆，能逻辑思考，但离不开具体事物；\n**形式运算**(11岁以后)：能抽象、能'如果…那么…'地假设演绎了。"
+    },
+    {
+      "id": "ch14_c_teach_2",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "serious",
+      "text": "这里有个最容易被忽略的点：形式运算的抽象能力，是把双刃剑。\n林小满能把'这一次没考好'，抽象地上升成'我整个人都不行'——这种以偏概全，恰恰要等抽象思维成熟了才做得出来。\n所以读懂中学生，既要知道他们'能抽象了'，也要防着这份抽象，反过来扎到他们自己。"
+    },
+    {
+      "id": "ch14_c_teach_3",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "smile",
+      "text": "光看'到了哪个阶段'还不够，还要看'怎么往前推一把'——这就是维果茨基。\n**最近发展区**：孩子'自己已经会的'，和'有人帮一把才会的'，这两者之间的差距。教学就要落在这个区里：太容易，无聊；太难，放弃；'跳一跳够得着'，最好。\n**支架式教学**：先给他'刚好够一够能到'的支持(支架)，等他站稳了，再一点点把支架撤掉，让他自己走。"
+    },
+    {
+      "id": "ch14_c_teach_4",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "smile",
+      "text": "（她在便签上画了个'已会—最近发展区—暂时不会'的小阶梯，递给我，指尖碰了一下我的手）\n皮亚杰告诉你他'现在在哪一层'，维果茨基告诉你'下一步该扶他到哪'。\n两个人合起来，才是完整的'怎么教'。来——这道，考你这两个人怎么连起来用。"
+    },
+    {
+      "id": "ch14_c_apply",
+      "type": "choice",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "smile",
+      "knowledgeCheck": "q_piagetd_01",
+      "text": "（她把那张小阶梯按在我手心）\n我给林小满布置练习时，专挑'她独立做有点吃力、但我稍微点拨一下就能做出来'的题，做顺了再撤掉提示让她自己做。这种做法主要体现了谁的什么思想？",
+      "examTags": {
+        "subject": "302",
+        "module": "中学生发展心理",
+        "examPoint": "维果茨基最近发展区与支架式教学的辨别与应用",
+        "questionType": "材料分析"
+      },
+      "choices": [
+        {
+          "id": "A",
+          "text": "维果茨基——把教学落在'最近发展区'，先搭支架再逐步撤掉，体现支架式教学。",
+          "quality": "optimal",
+          "effects": {"professionalSkill": 2, "studentTrust": 1, "classOrder": 0, "ethicsRisk": -1, "lawRisk": 0, "examScore": 3, "affection_jiang": 3},
+          "feedback": "对。'独立有点难、点拨一下就会'正是最近发展区；'先给支持、站稳后撤掉'正是支架式教学，都是维果茨基的核心思想。",
+          "answerKeywords": ["维果茨基", "最近发展区", "支架式教学", "先搭后撤"]
+        },
+        {
+          "id": "B",
+          "text": "皮亚杰——她已进入形式运算阶段，所以能做抽象的题。",
+          "quality": "suboptimal",
+          "effects": {"professionalSkill": 0, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": -1, "affection_jiang": 0},
+          "feedback": "答非所问。皮亚杰描述的是'在哪个阶段'；而本题问的是'怎么往前推一把'——专挑'帮一把就会'的题、先扶后撤，是维果茨基的最近发展区/支架。",
+          "answerKeywords": ["皮亚杰讲阶段（不对症）", "本题为维果茨基"]
+        },
+        {
+          "id": "C",
+          "text": "皮亚杰——这是让她在具体运算的水平上反复练习守恒。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -1, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": -2, "affection_jiang": -1},
+          "feedback": "概念双错。中学生处于形式运算，不会停在具体运算练守恒；且本题考的是维果茨基的最近发展区，与守恒无关，套错了人也套错了概念。",
+          "answerKeywords": ["阶段误用（具体运算/守恒）", "本应判维果茨基"]
+        },
+        {
+          "id": "D",
+          "text": "斯金纳——这是用强化不断奖励她做对题。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -1, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": -2, "affection_jiang": -1},
+          "feedback": "张冠李戴。本题没有'奖励强化'，核心是'落在最近发展区、先搭支架后撤掉'，属维果茨基，而非斯金纳的强化。",
+          "answerKeywords": ["误归为强化", "本应判维果茨基支架"]
+        }
+      ]
+    },
+    {
+      "id": "ch14_c_after",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "smile",
+      "text": "（她笑着把活页本往我这边又推了推）\n答得真稳。你看——'他在哪'和'扶他到哪'，是两件事，得两个人合起来看。\n知道了'脑子怎么长'，还得知道'他这个年纪在找什么、又是怎么学的'。下一个人，埃里克森。"
+    },
+    {
+      "id": "ch14_t3",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "narrator",
+      "text": "她翻到活页本的另一页——左边是一长列'八阶段'的矛盾对，右边画着四个学习流派的小框框。\n（她连这种枯燥的表格，都排得清清爽爽。我忍不住多看了她一眼——是看表，也是看人。）"
+    },
+    {
+      "id": "ch14_d_teach_1",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "smile",
+      "text": "（她指着左边那列）\n埃里克森把人的一生分八个阶段，每个阶段都有一对要闯的矛盾：信任对不信任、自主对羞愧、主动对内疚、勤奋对自卑……\n中学生卡在**第五阶段(12-18岁)：自我同一性 对 角色混乱**——任务是把'我是谁'整合成一个稳定连贯的自我，顺过来，就得到'忠诚'这个品质。\n再往后一阶段，**成年早期：亲密 对 孤独**——敢把真实的自己，交付给值得的人。"
+    },
+    {
+      "id": "ch14_d_teach_2",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "smile",
+      "text": "（她移到右边那四个小框）\n再说他们'怎么学'，学习理论四大流派，一句话各抓一个：\n**行为主义**：学习是刺激—反应的联结(华生、斯金纳的强化)；\n**认知主义**：学习是内部的信息加工(布鲁纳、加涅)；\n**建构主义**：知识是学习者主动建构的(强调情境、协作)；\n**人本主义**：以学生为中心，关注自我实现与情感(罗杰斯、马斯洛)。"
+    },
+    {
+      "id": "ch14_d_teach_3",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "smile",
+      "text": "（她把两边连起来给我看）\n你发现没有——罗杰斯既是人本主义的代表，又是来访者中心疗法的源头，'无条件积极关注'是他的招牌：不带评判地，接纳一个人本来的样子。\n所以护住这些孩子，理论从来不是各管各的——它们最后都通向同一句话：先看见他，再帮他长。\n（她抬眼看我，声音很轻）来，这道，考你辨流派。"
+    },
+    {
+      "id": "ch14_d_apply",
+      "type": "choice",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "smile",
+      "knowledgeCheck": "q_eriksond_01",
+      "text": "（她指着右边的小框）\n有位老师上课特别强调：让学生在真实问题情境里，自己探究、彼此协作，把新知识跟已有经验联系起来、主动'搭'出自己的理解。这种教学观最符合哪个学习理论流派？",
+      "examTags": {
+        "subject": "302",
+        "module": "中学生发展心理",
+        "examPoint": "学习理论四大流派的辨别（建构主义）",
+        "questionType": "材料分析"
+      },
+      "choices": [
+        {
+          "id": "A",
+          "text": "建构主义——强调情境、协作，知识由学习者在原有经验上主动建构。",
+          "quality": "optimal",
+          "effects": {"professionalSkill": 2, "studentTrust": 1, "classOrder": 0, "ethicsRisk": -1, "lawRisk": 0, "examScore": 3, "affection_jiang": 3},
+          "feedback": "对。'真实情境+探究协作+在已有经验上主动搭建理解'，正是建构主义学习观的核心标志。",
+          "answerKeywords": ["建构主义", "主动建构", "情境与协作", "联系已有经验"]
+        },
+        {
+          "id": "B",
+          "text": "行为主义——通过刺激—反应和强化让学生学会知识。",
+          "quality": "suboptimal",
+          "effects": {"professionalSkill": 0, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": -1, "affection_jiang": 0},
+          "feedback": "流派错了。行为主义看重外部刺激—反应联结与强化；本题强调的是'学生主动建构、情境协作'，属建构主义。",
+          "answerKeywords": ["行为主义讲强化（不对症）", "本题为建构主义"]
+        },
+        {
+          "id": "C",
+          "text": "认知主义——重点是学生大脑内部的信息加工过程。",
+          "quality": "suboptimal",
+          "effects": {"professionalSkill": 1, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": 0, "affection_jiang": 0},
+          "feedback": "比较接近但不够准。认知主义关注个体内部信息加工；本题更突出'真实情境、协作、主动建构'，是建构主义的标志，辨别要更精准。",
+          "answerKeywords": ["认知主义讲内部加工（偏）", "宜判建构主义"]
+        },
+        {
+          "id": "D",
+          "text": "人本主义——以学生为中心，关注他的情感与自我实现。",
+          "quality": "suboptimal",
+          "effects": {"professionalSkill": 0, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": -1, "affection_jiang": 0},
+          "feedback": "落点不同。人本主义重情感与自我实现；本题核心是'情境、协作、主动建构知识'，对应的是建构主义。",
+          "answerKeywords": ["人本主义讲情感自我实现（不对症）", "本题为建构主义"]
+        }
+      ]
+    },
+    {
+      "id": "ch14_d_after",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "smile",
+      "text": "（她长舒一口气，像卸下一点担子）\n阶段、流派，你都拎清了。\n最后还差一层——这些孩子千差万别，可他们的成长，又共同遵循着几条铁一样的规律。懂了这几条，你才知道，什么时候该等、什么时候该扶、什么时候该换个法子。"
+    },
+    {
+      "id": "ch14_t4",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "narrator",
+      "text": "顾承在这时探了下头，把沈砚和另一个孩子的情况补充了几句，又被江晚温声请了出去。\n（她做事，永远先把空间留给孩子。）她转回来，在活页本最后一页，写下五个词。"
+    },
+    {
+      "id": "ch14_e_teach_1",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "smile",
+      "text": "（她指着写下的五个词）\n个体身心发展，有五条一般规律，每一条都对着一句教育启示——\n**顺序性**：由低到高、由简到繁，不可逆——所以教育要**循序渐进**，不能拔苗助长；\n**阶段性**：不同年龄段有不同特征——所以教育要**分阶段**，不能把孩子当小大人'一刀切'。"
+    },
+    {
+      "id": "ch14_e_teach_2",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "smile",
+      "text": "接着三条——\n**不平衡性**：同一方面或不同方面，发展速度不均，存在**关键期/敏感期**——所以要**抓关键期、适时而教**；\n**互补性**：生理与心理、机能之间能相互补偿(比如盲人听觉更敏锐、身体弱的孩子可凭意志补上)——所以要**扬长避短、树立信心**；\n**个别差异性**：人和人之间发展有差异——所以要**因材施教**。"
+    },
+    {
+      "id": "ch14_e_teach_3",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "tender",
+      "text": "（她合上活页本，把它和那张五词便签，一起轻轻放进我手里）\n你看，沈砚和林小满，问题不一样、节奏不一样，可都得照着这几条来：该等的等，该抓的关键期抓住，该补的扬长去补，该分开看的——因材施教。\n（她顿了顿，声音很轻）这本，你拿去用几天吧。我相信，你能把这些孩子，一个一个，好好接住。"
+    },
+    {
+      "id": "ch14_e_apply",
+      "type": "choice",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "smile",
+      "knowledgeCheck": "q_devlaw_01",
+      "text": "（她把便签按在我手心，眼里含笑）\n沈砚动手能力极强、可文字表达一直偏弱；我们就鼓励他多用画图、动手操作来表达想法，扬长又补短，他慢慢有了自信。这最符合身心发展的哪条规律？",
+      "examTags": {
+        "subject": "302",
+        "module": "中学生发展心理",
+        "examPoint": "个体身心发展一般规律的辨别（互补性·扬长避短）",
+        "questionType": "材料分析"
+      },
+      "choices": [
+        {
+          "id": "A",
+          "text": "互补性——机能之间可相互补偿，教育应扬长避短、树立信心。",
+          "quality": "optimal",
+          "effects": {"professionalSkill": 2, "studentTrust": 2, "classOrder": 0, "ethicsRisk": -1, "lawRisk": 0, "examScore": 3, "affection_jiang": 3},
+          "feedback": "对。'以强项(动手)补偿弱项(表达)、树立信心'正是互补性规律的体现，对应的教育启示是扬长避短。",
+          "answerKeywords": ["互补性", "相互补偿", "扬长避短", "树立信心"]
+        },
+        {
+          "id": "B",
+          "text": "个别差异性——每个孩子不一样，所以要因材施教。",
+          "quality": "suboptimal",
+          "effects": {"professionalSkill": 1, "studentTrust": 1, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": 1, "affection_jiang": 1},
+          "feedback": "方向沾边但不够准。差异性强调'人与人不同→因材施教'；本题落点是'同一个人用强项补弱项'，最对应的是互补性。",
+          "answerKeywords": ["个别差异（不够对症）", "宜判互补性"]
+        },
+        {
+          "id": "C",
+          "text": "顺序性——发展由低到高，所以要循序渐进。",
+          "quality": "suboptimal",
+          "effects": {"professionalSkill": 0, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": -1, "affection_jiang": 0},
+          "feedback": "规律错了。顺序性讲'由低到高不可逆→循序渐进'；本题讲的是'以长补短'，对应互补性，不是顺序性。",
+          "answerKeywords": ["顺序性讲循序渐进（不对症）", "本题为互补性"]
+        },
+        {
+          "id": "D",
+          "text": "不平衡性——存在关键期，所以要抓关键期适时而教。",
+          "quality": "suboptimal",
+          "effects": {"professionalSkill": 0, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": -1, "affection_jiang": 0},
+          "feedback": "规律错了。不平衡性讲'发展速度不均、有关键期→适时而教'；本题没有抓关键期的意思，核心是扬长补短的互补性。",
+          "answerKeywords": ["不平衡性讲关键期（不对症）", "本题为互补性"]
+        }
+      ]
+    },
+    {
+      "id": "ch14_e_after",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "tender",
+      "text": "（她看着我把活页本抱进怀里，眼里有种很软的光）\n从'是哪一种不安'，到'用哪一种方法'，到'他长在哪个阶段、怎么学'，再到'守着哪几条规律'——一个下午，你把'护航'这两个字，拆开又拼回去了一遍。\n剩下的路，我们一起走。我，很愿意有你做搭档。"
+    },
+    {
+      "id": "ch14_e_heart",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "narrator",
+      "text": "怀里的活页本还带着她的体温和淡淡茶香。最后一页那五个词旁边，她不知什么时候添了一行小字：'每个孩子，都值得被慢慢看清。'\n（她把听了那么多人心事的本子，连同那句话，一起轻轻交到了我手上。）\n我抬头，正撞进她含笑的目光里，耳根，悄悄热了起来。"
+    },
+    {
+      "id": "ch14_end_1",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "江晚",
+      "expression": "smile",
+      "text": "（夕阳把咨询室染成蜜色。林小满被顾老师轻轻领进来，站在门口，攥着衣角，怯生生的。江晚没急着开口，只先给她也倒了杯温水，放在她够得着的地方）\n（她侧过头，对我极轻地说）你看——别急着'纠正'她。先让她知道，紧张不丢人，这间屋子里，有人愿意陪她，把那口气，慢慢喘匀。\n剩下的，我们一起，一步一步来。"
+    },
+    {
+      "id": "ch14_end_2",
+      "type": "dialogue",
+      "background": "counseling_room",
+      "speaker": "narrator",
+      "text": "我抱着那本沉甸甸的活页本走出心理中心，回头望了一眼。\n暖光里，江晚正微微俯身，认真听林小满一字一句地，终于肯说出'我其实……很怕考试'。\n这一个下午，我学会了用一把尺子分辨心里的不安，用四种方法对症去托，用皮亚杰与维果茨基看他们怎么长、怎么教，用埃里克森与四大流派看他们在找什么、怎么学，再用五条规律，守住每一个孩子的节奏。\n（也是这一个下午，我好像更确定了一件事——愿意陪一个人，一直把别人看清的人，自己也值得，被人，认真护航。）"
+    },
+    {
+      "id": "ch14_end",
+      "type": "summary",
+      "background": "counseling_room",
+      "speaker": "narrator",
+      "text": "（心灵护航的这一课落幕。把今天的得失，一条条记进手账吧——人记进去了，分也得记进去。）",
+      "review": {
+        "learnedExamPoints": [
+          "302-中学生心理辅导-心理健康标准与中学生常见心理问题（焦虑/抑郁/强迫/网络成瘾）— 江晚",
+          "302-中学生心理辅导-心理辅导主要方法（认知/行为/精神分析/来访者中心的区别）— 江晚",
+          "302-中学生发展心理-皮亚杰认知发展四阶段 + 维果茨基最近发展区/支架式教学 — 江晚",
+          "302-中学生发展心理-埃里克森人格发展八阶段 + 学习理论四大流派（行为/认知/建构/人本）— 江晚",
+          "302-中学生发展心理-个体身心发展一般规律（顺序/阶段/不平衡/互补/差异）— 江晚"
+        ],
+        "structure": "五个考点都从'期中后心理中心扎堆求助'这桩事件长出来：林小满考试焦虑→心理健康标准与常见问题；为不同孩子选不同路子→四大辅导取向；用'跳一跳够得着'教学→皮亚杰四阶段+维果茨基最近发展区/支架；理解其身份探索与学习方式→埃里克森八阶段+学习理论四大流派；面对个体差异与关键期→身心发展一般规律。走'剧情讲授→马上做题→应用→反馈'微循环，章末月考为冷测。",
+        "mockExam": "core_ch14_mock",
+        "recommendedReview": [
+          "答错心理健康→江晚重讲健康标准与焦虑/抑郁/强迫/网瘾的辨别口诀",
+          "答错辅导方法→江晚重讲认知/行为/精神分析/来访者中心四取向的抓手",
+          "答错皮亚杰/维果茨基→江晚重讲四阶段顺序与最近发展区/支架的连用",
+          "答错埃里克森/学习流派→江晚重讲八阶段(重点第五阶段)与行为/认知/建构/人本四流派",
+          "答错身心发展规律→江晚重讲五条规律及各自教育启示（重点互补性vs差异性vs不平衡性）"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,277 @@
+{
+  "chapterId": "route_lu_3",
+  "route": "lu",
+  "requires": {"flagsAllTrue": ["route_locked_lu"]},
+  "title": "陆知行线 · 第三章 · 规矩是为了护住你",
+  "summary": "黄金四拍第四拍'告白'。周也事故妥善收尾后的一个雨夜，你终于撬开陆知行的过往：多年前他还是新教师时，一桩学生伤害事故因当年处置失范、责任认定不清，让一个本可被接住的孩子和一位同事都坠入深渊。从那以后，他把自己活成了规则本身。深挖模块收束于'依法执教'——把法规、师德、教师权利义务拧成一条线：依法执教不是冷，是出事那天还能护住人的底气。结尾按 affection_lu / chose_rule_and_warmth / minExamPointsCleared 分支三结局。",
+  "designNote": "乙女向个人线 ch_lu_3，'告白'拍 + 结局分支。第一人称旁白。lu 表情仅 neutral|smile|serious|worried，背景仅 meeting_room|corridor|staff_room|counseling_room。深挖 301·依法执教(综合法规/师德/权利义务)。一个 teach→knowledgeCheck(带 examTags)→apply→after→heart 微循环，随后进入告白与 branch。branch 用 §2.3 schema：Good=affectionGte lu>=24 且 flagsAllTrue[chose_rule_and_warmth] 且 minExamPointsCleared>=40；Normal=affectionGte lu>=16；都不满足 fallback 顺序进 Bad。每结局 2-4 节点。",
+  "characters": ["lu", "shen"],
+  "students": ["周也"],
+  "valueFields": ["professionalSkill", "studentTrust", "classOrder", "ethicsRisk", "lawRisk", "examScore", "affection_lu"],
+  "note": "ethicsRisk/lawRisk 为逆向指标，越低越好。knowledgeCheck 指向 ch_lu_quiz.json 的题目 id。ch_lu_3_branch 为分支节点。",
+  "nodes": [
+    {
+      "id": "ch_lu_3_intro",
+      "type": "dialogue",
+      "background": "corridor",
+      "speaker": "narrator",
+      "text": "周也的事妥善了结那天，下了一场很大的雨。\n放学后，我抱着一摞要他签字的事故归档材料去找陆知行，远远看见他一个人站在教务处窗前，望着雨幕，没开灯。\n（自从那天他说'这句话比你想的扎得深',我心里就一直空着一块。今天，我想知道——是什么，把他冻成了现在这样。）"
+    },
+    {
+      "id": "ch_lu_3_intro_2",
+      "type": "dialogue",
+      "background": "meeting_room",
+      "speaker": "陆知行",
+      "expression": "worried",
+      "text": "（他听见脚步声，没回头。雨声很大，他的声音却很轻。）\n你大概一直觉得，我对规则较真到不近人情。\n……你想知道为什么，对不对。\n（他终于转过身，眼神里是我从未见过的、很旧很沉的东西。）那我今天，破一次例，告诉你。"
+    },
+    {
+      "id": "ch_lu_3_intro_3",
+      "type": "dialogue",
+      "background": "meeting_room",
+      "speaker": "陆知行",
+      "expression": "worried",
+      "text": "（他在椅子上坐下，雨光打在他脸上。）\n很多年前，我也是个像你一样的新老师。也是一桩学生伤害事故——一个孩子在一次没人盯防的活动里出了事。\n那时候我们都'凭感觉'：怕担责，先互相推；想安抚，又乱表态。程序乱了，证据没固定，责任认不清。\n（他闭了下眼。）最后，那个孩子没能被及时、公道地接住。带他的那位老师，背了本不该全背的责，离开了讲台。两个人，都掉了下去。"
+    },
+    {
+      "id": "ch_lu_3_teach_1",
+      "type": "dialogue",
+      "background": "meeting_room",
+      "speaker": "陆知行",
+      "expression": "serious",
+      "text": "（他声音稳下来，像是把痛重新锁回规则里。）\n从那以后我懂了一件事，今天教给你，这是我这些年所有'冰'的总和——**依法执教**。\n它不是某一条法条，是把三样东西拧成一根绳：守法规(义务教育法、未保法、伤害事故办法)、守师德(关爱学生、为人师表)、明权责(教师的权利与义务)。"
+    },
+    {
+      "id": "ch_lu_3_teach_2",
+      "type": "dialogue",
+      "background": "meeting_room",
+      "speaker": "陆知行",
+      "expression": "serious",
+      "text": "依法执教的内核就三句：\n**有法依法**——处理学生问题，先问'法律怎么划线',不凭情绪、不凭经验拍脑袋；\n**于法有据地行使权利、履行义务**——管学生是权也是责，惩戒要合理合规，绝不越界成体罚；\n**程序正当、尊重权利**——保护学生的隐私权、人格尊严权、受教育权，处置留痕、依规走程序。"
+    },
+    {
+      "id": "ch_lu_3_teach_3",
+      "type": "dialogue",
+      "background": "meeting_room",
+      "speaker": "陆知行",
+      "expression": "neutral",
+      "text": "（他抬眼看我，那目光第一次毫无保留。）\n你以为依法执教是把人推远。错了。\n它是在那个'万一出事'的瞬间——你手里有法、心里有度、程序没乱——所以你能稳稳地，把孩子接住，也把你自己接住。\n我把规矩看得比命重，不是为了卡谁。是为了在出事那天，还能护住该护的人。……来，最后一道题，替当年那个没被接住的孩子，答对它。"
+    },
+    {
+      "id": "ch_lu_3_apply",
+      "type": "choice",
+      "background": "meeting_room",
+      "speaker": "陆知行",
+      "expression": "serious",
+      "knowledgeCheck": "q_lu_lawful_teaching_01",
+      "text": "（他把笔递给我，指尖很稳，眼神却在等一个答案。）\n一个综合情境：学生上课起哄、还把同学的隐私编成段子在班群里传，影响极坏。你既要制止、要管教，又身处'依法执教'四个字之下。最能体现依法执教的处理是？",
+      "examTags": {
+        "subject": "301",
+        "module": "教育法律法规",
+        "examPoint": "依法执教的综合运用（合理惩戒不越界·保护学生人格隐私·程序正当·守师德底线）",
+        "questionType": "材料分析"
+      },
+      "choices": [
+        {
+          "id": "A",
+          "text": "当场制止起哄、要求删除班群不当内容并保护被传同学隐私；课后依校规对起哄学生作合理惩戒与批评教育，全程不公开其隐私、不羞辱人格，处置留痕、必要时联系家长。",
+          "quality": "optimal",
+          "effects": {"professionalSkill": 3, "studentTrust": 2, "classOrder": 2, "ethicsRisk": -2, "lawRisk": -3, "examScore": 3, "affection_lu": 3},
+          "feedback": "依法执教满分演示：有法依法(制止有害行为、保护隐私人格)、行使惩戒权但不越界(合理惩戒非体罚)、程序正当(留痕、联系家长)、守师德(不羞辱)。法规+师德+权责一条线全占。",
+          "setFlag": {"route_lean_lu": 1, "chose_rule_and_warmth": true},
+          "answerKeywords": ["制止有害行为", "保护隐私人格尊严", "合理惩戒不体罚", "程序正当留痕", "依法执教"]
+        },
+        {
+          "id": "B",
+          "text": "气不过，当全班面把那几个起哄学生骂一顿、罚站到下课，杀鸡儆猴。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -2, "studentTrust": -2, "classOrder": 0, "ethicsRisk": 3, "lawRisk": 3, "examScore": -3, "affection_lu": -3},
+          "feedback": "情绪化执法，把惩戒做成了体罚与羞辱，违背关爱学生、为人师表，也违背依法执教'于法有据、程序正当'。这正是当年酿成悲剧的那种'凭感觉'。",
+          "setFlag": {"chose_emotional_law": true},
+          "answerKeywords": ["情绪化越界", "变相体罚羞辱", "违背依法执教"]
+        },
+        {
+          "id": "C",
+          "text": "为了'还原事实',把班群里那段编排同学隐私的段子打印出来当众宣读，让大家看清谁在传。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -1, "studentTrust": -2, "classOrder": -1, "ethicsRisk": 2, "lawRisk": 2, "examScore": -2, "affection_lu": -2},
+          "feedback": "二次公开被传同学的隐私，等于以处置之名再侵权一次，违背保护未成年人隐私人格与网络保护精神。依法执教首先要求'不在处理中制造新的侵权'。",
+          "answerKeywords": ["二次公开侵犯隐私", "违背保护原则", "处置即侵权"]
+        },
+        {
+          "id": "D",
+          "text": "怕担责、嫌麻烦，干脆装没看见，等班主任回来再说。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -2, "studentTrust": -1, "classOrder": -2, "ethicsRisk": 1, "lawRisk": 2, "examScore": -3, "affection_lu": -2},
+          "feedback": "放任有害行为、不履行'制止有害学生行为'的法定义务，是另一种失职。依法执教既不许越界，也不许不作为。",
+          "answerKeywords": ["放任不作为", "未尽制止义务", "失职"]
+        }
+      ]
+    },
+    {
+      "id": "ch_lu_3_after",
+      "type": "dialogue",
+      "background": "meeting_room",
+      "speaker": "陆知行",
+      "expression": "smile",
+      "text": "（他听完，久久没出声。然后，他笑了——这一次，是真的笑，浅而郑重。）\n答对了。\n当年那个孩子没等到的答案，今天，你替他答了出来。\n（雨不知什么时候小了。他看着我，眼底有水光，却比任何时候都亮。）谢谢你。"
+    },
+    {
+      "id": "ch_lu_3_heart",
+      "type": "dialogue",
+      "background": "meeting_room",
+      "speaker": "narrator",
+      "text": "他笑的那一瞬间，我忽然全懂了。\n他的冰，是一座替别人立起来的碑；他的规则，是一张怕再有人坠落而织了无数遍的网。\n（这个把'护住别人'刻进骨头的人……谁来护住他呢。我想——我想是我。）\n这个念头一冒出来，我的脸，就再也压不住地烧了起来。"
+    },
+    {
+      "id": "ch_lu_3_confess_1",
+      "type": "dialogue",
+      "background": "corridor",
+      "speaker": "陆知行",
+      "expression": "neutral",
+      "text": "（他陪我走出教务处。雨后的走廊很静，路灯把两个影子拉得很长。他忽然停下脚步。）\n我这个人，冷、轴、把规矩看得比谁都重。和我在一起，不会有多少甜言蓜语。\n（他转过身，正对着我，一向沉稳的声音，第一次有了一丝不易察觉的颤。）\n可这段时间……我把规矩讲给你听，是想把我活着的全部理由，都交到你手里。"
+    },
+    {
+      "id": "ch_lu_3_confess_2",
+      "type": "dialogue",
+      "background": "corridor",
+      "speaker": "陆知行",
+      "expression": "serious",
+      "text": "（他向前一步，破天荒地，伸手极轻地碰了碰我的指尖，像那年捡起我工牌时一样凉，却在微微发抖。）\n我守了这么多年规矩，第一次，想为一个人破一回例外。\n那个画在你名字旁的记号——它早就不只是'可以教'了。\n（他低下头，声音几乎被风吹散。）……规矩是为了出事那天还能护住你。我想护住的人，是你。"
+    },
+    {
+      "id": "ch_lu_3_branch",
+      "type": "dialogue",
+      "background": "corridor",
+      "speaker": "narrator",
+      "text": "（雨停了。他站在我面前，把那身冰，连同冰底下藏了多年的滚烫，一起交给了我。\n我该怎么回应这一刻——取决于这一路，我们走到了哪里。）",
+      "branch": [
+        {
+          "condition": {"affectionGte": {"lu": 24}, "flagsAllTrue": ["chose_rule_and_warmth"], "minExamPointsCleared": 40},
+          "goto": "ch_lu_3_good_1"
+        },
+        {
+          "condition": {"affectionGte": {"lu": 16}},
+          "goto": "ch_lu_3_normal_1"
+        },
+        {
+          "condition": {"affectionGte": {"lu": 0}},
+          "goto": "ch_lu_3_bad_1"
+        }
+      ]
+    },
+    {
+      "id": "ch_lu_3_good_1",
+      "type": "dialogue",
+      "background": "corridor",
+      "speaker": "narrator",
+      "text": "（GOOD END · 规则之内，亦有温度）\n我没有躲开他那只发抖的手，反而反握住了它。\n他的指尖很凉，可掌心，是烫的。\n'陆知行,'我抬头看他，'你教了我一整路的规矩。现在，让我教你一件你不太会的事——怎么让一个人，进到你的规则里面来。'"
+    },
+    {
+      "id": "ch_lu_3_good_2",
+      "type": "dialogue",
+      "background": "corridor",
+      "speaker": "陆知行",
+      "expression": "smile",
+      "text": "（他怔了一下，那双总是结着冰的眼睛，一点点漾开了笑意——像开春的河。）\n……我大概，要重新写一条规矩了。\n（他收紧了握着我的手。）第一条：以后出事那天能护住你的，不只是规则。\n还有我。"
+    },
+    {
+      "id": "ch_lu_3_good_3",
+      "type": "dialogue",
+      "background": "staff_room",
+      "speaker": "narrator",
+      "text": "后来，周也康复回了课堂，林小满的迟到本翻篇了。教务处那盏总是亮到最晚的灯，从此常常是两个人一起熄。\n他依旧冷着脸守他的规矩，可只有我知道——他在我名字旁画的那个记号，如今是他每天打卡时，第一眼要找的地方。\n（规则是冷的，可立规则的人，和守在规则里的我们，是暖的。）"
+    },
+    {
+      "id": "ch_lu_3_good_end",
+      "type": "summary",
+      "background": "staff_room",
+      "speaker": "narrator",
+      "text": "（GOOD END。规则之内，亦有温度——你既学懂了依法执教这条深水，也接住了那个把自己活成规则的人。完美收束。）",
+      "review": {
+        "endingType": "good",
+        "endingTitle": "规则之内，亦有温度（Good End）",
+        "condition": "affection_lu≥24 且 选过'规则与温度并存'(chose_rule_and_warmth) 且 已掌握考点≥40",
+        "learnedExamPoints": [
+          "301-法规-依法执教综合运用（有法依法·合理惩戒不越界·程序正当·守师德底线）— 陆知行"
+        ],
+        "structure": "旧案揭真相→依法执教总收法规/师德/权责→破功告白→Good 结局：立规亦留情。",
+        "mockExam": "route_lu_mock"
+      }
+    },
+    {
+      "id": "ch_lu_3_normal_1",
+      "type": "dialogue",
+      "background": "corridor",
+      "speaker": "narrator",
+      "text": "（NORMAL END · 隔着一寸的尊重）\n我看着他发抖的指尖，心里翻涌，可话到嘴边，却只轻轻碰了碰，没有握紧。\n这段日子，我学会了敬他、懂他，却好像还差一点点——差一点把'懂'变成'敢'的勇气，也差一点能与他并肩立在规则里的底气。\n'陆主任,'我轻声说，'你交给我的，我都记住了。只是……我还想，再走得稳一点，才配得上你这份重。'"
+    },
+    {
+      "id": "ch_lu_3_normal_2",
+      "type": "dialogue",
+      "background": "corridor",
+      "speaker": "陆知行",
+      "expression": "neutral",
+      "text": "（他收回手，眼底掠过一丝几不可察的失落，随即又被那惯常的稳重压下。）\n……是我急了。\n（他退回半步，把那身冰，重新整理好。）这份重，本就不该现在压给你。你说得对，先站稳。\n（他顿了顿，唇角极淡地动了一下。）那个记号，我留着。等你哪天觉得自己站稳了——它还在那儿。"
+    },
+    {
+      "id": "ch_lu_3_normal_end",
+      "type": "summary",
+      "background": "staff_room",
+      "speaker": "narrator",
+      "text": "（NORMAL END。隔着一寸的尊重——你们彼此敬重，懂得对方的重量，却还没走到交心那一步。门，留着一条缝。）",
+      "review": {
+        "endingType": "normal",
+        "endingTitle": "隔着一寸的尊重（Normal End）",
+        "condition": "16≤affection_lu<24（未同时满足 chose_rule_and_warmth 与 考点≥40）",
+        "learnedExamPoints": [
+          "301-法规-依法执教综合运用（有法依法·合理惩戒不越界·程序正当·守师德底线）— 陆知行"
+        ],
+        "structure": "旧案揭真相→依法执教总收→告白→Normal 结局：尊重但未交心。",
+        "mockExam": "route_lu_mock"
+      }
+    },
+    {
+      "id": "ch_lu_3_bad_1",
+      "type": "dialogue",
+      "background": "corridor",
+      "speaker": "narrator",
+      "text": "（BAD END · 守回距离）\n他向我伸出手，等一个答案。可我脑子里翻过去的，是这一路他失望过的那些瞬间——\n我曾在气头上对学生说重话、曾想用情绪盖过规则、也曾把他讲的那些深水，左耳进右耳出。\n（我张了张嘴，却发现，我没有底气接住他这份用半生悲痛换来的郑重。）"
+    },
+    {
+      "id": "ch_lu_3_bad_2",
+      "type": "dialogue",
+      "background": "corridor",
+      "speaker": "陆知行",
+      "expression": "worried",
+      "text": "（他看着我躲闪的眼神，缓缓收回了手。那一瞬，他眼里的光，像被雨水浇灭。）\n……我明白了。\n（他重新挺直背脊，把所有情绪锁回那身冰里，声音恢复了第一天的、淬了冰的平稳。）\n是我看错了那个记号的分量。规矩，本就该一个人扛。\n抱歉，耽误你这么晚。早点回去。"
+    },
+    {
+      "id": "ch_lu_3_bad_3",
+      "type": "dialogue",
+      "background": "staff_room",
+      "speaker": "narrator",
+      "text": "他转身走回那间没开灯的教务处，背影挺得笔直，像第一天那样，也像往后无数个独自加班的夜那样。\n我站在原地，听见走廊尽头，门轻轻合上的声音。\n（他把规则守成了一座孤岛，而我，终究没能成为那个上岛的人。\n——名字旁的那个记号，从此，只是一个记号了。）"
+    },
+    {
+      "id": "ch_lu_3_bad_end",
+      "type": "summary",
+      "background": "staff_room",
+      "speaker": "narrator",
+      "text": "（BAD END。守回距离——他失望地退回了规则筑成的孤岛。法规屡错、情绪化执法或好感不足，都让这份郑重无处安放。重来一次，也许你能学得更稳、走得更近。）",
+      "review": {
+        "endingType": "bad",
+        "endingTitle": "守回距离（Bad End）",
+        "condition": "fallback：affection_lu<16 或 法规题屡错/lawRisk 高/选过情绪化执法(chose_emotional_law)",
+        "learnedExamPoints": [
+          "301-法规-依法执教综合运用（有法依法·合理惩戒不越界·程序正当·守师德底线）— 陆知行"
+        ],
+        "structure": "旧案揭真相→依法执教总收→告白→Bad 结局：他失望守回距离。",
+        "mockExam": "route_lu_mock",
+        "recommendedReview": [
+          "好结局需：affection_lu≥24、选过'规则与温度并存'、考点掌握≥40、且未选情绪化执法；建议重练教师权利义务/伤害事故/依法执教三组题，并在抉择中坚持'守法且有温度'"
+        ]
+      }
+    }
+  ]
+}

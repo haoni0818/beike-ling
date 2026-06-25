@@ -1,0 +1,531 @@
+{
+  "chapterId": "core_ch16",
+  "title": "第十六章 · 育人的温度",
+  "summary": "高二(3)班接连出了几桩事：被欺负后死活不肯认错的男生、把校规背得滚瓜烂熟却专钻空子的女生、还有一群在'该不该举报作弊'上吵翻了天的孩子。顾承把我叫进班主任办公室，没急着给办法，先泡了壶酽茶：'当老师，光会上课不算本事，把人教成人，才是。'一整天，从办公室到操场，他带我一桩桩拆解——德育不是讲大道理，是看懂孩子心里那条还在长的'对错的尺子'，再用对方法，把温度递进去。傍晚操场的风很软，我忽然觉得，被他这样不疾不徐地'带'着，心里也踏实得发暖。",
+  "designNote": "顾承(班主任·德育担当)绝对主导，心动写成沉稳带教里那份被托住的踏实与暖，全程克制得体、绝不越界；学生(欠收敛的男生、钻空子的女生、争论举报的孩子)仅为教学对象与事件源，绝不涉及恋爱或性化。五个德育考点(德育方法/德育过程规律/德育原则/科尔伯格三水平六阶段/皮亚杰他律→自律)各包在'剧情讲授→马上做题→应用→反馈→心动'的微循环里，结构镜像第四章。特别注意区分科尔伯格(六阶段)与皮亚杰道德(他律→自律)两套理论。江晚/程砚可极短cameo。",
+  "characters": ["gu", "jiang", "cheng"],
+  "students": ["李航", "苏晓", "高二(3)班学生"],
+  "valueFields": ["professionalSkill", "studentTrust", "classOrder", "ethicsRisk", "lawRisk", "examScore", "affection_lu", "affection_jiang", "affection_gu", "affection_cheng", "affection_shen"],
+  "note": "ethicsRisk/lawRisk 为逆向指标，越低越好。knowledgeCheck 指向 chapter16_quiz.json 的题目 id。kp_kohlberg(科尔伯格六阶段)与 kp_moral_dev_stage(皮亚杰他律→自律)是两个不同理论，勿混。",
+  "nodes": [
+    {
+      "id": "ch16_intro_1",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "narrator",
+      "text": "周一早自习刚过，班主任办公室的门虚掩着。\n我敲门进去，顾承正背对着我，往两只搪瓷缸里倒茶，热气腾腾。他没回头，先开了口：'坐。'\n（顾老师带高二(3)班，是出了名的'班带得最稳'。今天一早叫我过来，桌上摊着三份摁了红手印的检讨、半本翻烂的《学生手册》，还有一张写满名字的座位表。）"
+    },
+    {
+      "id": "ch16_intro_2",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "顾承",
+      "expression": "neutral",
+      "text": "（他把一缸热茶推到我面前，自己在对面坐下，神情不疾不徐）\n这几天，我们班集中爆了几件事。李航被高年级堵了，回头我让他认个错——不是认被欺负的错，是认他后来动手砸人的错——他梗着脖子死活不认；苏晓呢，校规背得比我都熟，专挑没明令禁止的空子钻；昨天一节班会，为'同桌作弊该不该报告老师'，全班吵翻了天。\n（他喝了口茶，看我）你说，这几件事，是几件事，还是一件事？"
+    },
+    {
+      "id": "ch16_intro_3",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "顾承",
+      "expression": "serious",
+      "text": "（见我答不上，他也不催，只是把那缸茶又往我手边送了送）\n是一件事——都是'德育'。\n当老师，光会上课不算真本事；能把一个个孩子，教成立得住的人，才算。今天不忙，我带你把这门'看不见的功夫'，一桩桩拆开看。\n（他翻开那本旧《学生手册》，语气沉下来，却很稳）先从最根上的问题说起：我们到底，靠什么去影响一个孩子？"
+    },
+    {
+      "id": "ch16_a_teach_1",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "顾承",
+      "expression": "neutral",
+      "text": "德育的常用方法，就那么几把'家伙什儿'，关键是知道每一把'靠什么影响人'——\n**说服教育法**：靠摆事实、讲道理，作用于学生的认识，让他从心里'想通了'，这是德育最基本的方法；\n**榜样示范法**：靠典型人物、先进事迹做样子，让学生'见贤思齐'，靠的是模仿与感染；\n**陶冶教育法**：靠创设情境、环境氛围，潜移默化、'润物细无声'地熏染，不靠正面说教。"
+    },
+    {
+      "id": "ch16_a_teach_2",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "顾承",
+      "expression": "neutral",
+      "text": "还有两把，专治'光想通了还不够'——\n**实际锻炼法**（也叫练习与制度法）：靠让学生在实际活动、值日、岗位里反复练，把认识落成行为习惯，靠的是'做'出来；\n**品德评价法**：靠表扬奖励、批评处分、操行评定，给行为一个明确的'对/错'反馈，强化好的、抑制坏的。\n（他屈指敲了敲桌面）记牢这五把：说服靠'讲'、榜样靠'学'、陶冶靠'染'、锻炼靠'练'、评价靠'评'。"
+    },
+    {
+      "id": "ch16_a_teach_3",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "顾承",
+      "expression": "smile",
+      "text": "（他指了指窗外走廊上'最美志愿者'的光荣榜）\n你看，我把上学期帮邻座补习的孩子事迹挂出去，不批评谁、也不讲大道理——就让大家自己看、自己比。这用的是哪把？\n（他端起茶，眼里有点考较的笑意）别急着答。先把这五把的'脾性'认全了，我才放心把班交到你这样的人手里。来，第一道。"
+    },
+    {
+      "id": "ch16_a_apply",
+      "type": "choice",
+      "background": "office",
+      "speaker": "顾承",
+      "expression": "smile",
+      "knowledgeCheck": "q_demethod_01",
+      "text": "（他放下茶缸，看着我）\n那这道你说——我在班里办'光荣榜'、请帮过同学的孩子上台讲他怎么做的，让全班'见贤思齐'，我主要用的是哪一种德育方法？",
+      "examTags": {
+        "subject": "302",
+        "module": "德育",
+        "examPoint": "德育方法的辨别与选用（榜样示范法的特征）",
+        "questionType": "材料分析"
+      },
+      "choices": [
+        {
+          "id": "A",
+          "text": "榜样示范法——用先进典型和事迹给学生做样子，靠模仿与感染让大家见贤思齐。",
+          "quality": "optimal",
+          "effects": {"professionalSkill": 2, "studentTrust": 1, "classOrder": 1, "ethicsRisk": -1, "lawRisk": 0, "examScore": 3, "affection_gu": 3},
+          "feedback": "对。'树典型、立榜样、见贤思齐'，靠模仿感染影响学生，正是榜样示范法的核心特征。",
+          "answerKeywords": ["榜样示范法", "典型示范", "见贤思齐", "模仿感染"]
+        },
+        {
+          "id": "B",
+          "text": "说服教育法——通过摆事实、讲道理提高学生的道德认识。",
+          "quality": "acceptable",
+          "effects": {"professionalSkill": 0, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": -1, "affection_gu": 0},
+          "feedback": "辨别不够准。说服教育靠的是'讲道理、作用于认识'；本情境没有正面说理，而是'树典型让人学'，落点在榜样示范。",
+          "answerKeywords": ["说服靠讲理（不对症）", "本题应判榜样示范"]
+        },
+        {
+          "id": "C",
+          "text": "陶冶教育法——靠环境氛围潜移默化地熏染学生。",
+          "quality": "acceptable",
+          "effects": {"professionalSkill": 0, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": -1, "affection_gu": 0},
+          "feedback": "近似但不准。陶冶强调'无明确说教、靠情境氛围润物细无声'；本题有明确的'典型上台示范'，属榜样示范法。",
+          "answerKeywords": ["陶冶靠环境熏染（不对症）", "本题有明确典型示范"]
+        },
+        {
+          "id": "D",
+          "text": "品德评价法——靠表扬奖励、批评处分来强化或抑制学生的行为。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -1, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": -2, "affection_gu": -1},
+          "feedback": "混淆了。品德评价法的核心是'给行为下对错评判（奖惩、操行评定）'；本题重在'立榜样供模仿'，没有评判谁对谁错，应判榜样示范法。",
+          "answerKeywords": ["品德评价靠奖惩评判", "本题无评判·应判榜样示范"]
+        }
+      ]
+    },
+    {
+      "id": "ch16_a_after",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "顾承",
+      "expression": "smile",
+      "text": "（他点点头，眼角的纹路松开一点）\n对喽。这五把方法，没有哪把最好，只有哪把最'对症'。\n说服是开锁的钥匙，榜样是引路的灯，陶冶是养人的水土，锻炼是磨刀的石，评价是校准的尺——什么孩子、什么火候，配什么家伙什儿，这才叫会'带'。"
+    },
+    {
+      "id": "ch16_a_heart",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "narrator",
+      "text": "他说这些时，手稳稳地端着那缸早就不烫了的茶，语气不急不缓，像在说一件再家常不过的事。\n（带过几百个孩子的人，连讲'方法'，都带着一股把人稳稳托住的劲儿。坐在他对面，我那点初为人师的慌，不知怎么就落了地。）\n我低头喝了口茶，是有点苦，可回甘很长。"
+    },
+    {
+      "id": "ch16_t1",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "顾承",
+      "expression": "neutral",
+      "text": "（他给我续了点茶，话锋一转）\n光知道'用哪把方法'还不够。你得先懂——一个孩子的品德，到底是怎么一步步'长'出来的。不懂这个规律，方法用得再花哨，也是瞎使劲。\n（他拿过那份李航的检讨，摊在桌上）就拿李航说事。"
+    },
+    {
+      "id": "ch16_b_teach_1",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "顾承",
+      "expression": "neutral",
+      "text": "德育过程，说到底是培养学生**知、情、意、行**的过程——\n**知**是道德认识（知道对错），**情**是道德情感（对对错有好恶体验），**意**是道德意志（顶住诱惑、坚持去做的劲儿），**行**是道德行为（真做出来，这是最终目的、也是衡量品德的根本标志）。\n这四个要素，得统一协调地发展。"
+    },
+    {
+      "id": "ch16_b_teach_2",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "顾承",
+      "expression": "serious",
+      "text": "但关键的规律来了，最爱考——这'知情意行'，**不一定非从'知'开始**！\n可以'晓之以理'（从知入手）、可以'动之以情'（从情入手）、可以'持之以恒'（从意入手）、也可以'导之以行'（从行入手）。这叫**具有多种开端**，看孩子的实际，从哪头切都行。\n李航道理全懂（知没问题），坏在那股冲动上没刹住（意和行脱了节）——对他，就该从'意'和'行'上练，不是再给他讲一遍大道理。"
+    },
+    {
+      "id": "ch16_b_teach_3",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "顾承",
+      "expression": "neutral",
+      "text": "还有一条，你得有耐心打底——德育过程是一个**长期的、反复的、逐步提高**的过程。\n孩子的品德不是一锤子买卖，今天教好了，明天可能又犯；'犯—纠—再犯—再纠'是常态，不是你没本事。\n（他叹口气，又笑了笑）所以带班的人，最忌讳'毕其功于一役'。今天李航不肯认，不代表白带——种子埋下了，得等。来，这道你来断断。"
+    },
+    {
+      "id": "ch16_b_apply",
+      "type": "choice",
+      "background": "office",
+      "speaker": "顾承",
+      "expression": "neutral",
+      "knowledgeCheck": "q_moralprocess_01",
+      "text": "（他把李航的检讨往我跟前推了推）\n李航道理都懂，就是一上头就管不住手。我没再给他讲大道理，而是让他在班里当一周'矛盾调解员'，逼着他在真冲突里练着先冷静、再处理。你说，我这是顺着德育过程的哪条规律在做？",
+      "examTags": {
+        "subject": "302",
+        "module": "德育",
+        "examPoint": "德育过程基本规律（知情意行·具有多种开端·从行入手）的辨别与应用",
+        "questionType": "材料分析"
+      },
+      "choices": [
+        {
+          "id": "A",
+          "text": "德育要培养知情意行，且具有多种开端——李航'知'已具备而'意行'薄弱，故从'行'入手强化锻炼，不必再从'知'重头讲起。",
+          "quality": "optimal",
+          "effects": {"professionalSkill": 2, "studentTrust": 1, "classOrder": 1, "ethicsRisk": -1, "lawRisk": 0, "examScore": 3, "affection_gu": 3},
+          "feedback": "对。德育过程是知情意行统一发展、且具有多种开端；李航'知'足而'意行'弱，从'行'切入针对性强，正合规律。",
+          "answerKeywords": ["知情意行统一", "具有多种开端", "从行入手", "针对薄弱要素"]
+        },
+        {
+          "id": "B",
+          "text": "德育过程必须严格按'知—情—意—行'的固定顺序，先把道理讲透才能动手。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -1, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": -2, "affection_gu": -1},
+          "feedback": "错在'固定顺序'。德育过程的规律恰恰是知情意行'具有多种开端'，不必死守'知'字打头；李航缺的不是道理，硬要先讲反而无效。",
+          "answerKeywords": ["误判为固定顺序", "实则多种开端"]
+        },
+        {
+          "id": "C",
+          "text": "这是德育的'长期反复性'——只要反复让他写检讨，迟早会改。",
+          "quality": "acceptable",
+          "effects": {"professionalSkill": 0, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": -1, "affection_gu": 0},
+          "feedback": "长期反复确是规律之一，但本题核心是'不再讲理、改从行入手锻炼'，对应的是'多种开端、从行切入'；况且'反复写检讨'是评价而非实际锻炼。",
+          "answerKeywords": ["长期反复（不对症）", "本题落点在从行入手"]
+        },
+        {
+          "id": "D",
+          "text": "这是因材施教——李航特殊，所以单独给他开小灶。",
+          "quality": "acceptable",
+          "effects": {"professionalSkill": 0, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": -1, "affection_gu": 0},
+          "feedback": "因材施教是德育'原则'，不是'过程规律'；本题问的是德育过程规律，应从'知情意行·多种开端·从行入手'作答，层次不要混。",
+          "answerKeywords": ["因材施教属德育原则", "本题问过程规律"]
+        }
+      ]
+    },
+    {
+      "id": "ch16_b_after",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "顾承",
+      "expression": "smile",
+      "text": "（他把李航的检讨收回抽屉，动作很轻，像在收一件还没长成的东西）\n断得清楚。你看，懂了'知情意行能从任意一头开始'，你就不会再对着李航干讲道理、把自己也气个半死。\n方法是术，规律是道。道明白了，术才使得出。"
+    },
+    {
+      "id": "ch16_t2",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "narrator",
+      "text": "办公室门被轻轻叩了两下，程砚探进半个身子，把一摞改好的教案放在门边的柜子上。\n'顾哥又在带新人？'他冲我笑了笑，'跟着顾老师学带班，你算是找对人了。'说完不打扰，掩门走了。\n（连一向最严谨的程老师都这么说。我看向顾承，他只是淡淡一笑，又拿起了那本翻烂的《学生手册》。）"
+    },
+    {
+      "id": "ch16_c_teach_1",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "顾承",
+      "expression": "neutral",
+      "text": "（他把《学生手册》摊到苏晓那一页——上面被她用便签标满了'这条没说不许'）\n苏晓这事，逼我们说德育的'红线'——也就是**德育原则**。方法是怎么做，原则是不能越的底线。中学最常考这么几条，你跟我一条条过。\n**导向性原则**：德育得有正确的方向，把理想信念、价值观摆正，不能跟着孩子瞎跑。"
+    },
+    {
+      "id": "ch16_c_teach_2",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "顾承",
+      "expression": "neutral",
+      "text": "**疏导原则**（循循善诱）：讲道理、疏通引导，以理服人，不是堵、不是压；\n**尊重信任学生与严格要求相结合**：既把孩子当人尊重、信任，又不放纵、提明确要求——这是马卡连柯那句'尽可能多地尊重，尽可能多地要求'；\n**教育影响的一致性与连贯性**：学校、家庭、社会各方步调一致，前后衔接，别今天一个样、明天又一个样。"
+    },
+    {
+      "id": "ch16_c_teach_3",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "顾承",
+      "expression": "serious",
+      "text": "还有一条，专治苏晓这种——**因材施教原则**：从每个孩子的实际出发，长善救失、有的放矢。\n苏晓不是坏，是聪明用偏了，钻'规则没明说'的空子。对她，光加规矩堵不住，得**导向**——帮她把'守规则'升成'我心里有杆秤'，让她明白校规背后那个'为什么'，比条文本身更重要。\n（他合上手册，看我）来，这道按真题的问法考你：苏晓的事，最该体现哪条原则？"
+    },
+    {
+      "id": "ch16_c_apply",
+      "type": "choice",
+      "background": "office",
+      "speaker": "顾承",
+      "expression": "serious",
+      "knowledgeCheck": "q_moralprinciple_01",
+      "text": "（他指着手册上苏晓贴满的便签）\n苏晓校规背得熟，专钻'没明令禁止'的空子。我没只盯着补规矩，而是反复帮她想清'规则背后是为了什么、想做个什么样的人'。我主要遵循的是哪条德育原则？",
+      "examTags": {
+        "subject": "302",
+        "module": "德育",
+        "examPoint": "德育原则的辨别与应用（导向性原则）",
+        "questionType": "材料分析"
+      },
+      "choices": [
+        {
+          "id": "A",
+          "text": "导向性原则——坚持正确的价值方向，引导她树立正确的是非观与理想信念，而不止于条文约束。",
+          "quality": "optimal",
+          "effects": {"professionalSkill": 2, "studentTrust": 1, "classOrder": 1, "ethicsRisk": -1, "lawRisk": 0, "examScore": 3, "affection_gu": 3},
+          "feedback": "对。从'守条文'提升到'树立正确价值方向、想清楚做什么样的人'，正是导向性原则——德育要坚持正确的政治方向与价值导向。",
+          "answerKeywords": ["导向性原则", "正确价值方向", "理想信念是非观", "超越条文"]
+        },
+        {
+          "id": "B",
+          "text": "疏导原则——循循善诱、以理服人，不堵不压。",
+          "quality": "acceptable",
+          "effects": {"professionalSkill": 1, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": 1, "affection_gu": 1},
+          "feedback": "疏导（讲理引导）方向不算错，过程里也确有以理服人；但本题落点是'帮她把价值方向摆正、明白要做什么样的人'，最对症的是导向性原则。",
+          "answerKeywords": ["疏导（不够对症）", "本题落点在价值导向"]
+        },
+        {
+          "id": "C",
+          "text": "尊重信任学生与严格要求相结合——既尊重她，又对她严格要求。",
+          "quality": "acceptable",
+          "effects": {"professionalSkill": 0, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": -1, "affection_gu": 0},
+          "feedback": "这条强调'尊重与严格要求并举'；本题没有突出'严要求'，重点在'把价值方向引正',应判导向性原则。",
+          "answerKeywords": ["尊重与严要求结合（不对症）", "本题重在导向"]
+        },
+        {
+          "id": "D",
+          "text": "教育影响的一致性与连贯性——让学校和家庭对她口径一致。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -1, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": -2, "affection_gu": -1},
+          "feedback": "一致性连贯性强调'各方教育力量协调统一'；本题只涉及老师引导苏晓本人的价值方向，没有多方协同的情节，套用此原则属审题偏差。",
+          "answerKeywords": ["一致性连贯性需多方协同", "本题为单方价值引导"]
+        }
+      ]
+    },
+    {
+      "id": "ch16_c_after",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "顾承",
+      "expression": "smile",
+      "text": "（他把那本贴满便签的手册轻轻放回桌角）\n好。原则这东西，背是好背，难在'对上号'。同一件事，换个落点，对应的原则就变了——你刚才能咬住'她缺的是方向、不是规矩',就过关了。\n方法、规律、原则，三层都垫上了。下一步，咱们得往孩子心里再走一层。"
+    },
+    {
+      "id": "ch16_c_heart",
+      "type": "dialogue",
+      "background": "office",
+      "speaker": "narrator",
+      "text": "他起身去开了点窗，初夏的风裹着操场上的喧闹涌进来。\n阳光落在他半旧的衬衫上，他回头招呼我：'坐久了，挪挪。剩下两层，咱们边走边说，去操场。'\n（他走在前头，脚步很稳。我抱着笔记跟上去，忽然很想，把今天记的每一条，都记得牢牢的——好像记牢了，就能多懂他一点。）"
+    },
+    {
+      "id": "ch16_t3",
+      "type": "dialogue",
+      "background": "playground",
+      "speaker": "顾承",
+      "expression": "neutral",
+      "text": "（操场边的看台上，他指了指远处一群正激烈争论的孩子——正是昨天为'要不要举报作弊'吵翻的那拨）\n你听他们吵的——有的说'被抓到会挨罚，别报'，有的说'校规写了就得报'，还有一个说'破坏了考试公平，哪怕没人罚也该管'。\n同一道题，三种声音。这背后藏着一个最爱考的理论：科尔伯格。"
+    },
+    {
+      "id": "ch16_d_teach_1",
+      "type": "dialogue",
+      "background": "playground",
+      "speaker": "顾承",
+      "expression": "neutral",
+      "text": "科尔伯格用'道德两难故事'研究人怎么判断对错，把道德发展分成**三水平、六阶段**——\n**前习俗水平**（看后果、看自己）：阶段一'惩罚与服从'（怕罚才听话）、阶段二'相对功利/朴素利己'（对我有没有好处）；\n**习俗水平**（看他人、看规则）：阶段三'好孩子/寻求认可'（想做个被夸的好孩子）、阶段四'维护权威与社会秩序'（法律规则就得遵守）。"
+    },
+    {
+      "id": "ch16_d_teach_2",
+      "type": "dialogue",
+      "background": "playground",
+      "speaker": "顾承",
+      "expression": "neutral",
+      "text": "**后习俗水平**（看原则、看良心）：阶段五'社会契约'（规则是大家约定的、可商量修改，但在改之前要遵守）、阶段六'普遍伦理原则'（凭公正、平等、尊重生命这些超越具体规则的良心准则行事）。\n（他指回那群孩子）\n听出来了吗——'怕被罚'是前习俗阶段一；'校规写了就得遵守'是习俗水平阶段四；'破坏公平、哪怕没人罚也该管'，已经摸到了后习俗的门槛了。"
+    },
+    {
+      "id": "ch16_d_teach_3",
+      "type": "dialogue",
+      "background": "playground",
+      "speaker": "顾承",
+      "expression": "smile",
+      "text": "带班的妙处就在这儿——同一个班，孩子们的'道德尺子'长短不一。\n对停在'怕罚'的，你跟他讲'伟大的良心'没用，得先用清楚的奖惩立规矩；对已经在想'公平正义'的，你再用规章压他，反而委屈了他。\n（他看我，目光沉稳）看懂每个孩子'尺子'到了哪一格，再递相应的话——这才叫因人而教。来，对着这群孩子，考你一道。"
+    },
+    {
+      "id": "ch16_d_apply",
+      "type": "choice",
+      "background": "playground",
+      "speaker": "顾承",
+      "expression": "smile",
+      "knowledgeCheck": "q_kohlberg_01",
+      "text": "（他朝那群孩子扬了扬下巴）\n刚才那个说'就算没人发现、不会受罚，作弊也破坏了考试公平，所以该管'的孩子——按科尔伯格的理论，他的道德判断最可能处于哪个水平/阶段？",
+      "examTags": {
+        "subject": "302",
+        "module": "德育",
+        "examPoint": "科尔伯格道德发展三水平六阶段的辨别（后习俗水平）",
+        "questionType": "材料分析"
+      },
+      "choices": [
+        {
+          "id": "A",
+          "text": "后习俗水平——已超越'怕罚'和'守条文'，依据公平、正义等普遍原则来判断对错。",
+          "quality": "optimal",
+          "effects": {"professionalSkill": 2, "studentTrust": 1, "classOrder": 1, "ethicsRisk": -1, "lawRisk": 0, "examScore": 3, "affection_gu": 3},
+          "feedback": "对。'哪怕没人罚、依据公平正义本身判断该不该做'，已超越外在惩罚与具体规则，是后习俗水平（社会契约/普遍伦理原则）的标志。",
+          "answerKeywords": ["后习俗水平", "超越惩罚与条文", "公平正义原则", "良心准则"]
+        },
+        {
+          "id": "B",
+          "text": "前习俗水平·惩罚与服从——他是因为怕被老师抓到处分才说该管。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -1, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": -2, "affection_gu": -1},
+          "feedback": "看反了。他恰恰强调'就算没人罚也该管'，正是要摆脱'怕罚'这一前习俗阶段一的逻辑，判成前习俗与原意相悖。",
+          "answerKeywords": ["误判为怕罚", "本题恰恰超越惩罚"]
+        },
+        {
+          "id": "C",
+          "text": "习俗水平·维护权威与社会秩序——因为校规写明了禁止作弊，所以必须报告。",
+          "quality": "acceptable",
+          "effects": {"professionalSkill": 0, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": -1, "affection_gu": 0},
+          "feedback": "这是'校规写了就得遵守'那个孩子（阶段四）的逻辑；本题孩子诉诸的是'公平正义本身'，超越了具体条文，应判后习俗水平。",
+          "answerKeywords": ["阶段四诉诸规章（另一孩子）", "本题诉诸公平原则"]
+        },
+        {
+          "id": "D",
+          "text": "习俗水平·好孩子取向——他想在老师面前做个被表扬的好学生。",
+          "quality": "acceptable",
+          "effects": {"professionalSkill": 0, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": -1, "affection_gu": 0},
+          "feedback": "'好孩子取向'（阶段三）的动机是寻求他人认可、想被夸；本题孩子诉诸的是公平正义这一原则本身，与'求表扬'无关，应判后习俗水平。",
+          "answerKeywords": ["阶段三求认可", "本题诉诸原则非求表扬"]
+        }
+      ]
+    },
+    {
+      "id": "ch16_d_after",
+      "type": "dialogue",
+      "background": "playground",
+      "speaker": "顾承",
+      "expression": "smile",
+      "text": "（他笑了，眼里有真切的赞许）\n答得准。记住一句口诀，考场不慌：前习俗看'自己'（怕罚、图利）、习俗看'别人'（求夸、守法）、后习俗看'原则'（契约、良心）。\n这套是科尔伯格的'六阶段'——专讲'人凭什么判断对错'。下一套，是另一个人、另一条路子，最容易跟它弄混，咱们正好放一块儿掰扯清楚。"
+    },
+    {
+      "id": "ch16_t4",
+      "type": "dialogue",
+      "background": "playground",
+      "speaker": "narrator",
+      "text": "操场另一头，江晚正带着几个低年级孩子做团体游戏，远远朝我们这边挥了挥手。\n顾承也抬手回了一下，转头对我说：'科尔伯格之前，还有个人先趟过这条河——皮亚杰。他俩，最爱被考生搅成一锅粥。'\n（我赶紧翻开笔记，把上一页'科尔伯格·六阶段'重重画了道线，留出空白——我有预感，接下来这一条，得格外当心别记串。）"
+    },
+    {
+      "id": "ch16_e_teach_1",
+      "type": "dialogue",
+      "background": "playground",
+      "speaker": "顾承",
+      "expression": "neutral",
+      "text": "皮亚杰研究儿童的道德判断，用的是'对偶故事法'，结论比科尔伯格更早、也更'粗'一些——他把儿童道德发展，概括成从**他律道德**走向**自律道德**两个大阶段。\n**他律道德**（约5-8/10岁）：道德判断受'外在'的权威、规则支配——规则是大人定的、神圣不可改的；判断对错只看'后果大小'，不看动机（打碎10个杯子比打碎1个杯子更该罚，哪怕前者是无心）。"
+    },
+    {
+      "id": "ch16_e_teach_2",
+      "type": "dialogue",
+      "background": "playground",
+      "speaker": "顾承",
+      "expression": "neutral",
+      "text": "**自律道德**（约10岁以后）：道德判断转向'内在'——明白规则是人们约定的、可以协商修改；判断对错开始**看动机**，而不只看后果（知道'无心打碎10个'比'故意打碎1个'情有可原）。\n（他屈指敲了下看台栏杆）一句话拎清：皮亚杰是**他律→自律**两段，看的是'规则在外还是在内、看后果还是看动机'。"
+    },
+    {
+      "id": "ch16_e_teach_3",
+      "type": "dialogue",
+      "background": "playground",
+      "speaker": "顾承",
+      "expression": "serious",
+      "text": "（他特地停顿，看着我，把话说重）\n现在，把两个人钉死、别再混——\n**科尔伯格**：道德认知发展，**三水平六阶段**（前习俗/习俗/后习俗），用'道德两难'，更细、年龄跨度更大；\n**皮亚杰**：儿童道德发展，**他律道德→自律道德**两阶段，用'对偶故事'，更早、更聚焦儿童。\n一个'六阶段'，一个'他律到自律'，张冠李戴，材料题立刻扣光。来，最后一道，专门考这个辨别。"
+    },
+    {
+      "id": "ch16_e_apply",
+      "type": "choice",
+      "background": "playground",
+      "speaker": "顾承",
+      "expression": "serious",
+      "knowledgeCheck": "q_moraldevstage_01",
+      "text": "（他出题）\n一个八岁的孩子坚持认为：'谁打碎的杯子多，谁就更该挨罚，不管他是不是故意的。'按皮亚杰的儿童道德发展理论，这个孩子处于哪个阶段？依据是什么？",
+      "examTags": {
+        "subject": "302",
+        "module": "德育",
+        "examPoint": "皮亚杰儿童道德发展阶段的辨别（他律道德：只看后果不看动机）",
+        "questionType": "材料分析"
+      },
+      "choices": [
+        {
+          "id": "A",
+          "text": "他律道德阶段——只按'后果大小（打碎数量）'判断责任、不顾动机，且把规则看作不可违逆，是他律道德的典型特征。",
+          "quality": "optimal",
+          "effects": {"professionalSkill": 2, "studentTrust": 1, "classOrder": 1, "ethicsRisk": -1, "lawRisk": 0, "examScore": 3, "affection_gu": 3},
+          "feedback": "对。'只看后果、不看动机，视规则为绝对权威'正是皮亚杰他律道德阶段（约5-10岁）的核心标志。",
+          "answerKeywords": ["他律道德阶段", "只看后果不看动机", "规则不可违逆", "约5-10岁"]
+        },
+        {
+          "id": "B",
+          "text": "自律道德阶段——他能根据规则独立作出判断。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -1, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": -2, "affection_gu": -1},
+          "feedback": "判反了。自律道德的标志恰恰是'看动机、知道规则可协商'；本题孩子'只看后果、不顾动机'，正是他律道德，与自律相反。",
+          "answerKeywords": ["误判为自律", "自律应看动机·本题只看后果"]
+        },
+        {
+          "id": "C",
+          "text": "前习俗水平·惩罚与服从——他怕受罚所以这么说。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -1, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 1, "lawRisk": 0, "examScore": -2, "affection_gu": -1},
+          "feedback": "理论张冠李戴。'前习俗·惩罚与服从'是科尔伯格的阶段，本题问的是皮亚杰的儿童道德发展，应答'他律道德阶段'。这正是本章要钉死的混淆点。",
+          "answerKeywords": ["前习俗属科尔伯格", "本题问皮亚杰他律道德"]
+        },
+        {
+          "id": "D",
+          "text": "习俗水平·维护社会秩序——他在维护'该罚就罚'的规则秩序。",
+          "quality": "risk",
+          "effects": {"professionalSkill": -1, "studentTrust": 0, "classOrder": 0, "ethicsRisk": 0, "lawRisk": 0, "examScore": -2, "affection_gu": -1},
+          "feedback": "同样是把科尔伯格的'习俗水平'套到皮亚杰的题上——理论用错。本题考的是皮亚杰他律→自律，答案应为他律道德阶段。",
+          "answerKeywords": ["习俗水平属科尔伯格", "本题问皮亚杰理论"]
+        }
+      ]
+    },
+    {
+      "id": "ch16_e_after",
+      "type": "dialogue",
+      "background": "playground",
+      "speaker": "顾承",
+      "expression": "smile",
+      "text": "（他长出一口气，像看着一块料终于上了道）\n好。能把皮亚杰的'他律'和科尔伯格的'前习俗'分得清清楚楚——这一关，多少老师栽过跟头，你迈过去了。\n方法、规律、原则、再加这两套'对错的尺子'——今天这一整天，你算是把'德育'这门看不见的功夫，摸到了门。"
+    },
+    {
+      "id": "ch16_e_heart",
+      "type": "dialogue",
+      "background": "playground",
+      "speaker": "narrator",
+      "text": "傍晚的操场，风很软，把他的话和远处孩子的笑声，一起吹得很轻很暖。\n他没再看笔记，只是望着那群还在打闹的孩子，侧脸在夕照里显得格外温和——原来把人教成人这件最难的事，在他这儿，是这样一种沉甸甸的、舍不得放手的温柔。\n（被这样的人一桩桩教着、稳稳托着走过一整天，我心里那点'我能不能当好老师'的虚，竟悄悄落了地。我也想，成为一个能像他这样，把温度递进别人心里的人。）"
+    },
+    {
+      "id": "ch16_end_1",
+      "type": "dialogue",
+      "background": "playground",
+      "speaker": "顾承",
+      "expression": "smile",
+      "text": "（他拍了拍看台的水泥沿，起身，把那本翻烂的《学生手册》塞到我怀里）\n这本你拿去翻翻。条文是死的，可你今天该懂了——真正管用的，是条文背后那点'怎么把人当人'的心思。\n（他看向操场，声音放缓）李航、苏晓、那群吵架的孩子……一个都别急。德育是慢功夫，咱们，慢慢来。"
+    },
+    {
+      "id": "ch16_end_2",
+      "type": "dialogue",
+      "background": "playground",
+      "speaker": "narrator",
+      "text": "我抱着那本带着他体温的旧手册，跟他并肩往教学楼走。\n这一整天，我学会了用五把德育方法对症下药，用知情意行去看品德怎么长，用德育原则守住底线，又用科尔伯格和皮亚杰两把尺子，去量每个孩子心里那条'对错的线'。\n（也是这一整天，我好像第一次明白——所谓育人的温度，不是煽情的话，是有人肯这样一桩桩、一程程，把你也当一个'正在长成的人'，认真带着。而我，很想一直跟在这样的人身后，学下去。）"
+    },
+    {
+      "id": "ch16_end",
+      "type": "summary",
+      "background": "playground",
+      "speaker": "narrator",
+      "text": "（育人的温度这一课落幕。把今天的得失，一条条记进手账吧——人记进去了，分也得记进去。）",
+      "review": {
+        "learnedExamPoints": [
+          "302-德育-德育方法的辨别与选用（说服/榜样/陶冶/锻炼/评价 各靠什么影响人）— 顾承",
+          "302-德育-德育过程基本规律（知情意行·具有多种开端·长期反复逐步提高）— 顾承",
+          "302-德育-德育原则（导向性·疏导·尊重信任与严格要求结合·一致性连贯性·因材施教）— 顾承",
+          "302-德育-科尔伯格道德发展三水平六阶段（前习俗/习俗/后习俗·带班识层）— 顾承",
+          "302-德育-皮亚杰儿童道德发展（他律道德→自律道德·看后果到看动机）— 顾承"
+        ],
+        "structure": "五个考点都从高二(3)班这一天的几桩事长出来：办光荣榜→德育方法（榜样示范）；李航缺意行→德育过程规律（知情意行·多种开端·从行入手）；苏晓钻空子→德育原则（导向性）；孩子争论举报→科尔伯格三水平六阶段（后习俗）；八岁孩子只看后果→皮亚杰他律道德。走的是'剧情讲授→马上做题→应用→反馈'。章末月考为冷测。特别钉死科尔伯格(六阶段)与皮亚杰(他律→自律)的辨别。",
+        "mockExam": "core_ch16_mock",
+        "recommendedReview": [
+          "答错德育方法→顾承重讲五法各靠什么影响人（讲/学/染/练/评）",
+          "答错德育过程→顾承重讲知情意行与'具有多种开端'、长期反复",
+          "答错德育原则→顾承重讲五条原则及其情境对应（重点导向性 vs 疏导 vs 一致性）",
+          "答错科尔伯格→顾承重讲三水平六阶段口诀（自己/别人/原则）",
+          "答错皮亚杰道德→顾承重讲他律→自律，重点与科尔伯格前习俗的区分"
+        ]
+      }
+    }
+  ]
+}
